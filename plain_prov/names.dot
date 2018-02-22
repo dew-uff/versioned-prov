@@ -1,0 +1,74 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/n1" [fillcolor="#FFFC87",color="#808080",style="filled",label="n1",URL="http://example.org/n1"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">1</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/n1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a1",URL="http://example.org/a1"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">'a'</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/a1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a2",URL="http://example.org/a2"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">b'a'</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/a2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/true1" [fillcolor="#FFFC87",color="#808080",style="filled",label="true1",URL="http://example.org/true1"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">True</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">constant</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/true1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int1" [fillcolor="#FFFC87",color="#808080",style="filled",label="int1",URL="http://example.org/int1"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">int</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/int1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis1" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis1",URL="http://example.org/ellipsis1"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">Ellipsis</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">constant</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/ellipsis1" [color="gray",style="dashed",arrowhead="none"]
+}
