@@ -96,7 +96,7 @@ PARSER = Lark('''
     %import common.DIGIT
     %ignore COMMENT
     %ignore /[ \\t\\n\\f\\r]+/
-''')
+''', lexer='standard')
 
 
 class CallProvN(Transformer):
