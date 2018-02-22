@@ -80,6 +80,10 @@ def activity(name, derived=[], used=[], generated=[], num=None):
         add("wasGeneratedBy({}, {}, -)".format(new, varname))
     return varname
 
+def hadMember(cname, entity, key):
+    add("hadMember({}, {})".format(cname, entity))
+    DICTS[cname][key] = entity
+
 def hadDictionaryMember(dname, entity, key):
     add("hadDictionaryMember({}, {}, {})".format(dname, entity, key))
     DICTS[dname][key] = entity
@@ -98,19 +102,34 @@ def derivedByInsertionFrom(new, old, elements):
     for i, v in key_value:
         DICTS[new][repr(i)] = v
 
+def nop(*args, **kwargs):
+    pass
 
-
-def define_array(name, value):
-    varname = entity(name + "_", repr(value), "list")
-
+def define_array(name, value, type_="Dictionary", member=nop):
+    varname = entity(name + "_", repr(value), type_)
+    result = []
     for i, v in enumerate(value):
         iname = "{}{}".format(name, i)
         if isinstance(v, list):
-            define_array(iname, v)
-            hadDictionaryMember(varname, iname, repr(i))
+            ref, _ = arr = define_array(iname, v, type_, member)
+            result.append(arr)
         else:
-            hadDictionaryMember(varname, "n{}".format(v), repr(i))
-    return varname
+            ref = entity(iname + "_", repr(v), "number")
+            result.append(ref)
+        member(varname, ref, repr(i))
+    return varname, result
+
+def derivation_pair(first, second, derivations=None):
+    if derivations is None:
+        derivations = []
+    derivations.append((first, second))
+    if first in DICTS:
+        fd = DICTS[first]
+        sd = DICTS[second]
+        for key, fd_value in fd.items():
+            sd_value = sd[key]
+            derivation_pair(fd_value, sd_value, derivations)
+    return derivations
 
 @contextmanager
 def desc(desc, enabled=False):

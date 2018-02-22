@@ -9,7 +9,6 @@ from collections import namedtuple
 from lark import Lark, Transformer
 from lark.lexer import Token
 
-
 PARSER = Lark('''
     start: document
 
