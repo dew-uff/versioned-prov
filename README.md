@@ -15,7 +15,7 @@ To describe and evaluate the extension, we use the [Floyd-Warshall](https://gith
 
 By running the Floyd-Warshall in the graph below, and reading the distance between the nodes 0 and 2, it should output 3. By looking at graph, we can see that this path goes from node 0 to node 1 to node 2, instead of using the direct path from node 0 to node 2. However, the Floyd-Warshall algorithm only calculates the distance, and not the paths.
 
-<TODO - graph image>
+[![Graph](https://github.com/dew-uff/mutable-prov/raw/master/graphs/graph.png)](https://github.com/dew-uff/mutable-prov/raw/master/graphs/graph.svg)
 
 Due the nature of the algorithm, fine-grained provenance can assist in obtained the path. In Floyd-Warshall, considering the nodes `x`, `y`, and `z`, if the sum of the sub-paths `x -> y` and `y -> z` is smaller than the sum of the path `x -> z`, then it updates the value of the path `x -> z` by the sum. Thus, the provenance of the updated `x -> z` should indicate that it was composed by the sum of `x -> y` and `y -> z`.
 
@@ -26,31 +26,43 @@ For our experiment, we collected the provenance of Floyd-Warshall algorithm and 
 
 The plain PROV mapping produced the following graph:
 
-[![Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.svg)
+[![Floyd-Warshall in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.svg)
 (Click on the image for a svg version)
 
 The PROV-Dictionary mapping produced the following graph:
 
-[![Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.svg)
+[![Floyd-Warshall in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.svg)
 (Click on the image for a svg version)
 
 The Mutable-PROV mapping produced the following graph:
 
-[![Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.svg)
+[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.svg)
 (Click on the image for a svg version)
 
-The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach. Note that Mutable-PROV produces a smaller value than the others.
+The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach. Note that Mutable-PROV produces less entities and activities than the previous ones.
 
-<TODO - Table>
+Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|derived<br>By<br>Insertion
+---|---|---|---|---|---|---|---|---|---|---|---|---
+PROV|354|212|0|602|352|346|177|0|0|0|0|0
+PROV-Dictionary|276|212|0|491|244|235|0|45|0|0|0|0
+Mutable-PROV|216|184|41|282|47|183|0|0|134|47|35|8
 
+The figure below compares the elements of each approach. Note that Mutable-PROV does impose an overhead with new relationship, but this overhead is compensated by the smaller number of entities and wasDerivedFrom relationships.
+
+[![Comparison of elements](https://github.com/dew-uff/mutable-prov/raw/master/graphs/comparison.png)](https://github.com/dew-uff/mutable-prov/raw/master/graphs/comparison.svg)
+
+
+## Query
+
+ToDo
 
 ## Development
 
-We use [Jupyter Notebooks](https://github.com/dew-uff/mutable-PROV/tree/master/notebooks) with [Python 3.6](https://www.python.org/) to generate all image files.
+We use [Jupyter Notebooks](https://github.com/dew-uff/mutable-PROV/tree/master/notebooks) with [Python 3.6](https://www.python.org/), [pandas](https://pandas.pydata.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [Graphviz](https://www.graphviz.org/) to generate image files.
 
 For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use the [Lark parser](https://github.com/erezsh/lark).
 
-Thus, for running the files, please install Python 3.6 and run:
+Thus, for running the files, please install Python 3.6 and Graphviz, and run:
 ```
-pip install jupyter lark-parser
+pip install jupyter lark-parser pandas numpy matplotlib
 ```

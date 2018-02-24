@@ -38,17 +38,16 @@ def stats(path=None, view=False):
     if path:
         with open(path + ".json", "w") as f:
             json.dump(result, f)
-        with open(path + ".provn", "w") as f:
-            f.write(provn)
+    if not view:
+        view = "provn"
     if view is True:
-        view = "png"
-    if view:
-        from IPython.display import display
-        display(get_ipython().run_cell_magic(
-            "provn",
-            "-o {}.{}".format(path, view),
-            provn
-        ))
+        view = "provn png svg pdf"
+    from IPython.display import display
+    display(get_ipython().run_cell_magic(
+        "provn",
+        "-o {} -e {}".format(path, view),
+        provn
+    ))
     return result
 
 

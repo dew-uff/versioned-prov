@@ -38,6 +38,42 @@ def configure_graph(graph, args, cell):
 
     return cell, graph.generate(cell)
 
+def transform_dot(prog, dotfile, base, extensions):
+    order = deque()
+    output_ext = None
+    for ext in reversed(extensions):
+        if ext == "pdf":
+            order.appendleft(("inkscape", "pdf"))
+            order.append(("graphviz", "svg"))
+            if output_ext is None:
+                output_ext = "svg"
+        elif ext == "dot.pdf":
+            order.append(("graphviz", "pdf"))
+        else:
+            order.append(("graphviz", ext))
+        if ext in ("png", "svg"):
+            output_ext = ext
+
+    while order:
+        tool, dext = order.pop()
+        dimage = base + "." + dext
+
+        if tool == "graphviz":
+            draw_args = [prog, dotfile, "-T{}".format(dext), "-o", dimage]
+            subprocess.check_call(draw_args, startupinfo=STARTUPINFO)
+
+        elif tool == "inkscape":
+            try:
+                # Assumes that graphviz already generated the svg
+                svgimage = base + ".svg"
+                ink_args = ["inkscape", "-D", "-z", "--file={}".format(svgimage),
+                            "--export-pdf={}".format(dimage)]
+                subprocess.check_call(ink_args, startupinfo=STARTUPINFO)
+            except OSError as e:
+                if e.errno == errno.ENOENT:
+                    order.append(("graphviz", "pdf"))
+
+    return output_ext
 
 
 @magics_class
@@ -73,44 +109,37 @@ class ProvMagic(Magics):
         with open(dotfile, "w") as f:
             f.write(dot_content)
 
-
-        order = deque()
-        output_ext = None
-        for ext in reversed(extensions):
-            if ext == "pdf":
-                order.appendleft(("inkscape", "pdf"))
-                order.append(("graphviz", "svg"))
-                if output_ext is None:
-                    output_ext = "svg"
-            elif ext == "dot.pdf":
-                order.append(("graphviz", "pdf"))
-            else:
-                order.append(("graphviz", ext))
-            if ext in ("png", "svg"):
-                output_ext = ext
-
-        while order:
-            tool, dext = order.pop()
-            dimage = args.output + "." + dext
-
-            if tool == "graphviz":
-                draw_args = [args.prog, dotfile, "-T{}".format(dext), "-o", dimage]
-                subprocess.check_call(draw_args, startupinfo=STARTUPINFO)
-
-            elif tool == "inkscape":
-                try:
-                    # Assumes that graphviz already generated the svg
-                    svgimage = args.output + ".svg"
-                    ink_args = ["inkscape", "-D", "-z", "--file={}".format(svgimage),
-                                "--export-pdf={}".format(dimage)]
-                    subprocess.check_call(ink_args, startupinfo=STARTUPINFO)
-                except OSError as e:
-                    if e.errno == errno.ENOENT:
-                        order.append(("graphviz", "pdf"))
+        output_ext = transform_dot(args.prog, dotfile, args.output, extensions)
 
         if output_ext == "svg":
             return SVG(filename=args.output + ".svg")
-        return Image(args.output + ".png")
+        if output_ext == "png":
+            return Image(args.output + ".png")
+
+    @magic_arguments()
+    @argument('-p', '--prog', default="dot", type=str, help="Command for rendering (dot, neato, ...)")
+    @argument('-o', '--output', default="temp", type=str, help="Output base name")
+    @argument('-e', '--extensions', default=["png"], nargs="+", help="List of extensions for produced files (e.g., provn, dot, png, svg, pdf, dot.pdf)")
+    @cell_magic
+    def dot(self, line, cell):
+        # Remove comment on %%provn line
+        pos = line.find("#")
+        line = line[:pos if pos != -1 else None]
+        args = parse_argstring(self.provn, line)
+
+        extensions = [x.lower() for x in args.extensions]
+
+        dotfile = args.output + ".dot"
+        with open(dotfile, "w") as f:
+            f.write(cell)
+
+        output_ext = transform_dot(args.prog, dotfile, args.output, extensions)
+
+        if output_ext == "svg":
+            return SVG(filename=args.output + ".svg")
+        if output_ext == "png":
+            return Image(args.output + ".png")
+
 
 def load_ipython_extension(ipython):
     ipython.register_magics(ProvMagic)
