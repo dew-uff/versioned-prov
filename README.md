@@ -45,7 +45,8 @@ Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>B
 ---|---|---|---|---|---|---|---|---|---|---|---|---
 PROV|354|212|0|602|352|346|177|0|0|0|0|0
 PROV-Dictionary|276|212|0|491|244|235|0|45|0|0|0|0
-Mutable-PROV|216|184|41|282|47|183|0|0|134|47|35|8
+Mutable-PROV|216|211|41|336|101|210|0|0|134|47|35|8
+
 
 The figure below compares the elements of each approach. Note that Mutable-PROV does impose an overhead with new relationship, but this overhead is compensated by the smaller number of entities and wasDerivedFrom relationships.
 
