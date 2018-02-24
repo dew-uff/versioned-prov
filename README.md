@@ -36,7 +36,7 @@ The PROV-Dictionary mapping produced the following graph:
 
 The Mutable-PROV mapping produced the following graph:
 
-[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.svg)
+[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.svg)
 (Click on the image for a svg version)
 
 The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach. Note that Mutable-PROV produces less entities and activities than the previous ones.
