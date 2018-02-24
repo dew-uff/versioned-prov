@@ -1,0 +1,21 @@
+//previous
+entity(d_1, [value="[10000, 10001, 10000]", type="name"])
+entity(d0_1, [value="10000", type="number"])
+entity(d1_1, [value="10001", type="number"])
+entity(d2_1, [value="10000", type="number"])
+
+hadMember(d_1, d0_1)
+hadMember(d_1, d1_1)
+hadMember(d_1, d2_1)
+
+
+//access
+entity(n0, [value="0", type="literal"])
+entity(d_ac0_1, [value="10000", type="access"])
+
+activity(access1, [type="access"])
+used(access1, d_1, -)
+used(access1, n0, -)
+used(u15; access1, d0_1, -)
+wasGeneratedBy(g15; d_ac0_1, access1, -)
+wasDerivedFrom(d_ac0_1, d0_1, access1, g15, u15)

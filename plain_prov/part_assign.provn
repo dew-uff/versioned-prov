@@ -1,0 +1,48 @@
+//previous
+entity(d_1, [value="[10000, 10001, 10000]", type="name"])
+entity(d0_1, [value="10000", type="number"])
+entity(d1_1, [value="10001", type="number"])
+entity(d2_1, [value="10000", type="number"])
+
+hadMember(d_1, d0_1)
+hadMember(d_1, d1_1)
+hadMember(d_1, d2_1)
+
+entity(x_1, [value="[10000, 10001, 10000]", type="name"])
+entity(x0_1, [value="10000", type="number"])
+entity(x1_1, [value="10001", type="number"])
+entity(x2_1, [value="10000", type="number"])
+
+hadMember(x_1, x0_1)
+hadMember(x_1, x1_1)
+hadMember(x_1, x2_1)
+
+
+//part assign
+entity(n1, [value="1", type="literal"])
+entity(n3, [value="3", type="literal"])
+entity(d1_2, [value="3", type="access"])
+entity(x1_2, [value="3", type="access"])
+
+entity(d_2, [value="[10000, 3, 10000]", type="name"])
+hadMember(d_2, d0_1)
+hadMember(d_2, d1_2)
+hadMember(d_2, d2_1)
+
+entity(x_2, [value="[10000, 3, 10000]", type="name"])
+hadMember(x_2, x0_1)
+hadMember(x_2, x1_2)
+hadMember(x_2, x2_1)
+
+activity(assign4, [type="assign"])
+used(assign4, d_1, -)
+used(assign4, x_1, -)
+used(assign4, n1, -)
+used(u16; assign4, n3, -)
+wasGeneratedBy(d_2, assign4, -)
+wasGeneratedBy(x_2, assign4, -)
+wasGeneratedBy(g16; d1_2, assign4, -)
+wasDerivedFrom(d1_2, n3, assign4, g16, u16)
+wasGeneratedBy(g17; x1_2, assign4, -)
+wasDerivedFrom(x1_2, n3, assign4, g17, u16)
+

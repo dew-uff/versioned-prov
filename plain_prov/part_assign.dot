@@ -1,0 +1,200 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/d_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_1",URL="http://example.org/d_1"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/d_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d0_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d0_1",URL="http://example.org/d0_1"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/d0_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d1_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d1_1",URL="http://example.org/d1_1"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10001&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/d1_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d2_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d2_1",URL="http://example.org/d2_1"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/d2_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d_1" -> "http://example.org/d0_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/d_1" -> "http://example.org/d1_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/d_1" -> "http://example.org/d2_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="x_1",URL="http://example.org/x_1"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/x_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x0_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="x0_1",URL="http://example.org/x0_1"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/x0_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x1_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="x1_1",URL="http://example.org/x1_1"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10001&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/x1_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x2_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="x2_1",URL="http://example.org/x2_1"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/x2_1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x_1" -> "http://example.org/x0_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_1" -> "http://example.org/x1_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_1" -> "http://example.org/x2_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/n1" [fillcolor="#FFFC87",color="#808080",style="filled",label="n1",URL="http://example.org/n1"]
+"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs8" -> "http://example.org/n1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n3" [fillcolor="#FFFC87",color="#808080",style="filled",label="n3",URL="http://example.org/n3"]
+"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs9" -> "http://example.org/n3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d1_2" [fillcolor="#FFFC87",color="#808080",style="filled",label="d1_2",URL="http://example.org/d1_2"]
+"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs10" -> "http://example.org/d1_2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x1_2" [fillcolor="#FFFC87",color="#808080",style="filled",label="x1_2",URL="http://example.org/x1_2"]
+"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs11" -> "http://example.org/x1_2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d_2" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_2",URL="http://example.org/d_2"]
+"-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[10000, 3, 10000]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs12" -> "http://example.org/d_2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d_2" -> "http://example.org/d0_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/d_2" -> "http://example.org/d1_2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/d_2" -> "http://example.org/d2_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_2" [fillcolor="#FFFC87",color="#808080",style="filled",label="x_2",URL="http://example.org/x_2"]
+"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[10000, 3, 10000]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs13" -> "http://example.org/x_2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/x_2" -> "http://example.org/x0_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_2" -> "http://example.org/x1_2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/x_2" -> "http://example.org/x2_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/assign4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign4",URL="http://example.org/assign4"]
+"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;assign&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs14" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign4" -> "http://example.org/d_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign4" -> "http://example.org/x_1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign4" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign4" -> "http://example.org/n3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/d_2" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/x_2" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/d1_2" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/d1_2" -> "http://example.org/n3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/x1_2" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/x1_2" -> "http://example.org/n3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+}
