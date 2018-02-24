@@ -1,0 +1,22 @@
+//previous
+entity(list0_1, [value="10000", type="number"])
+entity(list1_1, [value="10001", type="number"])
+entity(list2_1, [value="10000", type="number"])
+entity(ed1, [value="[]", type="EmptyDictionary"])
+entity(d1, [value="[10000, 10001, 10000]", type="Dictionary"])
+derivedByInsertionFrom(
+    d1, ed1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+
+//access
+entity(n0, [value="0", type="literal"])
+entity(d_ac0_1, [value="10000", type="access"])
+
+activity(access1, [type="access"])
+used(access1, d1, -)
+used(access1, n0, -)
+used(u9; access1, list0_1, -)
+wasGeneratedBy(g9; d_ac0_1, access1, -)
+wasDerivedFrom(d_ac0_1, list0_1, access1, g9, u9)

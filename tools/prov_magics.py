@@ -2,6 +2,8 @@ import subprocess
 import platform
 import errno
 
+from collections import deque
+
 from IPython.display import display, Image, SVG
 from IPython.core.magic import Magics, magics_class, cell_magic
 from IPython.core.magic_arguments import argument, magic_arguments, parse_argstring
@@ -16,75 +18,99 @@ if platform.system().lower() == 'windows':
     STARTUPINFO.wShowWindow = subprocess.SW_HIDE
 
 
+def configure_graph(graph, args, cell):
+    graph.reset_config()
+
+    graph.size_x = args.width
+    graph.size_y = args.height
+    graph.rankdir = args.rankdir
+    # Dot header
+    pos = cell.find("##H##")
+    if pos != -1:
+        graph.header = cell[:pos]
+        cell = cell[pos+5:]
+
+    # Dot footer
+    pos = cell.find("##F##")
+    if pos != -1:
+        graph.footer = cell[pos + 5:]
+        cell = cell[:pos]
+
+    return cell, graph.generate(cell)
+
+
+
 @magics_class
 class ProvMagic(Magics):
     @magic_arguments()
-    @argument('-d', '--dot', default=None, type=str, help="Output dot file")
-    @argument('-e', '--engine', default="dot", type=str, help="Command for rendering (dot, neato, ...)")
-    @argument('-o', '--output', default="temp.svg", type=str, help="Output image file")
+    @argument('-p', '--prog', default="dot", type=str, help="Command for rendering (dot, neato, ...)")
+    @argument('-o', '--output', default="temp", type=str, help="Output base name")
+    @argument('-e', '--extensions', default=["png"], nargs="+", help="List of extensions for produced files (e.g., provn, dot, png, svg, pdf, dot.pdf)")
     @argument('-x', '--width', default=16, type=int, help="Graph width")
     @argument('-y', '--height', default=12, type=int, help="Graph height")
     @argument('-r', '--rankdir', default="BT", type=str, help="Graph rankdir")
     @cell_magic
     def provn(self, line, cell):
-        graph.reset_config()
         # Remove comment on %%provn line
         pos = line.find("#")
         line = line[:pos if pos != -1 else None]
         args = parse_argstring(self.provn, line)
 
-        graph.size_x = args.width
-        graph.size_y = args.height
-        graph.rankdir = args.rankdir
-        # Dot header
-        pos = cell.find("##H##")
-        if pos != -1:
-            graph.header = cell[:pos]
-            cell = cell[pos+5:]
+        provn, dot_content = configure_graph(graph, args, cell)
 
-        # Dot footer
-        pos = cell.find("##F##")
-        if pos != -1:
-            graph.footer = cell[pos + 5:]
-            cell = cell[:pos]
+        extensions = [x.lower() for x in args.extensions]
 
-        dot_content = graph.generate(cell)
+        if "provn" in extensions:
+            with open(args.output + ".provn", "w") as f:
+                f.write(provn)
+            extensions.remove("provn")
 
-        split = args.output.split(".")
-        if len(split) > 1:
-            dext = ext = split[-1]
-            name = split[:-1]
-        else:
-            dext = ext = "svg"
-            name = [args.output]
-        if ext.lower() != "png":
-            dext = "svg"
+        if not extensions:
+            return "provn file created"
 
-        dot_file = args.dot
-        if dot_file is None:
-            dot_file = ".".join(name + ["dot"])
 
-        with open(dot_file, "w") as f:
+        dotfile = args.output + ".dot"
+        with open(dotfile, "w") as f:
             f.write(dot_content)
 
-        dimage = ".".join(name + [dext])
 
-        draw_args = [args.engine, dot_file, "-T{}".format(dext), "-o", dimage]
-        subprocess.check_call(draw_args, startupinfo=STARTUPINFO)
+        order = deque()
+        output_ext = None
+        for ext in reversed(extensions):
+            if ext == "pdf":
+                order.appendleft(("inkscape", "pdf"))
+                order.append(("graphviz", "svg"))
+                if output_ext is None:
+                    output_ext = "svg"
+            elif ext == "dot.pdf":
+                order.append(("graphviz", "pdf"))
+            else:
+                order.append(("graphviz", ext))
+            if ext in ("png", "svg"):
+                output_ext = ext
 
-        if ext.lower() == "pdf":
-            try:
-                ink_args = ["inkscape", "-D", "-z", "--file={}".format(dimage),
-                            "--export-pdf={}".format(args.output)]
-                subprocess.check_call(ink_args, startupinfo=STARTUPINFO)
-            except OSError as e:
-                if e.errno == errno.ENOENT:
-                    dot_args = [args.engine, "-Tpdf", "-o", args.output, dot_file]
-                    subprocess.check_call(dot_args, startupinfo=STARTUPINFO)
+        while order:
+            tool, dext = order.pop()
+            dimage = args.output + "." + dext
 
-        if dext.lower() == "svg":
-            return SVG(filename=dimage)
-        return Image(dimage)
+            if tool == "graphviz":
+                draw_args = [args.prog, dotfile, "-T{}".format(dext), "-o", dimage]
+                subprocess.check_call(draw_args, startupinfo=STARTUPINFO)
+
+            elif tool == "inkscape":
+                try:
+                    # Assumes that graphviz already generated the svg
+                    svgimage = args.output + ".svg"
+                    ink_args = ["inkscape", "-D", "-z", "--file={}".format(svgimage),
+                                "--export-pdf={}".format(dimage)]
+                    subprocess.check_call(ink_args, startupinfo=STARTUPINFO)
+                except OSError as e:
+                    if e.errno == errno.ENOENT:
+                        order.append(("graphviz", "pdf"))
+
+        if output_ext == "svg":
+            return SVG(filename=args.output + ".svg")
+        return Image(args.output + ".png")
 
 def load_ipython_extension(ipython):
     ipython.register_magics(ProvMagic)

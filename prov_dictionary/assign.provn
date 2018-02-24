@@ -1,0 +1,7 @@
+entity(n10000, [value="10000", type="literal"])
+entity(m1, [value="10000", type="name"])
+
+activity(assign1, [type="assign"])
+used(u1; assign1, n10000, -)
+wasGeneratedBy(g1; m1, assign1, -)
+wasDerivedFrom(m1, n10000, assign1, g1, u1)

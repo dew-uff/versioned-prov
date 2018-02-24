@@ -1,0 +1,36 @@
+//previous
+entity(list0_1, [value="10000", type="number"])
+entity(list1_1, [value="10001", type="number"])
+entity(list2_1, [value="10000", type="number"])
+entity(ed1, [value="[]", type="EmptyDictionary"])
+entity(d1, [value="[10000, 10001, 10000]", type="Dictionary"])
+derivedByInsertionFrom(
+    d1, ed1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+entity(ex1, [value="[]", type="EmptyDictionary"])
+entity(x1, [value="[10000, 3, 10000]", type="Dictionary"])
+derivedByInsertionFrom(
+    x1, ex1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+//part assign
+entity(n1, [value="1", type="literal"])
+entity(n3, [value="3", type="literal"])
+entity(d_ac1_1, [value="3", type="access"])
+entity(d2, [value="[10000, 3, 10000]", type="Dictionary"])
+derivedByInsertionFrom(d2, d1, {("1", d_ac1_1)})
+entity(x2, [value="[10000, 3, 10000]", type="Dictionary"])
+derivedByInsertionFrom(x2, x1, {("1", d_ac1_1)})
+
+activity(assign4, [type="assign"])
+used(assign4, d1, -)
+used(assign4, x1, -)
+used(assign4, n1, -)
+used(u10; assign4, n3, -)
+wasGeneratedBy(g10; d_ac1_1, assign4, -)
+wasGeneratedBy(d2, assign4, -)
+wasGeneratedBy(x2, assign4, -)
+wasDerivedFrom(d_ac1_1, n3, assign4, g10, u10)

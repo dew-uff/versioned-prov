@@ -1,0 +1,23 @@
+// old entities from previous figure
+entity(elist_1, [value="[]", type="EmptyDictionary"])
+entity(list_1, [value="[10000, 10001, 10000]", type="Dictionary"])
+entity(list0_1, [value="10000", type="number"])
+entity(list1_1, [value="10001", type="number"])
+entity(list2_1, [value="10000", type="number"])
+derivedByInsertionFrom(
+    list_1, elist_1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+// new entities
+entity(ed1, [value="[]", type="EmptyDictionary"])
+entity(d1, [value="[10000, 10001, 10000]", type="Dictionary"])
+derivedByInsertionFrom(
+    d1, ed1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+activity(assign2, [type="assign"])
+used(u7; assign2, list_1, -)
+wasGeneratedBy(g7; d1, assign2, -)
+wasDerivedFrom(d1, list_1, assign2, g7, u7)

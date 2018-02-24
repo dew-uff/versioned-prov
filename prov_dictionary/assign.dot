@@ -3,11 +3,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/n10000" [color="gray",style="dashed",arrowhead="none"]
@@ -15,11 +15,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
+	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/m1" [color="gray",style="dashed",arrowhead="none"]
@@ -27,7 +27,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">assign</TD>
+	    <TD align="left">&quot;assign&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]

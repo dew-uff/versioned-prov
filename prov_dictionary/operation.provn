@@ -1,0 +1,10 @@
+entity(m1, [value="10000", type="name"])
+entity(n1, [value="1", type="literal"])
+entity(sum1, [value="10001", type="sum"])
+
+activity(add1, [type="add"])
+used(u2; add1, m1, -)
+used(u3; add1, n1, -)
+wasGeneratedBy(g2; sum1, add1, -)
+wasDerivedFrom(sum1, m1, add1, g2, u2)
+wasDerivedFrom(sum1, n1, add1, g3, u3)

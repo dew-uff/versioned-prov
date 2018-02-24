@@ -1,12 +1,14 @@
 from collections import Counter, defaultdict
 from copy import copy
 from contextlib import contextmanager
+import json
 
 NAMES = Counter()
 DICTS = defaultdict(dict)
 ENABLED = True
 RESULT = []
 STATS = Counter()
+VALUES = {}
 
 
 def reset_prov():
@@ -15,11 +17,13 @@ def reset_prov():
     global ENABLED
     global RESULT
     global STATS
+    global VALUES
     DICTS = defaultdict(dict)
     NAMES = Counter()
     ENABLED = False
     RESULT = []
     STATS = Counter()
+    VALUES = {}
 
 
 def add(text):
@@ -30,7 +34,10 @@ def add(text):
 
 def stats(path=None, view=False):
     provn = "\n".join(RESULT)
+    result = STATS.most_common()
     if path:
+        with open(path + ".json", "w") as f:
+            json.dump(result, f)
         with open(path + ".provn", "w") as f:
             f.write(provn)
     if view is True:
@@ -42,13 +49,17 @@ def stats(path=None, view=False):
             "-o {}.{}".format(path, view),
             provn
         ))
-    return STATS.most_common()
+    return result
 
 
-def get_varname(name, num=None):
+def get_varname(name, num=None, numbered=True):
     if num is None:
         num = NAMES[name]
         NAMES[name] += 1
+        if not numbered and num == 0:
+            num = ""
+        elif not numbered:
+            num = "_{}".format(num)
     return "{}{}".format(name, num)
 
 
@@ -79,6 +90,40 @@ def activity(name, derived=[], used=[], generated=[], num=None):
     for new in generated:
         add("wasGeneratedBy({}, {}, -)".format(new, varname))
     return varname
+
+def value(name, value, num=None, attrs={}):
+    varname = get_varname(name, num, numbered=False)
+
+    add('value({}, [repr="{}"])'.format(varname, value))
+    return varname
+
+def defined(ent, value, time):
+    add("defined({}, {}, {})".format(ent, value, time))
+    VALUES[ent] = value
+
+def accessed(ent, value, time):
+    add("accessed({}, {}, {})".format(ent, value, time))
+    VALUES[ent] = value
+
+def accessedPart(ent, whole, key, part, time):
+    add("accessedPart({}, {}, {}, {}, {})".format(ent, whole, key, part, time))
+    VALUES[ent] = part
+
+def derivedByInsertion(ent, whole, elements, time):
+    if isinstance(elements, list):
+        key_value = elements
+    else:
+        key_value = list(elements.items())
+
+    add("derivedByInsertion({}, {}, {{{}}}, {})".format(
+        ent, whole,
+        ", ".join('("{}", {})'.format(i, v)
+                  for i,v in key_value),
+        time
+    ))
+    for i, v in key_value:
+        DICTS[whole][str(i)] = v
+
 
 def hadMember(cname, entity, key):
     add("hadMember({}, {})".format(cname, entity))
@@ -138,6 +183,7 @@ def update(name, whole_ent, key, part_ent, whole_value):
     for other_key, other_part in DICTS[whole_ent].items():
         hadMember(new_whole, other_part, other_key)
     return new_whole
+
 
 
 @contextmanager

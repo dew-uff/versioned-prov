@@ -1,0 +1,24 @@
+entity(m1, [value="10000", type="name"])
+entity(sum1, [value="10001", type="sum"])
+
+entity(elist_1, [value="[]", type="EmptyDictionary"])
+entity(list_1, [value="[10000, 10001, 10000]", type="Dictionary"])
+entity(list0_1, [value="10000", type="number"])
+entity(list1_1, [value="10001", type="number"])
+entity(list2_1, [value="10000", type="number"])
+derivedByInsertionFrom(
+    list_1, elist_1,
+    {("0", list0_1), ("1", list1_1), ("2", list2_1)}
+)
+
+activity(definelist1, [type="definelist"])
+used(u4; definelist1, m1, -)
+wasGeneratedBy(g4; list0_1, definelist1, -)
+wasDerivedFrom(list0_1, m1, definelist1, g4, u4)
+used(u5; definelist1, sum1, -)
+wasGeneratedBy(g5; list1_1, definelist1, -)
+wasDerivedFrom(list1_1, sum1, definelist1, g5, u5)
+used(u6; definelist1, m1, -)
+wasGeneratedBy(g6; list2_1, definelist1, -)
+wasDerivedFrom(list2_1, m1, definelist1, g6, u6)
+wasGeneratedBy(list_1, definelist1, -)

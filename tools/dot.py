@@ -1,5 +1,6 @@
 import argparse
 import sys
+import html
 
 from functools import wraps
 
@@ -122,8 +123,8 @@ class Digraph(object):
                 if key.startswith("prov:"):
                     key = key[5:]
                 label.append('\t<TR>')
-                label.append('\t    <TD align="left">{}:</TD>'.format(key))
-                label.append('\t    <TD align="left">{}</TD>'.format(_unquote(value)))
+                label.append('\t    <TD align="left">{}:</TD>'.format(self.htmlescape(key)))
+                label.append('\t    <TD align="left">{}</TD>'.format(_unquote(self.htmlescape(value))))
                 label.append('\t</TR>')
             label.append('</TABLE>>')
 
@@ -151,6 +152,12 @@ class Digraph(object):
             "shape": "point",
             "label": "",
         })
+
+    def escape(self, text):
+        return text.replace('"', '\\"')
+
+    def htmlescape(self, text):
+        return html.escape(text)
 
     def main(self):
         parser = argparse.ArgumentParser(description='Convert PROV-N to GraphViz Dot')

@@ -9,6 +9,35 @@ from collections import namedtuple
 from lark import Lark, Transformer
 from lark.lexer import Token
 
+from lark.tree import Tree
+
+'''
+def eq(self, other):
+    print(type(self.children[0]))
+    try:
+        if self.data != other.data:
+            return False
+        if not isinstance(self.children, list) or not isinstance(other.children, list):
+            return self.children == other.children
+        if len(self.children) != len(other.children):
+            return False
+        todo = list(zip(self.children, other.children))
+        while todo:
+            sc, oc = todo.pop()
+            if isinstance(sc, Tree) and isinstance(oc, Tree):
+                if sc.data != oc.data:
+                    return False
+                todo.append((sc, oc))
+            else:
+                if sc != oc:
+                    return False
+        return True
+    except AttributeError:
+        return False
+
+Tree.__eq__ = eq
+'''
+
 PARSER = Lark('''
     start: document
 
@@ -29,9 +58,9 @@ PARSER = Lark('''
 
     arg: identifier_marker
        | literal
-       | time
        | expr
        | tuple
+
     tuple: "{" arg ("," arg )* "}"
          | "(" arg ("," arg )* ")"
 
@@ -52,11 +81,6 @@ PARSER = Lark('''
     convenience_notation: ESCAPED_STRING (LANGTAG)?
                        | SIGNED_NUMBER
                        | QUALIFIED_NAME_LITERAL
-
-    time: DATETIME
-
-    DATETIME: (DIGIT DIGIT DIGIT DIGIT "-" DIGIT DIGIT "-" DIGIT DIGIT "T" DIGIT DIGIT ":" DIGIT DIGIT ":" DIGIT DIGIT ("." DIGIT DIGIT*)? ("Z" | TIMEZONE)?)
-    TIMEZONE: ("+" | "-") DIGIT DIGIT ":" DIGIT DIGIT
 
     QUALIFIED_NAME: ( PN_PREFIX ":" )? PN_LOCAL
                   | PN_PREFIX ":"
@@ -79,6 +103,7 @@ PARSER = Lark('''
                  | "\U00010000".."\U000EFFFF"
     PN_CHARS: PN_CHARS_U
             | "-"
+            | ":"
             | DIGIT
             | "\u00B7"
             | "\u0300".."\u036F"
@@ -93,9 +118,12 @@ PARSER = Lark('''
     %import common.SIGNED_NUMBER
     %import common.LETTER
     %import common.DIGIT
+    %import common.WS
     %ignore COMMENT
-    %ignore /[ \\t\\n\\f\\r]+/
+    %ignore WS
 ''', lexer='standard')
+
+# (\d{4}-\d\d-\d\d(T\d\d:\d\d(:\d\d)?(\.\d+)?(([+-]\d\d:\d\d)|Z)?)?)
 
 
 class CallProvN(Transformer):
@@ -202,6 +230,7 @@ class CallProvN(Transformer):
 def _warning(name, *args, id_=None, attrs=None):
     print("WARNING: '{}' is not defined!".format(name))
 
+import re
 
 def provn_structure(content):
     """Surround contend with provn header and footer"""
@@ -242,3 +271,4 @@ def prov(name):
         fn.provname = name
         return fn
     return dec
+

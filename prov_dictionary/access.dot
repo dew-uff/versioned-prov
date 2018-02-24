@@ -3,11 +3,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">number</TD>
+	    <TD align="left">&quot;number&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/list0_1" [color="gray",style="dashed",arrowhead="none"]
@@ -15,11 +15,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10001</TD>
+	    <TD align="left">&quot;10001&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">number</TD>
+	    <TD align="left">&quot;number&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/list1_1" [color="gray",style="dashed",arrowhead="none"]
@@ -27,11 +27,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">number</TD>
+	    <TD align="left">&quot;number&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/list2_1" [color="gray",style="dashed",arrowhead="none"]
@@ -39,11 +39,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[]</TD>
+	    <TD align="left">&quot;[]&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">EmptyDictionary</TD>
+	    <TD align="left">&quot;EmptyDictionary&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/ed1" [color="gray",style="dashed",arrowhead="none"]
@@ -51,11 +51,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[10000, 10001, 10000]</TD>
+	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">Dictionary</TD>
+	    <TD align="left">&quot;Dictionary&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/d1" [color="gray",style="dashed",arrowhead="none"]
@@ -69,11 +69,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">0</TD>
+	    <TD align="left">&quot;0&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/n0" [color="gray",style="dashed",arrowhead="none"]
@@ -81,11 +81,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
+	    <TD align="left">&quot;access&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/d_ac0_1" [color="gray",style="dashed",arrowhead="none"]
@@ -93,7 +93,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
+	    <TD align="left">&quot;access&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
