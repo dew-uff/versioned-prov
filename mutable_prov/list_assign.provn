@@ -1,0 +1,13 @@
+// old entities from previous figure
+entity(list1, [value="[m, m + 1, m]", type="list"])
+value(vlist1, [repr="[10000, 10001, 10000]"])
+defined(list1, vlist1, T5)
+
+// new entities
+entity(d1, [value="d", type="name"])
+accessed(d1, vlist1, T6)
+
+activity(assign2, [type="assign"])
+used(u7; assign2, list1, -)
+wasGeneratedBy(g7; d1, assign2, -)
+wasDerivedFrom(d1, list1, assign2, g7, u7)

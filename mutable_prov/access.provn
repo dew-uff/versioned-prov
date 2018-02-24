@@ -1,0 +1,26 @@
+//previous
+value(vlist1, [repr="[10000, 10001, 10000]"])
+value(v10000, [repr="10000"])
+value(v10001, [repr="10001"])
+derivedByInsertion(
+    -, // list1
+    vlist1,
+    {("0", v10000), ("1", v10001), ("2", v10000)},
+    T5
+)
+entity(d1, [value="d", type="name"])
+accessed(d1, vlist1, T6)
+
+
+//access
+entity(n0, [value="0", type="literal"])
+value(v0, [repr="0"])
+defined(n0, v0, T9)
+entity(d_ac0_1, [value="d[0]", type="access"])
+accessedPart(d_ac0_1, vlist1, "0", v10000, T10)
+
+
+activity(access1, [type="access"])
+used(access1, d1, -)
+used(access1, n0, -)
+wasGeneratedBy(g9; d_ac0_1, access1, -)

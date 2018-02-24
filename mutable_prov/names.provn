@@ -1,0 +1,23 @@
+entity(n1, [value="1", type="literal"])
+value(v1, [repr="1"])
+defined(n1, v1, 2018-02-22T16:00:00)
+
+entity(a1, [value="'a'", type="literal"])
+value(va, [repr="'a'"])
+defined(a1, va, 2018-02-22T16:00:01)
+
+entity(a2, [value="b'a'", type="literal"])
+value(vba, [repr="b'a'"])
+defined(a2, vba, 2018-02-22T16:00:02)
+
+entity(true1, [value="True", type="constant"])
+value(vtrue, [repr="True"])
+defined(true1, vtrue, 2018-02-22T16:00:03)
+
+entity(int1, [value="int", type="name"])
+value(vint, [repr="<class 'int'>"])
+defined(int1, vint, 2018-02-22T16:00:04)
+
+entity(ellipsis1, [value="...", type="constant"])
+value(vellipsis, [repr="Ellipsis"])
+defined(ellipsis1, vellipsis, 2018-02-22T16:00:05)
