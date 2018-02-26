@@ -1,0 +1,6 @@
+entity(disti_aj3, [value="10000", type="access"])
+accessedPart(disti_aj3, row1, 0, v10000, 2018-02-26T14:16:29.156920)
+activity(access21, [type="access"])
+used(access21, disti1, -)
+used(access21, j3, -)
+wasGeneratedBy(disti_aj3, access21, -)
