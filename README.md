@@ -55,7 +55,24 @@ The figure below compares the elements of each approach. Note that Mutable-PROV 
 
 ## Query
 
-ToDo
+As stated before, the access `result[0][2]` represents de distance of the shortest path between the node 0 and the node 2 in the graph. This access is represented by the entity `result_a020` in our mappings.
+The provenance query of this entity should indicates which other parts of the graph were used to construct the shortest path, thus indicating the path. The following figures present the query result in each mapping.
+
+The plain PROV mapping produced the following query result:
+
+[![Query in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.svg)
+
+The PROV-Dictionary mapping produced the following query result:
+
+[![Query in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.svg)
+
+The Mutable-PROV mapping produced the following query result:
+
+[![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.svg)
+
+
+The Mutable-PROV query is the hardest, as it requires controlling cycles and navigating through different edges. However, it produces less nodes than the others, which may be good to not overwhelm users. For queries, the PROV-Dictionary mapping is a better option, since queries can keep the assumption of a simple DAG, and the amount of nodes is close to the amount of nodes in Mutable-PROV.
+
 
 ## Development
 

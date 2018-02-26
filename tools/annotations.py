@@ -178,9 +178,10 @@ def derivation_pair(first, second, derivations=None):
 def update(name, whole_ent, key, part_ent, whole_value):
     new_whole = entity(name, repr(whole_value), "list")
     key = repr(key)
-    hadMember(new_whole, part_ent, key)
     for other_key, other_part in DICTS[whole_ent].items():
         hadMember(new_whole, other_part, other_key)
+    hadMember(new_whole, part_ent, key)
+    
     return new_whole
 
 
