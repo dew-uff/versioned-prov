@@ -67,7 +67,7 @@ The Mutable-PROV mapping produces the following query result:
 [![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.svg)
 
 
-The Mutable-PROV query is the hardest, as it requires controlling cycles and navigating through different edges. However, it produces less nodes than the others, which may be good to not overwhelm users. For queries, the PROV-Dictionary mapping is a better option, since queries can keep the assumption of a simple DAG, and the amount of nodes is close to the amount of nodes in Mutable-PROV.
+The Mutable-PROV query is the hardest, as it requires controlling cycles and navigating through different edges. However, it produces less nodes than the others, which may be good to not overwhelm users. For queries, the PROV-Dictionary mapping is a better option, since queries can keep the assumption of a simple DAG, and the amount of resulting nodes is close to that produced in Mutable-PROV.
 
 
 ## Development
