@@ -5,10 +5,6 @@ Mutable-PROV is a PROV extension that adds support for mutable values provenance
 
 PROV does not properly support fine-grained provenance with mutable data structures due the assumption of immutable entities and their representation may become quite verbose. The PROV-Dictionary extension intends to provide data structures support for PROV, but it stills fails to accomodate the mutability of them. Thus, we propose Mutable-PROV to support the representation of mutable data structures in PROV.
 
-
-To describe and evaluate the extension, we use the [Floyd-Warshall](https://github.com/dew-uff/mutable-PROV/tree/master/algorithm.py) algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.
-
-
 ## Running Example
 
 To describe and evaluate the extension, we use the [Floyd-Warshall](https://github.com/dew-uff/mutable-PROV/tree/master/algorithm.py) algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.
@@ -56,17 +52,17 @@ The figure below compares the elements of each approach. Note that Mutable-PROV 
 ## Query
 
 As stated before, the access `result[0][2]` represents de distance of the shortest path between the node 0 and the node 2 in the graph. This access is represented by the entity `result_a020` in our mappings.
-The provenance query of this entity should indicates which other parts of the graph were used to construct the shortest path, thus indicating the path. The following figures present the query result in each mapping.
+The provenance query of this entity should indicate which other parts of the graph were used to construct the shortest path, thus indicating the path. The following figures present the query result in each mapping.
 
-The plain PROV mapping produced the following query result:
+The plain PROV mapping produces the following query result:
 
 [![Query in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.svg)
 
-The PROV-Dictionary mapping produced the following query result:
+The PROV-Dictionary mapping produces the following query result:
 
 [![Query in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.svg)
 
-The Mutable-PROV mapping produced the following query result:
+The Mutable-PROV mapping produces the following query result:
 
 [![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.svg)
 
