@@ -1,27 +1,33 @@
 from collections import Counter, defaultdict
 from copy import copy
 from contextlib import contextmanager
+from os.path import join
 import json
 
 NAMES = Counter()
 DICTS = defaultdict(dict)
 ENABLED = True
 RESULT = []
+TEMP = []
 STATS = Counter()
 VALUES = {}
+TEMP_BASE = ""
 
 
-def reset_prov():
+def reset_prov(temp_base):
     global DICTS
     global NAMES
     global ENABLED
     global RESULT
     global STATS
     global VALUES
+    global TEMP_BASE
+    TEMP_BASE = temp_base
     DICTS = defaultdict(dict)
     NAMES = Counter()
     ENABLED = False
     RESULT = []
+    TEMP = []
     STATS = Counter()
     VALUES = {}
 
@@ -29,25 +35,29 @@ def reset_prov():
 def add(text):
     STATS[text.split("(")[0]] += 1
     RESULT.append(text)
+    TEMP.append(text)
     if ENABLED:
         print(text)
 
-def stats(path=None, view=False):
-    provn = "\n".join(RESULT)
+def stats(path=None, view=False, temp=False, show=True):
+    provn = "\n".join(TEMP if temp else RESULT)
     result = STATS.most_common()
     if path:
         with open(path + ".json", "w") as f:
             json.dump(result, f)
     if not view:
         view = "provn"
+        show = False
     if view is True:
         view = "provn png svg pdf"
     from IPython.display import display
-    display(get_ipython().run_cell_magic(
+    im = get_ipython().run_cell_magic(
         "provn",
         "-o {} -e {}".format(path, view),
         provn
-    ))
+    )
+    if show:
+        display(im)
     return result
 
 
@@ -188,9 +198,24 @@ def update(name, whole_ent, key, part_ent, whole_value):
 
 @contextmanager
 def desc(desc, enabled=False):
+    global TEMP
+    ptemp = TEMP
+    TEMP = []
     global ENABLED
     if enabled:
         ENABLED = True
     yield
     if enabled:
         ENABLED = False
+    slug = (
+        desc
+        .replace(" ", "_")
+        .replace("-", "_")
+        .replace("/", "_")
+        .replace("[", "_")
+        .replace("]", "_")
+        .replace("__", "_")
+    )
+
+    stats(join(TEMP_BASE, get_varname(slug)), "provn svg", True, False)
+    TEMP = ptemp + TEMP

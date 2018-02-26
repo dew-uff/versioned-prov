@@ -1,0 +1,6 @@
+entity(i1, [value="1", type="name"])
+activity(access16, [type="access"])
+used(u80; access16, indexes1_0, -)
+wasDerivedFrom(i1, indexes1_0, access16, g77, u80)
+wasGeneratedBy(g77; i1, access16, -)
+used(access16, indexes_0, -)

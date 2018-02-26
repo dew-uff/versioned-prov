@@ -1,0 +1,100 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/disti_ak6" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_ak6",URL="http://example.org/disti_ak6"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/disti_ak6" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access33" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access33",URL="http://example.org/access33"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/access33" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access33" -> "http://example.org/disti0_2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/disti_ak6" -> "http://example.org/disti0_2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/disti_ak6" -> "http://example.org/access33" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/access33" -> "http://example.org/disti_2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/access33" -> "http://example.org/k0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/distk_aj6" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk_aj6",URL="http://example.org/distk_aj6"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;0&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/distk_aj6" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access34" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access34",URL="http://example.org/access34"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/access34" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access34" -> "http://example.org/distk0_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/distk_aj6" -> "http://example.org/distk0_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/distk_aj6" -> "http://example.org/access34" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/access34" -> "http://example.org/distk_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/access34" -> "http://example.org/j6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/sum6" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum6",URL="http://example.org/sum6"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;sum&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/sum6" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/add6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="add6",URL="http://example.org/add6"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;add&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/add6" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/add6" -> "http://example.org/disti_ak6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/sum6" -> "http://example.org/disti_ak6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/add6" -> "http://example.org/distk_aj6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/sum6" -> "http://example.org/distk_aj6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum6" -> "http://example.org/add6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj6" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj6",URL="http://example.org/ikj6"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/ikj6" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign15",URL="http://example.org/assign15"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;assign&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/assign15" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign15" -> "http://example.org/sum6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/ikj6" -> "http://example.org/sum6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/ikj6" -> "http://example.org/assign15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+}

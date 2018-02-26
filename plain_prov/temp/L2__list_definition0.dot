@@ -1,0 +1,257 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/n0" [fillcolor="#FFFC87",color="#808080",style="filled",label="n0",URL="http://example.org/n0"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;0&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/n0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n1" [fillcolor="#FFFC87",color="#808080",style="filled",label="n1",URL="http://example.org/n1"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/n1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n2" [fillcolor="#FFFC87",color="#808080",style="filled",label="n2",URL="http://example.org/n2"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/n2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n4" [fillcolor="#FFFC87",color="#808080",style="filled",label="n4",URL="http://example.org/n4"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;4&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/n4" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list_0",URL="http://example.org/list_0"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;list&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/list_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list0_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list0_0",URL="http://example.org/list0_0"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[0, 1, 4]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;list&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/list0_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list00_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list00_0",URL="http://example.org/list00_0"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;0&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/list00_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list0_0" -> "http://example.org/list00_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list01_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list01_0",URL="http://example.org/list01_0"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/list01_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list0_0" -> "http://example.org/list01_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list02_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list02_0",URL="http://example.org/list02_0"]
+"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;4&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs8" -> "http://example.org/list02_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list0_0" -> "http://example.org/list02_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list_0" -> "http://example.org/list0_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list1_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1_0",URL="http://example.org/list1_0"]
+"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[10000, 0, 2]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;list&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs9" -> "http://example.org/list1_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list10_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list10_0",URL="http://example.org/list10_0"]
+"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs10" -> "http://example.org/list10_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list1_0" -> "http://example.org/list10_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list11_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list11_0",URL="http://example.org/list11_0"]
+"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;0&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs11" -> "http://example.org/list11_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list1_0" -> "http://example.org/list11_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list12_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list12_0",URL="http://example.org/list12_0"]
+"-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs12" -> "http://example.org/list12_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list1_0" -> "http://example.org/list12_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list_0" -> "http://example.org/list1_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list2_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list2_0",URL="http://example.org/list2_0"]
+"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;[2, 10000, 0]&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;list&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs13" -> "http://example.org/list2_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list20_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list20_0",URL="http://example.org/list20_0"]
+"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs14" -> "http://example.org/list20_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list2_0" -> "http://example.org/list20_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list21_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list21_0",URL="http://example.org/list21_0"]
+"-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs15" -> "http://example.org/list21_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list2_0" -> "http://example.org/list21_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list22_0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list22_0",URL="http://example.org/list22_0"]
+"-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;0&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;number&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs16" -> "http://example.org/list22_0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list2_0" -> "http://example.org/list22_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/list_0" -> "http://example.org/list2_0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/definelist0" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="definelist0",URL="http://example.org/definelist0"]
+"-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;definelist&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs17" -> "http://example.org/definelist0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/definelist0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list00_0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list00_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list01_0" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list01_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list02_0" -> "http://example.org/n4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list02_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/m0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list10_0" -> "http://example.org/m0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list10_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list11_0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list11_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list12_0" -> "http://example.org/n2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list12_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list20_0" -> "http://example.org/n2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list20_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/m0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list21_0" -> "http://example.org/m0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list21_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/definelist0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/list22_0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list22_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/list_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/list0_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/list1_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/list2_0" -> "http://example.org/definelist0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+}
