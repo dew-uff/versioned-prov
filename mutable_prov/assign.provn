@@ -1,6 +1,7 @@
 entity(n10000, [value="10000", type="literal"])
 value(v10000, [repr="10000"])
 defined(n10000, v10000, T1)
+wasDefinedBy(v10000, n10000, T1)
 
 entity(m1, [value="m", type="name"])
 accessed(m1, v10000, T2)

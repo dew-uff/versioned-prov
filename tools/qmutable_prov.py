@@ -35,6 +35,14 @@ def defined(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
         querier.text("defined", [eid, vid, time], attrs, id_)
     ]
 
+@querier.prov("wasDefinedBy", ["value", "entity", "time", "text"])
+def was_defined_by(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
+    ti = parsetime(time)
+    return [
+        vid, eid, ti,
+        querier.text("wasDefinedBy", [vid, eid, time], attrs, id_)
+    ]
+
 @querier.prov("derivedByInsertion", ["entity", "whole", "changes", "time", "text"])
 def derived_by_insertion(dot, eid=None, wid=None, changes=None, time=None, attrs=None, id_=None):
     ti = parsetime(time)

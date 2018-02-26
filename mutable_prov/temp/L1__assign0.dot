@@ -20,7 +20,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs1" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n10000" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-26T14:16:26.847356",dir="both"]
+2018-02-26T14:41:51.963713"]
+"http://example.org/v10000" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-26T14:41:51.963713"]
 "http://example.org/m0" [fillcolor="#FFFC87",color="#808080",style="filled",label="m0",URL="http://example.org/m0"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -45,5 +47,5 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/m0" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/m0" -> "http://example.org/assign0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/m0" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-02-26T14:16:26.847356"]
+2018-02-26T14:41:51.963713"]
 }

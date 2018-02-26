@@ -13,7 +13,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" -> "http://example.org/disti_ak18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti_ak18" -> "http://example.org/vsum_11" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[2]
-2018-02-26T14:16:34.928035"]
+2018-02-26T14:42:00.742410"]
 "http://example.org/access93" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access93",URL="http://example.org/access93"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -39,7 +39,7 @@ row0[2]
 "-attrs2" -> "http://example.org/distk_aj18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk_aj18" -> "http://example.org/v2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[0]
-2018-02-26T14:16:34.928035"]
+2018-02-26T14:42:00.742410"]
 "http://example.org/access94" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access94",URL="http://example.org/access94"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -72,7 +72,9 @@ row2[0]
 </TABLE>>]
 "-attrs5" -> "http://example.org/vsum_18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum18" -> "http://example.org/vsum_18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-26T14:16:34.928035",dir="both"]
+2018-02-26T14:42:00.742912"]
+"http://example.org/vsum_18" -> "http://example.org/sum18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-26T14:42:00.742912"]
 "http://example.org/add18" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="add18",URL="http://example.org/add18"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -99,7 +101,7 @@ row2[0]
 </TABLE>>]
 "-attrs7" -> "http://example.org/ikj18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj18" -> "http://example.org/vsum_18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-02-26T14:16:34.928035"]
+2018-02-26T14:42:00.742912"]
 "http://example.org/assign35" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign35",URL="http://example.org/assign35"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

@@ -42,7 +42,9 @@ T6"]
 </TABLE>>]
 "-attrs3" -> "http://example.org/v3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/len_d1" -> "http://example.org/v3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T8",dir="both"]
+T8"]
+"http://example.org/v3" -> "http://example.org/len_d1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T8"]
 "http://example.org/len1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="len1",URL="http://example.org/len1"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

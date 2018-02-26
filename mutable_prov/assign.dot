@@ -20,7 +20,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs1" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n10000" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T1",dir="both"]
+T1"]
+"http://example.org/v10000" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T1"]
 "http://example.org/m1" [fillcolor="#FFFC87",color="#808080",style="filled",label="m1",URL="http://example.org/m1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

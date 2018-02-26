@@ -42,7 +42,9 @@ T2"]
 </TABLE>>]
 "-attrs3" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n1" -> "http://example.org/v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T3",dir="both"]
+T3"]
+"http://example.org/v1" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T3"]
 "http://example.org/sum1" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum1",URL="http://example.org/sum1"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -64,7 +66,9 @@ T3",dir="both"]
 </TABLE>>]
 "-attrs5" -> "http://example.org/v10001" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum1" -> "http://example.org/v10001" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T4",dir="both"]
+T4"]
+"http://example.org/v10001" -> "http://example.org/sum1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T4"]
 "http://example.org/add1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="add1",URL="http://example.org/add1"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

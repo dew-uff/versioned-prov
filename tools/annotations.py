@@ -108,6 +108,7 @@ def value(name, value, num=None, attrs={}):
 
 def defined(ent, value, time):
     add("defined({}, {}, {})".format(ent, value, time))
+    add("wasDefinedBy({}, {}, {})".format(value, ent, time))
     VALUES[ent] = value
 
 def accessed(ent, value, time):

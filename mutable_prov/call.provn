@@ -6,6 +6,7 @@ accessed(d1, vlist1, T6)
 entity(len_d1, [value="len(d)", type="eval"])
 value(v3, [repr="3"])
 defined(len_d1, v3, T8)
+wasDefinedBy(v3, len_d1, T8)
 
 activity(len1, [type="len"])
 used(len1, d1, -)

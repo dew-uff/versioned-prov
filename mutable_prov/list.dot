@@ -42,7 +42,9 @@ T2"]
 </TABLE>>]
 "-attrs3" -> "http://example.org/v10001" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum1" -> "http://example.org/v10001" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T4",dir="both"]
+T4"]
+"http://example.org/v10001" -> "http://example.org/sum1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T4"]
 "http://example.org/list1" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1",URL="http://example.org/list1"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -82,5 +84,7 @@ T5"]
 [2]
 T5",style="dashed"]
 "http://example.org/list1" -> "http://example.org/vlist1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T5",dir="both"]
+T5"]
+"http://example.org/vlist1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T5"]
 }

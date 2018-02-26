@@ -20,7 +20,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs1" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n10000" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T1",dir="both"]
+T1"]
+"http://example.org/v10000" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T1"]
 "http://example.org/m1" [fillcolor="#FFFC87",color="#808080",style="filled",label="m1",URL="http://example.org/m1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -67,7 +69,9 @@ T2"]
 </TABLE>>]
 "-attrs5" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n1" -> "http://example.org/v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T3",dir="both"]
+T3"]
+"http://example.org/v1" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T3"]
 "http://example.org/sum1" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum1",URL="http://example.org/sum1"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -89,7 +93,9 @@ T3",dir="both"]
 </TABLE>>]
 "-attrs7" -> "http://example.org/v10001" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum1" -> "http://example.org/v10001" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T4",dir="both"]
+T4"]
+"http://example.org/v10001" -> "http://example.org/sum1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T4"]
 "http://example.org/add1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="add1",URL="http://example.org/add1"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -142,7 +148,9 @@ T5"]
 [2]
 T5",style="dashed"]
 "http://example.org/list1" -> "http://example.org/vlist1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T5",dir="both"]
+T5"]
+"http://example.org/vlist1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T5"]
 "http://example.org/d1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d1",URL="http://example.org/d1"]
 "-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -214,7 +222,9 @@ T7"]
 </TABLE>>]
 "-attrs16" -> "http://example.org/v3r" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/len_d1" -> "http://example.org/v3r" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T8",dir="both"]
+T8"]
+"http://example.org/v3r" -> "http://example.org/len_d1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T8"]
 "http://example.org/len1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="len1",URL="http://example.org/len1"]
 "-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -246,7 +256,9 @@ T8",dir="both"]
 </TABLE>>]
 "-attrs19" -> "http://example.org/v0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n0" -> "http://example.org/v0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T9",dir="both"]
+T9"]
+"http://example.org/v0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T9"]
 "http://example.org/d_ac0_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_ac0_1",URL="http://example.org/d_ac0_1"]
 "-attrs20" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -294,7 +306,9 @@ T10"]
 </TABLE>>]
 "-attrs23" -> "http://example.org/v3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n3" -> "http://example.org/v3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T10",dir="both"]
+T10"]
+"http://example.org/v3" -> "http://example.org/n3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T10"]
 "http://example.org/d_ac1_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_ac1_1",URL="http://example.org/d_ac1_1"]
 "-attrs24" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

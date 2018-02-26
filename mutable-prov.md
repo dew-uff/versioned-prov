@@ -6,7 +6,7 @@ In this document we map simple script constructs to Mutable-PROV.
 
 During the script execution, function calls, literals (e.g., "a", 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as `entities`.
 
-In addition to the `entities`, we use the `defined` relationship to associate them to their evaluated values.
+In addition to the `entities`, we use the `defined` relationship to associate them to their evaluated values and the `wasDefinedBy` relationship to associate the evaluated values to the `entities` that defined them.
 
 In our `values` we are using the attribute `repr` to indicate their representation during the creation. However, since `values` are mutable structures, this `repr` attribute may not correspond to the actual values.
 
@@ -25,26 +25,32 @@ int   # names
 entity(n1, [value="1", type="literal"])
 value(v1, [repr="1"])
 defined(n1, v1, 2018-02-22T16:00:00)
+wasDefinedBy(v1, n1, 2018-02-22T16:00:00)
 
 entity(a1, [value="'a'", type="literal"])
 value(va, [repr="'a'"])
 defined(a1, va, 2018-02-22T16:00:01)
+wasDefinedBy(va, a1, 2018-02-22T16:00:01)
 
 entity(a2, [value="b'a'", type="literal"])
 value(vba, [repr="b'a'"])
 defined(a2, vba, 2018-02-22T16:00:02)
+wasDefinedBy(vba, a2, 2018-02-22T16:00:02)
 
 entity(true1, [value="True", type="constant"])
 value(vtrue, [repr="True"])
 defined(true1, vtrue, 2018-02-22T16:00:03)
+wasDefinedBy(vtrue, true1, 2018-02-22T16:00:03)
 
 entity(int1, [value="int", type="name"])
 value(vint, [repr="<class 'int'>"])
 defined(int1, vint, 2018-02-22T16:00:04)
+wasDefinedBy(vint, int1, 2018-02-22T16:00:04)
 
 entity(ellipsis1, [value="...", type="constant"])
 value(vellipsis, [repr="Ellipsis"])
 defined(ellipsis1, vellipsis, 2018-02-22T16:00:05)
+wasDefinedBy(vellipsis, ellipsis1, 2018-02-22T16:00:05)
 ```
 
 
@@ -69,6 +75,7 @@ m = 10000
 entity(n10000, [value="10000", type="literal"])
 value(v10000, [repr="10000"])
 defined(n10000, v10000, T1)
+wasDefinedBy(v10000, n10000, T1)
 
 entity(m1, [value="m", type="name"])
 accessed(m1, v10000, T2)
@@ -99,9 +106,11 @@ accessed(m1, v10000, T2)
 entity(n1, [value="1", type="literal"])
 value(v1, [repr="1"])
 defined(n1, v1, T3)
+wasDefinedBy(v1, n1, T3)
 entity(sum1, [value="m + 1", type="sum"])
 value(v10001, [repr="10001"])
 defined(sum1, v10001, T4)
+wasDefinedBy(v10001, sum1, T4)
 
 activity(add1, [type="add"])
 used(u2; add1, m1, -)
@@ -130,6 +139,7 @@ accessed(m1, v10000, T2)
 entity(sum1, [value="10001", type="sum"])
 value(v10001, [repr="10001"])
 defined(sum1, v10001, T4)
+wasDefinedBy(v10001, sum1, T4)
 
 entity(list1, [value="[m, m + 1, m]", type="list"])
 value(vlist1, [repr="[10000, 10001, 10000]"])
@@ -139,6 +149,7 @@ derivedByInsertion(
     T5
 )
 defined(list1, vlist1, T5)
+wasDefinedBy(vlist1, list1, T5)
 ```
 
 ![Mutable-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/list.png)
@@ -162,6 +173,7 @@ d = [m, m + 1, m]
 entity(list1, [value="[m, m + 1, m]", type="list"])
 value(vlist1, [repr="[10000, 10001, 10000]"])
 defined(list1, vlist1, T5)
+wasDefinedBy(vlist1, list1, T5)
 
 // new entities
 entity(d1, [value="d", type="name"])
@@ -218,6 +230,7 @@ accessed(d1, vlist1, T6)
 entity(len_d1, [value="len(d)", type="eval"])
 value(v3, [repr="3"])
 defined(len_d1, v3, T8)
+wasDefinedBy(v3, len_d1, T8)
 
 activity(len1, [type="len"])
 used(len1, d1, -)
@@ -255,6 +268,7 @@ accessed(d1, vlist1, T6)
 entity(n0, [value="0", type="literal"])
 value(v0, [repr="0"])
 defined(n0, v0, T9)
+wasDefinedBy(v0, n0, T9)
 entity(d_ac0_1, [value="d[0]", type="access"])
 accessedPart(d_ac0_1, vlist1, "0", v10000, T10)
 
@@ -298,10 +312,12 @@ accessed(d1, vlist1, T6)
 entity(n3, [value="3", type="literal"])
 value(v3, [repr="3"])
 defined(n3, v3, T10)
+wasDefinedBy(v3, n3, T10)
 
 entity(n1, [value="1", type="literal"])
 value(v1, [repr="1"])
 defined(n1, v1, T11)
+wasDefinedBy(v1, n1, T11)
 
 entity(d_ac1_1, [value="d[1]", type="access"])
 accessed(d_ac1_1, v3, T12)
@@ -342,6 +358,7 @@ The full mapping for the previous code is presented below:
 entity(n10000, [value="10000", type="literal"])
 value(v10000, [repr="10000"])
 defined(n10000, v10000, T1)
+wasDefinedBy(v10000, n10000, T1)
 
 entity(m1, [value="m", type="name"])
 accessed(m1, v10000, T2)
@@ -355,9 +372,11 @@ wasDerivedFrom(m1, n10000, assign1, g1, u1)
 entity(n1, [value="1", type="literal"])
 value(v1, [repr="1"])
 defined(n1, v1, T3)
+wasDefinedBy(v1, n1, T3)
 entity(sum1, [value="m + 1", type="sum"])
 value(v10001, [repr="10001"])
 defined(sum1, v10001, T4)
+wasDefinedBy(v10001, sum1, T4)
 
 activity(add1, [type="add"])
 used(u2; add1, m1, -)
@@ -376,6 +395,7 @@ derivedByInsertion(
     T5
 )
 defined(list1, vlist1, T5)
+wasDefinedBy(vlist1, list1, T5)
 
 // list assign
 entity(d1, [value="d", type="name"])
@@ -399,6 +419,7 @@ wasDerivedFrom(x1, d1, assign3, g8, u8)
 entity(len_d1, [value="len(d)", type="eval"])
 value(v3r, [repr="3"])
 defined(len_d1, v3r, T8)
+wasDefinedBy(v3r, len_d1, T8)
 
 activity(len1, [type="len"])
 used(len1, d1, -)
@@ -408,6 +429,7 @@ wasGeneratedBy(len_d1, len1, -)
 entity(n0, [value="0", type="literal"])
 value(v0, [repr="0"])
 defined(n0, v0, T9)
+wasDefinedBy(v0, n0, T9)
 entity(d_ac0_1, [value="d[0]", type="access"])
 accessedPart(d_ac0_1, vlist1, "0", v10000, T10)
 
@@ -422,6 +444,7 @@ wasGeneratedBy(g9; d_ac0_1, access1, -)
 entity(n3, [value="3", type="literal"])
 value(v3, [repr="3"])
 defined(n3, v3, T10)
+wasDefinedBy(v3, n3, T10)
 
 entity(d_ac1_1, [value="d[1]", type="access"])
 accessed(d_ac1_1, v3, T12)

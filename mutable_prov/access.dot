@@ -67,7 +67,9 @@ T6"]
 </TABLE>>]
 "-attrs5" -> "http://example.org/v0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n0" -> "http://example.org/v0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-T9",dir="both"]
+T9"]
+"http://example.org/v0" -> "http://example.org/n0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+T9"]
 "http://example.org/d_ac0_1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_ac0_1",URL="http://example.org/d_ac0_1"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

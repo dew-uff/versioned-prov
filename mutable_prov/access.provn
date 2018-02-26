@@ -16,6 +16,7 @@ accessed(d1, vlist1, T6)
 entity(n0, [value="0", type="literal"])
 value(v0, [repr="0"])
 defined(n0, v0, T9)
+wasDefinedBy(v0, n0, T9)
 entity(d_ac0_1, [value="d[0]", type="access"])
 accessedPart(d_ac0_1, vlist1, "0", v10000, T10)
 

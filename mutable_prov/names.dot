@@ -20,7 +20,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs1" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/n1" -> "http://example.org/v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:00",dir="both"]
+2018-02-22T16:00:00"]
+"http://example.org/v1" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:00"]
 "http://example.org/a1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a1",URL="http://example.org/a1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -42,7 +44,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs3" -> "http://example.org/va" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/a1" -> "http://example.org/va" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:01",dir="both"]
+2018-02-22T16:00:01"]
+"http://example.org/va" -> "http://example.org/a1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:01"]
 "http://example.org/a2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a2",URL="http://example.org/a2"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -64,7 +68,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs5" -> "http://example.org/vba" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/a2" -> "http://example.org/vba" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:02",dir="both"]
+2018-02-22T16:00:02"]
+"http://example.org/vba" -> "http://example.org/a2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:02"]
 "http://example.org/true1" [fillcolor="#FFFC87",color="#808080",style="filled",label="true1",URL="http://example.org/true1"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -86,7 +92,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs7" -> "http://example.org/vtrue" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/true1" -> "http://example.org/vtrue" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:03",dir="both"]
+2018-02-22T16:00:03"]
+"http://example.org/vtrue" -> "http://example.org/true1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:03"]
 "http://example.org/int1" [fillcolor="#FFFC87",color="#808080",style="filled",label="int1",URL="http://example.org/int1"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -108,7 +116,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs9" -> "http://example.org/vint" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/int1" -> "http://example.org/vint" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:04",dir="both"]
+2018-02-22T16:00:04"]
+"http://example.org/vint" -> "http://example.org/int1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:04"]
 "http://example.org/ellipsis1" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis1",URL="http://example.org/ellipsis1"]
 "-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -130,5 +140,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs11" -> "http://example.org/vellipsis" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ellipsis1" -> "http://example.org/vellipsis" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-02-22T16:00:05",dir="both"]
+2018-02-22T16:00:05"]
+"http://example.org/vellipsis" -> "http://example.org/ellipsis1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-02-22T16:00:05"]
 }

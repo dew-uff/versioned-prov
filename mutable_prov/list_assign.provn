@@ -2,6 +2,7 @@
 entity(list1, [value="[m, m + 1, m]", type="list"])
 value(vlist1, [repr="[10000, 10001, 10000]"])
 defined(list1, vlist1, T5)
+wasDefinedBy(vlist1, list1, T5)
 
 // new entities
 entity(d1, [value="d", type="name"])

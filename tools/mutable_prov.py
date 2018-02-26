@@ -50,7 +50,12 @@ def accessed_part(dot, eid=None, wid=None, key=None, pid=None, time=None, attrs=
 
 @graph.prov("defined")
 def defined(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
-    return _marrow2(dot, eid, vid, "defined\n{}".format(time or "-"), extra={"dir": "both"})
+    return _marrow2(dot, eid, vid, "defined\n{}".format(time or "-"))
+
+
+@graph.prov("wasDefinedBy")
+def was_defined_by(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
+    return _marrow2(dot, vid, eid, "def by\n{}".format(time or "-"))
 
 
 @graph.prov("derivedByInsertion")
