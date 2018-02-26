@@ -1,0 +1,7 @@
+entity(disti_aj1, [value="1", type="access"])
+activity(access11, [type="access"])
+used(u33; access11, list01_0, -)
+wasDerivedFrom(disti_aj1, list01_0, access11, g31, u33)
+wasGeneratedBy(g31; disti_aj1, access11, -)
+used(access11, disti0, -)
+used(access11, j1, -)
