@@ -87,7 +87,13 @@ PARSER = Lark('''
     QUALIFIED_NAME_LITERAL: "'" QUALIFIED_NAME "'"
     LANGTAG: "@" LETTER+ ("-" (LETTER|DIGIT)+)*
     PN_PREFIX: PN_CHARS_BASE ((PN_CHARS | ".")* PN_CHARS)?
-    PN_LOCAL: ( PN_CHARS_U | DIGIT ) ((PN_CHARS | ".")* PN_CHARS)?
+    PN_LOCAL: ( PN_CHARS_U | DIGIT | PN_CHARS_OTHERS ) ((PN_CHARS | "." | PN_CHARS_OTHERS )* (PN_CHARS | PN_CHARS_OTHERS ))?
+    PN_CHARS_OTHERS: PN_CHARS_ESC | PERCENT | "@" | "~" | "&" | "+" | "*" | "?" | "#" | "$" | "!"
+    PN_CHARS_ESC: "\\\\" ( "=" | "'" | "(" | ")" | "," | "-" | ":" | ";" | "[" | "]" | "." )
+    PERCENT: "%" HEX HEX
+    HEX: DIGIT
+       | "A-F"
+       | "a-f"
     PN_CHARS_BASE: LETTER
                  | "\u00C0".."\u00D6"
                  | "\u00D8".."\u00F6"

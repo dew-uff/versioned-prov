@@ -6,9 +6,9 @@ In this document we map simple script constructs to Explicit-Versioned-PROV.
 
 During the script execution, function calls, literals (e.g., "a", 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as `entities`.
 
-All evaluation entities have versions. We represent versions by an entity with type `Version` and value indicating the time.
+All evaluation entities have versions. We represent versions by an entity with type `Version` and generatedAtTime indicating the time.
 
-We associate evaluation entities to their versions by the relationship `hadVersion`.
+We associate evaluation entities to their versions by the relationship `specializationOf`.
 
 
 ```python
@@ -81,7 +81,7 @@ referenceDerivedFrom(m1, n10000, assign1, g1, u1, T2)
 
 Similar to assigments, we also use `activities` to map operations. However, instead of producing an `entity` for a variable name, it produces an `entity` for the evaluation result.
 
-If the operation produces a different value from its operands, we create a new version for it, and associate the entity to the version through the `hadVersion` relationship. Otherwise, we use the `referenceDerivedFrom` relationship.
+If the operation produces a different value from its operands, we create a new version for it, and associate the entity to the version through the `specializationOf` relationship. Otherwise, we use the `referenceDerivedFrom` relationship.
 
 ```python
 m + 1

@@ -9,11 +9,11 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 285)">
 <title>PROV</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-285 325,-285 325,4 -4,4"/>
-<!-- http://example.org/list1 -->
-<g id="node1" class="node"><title>http://example.org/list1</title>
-<g id="a_node1"><a xlink:href="http://example.org/list1" xlink:title="list1">
+<!-- http://example.org/list -->
+<g id="node1" class="node"><title>http://example.org/list</title>
+<g id="a_node1"><a xlink:href="http://example.org/list" xlink:title="list">
 <ellipse fill="#fffc87" stroke="#808080" cx="186.5" cy="-263" rx="27" ry="18"/>
-<text text-anchor="middle" x="186.5" y="-259.3" font-family="Times New Roman,serif" font-size="14.00">list1</text>
+<text text-anchor="middle" x="186.5" y="-259.3" font-family="Times New Roman,serif" font-size="14.00">list</text>
 </a>
 </g>
 </g>
@@ -29,20 +29,20 @@
 <text text-anchor="start" x="10.5" y="-167.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="37.5" y="-167.5" font-family="Times New Roman,serif" font-size="10.00">&quot;[m, m + 1, m]&quot;</text>
 </g>
-<!-- &#45;attrs0&#45;&gt;http://example.org/list1 -->
-<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/list1</title>
+<!-- &#45;attrs0&#45;&gt;http://example.org/list -->
+<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/list</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M105.24,-208.174C125.938,-221.884 151.14,-238.578 167.937,-249.704"/>
 </g>
-<!-- http://example.org/d1 -->
-<g id="node3" class="node"><title>http://example.org/d1</title>
-<g id="a_node3"><a xlink:href="http://example.org/d1" xlink:title="d1">
+<!-- http://example.org/d -->
+<g id="node3" class="node"><title>http://example.org/d</title>
+<g id="a_node3"><a xlink:href="http://example.org/d" xlink:title="d">
 <ellipse fill="#fffc87" stroke="#808080" cx="251.5" cy="-104" rx="27" ry="18"/>
-<text text-anchor="middle" x="251.5" y="-100.3" font-family="Times New Roman,serif" font-size="14.00">d1</text>
+<text text-anchor="middle" x="251.5" y="-100.3" font-family="Times New Roman,serif" font-size="14.00">d</text>
 </a>
 </g>
 </g>
-<!-- http://example.org/d1&#45;&gt;http://example.org/list1 -->
-<g id="edge6" class="edge"><title>http://example.org/d1&#45;&gt;http://example.org/list1</title>
+<!-- http://example.org/d&#45;&gt;http://example.org/list -->
+<g id="edge6" class="edge"><title>http://example.org/d&#45;&gt;http://example.org/list</title>
 <path fill="none" stroke="darkgreen" d="M248.951,-122.043C245.389,-143.004 237.815,-179.33 224.5,-208 219.523,-218.715 212.395,-229.555 205.654,-238.682"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="202.7,-236.783 199.392,-246.849 208.255,-241.043 202.7,-236.783"/>
 <text text-anchor="middle" x="259" y="-187.3" font-family="Times New Roman,serif" font-size="14.00">der ref</text>
@@ -56,8 +56,8 @@
 </a>
 </g>
 </g>
-<!-- http://example.org/d1&#45;&gt;http://example.org/assign2 -->
-<g id="edge5" class="edge"><title>http://example.org/d1&#45;&gt;http://example.org/assign2</title>
+<!-- http://example.org/d&#45;&gt;http://example.org/assign2 -->
+<g id="edge5" class="edge"><title>http://example.org/d&#45;&gt;http://example.org/assign2</title>
 <path fill="none" stroke="black" d="M238.658,-120.312C229.735,-130.95 217.646,-145.365 207.352,-157.637"/>
 <polygon fill="black" stroke="black" points="204.644,-155.421 200.899,-165.332 210.007,-159.919 204.644,-155.421"/>
 <text text-anchor="middle" x="243.792" y="-132.506" font-family="Times New Roman,serif" font-size="8.00">gen</text>
@@ -74,12 +74,12 @@
 <text text-anchor="start" x="192.5" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="219.5" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">&quot;d&quot;</text>
 </g>
-<!-- &#45;attrs1&#45;&gt;http://example.org/d1 -->
-<g id="edge2" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/d1</title>
+<!-- &#45;attrs1&#45;&gt;http://example.org/d -->
+<g id="edge2" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/d</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M251.5,-49.1737C251.5,-60.9254 251.5,-74.869 251.5,-85.6196"/>
 </g>
-<!-- http://example.org/assign2&#45;&gt;http://example.org/list1 -->
-<g id="edge4" class="edge"><title>http://example.org/assign2&#45;&gt;http://example.org/list1</title>
+<!-- http://example.org/assign2&#45;&gt;http://example.org/list -->
+<g id="edge4" class="edge"><title>http://example.org/assign2&#45;&gt;http://example.org/list</title>
 <path fill="none" stroke="black" d="M186.5,-201.7C186.5,-211.432 186.5,-223.824 186.5,-234.84"/>
 <polygon fill="black" stroke="black" points="183,-234.848 186.5,-244.848 190,-234.848 183,-234.848"/>
 <text text-anchor="middle" x="199.49" y="-207.3" font-family="Times New Roman,serif" font-size="8.00">use</text>
