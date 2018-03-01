@@ -3,6 +3,8 @@ import dateutil.parser
 from querier import querier, var, BLANK
 
 def parsetime(time):
+    if time and time.startswith("T"):
+        return int(time[1:])
     try:
         return dateutil.parser.parse(time) if time else None
     except:

@@ -1,0 +1,176 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/n1" [fillcolor="#FFFC87",color="#808080",style="filled",label="n1",URL="http://example.org/n1"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/n1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n1_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="n1_v1",URL="http://example.org/n1_v1"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:00&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/n1_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/n1" -> "http://example.org/n1_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+"http://example.org/a1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a1",URL="http://example.org/a1"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;&#x27;a&#x27;&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;&#x27;a&#x27;&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/a1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a1_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="a1_v1",URL="http://example.org/a1_v1"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:01&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/a1_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a1" -> "http://example.org/a1_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+"http://example.org/a2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a2",URL="http://example.org/a2"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;b&#x27;a&#x27;&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;b&#x27;a&#x27;&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/a2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a2_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="a2_v1",URL="http://example.org/a2_v1"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:02&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/a2_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a2" -> "http://example.org/a2_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+"http://example.org/true1" [fillcolor="#FFFC87",color="#808080",style="filled",label="true1",URL="http://example.org/true1"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;True&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;constant&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;True&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/true1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/true1_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="true1_v1",URL="http://example.org/true1_v1"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:03&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/true1_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/true1" -> "http://example.org/true1_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+"http://example.org/int1" [fillcolor="#FFFC87",color="#808080",style="filled",label="int1",URL="http://example.org/int1"]
+"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;&lt;class int&gt;&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;int&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs8" -> "http://example.org/int1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int1_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="int1_v1",URL="http://example.org/int1_v1"]
+"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:04&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs9" -> "http://example.org/int1_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int1" -> "http://example.org/int1_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+"http://example.org/ellipsis1" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis1",URL="http://example.org/ellipsis1"]
+"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;Ellipsis&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;constant&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;...&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs10" -> "http://example.org/ellipsis1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis1_v1" [fillcolor="#32CD32",color="#808080",style="filled",label="ellipsis1_v1",URL="http://example.org/ellipsis1_v1"]
+"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2018-02-22T16:00:05&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;Version&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs11" -> "http://example.org/ellipsis1_v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis1" -> "http://example.org/ellipsis1_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="ver"]
+}

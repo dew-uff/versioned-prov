@@ -47,6 +47,6 @@ def was_defined_by(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
 def derived_by_insertion(dot, eid=None, wid=None, changes=None, time=None, attrs=None, id_=None):
     ti = parsetime(time)
     return [
-        eid, wid, changes, time,
+        eid, wid, changes, ti,
         querier.text("derivedByInsertion", [eid, wid, changes, time], attrs, id_)
     ]

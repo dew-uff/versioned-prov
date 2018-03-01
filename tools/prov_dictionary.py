@@ -1,7 +1,7 @@
 from provn import graph
 
 def _dlabeldict(label):
-	return {
+    return {
         "labelfontsize": "8",
         "labeldistance": "1.5",
         "color": "darkgreen",

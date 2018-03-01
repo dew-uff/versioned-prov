@@ -1,0 +1,10 @@
+// old entities from previous figure
+entity(d1, [value="[10000, 10001, 10000]", type="name", label="d"])
+
+// new entities
+entity(x1, [value="[10000, 10001, 10000]", type="name", label="x"])
+
+activity(assign3, [type="assign"])
+used(u8; assign3, d1, -)
+wasGeneratedBy(g8; x1, assign3, -)
+referenceDerivedFrom(x1, d1, assign3, g8, u8, T7)

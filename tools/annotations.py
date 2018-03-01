@@ -12,9 +12,9 @@ TEMP = []
 STATS = Counter()
 VALUES = {}
 TEMP_BASE = ""
+NUMBERED = True
 
-
-def reset_prov(temp_base):
+def reset_prov(temp_base, numbered=True):
     global DICTS
     global NAMES
     global ENABLED
@@ -22,6 +22,8 @@ def reset_prov(temp_base):
     global STATS
     global VALUES
     global TEMP_BASE
+    global NUMBERED
+    NUMBERED = numbered
     TEMP_BASE = temp_base
     DICTS = defaultdict(dict)
     NAMES = Counter()
@@ -61,7 +63,9 @@ def stats(path=None, view=False, temp=False, show=True):
     return result
 
 
-def get_varname(name, num=None, numbered=True):
+def get_varname(name, num=None, numbered=None):
+    if numbered is None:
+        numbered = NUMBERED
     if num is None:
         num = NAMES[name]
         NAMES[name] += 1
