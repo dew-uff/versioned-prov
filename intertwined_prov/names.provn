@@ -6,9 +6,9 @@ entity(a, [value="'a'", type="literal"])
 entity(a_v1, [generatedAtTime="2018-02-22T16:00:01", type="Version"])
 specializationOf(a, a_v1)
 
-entity(a1, [value="b'a'", type="literal"])
-entity(a1_v1, [generatedAtTime="2018-02-22T16:00:02", type="Version"])
-specializationOf(a1, a1_v1)
+entity(a#2, [value="b'a'", type="literal"])
+entity(a#2_v1, [generatedAtTime="2018-02-22T16:00:02", type="Version"])
+specializationOf(a#2, a#2_v1)
 
 entity(True, [value="True", type="constant"])
 entity(True_v1, [generatedAtTime="2018-02-22T16:00:03", type="Version"])

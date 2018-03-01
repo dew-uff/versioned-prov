@@ -1,6 +1,6 @@
-# Explicit-Versioned-Prov
+# Intertwined-Prov
 
-In this document we map simple script constructs to Explicit-Versioned-PROV.
+In this document we map simple script constructs to Intertwined-PROV.
 
 ## Names, literals, and constants
 
@@ -22,32 +22,33 @@ int   # names
 
 
 ```provn
-entity(n1, [value="1", type="literal", label="1"])
-entity(n1_v1, [value="2018-02-22T16:00:00", type="Version"])
-hadVersion(n1, n1_v1)
+entity(1, [value="1", type="literal"])
+entity(1_v1, [generatedAtTime="2018-02-22T16:00:00", type="Version"])
+specializationOf(1, 1_v1)
 
-entity(a1, [value="'a'", type="literal", label="'a'"])
-entity(a1_v1, [value="2018-02-22T16:00:01", type="Version"])
-hadVersion(a1, a1_v1)
+entity(a, [value="'a'", type="literal"])
+entity(a_v1, [generatedAtTime="2018-02-22T16:00:01", type="Version"])
+specializationOf(a, a_v1)
 
-entity(a2, [value="b'a'", type="literal", label="b'a'"])
-entity(a2_v1, [value="2018-02-22T16:00:02", type="Version"])
-hadVersion(a2, a2_v1)
+entity(a#2, [value="b'a'", type="literal"])
+entity(a#2_v1, [generatedAtTime="2018-02-22T16:00:02", type="Version"])
+specializationOf(a#2, a#2_v1)
 
-entity(true1, [value="True", type="constant", label="True"])
-entity(true1_v1, [value="2018-02-22T16:00:03", type="Version"])
-hadVersion(true1, true1_v1)
+entity(True, [value="True", type="constant"])
+entity(True_v1, [generatedAtTime="2018-02-22T16:00:03", type="Version"])
+specializationOf(True, True_v1)
 
-entity(int1, [value="<class 'int'>", type="name", label="int"])
-entity(int1_v1, [value="2018-02-22T16:00:04", type="Version"])
-hadVersion(int1, int1_v1)
+entity(int, [value="<class 'int'>", type="name", label="int"])
+entity(int_v1, [generatedAtTime="2018-02-22T16:00:04", type="Version"])
+specializationOf(int, int_v1)
 
-entity(ellipsis1, [value="Ellipsis", type="constant", label="..."])
-entity(ellipsis1_v1, [value="2018-02-22T16:00:05", type="Version"])
+entity(ellipsis, [value="Ellipsis", type="constant", label="..."])
+entity(ellipsis_v1, [generatedAtTime="2018-02-22T16:00:05", type="Version"])
+specializationOf(ellipsis, ellipsis_v1)
 ```
 
 
-![Explicit-Versioned-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/names.png)
+![Intertwined-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/names.png)
 
 ## Assignment
 
@@ -62,19 +63,19 @@ m = 10000
 ```
 
 ```provn
-entity(n10000, [value="10000", type="literal", label="10000"])
-entity(n10000_v1, [value="T1", type="Version"])
-hadVersion(n10000, n10000_v1)
+entity(10000, [value="10000", type="literal"])
+entity(10000_v1, [generatedAtTime="T1", type="Version"])
+specializationOf(10000, 10000_v1)
 
-entity(m1, [value="m", type="name"])
+entity(m, [value="10000", type="name", label="m"])
 
 activity(assign1, [type="assign"])
-used(u1; assign1, n10000, -)
-wasGeneratedBy(g1; m1, assign1, -)
-referenceDerivedFrom(m1, n10000, assign1, g1, u1, T2)
+used(u1; assign1, 10000, -)
+wasGeneratedBy(g1; m, assign1, -)
+referenceDerivedFrom(m, 10000, assign1, g1, u1, T2)
 ```
 
-![Explicit-Versioned-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/assign.png)
+![Intertwined-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/assign.png)
 
 
 ## Operation
@@ -88,23 +89,23 @@ m + 1
 ```
 
 ```provn
-entity(n1, [value="1", type="literal", label="1"])
-entity(n1_v1, [value="T3", type="Version"])
-hadVersion(n1, n1_v1)
+entity(1, [value="1", type="literal"])
+entity(1_v1, [generatedAtTime="T3", type="Version"])
+specializationOf(1, 1_v1)
 
-entity(sum1, [value="10001", type="operation", label="m + 1"])
-entity(sum1_v1, [value="T4", type="Version"])
-hadVersion(sum1, sum1_v1)
+entity(sum, [value="10001", type="operation", label="m + 1"])
+entity(sum_v1, [generatedAtTime="T4", type="Version"])
+specializationOf(sum, sum_v1)
 
-activity(add1, [type="operation"])
-used(u2; add1, m1, -)
-used(u3; add1, n1, -)
-wasGeneratedBy(g2; sum1, add1, -)
-wasDerivedFrom(sum1, m1, add1, g2, u2)
-wasDerivedFrom(sum1, n1, add1, g3, u3)
+activity(+, [type="operation"])
+used(u2; +, m, -)
+used(u3; +, 1, -)
+wasGeneratedBy(g2; sum, +, -)
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
-![Explicit-Versioned-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/operation.png)
+![Intertwined-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/operation.png)
 
 
 ## List definition
@@ -116,13 +117,15 @@ A list is defined and represented by the `hadItems` relationship on the version.
 ```
 
 ```provn
-entity(list1, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
-entity(list1_v1, [value="T5", type="Version"])
-hadVersion(list1, list1_v1)
-hadItems(list1_v1, {("0", n10000), ("1", sum1), ("2", n10000)})
+entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
+entity(list_v1, [generatedAtTime="T5", type="Version"])
+specializationOf(list, list_v1)
+hadDictionaryMember(list_v1, m, "0")
+hadDictionaryMember(list_v1, sum, "1")
+hadDictionaryMember(list_v1, m, "2")
 ```
 
-![Explicit-Versioned-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list.png)
+![Intertwined-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list.png)
 
 Comparison:
 
@@ -141,15 +144,15 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-entity(d1, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
 
 activity(assign2, [type="assign"])
-used(u7; assign2, list1, -)
-wasGeneratedBy(g7; d1, assign2, -)
-referenceDerivedFrom(d1, list1, assign2, g7, u7, T6)
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+referenceDerivedFrom(d, list, assign2, g7, u7, T6)
 ```
 
-![Explicit-Versioned-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign.png)
+![Intertwined-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign.png)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -158,15 +161,15 @@ x = d
 ```
 
 ```provn
-entity(x1, [value="[10000, 10001, 10000]", type="name", label="x"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
 
 activity(assign3, [type="assign"])
-used(u8; assign3, d1, -)
-wasGeneratedBy(g8; x1, assign3, -)
-referenceDerivedFrom(x1, d1, assign3, g8, u8, T7)
+used(u8; assign3, d, -)
+wasGeneratedBy(g8; x, assign3, -)
+referenceDerivedFrom(x, d, assign3, g8, u8, T7)
 ```
 
-![Explicit-Versioned-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign2.png)
+![Intertwined-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign2.png)
 
 ## Function call
 
@@ -179,16 +182,16 @@ len(d)
 ```
 
 ```provn
-entity(len_d1, [value="3", type="eval", label="len(d)"])
-entity(len_d1_v1, [value="T8", type="Version"])
-hadVersion(len_d1, len_d1_v1)
+entity(len_d, [value="3", type="eval", label="len(d)"])
+entity(len_d_v1, [generatedAtTime="T8", type="Version"])
+specializationOf(len_d, len_d_v1)
 
-activity(len1, [type="len"])
-used(len1, d1, -)
-wasGeneratedBy(len_d1, len1, -)
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
 ```
 
-![Explicit-Versioned-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/call.png)
+![Intertwined-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/call.png)
 
 ## Access to part of structure
 
@@ -202,22 +205,22 @@ d[0]
 ```
 
 ```provn
-entity(n0, [value="0", type="literal", label="0"])
-entity(n0_v1, [value="T9", type="Version"])
-hadVersion(n0, n0_v1)
+entity(0, [value="0", type="literal"])
+entity(0_v1, [generatedAtTime="T9", type="Version"])
+specializationOf(0, 0_v1)
 
-entity(d_ac0_1, [value="10000", type="access", label="d[0]"])
+entity(d_ac0, [value="10000", type="access", label="d[0]"])
 
 
 activity(access1, [type="access"])
-used(access1, d1, -)
-used(access1, n0, -)
-usedPart(u9; access1, n10000, "0", d1, T10)
-wasGeneratedBy(g9; d_ac0_1, access1, -)
-wasDerivedFrom(d_ac0_1, n10000, access1, g9, u9)
+used(access1, d, -)
+used(access1, 0, -)
+usedPart(u9; access1, m, "0", d, T10)
+wasGeneratedBy(g9; d_ac0, access1, -)
+referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
 ```
 
-![Explicit-Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/access.png)
+![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/access.png)
 
 ## Assignment to part of structure
 
@@ -233,29 +236,29 @@ d[1] = 3
 ```
 
 ```provn
-entity(n3, [value="3", type="literal", label="3"])
-entity(n3_v1, [value="T10", type="Version"])
-hadVersion(n3, n3_v1)
+entity(3, [value="3", type="literal"])
+entity(3_v1, [generatedAtTime="T10", type="Version"])
+specializationOf(3, 3_v1)
 
-entity(n1_2, [value="1", type="literal", label="1"])
-entity(n1_2_v1, [value="T11", type="Version"])
-hadVersion(n1_2, n1_2_v1)
+entity(1_2, [value="1", type="literal"])
+entity(1_2_v1, [generatedAtTime="T11", type="Version"])
+specializationOf(1_2, 1_2_v1)
 
-entity(d_ac1_1, [value="3", type="access", label="d[1]"])
+entity(d_ac1, [value="3", type="access", label="d[1]"])
 
-entity(list1_v2, [value="T12", type="Version"])
-derivedByInsertionFrom(list1_v2, list1_v1, {("1", d_ac1_1)})
-hadVersion(list1, list1_v2)
+entity(list_v2, [generatedAtTime="T12", type="Version"])
+derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+specializationOf(list, list_v2)
 
 activity(assign4, [type="assign"])
-used(assign4, d1, -)
-used(assign4, n1_2, -)
-usedPart(u10; assign4, n3, "1", d1, T12)
-wasGeneratedBy(g10; d_ac1_1, assign4, -)
-referenceDerivedFrom(d_ac1_1, n3, assign4, g10, u10, T12)
+used(assign4, d, -)
+used(assign4, 1_2, -)
+usedPart(u10; assign4, 3, "1", d, T12)
+wasGeneratedBy(g10; d_ac1, assign4, -)
+referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
-![Explicit-Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/part_assign.png)
+![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/part_assign.png)
 
 Comparison:
 
@@ -278,99 +281,101 @@ The full mapping for the previous code is presented below:
 
 ```provn
 // assignment
-entity(n10000, [value="10000", type="literal", label="10000"])
-entity(n10000_v1, [value="T1", type="Version"])
-hadVersion(n10000, n10000_v1)
+entity(10000, [value="10000", type="literal"])
+entity(10000_v1, [generatedAtTime="T1", type="Version"])
+specializationOf(10000, 10000_v1)
 
-entity(m1, [value="m", type="name"])
+entity(m, [value="10000", type="name", label="m"])
 
 activity(assign1, [type="assign"])
-used(u1; assign1, n10000, -)
-wasGeneratedBy(g1; m1, assign1, -)
-referenceDerivedFrom(m1, n10000, assign1, g1, u1, T2)
+used(u1; assign1, 10000, -)
+wasGeneratedBy(g1; m, assign1, -)
+referenceDerivedFrom(m, 10000, assign1, g1, u1, T2)
 
 // operation
-entity(n1, [value="1", type="literal", label="1"])
-entity(n1_v1, [value="T3", type="Version"])
-hadVersion(n1, n1_v1)
+entity(1, [value="1", type="literal"])
+entity(1_v1, [generatedAtTime="T3", type="Version"])
+specializationOf(1, 1_v1)
 
-entity(sum1, [value="10001", type="operation", label="m + 1"])
-entity(sum1_v1, [value="T4", type="Version"])
-hadVersion(sum1, sum1_v1)
+entity(sum, [value="10001", type="operation", label="m + 1"])
+entity(sum_v1, [generatedAtTime="T4", type="Version"])
+specializationOf(sum, sum_v1)
 
-activity(add1, [type="operation"])
-used(u2; add1, m1, -)
-used(u3; add1, n1, -)
-wasGeneratedBy(g2; sum1, add1, -)
-wasDerivedFrom(sum1, m1, add1, g2, u2)
-wasDerivedFrom(sum1, n1, add1, g3, u3)
+activity(+, [type="operation"])
+used(u2; +, m, -)
+used(u3; +, 1, -)
+wasGeneratedBy(g2; sum, +, -)
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g3, u3)
 
 // list def
-entity(list1, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
-entity(list1_v1, [value="T5", type="Version"])
-hadVersion(list1, list1_v1)
-hadItems(list1_v1, {("0", n10000), ("1", sum1), ("2", n10000)})
+entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
+entity(list_v1, [generatedAtTime="T5", type="Version"])
+specializationOf(list, list_v1)
+hadDictionaryMember(list_v1, m, "0")
+hadDictionaryMember(list_v1, sum, "1")
+hadDictionaryMember(list_v1, m, "2")
 
 // list assign
-entity(d1, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
 
 activity(assign2, [type="assign"])
-used(u7; assign2, list1, -)
-wasGeneratedBy(g7; d1, assign2, -)
-referenceDerivedFrom(d1, list1, assign2, g7, u7, T6)
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+referenceDerivedFrom(d, list, assign2, g7, u7, T6)
 
 // list assign x
-entity(x1, [value="[10000, 10001, 10000]", type="name", label="x"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
 
 activity(assign3, [type="assign"])
-used(u8; assign3, d1, -)
-wasGeneratedBy(g8; x1, assign3, -)
-referenceDerivedFrom(x1, d1, assign3, g8, u8, T7)
+used(u8; assign3, d, -)
+wasGeneratedBy(g8; x, assign3, -)
+referenceDerivedFrom(x, d, assign3, g8, u8, T7)
 
 // call
-entity(len_d1, [value="3", type="eval", label="len(d)"])
-entity(len_d1_v1, [value="T8", type="Version"])
-hadVersion(len_d1, len_d1_v1)
+entity(len_d, [value="3", type="eval", label="len(d)"])
+entity(len_d_v1, [generatedAtTime="T8", type="Version"])
+specializationOf(len_d, len_d_v1)
 
-activity(len1, [type="len"])
-used(len1, d1, -)
-wasGeneratedBy(len_d1, len1, -)
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(n0, [value="0", type="literal", label="0"])
-entity(n0_v1, [value="T9", type="Version"])
-hadVersion(n0, n0_v1)
+entity(0, [value="0", type="literal"])
+entity(0_v1, [generatedAtTime="T9", type="Version"])
+specializationOf(0, 0_v1)
 
-entity(d_ac0_1, [value="10000", type="access", label="d[0]"])
+entity(d_ac0, [value="10000", type="access", label="d[0]"])
 
 activity(access1, [type="access"])
-used(access1, d1, -)
-used(access1, n0, -)
-usedPart(u9; access1, n10000, "0", d1, T10)
-wasGeneratedBy(g9; d_ac0_1, access1, -)
-wasDerivedFrom(d_ac0_1, n10000, access1, g9, u9)
+used(access1, d, -)
+used(access1, 0, -)
+usedPart(u9; access1, m, "0", d, T10)
+wasGeneratedBy(g9; d_ac0, access1, -)
+referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
 
 // part assign
-entity(n3, [value="3", type="literal", label="3"])
-entity(n3_v1, [value="T10", type="Version"])
-hadVersion(n3, n3_v1)
+entity(3, [value="3", type="literal"])
+entity(3_v1, [generatedAtTime="T10", type="Version"])
+specializationOf(3, 3_v1)
 
-entity(n1_2, [value="1", type="literal", label="1"])
-entity(n1_2_v1, [value="T11", type="Version"])
-hadVersion(n1_2, n1_2_v1)
+entity(1#2, [value="1", type="literal"])
+entity(1#2_v1, [generatedAtTime="T11", type="Version"])
+specializationOf(1#2, 1#2_v1)
 
-entity(d_ac1_1, [value="3", type="access", label="d[1]"])
+entity(d_ac1, [value="3", type="access", label="d[1]"])
 
-entity(list1_v2, [value="T12", type="Version"])
-derivedByInsertionFrom(list1_v2, list1_v1, {("1", d_ac1_1)})
-hadVersion(list1, list1_v2)
+entity(list_v2, [generatedAtTime="T12", type="Version"])
+derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+specializationOf(list, list_v2)
 
 activity(assign4, [type="assign"])
-used(assign4, d1, -)
-used(assign4, n1_2, -)
-usedPart(u10; assign4, n3, "1", d1, T12)
-wasGeneratedBy(g10; d_ac1_1, assign4, -)
-referenceDerivedFrom(d_ac1_1, n3, assign4, g10, u10, T12)
+used(assign4, d, -)
+used(assign4, 1#2, -)
+usedPart(u10; assign4, 3, "1", d, T12)
+wasGeneratedBy(g10; d_ac1, assign4, -)
+referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
-![Explicit-Versioned-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/full.png)
+![Intertwined-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/full.png)
