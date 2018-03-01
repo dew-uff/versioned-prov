@@ -1,0 +1,73 @@
+// assignment
+entity(n10000, [value="10000", type="literal", label="10000", generatedAtTime="T1"])
+entity(m1, [value="m", type="name", generatedAtTime="T2"])
+
+activity(assign1, [type="assign"])
+used(u1; assign1, n10000, -)
+wasGeneratedBy(g1; m1, assign1, -)
+referenceDerivedFrom(m1, n10000, assign1, g1, u1, T2)
+
+// operation
+entity(n1, [value="1", type="literal", label="1", generatedAtTime="T3"])
+entity(sum1, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
+
+activity(add1, [type="operation"])
+used(u2; add1, m1, -)
+used(u3; add1, n1, -)
+wasGeneratedBy(g2; sum1, add1, -)
+wasDerivedFrom(sum1, m1, add1, g2, u2)
+wasDerivedFrom(sum1, n1, add1, g3, u3)
+
+// list def
+entity(list1, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]", generatedAtTime="T5"])
+derivedByInsertion(list1, {("0", n10000), ("1", sum1), ("2", n10000)}, T5)
+
+// list assign
+entity(d1, [value="[10000, 10001, 10000]", type="name", label="d", generatedAtTime="T6"])
+
+activity(assign2, [type="assign"])
+used(u7; assign2, list1, -)
+wasGeneratedBy(g7; d1, assign2, -)
+referenceDerivedFrom(d1, list1, assign2, g7, u7, T6)
+
+// list assign x
+entity(x1, [value="[10000, 10001, 10000]", type="name", label="x", generatedAtTime="T7"])
+
+activity(assign3, [type="assign"])
+used(u8; assign3, d1, -)
+wasGeneratedBy(g8; x1, assign3, -)
+referenceDerivedFrom(x1, d1, assign3, g8, u8, T7)
+
+// call
+entity(len_d1, [value="3", type="eval", label="len(d)", generatedAtTime="T8"])
+
+activity(len1, [type="len"])
+used(len1, d1, -)
+wasGeneratedBy(len_d1, len1, -)
+
+// part access
+entity(n0, [value="0", type="literal", label="0", generatedAtTime="T9"])
+
+entity(d_ac0_1, [value="10000", type="access", label="d[0]", generatedAtTime="T10"])
+
+
+activity(access1, [type="access"])
+used(access1, d1, -)
+used(access1, n0, -)
+usedPart(u9; access1, n10000, "0", d1, T10)
+wasGeneratedBy(g9; d_ac0_1, access1, -)
+wasDerivedFrom(d_ac0_1, n10000, access1, g9, u9)
+
+// part assign
+entity(n3, [value="3", type="literal", label="3", generatedAtTime="T10"])
+entity(n1_2, [value="1", type="literal", label="1", generatedAtTime="T11"])
+
+entity(d_ac1_1, [value="3", type="access", label="d[1]", generatedAtTime="T12"])
+derivedByInsertion(list1, {("1", d_ac1_1)}, T12)
+
+activity(assign4, [type="assign"])
+used(assign4, d1, -)
+used(assign4, n1_2, -)
+usedPart(u10; assign4, n3, "1", d1, T12)
+wasGeneratedBy(g10; d_ac1_1, assign4, -)
+referenceDerivedFrom(d_ac1_1, n3, assign4, g10, u10, T12)

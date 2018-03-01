@@ -2,8 +2,6 @@
 entity(n10000, [value="10000", type="literal", label="10000"])
 entity(n10000_v1, [value="T1", type="Version"])
 hadVersion(n10000, n10000_v1)
-entity(m1, [value="10000", type="name"])
-referenceDerivedFrom(m1, n10000, -, -, -, T2)
 
 entity(sum1, [value="10001", type="operation", label="m + 1"])
 entity(sum1_v1, [value="T4", type="Version"])
@@ -30,7 +28,7 @@ hadVersion(n1_2, n1_2_v1)
 entity(d_ac1_1, [value="3", type="access", label="d[1]"])
 
 entity(list1_v2, [value="T12", type="Version"])
-derivedByInsertionFrom(list1_v2, list1_v1, {("1", n3)})
+derivedByInsertionFrom(list1_v2, list1_v1, {("1", d_ac1_1)})
 hadVersion(list1, list1_v2)
 
 activity(assign4, [type="assign"])

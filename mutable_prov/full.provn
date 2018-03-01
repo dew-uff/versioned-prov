@@ -83,7 +83,7 @@ hadVersion(n1_2, n1_2_v1)
 entity(d_ac1_1, [value="3", type="access", label="d[1]"])
 
 entity(list1_v2, [value="T12", type="Version"])
-derivedByInsertionFrom(list1_v2, list1_v1, {("1", n3)})
+derivedByInsertionFrom(list1_v2, list1_v1, {("1", d_ac1_1)})
 hadVersion(list1, list1_v2)
 
 activity(assign4, [type="assign"])
