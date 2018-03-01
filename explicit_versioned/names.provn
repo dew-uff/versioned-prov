@@ -14,7 +14,7 @@ entity(true1, [value="True", type="constant", label="True"])
 entity(true1_v1, [value="2018-02-22T16:00:03", type="Version"])
 hadVersion(true1, true1_v1)
 
-entity(int1, [value="<class int>", type="name", label="int"])
+entity(int1, [value="<class 'int'>", type="name", label="int"])
 entity(int1_v1, [value="2018-02-22T16:00:04", type="Version"])
 hadVersion(int1, int1_v1)
 

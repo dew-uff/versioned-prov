@@ -17,7 +17,7 @@ Due the nature of the algorithm, fine-grained provenance can assist in obtained 
 
 ## Experiment
 
-For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to plain PROV, PROV-Dicitionary, and Mutable-PROV. For descriptions of the mappings, please refer to [Plain PROV Mapping](prov.md), [PROV-Dictionary Mapping](prov-dictionary.md), [Mutable-PROV Mapping](mutable-prov.md).
+For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to plain PROV, PROV-Dicitionary, Mutable-PROV, Explicit-Versioned-PROV, Versioned-PROV. For descriptions of the mappings, please refer to [Plain PROV Mapping](prov.md), [PROV-Dictionary Mapping](prov-dictionary.md), [Mutable-PROV Mapping](mutable-prov.md), [Explicit-Versioned-PROV Mapping](explicit-versioned-prov.md), and [Versioned-PROV Mapping](versioned-prov.md).
 
 
 The plain PROV mapping produced the following graph:
