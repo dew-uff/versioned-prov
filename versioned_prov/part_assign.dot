@@ -1,5 +1,5 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/n10000" [fillcolor="#FFFC87",color="#808080",style="filled",label="n10000",URL="http://example.org/n10000"]
+"http://example.org/m1" [fillcolor="#FFFC87",color="#808080",style="filled",label="m1",URL="http://example.org/m1"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -7,18 +7,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;10000&quot;</TD>
+	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;T1&quot;</TD>
+	    <TD align="left">&quot;T2&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/n10000" [color="gray",style="dashed",arrowhead="none"]
+"-attrs0" -> "http://example.org/m1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum1" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum1",URL="http://example.org/sum1"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -59,13 +55,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/list1" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
+"http://example.org/list1" -> "http://example.org/m1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
 T5"]
 "http://example.org/list1" -> "http://example.org/sum1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
 T5"]
-"http://example.org/list1" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
+"http://example.org/list1" -> "http://example.org/m1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
 T5"]
 "http://example.org/d1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d1",URL="http://example.org/d1"]
