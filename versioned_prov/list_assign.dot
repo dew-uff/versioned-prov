@@ -1,5 +1,5 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/list1" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1",URL="http://example.org/list1"]
+"http://example.org/list" [fillcolor="#FFFC87",color="#808080",style="filled",label="list",URL="http://example.org/list"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -18,8 +18,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">&quot;T5&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/d1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d1",URL="http://example.org/d1"]
+"-attrs0" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="http://example.org/d"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -38,7 +38,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">&quot;T6&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/d1" [color="gray",style="dashed",arrowhead="none"]
+"-attrs1" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -47,8 +47,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/assign2" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/d1" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/d1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+"http://example.org/assign2" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/d" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/d" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 T6"]
 }

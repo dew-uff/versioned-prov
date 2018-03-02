@@ -1,5 +1,5 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/n10000" [fillcolor="#FFFC87",color="#808080",style="filled",label="n10000",URL="http://example.org/n10000"]
+"http://example.org/10000" [fillcolor="#FFFC87",color="#808080",style="filled",label="10000",URL="http://example.org/10000"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -10,16 +10,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">&quot;literal&quot;</TD>
 	</TR>
 	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;10000&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">generatedAtTime:</TD>
 	    <TD align="left">&quot;T1&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/n10000" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/m1" [fillcolor="#FFFC87",color="#808080",style="filled",label="m1",URL="http://example.org/m1"]
+"-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -30,14 +26,18 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
 	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;m&quot;</TD>
+	</TR>
+	<TR>
 	    <TD align="left">generatedAtTime:</TD>
 	    <TD align="left">&quot;T2&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/m1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/m1" -> "http://example.org/n10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+"-attrs1" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/m" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 T2"]
-"http://example.org/n1" [fillcolor="#FFFC87",color="#808080",style="filled",label="n1",URL="http://example.org/n1"]
+"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -48,16 +48,12 @@ T2"]
 	    <TD align="left">&quot;literal&quot;</TD>
 	</TR>
 	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">generatedAtTime:</TD>
 	    <TD align="left">&quot;T3&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/n1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum1" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum1",URL="http://example.org/sum1"]
+"-attrs2" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum",URL="http://example.org/sum"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -76,18 +72,18 @@ T2"]
 	    <TD align="left">&quot;T4&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/sum1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/add1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="add1",URL="http://example.org/add1"]
+"-attrs3" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/+" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+",URL="http://example.org/+"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/add1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/add1" -> "http://example.org/m1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/add1" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/sum1" -> "http://example.org/add1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum1" -> "http://example.org/m1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum1" -> "http://example.org/n1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"-attrs4" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/+" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/sum" -> "http://example.org/+" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/sum" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 }
