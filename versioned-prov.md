@@ -20,12 +20,12 @@ int   # names
 
 
 ```provn
-entity(n1, [value="1", type="literal", label="1", generatedAtTime="2018-02-22T16:00:00"])
-entity(a1, [value="'a'", type="literal", label="'a'", generatedAtTime="2018-02-22T16:00:01"])
-entity(a2, [value="b'a'", type="literal", label="b'a'", generatedAtTime="2018-02-22T16:00:02"])
-entity(true1, [value="True", type="constant", label="True", generatedAtTime="2018-02-22T16:00:03"])
-entity(int1, [value="<class int>", type="name", label="int", generatedAtTime="2018-02-22T16:00:04"])
-entity(ellipsis1, [value="Ellipsis", type="constant", label="...", generatedAtTime="2018-02-22T16:00:05"])
+entity(1, [value="1", type="literal", generatedAtTime="2018-02-22T16:00:00"])
+entity(a, [value="'a'", type="literal", generatedAtTime="2018-02-22T16:00:01"])
+entity(a#2, [value="b'a'", type="literal", generatedAtTime="2018-02-22T16:00:02"])
+entity(True, [value="True", type="constant", generatedAtTime="2018-02-22T16:00:03"])
+entity(int, [value="<class 'int'>", type="name", label="int", generatedAtTime="2018-02-22T16:00:04"])
+entity(ellipsis, [value="Ellipsis", type="constant", label="...", generatedAtTime="2018-02-22T16:00:05"])
 ```
 
 

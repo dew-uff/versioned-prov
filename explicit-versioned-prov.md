@@ -48,7 +48,7 @@ specializationOf(ellipsis, ellipsis_v1)
 ```
 
 
-![Intertwined-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/names.png)
+![Intertwined-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/names.png)
 
 ## Assignment
 
@@ -75,7 +75,7 @@ wasGeneratedBy(g1; m, assign1, -)
 referenceDerivedFrom(m, 10000, assign1, g1, u1, T2)
 ```
 
-![Intertwined-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/assign.png)
+![Intertwined-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/assign.png)
 
 
 ## Operation
@@ -105,7 +105,7 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
-![Intertwined-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/operation.png)
+![Intertwined-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/operation.png)
 
 
 ## List definition
@@ -125,7 +125,7 @@ hadDictionaryMember(list_v1, sum, "1")
 hadDictionaryMember(list_v1, m, "2")
 ```
 
-![Intertwined-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list.png)
+![Intertwined-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/list.png)
 
 Comparison:
 
@@ -152,7 +152,7 @@ wasGeneratedBy(g7; d, assign2, -)
 referenceDerivedFrom(d, list, assign2, g7, u7, T6)
 ```
 
-![Intertwined-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign.png)
+![Intertwined-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/list_assign.png)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -169,7 +169,7 @@ wasGeneratedBy(g8; x, assign3, -)
 referenceDerivedFrom(x, d, assign3, g8, u8, T7)
 ```
 
-![Intertwined-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/list_assign2.png)
+![Intertwined-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/list_assign2.png)
 
 ## Function call
 
@@ -191,7 +191,7 @@ used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-![Intertwined-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/call.png)
+![Intertwined-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/call.png)
 
 ## Access to part of structure
 
@@ -220,7 +220,7 @@ wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
 ```
 
-![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/access.png)
+![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/access.png)
 
 ## Assignment to part of structure
 
@@ -258,7 +258,7 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
-![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/part_assign.png)
+![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/part_assign.png)
 
 Comparison:
 
@@ -378,4 +378,4 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
-![Intertwined-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/explicit_versioned/full.png)
+![Intertwined-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/full.png)
