@@ -40,8 +40,8 @@ The following table presents the count of each node (entity, activity, value) an
 Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion
 ---|---|---|---|---|---|---|---|---|---|---|---|---|---
 PROV|242|212|0|488|244|232|126|0|0|0|0|0|0
-PROV-Dictionary|276|212|0|491|244|235|0|45|0|0|0|0|0
-Mutable-PROV|216|211|41|336|101|210|0|0|134|47|35|35|8
+PROV-Dictionary|275|212|0|488|244|232|0|42|0|0|0|0|0
+Mutable-PROV|218|211|43|336|101|210|0|0|134|47|37|37|8
 
 
 The figure below compares the elements of each approach. Note that Mutable-PROV reduces the number of PROV nodes and relationships in comparision to the other approaches, but it does impose an overhead with values and values relationships for all entities. Overall, the amount of elements in Mutable-PROV is comparable to the amount of elements in PROV-Dictionary in our example. Mutable-PROV has an advantage in algorithms with more data structure updates while PROV-Dictionary han an advantage in algorithms with more simple variables.
