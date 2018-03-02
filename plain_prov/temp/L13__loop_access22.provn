@@ -1,6 +1,0 @@
-entity(j22, [value="1", type="name"])
-activity(access110, [type="access"])
-used(u303; access110, indexes1_0, -)
-wasDerivedFrom(j22, indexes1_0, access110, g281, u303)
-wasGeneratedBy(g281; j22, access110, -)
-used(access110, indexes_0, -)

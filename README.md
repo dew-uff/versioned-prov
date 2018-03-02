@@ -39,7 +39,7 @@ The following table presents the count of each node (entity, activity, value) an
 
 Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion
 ---|---|---|---|---|---|---|---|---|---|---|---|---|---
-PROV|354|212|0|602|352|346|177|0|0|0|0|0|0
+PROV|242|212|0|488|244|232|126|0|0|0|0|0|0
 PROV-Dictionary|276|212|0|491|244|235|0|45|0|0|0|0|0
 Mutable-PROV|216|211|41|336|101|210|0|0|134|47|35|35|8
 

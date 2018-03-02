@@ -12,9 +12,8 @@ TEMP = []
 STATS = Counter()
 VALUES = {}
 TEMP_BASE = ""
-NUMBERED = True
 
-def reset_prov(temp_base, numbered=True):
+def reset_prov(temp_base):
     global DICTS
     global NAMES
     global ENABLED
@@ -22,8 +21,6 @@ def reset_prov(temp_base, numbered=True):
     global STATS
     global VALUES
     global TEMP_BASE
-    global NUMBERED
-    NUMBERED = numbered
     TEMP_BASE = temp_base
     DICTS = defaultdict(dict)
     NAMES = Counter()
@@ -63,34 +60,34 @@ def stats(path=None, view=False, temp=False, show=True):
     return result
 
 
-def get_varname(name, num=None, numbered=None):
-    if numbered is None:
-        numbered = NUMBERED
-    if num is None:
-        num = NAMES[name]
-        NAMES[name] += 1
-        if not numbered and num == 0:
-            num = ""
-        elif not numbered:
-            num = "_{}".format(num)
-    return "{}{}".format(name, num)
+def get_varname(name, sep="#", show1=False):
+    num = NAMES[name]
+    NAMES[name] += 1
+    num += 1
+    extra = ""
+    if num > 1 or show1:
+        extra = "{}{}".format(sep, num)
+    return "{}{}".format(name, extra)
 
 
-def entity(name, value, type_, num=None, attrs={}):
-    varname = get_varname(name, num)
-
-    add('entity({}, [value="{}", type="{}"])'.format(varname, value, type_))
+def entity(name, value, type_, label=None, attrs={}):
+    varname = get_varname(name)
+    if label == value and type_ in ("literal", "constant"):
+        label = None
+    label = ', label="{}"'.format(label) if label else ""
+    add('entity({}, [value="{}", type="{}"{}])'.format(varname, value, type_, label))
     return varname
 
-def activity(name, derived=[], used=[], generated=[], num=None):
-    varname = get_varname(name, num)
-    add('activity({}, [type="{}"])'.format(varname, name))
+def activity(name, derived=[], used=[], generated=[], label=None):
+    varname = get_varname(name, sep="", show1=True)
+    label = ', label="{}"'.format(label) if label else ""
+    add('activity({}, [type="{}"{}])'.format(varname, name, label))
 
     for new, *olds in derived:
-        varg = get_varname("g")
+        varg = get_varname("g", sep="", show1=True)
 
         for old in olds:
-            varu = get_varname("u")
+            varu = get_varname("u", sep="", show1=True)
             add("used({}; {}, {}, -)".format(varu, varname, old))
             add("wasDerivedFrom({}, {}, {}, {}, {})".format(new, old, varname, varg, varu))
 
@@ -105,7 +102,7 @@ def activity(name, derived=[], used=[], generated=[], num=None):
     return varname
 
 def value(name, value, num=None, attrs={}):
-    varname = get_varname(name, num, numbered=False)
+    varname = get_varname(name)
 
     add('value({}, [repr="{}"])'.format(varname, value))
     return varname
@@ -161,19 +158,34 @@ def derivedByInsertionFrom(new, old, elements):
     for i, v in key_value:
         DICTS[new][repr(i)] = v
 
+
+def had_members(entity, elements):
+    if isinstance(elements, list):
+        key_value = list(enumerate(elements))
+    else:
+        key_value = list(elements.items())
+    for i, v in key_value:
+        hadMember(entity, v, str(i))
+
 def nop(*args, **kwargs):
     pass
 
-def define_array(name, value, type_="Dictionary", member=nop):
-    varname = entity(name + "_", repr(value), type_)
+
+def calc_label(label):
+    if isinstance(label, list):
+        return "[{}]".format(", ".join(calc_label(x) for x in label))
+    return label
+
+def define_array(name, value, label, type_="Dictionary", member=nop):
+    varname = entity(name, repr(value), type_, calc_label(label))
     result = []
     for i, v in enumerate(value):
         iname = "{}{}".format(name, i)
         if isinstance(v, list):
-            ref, _ = arr = define_array(iname, v, type_, member)
+            ref, _ = arr = define_array(iname, v, label[i], type_, member)
             result.append(arr)
         else:
-            ref = entity(iname + "_", repr(v), "number")
+            ref = entity(iname, repr(v), "item", label[i])
             result.append(ref)
         member(varname, ref, repr(i))
     return varname, result
@@ -190,12 +202,13 @@ def derivation_pair(first, second, derivations=None):
             derivation_pair(fd_value, sd_value, derivations)
     return derivations
 
-def update(name, whole_ent, key, part_ent, whole_value):
-    new_whole = entity(name, repr(whole_value), "list")
+def update(name, whole_ent, key, part_ent, whole_value, label=None):
+    new_whole = entity(name, repr(whole_value), "list", label)
     key = repr(key)
     for other_key, other_part in DICTS[whole_ent].items():
-        hadMember(new_whole, other_part, other_key)
-    hadMember(new_whole, part_ent, key)
+        if other_key != key:
+            hadMember(new_whole, other_part, str(other_key))
+    hadMember(new_whole, part_ent, str(key))
     
     return new_whole
 
@@ -222,5 +235,5 @@ def desc(desc, enabled=False):
         .replace("__", "_")
     )
 
-    stats(join(TEMP_BASE, get_varname(slug)), "provn svg", True, False)
+    stats(join(TEMP_BASE, get_varname(slug, sep="_")), "provn svg", True, False)
     TEMP = ptemp + TEMP
