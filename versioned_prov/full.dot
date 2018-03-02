@@ -273,7 +273,8 @@ T7"]
 d[0]
 T10"]
 "http://example.org/d_ac0" -> "http://example.org/access1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/d_ac0" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/d_ac0" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+T10"]
 "http://example.org/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="http://example.org/3"]
 "-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>

@@ -180,7 +180,7 @@ used(access1, d, -)
 used(access1, 0, -)
 usedPart(u9; access1, m, "0", d, T10)
 wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9)
+referenceDerivedFrom(d_ac0, m, access1, g9, u9, T10)
 ```
 
 ![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/access.png)
@@ -293,7 +293,7 @@ used(access1, d, -)
 used(access1, 0, -)
 usedPart(u9; access1, m, "0", d, T10)
 wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9)
+referenceDerivedFrom(d_ac0, m, access1, g9, u9, T10)
 
 // part assign
 entity(3, [value="3", type="literal", generatedAtTime="T10"])
