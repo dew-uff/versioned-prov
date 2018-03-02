@@ -1,21 +1,20 @@
 //previous
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
-
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(list0, [value="10000", type="item", label="m"])
+entity(list1, [value="10001", type="item", label="m + 1"])
+entity(list2, [value="10000", type="item", label="m"])
+hadMember(d, list0)
+hadMember(d, list1)
+hadMember(d, list2)
 
 
 //access
-entity(n0, [value="0", type="literal"])
-entity(d_ac0_1, [value="10000", type="access"])
+entity(0, [value="0", type="literal"])
+entity(d_ac0, [value="10000", type="access", label="d[0]"])
 
 activity(access1, [type="access"])
-used(access1, d_1, -)
-used(access1, n0, -)
-used(u15; access1, d0_1, -)
-wasGeneratedBy(g15; d_ac0_1, access1, -)
-wasDerivedFrom(d_ac0_1, d0_1, access1, g15, u15)
+used(access1, d, -)
+used(access1, 0, -)
+used(u15; access1, list0, -)
+wasGeneratedBy(g15; d_ac0, access1, -)
+wasDerivedFrom(d_ac0, list0, access1, g15, u15)

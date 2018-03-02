@@ -16,12 +16,12 @@ int   # names
 ```
 
 ```provn
-entity(n1, [value="1", type="literal"])
-entity(a1, [value="'a'", type="literal"])
-entity(a2, [value="b'a'", type="literal"])
-entity(true1, [prov:value="True", type="constant"])
-entity(int1, [prov:value="int", type="name"])
-entity(ellipsis1, [prov:value="Ellipsis", type="constant"])
+entity(1, [value="1", type="literal"])
+entity(a, [value="'a'", type="literal"])
+entity(a#2, [value="b'a'", type="literal"])
+entity(True, [prov:value="True", type="constant"])
+entity(int, [prov:value="<class 'int'>", type="name", label="int"])
+entity(ellipsis, [prov:value="Ellipsis", type="constant", label="..."])
 ```
 
 ![Plain PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/names.png)
@@ -37,13 +37,13 @@ m = 10000
 ```
 
 ```provn
-entity(n10000, [value="10000", type="literal"])
-entity(m1, [value="10000", type="name"])
+entity(10000, [value="10000", type="literal"])
+entity(m, [value="10000", type="name", label="m"])
 
 activity(assign1, [type="assign"])
-used(u1; assign1, n10000, -)
-wasGeneratedBy(g1; m1, assign1, -)
-wasDerivedFrom(m1, n10000, assign1, g1, u1)
+used(u1; assign1, 10000, -)
+wasGeneratedBy(g1; m, assign1, -)
+wasDerivedFrom(m, 10000, assign1, g1, u1)
 ```
 
 ![Plain PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/assign.png)
@@ -57,16 +57,15 @@ m + 1
 ```
 
 ```provn
-entity(m1, [value="10000", type="name"])
-entity(n1, [value="1", type="literal"])
-entity(sum1, [value="10001", type="sum"])
+entity(1, [value="1", type="literal"])
+entity(sum, [value="10001", type="sum", label="m + 1"])
 
-activity(add1, [type="add"])
-used(u2; add1, m1, -)
-used(u3; add1, n1, -)
-wasGeneratedBy(g2; sum1, add1, -)
-wasDerivedFrom(sum1, m1, add1, g2, u2)
-wasDerivedFrom(sum1, n1, add1, g3, u3)
+activity(+, [type="add"])
+used(u2; +, m, -)
+used(u3; +, 1, -)
+wasGeneratedBy(g2; sum, +, -)
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
 ![Plain PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/operation.png)
@@ -85,29 +84,26 @@ For simplicity, in the case of the definition of matrices, we use a single `acti
 ```
 
 ```provn
-entity(m1, [value="10000", type="name"])
-entity(sum1, [value="10001", type="sum"])
+entity(list, [value="[10000, 10001, 10000]", type="Dictionary", label="[m, m + 1, m]"])
+entity(list0, [value="10000", type="item", label="m"])
+entity(list1, [value="10001", type="item", label="m + 1"])
+entity(list2, [value="10000", type="item", label="m"])
 
-entity(list_1, [value="[10000, 10001, 10000]", type="Dictionary"])
-entity(list0_1, [value="10000", type="number"])
-entity(list1_1, [value="10001", type="number"])
-entity(list2_1, [value="10000", type="number"])
-
-hadMember(list_1, list0_1)
-hadMember(list_1, list1_1)
-hadMember(list_1, list2_1)
+hadMember(list, list0)
+hadMember(list, list1)
+hadMember(list, list2)
 
 activity(definelist1, [type="definelist"])
-used(u4; definelist1, m1, -)
-wasGeneratedBy(g4; list0_1, definelist1, -)
-wasDerivedFrom(list0_1, m1, definelist1, g4, u4)
-used(u5; definelist1, sum1, -)
-wasGeneratedBy(g5; list1_1, definelist1, -)
-wasDerivedFrom(list1_1, sum1, definelist1, g5, u5)
-used(u6; definelist1, m1, -)
-wasGeneratedBy(g6; list2_1, definelist1, -)
-wasDerivedFrom(list2_1, m1, definelist1, g6, u6)
-wasGeneratedBy(list_1, definelist1, -)
+used(u4; definelist1, m, -)
+wasGeneratedBy(g4; list0, definelist1, -)
+wasDerivedFrom(list0, m, definelist1, g4, u4)
+used(u5; definelist1, sum, -)
+wasGeneratedBy(g5; list1, definelist1, -)
+wasDerivedFrom(list1, sum, definelist1, g5, u5)
+used(u6; definelist1, m, -)
+wasGeneratedBy(g6; list2, definelist1, -)
+wasDerivedFrom(list2, m, definelist1, g6, u6)
+wasGeneratedBy(list, definelist1, -)
 ```
 
 ![Plain PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/list.png)
@@ -121,40 +117,15 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-// old entities from previous figure
-entity(list_1, [value="[10000, 10001, 10000]", type="list"])
-entity(list0_1, [value="10000", type="number"])
-entity(list1_1, [value="10001", type="number"])
-entity(list2_1, [value="10000", type="number"])
-
-hadMember(list_1, list0_1)
-hadMember(list_1, list1_1)
-hadMember(list_1, list2_1)
-
-// new entities
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
-
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
-
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+hadMember(d, list0)
+hadMember(d, list1)
+hadMember(d, list2)
 
 activity(assign2, [type="assign"])
-used(u7; assign2, list_1, -)
-wasGeneratedBy(g7; d_1, assign2, -)
-wasDerivedFrom(d_1, list_1, assign2, g7, u7)
-used(u8; assign2, list0_1, -)
-wasGeneratedBy(g8; d0_1, assign2, -)
-wasDerivedFrom(d0_1, list0_1, assign2, g8, u8)
-used(u9; assign2, list1_1, -)
-wasGeneratedBy(g9; d1_1, assign2, -)
-wasDerivedFrom(d1_1, list1_1, assign2, g9, u9)
-used(u10; assign2, list2_1, -)
-wasGeneratedBy(g10; d2_1, assign2, -)
-wasDerivedFrom(d2_1, list2_1, assign2, g10, u10)
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+wasDerivedFrom(d, list, assign2, g7, u7)
 ```
 
 ![Plain PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/list_assign.png)
@@ -165,40 +136,16 @@ The same mapping is valid for assignments to names that represent dictionaries.
 x = d
 ```
 
-```provn
-// old entities from previous figure
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
+```provnentity(x, [value="[10000, 10001, 10000]", type="name"])
 
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
-
-// new entities
-entity(x_1, [value="[10000, 10001, 10000]", type="name"])
-entity(x0_1, [value="10000", type="number"])
-entity(x1_1, [value="10001", type="number"])
-entity(x2_1, [value="10000", type="number"])
-
-hadMember(x_1, x0_1)
-hadMember(x_1, x1_1)
-hadMember(x_1, x2_1)
+hadMember(x, list0)
+hadMember(x, list1)
+hadMember(x, list2)
 
 activity(assign3, [type="assign"])
-used(u11; assign3, d_1, -)
-wasGeneratedBy(g11; x_1, assign3, -)
-wasDerivedFrom(x_1, d_1, assign3, g11, u11)
-used(u12; assign3, d0_1, -)
-wasGeneratedBy(g12; x0_1, assign3, -)
-wasDerivedFrom(x0_1, d0_1, assign3, g12, u12)
-used(u13; assign3, d1_1, -)
-wasGeneratedBy(g12; x1_1, assign3, -)
-wasDerivedFrom(x1_1, d1_1, assign3, g13, u13)
-used(u14; assign3, d2_1, -)
-wasGeneratedBy(g14; x2_1, assign3, -)
-wasDerivedFrom(x2_1, d2_1, assign3, g14, u14)
+used(u11; assign3, d, -)
+wasGeneratedBy(g11; x, assign3, -)
+wasDerivedFrom(x, d, assign3, g11, u11)
 ```
 
 ![Plain PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/list_assign2.png)
@@ -214,12 +161,11 @@ len(d)
 ```
 
 ```provn
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(len_d1, [value="3", type="eval"])
+entity(len_d, [value="3", type="eval", label="len(d)"])
 
-activity(len1, [type="len"])
-used(len1, d_1, -)
-wasGeneratedBy(len_d1, len1, -)
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
 ```
 
 ![Plain PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/call.png)
@@ -233,27 +179,15 @@ d[0]
 ```
 
 ```provn
-//previous
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
-
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
-
-
-//access
-entity(n0, [value="0", type="literal"])
-entity(d_ac0_1, [value="10000", type="access"])
+entity(0, [value="0", type="literal"])
+entity(d_ac0, [value="10000", type="access", label="d[0]"])
 
 activity(access1, [type="access"])
-used(access1, d_1, -)
-used(access1, n0, -)
-used(u15; access1, d0_1, -)
-wasGeneratedBy(g15; d_ac0_1, access1, -)
-wasDerivedFrom(d_ac0_1, d0_1, access1, g15, u15)
+used(access1, d, -)
+used(access1, 0, -)
+used(u15; access1, list0, -)
+wasGeneratedBy(g15; d_ac0, access1, -)
+wasDerivedFrom(d_ac0, list0, access1, g15, u15)
 ```
 
 ![Plain PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/access.png)
@@ -271,53 +205,29 @@ d[1] = 3
 ```
 
 ```provn
-//previous
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
+entity(1#2, [value="1", type="literal"])
+entity(3, [value="3", type="literal"])
+entity(list1#2, [value="3", type="access", label="d[1]"])
 
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
+entity(d#2, [value="[10000, 3, 10000]", type="name", label="d"])
+hadMember(d#2, list0)
+hadMember(d#2, list1#2)
+hadMember(d#2, list2)
 
-entity(x_1, [value="[10000, 10001, 10000]", type="name"])
-entity(x0_1, [value="10000", type="number"])
-entity(x1_1, [value="10001", type="number"])
-entity(x2_1, [value="10000", type="number"])
-
-hadMember(x_1, x0_1)
-hadMember(x_1, x1_1)
-hadMember(x_1, x2_1)
-
-
-//part assign
-entity(n1, [value="1", type="literal"])
-entity(n3, [value="3", type="literal"])
-entity(d1_2, [value="3", type="access"])
-entity(x1_2, [value="3", type="access"])
-
-entity(d_2, [value="[10000, 3, 10000]", type="name"])
-hadMember(d_2, d0_1)
-hadMember(d_2, d1_2)
-hadMember(d_2, d2_1)
-
-entity(x_2, [value="[10000, 3, 10000]", type="name"])
-hadMember(x_2, x0_1)
-hadMember(x_2, x1_2)
-hadMember(x_2, x2_1)
+entity(x#2, [value="[10000, 3, 10000]", type="name", label="x"])
+hadMember(x#2, list0)
+hadMember(x#2, list1#2)
+hadMember(x#2, list2)
 
 activity(assign4, [type="assign"])
-used(assign4, d_1, -)
-used(assign4, x_1, -)
-used(assign4, n1, -)
-used(u16; assign4, n3, -)
-wasGeneratedBy(d_2, assign4, -)
-wasGeneratedBy(x_2, assign4, -)
-wasGeneratedBy(g16; d1_2, assign4, -)
-wasDerivedFrom(d1_2, n3, assign4, g16, u16)
-wasGeneratedBy(g17; x1_2, assign4, -)
-wasDerivedFrom(x1_2, n3, assign4, g17, u16)
+used(assign4, d, -)
+used(assign4, x, -)
+used(assign4, 1#2, -)
+used(u16; assign4, 3, -)
+wasGeneratedBy(d#2, assign4, -)
+wasGeneratedBy(x#2, assign4, -)
+wasGeneratedBy(g16; list1#2, assign4, -)
+wasDerivedFrom(list1#2, 3, assign4, g16, u16)
 ```
 
 ![Plain PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/part_assign.png)
@@ -339,140 +249,114 @@ The full mapping for the previous code is presented below:
 
 ```provn
 // assignment
-entity(n10000, [value="10000", type="literal"])
-entity(m1, [value="10000", type="name"])
+entity(10000, [value="10000", type="literal"])
+entity(m, [value="10000", type="name", label="m"])
 
 activity(assign1, [type="assign"])
-used(u1; assign1, n10000, -)
-wasGeneratedBy(g1; m1, assign1, -)
-wasDerivedFrom(m1, n10000, assign1, g1, u1)
+used(u1; assign1, 10000, -)
+wasGeneratedBy(g1; m, assign1, -)
+wasDerivedFrom(m, 10000, assign1, g1, u1)
 
 // operation
-entity(n1, [value="1", type="literal"])
-entity(sum1, [value="10001", type="sum"])
+entity(1, [value="1", type="literal"])
+entity(sum, [value="10001", type="sum", label="m + 1"])
 
-activity(add1, [type="add"])
-used(u2; add1, m1, -)
-used(u3; add1, n1, -)
-wasGeneratedBy(g2; sum1, add1, -)
-wasDerivedFrom(sum1, m1, add1, g2, u2)
-wasDerivedFrom(sum1, n1, add1, g3, u3)
+activity(+, [type="add"])
+used(u2; +, m, -)
+used(u3; +, 1, -)
+wasGeneratedBy(g2; sum, +, -)
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g3, u3)
 
 // list definition
-entity(list_1, [value="[10000, 10001, 10000]", type="Dictionary"])
-entity(list0_1, [value="10000", type="number"])
-entity(list1_1, [value="10001", type="number"])
-entity(list2_1, [value="10000", type="number"])
+entity(list, [value="[10000, 10001, 10000]", type="Dictionary", label="[m, m + 1, m]"])
+entity(list0, [value="10000", type="item", label="m"])
+entity(list1, [value="10001", type="item", label="m + 1"])
+entity(list2, [value="10000", type="item", label="m"])
 
-hadMember(list_1, list0_1)
-hadMember(list_1, list1_1)
-hadMember(list_1, list2_1)
+hadMember(list, list0)
+hadMember(list, list1)
+hadMember(list, list2)
 
 activity(definelist1, [type="definelist"])
-used(u4; definelist1, m1, -)
-wasGeneratedBy(g4; list0_1, definelist1, -)
-wasDerivedFrom(list0_1, m1, definelist1, g4, u4)
-used(u5; definelist1, sum1, -)
-wasGeneratedBy(g5; list1_1, definelist1, -)
-wasDerivedFrom(list1_1, sum1, definelist1, g5, u5)
-used(u6; definelist1, m1, -)
-wasGeneratedBy(g6; list2_1, definelist1, -)
-wasDerivedFrom(list2_1, m1, definelist1, g6, u6)
-wasGeneratedBy(list_1, definelist1, -)
+used(u4; definelist1, m, -)
+wasGeneratedBy(g4; list0, definelist1, -)
+wasDerivedFrom(list0, m, definelist1, g4, u4)
+used(u5; definelist1, sum, -)
+wasGeneratedBy(g5; list1, definelist1, -)
+wasDerivedFrom(list1, sum, definelist1, g5, u5)
+used(u6; definelist1, m, -)
+wasGeneratedBy(g6; list2, definelist1, -)
+wasDerivedFrom(list2, m, definelist1, g6, u6)
+wasGeneratedBy(list, definelist1, -)
 
 // list assignment
-entity(d_1, [value="[10000, 10001, 10000]", type="name"])
-entity(d0_1, [value="10000", type="number"])
-entity(d1_1, [value="10001", type="number"])
-entity(d2_1, [value="10000", type="number"])
-
-hadMember(d_1, d0_1)
-hadMember(d_1, d1_1)
-hadMember(d_1, d2_1)
-
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+hadMember(d, list0)
+hadMember(d, list1)
+hadMember(d, list2)
 
 activity(assign2, [type="assign"])
-used(u7; assign2, list_1, -)
-wasGeneratedBy(g7; d_1, assign2, -)
-wasDerivedFrom(d_1, list_1, assign2, g7, u7)
-used(u8; assign2, list0_1, -)
-wasGeneratedBy(g8; d0_1, assign2, -)
-wasDerivedFrom(d0_1, list0_1, assign2, g8, u8)
-used(u9; assign2, list1_1, -)
-wasGeneratedBy(g9; d1_1, assign2, -)
-wasDerivedFrom(d1_1, list1_1, assign2, g9, u9)
-used(u10; assign2, list2_1, -)
-wasGeneratedBy(g10; d2_1, assign2, -)
-wasDerivedFrom(d2_1, list2_1, assign2, g10, u10)
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+wasDerivedFrom(d, list, assign2, g7, u7)
+
 
 // list assignment 2
-entity(x_1, [value="[10000, 10001, 10000]", type="name"])
-entity(x0_1, [value="10000", type="number"])
-entity(x1_1, [value="10001", type="number"])
-entity(x2_1, [value="10000", type="number"])
+entity(x, [value="[10000, 10001, 10000]", type="name"])
 
-hadMember(x_1, x0_1)
-hadMember(x_1, x1_1)
-hadMember(x_1, x2_1)
+hadMember(x, list0)
+hadMember(x, list1)
+hadMember(x, list2)
 
 activity(assign3, [type="assign"])
-used(u11; assign3, d_1, -)
-wasGeneratedBy(g11; x_1, assign3, -)
-wasDerivedFrom(x_1, d_1, assign3, g11, u11)
-used(u12; assign3, d0_1, -)
-wasGeneratedBy(g12; x0_1, assign3, -)
-wasDerivedFrom(x0_1, d0_1, assign3, g12, u12)
-used(u13; assign3, d1_1, -)
-wasGeneratedBy(g12; x1_1, assign3, -)
-wasDerivedFrom(x1_1, d1_1, assign3, g13, u13)
-used(u14; assign3, d2_1, -)
-wasGeneratedBy(g14; x2_1, assign3, -)
-wasDerivedFrom(x2_1, d2_1, assign3, g14, u14)
+used(u11; assign3, d, -)
+wasGeneratedBy(g11; x, assign3, -)
+wasDerivedFrom(x, d, assign3, g11, u11)
 
 // call
-entity(len_d1, [value="3", type="eval"])
+entity(len_d, [value="3", type="eval", label="len(d)"])
 
-activity(len1, [type="len"])
-used(len1, d_1, -)
-wasGeneratedBy(len_d1, len1, -)
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(n0, [value="0", type="literal"])
-entity(d_ac0_1, [value="10000", type="access"])
+entity(0, [value="0", type="literal"])
+entity(d_ac0, [value="10000", type="access", label="d[0]"])
 
 activity(access1, [type="access"])
-used(access1, d_1, -)
-used(access1, n0, -)
-used(u15; access1, d0_1, -)
-wasGeneratedBy(g15; d_ac0_1, access1, -)
-wasDerivedFrom(d_ac0_1, d0_1, access1, g15, u15)
+used(access1, d, -)
+used(access1, 0, -)
+used(u15; access1, list0, -)
+wasGeneratedBy(g15; d_ac0, access1, -)
+wasDerivedFrom(d_ac0, list0, access1, g15, u15)
 
 // part assignment
-entity(n3, [value="3", type="literal"])
-entity(d1_2, [value="3", type="access"])
-entity(x1_2, [value="3", type="access"])
+entity(1#2, [value="1", type="literal"])
+entity(3, [value="3", type="literal"])
+entity(list1#2, [value="3", type="access", label="d[1]"])
 
-entity(d_2, [value="[10000, 3, 10000]", type="name"])
-hadMember(d_2, d0_1)
-hadMember(d_2, d1_2)
-hadMember(d_2, d2_1)
+entity(d#2, [value="[10000, 3, 10000]", type="name", label="d"])
+hadMember(d#2, list0)
+hadMember(d#2, list1#2)
+hadMember(d#2, list2)
 
-entity(x_2, [value="[10000, 3, 10000]", type="name"])
-hadMember(x_2, x0_1)
-hadMember(x_2, x1_2)
-hadMember(x_2, x2_1)
+entity(x#2, [value="[10000, 3, 10000]", type="name", label="x"])
+hadMember(x#2, list0)
+hadMember(x#2, list1#2)
+hadMember(x#2, list2)
 
 activity(assign4, [type="assign"])
-used(assign4, d_1, -)
-used(assign4, x_1, -)
-used(assign4, n1, -)
-used(u16; assign4, n3, -)
-wasGeneratedBy(d_2, assign4, -)
-wasGeneratedBy(x_2, assign4, -)
-wasGeneratedBy(g16; d1_2, assign4, -)
-wasDerivedFrom(d1_2, n3, assign4, g16, u16)
-wasGeneratedBy(g17; x1_2, assign4, -)
-wasDerivedFrom(x1_2, n3, assign4, g17, u16)
+used(assign4, d, -)
+used(assign4, x, -)
+used(assign4, 1#2, -)
+used(u16; assign4, 3, -)
+wasGeneratedBy(d#2, assign4, -)
+wasGeneratedBy(x#2, assign4, -)
+wasGeneratedBy(g16; list1#2, assign4, -)
+wasDerivedFrom(list1#2, 3, assign4, g16, u16)
+
 ```
 
 ![Plain PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/full.png)
