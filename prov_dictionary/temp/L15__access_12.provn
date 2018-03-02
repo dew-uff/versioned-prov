@@ -1,0 +1,7 @@
+entity(disti_aj#13, [value="4", type="access", label="disti[j]"])
+activity(access60, [type="access"])
+used(u117; access60, list02, -)
+wasDerivedFrom(disti_aj#13, list02, access60, g105, u117)
+wasGeneratedBy(g105; disti_aj#13, access60, -)
+used(access60, disti#5, -)
+used(access60, j#12, -)

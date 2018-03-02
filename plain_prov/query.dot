@@ -1,88 +1,6 @@
 digraph "PROV" { size="16,12"; rankdir="RL";
-"http://example.org/ikj#12" -> "http://example.org/sum#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/list12" [fillcolor="#FFFC87",color="#808080",style="filled",label="list12",URL="http://example.org/list12"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;2&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;item&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;2&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs0" -> "http://example.org/list12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;2&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti_ak#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_ak#12",URL="http://example.org/disti_ak#12"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;access&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;disti[k]&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs2" -> "http://example.org/disti_ak#12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#12" -> "http://example.org/disti_ak#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#12" -> "http://example.org/distk_aj#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/list12" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/list01" [fillcolor="#FFFC87",color="#808080",style="filled",label="list01",URL="http://example.org/list01"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;item&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs3" -> "http://example.org/list01" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ikj#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#12",URL="http://example.org/ikj#12"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;3&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;ikj&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs4" -> "http://example.org/ikj#12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti_aj#14" -> "http://example.org/ikj#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/list01" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/disti_aj#14" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#14",URL="http://example.org/disti_aj#14"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&quot;3&quot;</TD>
@@ -96,26 +14,23 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">&quot;disti[j]&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/disti_aj#14" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result_a02" -> "http://example.org/disti_aj#14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/distk_aj#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk_aj#12",URL="http://example.org/distk_aj#12"]
-"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs0" -> "http://example.org/disti_aj#14" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum#12" -> "http://example.org/disti_ak#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&quot;2&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;access&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;distk[j]&quot;</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs6" -> "http://example.org/distk_aj#12" [color="gray",style="dashed",arrowhead="none"]
+"-attrs1" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/distk_aj#12" -> "http://example.org/list12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/result_a02" [fillcolor="#FFFC87",color="#808080",style="filled",label="result_a02",URL="http://example.org/result_a02"]
-"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&quot;3&quot;</TD>
@@ -129,9 +44,108 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">&quot;result[0][2]&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs7" -> "http://example.org/result_a02" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum#12",URL="http://example.org/sum#12"]
+"-attrs2" -> "http://example.org/result_a02" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum#12" -> "http://example.org/distk_aj#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list12" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/disti_ak#12" -> "http://example.org/list01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list12" [fillcolor="#FFFC87",color="#808080",style="filled",label="list12",URL="http://example.org/list12"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;item&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/list12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ikj#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#12",URL="http://example.org/ikj#12"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;ikj&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/ikj#12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti_ak#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_ak#12",URL="http://example.org/disti_ak#12"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;disti[k]&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/disti_ak#12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list01" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/result_a02" -> "http://example.org/disti_aj#14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/distk_aj#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk_aj#12",URL="http://example.org/distk_aj#12"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;distk[j]&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/distk_aj#12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ikj#12" -> "http://example.org/sum#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list01" [fillcolor="#FFFC87",color="#808080",style="filled",label="list01",URL="http://example.org/list01"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;item&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;1&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs8" -> "http://example.org/list01" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti_aj#14" -> "http://example.org/ikj#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#12" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum#12",URL="http://example.org/sum#12"]
+"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&quot;3&quot;</TD>
@@ -145,19 +159,5 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">&quot;disti[k] + distk[j]&quot;</TD>
 	</TR>
 </TABLE>>]
-"-attrs8" -> "http://example.org/sum#12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/distk_aj#12" -> "http://example.org/list12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/disti_ak#12" -> "http://example.org/list01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
-"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs9" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"-attrs9" -> "http://example.org/sum#12" [color="gray",style="dashed",arrowhead="none"]
 }

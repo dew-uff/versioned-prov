@@ -357,7 +357,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [m, 0, 2], [2, m, 0]]&quot;</TD>
+	    <TD align="left">&quot;dist&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs21" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
@@ -387,7 +387,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [m, 0, 2], [2, m, 0]]&quot;</TD>
+	    <TD align="left">&quot;result&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs23" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
@@ -564,10 +564,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/k" [fillcolor="#FFFC87",color="#808080",style="filled",label="k",URL="http://example.org/k"]
 "-attrs36" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -654,10 +650,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/i" [fillcolor="#FFFC87",color="#808080",style="filled",label="i",URL="http://example.org/i"]
 "-attrs42" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -743,10 +735,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/disti" -> "http://example.org/assign7" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/j" [fillcolor="#FFFC87",color="#808080",style="filled",label="j",URL="http://example.org/j"]
 "-attrs48" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
@@ -835,7 +823,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1006,7 +994,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1177,7 +1165,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1347,10 +1335,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#4",URL="http://example.org/j#4"]
 "-attrs90" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -1438,7 +1422,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1609,7 +1593,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1780,7 +1764,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -1950,10 +1934,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#7",URL="http://example.org/j#7"]
 "-attrs132" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -2041,7 +2021,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -2212,7 +2192,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -2474,7 +2454,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -2644,10 +2624,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/i#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#4",URL="http://example.org/i#4"]
 "-attrs179" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -2733,10 +2709,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/disti#5" -> "http://example.org/assign21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/j#10" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#10",URL="http://example.org/j#10"]
 "-attrs185" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
@@ -2825,7 +2797,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -2996,7 +2968,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -3167,7 +3139,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -3428,10 +3400,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#13" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#13",URL="http://example.org/j#13"]
 "-attrs232" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -3519,7 +3487,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -3690,7 +3658,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -3861,7 +3829,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -4031,10 +3999,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#16" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#16",URL="http://example.org/j#16"]
 "-attrs274" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -4122,7 +4086,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -4293,7 +4257,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -4464,7 +4428,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -4634,10 +4598,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/i#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#7",URL="http://example.org/i#7"]
 "-attrs316" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -4723,10 +4683,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/disti#9" -> "http://example.org/assign35" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/j#19" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#19",URL="http://example.org/j#19"]
 "-attrs322" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
@@ -4815,7 +4771,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -4986,7 +4942,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -5157,7 +5113,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -5327,10 +5283,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#22" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#22",URL="http://example.org/j#22"]
 "-attrs364" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -5418,7 +5370,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -5680,7 +5632,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -5851,7 +5803,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -6021,10 +5973,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/j#25" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#25",URL="http://example.org/j#25"]
 "-attrs411" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
-	</TR>
-	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">&quot;name&quot;</TD>
 	</TR>
@@ -6112,7 +6060,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -6283,7 +6231,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -6454,7 +6402,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">&quot;operation&quot;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>

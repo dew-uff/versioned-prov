@@ -70,12 +70,13 @@ def get_varname(name, sep="#", show1=False):
     return "{}{}".format(name, extra)
 
 
-def entity(name, value, type_, label=None, attrs={}):
+def entity(name, value, type_, label, *, attrs={}):
     varname = get_varname(name)
     if label == value and type_ in ("literal", "constant"):
         label = None
+    value = 'value="{}", '.format(value) if value else ""
     label = ', label="{}"'.format(label) if label else ""
-    add('entity({}, [value="{}", type="{}"{}])'.format(varname, value, type_, label))
+    add('entity({}, [{}type="{}"{}])'.format(varname, value, type_, label))
     return varname
 
 def activity(name, derived=[], used=[], generated=[], label=None):

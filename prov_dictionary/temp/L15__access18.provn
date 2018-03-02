@@ -1,7 +1,0 @@
-entity(disti_aj20, [value="0", type="access"])
-activity(access95, [type="access"])
-used(u178; access95, list00_0, -)
-wasDerivedFrom(disti_aj20, list00_0, access95, g159, u178)
-wasGeneratedBy(g159; disti_aj20, access95, -)
-used(access95, disti8, -)
-used(access95, j18, -)

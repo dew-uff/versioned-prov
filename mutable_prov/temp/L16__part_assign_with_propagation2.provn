@@ -1,8 +1,0 @@
-entity(disti_aj24, [value="disti[j]", type="access"])
-derivedByInsertion(disti_aj24, row1, {("0", vsum_21)}, 2018-02-26T14:42:02.150059)
-accessed(disti_aj24, vsum_21, 2018-02-26T14:42:02.150059)
-activity(assign40, [type="assign"])
-used(u84; assign40, ikj21, -)
-wasDerivedFrom(disti_aj24, ikj21, assign40, g62, u84)
-wasGeneratedBy(g62; disti_aj24, assign40, -)
-used(assign40, disti7, -)

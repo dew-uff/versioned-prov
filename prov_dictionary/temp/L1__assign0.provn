@@ -1,6 +1,0 @@
-entity(n10000, [value="10000", type="literal"])
-entity(m0, [value="10000", type="name"])
-activity(assign0, [type="assign"])
-used(u0; assign0, n10000, -)
-wasDerivedFrom(m0, n10000, assign0, g0, u0)
-wasGeneratedBy(g0; m0, assign0, -)

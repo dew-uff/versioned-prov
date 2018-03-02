@@ -1,0 +1,51 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/10000" [fillcolor="#FFFC87",color="#808080",style="filled",label="10000",URL="http://example.org/10000"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/v10000" [fillcolor="#32CD32",color="#808080",style="filled",label="v10000",URL="http://example.org/v10000"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">&quot;10000&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/10000" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+2018-03-02T19:03:29.977191"]
+"http://example.org/v10000" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+2018-03-02T19:03:29.977191"]
+"http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;name&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;m&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign1",URL="http://example.org/assign1"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;assign&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/m" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/m" -> "http://example.org/v10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
+2018-03-02T19:03:29.977191"]
+}

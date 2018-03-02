@@ -318,7 +318,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [m, 0, 2], [2, m, 0]]&quot;</TD>
+	    <TD align="left">&quot;dist&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs18" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
@@ -348,7 +348,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [m, 0, 2], [2, m, 0]]&quot;</TD>
+	    <TD align="left">&quot;result&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs20" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]

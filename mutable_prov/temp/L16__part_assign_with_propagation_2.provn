@@ -1,0 +1,8 @@
+entity(disti_aj#14, [type="access", label="disti[j]"])
+derivedByInsertion(disti_aj#14, row0, {("2", vsum#12)}, 2018-03-02T19:03:35.905097)
+accessed(disti_aj#14, vsum#12, 2018-03-02T19:03:35.905097)
+activity(assign25, [type="assign"])
+used(u49; assign25, ikj#12, -)
+wasDerivedFrom(disti_aj#14, ikj#12, assign25, g37, u49)
+wasGeneratedBy(g37; disti_aj#14, assign25, -)
+used(assign25, disti#4, -)

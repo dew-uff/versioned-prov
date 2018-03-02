@@ -1,0 +1,6 @@
+entity(k#2, [value="1", type="name", label="k"])
+activity(access45, [type="access"])
+used(u91; access45, range_nodes1, -)
+wasDerivedFrom(k#2, range_nodes1, access45, g82, u91)
+wasGeneratedBy(g82; k#2, access45, -)
+used(access45, indexes, -)
