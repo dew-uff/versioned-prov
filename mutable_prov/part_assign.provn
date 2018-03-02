@@ -1,36 +1,36 @@
 //previous
-value(vlist1, [repr="[10000, 10001, 10000]"])
+value(vlist, [repr="[10000, 10001, 10000]"])
 value(v10000, [repr="10000"])
 value(v10001, [repr="10001"])
 derivedByInsertion(
-    -, // list1
-    vlist1,
+    -, // list
+    vlist,
     {("0", v10000), ("1", v10001), ("2", v10000)},
     T5
 )
-entity(d1, [value="d", type="name"])
-accessed(d1, vlist1, T6)
+entity(d, [label="d", type="name"])
+accessed(d, vlist, T6)
 
 
 //part assign
 
-entity(n3, [value="3", type="literal"])
+entity(3, [label="3", type="literal"])
 value(v3, [repr="3"])
-defined(n3, v3, T10)
-wasDefinedBy(v3, n3, T10)
+defined(3, v3, T10)
+wasDefinedBy(v3, 3, T10)
 
-entity(n1, [value="1", type="literal"])
-value(v1, [repr="1"])
-defined(n1, v1, T11)
-wasDefinedBy(v1, n1, T11)
+entity(1#2, [label="1", type="literal"])
+value(v1#2, [repr="1"])
+defined(1#2, v1#2, T11)
+wasDefinedBy(v1#2, 1#2, T11)
 
-entity(d_ac1_1, [value="d[1]", type="access"])
-accessed(d_ac1_1, v3, T12)
-derivedByInsertion(d_ac1_1, vlist1, {("1", v3)}, T12)
+entity(d_ac1, [value="d[1]", type="access"])
+accessed(d_ac1, v3, T12)
+derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
 
 activity(assign4, [type="assign"])
-used(assign4, d1, -)
-used(assign4, n1, -)
-used(u10; assign4, n3, -)
-wasGeneratedBy(g10; d_ac1_1, assign4, -)
-wasDerivedFrom(d_ac1_1, n3, assign4, g10, u10)
+used(assign4, d, -)
+used(assign4, 1#2, -)
+used(u10; assign4, 3, -)
+wasGeneratedBy(g10; d_ac1, assign4, -)
+wasDerivedFrom(d_ac1, 3, assign4, g10, u10)

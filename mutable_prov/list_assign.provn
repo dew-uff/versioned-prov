@@ -1,14 +1,14 @@
 // old entities from previous figure
-entity(list1, [value="[m, m + 1, m]", type="list"])
-value(vlist1, [repr="[10000, 10001, 10000]"])
-defined(list1, vlist1, T5)
-wasDefinedBy(vlist1, list1, T5)
+entity(list, [label="[m, m + 1, m]", type="list"])
+value(vlist, [repr="[10000, 10001, 10000]"])
+defined(list, vlist, T5)
+wasDefinedBy(vlist, list, T5)
 
 // new entities
-entity(d1, [value="d", type="name"])
-accessed(d1, vlist1, T6)
+entity(d, [label="d", type="name"])
+accessed(d, vlist, T6)
 
 activity(assign2, [type="assign"])
-used(u7; assign2, list1, -)
-wasGeneratedBy(g7; d1, assign2, -)
-wasDerivedFrom(d1, list1, assign2, g7, u7)
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+wasDerivedFrom(d, list, assign2, g7, u7)

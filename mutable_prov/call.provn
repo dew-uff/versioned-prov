@@ -1,13 +1,13 @@
-value(vlist1, [repr="[10000, 10001, 10000]"])
-entity(d1, [value="d", type="name"])
-accessed(d1, vlist1, T6)
+value(vlist, [repr="[10000, 10001, 10000]"])
+entity(d, [label="d", type="name"])
+accessed(d, vlist, T6)
 
 
-entity(len_d1, [value="len(d)", type="eval"])
+entity(len_d, [label="len(d)", type="eval"])
 value(v3, [repr="3"])
-defined(len_d1, v3, T8)
-wasDefinedBy(v3, len_d1, T8)
+defined(len_d, v3, T8)
+wasDefinedBy(v3, len_d, T8)
 
-activity(len1, [type="len"])
-used(len1, d1, -)
-wasGeneratedBy(len_d1, len1, -)
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
