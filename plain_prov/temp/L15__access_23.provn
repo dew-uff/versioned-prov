@@ -1,4 +1,4 @@
-entity(disti_aj#26, [value="0", type="access", label="disti[j]"])
+entity(disti_aj#26, [value="0",type="access",label="disti[j]"])
 activity(access114, [type="access"])
 used(u211; access114, list11, -)
 wasDerivedFrom(disti_aj#26, list11, access114, g188, u211)

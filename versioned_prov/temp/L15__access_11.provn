@@ -1,0 +1,7 @@
+entity(disti_aj#12, [value="1",type="access",label="disti[j]",generatedAtTime="2018-03-03T20:04:23.604071"])
+activity(access56, [type="access"])
+usedPart(u101; access56, 1, 2018-03-03T20:04:23.604071, disti#4, 1)
+referenceDerivedFrom(disti_aj#12, 1, access56, g90, u101, 2018-03-03T20:04:23.604071)
+wasGeneratedBy(g90; disti_aj#12, access56, -)
+used(access56, disti#4, -)
+used(access56, j#11, -)

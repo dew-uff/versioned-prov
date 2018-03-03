@@ -75,17 +75,30 @@ def get_varname(name, sep="#", show1=False):
 
 def entity(name, value, type_, label, *, attrs={}):
     varname = get_varname(name)
-    if label == value and type_ in ("literal", "constant"):
-        label = None
-    value = 'value="{}", '.format(value) if value else ""
-    label = ', label="{}"'.format(label) if label else ""
-    add('entity({}, [{}type="{}"{}])'.format(varname, value, type_, label))
+    new_attrs = {}
+    for key, value in [("value", value), ("type", type_), ("label", label)]:
+        if value:
+            new_attrs[key] = value
+    for key, value in attrs.items():
+        new_attrs[key] = value
+
+    add('entity({}, [{}])'.format(varname, ",".join(
+        '{}="{}"'.format(key, value)
+        for key, value in new_attrs.items()
+    )))
     return varname
 
 def version(name, time):
     varname = get_varname(name + "_v", sep="", show1=True)
     add('entity({}, [generatedAtTime="{}", type="Version"])'.format(varname, time))
     return varname
+
+def ventity(time, name, value, type_, label, *, attrs={}):
+    new_attrs = {}
+    new_attrs["generatedAtTime"] = time
+    for key, value in attrs.items():
+        new_attrs[key] = value
+    return entity(name, value, type_, label, attrs=new_attrs)
 
 def activity(name, derived=[], used=[], generated=[], label=None):
     varname = get_varname(name, sep="", show1=True)
@@ -166,6 +179,21 @@ def derivedByInsertion(ent, whole, elements, time):
     ))
     for i, v in key_value:
         DICTS[whole][str(i)] = v
+
+def vderivedByInsertion(ent, elements, time):
+    if isinstance(elements, list):
+        key_value = elements
+    else:
+        key_value = list(elements.items())
+
+    add("derivedByInsertion({}, {{{}}}, {})".format(
+        ent,
+        ", ".join('("{}", {})'.format(i, v)
+                  for i,v in key_value),
+        time
+    ))
+    for i, v in key_value:
+        DICTS[ent][str(i)] = v
 
 
 def hadMember(cname, entity, key):

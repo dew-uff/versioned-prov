@@ -1,4 +1,4 @@
-entity(j#21, [value="2", type="name", label="j"])
+entity(j#21, [value="2",type="name",label="j"])
 activity(access101, [type="access"])
 used(u187; access101, range_nodes2, -)
 wasDerivedFrom(j#21, range_nodes2, access101, g167, u187)
