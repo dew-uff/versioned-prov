@@ -11,6 +11,7 @@ RESULT = []
 TEMP = []
 STATS = Counter()
 VALUES = {}
+SAME = {}
 TEMP_BASE = ""
 
 def reset_prov(temp_base):
@@ -21,6 +22,7 @@ def reset_prov(temp_base):
     global STATS
     global VALUES
     global TEMP_BASE
+    global SAME
     TEMP_BASE = temp_base
     DICTS = defaultdict(dict)
     NAMES = Counter()
@@ -29,6 +31,7 @@ def reset_prov(temp_base):
     TEMP = []
     STATS = Counter()
     VALUES = {}
+    SAME = {}
 
 
 def add(text):
@@ -79,6 +82,11 @@ def entity(name, value, type_, label, *, attrs={}):
     add('entity({}, [{}type="{}"{}])'.format(varname, value, type_, label))
     return varname
 
+def version(name, time):
+    varname = get_varname(name + "_v", sep="", show1=True)
+    add('entity({}, [generatedAtTime="{}", type="Version"])'.format(varname, time))
+    return varname
+
 def activity(name, derived=[], used=[], generated=[], label=None):
     varname = get_varname(name, sep="", show1=True)
     label = ', label="{}"'.format(label) if label else ""
@@ -87,12 +95,30 @@ def activity(name, derived=[], used=[], generated=[], label=None):
     for new, *olds in derived:
         varg = get_varname("g", sep="", show1=True)
 
+        fnused = lambda vu, vo: add("used({}; {}, {}, -)".format(vu, varname, vo))
+        fnderived = lambda vn, vo, vu: add("wasDerivedFrom({}, {}, {}, {}, {})".format(vn, vo, varname, varg, vu))
+        fngen = lambda vn: add("wasGeneratedBy({}; {}, {}, -)".format(varg, vn, varname))
+        if new.startswith("--"):
+            command = new[2:]
+            if "g" in command:
+                time, whole, key, new, *olds = olds
+                fngen = lambda vn: add("partGeneratedBy({}; {}, {}, {}, {}, {})".format(varg, vn, varname, time, whole, key))
+            elif "p" in command:
+                time, whole, key, new, *olds = olds
+                fnused = lambda vu, vo: add("usedPart({}; {}, {}, {}, {}, {})".format(vu, varname, vo, time, whole, key))
+            elif "d" in command:
+                time, new, *olds = olds
+            if "d" in command:
+                def fnderived(vn, vo, vu):
+                    add("referenceDerivedFrom({}, {}, {}, {}, {}, {})".format(vn, vo, varname, varg, vu, time))
+                    SAME[vn] = SAME.get(vo, vo)
+
         for old in olds:
             varu = get_varname("u", sep="", show1=True)
-            add("used({}; {}, {}, -)".format(varu, varname, old))
-            add("wasDerivedFrom({}, {}, {}, {}, {})".format(new, old, varname, varg, varu))
+            fnused(varu, old)
+            fnderived(new, old, varu)
 
-        add("wasGeneratedBy({}; {}, {}, -)".format(varg, new, varname))
+        fngen(new)
 
 
     for old in used:
@@ -107,6 +133,11 @@ def value(name, value, num=None, attrs={}):
 
     add('value({}, [repr="{}"])'.format(varname, value))
     return varname
+
+def specializationOf(eid1, eid2):
+    add('specializationOf({}, {})'.format(eid1, eid2))
+    VALUES[eid1] = eid2
+
 
 def defined(ent, value, time):
     add("defined({}, {}, {})".format(ent, value, time))
@@ -176,6 +207,10 @@ def calc_label(label):
     if isinstance(label, list):
         return "[{}]".format(", ".join(calc_label(x) for x in label))
     return label
+
+def hadDictionaryMember(cid, eid, key):
+    add("hadDictionaryMember({}, {}, {})".format(cid, eid, key))
+    DICTS[cid][key] = eid
 
 def define_array(name, value, label, type_="Dictionary", member=nop):
     varname = entity(name, repr(value), type_, calc_label(label))

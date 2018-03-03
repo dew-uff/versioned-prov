@@ -215,7 +215,7 @@ entity(d_ac0, [value="10000", type="access", label="d[0]"])
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, "0", d, T10)
+usedPart(u9; access1, m, T10, d, "0")
 wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
 ```
@@ -228,7 +228,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We use the PROV-Dictionary `derivedByInsertionFrom` to create a new version with the new part, and associate the new version to the entity that had the previous version.
 
-Additionaly, we use the `usedPart` relationship for the access entity and the access entity is a referenceDerivedFrom the entity on the right side.
+Additionaly, we use the `partGeneratedBy` relationship to indicate that a part of a structure was changed.
 
 
 ```python
@@ -240,9 +240,9 @@ entity(3, [value="3", type="literal"])
 entity(3_v1, [generatedAtTime="T10", type="Version"])
 specializationOf(3, 3_v1)
 
-entity(1_2, [value="1", type="literal"])
-entity(1_2_v1, [generatedAtTime="T11", type="Version"])
-specializationOf(1_2, 1_2_v1)
+entity(1#2, [value="1", type="literal"])
+entity(1#2_v1, [generatedAtTime="T11", type="Version"])
+specializationOf(1#2, 1#2_v1)
 
 entity(d_ac1, [value="3", type="access", label="d[1]"])
 
@@ -252,9 +252,9 @@ specializationOf(list, list_v2)
 
 activity(assign4, [type="assign"])
 used(assign4, d, -)
-used(assign4, 1_2, -)
-usedPart(u10; assign4, 3, "1", d, T12)
-wasGeneratedBy(g10; d_ac1, assign4, -)
+used(assign4, 1#2, -)
+used(u10; assign4, 3, -)
+partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
@@ -351,7 +351,7 @@ entity(d_ac0, [value="10000", type="access", label="d[0]"])
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, "0", d, T10)
+usedPart(u9; access1, m, T10, d, "0")
 wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
 
@@ -373,8 +373,8 @@ specializationOf(list, list_v2)
 activity(assign4, [type="assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
-usedPart(u10; assign4, 3, "1", d, T12)
-wasGeneratedBy(g10; d_ac1, assign4, -)
+used(u10; assign4, 3, -)
+partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 

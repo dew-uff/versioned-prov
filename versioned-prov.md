@@ -178,7 +178,7 @@ entity(d_ac0, [value="10000", type="access", label="d[0]", generatedAtTime="T10"
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, "0", d, T10)
+usedPart(u9; access1, m, T10, d, "0")
 wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFrom(d_ac0, m, access1, g9, u9, T10)
 ```
@@ -191,7 +191,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We also use the `derivedByInsertion` relationship to update a list. This relationship creates a new version based on the previous one by using the timestamp.
 
-Additionaly, we use the `usedPart` relationship for the access entity and the access entity is a referenceDerivedFrom the entity on the right side.
+Additionaly, we use the `partGeneratedBy` relationship to indicate that a part of a structure was changed.
 
 
 ```python
@@ -208,8 +208,8 @@ derivedByInsertion(list, {("1", d_ac1)}, T12)
 activity(assign4, [type="assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
-usedPart(u10; assign4, 3, "1", d, T12)
-wasGeneratedBy(g10; d_ac1, assign4, -)
+used(u10; assign4, 3)
+partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 
@@ -291,7 +291,7 @@ entity(d_ac0, [value="10000", type="access", label="d[0]", generatedAtTime="T10"
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, "0", d, T10)
+usedPart(u9; access1, m, T10, d, "0")
 wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFrom(d_ac0, m, access1, g9, u9, T10)
 
@@ -305,8 +305,8 @@ derivedByInsertion(list, {("1", d_ac1)}, T12)
 activity(assign4, [type="assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
-usedPart(u10; assign4, 3, "1", d, T12)
-wasGeneratedBy(g10; d_ac1, assign4, -)
+used(u10; assign4, 3)
+partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
 referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
 ```
 

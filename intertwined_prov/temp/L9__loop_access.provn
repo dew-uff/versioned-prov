@@ -1,0 +1,6 @@
+entity(k, [type="name", label="k"])
+activity(access1, [type="access"])
+usedPart(u6; access1, range_nodes0, 2018-03-03T01:38:48.523965, indexes, 0)
+referenceDerivedFrom(k, range_nodes0, access1, g6, u6, 2018-03-03T01:38:48.523965)
+wasGeneratedBy(g6; k, access1, -)
+used(access1, indexes, -)
