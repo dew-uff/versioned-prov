@@ -1,0 +1,40 @@
+// old
+entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(list0, [value="10000", type="item", label="m"])
+entity(list1, [value="10001", type="item", label="m + 1"])
+entity(list2, [value="10000", type="item", label="m"])
+hadMember(d, list0)
+hadMember(d, list1)
+hadMember(d, list2)
+
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
+hadMember(x, list0)
+hadMember(x, list1)
+hadMember(x, list2)
+
+
+// new
+entity(1#2, [value="1", type="literal"])
+entity(3, [value="3", type="literal"])
+entity(list1#2, [value="3", type="access", label="d[1]"])
+
+entity(d#2, [value="[10000, 3, 10000]", type="name", label="d"])
+hadMember(d#2, list0)
+hadMember(d#2, list1#2)
+hadMember(d#2, list2)
+
+entity(x#2, [value="[10000, 3, 10000]", type="name", label="x"])
+hadMember(x#2, list0)
+hadMember(x#2, list1#2)
+hadMember(x#2, list2)
+
+activity(assign4, [type="assign"])
+used(assign4, d, -)
+used(assign4, x, -)
+used(assign4, 1#2, -)
+used(u16; assign4, 3, -)
+wasGeneratedBy(d#2, assign4, -)
+wasGeneratedBy(x#2, assign4, -)
+wasGeneratedBy(g16; list1#2, assign4, -)
+wasDerivedFrom(list1#2, 3, assign4, g16, u16)
+

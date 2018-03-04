@@ -1,0 +1,35 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/disti_aj#18" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#18",URL="http://example.org/disti_aj#18"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;2&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;disti[j]&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/disti_aj#18" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access80" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access80",URL="http://example.org/access80"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/access80" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/access80" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"bn0" [shape="point",label=""]
+"http://example.org/disti_aj#18" -> "bn0" [arrowhead="none",color="darkgreen",label="der ac-r
+2018-03-04T18:22:30.074145"]
+"bn0" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
+"bn0" -> "http://example.org/2" [color="darkgreen"]
+"http://example.org/disti_aj#18" -> "http://example.org/access80" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/access80" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/access80" -> "http://example.org/j#16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+}

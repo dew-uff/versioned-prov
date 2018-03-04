@@ -1,0 +1,20 @@
+// old
+entity(m, [label="10000", type="name"])
+value(v10000, [repr="10000"])
+accessed(m, v10000, T2)
+
+entity(sum, [label="10001", type="sum"])
+value(v10001, [repr="10001"])
+defined(sum, v10001, T4)
+wasDefinedBy(v10001, sum, T4)
+
+// new
+entity(list, [label="[m, m + 1, m]", type="list"])
+value(vlist, [repr="[10000, 10001, 10000]"])
+derivedByInsertion(
+    list, vlist,
+    {("0", v10000), ("1", v10001), ("2", v10000)},
+    T5
+)
+defined(list, vlist, T5)
+wasDefinedBy(vlist, list, T5)

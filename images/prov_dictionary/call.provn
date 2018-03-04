@@ -1,0 +1,9 @@
+// old
+entity(d, [value="[10000, 10001, 10000]", type="Dictionary", label="d"])
+
+// new
+entity(len_d, [value="3", type="eval", label="len(d)"])
+
+activity(call1, [type="call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)

@@ -1,39 +1,60 @@
-# Mutable-PROV
+# Versioned-PROV
 
-Mutable-PROV is a PROV extension that adds support for mutable values provenance. This extension is useful to represent fine-grained provenance from scripts with multiple variables refering to the same data structures and nested data-structures.
+Versioned-PROV is a PROV extension that adds support for the provenance of mutable values through the timed-versioning of entities. This extension is useful to represent fine-grained provenance from scripts with multiple variables refering to the same data structures and nested data-structures.
 
 
-PROV does not properly support fine-grained provenance with mutable data structures due the assumption of immutable entities and their representation may become quite verbose. The PROV-Dictionary extension intends to provide data structures support for PROV, but it stills fails to accomodate the mutability of them. Thus, we propose Mutable-PROV to support the representation of mutable data structures in PROV.
+PROV does not properly support fine-grained provenance with mutable data structures due the assumption of immutable entities and their representation may become quite verbose. The PROV-Dictionary extension intends to provide data structures support for PROV, but it stills fails to accomodate the mutability of them. In this repository, we propose three new extensions to support the representation of mutable data structures in PROV: Mutable-PROV, Intertwined-PROV, and Versioned-PROV.
+
+*Plain PROV* suffers from two main problems: (P1) when a collection entity is changed, a new collection entity should be created, together with multiple new edges, connecting the new collection entity to the existing or new part entities; and (P2) when more than one variable is assigned to the same collection, and one of the variables changes, all other variables should also change, as they refer to the same memory area, meaning that a new entity should be created for each variable that contains the collection, together with edges for all part entities. Both problems lead to having many extra edges and nodes in the provenance graph.
+
+*PROV-Dictionary* solves the problem P1, but stil sufers from the problem P2.
+
+*Mutable-PROV* solved both problems, using PROV-Dictionary for solving P1 and versioning for solving P2. However, (P3) it added bidirectional or return edges and (P4) creates versions for all entities (including immutable elements).
+
+*Intertwined-PROV*, besides solving P1 and P2, also solves P3 by using interwined versioning (See Figure 7 of https://doi.org/10.1145/280277.280280). However, it still suffers from P4. All in all, it improves the management of complex entities (collections), but has some drawbacks on simple entities (literals and immutable variables).
+
+*Versioned-PROV* solves all four problems using a fine-grained versioning strategy. It does not use PROV-Dictionary.
+
 
 ## Running Example
 
-To describe and evaluate the extension, we use the [Floyd-Warshall](https://github.com/dew-uff/mutable-PROV/tree/master/algorithm.py) algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.
+To describe and evaluate the extension, we use the [Floyd-Warshall](https://github.com/dew-uff/mutable-prov/raw/master/algorithm.py) algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.
 
 By running the Floyd-Warshall in the graph below, and reading the distance between the nodes 0 and 2, it should output 3. By looking at graph, we can see that this path goes from node 0 to node 1 to node 2, instead of using the direct path from node 0 to node 2. However, the Floyd-Warshall algorithm only calculates the distance, and not the paths.
 
-[![Graph](https://github.com/dew-uff/mutable-prov/raw/master/graphs/graph.png)](https://github.com/dew-uff/mutable-prov/raw/master/graphs/graph.svg)
+[![Graph](https://github.com/dew-uff/mutable-prov/raw/master/images/graphs/graph.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/graphs/graph.pdf)
 
 Due the nature of the algorithm, fine-grained provenance can assist in obtained the path. In Floyd-Warshall, considering the nodes `x`, `y`, and `z`, if the sum of the sub-paths `x -> y` and `y -> z` is smaller than the sum of the path `x -> z`, then it updates the value of the path `x -> z` by the sum. Thus, the provenance of the updated `x -> z` should indicate that it was composed by the sum of `x -> y` and `y -> z`.
 
 ## Experiment
 
-For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to plain PROV, PROV-Dicitionary, Mutable-PROV, Explicit-Versioned-PROV, Versioned-PROV. For descriptions of the mappings, please refer to [Plain PROV Mapping](prov.md), [PROV-Dictionary Mapping](prov-dictionary.md), [Mutable-PROV Mapping](mutable-prov.md), [Explicit-Versioned-PROV Mapping](explicit-versioned-prov.md), and [Versioned-PROV Mapping](versioned-prov.md).
+For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to Plain PROV, PROV-Dictionary, Mutable-PROV, Intertwined-PROV, and Versioned-PROV. For descriptions of the mappings, please refer to:
+  - [Plain PROV Mapping](prov.md)
+  - [PROV-Dictionary Mapping](prov-dictionary.md)
+  - [Mutable-PROV Mapping](mutable-prov.md)
+  - [Intertwined-PROV Mapping](intertwined-prov.md)
+  - [Versioned-PROV Mapping](versioned-prov.md)
 
 
-The plain PROV mapping produced the following graph:
+The Plain PROV mapping produced the following graph:
 
-[![Floyd-Warshall in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/floydwarshall.svg)
-(Click on the image for a svg version)
+[![Floyd-Warshall in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/plain_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/plain_prov/floydwarshall.pdf)
 
 The PROV-Dictionary mapping produced the following graph:
 
-[![Floyd-Warshall in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/floydwarshall.svg)
-(Click on the image for a svg version)
+[![Floyd-Warshall in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/floydwarshall.pdf)
 
 The Mutable-PROV mapping produced the following graph:
 
-[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/floydwarshall.svg)
-(Click on the image for a svg version)
+[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/floydwarshall.pdf)
+
+The Intertwined-PROV mapping produced the following graph:
+
+[![Floyd-Warshall in Intertwined-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/floydwarshall.pdf)
+
+The Versioned-PROV mapping produced the following graph:
+
+[![Floyd-Warshall in Versioned-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/floydwarshall.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/floydwarshall.pdf)
 
 The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach.
 
@@ -49,7 +70,9 @@ Versioned-PROV|224|211|0|476|54|210|0|0|0|0|0|0|0|8|44|137
 The figure below compares the elements of each approach. Note that Mutable-PROV reduces the number of PROV nodes and relationships in comparision to the other approaches, but it does impose an overhead with values and values relationships for all entities. Overall, the amount of elements in Mutable-PROV is comparable to the amount of elements in PROV-Dictionary in our example. Mutable-PROV has an advantage in algorithms with more data structure updates while PROV-Dictionary han an advantage in algorithms with more simple variables.
 
 
-[![Comparison of elements](https://github.com/dew-uff/mutable-prov/raw/master/graphs/comparison.png)](https://github.com/dew-uff/mutable-prov/raw/master/graphs/comparison.svg)
+
+
+[![Comparison of elements](https://github.com/dew-uff/mutable-prov/raw/master/images/graphs/comparison.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/graphs/comparison.pdf)
 
 
 ## Query
@@ -57,20 +80,29 @@ The figure below compares the elements of each approach. Note that Mutable-PROV 
 As stated before, the access `result[0][2]` represents de distance of the shortest path between the node 0 and the node 2 in the graph. This access is represented by the entity `result_a020` in our mappings.
 The provenance query of this entity should indicate which other parts of the graph were used to construct the shortest path, thus indicating the path. The following figures present the query result in each mapping.
 
-The plain PROV mapping produces the following query result:
+The Plain PROV mapping produces the following query result:
 
-[![Query in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/plain_prov/query.svg)
+[![Query in Plain PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/plain_prov/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/plain_prov/query.pdf)
 
 The PROV-Dictionary mapping produces the following query result:
 
-[![Query in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/query.svg)
+[![Query in PROV-Dictionary](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/query.pdf)
 
 The Mutable-PROV mapping produces the following query result:
 
-[![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/query.svg)
+[![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/query.pdf)
 
 
-The Mutable-PROV query is the hardest, as it requires controlling cycles and navigating through different edges. However, it produces less nodes than the others, which may be good to not overwhelm users. For queries, the PROV-Dictionary mapping is a better option, since queries can keep the assumption of a simple DAG, and the amount of resulting nodes is close to that produced in Mutable-PROV.
+
+The Versioned-PROV mapping produces the following query result:
+
+[![Query in Versioned-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/query.pdf)
+
+Querying with Mutable-PROV, Intertwined-PROV, and Versioned-PROV are harder than querying with Plain PROV, and PROV-Dictionary, since the former mappings may include cycles and requires navigating through different edges. However, these mappings allow better derivation queries, by identifing that an entity that was generated as a part of a data structure was derived from the data structure, without deriving from the other parts of the data structure. Due the lack of support for this kind of derivation in Plain PROV and PROV-Dictionary, we opted to omit membership derivations in the first two figures of this section.
+
+## Unfold
+
+As stated before, the Versioned-PROV mapping produces less nodes for the Floyd-Warshall algorithm and supports more meaningful queries. However, it is complete enough to be unfolded into the Plain PROV mapping. If membership querying is not required, unfolding the Versioned-PROV mapping may be a good option to improve the performance of queries, since Plain PROV is a DAG.
 
 
 ## Development
@@ -82,4 +114,11 @@ For parsing PROV-N files and generating customized `.dot` files with support to 
 Thus, for running the files, please install Python 3.6 and Graphviz, and run:
 ```
 pip install jupyter lark-parser pandas numpy matplotlib
+```
+
+To simplify the process of updating readme files, we have markdown files in the [source directory](https://github.com/dew-uff/mutable-prov/raw/master/source) with special tags to link and load files.
+
+For updating the project markdowns, please edit the files in the [source directory](https://github.com/dew-uff/mutable-prov/raw/master/source) and run:
+```
+python build.py
 ```

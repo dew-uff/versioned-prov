@@ -93,7 +93,7 @@ class ProvRule(object):
         self.possibilities = []
 
     def add(self, params):
-        self.possibilities.append(params)
+        self.possibilities.append(list(map(to_tuple, params)))
 
     def _process_val(self, val):
         """If bound value is ModelRule, returns its name"""

@@ -1,4 +1,4 @@
-# PROV Dictionary
+# PROV-Dictionary
 
 In this document we map simple script constructs to PROV-Dictionary.
 
@@ -15,7 +15,7 @@ int   # names
 ...   # constant
 ```
 
-```prov
+```provn
 entity(1, [value="1", type="literal"])
 entity(a, [value="'a'", type="literal"])
 entity(a#2, [value="b'a'", type="literal"])
@@ -24,7 +24,7 @@ entity(int, [value="<class 'int'>", type="name", label="int"])
 entity(ellipsis, [value="Ellipsis", type="constant", label="..."])
 ```
 
-![PROV-Dictionary mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/names.png)
+[![PROV-Dictionary mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/names.pdf)
 
 ## Assignment
 
@@ -46,7 +46,7 @@ wasGeneratedBy(g1; m, assign1, -)
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 ```
 
-![PROV-Dictionary mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/assign.png)
+[![PROV-Dictionary mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/assign.pdf)
 
 ## Operation
 
@@ -68,7 +68,7 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
-![PROV-Dictionary mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/operation.png)
+[![PROV-Dictionary mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/operation.pdf)
 
 ## List definition
 
@@ -108,7 +108,8 @@ wasDerivedFrom(list2, m, definelist1, g6, u6)
 wasGeneratedBy(list, definelist1, -)
 ```
 
-![PROV-Dictionary mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/list.png)
+[![PROV-Dictionary mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/list.pdf)
+
 
 # Assignment of list definition
 
@@ -134,7 +135,7 @@ wasGeneratedBy(g7; d, assign2, -)
 wasDerivedFrom(d, list, assign2, g7, u7)
 ```
 
-![PROV-Dictionary mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/list_assign.png)
+[![PROV-Dictionary mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent dictionaries.
 
@@ -156,7 +157,8 @@ wasGeneratedBy(g8; x, assign3, -)
 wasDerivedFrom(x, d, assign3, g8, u8)
 ```
 
-![PROV-Dictionary mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/list_assign2.png)
+[![PROV-Dictionary mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/list_assign2.pdf)
+
 
 ## Function call
 
@@ -176,7 +178,7 @@ used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-![PROV-Dictionary mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/call.png)
+[![PROV-Dictionary mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/call.pdf)
 
 ## Access to part of structure
 
@@ -198,7 +200,7 @@ wasGeneratedBy(g9; d_ac0, access1, -)
 wasDerivedFrom(d_ac0, list0, access1, g9, u9)
 ```
 
-![PROV-Dictionary mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/access.png)
+[![PROV-Dictionary mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/access.pdf)
 
 ## Assignment to part of structure
 
@@ -232,7 +234,7 @@ wasGeneratedBy(x#2, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
 ```
 
-![PROV-Dictionary mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/part_assign.png)
+[![PROV-Dictionary mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/part_assign.pdf)
 
 ## Full graph
 
@@ -248,9 +250,7 @@ The full mapping for the previous code is presented below:
 10000
 >>> d[1] = 3
 ```
-
 ```provn
-%%provn -o ../prov_dictionary/full -e png svg pdf provn
 // assignment
 entity(10000, [value="10000", type="literal"])
 entity(m, [value="10000", type="name", label="m"])
@@ -358,4 +358,4 @@ wasGeneratedBy(x#2, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
 ```
 
-![PROV-Dictionary mapping](https://github.com/dew-uff/mutable-prov/raw/master/prov_dictionary/full.png)
+[![PROV-Dictionary mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/prov_dictionary/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/prov_dictionary/full.pdf)

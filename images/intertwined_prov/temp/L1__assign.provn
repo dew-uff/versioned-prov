@@ -1,0 +1,8 @@
+entity(10000, [value="10000",type="literal"])
+entity(10000_v1, [generatedAtTime="2018-03-04T18:22:20.008026", type="Version"])
+specializationOf(10000, 10000_v1)
+entity(m, [value="10000",type="name",label="m"])
+activity(assign1, [type="assign"])
+used(u1; assign1, 10000, -)
+referenceDerivedFrom(m, 10000, assign1, g1, u1, 2018-03-04T18:22:20.008026)
+wasGeneratedBy(g1; m, assign1, -)

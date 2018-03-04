@@ -1,0 +1,23 @@
+// old
+entity(ed, [value="[]", type="EmptyDictionary"])
+entity(d, [value="[10000, 10001, 10000]", type="Dictionary", label="d"])
+entity(list0, [value="10000", type="number", label="m"])
+entity(list1, [value="10001", type="number", label="m + 1"])
+entity(list2, [value="10000", type="number", label="m"])
+derivedByInsertionFrom(
+    d, ed,
+    {("0", list0), ("1", list1), ("2", list2)}
+)
+
+// new
+entity(ex, [value="[]", type="EmptyDictionary"])
+entity(x, [value="[10000, 10001, 10000]", type="Dictionary", label="x"])
+derivedByInsertionFrom(
+    x, ex,
+    {("0", list0), ("1", list1), ("2", list2)}
+)
+
+activity(assign3, [type="assign"])
+used(u8; assign3, d, -)
+wasGeneratedBy(g8; x, assign3, -)
+wasDerivedFrom(x, d, assign3, g8, u8)

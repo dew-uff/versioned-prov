@@ -1,4 +1,4 @@
-# Versioned-Prov
+# Versioned-PROV
 
 In this document we map simple script constructs to Versioned-PROV.
 
@@ -18,7 +18,6 @@ int   # names
 ...   # constant
 ```
 
-
 ```provn
 entity(1, [value="1", type="literal", generatedAtTime="2018-02-22T16:00:00"])
 entity(a, [value="'a'", type="literal", generatedAtTime="2018-02-22T16:00:01"])
@@ -28,8 +27,8 @@ entity(int, [value="<class 'int'>", type="name", label="int", generatedAtTime="2
 entity(ellipsis, [value="Ellipsis", type="constant", label="...", generatedAtTime="2018-02-22T16:00:05"])
 ```
 
+[![Versioned-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/names.pdf)
 
-![Versioned-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/names.png)
 
 ## Assignment
 
@@ -53,7 +52,7 @@ wasGeneratedBy(g1; m, assign1, -)
 referenceDerivedFrom(m, 10000, assign1, g1, u1, T2)
 ```
 
-![Versioned-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/assign.png)
+[![Versioned-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/assign.pdf)
 
 
 ## Operation
@@ -78,7 +77,7 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
-![Versioned-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/operation.png)
+[![Versioned-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/operation.pdf)
 
 
 ## List definition
@@ -94,7 +93,8 @@ entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]",
 derivedByInsertion(list, {("0", m), ("1", sum), ("2", m)}, T5)
 ```
 
-![Versioned-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/list.png)
+[![Versioned-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list.pdf)
+
 
 Comparison:
 
@@ -119,7 +119,7 @@ wasGeneratedBy(g7; d, assign2, -)
 referenceDerivedFrom(d, list, assign2, g7, u7, T6)
 ```
 
-![Versioned-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/list_assign.png)
+[![Versioned-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -136,11 +136,12 @@ wasGeneratedBy(g8; x, assign3, -)
 referenceDerivedFrom(x, d, assign3, g8, u8, T7)
 ```
 
-![Versioned-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/list_assign2.png)
+[![Versioned-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list_assign2.pdf)
+
 
 ## Function call
 
-We map a function call as an `activity` that `uses` its parameters and `generates` an `entity` with its return. 
+We map a function call as an `activity` that `uses` its parameters and `generates` an `entity` with its return.
 
 When we do not know the function call implementation, we cannot use `derivation` relationships.
 
@@ -156,7 +157,8 @@ used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-![Versioned-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/call.png)
+[![Versioned-PROV mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/call.pdf)
+
 
 ## Access to part of structure
 
@@ -182,7 +184,8 @@ wasGeneratedBy(g9; d_ac0, access1, -)
 referenceDerivedFromAccess(d_ac0, m, access1, g9, u9, T10, d, "0", "r")
 ```
 
-![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/access.png)
+[![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/access.pdf)
+
 
 ## Assignment to part of structure
 
@@ -212,7 +215,7 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 referenceDerivedFromAccess(d_ac1, 3, assign4, g10, u10, T12, d, "1", "w")
 ```
 
-![Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/part_assign.png)
+[![Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/part_assign.pdf)
 
 Comparison:
 
@@ -309,4 +312,4 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 referenceDerivedFromAccess(d_ac1, 3, assign4, g10, u10, T12, d, "1", "w")
 ```
 
-![Versioned-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/versioned_prov/full.png)
+[![Versioned-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/full.pdf)

@@ -1,6 +1,0 @@
-entity(disti_aj, [type="access",label="disti[j]"])
-accessedPart(disti_aj, row0, 0, v0, 2018-03-03T19:41:18.961782)
-activity(access8, [type="access"])
-used(access8, disti, -)
-used(access8, j, -)
-wasGeneratedBy(disti_aj, access8, -)

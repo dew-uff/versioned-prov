@@ -20,7 +20,6 @@ int   # names
 ...   # constant
 ```
 
-
 ```provn
 entity(1, [label="1", type="literal"])
 value(v1, [repr="1"])
@@ -53,12 +52,7 @@ defined(ellipsis, vellipsis, 2018-02-22T16:00:05)
 wasDefinedBy(vellipsis, ellipsis, 2018-02-22T16:00:05)
 ```
 
-
-![Mutable-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/names.png)
-
-Comparison:
-
-* Different from the other mappings, we use the attribute `value` of the `entity` to indicate its textual construct. In other mappings, we use the `value` to indicate the immutable state of an `entity`.
+[![Mutable-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/names.pdf)
 
 
 ## Assignment
@@ -86,7 +80,7 @@ wasGeneratedBy(g1; m, assign1, -)
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 ```
 
-![Mutable-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/assign.png)
+[![Mutable-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/assign.pdf)
 
 
 ## Operation
@@ -118,7 +112,7 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 ```
 
-![Mutable-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/operation.png)
+[![Mutable-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/operation.pdf)
 
 
 ## List definition
@@ -141,12 +135,12 @@ defined(list, vlist, T5)
 wasDefinedBy(vlist, list, T5)
 ```
 
-![Mutable-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/list.png)
+[![Mutable-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list.pdf)
+
 
 Comparison:
 
 * Mutable-PROV accesses to parts indicates the positions of accesses. Thus, we do not need to create additional entities or activities to answer the provenance query of Floyd-Warshall. Note however that we do not navigate from the list entity `list1` to the part entity `m1` in a derivation query. Instead, we navigate to the entity that defined the value of `m1`. We could have a similar structure to the other approaches with an activity using `m1` and `sum1` and generating `list1` without a derivation relationship to indicate this usage. Since this usage does not affect the provenance query of Floyd-Warshall, we opted to leave it out.
-
 
 
 ## Assignment of list definition
@@ -167,7 +161,7 @@ wasGeneratedBy(g7; d, assign2, -)
 wasDerivedFrom(d, list, assign2, g7, u7)
 ```
 
-![Mutable-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/list_assign.png)
+[![Mutable-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -185,11 +179,12 @@ wasGeneratedBy(g8; x, assign3, -)
 wasDerivedFrom(x, d, assign3, g8, u8)
 ```
 
-![Mutable-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/list_assign2.png)
+[![Mutable-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list_assign2.pdf)
+
 
 ## Function call
 
-We map a function call as an `activity` that `uses` its parameters and `generates` an `entity` with its return. 
+We map a function call as an `activity` that `uses` its parameters and `generates` an `entity` with its return.
 
 When we do not know the function call implementation, we cannot use `derivation` relationships.
 
@@ -208,11 +203,12 @@ used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-![Mutable-PROV mapping for function calls](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/call.png)
+[![Mutable-PROV mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/call.pdf)
+
 
 ## Access to part of structure
 
-We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`). 
+We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
 
 We also use the `accessedPart` relationship to indicate which part were accessed.
 
@@ -235,7 +231,8 @@ used(access1, 0, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
 ```
 
-![Mutable-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/access.png)
+[![Mutable-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/access.pdf)
+
 
 ## Assignment to part of structure
 
@@ -271,7 +268,7 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
 ```
 
-![Mutable-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/part_assign.png)
+[![Mutable-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/part_assign.pdf)
 
 Comparison:
 
@@ -293,7 +290,6 @@ The full mapping for the previous code is presented below:
 ```
 
 ```provn
-%%provn -o ../mutable_prov/full -e png svg pdf provn
 // assignment
 entity(10000, [label="10000", type="literal"])
 value(v10000, [repr="10000"])
@@ -402,4 +398,4 @@ wasGeneratedBy(g10; d_ac1, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
 ```
 
-![Mutable-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/mutable_prov/full.png)
+[![Mutable-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/full.pdf)

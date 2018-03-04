@@ -1,7 +1,0 @@
-entity(disti_aj#16, [value="0",type="access",label="disti[j]",generatedAtTime="2018-03-04T13:54:13.465823"])
-activity(access70, [type="access"])
-used(u126; access70, 0, -)
-referenceDerivedFromAccess(disti_aj#16, 0, access70, g112, u126, 2018-03-04T13:54:13.465823, disti#5, 1, "r")
-wasGeneratedBy(g112; disti_aj#16, access70, -)
-used(access70, disti#5, -)
-used(access70, j#14, -)

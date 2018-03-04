@@ -1,0 +1,31 @@
+digraph "PROV" { size="16,12"; rankdir="RL";
+"http://example.org/list1#2" -> "http://example.org/3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/list1#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1#2",URL="http://example.org/list1#2"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;access&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">&quot;d[1]&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/list1#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="http://example.org/3"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">&quot;3&quot;</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">&quot;literal&quot;</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
+}

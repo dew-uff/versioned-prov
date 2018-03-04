@@ -1,0 +1,14 @@
+// old
+entity(list, [label="[m, m + 1, m]", type="list"])
+value(vlist, [repr="[10000, 10001, 10000]"])
+defined(list, vlist, T5)
+wasDefinedBy(vlist, list, T5)
+
+// new
+entity(d, [label="d", type="name"])
+accessed(d, vlist, T6)
+
+activity(assign2, [type="assign"])
+used(u7; assign2, list, -)
+wasGeneratedBy(g7; d, assign2, -)
+wasDerivedFrom(d, list, assign2, g7, u7)
