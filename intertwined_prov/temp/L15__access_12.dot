@@ -25,8 +25,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" -> "http://example.org/access60" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access60" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "bn0" [shape="point",label=""]
-"http://example.org/disti_aj#13" -> "bn0" [arrowhead="none",color="darkgreen",label="der ac-w
-2018-03-04T03:52:40.552810"]
+"http://example.org/disti_aj#13" -> "bn0" [arrowhead="none",color="darkgreen",label="der ac-r
+2018-03-04T13:54:45.478834"]
 "bn0" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "bn0" -> "http://example.org/4" [color="darkgreen"]
 "http://example.org/disti_aj#13" -> "http://example.org/access60" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]

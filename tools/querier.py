@@ -13,10 +13,12 @@ from pattern_machinery import create_rule, var, BLANK, BoundQuery, Variable, Nul
 class ProvQuery(BoundQuery):
     """Call rules function for all possibilities of unbound_options"""
 
-    def __init__(self, name, nav, unbound_options):
+    def __init__(self, name, unbound_options, arguments, possibilities, query):
         # pylint: disable=too-many-arguments
         super(ProvQuery, self).__init__()
-        self.nav = nav
+        self.arguments = arguments
+        self.possibilities = possibilities
+        self.query = query
         self.name = name
         self.unbound_options = unbound_options
 
@@ -53,31 +55,18 @@ class ProvQuery(BoundQuery):
                 new_values.append(prevalue)
         return map(self.final_value, new_values)
 
-    def unfold(self, nav, order):
-        if not nav:
-            return []
-        result = []
-
-        (key, val), *rest = order
-        values = nav[key]
-        for value, subnav in values.items():
-            sub = list(self.unfold(subnav, rest))
-            if sub:
-                for v in sub:
-                    result.append([(key, value, val)] + v)
-            else:
-                result.append([(key, value, val)])
-        return result
-
     def iterate(self):
         """generator"""
-        for bind in self.unfold(self.nav, self.unbound_options):
+        for row in self.possibilities:
+            bind = []
+            for i, (dbvalue, value) in enumerate(zip(row, self.query)):
+                if isinstance(value, Variable):
+                    bind.append((self.arguments[i], dbvalue, value))
             prep = self.prepare_values(bind)
             if prep is not None:
                 yield self.name
             for pattern in self.binds:
                 pattern.bound = BLANK
-
 
 def to_tuple(data):
     if isinstance(data, str):
@@ -97,22 +86,14 @@ class ProvRule(object):
         )
         self.arguments = arguments
         self.name = name
-        self.nav = defaultdict(dict)
+        self.possibilities = []
         self.__doc__ = "{}({})".format(name, ", ".join(self.args))
 
     def reset(self):
-        self.nav = defaultdict(dict)
-
-    def _add(self, pairs, nav):
-        for i, (key, value) in enumerate(pairs):
-            value = to_tuple(value)
-            new_pairs = pairs[:i] + pairs[i + 1:]
-            if not nav[key].get(value):
-                nav[key][value] = defaultdict(dict)
-            self._add(new_pairs, nav[key][value])
+        self.possibilities = []
 
     def add(self, params):
-        self._add(list(zip(self.arguments, params)), self.nav)
+        self.possibilities.append(params)
 
     def _process_val(self, val):
         """If bound value is ModelRule, returns its name"""
@@ -127,22 +108,19 @@ class ProvRule(object):
 
         unbound_options = []
         bound_options = []
-        for arg, i in self.args.items():
-            bound_value = values[i]
-            if bound_value is BLANK or isinstance(bound_value, Variable):
-                unbound_options.append((arg, bound_value))
-            else:
-                bound_options.append((arg, bound_value))
-        nav = self.nav
-        for arg, value in bound_options:
-            if arg not in nav:
-                return NullQuery()
-            nav = nav[arg]
-            value = to_tuple(value)
-            if value not in nav:
-                return NullQuery()
-            nav = nav[value]
-        return ProvQuery(self.name, nav, unbound_options)
+
+        filtered = []
+        for row in self.possibilities:
+            valid = True
+            for dbvalue, value in zip(row, values):
+                if value is not BLANK and not isinstance(value, Variable) and value != dbvalue:
+                    valid = False
+            if valid:
+                filtered.append(row)
+        if not filtered:
+            return NullQuery()
+
+        return ProvQuery(self.name, unbound_options, self.arguments, filtered, values)
 
 
 class Querier(object):

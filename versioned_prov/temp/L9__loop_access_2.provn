@@ -1,6 +1,6 @@
-entity(k#2, [value="1",type="name",label="k",generatedAtTime="2018-03-04T03:57:38.130664"])
+entity(k#2, [value="1",type="name",label="k",generatedAtTime="2018-03-04T13:54:11.037788"])
 activity(access45, [type="access"])
 used(u82; access45, range_nodes1, -)
-referenceDerivedFromAccess(k#2, range_nodes1, access45, g73, u82, 2018-03-04T03:57:38.130664, indexes, 1, "w")
+referenceDerivedFromAccess(k#2, range_nodes1, access45, g73, u82, 2018-03-04T13:54:11.037788, indexes, 1, "r")
 wasGeneratedBy(g73; k#2, access45, -)
 used(access45, indexes, -)

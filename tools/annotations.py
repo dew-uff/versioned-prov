@@ -114,14 +114,14 @@ def activity(name, derived=[], used=[], generated=[], label=None):
             if "g" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "r")'.format(
+                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "w")'.format(
                         vn, vo, varname, varg, vu, time, whole, key
                     ))
                     SAME[vn] = SAME.get(vo, vo)
             elif "p" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "w")'.format(
+                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "r")'.format(
                         vn, vo, varname, varg, vu, time, whole, key
                     ))
                     SAME[vn] = SAME.get(vo, vo)
