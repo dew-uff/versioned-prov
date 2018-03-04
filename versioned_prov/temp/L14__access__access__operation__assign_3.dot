@@ -15,7 +15,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-03-03T20:04:19.696684&quot;</TD>
+	    <TD align="left">&quot;2018-03-04T03:57:34.200660&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/disti_ak#3" [color="gray",style="dashed",arrowhead="none"]
@@ -27,11 +27,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/access14" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/access14" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-disti[0]
-2018-03-03T20:04:19.696684"]
-"http://example.org/disti_ak#3" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-03T20:04:19.696684"]
+"http://example.org/access14" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"bn0" [shape="point",label=""]
+"http://example.org/disti_ak#3" -> "bn0" [arrowhead="none",color="darkgreen",label="der ac-w
+2018-03-04T03:57:34.200660"]
+"bn0" -> "http://example.org/disti" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
+"bn0" -> "http://example.org/0" [color="darkgreen"]
 "http://example.org/disti_ak#3" -> "http://example.org/access14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/access14" -> "http://example.org/disti" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/access14" -> "http://example.org/k" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -51,7 +52,7 @@ disti[0]
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-03-03T20:04:19.696684&quot;</TD>
+	    <TD align="left">&quot;2018-03-04T03:57:34.200660&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/distk_aj#3" [color="gray",style="dashed",arrowhead="none"]
@@ -63,11 +64,12 @@ disti[0]
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/access15" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/access15" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-distk[2]
-2018-03-03T20:04:19.696684"]
-"http://example.org/distk_aj#3" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-03T20:04:19.696684"]
+"http://example.org/access15" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"bn1" [shape="point",label=""]
+"http://example.org/distk_aj#3" -> "bn1" [arrowhead="none",color="darkgreen",label="der ac-w
+2018-03-04T03:57:34.200660"]
+"bn1" -> "http://example.org/distk" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
+"bn1" -> "http://example.org/4" [color="darkgreen"]
 "http://example.org/distk_aj#3" -> "http://example.org/access15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/access15" -> "http://example.org/distk" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/access15" -> "http://example.org/j#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -87,7 +89,7 @@ distk[2]
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-03-03T20:04:19.696684&quot;</TD>
+	    <TD align="left">&quot;2018-03-04T03:57:34.200660&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
@@ -120,7 +122,7 @@ distk[2]
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-03-03T20:04:19.696684&quot;</TD>
+	    <TD align="left">&quot;2018-03-04T03:57:34.200660&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
@@ -134,6 +136,6 @@ distk[2]
 "-attrs7" -> "http://example.org/assign10" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign10" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-03T20:04:19.696684"]
+2018-03-04T03:57:34.200660"]
 "http://example.org/ikj#3" -> "http://example.org/assign10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 }

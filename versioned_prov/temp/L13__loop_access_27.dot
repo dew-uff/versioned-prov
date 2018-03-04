@@ -15,7 +15,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-03-03T20:04:30.398676&quot;</TD>
+	    <TD align="left">&quot;2018-03-04T03:57:46.275295&quot;</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/j#27" [color="gray",style="dashed",arrowhead="none"]
@@ -27,11 +27,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/access129" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/access129" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-indexes[2]
-2018-03-03T20:04:30.398676"]
-"http://example.org/j#27" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-03T20:04:30.398676"]
+"http://example.org/access129" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"bn0" [shape="point",label=""]
+"http://example.org/j#27" -> "bn0" [arrowhead="none",color="darkgreen",label="der ac-w
+2018-03-04T03:57:46.275295"]
+"bn0" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
+"bn0" -> "http://example.org/range_nodes2" [color="darkgreen"]
 "http://example.org/j#27" -> "http://example.org/access129" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/access129" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 }

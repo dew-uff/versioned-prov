@@ -1,4 +1,4 @@
-from prov_dictionary import graph, _unquote, _dlabeldict, _darrow2
+from prov_dictionary import graph, _unquote, _dlabeldict, _darrow2, _darrow3
 
 
 #referenceDerivedFrom(eid2, eid1, aid, gid, uid, timestamp) : wasDerivedFrom
@@ -7,16 +7,10 @@ def reference_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=No
     return _darrow2(dot, eid1, eid2, "der ref\n{}".format(time or "-"))
 
 
-#usedPart(uid; aid, part_eid, key, whole_eid, timestamp) : used
-@graph.prov("usedPart")
-def used_part(dot, aid=None, eid=None, time=None, whole_eid=None, key=None, attrs=None, id_=None):
-    return _darrow2(dot, aid, eid, "use\n{}[{}]\n{}".format(whole_eid or "-", _unquote(key) or "-", time or "-"))
-
-
-#partGeneratedBy(eid, aid, timestamp, whole_eid, key) : wasGeneratedBy
-@graph.prov("partGeneratedBy")
-def part_generated_by(dot, eid, aid=None, time=None, whole_eid=None, key=None, attrs=None, id_=None):
-    return _darrow2(dot, eid, aid, "gen\n{}[{}]\n{}".format(whole_eid or "-", _unquote(key) or "-", time or "-"))
+#referenceDerivedFromAccess(eid, pid, aid, gid, uid, timestamp, wid, key, mode) : wasDerivedFrom
+@graph.prov("referenceDerivedFromAccess")
+def reference_derived_from_access(dot, new=None, pid=None, aid=None, gid=None, uid=None, time=None, wid=None, key=None, mode=None, attrs=None, id_=None):
+    return _darrow3(dot, new, wid, pid, "[{}]".format(_unquote(key) or "-"), extra={"label": "der ac-{}\n{}".format(_unquote(mode) or "-", time or "-")})
 
 
 #derivedByInsertion(vid2, {(ki, ei)...})

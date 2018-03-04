@@ -196,9 +196,8 @@ wasGeneratedBy(len_d, call1, -)
 ## Access to part of structure
 
 We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
-Additionally, the activity also has a relationship `usedPart` that indicates that it is using a specific part of an entity at a given time. The time is used to infer which version of the entity it is using, and the part is obtained from the version.
 
-We also use the `wasDerivedFrom` relationship to indicate which part were accessed.
+We also use the `referenceDerivedFromAccess` relationship to indicate which part were accessed.
 
 ```python
 d[0]
@@ -215,9 +214,9 @@ entity(d_ac0, [value="10000", type="access", label="d[0]"])
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, T10, d, "0")
+used(u9; access1, m, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
-referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
+referenceDerivedFromAccess(d_ac0, m, access1, g9, u9, T10, d, "0", "r")
 ```
 
 ![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/access.png)
@@ -228,7 +227,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We use the PROV-Dictionary `derivedByInsertionFrom` to create a new version with the new part, and associate the new version to the entity that had the previous version.
 
-Additionaly, we use the `partGeneratedBy` relationship to indicate that a part of a structure was changed.
+Additionaly, we use the `referenceDerivedFromAccess` relationship with mode "w" to indicate that a part of a structure was changed.
 
 
 ```python
@@ -254,8 +253,8 @@ activity(assign4, [type="assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
 used(u10; assign4, 3, -)
-partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
-referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
+wasGeneratedBy(g10; d_ac1, assign4, -)
+referenceDerivedFromAccess(d_ac1, 3, assign4, g10, u10, T12, d, "1", "w")
 ```
 
 ![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/part_assign.png)
@@ -351,9 +350,9 @@ entity(d_ac0, [value="10000", type="access", label="d[0]"])
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-usedPart(u9; access1, m, T10, d, "0")
+used(u9; access1, m, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
-referenceDerivedFrom(d_ac0, m, access1, g9, u9, T9)
+referenceDerivedFromAccess(d_ac0, m, access1, g9, u9, T10, d, "0", "r")
 
 // part assign
 entity(3, [value="3", type="literal"])
@@ -374,8 +373,8 @@ activity(assign4, [type="assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
 used(u10; assign4, 3, -)
-partGeneratedBy(g10; d_ac1, assign4, T12, d, "1")
-referenceDerivedFrom(d_ac1, 3, assign4, g10, u10, T12)
+wasGeneratedBy(g10; d_ac1, assign4, -)
+referenceDerivedFromAccess(d_ac1, 3, assign4, g10, u10, T12, d, "1", "w")
 ```
 
 ![Intertwined-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/intertwined_prov/full.png)

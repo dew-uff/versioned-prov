@@ -1,6 +1,6 @@
 entity(j#23, [value="1",type="name",label="j"])
 activity(access111, [type="access"])
-usedPart(u196; access111, range_nodes1, 2018-03-03T19:40:21.047597, indexes, 1)
-referenceDerivedFrom(j#23, range_nodes1, access111, g174, u196, 2018-03-03T19:40:21.047597)
+used(u196; access111, range_nodes1, -)
+referenceDerivedFromAccess(j#23, range_nodes1, access111, g174, u196, 2018-03-04T03:52:45.584236, indexes, 1, "w")
 wasGeneratedBy(g174; j#23, access111, -)
 used(access111, indexes, -)

@@ -108,30 +108,37 @@ def activity(name, derived=[], used=[], generated=[], label=None):
     for new, *olds in derived:
         varg = get_varname("g", sep="", show1=True)
 
-        fnused = lambda vu, vo: add("used({}; {}, {}, -)".format(vu, varname, vo))
         fnderived = lambda vn, vo, vu: add("wasDerivedFrom({}, {}, {}, {}, {})".format(vn, vo, varname, varg, vu))
-        fngen = lambda vn: add("wasGeneratedBy({}; {}, {}, -)".format(varg, vn, varname))
         if new.startswith("--"):
             command = new[2:]
             if "g" in command:
                 time, whole, key, new, *olds = olds
-                fngen = lambda vn: add("partGeneratedBy({}; {}, {}, {}, {}, {})".format(varg, vn, varname, time, whole, key))
+                def fnderived(vn, vo, vu):
+                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "r")'.format(
+                        vn, vo, varname, varg, vu, time, whole, key
+                    ))
+                    SAME[vn] = SAME.get(vo, vo)
             elif "p" in command:
                 time, whole, key, new, *olds = olds
-                fnused = lambda vu, vo: add("usedPart({}; {}, {}, {}, {}, {})".format(vu, varname, vo, time, whole, key))
+                def fnderived(vn, vo, vu):
+                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "w")'.format(
+                        vn, vo, varname, varg, vu, time, whole, key
+                    ))
+                    SAME[vn] = SAME.get(vo, vo)
             elif "d" in command:
                 time, new, *olds = olds
-            if "d" in command:
                 def fnderived(vn, vo, vu):
-                    add("referenceDerivedFrom({}, {}, {}, {}, {}, {})".format(vn, vo, varname, varg, vu, time))
+                    add("referenceDerivedFrom({}, {}, {}, {}, {}, {})".format(
+                        vn, vo, varname, varg, vu, time
+                    ))
                     SAME[vn] = SAME.get(vo, vo)
 
         for old in olds:
             varu = get_varname("u", sep="", show1=True)
-            fnused(varu, old)
+            add("used({}; {}, {}, -)".format(varu, varname, old))
             fnderived(new, old, varu)
 
-        fngen(new)
+        add("wasGeneratedBy({}; {}, {}, -)".format(varg, new, varname))
 
 
     for old in used:

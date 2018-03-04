@@ -21,6 +21,28 @@ def _darrow2(dot, first, second, label="", extra={}):
     return dot.arrow(url1, url2, attrs=dict(**_dlabeldict(label), **extra))
 
 
+def _darrow3(dot, source, target1, target2, label, extra={}):
+    if sum(1 for x in [source, target1, target2] if x) <= 1:
+        return None
+
+    if target1 and target2:
+        point, result = dot.point()
+
+        if source:
+            surl = dot.prefix(source)
+            result += "\n" + dot.arrow(surl, point, attrs=dict(**{
+                "arrowhead": "none",
+                "color": "darkgreen",
+            }, **extra))
+
+        turl1 = dot.prefix(target1)
+        turl2 = dot.prefix(target2)
+        result += "\n" + dot.arrow(point, turl1, attrs=_dlabeldict(label))
+        result += "\n" + dot.arrow(point, turl2, attrs={"color": "darkgreen"})
+        return result
+
+    return _arrow2(dot, source, target1 if target1 else target2, label, extra)
+
 def _unquote(key):
     if key and key.startswith('"') and key.endswith('"'):
         key = key[1:-1]

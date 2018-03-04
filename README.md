@@ -37,13 +37,13 @@ The Mutable-PROV mapping produced the following graph:
 
 The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach.
 
-Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|had<br>Dictionary<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion|used<br>Part|reference<br>Derived<br>From|part<br>Generated<br>By
----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
-PROV|242|212|0|488|244|232|126|0|0|0|0|0|0|0|0|0|0
-PROV-Dictionary|275|212|0|488|244|232|0|0|42|0|0|0|0|0|0|0|0
-Mutable-PROV|218|211|43|336|101|210|0|0|0|134|47|37|37|8|0|0|0
-Intertwined-PROV|270|211|0|342|54|207|0|15|3|0|0|0|0|0|134|181|3
-Versioned-PROV|224|211|0|342|54|207|0|0|0|0|0|0|0|8|134|181|3
+Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|had<br>Dictionary<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion|reference<br>Derived<br>From|reference<br>Derived<br>From<br>Access
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
+PROV|242|212|0|488|244|232|126|0|0|0|0|0|0|0|0|0
+PROV-Dictionary|275|212|0|488|244|232|0|0|42|0|0|0|0|0|0|0
+Mutable-PROV|218|211|43|336|101|210|0|0|0|134|47|37|37|8|0|0
+Intertwined-PROV|270|211|0|476|54|210|0|15|3|0|0|0|0|0|44|137
+Versioned-PROV|224|211|0|476|54|210|0|0|0|0|0|0|0|8|44|137
 
 
 The figure below compares the elements of each approach. Note that Mutable-PROV reduces the number of PROV nodes and relationships in comparision to the other approaches, but it does impose an overhead with values and values relationships for all entities. Overall, the amount of elements in Mutable-PROV is comparable to the amount of elements in PROV-Dictionary in our example. Mutable-PROV has an advantage in algorithms with more data structure updates while PROV-Dictionary han an advantage in algorithms with more simple variables.
