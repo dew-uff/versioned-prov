@@ -70,12 +70,17 @@ The following table presents the count of each node (entity, activity, value) an
 ::LOAD(::GET BASE::/table.md)
 
 
-The figure below compares the elements of each approach. Note that Mutable-PROV reduces the number of PROV nodes and relationships in comparision to the other approaches, but it does impose an overhead with values and values relationships for all entities. Overall, the amount of elements in Mutable-PROV is comparable to the amount of elements in PROV-Dictionary in our example. Mutable-PROV has an advantage in algorithms with more data structure updates while PROV-Dictionary han an advantage in algorithms with more simple variables.
+The figure below compares the number of nodes (i.e., `entity`, `activity`, ...) and relationships (i.e., `wasDerivedFrom`, `used`, `wasGeneratedBy`, ...) of each approach. ::GET VERSIONED_PROV:: is the approach with less componenens. In ::GET VERSIONED_PROV::, the `derivedByInsertion` relationship indicates the creation of a new version for the entity. Thus, it replaces some entities that exist in the other approaches by this relationship. However, the other approaches also require similar relationships to indicate the membership of elements in data structures. Hence, this replacement does not result in a bigger number of relationships. Additionally, the `referenceDerivedFrom` and the `referenceDerivedFromAccess` appear as the `wasDerivedFrom` relationship in the other approaches. So, the addition of these statements do not increase the number of components.
 
-
-::SET TODO = Discuss Versioned-PROV::
 
 ::![Comparison of elements](::GET BASE::/graphs/comparison)
+
+
+The ::GET MUTABLE_PROV:: approach has less relationships than ::GET VERSIONED_PROV::. This occurs because ::GET MUTABLE_PROV:: does not have an `entity` for every part of a `value`, and does not use `wasDerivedFrom` relationships in accesses, due to the lach of these `entities`. On the other hand, ::GET MUTABLE_PROV:: has a much bigger number of nodes, due to the addition of `values`.
+
+The ::GET INTERTWINED_PROV:: approach is very similar to the ::GET VERSIONED_PROV::, but the former use explict `Version` entities with `specializationOf` relationships from the entities, while the latter has the version concept implicitly built into the entities, through the timestamps and timed `derivedByInsertion` relationships. Hence, the ::GET INTERTWINED_PROV:: approach produces much more nodes and relationships than ::GET VERSIONED_PROV::.
+
+The ::GET PROV_DICTIONARY:: approach creates a new `entity` when there is a change on an existing `entity` and when there is an access to an `entity` that represents a data-structure. Thus, it presents more nodes and relationships than the aforementioned approaches. However, it presents less relationships than the ::GET PLAIN_PROV:: approach. This occurs because, the ::GET PLAIN_PROV:: also creates new `entities` on changes, but has no mechanisms to indicate that an `entity` has all members of the previously existing `entity`, thus it requires many `hadMember` relationship for every `entity` that represent data structures. The number of nodes in ::GET PLAIN_PROV:: and ::GET PROV_DICTIONARY:: could be equivalent, however, according to the ::GET PROV_DICTIONARY:: specification, for a dictionary to be deterministic, its derivation chain should end in an `EmptyDictionary` `entity`. Hence, we need extra nodes for the ::GET PROV_DICTIONARY:: approach.
 
 
 ## Query

@@ -67,12 +67,17 @@ Intertwined-PROV|270|211|0|476|54|210|0|15|3|0|0|0|0|0|44|137
 Versioned-PROV|224|211|0|476|54|210|0|0|0|0|0|0|0|8|44|137
 
 
-The figure below compares the elements of each approach. Note that Mutable-PROV reduces the number of PROV nodes and relationships in comparision to the other approaches, but it does impose an overhead with values and values relationships for all entities. Overall, the amount of elements in Mutable-PROV is comparable to the amount of elements in PROV-Dictionary in our example. Mutable-PROV has an advantage in algorithms with more data structure updates while PROV-Dictionary han an advantage in algorithms with more simple variables.
-
-
+The figure below compares the number of nodes (i.e., `entity`, `activity`, ...) and relationships (i.e., `wasDerivedFrom`, `used`, `wasGeneratedBy`, ...) of each approach. Versioned-PROV is the approach with less componenens. In Versioned-PROV, the `derivedByInsertion` relationship indicates the creation of a new version for the entity. Thus, it replaces some entities that exist in the other approaches by this relationship. However, the other approaches also require similar relationships to indicate the membership of elements in data structures. Hence, this replacement does not result in a bigger number of relationships. Additionally, the `referenceDerivedFrom` and the `referenceDerivedFromAccess` appear as the `wasDerivedFrom` relationship in the other approaches. So, the addition of these statements do not increase the number of components.
 
 
 [![Comparison of elements](https://github.com/dew-uff/mutable-prov/raw/master/images/graphs/comparison.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/graphs/comparison.pdf)
+
+
+The Mutable-PROV approach has less relationships than Versioned-PROV. This occurs because Mutable-PROV does not have an `entity` for every part of a `value`, and does not use `wasDerivedFrom` relationships in accesses, due to the lach of these `entities`. On the other hand, Mutable-PROV has a much bigger number of nodes, due to the addition of `values`.
+
+The Intertwined-PROV approach is very similar to the Versioned-PROV, but the former use explict `Version` entities with `specializationOf` relationships from the entities, while the latter has the version concept implicitly built into the entities, through the timestamps and timed `derivedByInsertion` relationships. Hence, the Intertwined-PROV approach produces much more nodes and relationships than Versioned-PROV.
+
+The PROV-Dictionary approach creates a new `entity` when there is a change on an existing `entity` and when there is an access to an `entity` that represents a data-structure. Thus, it presents more nodes and relationships than the aforementioned approaches. However, it presents less relationships than the Plain PROV approach. This occurs because, the Plain PROV also creates new `entities` on changes, but has no mechanisms to indicate that an `entity` has all members of the previously existing `entity`, thus it requires many `hadMember` relationship for every `entity` that represent data structures. The number of nodes in Plain PROV and PROV-Dictionary could be equivalent, however, according to the PROV-Dictionary specification, for a dictionary to be deterministic, its derivation chain should end in an `EmptyDictionary` `entity`. Hence, we need extra nodes for the PROV-Dictionary approach.
 
 
 ## Query
