@@ -97,7 +97,7 @@ The ::GET MUTABLE_PROV:: mapping produces the following query result:
 
 The ::GET INTERTWINED_PROV:: mapping produces the following query result:
 
-::![Query in ::GET INTERTWINED_PROV::](::GET BASE::/interwined_prov/query)
+::![Query in ::GET INTERTWINED_PROV::](::GET BASE::/intertwined_prov/query)
 
 The ::GET VERSIONED_PROV:: mapping produces the following query result:
 

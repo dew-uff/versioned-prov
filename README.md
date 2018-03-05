@@ -92,7 +92,9 @@ The Mutable-PROV mapping produces the following query result:
 
 [![Query in Mutable-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/query.pdf)
 
+The Intertwined-PROV mapping produces the following query result:
 
+[![Query in Intertwined-PROV](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/query.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/query.pdf)
 
 The Versioned-PROV mapping produces the following query result:
 
