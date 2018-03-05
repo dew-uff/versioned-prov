@@ -70,7 +70,7 @@ Comparison:
 
 ## Assignment of list definition
 
-With mutable-prov, the assignment of a list is exactly the same as any other assignment. Thus, we just use the `accessed` relationship to indicate that accessed value by the entity.
+With ::GET NAME::, the assignment of a list is exactly the same as any other assignment. Thus, we just use the `accessed` relationship to indicate that accessed value by the entity.
 
 ```python
 d = [m, m + 1, m]

@@ -2,9 +2,13 @@
 import dateutil.parser
 from querier import querier, var, BLANK
 
+def unquote(value):
+    if value and value.startswith('"'):
+        value = value[1:-1]
+    return value
+
 def parsetime(time):
-    if time and time.startswith('"'):
-        time = time[1:-1]
+    time = unquote(time)
     if time and time.startswith("T"):
         return int(time[1:])
     try:
@@ -68,6 +72,9 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
     ]
 
 
-
-
-
+@querier.prov("specializationOf", ["specific", "general", "text"])
+def specialization_of(dot, specific=None, general=None, attrs=None, id_=None):
+    return [
+        specific, general,
+        querier.text("specializationOf", [specific, general], attrs, id_)
+    ]

@@ -95,7 +95,9 @@ The ::GET MUTABLE_PROV:: mapping produces the following query result:
 
 ::![Query in ::GET MUTABLE_PROV::](::GET BASE::/mutable_prov/query)
 
-::SET TODO = Query with Intertwined PROV?::
+The ::GET INTERTWINED_PROV:: mapping produces the following query result:
+
+::![Query in ::GET INTERTWINED_PROV::](::GET BASE::/interwined_prov/query)
 
 The ::GET VERSIONED_PROV:: mapping produces the following query result:
 
