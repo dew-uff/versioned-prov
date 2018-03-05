@@ -5,6 +5,21 @@
 
 In this document we map simple script constructs to ::GET NAME::.
 
+## Extension
+
+The `type="Version"` in entities inherits from `type="Dictionary"` from PROV-Dictionary.
+
+Our extension also adds new attributes to existing statements:
+
+| Statement      | Attribute    | Values         | Required               |
+|:--------------:|:------------:|:--------------:|:----------------------:|
+| wasDerivedFrom | moment       | timestamp      | If type is "Reference" |
+| wasDerivedFrom | type         | "Reference"    | No                     |
+| wasDerivedFrom | access       | "r" &#124; "w" | No                     |
+| wasDerivedFrom | whole        | entity id      | If it is an access     |
+| wasDerivedFrom | key          | string         | If it is an access     |
+
+
 ## Names, literals, and constants
 
 During the script execution, function calls, literals (e.g., "a", 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as `entities`.

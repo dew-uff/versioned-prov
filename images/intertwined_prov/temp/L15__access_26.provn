@@ -1,7 +1,7 @@
 entity(disti_aj#29, [value="3",type="access",label="disti[j]"])
 activity(access128, [type="access"])
 used(u226; access128, disti_aj#9, -)
-referenceDerivedFromAccess(disti_aj#29, disti_aj#9, access128, g200, u226, 2018-03-04T22:01:06.849993, disti#9, 2, "r")
+wasDerivedFrom(disti_aj#29, disti_aj#9, access128, g200, u226, [type="Reference", moment="2018-03-05T15:32:52.856215", whole="disti#9", key="2", access="r"])
 wasGeneratedBy(g200; disti_aj#29, access128, -)
 used(access128, disti#9, -)
 used(access128, j#26, -)

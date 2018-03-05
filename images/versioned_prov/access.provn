@@ -3,10 +3,12 @@ entity(m, [value="10000", type="name", label="m", generatedAtTime="T2"])
 entity(sum, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
 
 entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]", generatedAtTime="T5"])
-derivedByInsertion(list, {("0", m), ("1", sum), ("2", m)}, T5)
+hadMember(list, m, [type="Insertion", key="0", moment="T5"])
+hadMember(list, sum, [type="Insertion", key="1", moment="T5"])
+hadMember(list, m, [type="Insertion", key="2", moment="T5"])
 
 entity(d, [value="[10000, 10001, 10000]", type="name", label="d", generatedAtTime="T6"])
-referenceDerivedFrom(d, list, -, -, -, T6)
+wasDerivedFrom(d, list, -, -, -, [type="Reference", moment="T6"])
 
 
 // new
@@ -20,4 +22,4 @@ used(access1, d, -)
 used(access1, 0, -)
 used(u9; access1, m, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
-referenceDerivedFromAccess(d_ac0, m, access1, g9, u9, T10, d, "0", "r")
+wasDerivedFrom(d_ac0, m, access1, g9, u9, [type="Reference", moment="T10", whole="d", key="0", access="r"])

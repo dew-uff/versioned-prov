@@ -9,30 +9,44 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 100.5)">
 <title>PROV</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-100.5 292,-100.5 292,4 -4,4"/>
-<!-- http://example.org/list1#2 -->
-<g id="node1" class="node"><title>http://example.org/list1#2</title>
-<g id="a_node1"><a xlink:href="http://example.org/list1#2" xlink:title="list1#2">
-<ellipse fill="#fffc87" stroke="#808080" cx="129" cy="-24.5" rx="34.394" ry="18"/>
-<text text-anchor="middle" x="129" y="-20.8" font-family="Times New Roman,serif" font-size="14.00">list1#2</text>
-</a>
-</g>
-</g>
 <!-- http://example.org/3 -->
-<g id="node2" class="node"><title>http://example.org/3</title>
-<g id="a_node2"><a xlink:href="http://example.org/3" xlink:title="3">
+<g id="node1" class="node"><title>http://example.org/3</title>
+<g id="a_node1"><a xlink:href="http://example.org/3" xlink:title="3">
 <ellipse fill="#fffc87" stroke="#808080" cx="27" cy="-51.5" rx="27" ry="18"/>
 <text text-anchor="middle" x="27" y="-47.8" font-family="Times New Roman,serif" font-size="14.00">3</text>
 </a>
 </g>
 </g>
+<!-- &#45;attrs0 -->
+<g id="node2" class="node"><title>&#45;attrs0</title>
+<polygon fill="none" stroke="gray" points="162,-96.5 90,-96.5 90,-60.5 168,-60.5 168,-90.5 162,-96.5"/>
+<polyline fill="none" stroke="gray" points="162,-96.5 162,-90.5 "/>
+<polyline fill="none" stroke="gray" points="168,-90.5 162,-90.5 "/>
+<text text-anchor="start" x="100" y="-82.5" font-family="Times New Roman,serif" font-size="10.00">value:</text>
+<text text-anchor="start" x="127" y="-82.5" font-family="Times New Roman,serif" font-size="10.00">&quot;3&quot;</text>
+<text text-anchor="start" x="100" y="-69.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
+<text text-anchor="start" x="127" y="-69.5" font-family="Times New Roman,serif" font-size="10.00">&quot;literal&quot;</text>
+</g>
+<!-- &#45;attrs0&#45;&gt;http://example.org/3 -->
+<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/3</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M89.909,-68.2154C77.3245,-64.8176 63.6713,-61.1313 52.3968,-58.0871"/>
+</g>
+<!-- http://example.org/list1#2 -->
+<g id="node3" class="node"><title>http://example.org/list1#2</title>
+<g id="a_node3"><a xlink:href="http://example.org/list1#2" xlink:title="list1#2">
+<ellipse fill="#fffc87" stroke="#808080" cx="129" cy="-24.5" rx="34.394" ry="18"/>
+<text text-anchor="middle" x="129" y="-20.8" font-family="Times New Roman,serif" font-size="14.00">list1#2</text>
+</a>
+</g>
+</g>
 <!-- http://example.org/list1#2&#45;&gt;http://example.org/3 -->
-<g id="edge1" class="edge"><title>http://example.org/list1#2&#45;&gt;http://example.org/3</title>
+<g id="edge2" class="edge"><title>http://example.org/list1#2&#45;&gt;http://example.org/3</title>
 <path fill="none" stroke="black" d="M97.9967,-32.6009C86.6947,-35.6524 73.7606,-39.1446 62.1108,-42.2901"/>
 <polygon fill="black" stroke="black" points="61.0189,-38.9595 52.277,-44.9452 62.8437,-45.7175 61.0189,-38.9595"/>
 <text text-anchor="middle" x="94.1421" y="-45.1972" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
-<!-- &#45;attrs0 -->
-<g id="node3" class="node"><title>&#45;attrs0</title>
+<!-- &#45;attrs1 -->
+<g id="node4" class="node"><title>&#45;attrs1</title>
 <polygon fill="none" stroke="gray" points="282,-49 204,-49 204,-0 288,-0 288,-43 282,-49"/>
 <polyline fill="none" stroke="gray" points="282,-49 282,-43 "/>
 <polyline fill="none" stroke="gray" points="288,-43 282,-43 "/>
@@ -43,23 +57,9 @@
 <text text-anchor="start" x="214" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="241" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">&quot;d[1]&quot;</text>
 </g>
-<!-- &#45;attrs0&#45;&gt;http://example.org/list1#2 -->
-<g id="edge2" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/list1#2</title>
+<!-- &#45;attrs1&#45;&gt;http://example.org/list1#2 -->
+<g id="edge3" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/list1#2</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M203.807,-24.5C190.66,-24.5 176.272,-24.5 163.719,-24.5"/>
-</g>
-<!-- &#45;attrs1 -->
-<g id="node4" class="node"><title>&#45;attrs1</title>
-<polygon fill="none" stroke="gray" points="162,-96.5 90,-96.5 90,-60.5 168,-60.5 168,-90.5 162,-96.5"/>
-<polyline fill="none" stroke="gray" points="162,-96.5 162,-90.5 "/>
-<polyline fill="none" stroke="gray" points="168,-90.5 162,-90.5 "/>
-<text text-anchor="start" x="100" y="-82.5" font-family="Times New Roman,serif" font-size="10.00">value:</text>
-<text text-anchor="start" x="127" y="-82.5" font-family="Times New Roman,serif" font-size="10.00">&quot;3&quot;</text>
-<text text-anchor="start" x="100" y="-69.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="127" y="-69.5" font-family="Times New Roman,serif" font-size="10.00">&quot;literal&quot;</text>
-</g>
-<!-- &#45;attrs1&#45;&gt;http://example.org/3 -->
-<g id="edge3" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/3</title>
-<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M89.909,-68.2154C77.3245,-64.8176 63.6713,-61.1313 52.3968,-58.0871"/>
 </g>
 </g>
 </svg>

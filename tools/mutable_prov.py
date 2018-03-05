@@ -1,22 +1,6 @@
 from provn import graph
+from utils import garrow2, unquote
 
-def _marrow2(dot, first, second, label="", extra={}):
-    if not first or not second:
-        return None
-
-    url1 = dot.prefix(first)
-    url2 = dot.prefix(second)
-
-    labeldict = {
-        "labelfontsize": "8",
-        "labeldistance": "1.5",
-        "color": "darkgreen",
-        "labelangle": "60.0",
-        "rotation": "20",
-        "label": label
-    }
-
-    return dot.arrow(url1, url2, attrs=dict(**labeldict, **extra))
 
 @graph.prov("value")
 def value(dot, vid, attrs=None, id_=None):
@@ -36,38 +20,36 @@ def value(dot, vid, attrs=None, id_=None):
 
 @graph.prov("accessed")
 def accessed(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
-    return _marrow2(dot, eid, vid, "access\n{}".format(time or "-"))
+    return garrow2(dot, eid, vid, "access\n{}".format(time or "-"))
 
 
 @graph.prov("accessedPart")
 def accessed_part(dot, eid=None, wid=None, key=None, pid=None, time=None, attrs=None, id_=None):
-    if key and key.startswith('"') and key.endswith('"'):
-        key = key[1:-1]
-    return _marrow2(dot, eid, pid, "part\n{}[{}]\n{}".format(
+    key = unquote(key)
+    return garrow2(dot, eid, pid, "part\n{}[{}]\n{}".format(
         wid or "-", key or "-", time or "-"
     ))
 
 
 @graph.prov("defined")
 def defined(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
-    return _marrow2(dot, eid, vid, "defined\n{}".format(time or "-"))
+    return garrow2(dot, eid, vid, "defined\n{}".format(time or "-"))
 
 
 @graph.prov("wasDefinedBy")
 def was_defined_by(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
-    return _marrow2(dot, vid, eid, "def by\n{}".format(time or "-"))
+    return garrow2(dot, vid, eid, "def by\n{}".format(time or "-"))
 
 
 @graph.prov("derivedByInsertion")
 def derived_by_insertion(dot, eid=None, wid=None, changes=None, time=None, attrs=None, id_=None):
     result = []
     for pos, part in changes:
-        if pos and pos.startswith('"') and pos.endswith('"'):
-            pos = pos[1:-1]
-        result.append(_marrow2(
+        pos = unquote(pos)
+        result.append(garrow2(
             dot, wid, part, "der-ins-v\n[{}]\n{}".format(pos or "-", time or "-")
         ))
-        result.append(_marrow2(
+        result.append(garrow2(
             dot, part, eid, "der-ins-e\n[{}]\n{}".format(pos or "-", time or "-"),
             extra={"style":"dashed"}
         ))
@@ -82,9 +64,8 @@ def derived_by_insertion(dot, eid=None, wid=None, changes=None, time=None, attrs
 def derived_by_removal(dot, eid=None, wid=None, positions=None, time=None, attrs=None, id_=None):
     result = []
     for pos in positions:
-        if pos and pos.startswith('"') and pos.endswith('"'):
-            pos = pos[1:-1]
-        result.append(_marrow2(
+        pos = unquote(pos)
+        result.append(garrow2(
             dot, wid, eid, "der-rem\n[{}]\n{}".format(pos or "-", time or "-")
         ))
 

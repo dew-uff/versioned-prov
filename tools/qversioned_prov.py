@@ -1,8 +1,10 @@
 """Incomplete file with only the predicates we use in our mappings"""
 from qprovn import *
+from utils import unquote, parsetime
 
 @querier.prov("entity", ["id", "time", "text"])
 def entity(querier, eid, attrs={}, id_=None):
+    attrs = attrs or {}
     time = attrs.get("generatedAtTime")
     return [
         eid, parsetime(time),
@@ -10,25 +12,22 @@ def entity(querier, eid, attrs={}, id_=None):
     ]
 
 
-@querier.prov("referenceDerivedFrom", ["generated", "used", "activity", "generation", "use", "time", "text"])
-def reference_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, time=None, attrs=None, id_=None):
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "moment", "whole", "key", "mode", "text"])
+def was_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
+    attrs = attrs or {}
     return [
-        eid1, eid2, aid, gid, uid, parsetime(time),
-        querier.text("referenceDerivedFrom", [eid1, eid2, aid, gid, uid, time], attrs, id_)
+        eid1, eid2, aid, gid, uid,
+        unquote(attrs.get("type")), parsetime(attrs.get("moment")),
+        unquote(attrs.get("whole")), unquote(attrs.get("key")), unquote(attrs.get("access")),
+        querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]
 
 
-@querier.prov("referenceDerivedFromAccess", ["generated", "used", "activity", "generation", "use", "time", "whole", "key", "mode", "text"])
-def reference_derived_from_access(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, time=None, whole=None, key=None, mode=None, attrs=None, id_=None):
+@querier.prov("hadMember", ["collection", "entity", "type", "key", "moment", "text"])
+def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
+    attrs = attrs or {}
     return [
-        eid1, eid2, aid, gid, uid, parsetime(time), whole, key, mode,
-        querier.text("referenceDerivedFromAccess", [eid1, eid2, aid, gid, uid, time, whole, key, mode], attrs, id_)
-    ]
-
-
-@querier.prov("derivedByInsertion", ["entity", "changes", "time", "text"])
-def derived_by_insertion(dot, wid=None, changes=None, time=None, attrs=None, id_=None):
-    return [
-        wid, changes, parsetime(time),
-        querier.text("derivedByInsertion", [wid, changes, time], attrs, id_)
+        ecollection, eid,
+        unquote(attrs.get("type")), unquote(attrs.get("key")), parsetime(attrs.get("moment")),
+        querier.text("hadMember", [ecollection, eid], attrs, id_)
     ]

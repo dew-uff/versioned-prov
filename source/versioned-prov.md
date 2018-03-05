@@ -5,6 +5,23 @@
 
 In this document we map simple script constructs to ::GET NAME::.
 
+## Extension
+
+Our extension adds new attributes to existing statements:
+
+| Statement      | Attribute    | Values                       | Required                      |
+|:--------------:|:------------:|:----------------------------:|:-----------------------------:|
+| wasDerivedFrom | moment       | timestamp                    | If type is "Reference"        |
+| wasDerivedFrom | type         | "Reference"                  | No                            |
+| wasDerivedFrom | access       | "r" &#124; "w"               | No                            |
+| wasDerivedFrom | whole        | entity id                    | If it is an access            |
+| wasDerivedFrom | key          | string                       | If it is an access            |
+| hadMember      | type         | "Insertion" &#124; "Removal" | No                            |
+| hadMember      | moment       | timestamp                    | if type is from the extension |
+| hadMember      | key          | string                       | if type is from the extension |
+
+While we use `hadMember` with `type="Removal"` for removing elements from a data structure, the element `entity` could be empty or a reference to a void `entity`.
+
 ## Names, literals, and constants
 
 During the script execution, function calls, literals (e.g., "a", 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as `entities`.

@@ -9,10 +9,11 @@ DICTS = defaultdict(dict)
 ENABLED = True
 RESULT = []
 TEMP = []
-STATS = Counter()
+STATS = defaultdict(Counter)
 VALUES = {}
 SAME = {}
 TEMP_BASE = ""
+LINE = None
 
 def reset_prov(temp_base):
     global DICTS
@@ -29,13 +30,15 @@ def reset_prov(temp_base):
     ENABLED = False
     RESULT = []
     TEMP = []
-    STATS = Counter()
+    STATS = defaultdict(Counter)
     VALUES = {}
     SAME = {}
 
 
 def add(text):
-    STATS[text.split("(")[0]] += 1
+    statement = text.split("(")[0]
+    STATS["global"][statement] += 1
+    STATS[LINE][statement] += 1
     RESULT.append(text)
     TEMP.append(text)
     if ENABLED:
@@ -43,7 +46,9 @@ def add(text):
 
 def stats(path=None, view=False, temp=False, show=True):
     provn = "\n".join(TEMP if temp else RESULT)
-    result = STATS.most_common()
+    result = {}
+    for key, stats in STATS.items():
+        result[key] = stats.most_common()
     if path:
         with open(path + ".json", "w") as f:
             json.dump(result, f)
@@ -114,21 +119,21 @@ def activity(name, derived=[], used=[], generated=[], label=None):
             if "g" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "w")'.format(
+                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}", whole="{}", key="{}", access="w"])'.format(
                         vn, vo, varname, varg, vu, time, whole, key
                     ))
                     SAME[vn] = SAME.get(vo, vo)
             elif "p" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('referenceDerivedFromAccess({}, {}, {}, {}, {}, {}, {}, {}, "r")'.format(
+                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}", whole="{}", key="{}", access="r"])'.format(
                         vn, vo, varname, varg, vu, time, whole, key
                     ))
                     SAME[vn] = SAME.get(vo, vo)
             elif "d" in command:
                 time, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add("referenceDerivedFrom({}, {}, {}, {}, {}, {})".format(
+                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}"])'.format(
                         vn, vo, varname, varg, vu, time
                     ))
                     SAME[vn] = SAME.get(vo, vo)
@@ -207,6 +212,13 @@ def hadMember(cname, entity, key):
     add("hadMember({}, {})".format(cname, entity))
     DICTS[cname][key] = entity
 
+def vhadMember(cname, entity, key, time):
+    add('hadMember({}, {}, [type="Insertion", key="{}", moment="{}"])'.format(
+        cname, entity, key, time
+    ))
+    DICTS[cname][key] = entity
+
+
 def hadDictionaryMember(dname, entity, key):
     add("hadDictionaryMember({}, {}, {})".format(dname, entity, key))
     DICTS[dname][key] = entity
@@ -280,16 +292,17 @@ def update(name, whole_ent, key, part_ent, whole_value, label=None):
         if other_key != key:
             hadMember(new_whole, other_part, str(other_key))
     hadMember(new_whole, part_ent, str(key))
-    
     return new_whole
 
-
-
 @contextmanager
-def desc(desc, enabled=False):
+def desc(desc, enabled=False, line=None):
     global TEMP
+    global LINE
+    ltemp = LINE
     ptemp = TEMP
     TEMP = []
+    if line is not None:
+        LINE = line
     global ENABLED
     if enabled:
         ENABLED = True
@@ -308,3 +321,4 @@ def desc(desc, enabled=False):
 
     stats(join(TEMP_BASE, get_varname(slug, sep="_")), "provn svg", True, False)
     TEMP = ptemp + TEMP
+    LINE = ltemp

@@ -9,6 +9,7 @@ def derived_by_insertion_from(dot, dgen=None, duse=None, changes=None, attrs=Non
         querier.text("derivedByInsertionFrom", [dgen, duse, changes], attrs, id_)
     ]
 
+
 @querier.prov("hadDictionaryMember", ["dict", "entity", "key", "text"])
 def had_dictionary_member(dot, did=None, eid=None, key=None, attrs=None, id_=None):
     return [

@@ -1,8 +1,11 @@
 """Incomplete file with only the predicates we use in our mappings"""
+import dateutil
 from qprov_dictionary import *
+from utils import parsetime, unquote
 
 @querier.prov("entity", ["id", "time", "type", "text"])
 def entity(querier, eid, attrs={}, id_=None):
+    attrs = attrs or {}
     time = attrs.get("generatedAtTime")
     type_ = attrs.get("type")
     return [
@@ -11,17 +14,12 @@ def entity(querier, eid, attrs={}, id_=None):
     ]
 
 
-@querier.prov("referenceDerivedFrom", ["generated", "used", "activity", "generation", "use", "time", "text"])
-def reference_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, time=None, attrs=None, id_=None):
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "moment", "whole", "key", "mode", "text"])
+def was_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
+    attrs = attrs or {}
     return [
-        eid1, eid2, aid, gid, uid, parsetime(time),
-        querier.text("referenceDerivedFrom", [eid1, eid2, aid, gid, uid, time], attrs, id_)
-    ]
-
-
-@querier.prov("referenceDerivedFromAccess", ["generated", "used", "activity", "generation", "use", "time", "whole", "key", "mode", "text"])
-def reference_derived_from_access(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, time=None, whole=None, key=None, mode=None, attrs=None, id_=None):
-    return [
-        eid1, eid2, aid, gid, uid, parsetime(time), whole, key, mode,
-        querier.text("referenceDerivedFromAccess", [eid1, eid2, aid, gid, uid, time, whole, key, mode], attrs, id_)
+        eid1, eid2, aid, gid, uid,
+        unquote(attrs.get("type")), parsetime(attrs.get("moment")),
+        unquote(attrs.get("whole")), unquote(attrs.get("key")), unquote(attrs.get("access")),
+        querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]

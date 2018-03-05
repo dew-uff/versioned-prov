@@ -1,6 +1,6 @@
 entity(disti_aj#25, [type="access",label="disti[j]"])
-derivedByInsertion(disti_aj#25, row1, {("0", vsum#22)}, 2018-03-04T18:41:41.323975)
-accessed(disti_aj#25, vsum#22, 2018-03-04T18:41:41.323975)
+derivedByInsertion(disti_aj#25, row1, {("0", vsum#22)}, 2018-03-05T15:04:35.475461)
+accessed(disti_aj#25, vsum#22, 2018-03-05T15:04:35.475461)
 activity(assign41, [type="assign"])
 used(u85; assign41, ikj#22, -)
 wasDerivedFrom(disti_aj#25, ikj#22, assign41, g63, u85)

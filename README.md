@@ -58,13 +58,13 @@ The Versioned-PROV mapping produced the following graph:
 
 The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach.
 
-Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|had<br>Dictionary<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion|reference<br>Derived<br>From|reference<br>Derived<br>From<br>Access
----|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
-PROV|242|212|0|488|244|232|126|0|0|0|0|0|0|0|0|0
-PROV-Dictionary|275|212|0|488|244|232|0|0|42|0|0|0|0|0|0|0
-Mutable-PROV|218|211|43|336|101|210|0|0|0|134|47|37|37|8|0|0
-Intertwined-PROV|270|211|0|476|54|210|0|15|3|0|0|0|0|0|44|137
-Versioned-PROV|224|211|0|476|54|210|0|0|0|0|0|0|0|8|44|137
+Approach|entity|activity|value|used|was<br>Derived<br>From|was<br>Generated<br>By|had<br>Member|had<br>Dictionary<br>Member|derived<br>By<br>Insertion<br>From|accessed<br>Part|accessed|defined|was<br>Defined<br>By|derived<br>By<br>Insertion
+---|---|---|---|---|---|---|---|---|---|---|---|---|---|---
+PROV|242|212|0|491|244|232|126|0|0|0|0|0|0|0
+PROV-Dictionary|275|212|0|488|244|232|0|0|42|0|0|0|0|0
+Mutable-PROV|218|211|43|336|101|210|0|0|0|134|47|37|37|8
+Intertwined-PROV|270|211|0|476|235|210|0|15|3|0|0|0|0|0
+Versioned-PROV|224|211|0|476|235|210|18|0|0|0|0|0|0|0
 
 
 The figure below compares the number of nodes (i.e., `entity`, `activity`, ...) and relationships (i.e., `wasDerivedFrom`, `used`, `wasGeneratedBy`, ...) of each approach. Versioned-PROV is the approach with less componenens. In Versioned-PROV, the `derivedByInsertion` relationship indicates the creation of a new version for the entity. Thus, it replaces some entities that exist in the other approaches by this relationship. However, the other approaches also require similar relationships to indicate the membership of elements in data structures. Hence, this replacement does not result in a bigger number of relationships. Additionally, the `referenceDerivedFrom` and the `referenceDerivedFromAccess` appear as the `wasDerivedFrom` relationship in the other approaches. So, the addition of these statements do not increase the number of components.
