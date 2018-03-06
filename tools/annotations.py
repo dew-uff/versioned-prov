@@ -1,3 +1,6 @@
+if __name__ == "__main__":
+    import sys; sys.path.insert(0, '..')
+
 from collections import Counter, defaultdict
 from copy import copy
 from contextlib import contextmanager
@@ -46,6 +49,8 @@ def add(text):
 
 def stats(path=None, view=False, temp=False, show=True):
     provn = "\n".join(TEMP if temp else RESULT)
+    if not provn:
+        return
     result = {}
     for key, stats in STATS.items():
         result[key] = stats.most_common()
@@ -77,80 +82,129 @@ def get_varname(name, sep="#", show1=False):
         extra = "{}{}".format(sep, num)
     return "{}{}".format(name, extra)
 
+def _attrpairs(new_attrs):
+    if not new_attrs:
+        return ""
+    return ", [{}]".format(",".join(
+        '{}="{}"'.format(key, value)
+        for key, value in new_attrs.items()
+    ))
 
-def entity(name, value, type_, label, *, attrs={}):
-    varname = get_varname(name)
+def _buildattrs(attrs, pairs):
+    pairs = pairs or []
+    attrs = attrs or {}
     new_attrs = {}
-    for key, value in [("value", value), ("type", type_), ("label", label)]:
+    for key, value in pairs:
         if value:
             new_attrs[key] = value
     for key, value in attrs.items():
         new_attrs[key] = value
+    return new_attrs
 
-    add('entity({}, [{}])'.format(varname, ",".join(
-        '{}="{}"'.format(key, value)
-        for key, value in new_attrs.items()
-    )))
+
+def entity(name, value, type_, label, *, attrs={}):
+    varname = get_varname(name)
+    new_attrs = _buildattrs(attrs, [
+        ("value", value),
+        ("type", type_),
+        ("label", label)
+    ])
+    add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
-def version(name, time):
+def version(name, time, *, attrs={}):
     varname = get_varname(name + "_v", sep="", show1=True)
-    add('entity({}, [generatedAtTime="{}", type="Version"])'.format(varname, time))
+    new_attrs = _buildattrs(attrs, [
+        ("generatedAtTime", time),
+        ("type", "Version"),
+    ])
+    add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
 def ventity(time, name, value, type_, label, *, attrs={}):
-    new_attrs = {}
-    new_attrs["generatedAtTime"] = time
-    for key, value in attrs.items():
-        new_attrs[key] = value
+    new_attrs = _buildattrs(attrs, [
+        ("generatedAtTime", time),
+    ])
     return entity(name, value, type_, label, attrs=new_attrs)
 
-def activity(name, derived=[], used=[], generated=[], label=None):
+def activity(name, derived=[], used=[], generated=[], label=None, attrs={}):
     varname = get_varname(name, sep="", show1=True)
-    label = ', label="{}"'.format(label) if label else ""
-    add('activity({}, [type="{}"{}])'.format(varname, name, label))
+    new_attrs = {}
+    wdf_attrs = {}
+    wgb_attrs = {}
+    u_attrs = {}
+    for key, value in attrs.items():
+        if key.startswith("wasDerivedFrom:"):
+            wdf_attrs[key[15:]] = value
+        elif key.startswith("wasGeneratedBy:"):
+            wgb_attrs[key[15:]] = value
+        elif key.startswith("used:"):
+            u_attrs[key[5:]] = value
+        elif key.startswith("attrs:"):
+            key = key[6:]
+            wdf_attrs[key] = wgb_attrs[key] = u_attrs[key] = value
+        elif key.startswith("dot:"):
+            new_attrs[key] = wdf_attrs[key] = wgb_attrs[key] = u_attrs[key] = value
+        else:
+            new_attrs[key] = value
+
+    new_attrs = _buildattrs(new_attrs, [
+        ("type", name),
+        ("label", label),
+    ])
+    add('activity({}{})'.format(varname, _attrpairs(new_attrs)))
 
     for new, *olds in derived:
         varg = get_varname("g", sep="", show1=True)
 
-        fnderived = lambda vn, vo, vu: add("wasDerivedFrom({}, {}, {}, {}, {})".format(vn, vo, varname, varg, vu))
+        fnderived = lambda vn, vo, vu: wdf_attrs
         if new.startswith("--"):
             command = new[2:]
             if "g" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}", whole="{}", key="{}", access="w"])'.format(
-                        vn, vo, varname, varg, vu, time, whole, key
-                    ))
                     SAME[vn] = SAME.get(vo, vo)
+                    attrs = copy(wdf_attrs)
+                    attrs["type"] = "Reference"
+                    attrs["moment"] = time
+                    attrs["whole"] = whole
+                    attrs["key"] = key
+                    attrs["access"] = "w"
+                    return attrs
+
+
             elif "p" in command:
                 time, whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}", whole="{}", key="{}", access="r"])'.format(
-                        vn, vo, varname, varg, vu, time, whole, key
-                    ))
                     SAME[vn] = SAME.get(vo, vo)
+                    attrs = copy(wdf_attrs)
+                    attrs["type"] = "Reference"
+                    attrs["moment"] = time
+                    attrs["whole"] = whole
+                    attrs["key"] = key
+                    attrs["access"] = "r"
+                    return attrs
             elif "d" in command:
                 time, new, *olds = olds
                 def fnderived(vn, vo, vu):
-                    add('wasDerivedFrom({}, {}, {}, {}, {}, [type="Reference", moment="{}"])'.format(
-                        vn, vo, varname, varg, vu, time
-                    ))
                     SAME[vn] = SAME.get(vo, vo)
+                    attrs = copy(wdf_attrs)
+                    attrs["type"] = "Reference"
+                    attrs["moment"] = time
+                    return attrs
 
         for old in olds:
             varu = get_varname("u", sep="", show1=True)
-            add("used({}; {}, {}, -)".format(varu, varname, old))
-            fnderived(new, old, varu)
-
-        add("wasGeneratedBy({}; {}, {}, -)".format(varg, new, varname))
+            add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
+            add("wasDerivedFrom({}, {}, {}, {}, {}{})".format(new, old, varname, varg, varu, _attrpairs(fnderived(new, old, varu))))
+        add("wasGeneratedBy({}; {}, {}, -{})".format(varg, new, varname, _attrpairs(wgb_attrs)))
 
 
     for old in used:
-        add("used({}, {}, -)".format(varname, old))
+        add("used({}, {}, -{})".format(varname, old, _attrpairs(u_attrs)))
 
     for new in generated:
-        add("wasGeneratedBy({}, {}, -)".format(new, varname))
+        add("wasGeneratedBy({}, {}, -{})".format(new, varname, _attrpairs(wgb_attrs)))
     return varname
 
 def value(name, value, num=None, attrs={}):

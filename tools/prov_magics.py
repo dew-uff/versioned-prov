@@ -1,3 +1,6 @@
+if __name__ == "__main__":
+    import sys; sys.path.insert(0, '..')
+
 import subprocess
 import platform
 import errno
@@ -8,7 +11,7 @@ from IPython.display import display, Image, SVG
 from IPython.core.magic import Magics, magics_class, cell_magic
 from IPython.core.magic_arguments import argument, magic_arguments, parse_argstring
 
-from dot import graph
+from tools.view.dot import graph
 
 STARTUPINFO = None
 
