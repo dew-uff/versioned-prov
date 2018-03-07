@@ -3,15 +3,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">value:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;2&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">2</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;name&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">name</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">label:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;k&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">k</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/k#3" [color="#F0F0F0",style="dashed",arrowhead="none"]
@@ -19,7 +19,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;access&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">access</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/access39" [color="#F0F0F0",style="dashed",arrowhead="none"]

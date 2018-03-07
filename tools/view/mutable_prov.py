@@ -3,13 +3,13 @@ if __name__ == "__main__":
 
 from tools.view.provn import graph
 from tools.utils import garrow2, unquote
-
+import tools.utils
 
 @graph.prov("value")
 def value(dot, vid, attrs=None, id_=None):
     url = dot.prefix(vid)
     result = dot.node(url, dot.replace({
-        "fillcolor": "#32CD32",
+        "fillcolor": tools.utils.HIGHLIGHT2,
         "color": "#808080",
         "style": "filled",
         "label": vid,

@@ -3,15 +3,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[0, 1, 2]&quot;</TD>
+	    <TD align="left">[0, 1, 2]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;eval&quot;</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;range(nodes)&quot;</TD>
+	    <TD align="left">range(nodes)</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/range_nodes" [color="gray",style="dashed",arrowhead="none"]
@@ -19,50 +19,50 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;0&quot;</TD>
+	    <TD align="left">0</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;item&quot;</TD>
+	    <TD align="left">item</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/range_nodes0" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes0"
+"http://example.org/range_nodes" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/range_nodes1" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes1",URL="http://example.org/range_nodes1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
+	    <TD align="left">1</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;item&quot;</TD>
+	    <TD align="left">item</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/range_nodes1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes1"
+"http://example.org/range_nodes" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/range_nodes2" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes2",URL="http://example.org/range_nodes2"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;2&quot;</TD>
+	    <TD align="left">2</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;item&quot;</TD>
+	    <TD align="left">item</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/range_nodes2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes2"
+"http://example.org/range_nodes" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/call2" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="call2",URL="http://example.org/call2",fontcolor="gray"]
 "-attrs4" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;call&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">call</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">label:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;range&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">range</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/call2" [color="#F0F0F0",style="dashed",arrowhead="none"]
@@ -75,26 +75,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[0, 1, 2]&quot;</TD>
+	    <TD align="left">[0, 1, 2]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;indexes&quot;</TD>
+	    <TD align="left">indexes</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/indexes" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/indexes" -> "http://example.org/range_nodes0"
-"http://example.org/indexes" -> "http://example.org/range_nodes1"
-"http://example.org/indexes" -> "http://example.org/range_nodes2"
+"http://example.org/indexes" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/indexes" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/indexes" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/assign5" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="assign5",URL="http://example.org/assign5",fontcolor="gray"]
 "-attrs6" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;assign&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">assign</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/assign5" [color="#F0F0F0",style="dashed",arrowhead="none"]

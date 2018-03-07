@@ -3,13 +3,14 @@ if __name__ == "__main__":
 
 from tools.view.prov_dictionary import graph
 from tools.utils import unquote, garrow3, arrow2, garrow2
+import tools.utils
 
 @graph.prov("entity")
 def entity(dot, eid, attrs=None, id_=None):
     fillcolor = "#FFFC87"
     attrs = attrs or {}
     if attrs.get("type") == '"Version"':
-        fillcolor = "#32CD32"
+        fillcolor = tools.utils.HIGHLIGHT2
 
     url = dot.prefix(eid)
     result = dot.node(url, dot.replace({

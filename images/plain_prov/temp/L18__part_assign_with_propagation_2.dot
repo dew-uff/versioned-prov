@@ -3,15 +3,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;3&quot;</TD>
+	    <TD align="left">3</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;access&quot;</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;disti[j]&quot;</TD>
+	    <TD align="left">disti[j]</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/disti_aj#5" [color="gray",style="dashed",arrowhead="none"]
@@ -19,64 +19,64 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[0, 1, 3]&quot;</TD>
+	    <TD align="left">[0, 1, 3]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;list&quot;</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;disti&quot;</TD>
+	    <TD align="left">disti</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/disti#5" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti#5" -> "http://example.org/list00"
-"http://example.org/disti#5" -> "http://example.org/list01"
-"http://example.org/disti#5" -> "http://example.org/disti_aj#5"
+"http://example.org/disti#5" -> "http://example.org/list00" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/disti#5" -> "http://example.org/list01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/disti#5" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/dist#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist#3",URL="http://example.org/dist#3"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[[0, 1, 3], [10000, 0, 2], [2, 3, 0]]&quot;</TD>
+	    <TD align="left">[[0, 1, 3], [10000, 0, 2], [2, 3, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;list&quot;</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;dist&quot;</TD>
+	    <TD align="left">dist</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/dist#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/dist#3" -> "http://example.org/list1"
-"http://example.org/dist#3" -> "http://example.org/disti#3"
-"http://example.org/dist#3" -> "http://example.org/disti#5"
+"http://example.org/dist#3" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/dist#3" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/dist#3" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/result#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="result#3",URL="http://example.org/result#3"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[[0, 1, 3], [10000, 0, 2], [2, 3, 0]]&quot;</TD>
+	    <TD align="left">[[0, 1, 3], [10000, 0, 2], [2, 3, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;result&quot;</TD>
+	    <TD align="left">result</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/result#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result#3" -> "http://example.org/list1"
-"http://example.org/result#3" -> "http://example.org/disti#3"
-"http://example.org/result#3" -> "http://example.org/disti#5"
+"http://example.org/result#3" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/result#3" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/result#3" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/assign15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign15",URL="http://example.org/assign15"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;assign&quot;</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/assign15" [color="gray",style="dashed",arrowhead="none"]

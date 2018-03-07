@@ -3,90 +3,66 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]&quot;</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;Dictionary&quot;</TD>
+	    <TD align="left">Dictionary</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;dist&quot;</TD>
+	    <TD align="left">dist</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/edist" [fillcolor="#FFFC87",color="#808080",style="filled",label="edist",URL="http://example.org/edist"]
+"bn0" [shape="point",label=""]
+"http://example.org/dist" -> "bn0" [arrowhead="none",taillabel="der-ins",color="#000000"]
+"bn0" -> "http://example.org/empty" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="der"]
+"bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[0]"]
+"bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[1]"]
+"bn0" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[2]"]
+"http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[]&quot;</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;EmptyDictionary&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/edist" [color="gray",style="dashed",arrowhead="none"]
-"bn0" [shape="point",label=""]
-"http://example.org/dist" -> "bn0" [arrowhead="none",taillabel="der-ins",color="darkgreen"]
-"bn0" -> "http://example.org/edist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
-"bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
-"bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"bn0" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;Dictionary&quot;</TD>
+	    <TD align="left">Dictionary</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;result&quot;</TD>
+	    <TD align="left">result</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/eresult" [fillcolor="#FFFC87",color="#808080",style="filled",label="eresult",URL="http://example.org/eresult"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[]&quot;</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;EmptyDictionary&quot;</TD>
-	</TR>
-</TABLE>>]
-"-attrs3" -> "http://example.org/eresult" [color="gray",style="dashed",arrowhead="none"]
+"-attrs1" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
 "bn1" [shape="point",label=""]
-"http://example.org/result" -> "bn1" [arrowhead="none",taillabel="der-ins",color="darkgreen"]
-"bn1" -> "http://example.org/eresult" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
-"bn1" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
-"bn1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"bn1" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/assign2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/result" -> "bn1" [arrowhead="none",taillabel="der-ins",color="#000000"]
+"bn1" -> "http://example.org/empty" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="der"]
+"bn1" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[0]"]
+"bn1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[1]"]
+"bn1" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="#000000",labelangle="60.0",rotation="20",label="[2]"]
+"http://example.org/assign2" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2",fontcolor="gray"]
+"-attrs2" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;assign&quot;</TD>
+	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
+	    <TD align="left"><font color="#F0F0F0">assign</font></TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/assign2" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/dist" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/dist" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/assign3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign3",URL="http://example.org/assign3"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs2" -> "http://example.org/assign2" [color="#F0F0F0",style="dashed",arrowhead="none"]
+"http://example.org/assign2" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="gray",color="gray"]
+"http://example.org/dist" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="gray",color="gray"]
+"http://example.org/dist" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="gray",color="gray"]
+"http://example.org/assign3" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="assign3",URL="http://example.org/assign3",fontcolor="gray"]
+"-attrs3" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;assign&quot;</TD>
+	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
+	    <TD align="left"><font color="#F0F0F0">assign</font></TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/assign3" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/result" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/result" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"-attrs3" -> "http://example.org/assign3" [color="#F0F0F0",style="dashed",arrowhead="none"]
+"http://example.org/assign3" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="gray",color="gray"]
+"http://example.org/result" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="gray",color="gray"]
+"http://example.org/result" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="gray",color="gray"]
 }

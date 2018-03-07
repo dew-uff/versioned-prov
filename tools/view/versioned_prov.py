@@ -15,12 +15,12 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
                 extra={"label": "der ac-{}\n{}".format(
                     unquote(attrs.get("access", "-")),
                     unquote(attrs.get("moment", "-"))
-                )}
+                )}, attrs=attrs
             )
         return garrow2(
-            dot, egenerated, eused, "der ref\n{}".format(unquote(attrs.get("moment", "-")))
+            dot, egenerated, eused, "der ref\n{}".format(unquote(attrs.get("moment", "-"))), attrs=attrs
         )
-    return arrow2(dot, egenerated, eused, "der")
+    return arrow2(dot, egenerated, eused, "der", attrs=attrs)
 
 
 @graph.prov("hadMember")
@@ -31,13 +31,13 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
             dot, ecollection, eid, "der-ins\n[{}]\n{}".format(
                 unquote(attrs.get("key", "-")),
                 unquote(attrs.get("moment", "-"))
-            )
+            ), attrs=attrs
         )
     if attrs.get('type') == '"Removal"':
         return garrow2(
             dot, ecollection, eid, "der-rem\n[{}]\n{}".format(
                 unquote(attrs.get("key", "-")),
                 unquote(attrs.get("moment", "-"))
-            )
+            ), attrs=attrs
         )
-    return arrow2(dot, ecollection, eid, "[ ]")
+    return arrow2(dot, ecollection, eid, "[ ]", attrs=attrs)

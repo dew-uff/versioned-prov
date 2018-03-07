@@ -18,6 +18,9 @@ SAME = {}
 TEMP_BASE = ""
 LINE = None
 
+HIDE = {"dot:hide":"#F0F0F0", "dot:hide2": "gray"}
+BLACK = {"dot:color":"#000000"}
+
 def reset_prov(temp_base):
     global DICTS
     global NAMES
@@ -47,7 +50,7 @@ def add(text):
     if ENABLED:
         print(text)
 
-def stats(path=None, view=False, temp=False, show=True):
+def stats(path=None, view=False, temp=False, show=True, engine="dot"):
     provn = "\n".join(TEMP if temp else RESULT)
     if not provn:
         return
@@ -63,9 +66,11 @@ def stats(path=None, view=False, temp=False, show=True):
     if view is True:
         view = "provn png svg pdf"
     from IPython.display import display
+    if engine != "dot":
+        provn = 'graph [overlap=false]\n##H##\n' + provn
     im = get_ipython().run_cell_magic(
         "provn",
-        "-o {} -e {}".format(path, view),
+        "-o {} -e {} -p {}".format(path, view, engine),
         provn
     )
     if show:
@@ -127,7 +132,7 @@ def ventity(time, name, value, type_, label, *, attrs={}):
     ])
     return entity(name, value, type_, label, attrs=new_attrs)
 
-def activity(name, derived=[], used=[], generated=[], label=None, attrs={}):
+def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
     varname = get_varname(name, sep="", show1=True)
     new_attrs = {}
     wdf_attrs = {}
@@ -273,19 +278,22 @@ def vhadMember(cname, entity, key, time):
     DICTS[cname][key] = entity
 
 
-def hadDictionaryMember(dname, entity, key):
-    add("hadDictionaryMember({}, {}, {})".format(dname, entity, key))
+def hadDictionaryMember(dname, entity, key, *, attrs=BLACK):
+    add("hadDictionaryMember({}, {}, {}{})".format(
+        dname, entity, key, _attrpairs(attrs)
+    ))
     DICTS[dname][key] = entity
 
-def derivedByInsertionFrom(new, old, elements):
+def derivedByInsertionFrom(new, old, elements, *, attrs=BLACK):
     if isinstance(elements, list):
         key_value = list(enumerate(elements))
     else:
         key_value = list(elements.items())
 
-    add("derivedByInsertionFrom({}, {}, {{{}}})".format(
+    add("derivedByInsertionFrom({}, {}, {{{}}}{})".format(
         new, old, ", ".join('("{}", {})'.format(i, v)
-                           for i,v in key_value)
+                            for i,v in key_value),
+        _attrpairs(attrs)
     ))
     DICTS[new] = copy(DICTS[old])
     for i, v in key_value:

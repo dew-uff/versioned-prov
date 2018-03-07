@@ -3,26 +3,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[10000, 0, 2]&quot;</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;access&quot;</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;dist[i]&quot;</TD>
+	    <TD align="left">dist[i]</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/dist_ai" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/dist_ai" -> "http://example.org/list10"
-"http://example.org/dist_ai" -> "http://example.org/list11"
-"http://example.org/dist_ai" -> "http://example.org/list12"
+"http://example.org/dist_ai" -> "http://example.org/list10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/dist_ai" -> "http://example.org/list11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/dist_ai" -> "http://example.org/list12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/access5" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="access5",URL="http://example.org/access5",fontcolor="gray"]
 "-attrs1" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;access&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">access</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/access5" [color="#F0F0F0",style="dashed",arrowhead="none"]
@@ -35,26 +35,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[10000, 0, 2]&quot;</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;disti&quot;</TD>
+	    <TD align="left">disti</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/disti" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti" -> "http://example.org/list10"
-"http://example.org/disti" -> "http://example.org/list11"
-"http://example.org/disti" -> "http://example.org/list12"
+"http://example.org/disti" -> "http://example.org/list10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/disti" -> "http://example.org/list11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/disti" -> "http://example.org/list12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
 "http://example.org/assign7" [fillcolor="#F0F0F0",color="gray",shape="polygon",sides="4",style="filled",label="assign7",URL="http://example.org/assign7",fontcolor="gray"]
 "-attrs3" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;assign&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">assign</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/assign7" [color="#F0F0F0",style="dashed",arrowhead="none"]

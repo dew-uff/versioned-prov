@@ -3,11 +3,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">value:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;10000&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">10000</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;literal&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">literal</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/10000" [color="#F0F0F0",style="dashed",arrowhead="none"]
@@ -15,15 +15,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">value:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;10000&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">10000</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;name&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">name</font></TD>
 	</TR>
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">label:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;m&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">m</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/m" [color="#F0F0F0",style="dashed",arrowhead="none"]
@@ -31,7 +31,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="#F0F0F0",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left"><font color="#F0F0F0">type:</font></TD>
-	    <TD align="left"><font color="#F0F0F0">&quot;assign&quot;</font></TD>
+	    <TD align="left"><font color="#F0F0F0">assign</font></TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="#F0F0F0",style="dashed",arrowhead="none"]

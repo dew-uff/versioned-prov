@@ -4,6 +4,7 @@ import argparse
 import sys
 import html
 
+from copy import copy
 from functools import wraps
 
 from tools.prov_parser import build_parser, prov
@@ -153,6 +154,7 @@ class Digraph(object):
 
     def replace(self, args, attrs):
         attrs = attrs or {}
+        args = copy(args)
         for key, value in attrs.items():
             if key == "dot:hide":
                 if "fillcolor" in args:

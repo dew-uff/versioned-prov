@@ -1,6 +1,9 @@
 import dateutil
 from functools import partial
 
+HIGHLIGHT = "darkgreen"
+HIGHLIGHT2 = "#32CD32"
+
 def unquote(value):
     if value and value.startswith('"'):
         value = value[1:-1]
@@ -22,7 +25,7 @@ def glabeldict(label):
         return {
             "labelfontsize": "8",
             "labeldistance": "1.5",
-            "color": "darkgreen",
+            "color": HIGHLIGHT,
             "labelangle": "60.0",
             "rotation": "20",
             "label": label
@@ -78,4 +81,6 @@ def arrow3(dot, source, target1, target2, label, extra={}, labeldict=labeldict, 
 
 
 garrow2 = partial(arrow2, labeldict=glabeldict)
-garrow3 = partial(arrow3, labeldict=glabeldict, dattrs={"color": "darkgreen"})
+def garrow3(*args, **kwargs):
+    kwargs["dattrs"] = kwargs.get("dattrs", {"color": HIGHLIGHT})
+    return arrow3(*args, **kwargs)

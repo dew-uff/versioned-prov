@@ -1,0 +1,7 @@
+entity(disti_aj#7, [value="1",type="access",label="disti[j]",dot:hide="#F0F0F0",dot:hide2="gray"])
+activity(access47, [type="access",dot:hide="#F0F0F0",dot:hide2="gray"])
+used(u86; access47, list01, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
+wasDerivedFrom(disti_aj#7, list01, access47, g81, u86, [dot:hide="#F0F0F0",dot:hide2="gray"])
+wasGeneratedBy(g81; disti_aj#7, access47, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
+used(access47, disti#7, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
+used(access47, j#14, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
