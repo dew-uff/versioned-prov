@@ -38,7 +38,6 @@ def configure_graph(graph, args, cell):
     if pos != -1:
         graph.footer = cell[pos + 5:]
         cell = cell[:pos]
-
     return cell, graph.generate(cell)
 
 def transform_dot(prog, dotfile, base, extensions):

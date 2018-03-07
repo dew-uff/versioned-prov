@@ -1,6 +1,8 @@
-entity(1, [value="1", type="literal", generatedAtTime="2018-02-22T16:00:00"])
-entity(a, [value="'a'", type="literal", generatedAtTime="2018-02-22T16:00:01"])
-entity(a#2, [value="b'a'", type="literal", generatedAtTime="2018-02-22T16:00:02"])
-entity(True, [value="True", type="constant", generatedAtTime="2018-02-22T16:00:03"])
-entity(int, [value="<class 'int'>", type="name", label="int", generatedAtTime="2018-02-22T16:00:04"])
-entity(ellipsis, [value="Ellipsis", type="constant", label="...", generatedAtTime="2018-02-22T16:00:05"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+    
+entity(1, [value="1", type="script:literal", generatedAtTime="2018-02-22T16:00:00"])
+entity(a, [value="'a'", type="script:literal", generatedAtTime="2018-02-22T16:00:01"])
+entity(a#2, [value="b'a'", type="script:literal", generatedAtTime="2018-02-22T16:00:02"])
+entity(True, [value="True", type="script:constant", generatedAtTime="2018-02-22T16:00:03"])
+entity(int, [value="<class 'int'>", type="script:name", label="int", generatedAtTime="2018-02-22T16:00:04"])
+entity(ellipsis, [value="Ellipsis", type="script:constant", label="...", generatedAtTime="2018-02-22T16:00:05"])

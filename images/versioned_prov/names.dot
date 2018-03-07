@@ -3,15 +3,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;1&quot;</TD>
+	    <TD align="left">1</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
+	    <TD align="left">script:literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:00&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:00</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -19,15 +19,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;&#x27;a&#x27;&quot;</TD>
+	    <TD align="left">&#x27;a&#x27;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
+	    <TD align="left">script:literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:01&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:01</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
@@ -35,15 +35,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;b&#x27;a&#x27;&quot;</TD>
+	    <TD align="left">b&#x27;a&#x27;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;literal&quot;</TD>
+	    <TD align="left">script:literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:02&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:02</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
@@ -51,15 +51,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;True&quot;</TD>
+	    <TD align="left">True</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;constant&quot;</TD>
+	    <TD align="left">script:constant</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:03&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:03</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
@@ -67,19 +67,19 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;&lt;class &#x27;int&#x27;&gt;&quot;</TD>
+	    <TD align="left">&lt;class &#x27;int&#x27;&gt;</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">script:name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;int&quot;</TD>
+	    <TD align="left">int</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:04&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:04</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
@@ -87,19 +87,19 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;Ellipsis&quot;</TD>
+	    <TD align="left">Ellipsis</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;constant&quot;</TD>
+	    <TD align="left">script:constant</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;...&quot;</TD>
+	    <TD align="left">...</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;2018-02-22T16:00:05&quot;</TD>
+	    <TD align="left">2018-02-22T16:00:05</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]

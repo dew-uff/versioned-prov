@@ -4,6 +4,16 @@ if __name__ == "__main__":
 from tools.view.dot import graph
 from tools.utils import arrow2, arrow3
 
+
+def prov(attrs, key, default="-"):
+    if key in attrs:
+        return attrs[key]
+    try:
+        return attrs[(key, "prov", "https://www.w3.org/ns/prov#")]
+    except KeyError:
+        return default
+
+
 @graph.prov("document")
 def documents(dot, declarations, elements):
     lines = [

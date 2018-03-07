@@ -1,13 +1,16 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix versioned <https://dew-uff.github.io/versioned-prov/ns#>
+
 // old
-entity(10000, [value="10000", type="literal", generatedAtTime="T1"])
-entity(m, [value="10000", type="name", label="m", generatedAtTime="T2"])
-wasDerivedFrom(m, 10000, -, -, -, [type="Reference", moment="T2"])
+entity(10000, [value="10000", type="script:literal", generatedAtTime="T1"])
+entity(m, [value="10000", type="script:name", label="m", generatedAtTime="T2"])
+wasDerivedFrom(m, 10000, -, -, -, [type="versioned:Reference", versioned:moment="T2"])
 
 // new
-entity(1, [value="1", type="literal",  generatedAtTime="T3"])
-entity(sum, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
+entity(1, [value="1", type="script:literal",  generatedAtTime="T3"])
+entity(sum, [value="10001", type="script:operation", label="m + 1", generatedAtTime="T4"])
 
-activity(+, [type="operation"])
+activity(+, [type="script:operation"])
 used(u2; +, m, -)
 used(u3; +, 1, -)
 wasGeneratedBy(g2; sum, +, -)

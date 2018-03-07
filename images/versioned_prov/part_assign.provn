@@ -1,26 +1,31 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix versioned <https://dew-uff.github.io/versioned-prov/ns#>
+
 // old
-entity(m, [value="10000", type="name", label="m", generatedAtTime="T2"])
-entity(sum, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
+entity(m, [value="10000", type="script:name", label="m", generatedAtTime="T2"])
+entity(sum, [value="10001", type="script:operation", label="m + 1", generatedAtTime="T4"])
 
-entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]", generatedAtTime="T5"])
-hadMember(list, m, [type="Insertion", key="0", moment="T5"])
-hadMember(list, sum, [type="Insertion", key="1", moment="T5"])
-hadMember(list, m, [type="Insertion", key="2", moment="T5"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", generatedAtTime="T5"])
+hadMember(list, m, [type="versioned:Insertion", versioned:key="0", versioned:moment="T5"])
+hadMember(list, sum, [type="versioned:Insertion", versioned:key="1", versioned:moment="T5"])
+hadMember(list, m, [type="versioned:Insertion", versioned:key="2", versioned:moment="T5"])
 
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d", generatedAtTime="T6"])
-wasDerivedFrom(d, list, -, -, -, [type="Reference", moment="T6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", generatedAtTime="T6"])
+wasDerivedFrom(d, list, -, -, -, [type="versioned:Reference", versioned:moment="T6"])
 
 
 // new
-entity(3, [value="3", type="literal", generatedAtTime="T10"])
-entity(1#2, [value="1", type="literal", generatedAtTime="T11"])
+entity(3, [value="3", type="script:literal", generatedAtTime="T10"])
+entity(1#2, [value="1", type="script:literal", generatedAtTime="T11"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]", generatedAtTime="T12"])
-hadMember(list, d_ac1, [type="Insertion", key="1", moment="T12"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]", generatedAtTime="T12"])
+hadMember(list, d_ac1, [type="versioned:Insertion", versioned:key="1", versioned:moment="T12"])
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
 used(u10; assign4, 3)
 wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [
+    type="versioned:Reference", versioned:moment="T12",
+    versioned:whole="d", versioned:key="1", versioned:access="w"])

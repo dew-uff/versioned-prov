@@ -3,19 +3,19 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
+	    <TD align="left">[10000, 10001, 10000]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">script:name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;d&quot;</TD>
+	    <TD align="left">d</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;T6&quot;</TD>
+	    <TD align="left">T6</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -23,19 +23,19 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;3&quot;</TD>
+	    <TD align="left">3</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;eval&quot;</TD>
+	    <TD align="left">script:eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;len(d)&quot;</TD>
+	    <TD align="left">len(d)</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">&quot;T8&quot;</TD>
+	    <TD align="left">T8</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/len_d" [color="gray",style="dashed",arrowhead="none"]
@@ -43,11 +43,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;call&quot;</TD>
+	    <TD align="left">script:call</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;len&quot;</TD>
+	    <TD align="left">len</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/call1" [color="gray",style="dashed",arrowhead="none"]

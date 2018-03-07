@@ -37,7 +37,7 @@ def eq(self, other):
 
 Tree.__eq__ = eq
 '''
-
+print("x")
 PARSER = Lark('''
     start: document
 
@@ -45,7 +45,7 @@ PARSER = Lark('''
 
     ?optional_declarations: (namespace_declarations)?
     namespace_declarations: (default_namespace_declaration | namespace_declaration) (namespace_declaration)*
-    namespace_declaration: "prefix" PN_PREFIX namespace
+    namespace_declaration: "prefix" QUALIFIED_NAME IRI_REF
     default_namespace_declaration: "default" IRI_REF
     ?namespace: IRI_REF
 
@@ -277,4 +277,3 @@ def prov(name):
         fn.provname = name
         return fn
     return dec
-

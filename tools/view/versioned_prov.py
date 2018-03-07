@@ -1,43 +1,58 @@
 if __name__ == "__main__":
     import sys; sys.path.insert(0, '../..')
 
-from tools.view.provn import graph
+from tools.view.provn import graph, prov
 from tools.utils import unquote, garrow3, arrow2, garrow2
+
+NAMESPACE = "https://dew-uff.github.io/versioned-prov/ns#"
+
+def versioned(attrs, key, default="-"):
+    try:
+        return attrs[(key, "versioned", NAMESPACE)]
+    except KeyError:
+        return default
+
+def ns_versioned(key):
+    return {
+        "versioned:" + key,
+        NAMESPACE + key,
+        key
+    }
 
 @graph.prov("wasDerivedFrom")
 def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
-    attrs = attrs or {}
-    if attrs.get('type') == '"Reference"':
-        if 'access' in attrs:
+    if prov(attrs, 'type') in ns_versioned('Reference'):
+        if versioned(attrs, 'access', False):
             return garrow3(
-                dot, egenerated, unquote(attrs.get("whole", "-")), eused,
-                "[{}]".format(unquote(attrs.get("key", "-"))),
+                dot, egenerated, versioned(attrs, 'whole'), eused,
+                "[{}]".format(versioned(attrs, 'key')),
                 extra={"label": "der ac-{}\n{}".format(
-                    unquote(attrs.get("access", "-")),
-                    unquote(attrs.get("moment", "-"))
+                    versioned(attrs, 'access'),
+                    versioned(attrs, 'moment')
                 )}, attrs=attrs
             )
         return garrow2(
-            dot, egenerated, eused, "der ref\n{}".format(unquote(attrs.get("moment", "-"))), attrs=attrs
+            dot, egenerated, eused, "der ref\n{}".format(
+                versioned(attrs, 'moment')
+            ), attrs=attrs
         )
     return arrow2(dot, egenerated, eused, "der", attrs=attrs)
 
 
 @graph.prov("hadMember")
 def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
-    attrs = attrs or {}
-    if attrs.get('type') == '"Insertion"':
+    if prov(attrs, 'type') in ns_versioned('Insertion'):
         return garrow2(
             dot, ecollection, eid, "der-ins\n[{}]\n{}".format(
-                unquote(attrs.get("key", "-")),
-                unquote(attrs.get("moment", "-"))
+                versioned(attrs, 'key'),
+                versioned(attrs, 'moment'),
             ), attrs=attrs
         )
-    if attrs.get('type') == '"Removal"':
+    if prov(attrs, 'type') in ns_versioned('Removal'):
         return garrow2(
             dot, ecollection, eid, "der-rem\n[{}]\n{}".format(
-                unquote(attrs.get("key", "-")),
-                unquote(attrs.get("moment", "-"))
+                versioned(attrs, 'key'),
+                versioned(attrs, 'moment'),
             ), attrs=attrs
         )
     return arrow2(dot, ecollection, eid, "[ ]", attrs=attrs)

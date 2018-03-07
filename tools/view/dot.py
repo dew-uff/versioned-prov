@@ -11,12 +11,54 @@ from tools.prov_parser import build_parser, prov
 from tools.utils import unquote
 
 
+
 def _quote(value):
     if value.startswith("<") and value.endswith(">"):
         return value
     if value.startswith('"') and value.endswith('"'):
         return value
     return '"{}"'.format(value)
+
+class PrefixDict(dict):
+
+    def __init__(self, prefixes, rprefixes):
+        self.prefixes = prefixes
+        self.rprefixes = rprefixes
+
+    def __setitem__(self, item, value):
+        if ":" in item:
+            split = item.split(":", maxsplit=1)
+            if split[0] not in self.prefixes:
+                prefix = split[0]
+                namespace = 'http://example.org/{}/'.format(prefix)
+                self.prefixes[prefix] = namespace
+                self.rprefixes[namespace] = prefix + ":"
+        else:
+            for v, p in self.rprefixes.items():
+                if item.startswith(v):
+                    item = item.replace(v, p, 1)
+                    break
+        super(PrefixDict, self).__setitem__(item, value)
+
+    def generate_names(self, item):
+        if isinstance(item, str):
+            yield item
+
+        item, *namespace = item
+        for name in namespace:
+            if name == "<any>":
+                for iri, prefix in self.rprefixes.items():
+                    yield prefix + item
+                yield item
+            if name in self.rprefixes:
+                yield self.rprefixes[name] + item
+            if name in self.prefixes:
+                yield name + ":" + item
+
+    def __getitem__(self, item):
+        for qualified in self.generate_names(item):
+            if qualified in self:
+                return super(PrefixDict, self).__getitem__(qualified)
 
 
 class Digraph(object):
@@ -26,7 +68,13 @@ class Digraph(object):
         self.attr = 0
         self.pointi = 0
         self.default_prefix = 'http://example.org/'
-        self.prefixes = {}
+        self.prefixes = {
+            "prov": "https://www.w3.org/ns/prov#"
+        }
+        self.rprefixes = {
+            "https://www.w3.org/ns/prov#": "prov:"
+        }
+        self.rprefixes[self.default_prefix] = ""
 
         self.size_x = 16
         self.size_y = 12
@@ -47,7 +95,13 @@ class Digraph(object):
 
     def generate(self, content):
         self.default_prefix = 'http://example.org/'
-        self.prefixes = {}
+        self.prefixes = {
+            "prov": "https://www.w3.org/ns/prov#"
+        }
+        self.rprefixes = {
+            "https://www.w3.org/ns/prov#": "prov:"
+        }
+        self.rprefixes[self.default_prefix] = ""
         self.attr = 0
         self.pointi = 0
         parser = build_parser(self.functions)
@@ -65,9 +119,11 @@ class Digraph(object):
         if name == "<default>":
             old = ("<default>", self.default_prefix)
             self.default_prefix = iri
+            self.rprefixes[self.default_prefix] = ""
         else:
             old = (name, self.prefixes.get(name))
             self.prefixes[name] = iri
+            self.rprefixes[iri] = name + ":"
         return old
 
     def prefix(self, name):
@@ -84,6 +140,12 @@ class Digraph(object):
             @prov(name)
             @wraps(fn)
             def func(*args, **kwargs):
+                if "attrs" in kwargs:
+                    attrs = kwargs["attrs"] or {}
+                    new_attrs = PrefixDict(self.prefixes, self.rprefixes)
+                    for key, value in attrs.items():
+                        new_attrs[key] = unquote(value)
+                    kwargs["attrs"] = new_attrs
                 return fn(self, *args, **kwargs)
             self.functions[name] = func
             return func
