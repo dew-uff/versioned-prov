@@ -9,7 +9,7 @@ from functools import wraps
 
 from tools.prov_parser import build_parser, prov
 from tools.utils import unquote
-
+from tools.view.style import default
 
 
 def _quote(value):
@@ -81,6 +81,7 @@ class Digraph(object):
         self.rankdir = "BT"
         self.header = ""
         self.footer = ""
+        self.style = default
 
     def reset_config(self):
         self.size_x = 16
@@ -88,6 +89,7 @@ class Digraph(object):
         self.rankdir = "BT"
         self.header = ""
         self.footer = ""
+        self.style = default
 
     def reset(self):
         self.functions = {}
@@ -151,7 +153,7 @@ class Digraph(object):
             return func
         return dec
 
-    def node(self, name, attrs={}):
+    def _node(self, name, attrs={}):
         """Create dot node"""
         extra = ""
         if attrs:
@@ -161,7 +163,7 @@ class Digraph(object):
             )
         return '"{}"{}'.format(name, extra)
 
-    def arrow(self, *nodes, attrs={}, direction="->"):
+    def _arrow(self, *nodes, attrs={}, direction="->"):
         """Create dot node"""
         extra = ""
         if attrs:
@@ -199,7 +201,7 @@ class Digraph(object):
         if added:
             aid = "-attrs{}".format(self.attr)
             self.attr += 1
-            result = self.node(aid, {
+            result = self._node(aid, {
                 "color": color,
                 "shape": "note",
                 "fontsize": "10",
@@ -207,12 +209,51 @@ class Digraph(object):
                 "label": "\n".join(label)
             })
             if url is not None:
-                result += "\n" + self.arrow(aid, url, attrs={
+                result += "\n" + self._arrow(aid, url, attrs={
                     "color": color,
                     "style": "dashed",
                     "arrowhead": "none",
                 })
         return result
+
+    def node(self, attrs, statement, nid):
+        url = self.prefix(nid)
+        result = self._node(url, self.style.node(attrs, statement, nid, url))
+        tattrs = self.attrs(attrs, url)
+        if tattrs:
+            result += "\n" + tattrs
+        return result
+
+    def arrow2(self, attrs, statement, first, second, label="", extra=""):
+        if not first or not second:
+            return None
+
+        url1 = self.prefix(first)
+        url2 = self.prefix(second)
+        return self._arrow(url1, url2, attrs=self.style.arrow(attrs, statement, label, extra))
+
+    def arrow3(self, attrs, statement, source, target1, target2, label0="", label1="", label2="", label3=""):
+        if sum(1 for x in [source, target1, target2] if x) <= 1:
+            return None
+
+        if target1 and target2:
+            point, result = self.point(attrs, statement)
+
+            if source:
+                surl = self.prefix(source)
+                result += "\n" + self._arrow(surl, point, attrs=self.style.arrow(attrs, statement, label1, "1"))
+
+            turl1 = self.prefix(target1)
+            turl2 = self.prefix(target2)
+            result += "\n" + self._arrow(point, turl1, attrs=self.style.arrow(attrs, statement, label0, "0"))
+            result += "\n" + self._arrow(point, turl2, attrs=self.style.arrow(attrs, statement, label2, "2"))
+            return result
+        return self.arrow2(attrs, statement, source, target1 if target1 else target2, label3 or label0, extra="3")
+
+    def point(self, attrs, statement):
+        url = "bn{}".format(self.pointi)
+        self.pointi += 1
+        return url, self._node(url, self.style.point(attrs, statement))
 
     def replace(self, args, attrs):
         attrs = attrs or {}
@@ -228,14 +269,6 @@ class Digraph(object):
                 args[key[4:]] = unquote(value)
 
         return args
-
-    def point(self, attrs={}):
-        url = "bn{}".format(self.pointi)
-        self.pointi += 1
-        return url, self.node(url, self.replace({
-            "shape": "point",
-            "label": "",
-        }, attrs))
 
     def escape(self, text):
         return text.replace('"', '\\"')

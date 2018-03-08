@@ -1,17 +1,19 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+    
 // assignment
-entity(10000, [value="10000", type="literal"])
-entity(m, [value="10000", type="name", label="m"])
+entity(10000, [value="10000", type="script:literal"])
+entity(m, [value="10000", type="script:name", label="m"])
 
-activity(assign1, [type="assign"])
+activity(assign1, [type="script:assign"])
 used(u1; assign1, 10000, -)
 wasGeneratedBy(g1; m, assign1, -)
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 
 // operation
-entity(1, [value="1", type="literal"])
-entity(sum, [value="10001", type="sum", label="m + 1"])
+entity(1, [value="1", type="script:literal"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
-activity(+, [type="add"])
+activity(+, [type="operation"])
 used(u2; +, m, -)
 used(u3; +, 1, -)
 wasGeneratedBy(g2; sum, +, -)
@@ -19,16 +21,16 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 
 // list definition
-entity(list, [value="[10000, 10001, 10000]", type="Dictionary", label="[m, m + 1, m]"])
-entity(list0, [value="10000", type="item", label="m"])
-entity(list1, [value="10001", type="item", label="m + 1"])
-entity(list2, [value="10000", type="item", label="m"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]"])
+entity(list0, [value="10000", type="script:item", label="m"])
+entity(list1, [value="10001", type="script:item", label="m + 1"])
+entity(list2, [value="10000", type="script:item", label="m"])
 
 hadMember(list, list0)
 hadMember(list, list1)
 hadMember(list, list2)
 
-activity(definelist1, [type="definelist"])
+activity(definelist1, [type="script:definelist"])
 used(u4; definelist1, m, -)
 wasGeneratedBy(g4; list0, definelist1, -)
 wasDerivedFrom(list0, m, definelist1, g4, u4)
@@ -41,12 +43,12 @@ wasDerivedFrom(list2, m, definelist1, g6, u6)
 wasGeneratedBy(list, definelist1, -)
 
 // list assignment
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 hadMember(d, list0)
 hadMember(d, list1)
 hadMember(d, list2)
 
-activity(assign2, [type="assign"])
+activity(assign2, [type="script:assign"])
 used(u7; assign2, list, -)
 wasGeneratedBy(g7; d, assign2, -)
 wasDerivedFrom(d, list, assign2, g7, u7)
@@ -65,17 +67,17 @@ wasGeneratedBy(g11; x, assign3, -)
 wasDerivedFrom(x, d, assign3, g11, u11)
 
 // call
-entity(len_d, [value="3", type="eval", label="len(d)"])
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:operation", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(0, [value="0", type="literal"])
-entity(d_ac0, [value="10000", type="access", label="d[0]"])
+entity(0, [value="0", type="script:literal"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 
-activity(access1, [type="access"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
 used(u15; access1, list0, -)
@@ -83,24 +85,23 @@ wasGeneratedBy(g15; d_ac0, access1, -)
 wasDerivedFrom(d_ac0, list0, access1, g15, u15)
 
 // part assignment
-entity(1#2, [value="1", type="literal"])
-entity(3, [value="3", type="literal"])
-entity(list1#2, [value="3", type="access", label="d[1]"])
+entity(3, [value="3", type="script:literal"])
+entity(list1#2, [value="3", type="script:access", label="d[1]"])
 
-entity(d#2, [value="[10000, 3, 10000]", type="name", label="d"])
+entity(d#2, [value="[10000, 3, 10000]", type="script:name", label="d"])
 hadMember(d#2, list0)
 hadMember(d#2, list1#2)
 hadMember(d#2, list2)
 
-entity(x#2, [value="[10000, 3, 10000]", type="name", label="x"])
+entity(x#2, [value="[10000, 3, 10000]", type="script:name", label="x"])
 hadMember(x#2, list0)
 hadMember(x#2, list1#2)
 hadMember(x#2, list2)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, x, -)
-used(assign4, 1#2, -)
+used(assign4, 1, -)
 used(u16; assign4, 3, -)
 wasGeneratedBy(d#2, assign4, -)
 wasGeneratedBy(x#2, assign4, -)

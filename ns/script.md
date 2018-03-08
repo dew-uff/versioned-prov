@@ -15,6 +15,8 @@ The namespace name https://dew-uff.github.io/versioned-prov/ns/script# is intend
 
 `script:eval` is a sub-property of prov:Collection.
 
+### item
+
 ### literal
 
 ### list
@@ -32,3 +34,5 @@ The namespace name https://dew-uff.github.io/versioned-prov/ns/script# is intend
 ### assign
 
 ### call
+
+### definelist

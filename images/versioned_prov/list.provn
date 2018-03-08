@@ -5,7 +5,7 @@ prefix versioned <https://dew-uff.github.io/versioned-prov/ns#>
 entity(10000, [value="10000", type="script:literal", generatedAtTime="T1"])
 entity(m, [value="10000", type="script:name", label="m", generatedAtTime="T2"])
 wasDerivedFrom(m, 10000, -, -, -, [type="versioned:Reference", versioned:moment="T2"])
-entity(sum, [value="10001", type="script:operation", label="m + 1", generatedAtTime="T4"])
+entity(sum, [value="10001", type="script:eval", label="m + 1", generatedAtTime="T4"])
 
 // new
 entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", generatedAtTime="T5"])

@@ -1,43 +1,48 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+    
 // old
-entity(10000, [value="10000", type="literal"])
-entity(10000_v1, [generatedAtTime="T1", type="Version"])
+entity(10000, [value="10000", type="script:literal"])
+entity(10000_v1, [generatedAtTime="T1", type="intertwined:Version"])
 specializationOf(10000, 10000_v1)
-entity(m, [value="10000", type="name", label="m"])
-wasDerivedFrom(m, 10000, -, -, -, [type="Reference", moment="T2"])
+entity(m, [value="10000", type="script:name", label="m"])
+wasDerivedFrom(m, 10000, -, -, -, [type="intertwined:Reference", intertwined:moment="T2"])
 
-entity(sum, [value="10001", type="operation", label="m + 1"])
-entity(sum_v1, [generatedAtTime="T4", type="Version"])
+entity(sum, [value="10001", type="script:operation", label="m + 1"])
+entity(sum_v1, [generatedAtTime="T4", type="intertwined:Version"])
 specializationOf(sum, sum_v1)
 
 entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
-entity(list_v1, [generatedAtTime="T5", type="Version"])
+entity(list_v1, [generatedAtTime="T5", type="intertwined:Version"])
 specializationOf(list, list_v1)
 hadDictionaryMember(list_v1, m, "0")
 hadDictionaryMember(list_v1, sum, "1")
 hadDictionaryMember(list_v1, m, "2")
 
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
-wasDerivedFrom(d, list, -, -, -, [type="Reference", moment="T6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
+wasDerivedFrom(d, list, -, -, -, [type="intertwined:Reference", intertwined:moment="T6"])
+
+entity(1, [value="1", type="script:literal"])
+entity(1_v1, [generatedAtTime="2018-02-22T16:00:00", type="intertwined:Version"])
+specializationOf(1, 1_v1)
 
 
 // new
-entity(3, [value="3", type="literal"])
-entity(3_v1, [generatedAtTime="T10", type="Version"])
+entity(3, [value="3", type="script:literal"])
+entity(3_v1, [generatedAtTime="T10", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(1#2, [value="1", type="literal"])
-entity(1#2_v1, [generatedAtTime="T11", type="Version"])
-specializationOf(1#2, 1#2_v1)
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]"])
-
-entity(list_v2, [generatedAtTime="T12", type="Version"])
+entity(list_v2, [generatedAtTime="T12", type="intertwined:Version"])
 derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
 specializationOf(list, list_v2)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
+used(assign4, 1, -)
 used(u10; assign4, 3, -)
 wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [
+    type="intertwined:Reference", intertwined:moment="T12", intertwined:whole="d",
+    intertwined:key="1", intertwined:access="w"])

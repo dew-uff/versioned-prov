@@ -1,29 +1,31 @@
-entity(1, [label="1", type="literal"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
+entity(1, [label="1", type="script:literal"])
 value(v1, [repr="1"])
 defined(1, v1, 2018-02-22T16:00:00)
 wasDefinedBy(v1, 1, 2018-02-22T16:00:00)
 
-entity(a, [label="'a'", type="literal"])
+entity(a, [label="'a'", type="script:literal"])
 value(va, [repr="'a'"])
 defined(a, va, 2018-02-22T16:00:01)
 wasDefinedBy(va, a, 2018-02-22T16:00:01)
 
-entity(a#2, [label="b'a'", type="literal"])
+entity(a#2, [label="b'a'", type="script:literal"])
 value(vba, [repr="b'a'"])
 defined(a#2, vba, 2018-02-22T16:00:02)
 wasDefinedBy(vba, a#2, 2018-02-22T16:00:02)
 
-entity(True, [label="True", type="constant"])
+entity(True, [label="True", type="script:constant"])
 value(vtrue, [repr="True"])
 defined(True, vtrue, 2018-02-22T16:00:03)
 wasDefinedBy(vtrue, True, 2018-02-22T16:00:03)
 
-entity(int, [label="int", type="name"])
+entity(int, [label="int", type="script:name"])
 value(vint, [repr="<class 'int'>"])
 defined(int, vint, 2018-02-22T16:00:04)
 wasDefinedBy(vint, int, 2018-02-22T16:00:04)
 
-entity(ellipsis, [label="...", type="constant"])
+entity(ellipsis, [label="...", type="script:constant"])
 value(vellipsis, [repr="Ellipsis"])
 defined(ellipsis, vellipsis, 2018-02-22T16:00:05)
 wasDefinedBy(vellipsis, ellipsis, 2018-02-22T16:00:05)

@@ -76,21 +76,21 @@
 </g>
 <!-- &#45;attrs2 -->
 <g id="node6" class="node"><title>&#45;attrs2</title>
-<polygon fill="none" stroke="gray" points="197.5,-161 44.5,-161 44.5,-99 203.5,-99 203.5,-155 197.5,-161"/>
+<polygon fill="none" stroke="gray" points="197.5,-161 66.5,-161 66.5,-99 203.5,-99 203.5,-155 197.5,-161"/>
 <polyline fill="none" stroke="gray" points="197.5,-161 197.5,-155 "/>
 <polyline fill="none" stroke="gray" points="203.5,-155 197.5,-155 "/>
-<text text-anchor="start" x="55" y="-147" font-family="Times New Roman,serif" font-size="10.00">value:</text>
-<text text-anchor="start" x="130" y="-147" font-family="Times New Roman,serif" font-size="10.00">10001</text>
-<text text-anchor="start" x="55" y="-134" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="130" y="-134" font-family="Times New Roman,serif" font-size="10.00">script:operation</text>
-<text text-anchor="start" x="55" y="-121" font-family="Times New Roman,serif" font-size="10.00">label:</text>
-<text text-anchor="start" x="130" y="-121" font-family="Times New Roman,serif" font-size="10.00">m + 1</text>
-<text text-anchor="start" x="55" y="-108" font-family="Times New Roman,serif" font-size="10.00">generatedAtTime:</text>
-<text text-anchor="start" x="130" y="-108" font-family="Times New Roman,serif" font-size="10.00">T4</text>
+<text text-anchor="start" x="77" y="-147" font-family="Times New Roman,serif" font-size="10.00">value:</text>
+<text text-anchor="start" x="152" y="-147" font-family="Times New Roman,serif" font-size="10.00">10001</text>
+<text text-anchor="start" x="77" y="-134" font-family="Times New Roman,serif" font-size="10.00">type:</text>
+<text text-anchor="start" x="152" y="-134" font-family="Times New Roman,serif" font-size="10.00">script:eval</text>
+<text text-anchor="start" x="77" y="-121" font-family="Times New Roman,serif" font-size="10.00">label:</text>
+<text text-anchor="start" x="152" y="-121" font-family="Times New Roman,serif" font-size="10.00">m + 1</text>
+<text text-anchor="start" x="77" y="-108" font-family="Times New Roman,serif" font-size="10.00">generatedAtTime:</text>
+<text text-anchor="start" x="152" y="-108" font-family="Times New Roman,serif" font-size="10.00">T4</text>
 </g>
 <!-- &#45;attrs2&#45;&gt;http://example.org/sum -->
 <g id="edge4" class="edge"><title>&#45;attrs2&#45;&gt;http://example.org/sum</title>
-<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M138.138,-161.184C150.836,-188.292 169.007,-227.085 179.234,-248.92"/>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M143.286,-161.223C148.698,-179.655 156.351,-203.528 165,-224 168.618,-232.563 173.376,-241.73 177.542,-249.264"/>
 </g>
 <!-- http://example.org/list -->
 <g id="node7" class="node"><title>http://example.org/list</title>

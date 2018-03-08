@@ -1,3 +1,5 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // old
 value(vlist, [repr="[10000, 10001, 10000]"])
 value(v10000, [repr="10000"])
@@ -8,28 +10,27 @@ derivedByInsertion(
     {("0", v10000), ("1", v10001), ("2", v10000)},
     T5
 )
-entity(d, [label="d", type="name"])
+entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
+entity(1, [label="1", type="script:literal"])
+value(v1, [repr="1"])
+defined(1, v1, T3)
+wasDefinedBy(v1, 1, T3)
 
 
 // new
-entity(3, [label="3", type="literal"])
+entity(3, [label="3", type="script:literal"])
 value(v3, [repr="3"])
 defined(3, v3, T10)
 wasDefinedBy(v3, 3, T10)
 
-entity(1#2, [label="1", type="literal"])
-value(v1#2, [repr="1"])
-defined(1#2, v1#2, T11)
-wasDefinedBy(v1#2, 1#2, T11)
-
-entity(d_ac1, [value="d[1]", type="access"])
+entity(d_ac1, [value="d[1]", type="script:access"])
 accessed(d_ac1, v3, T12)
 derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
+used(assign4, 1, -)
 used(u10; assign4, 3, -)
 wasGeneratedBy(g10; d_ac1, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10)

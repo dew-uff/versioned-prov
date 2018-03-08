@@ -1,6 +1,8 @@
-entity(1, [value="1", type="literal"])
-entity(a, [value="'a'", type="literal"])
-entity(a#2, [value="b'a'", type="literal"])
-entity(True, [prov:value="True", type="constant"])
-entity(int, [prov:value="<class 'int'>", type="name", label="int"])
-entity(ellipsis, [prov:value="Ellipsis", type="constant", label="..."])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
+entity(1, [value="1", type="script:literal"])
+entity(a, [value="'a'", type="script:literal"])
+entity(a#2, [value="b'a'", type="script:literal"])
+entity(True, [prov:value="True", type="script:constant"])
+entity(int, [prov:value="<class 'int'>", type="script:name", label="int"])
+entity(ellipsis, [prov:value="Ellipsis", type="script:constant", label="..."])

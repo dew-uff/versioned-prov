@@ -3,11 +3,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[m, m + 1, m]&quot;</TD>
+	    <TD align="left">[m, m + 1, m]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;list&quot;</TD>
+	    <TD align="left">script:list</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
@@ -15,7 +15,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
-	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
+	    <TD align="left">[10000, 10001, 10000]</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/vlist" [color="gray",style="dashed",arrowhead="none"]
@@ -27,11 +27,11 @@ T5"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;d&quot;</TD>
+	    <TD align="left">d</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">script:name</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -41,7 +41,7 @@ T6"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;assign&quot;</TD>
+	    <TD align="left">script:assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]

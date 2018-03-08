@@ -1,3 +1,5 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // old
 value(vlist, [repr="[10000, 10001, 10000]"])
 value(v10000, [repr="10000"])
@@ -8,20 +10,20 @@ derivedByInsertion(
     {("0", v10000), ("1", v10001), ("2", v10000)},
     T5
 )
-entity(d, [value="d", type="name"])
+entity(d, [value="d", type="script:name"])
 accessed(d, vlist, T6)
 
 
 // new
-entity(0, [value="0", type="literal"])
+entity(0, [value="0", type="script:literal"])
 value(v0, [repr="0"])
 defined(0, v0, T9)
 wasDefinedBy(v0, 0, T9)
-entity(d_ac0, [label="d[0]", type="access"])
+entity(d_ac0, [label="d[0]", type="script:access"])
 accessedPart(d_ac0, vlist, "0", v10000, T10)
 
 
-activity(access1, [type="access"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
 wasGeneratedBy(g9; d_ac0, access1, -)

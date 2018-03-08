@@ -71,7 +71,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">script:eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -272,9 +272,9 @@ T7"]
 "http://example.org/access1" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/d_ac0" -> "http://example.org/access1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "bn0" [shape="point",label=""]
-"http://example.org/d_ac0" -> "bn0" [arrowhead="none",label="der ac-r
-T10",color="darkgreen"]
-"bn0" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[0]"]
+"http://example.org/d_ac0" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+T10",arrowhead="none"]
+"bn0" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/m" [color="darkgreen"]
 "http://example.org/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="http://example.org/3"]
 "-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
@@ -292,24 +292,8 @@ T10",color="darkgreen"]
 	</TR>
 </TABLE>>]
 "-attrs16" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/1#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="1#2",URL="http://example.org/1#2"]
-"-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">1</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">T11</TD>
-	</TR>
-</TABLE>>]
-"-attrs17" -> "http://example.org/1#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/d_ac1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d_ac1",URL="http://example.org/d_ac1"]
-"-attrs18" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -327,25 +311,25 @@ T10",color="darkgreen"]
 	    <TD align="left">T12</TD>
 	</TR>
 </TABLE>>]
-"-attrs18" -> "http://example.org/d_ac1" [color="gray",style="dashed",arrowhead="none"]
+"-attrs17" -> "http://example.org/d_ac1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list" -> "http://example.org/d_ac1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
 T12"]
 "http://example.org/assign4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign4",URL="http://example.org/assign4"]
-"-attrs19" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs18" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">script:assign</TD>
 	</TR>
 </TABLE>>]
-"-attrs19" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
+"-attrs18" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign4" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign4" -> "http://example.org/1#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign4" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign4" -> "http://example.org/3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/d_ac1" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "bn1" [shape="point",label=""]
-"http://example.org/d_ac1" -> "bn1" [arrowhead="none",label="der ac-w
-T12",color="darkgreen"]
-"bn1" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[1]"]
+"http://example.org/d_ac1" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
+T12",arrowhead="none"]
+"bn1" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "bn1" -> "http://example.org/3" [color="darkgreen"]
 }

@@ -12,7 +12,7 @@ wasDerivedFrom(m, 10000, assign1, g1, u1, [type="versioned:Reference", versioned
 
 // operation
 entity(1, [value="1", type="script:literal",  generatedAtTime="T3"])
-entity(sum, [value="10001", type="script:operation", label="m + 1", generatedAtTime="T4"])
+entity(sum, [value="10001", type="script:eval", label="m + 1", generatedAtTime="T4"])
 
 activity(+, [type="script:operation"])
 used(u2; +, m, -)
@@ -67,14 +67,13 @@ wasDerivedFrom(d_ac0, m, access1, g9, u9, [
 
 // part assign
 entity(3, [value="3", type="script:literal", generatedAtTime="T10"])
-entity(1#2, [value="1", type="script:literal", generatedAtTime="T11"])
 
 entity(d_ac1, [value="3", type="script:access", label="d[1]", generatedAtTime="T12"])
 hadMember(list, d_ac1, [type="versioned:Insertion", versioned:key="1", versioned:moment="T12"])
 
 activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
+used(assign4, 1, -)
 used(u10; assign4, 3)
 wasGeneratedBy(g10; d_ac1, assign4, -)
 wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [

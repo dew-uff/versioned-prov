@@ -1,20 +1,22 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // old
-entity(list, [value="[10000, 10001, 10000]", type="Dictionary", label="[m, m + 1, m]"])
-entity(list0, [value="10000", type="item", label="m"])
-entity(list1, [value="10001", type="item", label="m + 1"])
-entity(list2, [value="10000", type="item", label="m"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]"])
+entity(list0, [value="10000", type="script:item", label="m"])
+entity(list1, [value="10001", type="script:item", label="m + 1"])
+entity(list2, [value="10000", type="script:item", label="m"])
 
 hadMember(list, list0)
 hadMember(list, list1)
 hadMember(list, list2)
 
 // new
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 hadMember(d, list0)
 hadMember(d, list1)
 hadMember(d, list2)
 
-activity(assign2, [type="assign"])
+activity(assign2, [type="script:assign"])
 used(u7; assign2, list, -)
 wasGeneratedBy(g7; d, assign2, -)
 wasDerivedFrom(d, list, assign2, g7, u7)

@@ -1,13 +1,15 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // old
 value(vlist, [repr="[10000, 10001, 10000]"])
-entity(d, [label="d", type="name"])
+entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
 
 // new
-entity(x, [label="x", type="name"])
+entity(x, [label="x", type="script:name"])
 accessed(x, vlist, T7)
 
-activity(assign3, [type="assign"])
+activity(assign3, [type="script:assign"])
 used(u8; assign3, d, -)
 wasGeneratedBy(g8; x, assign3, -)
 wasDerivedFrom(x, d, assign3, g8, u8)

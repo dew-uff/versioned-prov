@@ -1,29 +1,31 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // assignment
-entity(10000, [label="10000", type="literal"])
+entity(10000, [label="10000", type="script:literal"])
 value(v10000, [repr="10000"])
 defined(10000, v10000, T1)
 wasDefinedBy(v10000, 10000, T1)
 
-entity(m, [label="m", type="name"])
+entity(m, [label="m", type="script:name"])
 accessed(m, v10000, T2)
 
-activity(assign1, [type="assign"])
+activity(assign1, [type="script:assign"])
 used(u1; assign1, 10000, -)
 wasGeneratedBy(g1; m, assign1, -)
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 
 // operation
-entity(1, [label="1", type="literal"])
+entity(1, [label="1", type="script:literal"])
 value(v1, [repr="1"])
 defined(1, v1, T3)
 wasDefinedBy(v1, 1, T3)
 
-entity(sum, [label="m + 1", type="operation"])
+entity(sum, [label="m + 1", type="script:operation"])
 value(v10001, [repr="10001"])
 defined(sum, v10001, T4)
 wasDefinedBy(v10001, sum, T4)
 
-activity(+, [type="operation"])
+activity(+, [type="script:operation"])
 used(u2; +, m, -)
 used(u3; +, 1, -)
 wasGeneratedBy(g2; sum, +, -)
@@ -31,7 +33,7 @@ wasDerivedFrom(sum, m, +, g2, u2)
 wasDerivedFrom(sum, 1, +, g3, u3)
 
 // list def
-entity(list, [label="[m, m + 1, m]", type="list"])
+entity(list, [label="[m, m + 1, m]", type="script:list"])
 value(vlist, [repr="[10000, 10001, 10000]"])
 derivedByInsertion(
     list, vlist,
@@ -42,49 +44,49 @@ defined(list, vlist, T5)
 wasDefinedBy(vlist, list, T5)
 
 // list assign
-entity(d, [label="d", type="name"])
+entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
 
-activity(assign2, [type="assign"])
+activity(assign2, [type="script:assign"])
 used(u7; assign2, list, -)
 wasGeneratedBy(g7; d, assign2, -)
 wasDerivedFrom(d, list, assign2, g7, u7)
 
 // list assign x
-entity(x, [label="x", type="name"])
+entity(x, [label="x", type="script:name"])
 accessed(x, vlist, T7)
 
-activity(assign3, [type="assign"])
+activity(assign3, [type="script:assign"])
 used(u8; assign3, d, -)
 wasGeneratedBy(g8; x, assign3, -)
 wasDerivedFrom(x, d, assign3, g8, u8)
 
 // call
-entity(len_d, [label="len(d)", type="eval"])
+entity(len_d, [label="len(d)", type="script:eval"])
 value(v3, [repr="3"])
 defined(len_d, v3, T8)
 wasDefinedBy(v3, len_d, T8)
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(0, [value="0", type="literal"])
+entity(0, [value="0", type="script:literal"])
 value(v0, [repr="0"])
 defined(0, v0, T9)
 wasDefinedBy(v0, 0, T9)
-entity(d_ac0, [label="d[0]", type="access"])
+entity(d_ac0, [label="d[0]", type="script:access"])
 accessedPart(d_ac0, vlist, "0", v10000, T10)
 
 
-activity(access1, [type="access"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
 
 // part assign
-entity(3, [label="3", type="literal"])
+entity(3, [label="3", type="script:literal"])
 value(v3, [repr="3"])
 defined(3, v3, T10)
 wasDefinedBy(v3, 3, T10)
@@ -94,11 +96,11 @@ value(v1#2, [repr="1"])
 defined(1#2, v1#2, T11)
 wasDefinedBy(v1#2, 1#2, T11)
 
-entity(d_ac1, [value="d[1]", type="access"])
+entity(d_ac1, [value="d[1]", type="script:access"])
 accessed(d_ac1, v3, T12)
 derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1#2, -)
 used(u10; assign4, 3, -)

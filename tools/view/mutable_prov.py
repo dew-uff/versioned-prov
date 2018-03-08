@@ -2,11 +2,11 @@ if __name__ == "__main__":
     import sys; sys.path.insert(0, '../..')
 
 from tools.view.provn import graph
-from tools.utils import garrow2, unquote
-import tools.utils
+from tools.utils import unquote
 
 @graph.prov("value")
 def value(dot, vid, attrs=None, id_=None):
+    return dot.node(attrs, "value", vid)
     url = dot.prefix(vid)
     result = dot.node(url, dot.replace({
         "fillcolor": tools.utils.HIGHLIGHT2,
@@ -23,25 +23,25 @@ def value(dot, vid, attrs=None, id_=None):
 
 @graph.prov("accessed")
 def accessed(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
-    return garrow2(dot, eid, vid, "access\n{}".format(time or "-"))
+    return dot.arrow2(attrs, "accessed", eid, vid, "access\n{}".format(time or "-"))
 
 
 @graph.prov("accessedPart")
 def accessed_part(dot, eid=None, wid=None, key=None, pid=None, time=None, attrs=None, id_=None):
     key = unquote(key)
-    return garrow2(dot, eid, pid, "part\n{}[{}]\n{}".format(
+    return dot.arrow2(attrs, "accessedPart", eid, pid, "part\n{}[{}]\n{}".format(
         wid or "-", key or "-", time or "-"
     ))
 
 
 @graph.prov("defined")
 def defined(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
-    return garrow2(dot, eid, vid, "defined\n{}".format(time or "-"))
+    return dot.arrow2(attrs, "defined", eid, vid, "defined\n{}".format(time or "-"))
 
 
 @graph.prov("wasDefinedBy")
 def was_defined_by(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
-    return garrow2(dot, vid, eid, "def by\n{}".format(time or "-"))
+    return dot.arrow2(attrs, "wasDefinedBy", vid, eid, "def by\n{}".format(time or "-"))
 
 
 @graph.prov("derivedByInsertion")
@@ -49,12 +49,15 @@ def derived_by_insertion(dot, eid=None, wid=None, changes=None, time=None, attrs
     result = []
     for pos, part in changes:
         pos = unquote(pos)
-        result.append(garrow2(
-            dot, wid, part, "der-ins-v\n[{}]\n{}".format(pos or "-", time or "-")
+        result.append(dot.arrow2(
+            attrs, "derivedByInsertion",
+            wid, part, "der-ins-v\n[{}]\n{}".format(pos or "-", time or "-"),
+            extra="0"
         ))
-        result.append(garrow2(
-            dot, part, eid, "der-ins-e\n[{}]\n{}".format(pos or "-", time or "-"),
-            extra={"style":"dashed"}
+        result.append(dot.arrow2(
+            attrs, "derivedByInsertion",
+            part, eid, "der-ins-e\n[{}]\n{}".format(pos or "-", time or "-"),
+            extra="1"
         ))
 
     result = [x for x in result if x]
@@ -68,8 +71,9 @@ def derived_by_removal(dot, eid=None, wid=None, positions=None, time=None, attrs
     result = []
     for pos in positions:
         pos = unquote(pos)
-        result.append(garrow2(
-            dot, wid, eid, "der-rem\n[{}]\n{}".format(pos or "-", time or "-")
+        result.append(dot.arrow2(
+            attrs, "derivedByRemoval",
+            wid, eid, "der-rem\n[{}]\n{}".format(pos or "-", time or "-")
         ))
 
     result = [x for x in result if x]

@@ -37,7 +37,6 @@ def eq(self, other):
 
 Tree.__eq__ = eq
 '''
-print("x")
 PARSER = Lark('''
     start: document
 

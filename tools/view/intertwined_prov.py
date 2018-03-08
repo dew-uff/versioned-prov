@@ -1,48 +1,54 @@
 if __name__ == "__main__":
     import sys; sys.path.insert(0, '../..')
 
+from tools.view.provn import prov
 from tools.view.prov_dictionary import graph
-from tools.utils import unquote, garrow3, arrow2, garrow2
+from tools.utils import unquote
 import tools.utils
+
+NAMESPACE = "https://dew-uff.github.io/versioned-prov/ns/intertwined#"
+
+def intertwined(attrs, key, default="-"):
+    try:
+        return attrs[(key, "intertwined", NAMESPACE)]
+    except KeyError:
+        return default
+
+def ns_intertwined(key):
+    return {
+        "intertwined:" + key,
+        NAMESPACE + key,
+        key
+    }
 
 @graph.prov("entity")
 def entity(dot, eid, attrs=None, id_=None):
-    fillcolor = "#FFFC87"
-    attrs = attrs or {}
-    if attrs.get("type") == '"Version"':
-        fillcolor = tools.utils.HIGHLIGHT2
-
-    url = dot.prefix(eid)
-    result = dot.node(url, dot.replace({
-        "fillcolor": fillcolor,
-        "color": "#808080",
-        "style": "filled",
-        "label": eid,
-        "URL": url,
-    }, attrs))
-    tattrs = dot.attrs(attrs, url)
-    if tattrs:
-        result += "\n" + tattrs
-    return result
+    if prov(attrs, 'type') in ns_intertwined('Version'):
+        return dot.node(attrs, "version", eid)
+    return dot.node(attrs, "entity", eid)
 
 
 @graph.prov("wasDerivedFrom")
 def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
-    attrs = attrs or {}
-    if attrs.get('type') == '"Reference"':
-        if 'access' in attrs:
-            return garrow3(
-                dot, egenerated, unquote(attrs.get("whole", "-")), eused,
-                "[{}]".format(unquote(attrs.get("key", "-"))),
-                extra={"label": "der ac-{}\n{}".format(
-                    unquote(attrs.get("access", "-")),
-                    unquote(attrs.get("moment", "-"))
-                )}
+    if prov(attrs, 'type') in ns_intertwined('Reference'):
+        if intertwined(attrs, 'access', False):
+            return dot.arrow3(
+                attrs, "int_wasDerivedFrom",
+                egenerated, intertwined(attrs, 'whole'), eused,
+                "[{}]".format(intertwined(attrs, 'key')),
+                "der ac-{}\n{}".format(
+                    intertwined(attrs, 'access'),
+                    intertwined(attrs, 'moment')
+                )
             )
-        return garrow2(
-            dot, egenerated, eused, "der ref\n{}".format(unquote(attrs.get("moment", "-")))
+        return dot.arrow2(
+            attrs, "int_wasDerivedFrom",
+            egenerated, eused, "der ref\n{}".format(
+                intertwined(attrs, 'moment')
+            ),
+            extra="4"
         )
-    return arrow2(dot, egenerated, eused, "der")
+    return dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")
 
 if __name__ == "__main__":
     graph.main()

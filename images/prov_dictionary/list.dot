@@ -3,15 +3,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;10000&quot;</TD>
+	    <TD align="left">10000</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;name&quot;</TD>
+	    <TD align="left">script:name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;m&quot;</TD>
+	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
@@ -19,15 +19,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;10001&quot;</TD>
+	    <TD align="left">10001</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;sum&quot;</TD>
+	    <TD align="left">script:eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;m + 1&quot;</TD>
+	    <TD align="left">m + 1</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
@@ -35,11 +35,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[]&quot;</TD>
+	    <TD align="left">[]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;EmptyDictionary&quot;</TD>
+	    <TD align="left">EmptyDictionary</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/elist" [color="gray",style="dashed",arrowhead="none"]
@@ -47,15 +47,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;[10000, 10001, 10000]&quot;</TD>
+	    <TD align="left">[10000, 10001, 10000]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;Dictionary&quot;</TD>
+	    <TD align="left">Dictionary</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;[m, m + 1, m]&quot;</TD>
+	    <TD align="left">[m, m + 1, m]</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
@@ -63,15 +63,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;10000&quot;</TD>
+	    <TD align="left">10000</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;number&quot;</TD>
+	    <TD align="left">script:item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;m&quot;</TD>
+	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/list0" [color="gray",style="dashed",arrowhead="none"]
@@ -79,15 +79,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;10001&quot;</TD>
+	    <TD align="left">10001</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;number&quot;</TD>
+	    <TD align="left">script:item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;m + 1&quot;</TD>
+	    <TD align="left">m + 1</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
@@ -95,20 +95,20 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">&quot;10000&quot;</TD>
+	    <TD align="left">10000</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;number&quot;</TD>
+	    <TD align="left">script:item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">&quot;m&quot;</TD>
+	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/list2" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"http://example.org/list" -> "bn0" [arrowhead="none",taillabel="der-ins",color="darkgreen"]
+"http://example.org/list" -> "bn0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
 "bn0" -> "http://example.org/elist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
@@ -117,7 +117,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">&quot;definelist&quot;</TD>
+	    <TD align="left">script:definelist</TD>
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/definelist1" [color="gray",style="dashed",arrowhead="none"]
