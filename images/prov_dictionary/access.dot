@@ -1,6 +1,18 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/list0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list0",URL="http://example.org/list0"]
+"http://example.org/empty" [fillcolor="#FFFC87",color="#808080",style="filled",label="empty",URL="http://example.org/empty"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">EmptyDictionary</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/empty" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/list0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list0",URL="http://example.org/list0"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -14,9 +26,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/list0" [color="gray",style="dashed",arrowhead="none"]
+"-attrs1" -> "http://example.org/list0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list1" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1",URL="http://example.org/list1"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10001</TD>
@@ -30,9 +42,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">m + 1</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
+"-attrs2" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list2" [fillcolor="#FFFC87",color="#808080",style="filled",label="list2",URL="http://example.org/list2"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -46,19 +58,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/list2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ed" [fillcolor="#FFFC87",color="#808080",style="filled",label="ed",URL="http://example.org/ed"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">EmptyDictionary</TD>
-	</TR>
-</TABLE>>]
-"-attrs3" -> "http://example.org/ed" [color="gray",style="dashed",arrowhead="none"]
+"-attrs3" -> "http://example.org/list2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="http://example.org/d"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -77,7 +77,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs4" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
 "http://example.org/d" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
-"bn0" -> "http://example.org/ed" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
+"bn0" -> "http://example.org/empty" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "bn0" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]

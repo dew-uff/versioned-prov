@@ -5,13 +5,13 @@ entity(m, [value="10000", type="script:name", label="m"])
 entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
 // new
-entity(elist, [value="[]", type="EmptyDictionary"])
+entity(empty, [value="[]", type="EmptyDictionary"])
 entity(list, [value="[10000, 10001, 10000]", type="Dictionary", label="[m, m + 1, m]"])
 entity(list0, [value="10000", type="script:item", label="m"])
 entity(list1, [value="10001", type="script:item", label="m + 1"])
 entity(list2, [value="10000", type="script:item", label="m"])
 derivedByInsertionFrom(
-    list, elist,
+    list, empty,
     {("0", list0), ("1", list1), ("2", list2)}
 )
 

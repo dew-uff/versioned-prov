@@ -31,7 +31,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/elist" [fillcolor="#FFFC87",color="#808080",style="filled",label="elist",URL="http://example.org/elist"]
+"http://example.org/empty" [fillcolor="#FFFC87",color="#808080",style="filled",label="empty",URL="http://example.org/empty"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -42,7 +42,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">EmptyDictionary</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/elist" [color="gray",style="dashed",arrowhead="none"]
+"-attrs2" -> "http://example.org/empty" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list" [fillcolor="#FFFC87",color="#808080",style="filled",label="list",URL="http://example.org/list"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -109,7 +109,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs6" -> "http://example.org/list2" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
 "http://example.org/list" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
-"bn0" -> "http://example.org/elist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
+"bn0" -> "http://example.org/empty" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "bn0" -> "http://example.org/list2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
