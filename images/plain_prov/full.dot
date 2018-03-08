@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
@@ -19,7 +19,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -31,7 +31,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
@@ -46,7 +46,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -58,7 +58,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -87,7 +87,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:list</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -103,7 +103,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -119,7 +119,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -135,7 +135,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -150,7 +150,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:definelist</TD>
+	    <TD align="left">definelist</TD>
 	</TR>
 </TABLE>>]
 "-attrs10" -> "http://example.org/definelist1" [color="gray",style="dashed",arrowhead="none"]
@@ -172,7 +172,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -187,7 +187,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs12" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
@@ -228,7 +228,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -240,7 +240,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -258,7 +258,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs17" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -270,7 +270,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -282,7 +282,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs19" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs19" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
@@ -299,7 +299,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs20" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
@@ -311,7 +311,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -327,7 +327,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -346,7 +346,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -361,7 +361,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs24" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs24" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]

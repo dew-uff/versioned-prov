@@ -7,11 +7,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:00</TD>
+	    <TD align="left">00:00</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -23,11 +23,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:01</TD>
+	    <TD align="left">00:01</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
@@ -39,11 +39,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:02</TD>
+	    <TD align="left">00:02</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
@@ -55,11 +55,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:constant</TD>
+	    <TD align="left">constant</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:03</TD>
+	    <TD align="left">00:03</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
@@ -71,7 +71,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -79,7 +79,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:04</TD>
+	    <TD align="left">00:04</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
@@ -91,7 +91,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:constant</TD>
+	    <TD align="left">constant</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -99,7 +99,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:05</TD>
+	    <TD align="left">00:05</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]

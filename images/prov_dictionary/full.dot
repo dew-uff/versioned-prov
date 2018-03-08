@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
@@ -19,7 +19,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -31,7 +31,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
@@ -46,7 +46,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -58,7 +58,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -70,7 +70,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
@@ -115,7 +115,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -131,7 +131,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -147,7 +147,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -156,7 +156,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs10" -> "http://example.org/list2" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"http://example.org/list" -> "bn0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/list" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn0" -> "http://example.org/elist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
@@ -165,7 +165,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:definelist</TD>
+	    <TD align="left">definelist</TD>
 	</TR>
 </TABLE>>]
 "-attrs11" -> "http://example.org/definelist1" [color="gray",style="dashed",arrowhead="none"]
@@ -208,7 +208,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs13" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "bn1" [shape="point",label=""]
-"http://example.org/d" -> "bn1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/d" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn1" -> "http://example.org/ed" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn1" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn1" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
@@ -217,7 +217,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs14" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
@@ -253,7 +253,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs16" -> "http://example.org/x" [color="gray",style="dashed",arrowhead="none"]
 "bn2" [shape="point",label=""]
-"http://example.org/x" -> "bn2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/x" -> "bn2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn2" -> "http://example.org/ex" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn2" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn2" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
@@ -262,7 +262,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs17" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
@@ -277,7 +277,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -289,7 +289,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs19" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:call</TD>
+	    <TD align="left">call</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -307,7 +307,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs20" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -319,7 +319,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -331,7 +331,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs22" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs22" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
@@ -348,7 +348,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs23" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
@@ -360,7 +360,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs24" -> "http://example.org/d_ac1" [color="gray",style="dashed",arrowhead="none"]
@@ -381,7 +381,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs25" -> "http://example.org/d#2" [color="gray",style="dashed",arrowhead="none"]
 "bn3" [shape="point",label=""]
-"http://example.org/d#2" -> "bn3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/d#2" -> "bn3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn3" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn3" -> "http://example.org/d_ac1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/x#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="x#2",URL="http://example.org/x#2"]
@@ -401,14 +401,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs26" -> "http://example.org/x#2" [color="gray",style="dashed",arrowhead="none"]
 "bn4" [shape="point",label=""]
-"http://example.org/x#2" -> "bn4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/x#2" -> "bn4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn4" -> "http://example.org/x" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn4" -> "http://example.org/d_ac1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/assign4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign4",URL="http://example.org/assign4"]
 "-attrs27" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs27" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]

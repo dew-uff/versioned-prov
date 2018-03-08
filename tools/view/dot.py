@@ -2,6 +2,7 @@ if __name__ == "__main__":
     import sys; sys.path.insert(0, '../..')
 import argparse
 import sys
+import importlib
 import html
 
 from copy import copy
@@ -67,21 +68,17 @@ class Digraph(object):
         self.functions = {"prefix": self.setprefix}
         self.attr = 0
         self.pointi = 0
-        self.default_prefix = 'http://example.org/'
-        self.prefixes = {
-            "prov": "https://www.w3.org/ns/prov#"
-        }
-        self.rprefixes = {
-            "https://www.w3.org/ns/prov#": "prov:"
-        }
-        self.rprefixes[self.default_prefix] = ""
+        self.default_prefix = ""
+        self.prefixes = {}
+        self.rprefixes = {}
 
         self.size_x = 16
         self.size_y = 12
         self.rankdir = "BT"
         self.header = ""
         self.footer = ""
-        self.style = default
+        self.style = None
+        self.reset_config()
 
     def reset_config(self):
         self.size_x = 16
@@ -89,7 +86,16 @@ class Digraph(object):
         self.rankdir = "BT"
         self.header = ""
         self.footer = ""
-        self.style = default
+        self.set_style("default")
+
+    def set_style(self, name, *args):
+        if isinstance(name, str):
+            module = importlib.import_module('tools.view.style.' + name)
+            importlib.reload(module)
+            cls = module.EXPORT
+        else:
+            cls = module.EXPORT
+        self.style = cls(*args)
 
     def reset(self):
         self.functions = {}
@@ -174,52 +180,38 @@ class Digraph(object):
         direction = " {} ".format(direction)
         return '{}{}'.format(direction.join(map(_quote, nodes)), extra)
 
-    def attrs(self, attrs, url=None):
+    def attrs(self, attrs, statement, url=None):
         """Create attrs node and associate it with a url"""
-        attrs = attrs or {}
         result = ""
-        color = attrs.get("dot:hide", "gray")
-        fontcolor = '<font color={}>{{}}</font>'.format(
-            attrs["dot:hide"]
-        ) if "dot:hide" in attrs else "{}"
-        label = [
-            '<<TABLE cellpadding="0" border="0">'
+        valid_attrs = [
+            self.style.change_attr(key, value)
+            for key, value in attrs.items()
+            if self.style.filter_attr(key, value, attrs)
         ]
-        added = False
-        for key, value in attrs.items():
-            if key.startswith("dot:"):
-                continue
-            added = True
-            if key.startswith("prov:"):
-                key = key[5:]
-            label.append('\t<TR>')
-            label.append('\t    <TD align="left">{}</TD>'.format(fontcolor.format(self.htmlescape(key) + ":")))
-            label.append('\t    <TD align="left">{}</TD>'.format(fontcolor.format(self.htmlescape(unquote(value)))))
-            label.append('\t</TR>')
-        label.append('</TABLE>>')
 
-        if added:
+        if valid_attrs:
+            label = [
+                '<<TABLE cellpadding="0" border="0">'
+            ]
+            for key, value in valid_attrs:
+                key = self.style.htmlcolor(html.escape(key + ":"), attrs)
+                value = self.style.htmlcolor(html.escape(value), attrs)
+                label.append('\t<TR>')
+                label.append('\t    <TD align="left">{}</TD>'.format(key))
+                label.append('\t    <TD align="left">{}</TD>'.format(value))
+                label.append('\t</TR>')
+            label.append('</TABLE>>')
             aid = "-attrs{}".format(self.attr)
             self.attr += 1
-            result = self._node(aid, {
-                "color": color,
-                "shape": "note",
-                "fontsize": "10",
-                "fontcolor": "black",
-                "label": "\n".join(label)
-            })
+            result = self._node(aid, attrs=self.style.attrs(attrs, statement, "\n".join(label)))
             if url is not None:
-                result += "\n" + self._arrow(aid, url, attrs={
-                    "color": color,
-                    "style": "dashed",
-                    "arrowhead": "none",
-                })
+                result += "\n" + self._arrow(aid, url, attrs=self.style.attrs_arrow(attrs, statement))
         return result
 
     def node(self, attrs, statement, nid):
         url = self.prefix(nid)
         result = self._node(url, self.style.node(attrs, statement, nid, url))
-        tattrs = self.attrs(attrs, url)
+        tattrs = self.attrs(attrs, statement, url)
         if tattrs:
             result += "\n" + tattrs
         return result
@@ -255,27 +247,6 @@ class Digraph(object):
         self.pointi += 1
         return url, self._node(url, self.style.point(attrs, statement))
 
-    def replace(self, args, attrs):
-        attrs = attrs or {}
-        args = copy(args)
-        for key, value in attrs.items():
-            if key == "dot:hide":
-                if "fillcolor" in args:
-                    args["fillcolor"] = unquote(value)
-            elif key == "dot:hide2":
-                args["fontcolor"] = unquote(value)
-                args["color"] = unquote(value)
-            elif key.startswith("dot:"):
-                args[key[4:]] = unquote(value)
-
-        return args
-
-    def escape(self, text):
-        return text.replace('"', '\\"')
-
-    def htmlescape(self, text):
-        return html.escape(text)
-
     def main(self):
         parser = argparse.ArgumentParser(description='Convert PROV-N to GraphViz Dot')
         parser.add_argument('-i', '--infile', type=str, default=None,
@@ -288,6 +259,8 @@ class Digraph(object):
                         help='Graph height')
         parser.add_argument('-r', '--rankdir', type=str, default="BT",
                         help='Graph rankdir')
+        parser.add_argument('-s', '--style', type=str, default="default",
+                        help='Graph style')
 
         args = parser.parse_args([
             ("-" if x.startswith("-") and not x.startswith("--") and len(x) > 2 else "") + x
@@ -303,6 +276,7 @@ class Digraph(object):
         self.size_x = args.width
         self.size_y = args.height
         self.rankdir = args.rankdir
+        self.set_style(args.style)
         result = self.generate(provn)
         if args.outfile is None:
             print(result)

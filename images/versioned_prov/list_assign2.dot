@@ -43,7 +43,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]

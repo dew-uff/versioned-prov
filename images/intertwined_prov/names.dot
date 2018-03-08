@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -15,11 +15,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:00</TD>
+	    <TD align="left">00:00</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/1_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -32,7 +32,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
@@ -40,11 +40,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:01</TD>
+	    <TD align="left">00:01</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/a_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -57,7 +57,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
@@ -65,11 +65,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:02</TD>
+	    <TD align="left">00:02</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/a#2_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -82,7 +82,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:constant</TD>
+	    <TD align="left">constant</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
@@ -90,11 +90,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:03</TD>
+	    <TD align="left">00:03</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/True_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -107,7 +107,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -119,11 +119,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:04</TD>
+	    <TD align="left">00:04</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs9" -> "http://example.org/int_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -136,7 +136,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:constant</TD>
+	    <TD align="left">constant</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -148,11 +148,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">2018-02-22T16:00:05</TD>
+	    <TD align="left">00:05</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs11" -> "http://example.org/ellipsis_v1" [color="gray",style="dashed",arrowhead="none"]

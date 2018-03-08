@@ -27,6 +27,7 @@ def configure_graph(graph, args, cell):
     graph.size_x = args.width
     graph.size_y = args.height
     graph.rankdir = args.rankdir
+    graph.set_style(args.style)
     # Dot header
     pos = cell.find("##H##")
     if pos != -1:
@@ -87,6 +88,7 @@ class ProvMagic(Magics):
     @argument('-x', '--width', default=16, type=int, help="Graph width")
     @argument('-y', '--height', default=12, type=int, help="Graph height")
     @argument('-r', '--rankdir', default="BT", type=str, help="Graph rankdir")
+    @argument('-s', '--style', default="default", type=str, help="Graph style")
     @cell_magic
     def provn(self, line, cell):
         # Remove comment on %%provn line

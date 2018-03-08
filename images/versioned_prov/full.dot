@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
@@ -23,7 +23,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -39,7 +39,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
@@ -55,7 +55,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
@@ -71,7 +71,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -87,7 +87,7 @@ T2"]
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
@@ -104,7 +104,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:list</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -133,7 +133,7 @@ T5"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -149,7 +149,7 @@ T5"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs8" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
@@ -181,7 +181,7 @@ T6"]
 "-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs10" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
@@ -197,7 +197,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -213,7 +213,7 @@ T7"]
 "-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:call</TD>
+	    <TD align="left">call</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -231,7 +231,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
@@ -247,7 +247,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -263,7 +263,7 @@ T7"]
 "-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs15" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
@@ -284,7 +284,7 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
@@ -300,7 +300,7 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -319,7 +319,7 @@ T12"]
 "-attrs18" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs18" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]

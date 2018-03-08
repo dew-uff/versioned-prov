@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -23,7 +23,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -47,7 +47,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]

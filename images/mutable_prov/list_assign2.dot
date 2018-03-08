@@ -15,7 +15,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -29,7 +29,7 @@ T6"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/x" [color="gray",style="dashed",arrowhead="none"]
@@ -39,7 +39,7 @@ T7"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]

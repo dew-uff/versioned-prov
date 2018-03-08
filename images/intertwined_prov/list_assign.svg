@@ -25,7 +25,7 @@
 <text text-anchor="start" x="10" y="-193.5" font-family="Times New Roman,serif" font-size="10.00">value:</text>
 <text text-anchor="start" x="37" y="-193.5" font-family="Times New Roman,serif" font-size="10.00">[10000, 10001, 10000]</text>
 <text text-anchor="start" x="10" y="-180.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="37" y="-180.5" font-family="Times New Roman,serif" font-size="10.00">script:list</text>
+<text text-anchor="start" x="37" y="-180.5" font-family="Times New Roman,serif" font-size="10.00">list</text>
 <text text-anchor="start" x="10" y="-167.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="37" y="-167.5" font-family="Times New Roman,serif" font-size="10.00">[m, m + 1, m]</text>
 </g>
@@ -70,7 +70,7 @@
 <text text-anchor="start" x="187" y="-34.5" font-family="Times New Roman,serif" font-size="10.00">value:</text>
 <text text-anchor="start" x="214" y="-34.5" font-family="Times New Roman,serif" font-size="10.00">[10000, 10001, 10000]</text>
 <text text-anchor="start" x="187" y="-21.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="214" y="-21.5" font-family="Times New Roman,serif" font-size="10.00">script:name</text>
+<text text-anchor="start" x="214" y="-21.5" font-family="Times New Roman,serif" font-size="10.00">name</text>
 <text text-anchor="start" x="187" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="214" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">d</text>
 </g>
@@ -86,15 +86,15 @@
 </g>
 <!-- &#45;attrs2 -->
 <g id="node6" class="node"><title>&#45;attrs2</title>
-<polygon fill="none" stroke="gray" points="190.5,-122 101.5,-122 101.5,-86 196.5,-86 196.5,-116 190.5,-122"/>
-<polyline fill="none" stroke="gray" points="190.5,-122 190.5,-116 "/>
-<polyline fill="none" stroke="gray" points="196.5,-116 190.5,-116 "/>
-<text text-anchor="start" x="112" y="-101" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="135" y="-101" font-family="Times New Roman,serif" font-size="10.00">script:assign</text>
+<polygon fill="none" stroke="gray" points="191,-122 127,-122 127,-86 197,-86 197,-116 191,-122"/>
+<polyline fill="none" stroke="gray" points="191,-122 191,-116 "/>
+<polyline fill="none" stroke="gray" points="197,-116 191,-116 "/>
+<text text-anchor="start" x="137" y="-101" font-family="Times New Roman,serif" font-size="10.00">type:</text>
+<text text-anchor="start" x="160" y="-101" font-family="Times New Roman,serif" font-size="10.00">assign</text>
 </g>
 <!-- &#45;attrs2&#45;&gt;http://example.org/assign2 -->
 <g id="edge3" class="edge"><title>&#45;attrs2&#45;&gt;http://example.org/assign2</title>
-<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M155.214,-122.2C159.854,-135.043 166.167,-152.517 170.803,-165.348"/>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M165.329,-122.2C167.815,-135.043 171.197,-152.517 173.68,-165.348"/>
 </g>
 </g>
 </svg>

@@ -7,18 +7,6 @@ from tools.utils import unquote
 @graph.prov("value")
 def value(dot, vid, attrs=None, id_=None):
     return dot.node(attrs, "value", vid)
-    url = dot.prefix(vid)
-    result = dot.node(url, dot.replace({
-        "fillcolor": tools.utils.HIGHLIGHT2,
-        "color": "#808080",
-        "style": "filled",
-        "label": vid,
-        "URL": url,
-    }, attrs))
-    tattrs = dot.attrs(attrs, url)
-    if tattrs:
-        result += "\n" + tattrs
-    return result
 
 
 @graph.prov("accessed")

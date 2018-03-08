@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
 	    <TD align="left">generatedAtTime:</TD>
@@ -23,7 +23,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -45,7 +45,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -65,7 +65,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:list</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>

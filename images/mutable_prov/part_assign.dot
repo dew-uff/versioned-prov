@@ -40,7 +40,7 @@ T5"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -54,7 +54,7 @@ T6"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -78,7 +78,7 @@ T3"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
@@ -102,7 +102,7 @@ T10"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs8" -> "http://example.org/d_ac1" [color="gray",style="dashed",arrowhead="none"]
@@ -118,7 +118,7 @@ T12",style="dashed"]
 "-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs9" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]

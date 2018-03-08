@@ -18,7 +18,7 @@ SAME = {}
 TEMP_BASE = ""
 LINE = None
 
-HIDE = {"dot:hide":"#F0F0F0", "dot:hide2": "gray"}
+HIDE = {"dot:hide":"true"}
 BLACK = {"dot:color":"#000000"}
 
 def reset_prov(temp_base):

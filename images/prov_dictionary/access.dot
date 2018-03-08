@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -23,7 +23,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -39,7 +39,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:item</TD>
+	    <TD align="left">item</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -76,7 +76,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs4" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"http://example.org/d" -> "bn0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/d" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn0" -> "http://example.org/ed" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn0" -> "http://example.org/list0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "bn0" -> "http://example.org/list1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
@@ -89,7 +89,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -101,7 +101,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -113,7 +113,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]

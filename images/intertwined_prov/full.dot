@@ -7,7 +7,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
@@ -19,7 +19,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/10000_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -32,7 +32,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -44,7 +44,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
@@ -60,7 +60,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -72,7 +72,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/1_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -85,7 +85,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -101,7 +101,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/sum_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -110,7 +110,7 @@ T2"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:operation</TD>
+	    <TD align="left">operation</TD>
 	</TR>
 </TABLE>>]
 "-attrs8" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
@@ -127,7 +127,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:list</TD>
+	    <TD align="left">list</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -143,7 +143,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs10" -> "http://example.org/list_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -159,7 +159,7 @@ T2"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -171,7 +171,7 @@ T2"]
 "-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs12" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
@@ -187,7 +187,7 @@ T6"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:name</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -199,7 +199,7 @@ T6"]
 "-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs14" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
@@ -215,7 +215,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:eval</TD>
+	    <TD align="left">eval</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -231,7 +231,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs16" -> "http://example.org/len_d_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -240,7 +240,7 @@ T7"]
 "-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:call</TD>
+	    <TD align="left">call</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -258,7 +258,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs18" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -270,7 +270,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs19" -> "http://example.org/0_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -283,7 +283,7 @@ T7"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -295,7 +295,7 @@ T7"]
 "-attrs21" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 </TABLE>>]
 "-attrs21" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
@@ -316,7 +316,7 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:literal</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
 "-attrs22" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
@@ -328,7 +328,7 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs23" -> "http://example.org/3_v1" [color="gray",style="dashed",arrowhead="none"]
@@ -341,7 +341,7 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:access</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -357,12 +357,12 @@ T10",arrowhead="none"]
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">intertwined:Version</TD>
+	    <TD align="left">Version</TD>
 	</TR>
 </TABLE>>]
 "-attrs25" -> "http://example.org/list_v2" [color="gray",style="dashed",arrowhead="none"]
 "bn1" [shape="point",label=""]
-"http://example.org/list_v2" -> "bn1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der-ins",arrowhead="none",color="darkgreen"]
+"http://example.org/list_v2" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins",arrowhead="none"]
 "bn1" -> "http://example.org/list_v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der"]
 "bn1" -> "http://example.org/d_ac1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/list" -> "http://example.org/list_v2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="spe"]
@@ -370,7 +370,7 @@ T10",arrowhead="none"]
 "-attrs26" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">script:assign</TD>
+	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
 "-attrs26" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
