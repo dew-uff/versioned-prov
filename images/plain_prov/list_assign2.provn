@@ -17,6 +17,4 @@ hadMember(x, list1)
 hadMember(x, list2)
 
 activity(assign3, [type="script:assign"])
-used(u11; assign3, d, -)
-wasGeneratedBy(g11; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g11, u11)
+wasDerivedFrom(x, d, assign3)

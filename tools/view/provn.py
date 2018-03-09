@@ -74,8 +74,12 @@ def was_invalidated_by(dot, eid=None, aid=None, time=None, attrs=None, id_=None)
 
 @graph.prov("wasDerivedFrom")
 def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
-    return dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")
-
+    result = [dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")]
+    if not gid:
+        result.append(was_generated_by(egenerated, aid, None, attrs))
+    if not uid:
+        result.append(used(aid, eused, None, attrs))
+    return "\n".join(result)
 
 @graph.prov("wasAttributedTo")
 def was_attributed_to(dot, eid=None, agid=None, attrs=None, id_=None):

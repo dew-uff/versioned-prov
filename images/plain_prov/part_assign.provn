@@ -21,26 +21,27 @@ entity(1, [value="1", type="script:literal"])
 entity(3, [value="3", type="script:literal"])
 entity(list1#2, [value="3", type="script:access", label="d[1]"])
 
+
+
+
+
+activity(assign4, [type="script:assign"])
+used(assign4, 1, -)
+used(u16; assign4, 3, -)
+wasDerivedFrom(list1#2, 3, assign4, -, u16)
+
 entity(d#2, [value="[10000, 3, 10000]", type="script:name", label="d"])
+wasGeneratedBy(g17; d#2, assign4, -)
+wasDerivedFrom(d#2, d, assign4, g17, -)
+wasDerivedFrom(d#2, 3, assign4, g17, u16)
 hadMember(d#2, list0)
 hadMember(d#2, list1#2)
 hadMember(d#2, list2)
 
 entity(x#2, [value="[10000, 3, 10000]", type="script:name", label="x"])
+wasGeneratedBy(g18; x#2, assign4, -)
+wasDerivedFrom(x#2, x, assign4, g18, -)
+wasDerivedFrom(x#2, 3, assign4, g18, u16)
 hadMember(x#2, list0)
 hadMember(x#2, list1#2)
 hadMember(x#2, list2)
-
-activity(assign4, [type="script:assign"])
-used(assign4, 1, -)
-used(u16; assign4, 3, -)
-wasGeneratedBy(g16; list1#2, assign4, -)
-wasDerivedFrom(list1#2, 3, assign4, g16, u16)
-used(u17; assign4, d, -)
-wasGeneratedBy(g17; d#2, assign4, -)
-wasDerivedFrom(d#2, d, assign4, g17, u17)
-wasDerivedFrom(d#2, 3, assign4, g17, u16)
-used(u18; assign4, x, -)
-wasGeneratedBy(g18; x#2, assign4, -)
-wasDerivedFrom(x#2, x, assign4, g18, u18)
-wasDerivedFrom(x#2, 3, assign4, g18, u16)
