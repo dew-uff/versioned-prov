@@ -1,7 +1,0 @@
-entity(disti_aj#2, [value="10000",type="access",label="disti[j]",dot:hide="#F0F0F0",dot:hide2="gray"])
-activity(access14, [type="access",dot:hide="#F0F0F0",dot:hide2="gray"])
-used(u37; access14, list21, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-wasDerivedFrom(disti_aj#2, list21, access14, g35, u37, [dot:hide="#F0F0F0",dot:hide2="gray"])
-wasGeneratedBy(g35; disti_aj#2, access14, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-used(access14, disti#2, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-used(access14, j#2, -, [dot:hide="#F0F0F0",dot:hide2="gray"])

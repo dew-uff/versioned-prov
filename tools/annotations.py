@@ -7,18 +7,23 @@ from contextlib import contextmanager
 from os.path import join
 import json
 
+from tools.prov_magics import ProvMagic
+
+STATS_VIEW = True
+
 NAMES = Counter()
 DICTS = defaultdict(dict)
 ENABLED = True
 RESULT = []
 TEMP = []
-STATS = defaultdict(Counter)
+STATS = defaultdict(lambda: defaultdict(Counter))
 VALUES = {}
 SAME = {}
 TEMP_BASE = ""
 LINE = None
 
-HIDE = {"dot:hide":"true"}
+HIDE = {"dot:hide": "true"}
+SPECIFIC = {"dot:specific": "true"}
 BLACK = {"dot:color":"#000000"}
 
 def reset_prov(temp_base):
@@ -36,15 +41,22 @@ def reset_prov(temp_base):
     ENABLED = False
     RESULT = []
     TEMP = []
-    STATS = defaultdict(Counter)
+    STATS = defaultdict(lambda: defaultdict(Counter))
     VALUES = {}
     SAME = {}
 
 
 def add(text):
     statement = text.split("(")[0]
-    STATS["global"][statement] += 1
-    STATS[LINE][statement] += 1
+    STATS["all"]["global"][statement] += 1
+    STATS["all"][LINE][statement] += 1
+    if not "dot:hide" in text:
+        STATS["visible"]["global"][statement] += 1
+        STATS["visible"][LINE][statement] += 1
+    if "dot:specific" in text:
+        STATS["specific"]["global"][statement] += 1
+        STATS["specific"][LINE][statement] += 1
+
     RESULT.append(text)
     TEMP.append(text)
     if ENABLED:
@@ -55,11 +67,15 @@ def stats(path=None, view=False, temp=False, show=True, engine="dot"):
     if not provn:
         return
     result = {}
-    for key, stats in STATS.items():
-        result[key] = stats.most_common()
+    for group, groups in STATS.items():
+        result[group] = {}
+        for key, stats in groups.items():
+            result[group][key] = stats.most_common()
     if path:
         with open(path + ".json", "w") as f:
             json.dump(result, f)
+    if not STATS_VIEW and not ENABLED:
+        return result
     if not view:
         view = "provn"
         show = False
@@ -68,11 +84,7 @@ def stats(path=None, view=False, temp=False, show=True, engine="dot"):
     from IPython.display import display
     if engine != "dot":
         provn = 'graph [overlap=false]\n##H##\n' + provn
-    im = get_ipython().run_cell_magic(
-        "provn",
-        "-o {} -e {} -p {}".format(path, view, engine),
-        provn
-    )
+    im = ProvMagic().provn("-o {} -e {} -p {} -s hide".format(path, view, engine), provn)
     if show:
         display(im)
     return result
@@ -132,12 +144,14 @@ def ventity(time, name, value, type_, label, *, attrs={}):
     ])
     return entity(name, value, type_, label, attrs=new_attrs)
 
-def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
+def activity(name, derived=[], used=[], generated=[], label=None, *, shared=False, attrs={}):
     varname = get_varname(name, sep="", show1=True)
+    usages = {}
     new_attrs = {}
     wdf_attrs = {}
     wgb_attrs = {}
     u_attrs = {}
+    mod = {}
     for key, value in attrs.items():
         if key.startswith("wasDerivedFrom:"):
             wdf_attrs[key[15:]] = value
@@ -165,8 +179,16 @@ def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
         fnderived = lambda vn, vo, vu: wdf_attrs
         if new.startswith("--"):
             command = new[2:]
+            new, *olds = olds
+            if "s" in command:
+                mod = SPECIFIC
+                for key, value in mod.items():
+                    u_attrs[key] = value
+                    wdf_attrs[key] = value
+                    wgb_attrs[key] = value
             if "g" in command:
-                time, whole, key, new, *olds = olds
+                time = new
+                whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
                     SAME[vn] = SAME.get(vo, vo)
                     attrs = copy(wdf_attrs)
@@ -176,10 +198,9 @@ def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
                     attrs["key"] = key
                     attrs["access"] = "w"
                     return attrs
-
-
             elif "p" in command:
-                time, whole, key, new, *olds = olds
+                time = new
+                whole, key, new, *olds = olds
                 def fnderived(vn, vo, vu):
                     SAME[vn] = SAME.get(vo, vo)
                     attrs = copy(wdf_attrs)
@@ -190,7 +211,8 @@ def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
                     attrs["access"] = "r"
                     return attrs
             elif "d" in command:
-                time, new, *olds = olds
+                time = new
+                new, *olds = olds
                 def fnderived(vn, vo, vu):
                     SAME[vn] = SAME.get(vo, vo)
                     attrs = copy(wdf_attrs)
@@ -199,14 +221,29 @@ def activity(name, derived=[], used=[], generated=[], label=None, *, attrs={}):
                     return attrs
 
         for old in olds:
-            varu = get_varname("u", sep="", show1=True)
-            add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
+            if shared and old in usages:
+                varu = usages[old]
+            else:
+                varu = get_varname("u", sep="", show1=True)
+                add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
+                usages[old] = varu
             add("wasDerivedFrom({}, {}, {}, {}, {}{})".format(new, old, varname, varg, varu, _attrpairs(fnderived(new, old, varu))))
         add("wasGeneratedBy({}; {}, {}, -{})".format(varg, new, varname, _attrpairs(wgb_attrs)))
 
+        if mod:
+            for key in mod:
+                del u_attrs[key]
+                del wdf_attrs[key]
+                del wgb_attrs[key]
+
 
     for old in used:
-        add("used({}, {}, -{})".format(varname, old, _attrpairs(u_attrs)))
+        if shared and old in usages:
+            varu = usages[old]
+        else:
+            varu = get_varname("u", sep="", show1=True)
+            add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
+            usages[old] = varu
 
     for new in generated:
         add("wasGeneratedBy({}, {}, -{})".format(new, varname, _attrpairs(wgb_attrs)))
@@ -267,8 +304,8 @@ def vderivedByInsertion(ent, elements, time):
         DICTS[ent][str(i)] = v
 
 
-def hadMember(cname, entity, key):
-    add("hadMember({}, {})".format(cname, entity))
+def hadMember(cname, entity, key, attrs={}):
+    add("hadMember({}, {}{})".format(cname, entity, _attrpairs(attrs)))
     DICTS[cname][key] = entity
 
 def vhadMember(cname, entity, key, time):
@@ -300,13 +337,13 @@ def derivedByInsertionFrom(new, old, elements, *, attrs=BLACK):
         DICTS[new][repr(i)] = v
 
 
-def had_members(entity, elements):
+def had_members(entity, elements, attrs={}):
     if isinstance(elements, list):
         key_value = list(enumerate(elements))
     else:
         key_value = list(elements.items())
     for i, v in key_value:
-        hadMember(entity, v, str(i))
+        hadMember(entity, v, str(i), attrs=attrs)
 
 def nop(*args, **kwargs):
     pass
@@ -321,18 +358,18 @@ def hadDictionaryMember(cid, eid, key):
     add("hadDictionaryMember({}, {}, {})".format(cid, eid, key))
     DICTS[cid][key] = eid
 
-def define_array(name, value, label, type_="Dictionary", member=nop):
-    varname = entity(name, repr(value), type_, calc_label(label))
+def define_array(name, value, label, type_="Dictionary", member=nop, attrs={}, first_attrs={}):
+    varname = entity(name, repr(value), type_, calc_label(label), attrs=first_attrs)
     result = []
-    for i, v in enumerate(value):
+    for i, (v, l) in enumerate(zip(value, label)):
         iname = "{}{}".format(name, i)
-        if isinstance(v, list):
-            ref, _ = arr = define_array(iname, v, label[i], type_, member)
+        if isinstance(l, list):
+            ref, _ = arr = define_array(iname, v, l, type_, member, attrs=attrs, first_attrs=first_attrs)
             result.append(arr)
         else:
-            ref = entity(iname, repr(v), "item", label[i])
+            ref = entity(iname, repr(v), "item", l, attrs=attrs)
             result.append(ref)
-        member(varname, ref, repr(i))
+        member(varname, ref, repr(i), attrs=attrs)
     return varname, result
 
 def derivation_pair(first, second, derivations=None):
@@ -347,13 +384,13 @@ def derivation_pair(first, second, derivations=None):
             derivation_pair(fd_value, sd_value, derivations)
     return derivations
 
-def update(name, whole_ent, key, part_ent, whole_value, label=None):
-    new_whole = entity(name, repr(whole_value), "list", label)
+def update(name, whole_ent, key, part_ent, whole_value, label=None, attrs={}):
+    new_whole = entity(name, repr(whole_value), "list", label, attrs=attrs)
     key = repr(key)
     for other_key, other_part in DICTS[whole_ent].items():
         if other_key != key:
-            hadMember(new_whole, other_part, str(other_key))
-    hadMember(new_whole, part_ent, str(key))
+            hadMember(new_whole, other_part, str(other_key), attrs=attrs)
+    hadMember(new_whole, part_ent, str(key), attrs=attrs)
     return new_whole
 
 @contextmanager
@@ -369,8 +406,6 @@ def desc(desc, enabled=False, line=None):
     if enabled:
         ENABLED = True
     yield
-    if enabled:
-        ENABLED = False
     slug = (
         desc
         .replace(" ", "_")
@@ -384,3 +419,5 @@ def desc(desc, enabled=False, line=None):
     stats(join(TEMP_BASE, get_varname(slug, sep="_")), "provn svg", True, False)
     TEMP = ptemp + TEMP
     LINE = ltemp
+    if enabled:
+        ENABLED = False

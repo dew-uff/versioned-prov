@@ -5,7 +5,7 @@ class DotMixin:
 
     def __init__(self, *args, **kwargs):
         super(DotMixin, self).__init__(*args, **kwargs)
-        self.dotignore = {'dot:htmlcolor'}
+        self.dotignore = {'dot:htmlcolor', 'dot:hide', 'dot:specific'}
         self.style = self.join(self.style, {
             "after": self.dotchange,
         })
