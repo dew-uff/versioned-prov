@@ -341,71 +341,58 @@ def activity(name, derived=[], used=[], generated=[], label=None, *, shared=Fals
 
     return varname
 
-def value(name, value, num=None, attrs={}):
+def value(name, value, *, attrs={}):
     varname = get_varname(name)
+    new_attrs = _buildattrs(attrs, [
+        ("repr", value),
+    ])
 
-    add('value({}, [repr="{}"])'.format(varname, value))
+    add('value({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
-def specializationOf(eid1, eid2):
-    add('specializationOf({}, {})'.format(eid1, eid2))
-    VALUES[eid1] = eid2
-
-
-def defined(ent, value, time):
-    add("defined({}, {}, {})".format(ent, value, time))
-    add("wasDefinedBy({}, {}, {})".format(value, ent, time))
+def defined(ent, value, time, attrs={}):
+    add("defined({}, {}, {}{})".format(ent, value, time, _attrpairs(attrs)))
+    add("wasDefinedBy({}, {}, {}{})".format(value, ent, time, _attrpairs(attrs)))
     VALUES[ent] = value
 
-def accessed(ent, value, time):
-    add("accessed({}, {}, {})".format(ent, value, time))
+def accessed(ent, value, time, attrs={}):
+    add("accessed({}, {}, {}{})".format(ent, value, time, _attrpairs(attrs)))
     VALUES[ent] = value
 
-def accessedPart(ent, whole, key, part, time):
-    add("accessedPart({}, {}, {}, {}, {})".format(ent, whole, key, part, time))
+def accessedPart(ent, whole, key, part, time, attrs={}):
+    add("accessedPart({}, {}, {}, {}, {}{})".format(ent, whole, key, part, time, _attrpairs(attrs)))
     VALUES[ent] = part
 
-def derivedByInsertion(ent, whole, elements, time):
+def derivedByInsertion(ent, whole, elements, time, attrs={}):
     if isinstance(elements, list):
         key_value = elements
     else:
         key_value = list(elements.items())
 
-    add("derivedByInsertion({}, {}, {{{}}}, {})".format(
+    add("derivedByInsertion({}, {}, {{{}}}, {}{})".format(
         ent, whole,
         ", ".join('("{}", {})'.format(i, v)
                   for i,v in key_value),
-        time
+        time, _attrpairs(attrs)
     ))
     for i, v in key_value:
         DICTS[whole][str(i)] = v
 
-def vderivedByInsertion(ent, elements, time):
-    if isinstance(elements, list):
-        key_value = elements
-    else:
-        key_value = list(elements.items())
-
-    add("derivedByInsertion({}, {{{}}}, {})".format(
-        ent,
-        ", ".join('("{}", {})'.format(i, v)
-                  for i,v in key_value),
-        time
-    ))
-    for i, v in key_value:
-        DICTS[ent][str(i)] = v
-
+def specializationOf(eid1, eid2, attrs={}):
+    add('specializationOf({}, {}{})'.format(eid1, eid2, _attrpairs(attrs)))
+    VALUES[eid1] = eid2
 
 def hadMember(cname, entity, key, attrs={}):
     add("hadMember({}, {}{})".format(cname, entity, _attrpairs(attrs)))
     DICTS[cname][key] = entity
 
-def vhadMember(cname, entity, key, time):
-    add('hadMember({}, {}, [type="Insertion", key="{}", moment="{}"])'.format(
-        cname, entity, key, time
-    ))
-    DICTS[cname][key] = entity
-
+def vhadMember(cname, entity, key, time, attrs={}):
+    new_attrs = _buildattrs(attrs, [
+        ("type", "version:Insertion"),
+        ("version:key", key),
+        ("version:checkpoint", time),
+    ])
+    return hadMember(cname, entity, new_attrs)
 
 def hadDictionaryMember(dname, entity, key, *, attrs=BLACK):
     add("hadDictionaryMember({}, {}, {}{})".format(
@@ -428,7 +415,6 @@ def derivedByInsertionFrom(new, old, elements, *, attrs=BLACK):
     for i, v in key_value:
         DICTS[new][repr(i)] = v
 
-
 def had_members(entity, elements, attrs={}):
     if isinstance(elements, list):
         key_value = list(enumerate(elements))
@@ -446,8 +432,8 @@ def calc_label(label):
         return "[{}]".format(", ".join(calc_label(x) for x in label))
     return label
 
-def hadDictionaryMember(cid, eid, key):
-    add("hadDictionaryMember({}, {}, {})".format(cid, eid, key))
+def hadDictionaryMember(cid, eid, key, attrs):
+    add("hadDictionaryMember({}, {}, {}{})".format(cid, eid, key, _attrpairs(attrs)))
     DICTS[cid][key] = eid
 
 def define_array(name, value, label, type_="Dictionary", member=nop, attrs={}, first_attrs={}):

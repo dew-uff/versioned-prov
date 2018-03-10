@@ -1,30 +1,26 @@
 prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
-prefix versioned <https://dew-uff.github.io/versioned-prov/ns#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
 // old
-entity(m, [value="10000", type="script:name", label="m", generatedAtTime="T2"])
-entity(sum, [value="10001", type="script:eval", label="m + 1", generatedAtTime="T4"])
+entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
+entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
 
-entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", generatedAtTime="T5"])
-hadMember(list, m, [type="versioned:Insertion", versioned:key="0", versioned:moment="T5"])
-hadMember(list, sum, [type="versioned:Insertion", versioned:key="1", versioned:moment="T5"])
-hadMember(list, m, [type="versioned:Insertion", versioned:key="2", versioned:moment="T5"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="0", version:checkpoint="5"])
+hadMember(list, sum, [type="version:Insertion", version:key="1", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="2", version:checkpoint="5"])
 
-entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", generatedAtTime="T6"])
-wasDerivedFrom(d, list, -, -, -, [type="versioned:Reference", versioned:moment="T6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
+wasDerivedFrom(d, list, -, -, -, [type="version:Reference", version:checkpoint="6"])
 
 
 // new
-entity(0, [value="0", type="script:literal", generatedAtTime="T9"])
+entity(0, [value="0", type="script:literal", version:checkpoint="9"])
 
-entity(d_ac0, [value="10000", type="script:access", label="d[0]", generatedAtTime="T10"])
-
-
+entity(d_ac0, [value="10000", type="script:access", label="d[0]", version:checkpoint="10"])
 activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-used(u9; access1, m, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9, [
-    type="versioned:Reference", versioned:moment="T10", 
-    versioned:whole="d", versioned:key="0", versioned:access="r"])
+wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+    type="version:Reference", version:checkpoint="10", 
+    version:whole="d", version:key="0", version:access="r"])

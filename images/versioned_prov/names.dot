@@ -10,7 +10,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:00</TD>
 	</TR>
 </TABLE>>]
@@ -26,7 +26,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:01</TD>
 	</TR>
 </TABLE>>]
@@ -42,7 +42,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:02</TD>
 	</TR>
 </TABLE>>]
@@ -58,7 +58,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">constant</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:03</TD>
 	</TR>
 </TABLE>>]
@@ -78,7 +78,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">int</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:04</TD>
 	</TR>
 </TABLE>>]
@@ -98,7 +98,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">...</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
+	    <TD align="left">checkpoint:</TD>
 	    <TD align="left">00:05</TD>
 	</TR>
 </TABLE>>]

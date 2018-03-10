@@ -11,6 +11,4 @@ entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
 
 activity(assign2, [type="script:assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7)
+wasDerivedFrom(d, list, assign2, g3, u4)

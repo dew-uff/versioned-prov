@@ -1,0 +1,10 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/disti_aj#6" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="disti_aj#6",URL="http://example.org/disti_aj#6"]
+"http://example.org/disti_aj#6" -> "http://example.org/v2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="part
+vlist[0]
+2018-03-10T01:49:51.190675",fontcolor="green",color="green"]
+"http://example.org/access36" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access36",URL="http://example.org/access36"]
+"http://example.org/access36" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access36" -> "http://example.org/j#10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti_aj#6" -> "http://example.org/access36" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
+}

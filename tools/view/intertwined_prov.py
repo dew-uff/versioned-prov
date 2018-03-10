@@ -30,6 +30,9 @@ def entity(dot, eid, attrs=None, id_=None):
 
 @graph.prov("wasDerivedFrom")
 def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
+    if aid and gid and uid:
+        dot.used_required[(aid, eused)] = (uid, attrs)
+        dot.generated_required[(egenerated, aid)] = (gid, attrs)
     if prov(attrs, 'type') in ns_intertwined('Reference'):
         if intertwined(attrs, 'access', False):
             return dot.arrow3(

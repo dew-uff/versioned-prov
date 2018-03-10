@@ -14,8 +14,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">d</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">T6</TD>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">6</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -34,8 +34,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">len(d)</TD>
 	</TR>
 	<TR>
-	    <TD align="left">generatedAtTime:</TD>
-	    <TD align="left">T8</TD>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">8</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/len_d" [color="gray",style="dashed",arrowhead="none"]

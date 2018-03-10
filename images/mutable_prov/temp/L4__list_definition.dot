@@ -1,0 +1,122 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/1" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="1",URL="http://example.org/1"]
+"http://example.org/v1" [fillcolor="darkgreen",color="green",style="filled",fontcolor="green",label="v1",URL="http://example.org/v1"]
+"-attrs0" [color="green",shape="note",fontsize="10",fontcolor="green",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">1</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/v1" [color="green",style="dashed",arrowhead="none",fontcolor="green"]
+"http://example.org/1" -> "http://example.org/v1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="defined
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/v1" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="def by
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="4",URL="http://example.org/4"]
+"http://example.org/v4" [fillcolor="darkgreen",color="green",style="filled",fontcolor="green",label="v4",URL="http://example.org/v4"]
+"-attrs1" [color="green",shape="note",fontsize="10",fontcolor="green",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">4</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/v4" [color="green",style="dashed",arrowhead="none",fontcolor="green"]
+"http://example.org/4" -> "http://example.org/v4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="defined
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/v4" -> "http://example.org/4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="def by
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[[0, 1, 4], [m, 0, 2], lastrow]</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/row0" [fillcolor="darkgreen",color="green",style="filled",fontcolor="green",label="row0",URL="http://example.org/row0"]
+"-attrs3" [color="green",shape="note",fontsize="10",fontcolor="green",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/row0" [color="green",style="dashed",arrowhead="none",fontcolor="green"]
+"http://example.org/row0" -> "http://example.org/v0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[0]
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/v0" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[0]
+2018-03-10T01:49:47.474677",style="dashed",fontcolor="green",color="green"]
+"http://example.org/row0" -> "http://example.org/v1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[1]
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/v1" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[1]
+2018-03-10T01:49:47.474677",style="dashed",fontcolor="green",color="green"]
+"http://example.org/row0" -> "http://example.org/v4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[2]
+2018-03-10T01:49:47.474677",fontcolor="green",color="green"]
+"http://example.org/v4" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[2]
+2018-03-10T01:49:47.474677",style="dashed",fontcolor="green",color="green"]
+"http://example.org/row1" [fillcolor="darkgreen",color="green",style="filled",fontcolor="green",label="row1",URL="http://example.org/row1"]
+"-attrs4" [color="green",shape="note",fontsize="10",fontcolor="green",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/row1" [color="green",style="dashed",arrowhead="none",fontcolor="green"]
+"http://example.org/row1" -> "http://example.org/v10000" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[0]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/v10000" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[0]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/row1" -> "http://example.org/v0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[1]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/v0" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[1]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/row1" -> "http://example.org/v2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[2]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/v2" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[2]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/vmatrix" [fillcolor="darkgreen",color="green",style="filled",fontcolor="green",label="vmatrix",URL="http://example.org/vmatrix"]
+"-attrs5" [color="green",shape="note",fontsize="10",fontcolor="green",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">repr:</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/vmatrix" [color="green",style="dashed",arrowhead="none",fontcolor="green"]
+"http://example.org/vmatrix" -> "http://example.org/row0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[0]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/row0" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[0]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/vmatrix" -> "http://example.org/row1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[1]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/row1" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[1]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/vmatrix" -> "http://example.org/vlist" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-v
+[2]
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/vlist" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins-e
+[2]
+2018-03-10T01:49:47.475179",style="dashed",fontcolor="green",color="green"]
+"http://example.org/matrix" -> "http://example.org/vmatrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="defined
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+"http://example.org/vmatrix" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="def by
+2018-03-10T01:49:47.475179",fontcolor="green",color="green"]
+}
