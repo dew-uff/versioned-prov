@@ -36,15 +36,18 @@ int   # names
 ```
 
 ```provn
-entity(1, [value="1", type="literal", generatedAtTime="2018-02-22T16:00:00"])
-entity(a, [value="'a'", type="literal", generatedAtTime="2018-02-22T16:00:01"])
-entity(a#2, [value="b'a'", type="literal", generatedAtTime="2018-02-22T16:00:02"])
-entity(True, [value="True", type="constant", generatedAtTime="2018-02-22T16:00:03"])
-entity(int, [value="<class 'int'>", type="name", label="int", generatedAtTime="2018-02-22T16:00:04"])
-entity(ellipsis, [value="Ellipsis", type="constant", label="...", generatedAtTime="2018-02-22T16:00:05"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+    
+entity(1, [value="1", type="script:literal", version:checkpoint="2018-02-22T16:00:00"])
+entity(a, [value="'a'", type="script:literal", version:checkpoint="2018-02-22T16:00:01"])
+entity(a#2, [value="b'a'", type="script:literal", version:checkpoint="2018-02-22T16:00:02"])
+entity(True, [value="True", type="script:constant", version:checkpoint="2018-02-22T16:00:03"])
+entity(int, [value="<class 'int'>", type="script:name", label="int", version:checkpoint="2018-02-22T16:00:04"])
+entity(ellipsis, [value="Ellipsis", type="script:constant", label="...", version:checkpoint="2018-02-22T16:00:05"])
 ```
 
-[![Versioned-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/names.pdf)
+[![Versioned-PROV mapping for names, literals, and constants](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/names.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/names.pdf)
 
 
 ## Assignment
@@ -60,16 +63,17 @@ m = 10000
 ```
 
 ```provn
-entity(10000, [value="10000", type="literal", generatedAtTime="T1"])
-entity(m, [value="10000", type="name", label="m", generatedAtTime="T2"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+    
+entity(10000, [value="10000", type="script:literal", version:checkpoint="1"])
+entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
-wasDerivedFrom(m, 10000, assign1, g1, u1, [type="Reference", moment="T2"])
+activity(assign1, [type="script:assign"])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type="version:Reference", version:checkpoint="2"])
 ```
 
-[![Versioned-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/assign.pdf)
+[![Versioned-PROV mapping for assignments](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/assign.pdf)
 
 
 ## Operation
@@ -83,18 +87,15 @@ m + 1
 ```
 
 ```provn
-entity(1, [value="1", type="literal",  generatedAtTime="T3"])
-entity(sum, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
+entity(1, [value="1", type="script:literal",  version:checkpoint="3"])
+entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 ```
 
-[![Versioned-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/operation.pdf)
+[![Versioned-PROV mapping for operations](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/operation.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/operation.pdf)
 
 
 ## List definition
@@ -106,13 +107,13 @@ A list is defined by the `derivedByInsertion` relationship. This relationship in
 ```
 
 ```provn
-entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]", generatedAtTime="T5"])
-hadMember(list, m, [type="Insertion", key="0", moment="T5"])
-hadMember(list, sum, [type="Insertion", key="1", moment="T5"])
-hadMember(list, m, [type="Insertion", key="2", moment="T5"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="0", version:checkpoint="5"])
+hadMember(list, sum, [type="version:Insertion", version:key="1", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="2", version:checkpoint="5"])
 ```
 
-[![Versioned-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list.pdf)
+[![Versioned-PROV mapping for list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list.pdf)
 
 
 Comparison:
@@ -130,15 +131,13 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d", generatedAtTime="T6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7, [type="Reference", moment="T6"])
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4, [type="version:Reference", version:checkpoint="6"])
 ```
 
-[![Versioned-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list_assign.pdf)
+[![Versioned-PROV mapping for assignments of list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -147,15 +146,13 @@ x = d
 ```
 
 ```provn
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x", generatedAtTime="T7"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x", version:checkpoint="7"])
 
-activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8, [type="Reference", moment="T7"])
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(x, d, assign3, g4, u5, [type="version:Reference", version:checkpoint="7"])
 ```
 
-[![Versioned-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/list_assign2.pdf)
+[![Versioned-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list_assign2.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list_assign2.pdf)
 
 
 ## Function call
@@ -169,14 +166,14 @@ len(d)
 ```
 
 ```provn
-entity(len_d, [value="3", type="eval", label="len(d)", generatedAtTime="T8"])
+entity(len_d, [value="3", type="script:eval", label="len(d)", version:checkpoint="8"])
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-[![Versioned-PROV mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/call.pdf)
+[![Versioned-PROV mapping for function call](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/call.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/call.pdf)
 
 
 ## Access to part of structure
@@ -190,20 +187,18 @@ d[0]
 ```
 
 ```provn
-entity(0, [value="0", type="literal", generatedAtTime="T9"])
+entity(0, [value="0", type="script:literal", version:checkpoint="9"])
 
-entity(d_ac0, [value="10000", type="access", label="d[0]", generatedAtTime="T10"])
-
-
-activity(access1, [type="access"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]", version:checkpoint="10"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-used(u9; access1, m, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9, [type="Reference", moment="T10", whole="d", key="0", access="r"])
+wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+    type="version:Reference", version:checkpoint="10", 
+    version:whole="d", version:key="0", version:access="r"])
 ```
 
-[![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/access.pdf)
+[![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/access.pdf)
 
 
 ## Assignment to part of structure
@@ -220,21 +215,20 @@ d[1] = 3
 ```
 
 ```provn
-entity(3, [value="3", type="literal", generatedAtTime="T10"])
-entity(1#2, [value="1", type="literal", generatedAtTime="T11"])
+entity(3, [value="3", type="script:literal", version:checkpoint="10"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]", generatedAtTime="T12"])
-hadMember(list, d_ac1, [type="Insertion", key="1", moment="T12"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]", version:checkpoint="11"])
+hadMember(list, d_ac1, [type="version:Insertion", version:key="1", version:checkpoint="11"])
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+    type="version:Reference", version:checkpoint="11",
+    version:whole="d", version:key="1", version:access="w"])
 ```
 
-[![Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/part_assign.pdf)
+[![Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/part_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/part_assign.pdf)
 
 Comparison:
 
@@ -256,81 +250,72 @@ The full mapping for the previous code is presented below:
 ```
 
 ```provn
-// assignment
-entity(10000, [value="10000", type="literal", generatedAtTime="T1"])
-entity(m, [value="10000", type="name", label="m", generatedAtTime="T2"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
-wasDerivedFrom(m, 10000, assign1, g1, u1, [type="Reference", moment="T2"])
+// assignment
+entity(10000, [value="10000", type="script:literal", version:checkpoint="1"])
+entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
+
+activity(assign1, [type="script:assign"])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type="version:Reference", version:checkpoint="2"])
 
 // operation
-entity(1, [value="1", type="literal",  generatedAtTime="T3"])
-entity(sum, [value="10001", type="operation", label="m + 1", generatedAtTime="T4"])
+entity(1, [value="1", type="script:literal",  version:checkpoint="3"])
+entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 
 // list def
-entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]", generatedAtTime="T5"])
-hadMember(list, m, [type="Insertion", key="0", moment="T5"])
-hadMember(list, sum, [type="Insertion", key="1", moment="T5"])
-hadMember(list, m, [type="Insertion", key="2", moment="T5"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="0", version:checkpoint="5"])
+hadMember(list, sum, [type="version:Insertion", version:key="1", version:checkpoint="5"])
+hadMember(list, m, [type="version:Insertion", version:key="2", version:checkpoint="5"])
 
 // list assign
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d", generatedAtTime="T6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7, [type="Reference", moment="T6"])
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4, [type="version:Reference", version:checkpoint="6"])
 
 // list assign x
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x", generatedAtTime="T7"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x", version:checkpoint="7"])
 
-activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8, [type="Reference", moment="T7"])
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(x, d, assign3, g4, u5, [type="version:Reference", version:checkpoint="7"])
 
 // call
-entity(len_d, [value="3", type="eval", label="len(d)", generatedAtTime="T8"])
+entity(len_d, [value="3", type="script:eval", label="len(d)", version:checkpoint="8"])
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(0, [value="0", type="literal", generatedAtTime="T9"])
+entity(0, [value="0", type="script:literal", version:checkpoint="9"])
 
-entity(d_ac0, [value="10000", type="access", label="d[0]", generatedAtTime="T10"])
-
-
-activity(access1, [type="access"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]", version:checkpoint="10"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-used(u9; access1, m, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9, [type="Reference", moment="T10", whole="d", key="0", access="r"])
+wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+    type="version:Reference", version:checkpoint="10", 
+    version:whole="d", version:key="0", version:access="r"])
 
 // part assign
-entity(3, [value="3", type="literal", generatedAtTime="T10"])
-entity(1#2, [value="1", type="literal", generatedAtTime="T11"])
+entity(3, [value="3", type="script:literal", version:checkpoint="10"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]", generatedAtTime="T12"])
-hadMember(list, d_ac1, [type="Insertion", key="1", moment="T12"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]", version:checkpoint="11"])
+hadMember(list, d_ac1, [type="version:Insertion", version:key="1", version:checkpoint="11"])
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+    type="version:Reference", version:checkpoint="11",
+    version:whole="d", version:key="1", version:access="w"])
 ```
 
-[![Versioned-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/versioned_prov/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/versioned_prov/full.pdf)
+[![Versioned-PROV mapping](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/full.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/full.pdf)

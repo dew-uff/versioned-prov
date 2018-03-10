@@ -2,6 +2,8 @@
 
 In this document we map simple script constructs to Intertwined-PROV.
 
+**This extension were discontinued in favor of [Versioned-PROV](versioned-prov.md)**
+
 ## Extension
 
 The `type="Version"` in entities inherits from `type="Dictionary"` from PROV-Dictionary.
@@ -36,32 +38,35 @@ int   # names
 ```
 
 ```provn
-entity(1, [value="1", type="literal"])
-entity(1_v1, [generatedAtTime="2018-02-22T16:00:00", type="Version"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+    
+entity(1, [value="1", type="script:literal"])
+entity(1_v1, [intertwined:checkpoint="2018-02-22T16:00:00", type="intertwined:Version"])
 specializationOf(1, 1_v1)
 
-entity(a, [value="'a'", type="literal"])
-entity(a_v1, [generatedAtTime="2018-02-22T16:00:01", type="Version"])
+entity(a, [value="'a'", type="script:literal"])
+entity(a_v1, [intertwined:checkpoint="2018-02-22T16:00:01", type="intertwined:Version"])
 specializationOf(a, a_v1)
 
-entity(a#2, [value="b'a'", type="literal"])
-entity(a#2_v1, [generatedAtTime="2018-02-22T16:00:02", type="Version"])
+entity(a#2, [value="b'a'", type="script:literal"])
+entity(a#2_v1, [intertwined:checkpoint="2018-02-22T16:00:02", type="intertwined:Version"])
 specializationOf(a#2, a#2_v1)
 
-entity(True, [value="True", type="constant"])
-entity(True_v1, [generatedAtTime="2018-02-22T16:00:03", type="Version"])
+entity(True, [value="True", type="script:constant"])
+entity(True_v1, [intertwined:checkpoint="2018-02-22T16:00:03", type="intertwined:Version"])
 specializationOf(True, True_v1)
 
-entity(int, [value="<class 'int'>", type="name", label="int"])
-entity(int_v1, [generatedAtTime="2018-02-22T16:00:04", type="Version"])
+entity(int, [value="<class 'int'>", type="script:name", label="int"])
+entity(int_v1, [intertwined:checkpoint="2018-02-22T16:00:04", type="intertwined:Version"])
 specializationOf(int, int_v1)
 
-entity(ellipsis, [value="Ellipsis", type="constant", label="..."])
-entity(ellipsis_v1, [generatedAtTime="2018-02-22T16:00:05", type="Version"])
+entity(ellipsis, [value="Ellipsis", type="script:constant", label="..."])
+entity(ellipsis_v1, [intertwined:checkpoint="2018-02-22T16:00:05", type="intertwined:Version"])
 specializationOf(ellipsis, ellipsis_v1)
 ```
 
-[![Intertwined-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/names.pdf)
+[![Intertwined-PROV mapping for names, literals, and constants](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/names.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/names.pdf)
 
 ## Assignment
 
@@ -76,19 +81,20 @@ m = 10000
 ```
 
 ```provn
-entity(10000, [value="10000", type="literal"])
-entity(10000_v1, [generatedAtTime="T1", type="Version"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+
+entity(10000, [value="10000", type="script:literal"])
+entity(10000_v1, [intertwined:checkpoint="1", type="intertwined:Version"])
 specializationOf(10000, 10000_v1)
 
-entity(m, [value="10000", type="name", label="m"])
+entity(m, [value="10000", type="script:name", label="m"])
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
-wasDerivedFrom(m, 10000, assign1, g1, u1, [type="Reference", moment="T2"])
+activity(assign1, [type="script:assign"])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type="intertwined:Reference", intertwined:checkpoint="2"])
 ```
 
-[![Intertwined-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/assign.pdf)
+[![Intertwined-PROV mapping for assignments](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/assign.pdf)
 
 ## Operation
 
@@ -101,23 +107,20 @@ m + 1
 ```
 
 ```provn
-entity(1, [value="1", type="literal"])
-entity(1_v1, [generatedAtTime="T3", type="Version"])
+entity(1, [value="1", type="script:literal"])
+entity(1_v1, [intertwined:checkpoint="3", type="intertwined:Version"])
 specializationOf(1, 1_v1)
 
-entity(sum, [value="10001", type="operation", label="m + 1"])
-entity(sum_v1, [generatedAtTime="T4", type="Version"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
+entity(sum_v1, [intertwined:checkpoint="4", type="intertwined:Version"])
 specializationOf(sum, sum_v1)
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 ```
 
-[![Intertwined-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/operation.pdf)
+[![Intertwined-PROV mapping for operations](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/operation.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/operation.pdf)
 
 
 ## List definition
@@ -129,15 +132,15 @@ A list is defined and represented by a series of hadDictionaryMember on the vers
 ```
 
 ```provn
-entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
-entity(list_v1, [generatedAtTime="T5", type="Version"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]"])
+entity(list_v1, [intertwined:checkpoint="5", type="intertwined:Version"])
 specializationOf(list, list_v1)
 hadDictionaryMember(list_v1, m, "0")
 hadDictionaryMember(list_v1, sum, "1")
 hadDictionaryMember(list_v1, m, "2")
 ```
 
-[![Intertwined-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/list.pdf)
+[![Intertwined-PROV mapping for list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/list.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/list.pdf)
 
 
 Comparison:
@@ -154,15 +157,13 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7, [type="Reference", moment="T6"])
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4, [type="intertwined:Reference", intertwined:checkpoint="6"])
 ```
 
-[![Intertwined-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/list_assign.pdf)
+[![Intertwined-PROV mapping for assignments of list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/list_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -171,15 +172,13 @@ x = d
 ```
 
 ```provn
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
+entity(x, [value="[10000, 10001, 10000]", type="script:name", label="x"])
 
 activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8, [type="Reference", moment="T7"])
+wasDerivedFrom(x, d, assign3, g4, u5, [type="intertwined:Reference", intertwined:checkpoint="7"])
 ```
 
-[![Intertwined-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/list_assign2.pdf)
+[![Intertwined-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/list_assign2.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/list_assign2.pdf)
 
 ## Function call
 
@@ -192,16 +191,16 @@ len(d)
 ```
 
 ```provn
-entity(len_d, [value="3", type="eval", label="len(d)"])
-entity(len_d_v1, [generatedAtTime="T8", type="Version"])
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
+entity(len_d_v1, [intertwined:checkpoint="8", type="intertwined:Version"])
 specializationOf(len_d, len_d_v1)
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="intertwined:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-[![Intertwined-PROV mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/call.pdf)
+[![Intertwined-PROV mapping for function call](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/call.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/call.pdf)
 
 ## Access to part of structure
 
@@ -214,21 +213,21 @@ d[0]
 ```
 
 ```provn
-entity(0, [value="0", type="literal"])
-entity(0_v1, [generatedAtTime="T9", type="Version"])
+entity(0, [value="0", type="script:literal"])
+entity(0_v1, [intertwined:checkpoint="9", type="intertwined:Version"])
 specializationOf(0, 0_v1)
 
-entity(d_ac0, [value="10000", type="access", label="d[0]"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-used(u9; access1, m, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9, [type="Reference", moment="T10", whole="d", key="0", access="r"])
+wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+    type="intertwined:Reference", intertwined:checkpoint="10",
+    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
 ```
 
-[![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/access.pdf)
+[![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/access.pdf)
 
 ## Assignment to part of structure
 
@@ -244,29 +243,25 @@ d[1] = 3
 ```
 
 ```provn
-entity(3, [value="3", type="literal"])
-entity(3_v1, [generatedAtTime="T10", type="Version"])
+entity(3, [value="3", type="script:literal"])
+entity(3_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(1#2, [value="1", type="literal"])
-entity(1#2_v1, [generatedAtTime="T11", type="Version"])
-specializationOf(1#2, 1#2_v1)
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]"])
-
-entity(list_v2, [generatedAtTime="T12", type="Version"])
+entity(list_v2, [intertwined:checkpoint="11", type="intertwined:Version"])
 derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
 specializationOf(list, list_v2)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3, -)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
+    intertwined:key="1", intertwined:access="w"])
 ```
 
-[![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/part_assign.pdf)
+[![Intertwined-PROV mapping for assignments to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/part_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/part_assign.pdf)
 
 Comparison:
 
@@ -288,102 +283,104 @@ The full mapping for the previous code is presented below:
 ```
 
 ```provn
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+
 // assignment
-entity(10000, [value="10000", type="literal"])
-entity(10000_v1, [generatedAtTime="T1", type="Version"])
+entity(10000, [value="10000", type="script:literal"])
+entity(10000_v1, [intertwined:checkpoint="1", type="intertwined:Version"])
 specializationOf(10000, 10000_v1)
 
-entity(m, [value="10000", type="name", label="m"])
+entity(m, [value="10000", type="script:name", label="m"])
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
-wasDerivedFrom(m, 10000, assign1, g1, u1, [type="Reference", moment="T2"])
+activity(assign1, [type="script:assign"])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type="intertwined:Reference", intertwined:checkpoint="2"])
 
 // operation
-entity(1, [value="1", type="literal"])
-entity(1_v1, [generatedAtTime="T3", type="Version"])
+entity(1, [value="1", type="script:literal"])
+entity(1_v1, [intertwined:checkpoint="3", type="intertwined:Version"])
 specializationOf(1, 1_v1)
 
-entity(sum, [value="10001", type="operation", label="m + 1"])
-entity(sum_v1, [generatedAtTime="T4", type="Version"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
+entity(sum_v1, [intertwined:checkpoint="4", type="intertwined:Version"])
 specializationOf(sum, sum_v1)
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 
 // list def
-entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
-entity(list_v1, [generatedAtTime="T5", type="Version"])
+entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]"])
+entity(list_v1, [intertwined:checkpoint="5", type="intertwined:Version"])
 specializationOf(list, list_v1)
 hadDictionaryMember(list_v1, m, "0")
 hadDictionaryMember(list_v1, sum, "1")
 hadDictionaryMember(list_v1, m, "2")
 
 // list assign
-entity(d, [value="[10000, 10001, 10000]", type="name", label="d"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7, [type="Reference", moment="T6"])
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4, [type="intertwined:Reference", intertwined:checkpoint="6"])
 
 // list assign x
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
+entity(x, [value="[10000, 10001, 10000]", type="script:name", label="x"])
 
 activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8, [type="Reference", moment="T7"])
+wasDerivedFrom(x, d, assign3, g4, u5, [type="intertwined:Reference", intertwined:checkpoint="7"])
 
 // call
-entity(len_d, [value="3", type="eval", label="len(d)"])
-entity(len_d_v1, [generatedAtTime="T8", type="Version"])
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
+entity(len_d_v1, [intertwined:checkpoint="8", type="intertwined:Version"])
 specializationOf(len_d, len_d_v1)
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="intertwined:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(0, [value="0", type="literal"])
-entity(0_v1, [generatedAtTime="T9", type="Version"])
+entity(0, [value="0", type="script:literal"])
+entity(0_v1, [intertwined:checkpoint="9", type="intertwined:Version"])
 specializationOf(0, 0_v1)
 
-entity(d_ac0, [value="10000", type="access", label="d[0]"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-used(u9; access1, m, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
-wasDerivedFrom(d_ac0, m, access1, g9, u9, [type="Reference", moment="T10", whole="d", key="0", access="r"])
+wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+    type="intertwined:Reference", intertwined:checkpoint="10",
+    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
 
 // part assign
-entity(3, [value="3", type="literal"])
-entity(3_v1, [generatedAtTime="T10", type="Version"])
+entity(3, [value="3", type="script:literal"])
+entity(3_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(1#2, [value="1", type="literal"])
-entity(1#2_v1, [generatedAtTime="T11", type="Version"])
-specializationOf(1#2, 1#2_v1)
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 
-entity(d_ac1, [value="3", type="access", label="d[1]"])
-
-entity(list_v2, [generatedAtTime="T12", type="Version"])
+entity(list_v2, [intertwined:checkpoint="11", type="intertwined:Version"])
 derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
 specializationOf(list, list_v2)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3, -)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10, [type="Reference", moment="T12", whole="d", key="1", access="w"])
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
+    intertwined:key="1", intertwined:access="w"])
 ```
 
-[![Intertwined-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/intertwined_prov/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/intertwined_prov/full.pdf)
+[![Intertwined-PROV mapping](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/full.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/full.pdf)
+
+# Floyd-Warshall
+
+This mapping produced the following graph for Floyd-Warshall:
+
+[![Floyd-Warshall in Intertwined-PROV](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/floydwarshall.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/floydwarshall.pdf)
+
+# Query
+
+The Intertwined-PROV mapping produces the following query result:
+
+[![Query in Intertwined-PROV](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/query.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/query.pdf)

@@ -2,6 +2,9 @@
 
 In this document we map simple script constructs to Mutable-PROV.
 
+**This extension were discontinued in favor of [Versioned-PROV](versioned-prov.md)**
+
+
 ## Extension
 
 Our extension adds the following components:
@@ -35,38 +38,40 @@ int   # names
 ```
 
 ```provn
-entity(1, [label="1", type="literal"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
+entity(1, [label="1", type="script:literal"])
 value(v1, [repr="1"])
 defined(1, v1, 2018-02-22T16:00:00)
 wasDefinedBy(v1, 1, 2018-02-22T16:00:00)
 
-entity(a, [label="'a'", type="literal"])
+entity(a, [label="'a'", type="script:literal"])
 value(va, [repr="'a'"])
 defined(a, va, 2018-02-22T16:00:01)
 wasDefinedBy(va, a, 2018-02-22T16:00:01)
 
-entity(a#2, [label="b'a'", type="literal"])
+entity(a#2, [label="b'a'", type="script:literal"])
 value(vba, [repr="b'a'"])
 defined(a#2, vba, 2018-02-22T16:00:02)
 wasDefinedBy(vba, a#2, 2018-02-22T16:00:02)
 
-entity(True, [label="True", type="constant"])
+entity(True, [label="True", type="script:constant"])
 value(vtrue, [repr="True"])
 defined(True, vtrue, 2018-02-22T16:00:03)
 wasDefinedBy(vtrue, True, 2018-02-22T16:00:03)
 
-entity(int, [label="int", type="name"])
+entity(int, [label="int", type="script:name"])
 value(vint, [repr="<class 'int'>"])
 defined(int, vint, 2018-02-22T16:00:04)
 wasDefinedBy(vint, int, 2018-02-22T16:00:04)
 
-entity(ellipsis, [label="...", type="constant"])
+entity(ellipsis, [label="...", type="script:constant"])
 value(vellipsis, [repr="Ellipsis"])
 defined(ellipsis, vellipsis, 2018-02-22T16:00:05)
 wasDefinedBy(vellipsis, ellipsis, 2018-02-22T16:00:05)
 ```
 
-[![Mutable-PROV mapping for names, literals, and constants](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/names.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/names.pdf)
+[![Mutable-PROV mapping for names, literals, and constants](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/names.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/names.pdf)
 
 
 ## Assignment
@@ -80,21 +85,21 @@ m = 10000
 ```
 
 ```provn
-entity(10000, [label="10000", type="literal"])
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
+entity(10000, [label="10000", type="script:literal"])
 value(v10000, [repr="10000"])
 defined(10000, v10000, T1)
 wasDefinedBy(v10000, 10000, T1)
 
-entity(m, [label="m", type="name"])
+entity(m, [label="m", type="script:name"])
 accessed(m, v10000, T2)
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
+activity(assign1, [type="script:assign"])
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 ```
 
-[![Mutable-PROV mapping for assignments](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/assign.pdf)
+[![Mutable-PROV mapping for assignments](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/assign.pdf)
 
 
 ## Operation
@@ -108,25 +113,22 @@ m + 1
 ```
 
 ```provn
-entity(1, [label="1", type="literal"])
+entity(1, [label="1", type="script:literal"])
 value(v1, [repr="1"])
 defined(1, v1, T3)
 wasDefinedBy(v1, 1, T3)
 
-entity(sum, [label="m + 1", type="operation"])
+entity(sum, [label="m + 1", type="script:eval"])
 value(v10001, [repr="10001"])
 defined(sum, v10001, T4)
 wasDefinedBy(v10001, sum, T4)
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 ```
 
-[![Mutable-PROV mapping for operations](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/operation.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/operation.pdf)
+[![Mutable-PROV mapping for operations](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/operation.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/operation.pdf)
 
 
 ## List definition
@@ -138,7 +140,7 @@ A list is defined and represented by the `derivedByInsertion` relationship.
 ```
 
 ```provn
-entity(list, [label="[m, m + 1, m]", type="list"])
+entity(list, [label="[m, m + 1, m]", type="script:list"])
 value(vlist, [repr="[10000, 10001, 10000]"])
 derivedByInsertion(
     list, vlist,
@@ -149,7 +151,7 @@ defined(list, vlist, T5)
 wasDefinedBy(vlist, list, T5)
 ```
 
-[![Mutable-PROV mapping for list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list.pdf)
+[![Mutable-PROV mapping for list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/list.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/list.pdf)
 
 
 Comparison:
@@ -166,16 +168,14 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-entity(d, [label="d", type="name"])
+entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7)
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4)
 ```
 
-[![Mutable-PROV mapping for assignments of list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list_assign.pdf)
+[![Mutable-PROV mapping for assignments of list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/list_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/list_assign.pdf)
 
 The same mapping is valid for assignments to names that represent lists.
 
@@ -184,16 +184,14 @@ x = d
 ```
 
 ```provn
-entity(x, [label="x", type="name"])
+entity(x, [label="x", type="script:name"])
 accessed(x, vlist, T7)
 
-activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8)
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(x, d, assign3, g4, u5)
 ```
 
-[![Mutable-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/list_assign2.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/list_assign2.pdf)
+[![Mutable-PROV mapping for assignments to names that have list definitions](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/list_assign2.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/list_assign2.pdf)
 
 
 ## Function call
@@ -207,17 +205,17 @@ len(d)
 ```
 
 ```provn
-entity(len_d, [label="len(d)", type="eval"])
+entity(len_d, [label="len(d)", type="script:eval"])
 value(v3, [repr="3"])
 defined(len_d, v3, T8)
 wasDefinedBy(v3, len_d, T8)
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 ```
 
-[![Mutable-PROV mapping for function call](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/call.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/call.pdf)
+[![Mutable-PROV mapping for function call](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/call.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/call.pdf)
 
 
 ## Access to part of structure
@@ -231,21 +229,21 @@ d[0]
 ```
 
 ```provn
-entity(0, [value="0", type="literal"])
+entity(0, [value="0", type="script:literal"])
 value(v0, [repr="0"])
 defined(0, v0, T9)
 wasDefinedBy(v0, 0, T9)
-entity(d_ac0, [label="d[0]", type="access"])
+entity(d_ac0, [label="d[0]", type="script:access"])
 accessedPart(d_ac0, vlist, "0", v10000, T10)
 
 
-activity(access1, [type="access"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
 ```
 
-[![Mutable-PROV mapping for accesses to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/access.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/access.pdf)
+[![Mutable-PROV mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/access.pdf)
 
 
 ## Assignment to part of structure
@@ -260,29 +258,22 @@ d[1] = 3
 ```
 
 ```provn
-entity(3, [label="3", type="literal"])
+entity(3, [label="3", type="script:literal"])
 value(v3, [repr="3"])
 defined(3, v3, T10)
 wasDefinedBy(v3, 3, T10)
 
-entity(1#2, [label="1", type="literal"])
-value(v1#2, [repr="1"])
-defined(1#2, v1#2, T11)
-wasDefinedBy(v1#2, 1#2, T11)
-
-entity(d_ac1, [value="d[1]", type="access"])
+entity(d_ac1, [value="d[1]", type="script:access"])
 accessed(d_ac1, v3, T12)
 derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3, -)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g5, u6)
 ```
 
-[![Mutable-PROV mapping for assignments to parts](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/part_assign.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/part_assign.pdf)
+[![Mutable-PROV mapping for assignments to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/part_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/part_assign.pdf)
 
 Comparison:
 
@@ -304,40 +295,37 @@ The full mapping for the previous code is presented below:
 ```
 
 ```provn
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+
 // assignment
-entity(10000, [label="10000", type="literal"])
+entity(10000, [label="10000", type="script:literal"])
 value(v10000, [repr="10000"])
 defined(10000, v10000, T1)
 wasDefinedBy(v10000, 10000, T1)
 
-entity(m, [label="m", type="name"])
+entity(m, [label="m", type="script:name"])
 accessed(m, v10000, T2)
 
-activity(assign1, [type="assign"])
-used(u1; assign1, 10000, -)
-wasGeneratedBy(g1; m, assign1, -)
+activity(assign1, [type="script:assign"])
 wasDerivedFrom(m, 10000, assign1, g1, u1)
 
 // operation
-entity(1, [label="1", type="literal"])
+entity(1, [label="1", type="script:literal"])
 value(v1, [repr="1"])
 defined(1, v1, T3)
 wasDefinedBy(v1, 1, T3)
 
-entity(sum, [label="m + 1", type="operation"])
+entity(sum, [label="m + 1", type="script:eval"])
 value(v10001, [repr="10001"])
 defined(sum, v10001, T4)
 wasDefinedBy(v10001, sum, T4)
 
-activity(+, [type="operation"])
-used(u2; +, m, -)
-used(u3; +, 1, -)
-wasGeneratedBy(g2; sum, +, -)
+activity(+, [type="script:operation"])
 wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g3, u3)
+wasDerivedFrom(sum, 1, +, g2, u3)
 
 // list def
-entity(list, [label="[m, m + 1, m]", type="list"])
+entity(list, [label="[m, m + 1, m]", type="script:list"])
 value(vlist, [repr="[10000, 10001, 10000]"])
 derivedByInsertion(
     list, vlist,
@@ -348,68 +336,69 @@ defined(list, vlist, T5)
 wasDefinedBy(vlist, list, T5)
 
 // list assign
-entity(d, [label="d", type="name"])
+entity(d, [label="d", type="script:name"])
 accessed(d, vlist, T6)
 
-activity(assign2, [type="assign"])
-used(u7; assign2, list, -)
-wasGeneratedBy(g7; d, assign2, -)
-wasDerivedFrom(d, list, assign2, g7, u7)
+activity(assign2, [type="script:assign"])
+wasDerivedFrom(d, list, assign2, g3, u4)
 
 // list assign x
-entity(x, [label="x", type="name"])
+entity(x, [label="x", type="script:name"])
 accessed(x, vlist, T7)
 
-activity(assign3, [type="assign"])
-used(u8; assign3, d, -)
-wasGeneratedBy(g8; x, assign3, -)
-wasDerivedFrom(x, d, assign3, g8, u8)
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(x, d, assign3, g4, u5)
 
 // call
-entity(len_d, [label="len(d)", type="eval"])
+entity(len_d, [label="len(d)", type="script:eval"])
 value(v3, [repr="3"])
 defined(len_d, v3, T8)
 wasDefinedBy(v3, len_d, T8)
 
-activity(call1, [type="call", label="len"])
+activity(call1, [type="script:call", label="len"])
 used(call1, d, -)
 wasGeneratedBy(len_d, call1, -)
 
 // part access
-entity(0, [value="0", type="literal"])
+entity(0, [value="0", type="script:literal"])
 value(v0, [repr="0"])
 defined(0, v0, T9)
 wasDefinedBy(v0, 0, T9)
-entity(d_ac0, [label="d[0]", type="access"])
+entity(d_ac0, [label="d[0]", type="script:access"])
 accessedPart(d_ac0, vlist, "0", v10000, T10)
 
 
-activity(access1, [type="access"])
+activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
 wasGeneratedBy(g9; d_ac0, access1, -)
 
 // part assign
-entity(3, [label="3", type="literal"])
+entity(3, [label="3", type="script:literal"])
 value(v3, [repr="3"])
 defined(3, v3, T10)
 wasDefinedBy(v3, 3, T10)
 
-entity(1#2, [label="1", type="literal"])
-value(v1#2, [repr="1"])
-defined(1#2, v1#2, T11)
-wasDefinedBy(v1#2, 1#2, T11)
-
-entity(d_ac1, [value="d[1]", type="access"])
+entity(d_ac1, [value="d[1]", type="script:access"])
 accessed(d_ac1, v3, T12)
 derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
 
-activity(assign4, [type="assign"])
+activity(assign4, [type="script:assign"])
 used(assign4, d, -)
-used(assign4, 1#2, -)
-used(u10; assign4, 3, -)
-wasGeneratedBy(g10; d_ac1, assign4, -)
-wasDerivedFrom(d_ac1, 3, assign4, g10, u10)
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g5, u6)
 ```
 
-[![Mutable-PROV mapping](https://github.com/dew-uff/mutable-prov/raw/master/images/mutable_prov/full.png)](https://github.com/dew-uff/mutable-prov/blob/master/images/mutable_prov/full.pdf)
+[![Mutable-PROV mapping](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/full.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/full.pdf)
+
+# Floyd-Warshall
+
+This mapping produced the following graph for Floyd-Warshall:
+
+[![Floyd-Warshall in Mutable-PROV](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/floydwarshall.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/floydwarshall.pdf)
+
+# Query
+
+The Mutable-PROV mapping produces the following query result:
+
+[![Query in Mutable-PROV](https://github.com/dew-uff/versioned-prov/raw/master/generated/mutable_prov/query.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/mutable_prov/query.pdf)
