@@ -66,6 +66,9 @@ class Digraph(object):
 
     def __init__(self):
         self.functions = {"prefix": self.setprefix}
+        self.beforefn = lambda dot: None
+        self.afterfn = lambda dot: None
+
         self.attr = 0
         self.pointi = 0
         self.default_prefix = ""
@@ -99,6 +102,8 @@ class Digraph(object):
 
     def reset(self):
         self.functions = {}
+        self.beforefn = lambda dot: None
+        self.afterfn = lambda dot: None
         self.reset_config()
 
     def generate(self, content):
@@ -112,8 +117,11 @@ class Digraph(object):
         self.rprefixes[self.default_prefix] = ""
         self.attr = 0
         self.pointi = 0
+        self.beforefn(self)
         parser = build_parser(self.functions)
-        return parser(content)
+        result = parser(content)
+        self.afterfn(self)
+        return result
 
     @prov("prefix")
     def setprefix(self, name, iri):
@@ -142,6 +150,14 @@ class Digraph(object):
             prefix = self.prefixes.get(split[0], self.default_prefix)
             name = ":".join(split[1:])
         return "{}{}".format(prefix, name)
+
+    def before(self, fn):
+        self.beforefn = fn
+        return fn
+
+    def after(self, fn):
+        self.afterfn = fn
+        return fn
 
     def prov(self, name):
         def dec(fn):

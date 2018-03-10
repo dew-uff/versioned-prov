@@ -5,6 +5,9 @@
 
 In this document we map simple script constructs to ::GET NAME::.
 
+**This extension were discontinued in favor of [Versioned-PROV](versioned-prov.md)**
+
+
 ## Extension
 
 Our extension adds the following components:
@@ -160,3 +163,15 @@ The full mapping for the previous code is presented below:
 ```
 
 ::PROV[::GET NAME:: mapping](::GET BASE::/full)
+
+# Floyd-Warshall
+
+This mapping produced the following graph for Floyd-Warshall:
+
+::![Floyd-Warshall in ::GET NAME::](::GET BASE::/floydwarshall)
+
+# Query
+
+The ::GET NAME:: mapping produces the following query result:
+
+::![Query in ::GET NAME::](::GET BASE::/query)

@@ -8,6 +8,5 @@ entity(1, [value="1", type="script:literal"])
 entity(sum, [value="10001", type="script:sum", label="m + 1"])
 
 activity(+, [type="script:operation"])
-wasGeneratedBy(g2; sum, +, -)
-wasDerivedFrom(sum, m, +, g2, -)
-wasDerivedFrom(sum, 1, +, g2, -)
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g2, u3)

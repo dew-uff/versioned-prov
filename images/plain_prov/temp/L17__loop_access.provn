@@ -1,6 +1,4 @@
 entity(j, [type="name",label="j",dot:hide="true"])
 activity(access6, [type="access",dot:hide="true"])
-used(u33; access6, range_nodes0, -, [dot:hide="true"])
-wasDerivedFrom(j, range_nodes0, access6, g24, u33, [dot:hide="true"])
-wasGeneratedBy(g24; j, access6, -, [dot:hide="true"])
-used(u34; access6, indexes, -, [dot:hide="true"])
+wasDerivedFrom(j, range_nodes0, access6, g24, u24, [dot:hide="true"])
+used(access6, indexes, -, [dot:hide="true"])

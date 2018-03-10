@@ -25,6 +25,7 @@ with prov.desc("L2 - assign", line=2):
     e_m = prov.entity("m", "10000", "name", "m", attrs=HIDE)
     prov.activity("assign", [(e_m, e_n10000)], attrs=HIDE)
 
+
 # Line 3
 lastrow = [2, m, 0]
 with prov.desc("L3 - list definition / assign", line=3):
@@ -77,16 +78,16 @@ with prov.desc("L4 - list definition / assign", line=4):
         generated = [e_list]
         row_ents = []
         for i, row in enumerate(rows):
-            generated.append(row[0])
             if isinstance(row, tuple):
+                generated.append(row[0])
                 row_ents.append(row[0])
                 for j, ent in enumerate(row[1]):
                     derived.append((ent, prov_dist[i][j]))
             else:
+                generated.append(row)
                 prov.had_members(row, prov.DICTS[e_lastrow], attrs=SPECIFIC)
                 row_ents.append(row)
                 derived.append((row, prov_dist[i]))
-
         prov.activity("definelist", derived, generated=generated, attrs=SPECIFIC)
 
     with prov.desc("L4 - assign"):
@@ -204,6 +205,7 @@ for k in indexes:
 
                 # Line 21
                 disti[j] = ikj
+
                 with prov.desc("L21 - part assign with propagation", line=21):
                     derived = []
                     used = [e_j]
@@ -214,26 +216,26 @@ for k in indexes:
                     derived.append((e_disti_aj, e_ikj))
 
                     new_e_disti = prov.update("disti", e_disti, j, e_disti_aj, disti, "disti", attrs=SPECIFIC)
-                    derived.append(("--s", new_e_disti, e_disti, e_ikj))
+                    derived.append(prov.Derivation((new_e_disti, e_disti, e_ikj), attrs=SPECIFIC))
 
                     new_e_distk = e_distk
                     if i == k:
                         new_e_distk = prov.entity("distk", repr(distk), "name", "distk", attrs=SPECIFIC)
                         prov.had_members(new_e_distk, prov.DICTS[new_e_disti], attrs=SPECIFIC)
-                        derived.append(("--s", new_e_distk, e_distk, e_ikj))
+                        derived.append(prov.Derivation((new_e_distk, e_distk, e_ikj), attrs=SPECIFIC))
 
                     new_e_lastrow = e_lastrow
                     if i == nodes - 1:
                         new_e_lastrow = prov.entity("lastrow", repr(lastrow), "name", "lastrow", attrs=SPECIFIC)
                         prov.had_members(new_e_lastrow, prov.DICTS[new_e_disti], attrs=SPECIFIC)
-                        derived.append(("--s", new_e_lastrow, e_lastrow, e_ikj))
+                        derived.append(prov.Derivation((new_e_lastrow, e_lastrow, e_ikj), attrs=SPECIFIC))
 
                     new_e_dist = prov.update("dist", e_dist, i, new_e_disti, dist, "dist", attrs=SPECIFIC)
-                    derived.append(("--s", new_e_dist, e_dist, e_ikj))
+                    derived.append(prov.Derivation((new_e_dist, e_dist, e_ikj), attrs=SPECIFIC))
 
                     new_e_result = prov.entity("result", repr(result), "name", "result", attrs=SPECIFIC)
                     prov.had_members(new_e_result, prov.DICTS[new_e_dist], attrs=SPECIFIC)
-                    derived.append(("--s", new_e_result, e_result, e_ikj))
+                    derived.append(prov.Derivation((new_e_result, e_result, e_ikj), attrs=SPECIFIC))
 
                     prov.activity("assign", derived, used=used, generated=generated, shared=True)
 

@@ -144,109 +144,201 @@ def ventity(time, name, value, type_, label, *, attrs={}):
     ])
     return entity(name, value, type_, label, attrs=new_attrs)
 
+
+class BaseOp:
+
+    def fill(self, generated, used):
+        pass
+
+    def add(self, assign, gs, us, added, addunnamed=True):
+        pass
+
+class Use(BaseOp):
+
+    def __init__(self, *values, attrs={}):
+        self.used = {v: None for v in values}
+        self.attrs = attrs
+
+    def fill(self, generated, used):
+        super(Use, self).fill(generated, used)
+        for use, value in self.used.items():
+            if use in used:
+                if not value:
+                    value = used.get(use)
+                if not value:
+                    value = get_varname("u", sep="", show1=True)
+            used[use] = self.used[use] = value
+
+    def add(self, assign, gs, us, added, addunnamed=True):
+        super(Use, self).add(assign, gs, us, added, addunnamed=addunnamed)
+        for use, value in self.used.items():
+            value = us.get(use) or value
+            if value and value not in added:
+                add("used({}; {}, {}, -{})".format(value, assign, use, _attrpairs(self.attrs)))
+                self.used[use] = value
+                added.add(value)
+            elif not value and addunnamed:
+                add("used({}, {}, -{})".format(assign, use, _attrpairs(self.attrs)))
+
+    def __repr__(self):
+        return "U: " + ", ".join(x for x in self.used)
+
+class Generation(BaseOp):
+
+    def __init__(self, *values, attrs={}):
+        self.generated = {v: None for v in values}
+        self.attrs = attrs
+
+    def fill(self, generated, used):
+        super(Generation, self).fill(generated, used)
+        for gen, value in self.generated.items():
+            if gen in generated:
+                if not value:
+                    value = generated.get(gen)
+                if not value:
+                    value = get_varname("g", sep="", show1=True)
+            generated[gen] = self.generated[gen] = value
+
+    def add(self, assign, gs, us, added, addunnamed=True):
+        super(Generation, self).add(assign, gs, us, added, addunnamed=addunnamed)
+        for gen, value in self.generated.items():
+            value = gs.get(gen) or value
+            if value and value not in added:
+                add("wasGeneratedBy({}; {}, {}, -{})".format(value, gen, assign, _attrpairs(self.attrs)))
+                self.generated[gen] = value
+                added.add(value)
+            elif not value and addunnamed:
+                add("wasGeneratedBy({}, {}, -{})".format(gen, assign, _attrpairs(self.attrs)))
+
+    def __repr__(self):
+        return "G: " + ", ".join(x for x in self.generated)
+
+class Derivation(Use, Generation):
+
+    def __init__(self, tup, attrs={}):
+        gen, *use = tup
+        Use.__init__(self, *use)
+        Generation.__init__(self, gen)
+        self.attrs = attrs
+
+    def fill(self, generated, used):
+        super(Derivation, self).fill(generated, used)
+        for gen, varg in self.generated.items():
+            if not varg and len(self.used) > 1:
+                generated[gen] = self.generated[gen] = get_varname("g", sep="", show1=True)
+
+    def add(self, assign, gs, us, added, addunnamed=False):
+        for gen, varg in self.generated.items():
+            if not varg:
+                varg = gs[gen] = self.generated[gen] = get_varname("g", sep="", show1=True)
+            added.add(varg)
+            for use, varu in self.used.items():
+                if not varu:
+                    varu = us[use] = self.used[use] = get_varname("u", sep="", show1=True)
+                added.add(varu)
+                add("wasDerivedFrom({}, {}, {}, {}, {}{})".format(
+                    gen, use, assign, varg, varu,
+                    _attrpairs(self.derattrs(gen, use)))
+                )
+
+    def derattrs(self, gen, use):
+        return self.attrs
+
+    def __repr__(self):
+        return "D({}, {})".format(Use.__repr__(self), Generation.__repr__(self))
+
+class WriteDerivation(Derivation):
+
+    def __init__(self, time, whole, key, gen, *use, attrs={}):
+        self.time = time
+        self.whole = whole
+        self.key = key
+        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+
+    def derattrs(self, gen, use):
+        SAME[gen] = SAME.get(use, use)
+        return _buildattrs(self.attrs, [
+            ("type", "Reference"),
+            ("version:moment", self.time),
+            ("version:whole", self.whole),
+            ("version:key", self.key),
+            ("version:access", "w"),
+        ])
+
+class AccessDerivation(Derivation):
+
+    def __init__(self, time, whole, key, gen, *use, attrs={}):
+        self.time = time
+        self.whole = whole
+        self.key = key
+        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+
+    def derattrs(self, gen, use):
+        SAME[gen] = SAME.get(use, use)
+        return _buildattrs(self.attrs, [
+            ("type", "Reference"),
+            ("version:moment", self.time),
+            ("version:whole", self.whole),
+            ("version:key", self.key),
+            ("version:access", "r"),
+        ])
+
+class RefDerivation(Derivation):
+
+    def __init__(self, time, gen, *use, attrs={}):
+        self.time = time
+        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+
+    def derattrs(self, gen, use):
+        SAME[gen] = SAME.get(use, use)
+        return _buildattrs(self.attrs, [
+            ("type", "Reference"),
+            ("version:moment", self.time),
+        ])
+
+def clear_shared(gs, us, shared):
+    if not shared:
+        gs.clear()
+        us.clear()
+
+
+def instantiate(cls, elements, gs, us, shared, attrs, starred=False):
+    clear_shared(gs, us, shared)
+    new = []
+    for element in elements:
+        obj = element if isinstance(element, cls) else cls(element, attrs=attrs)
+        obj.fill(gs, us)
+        clear_shared(gs, us, shared)
+        new.append(obj)
+    return new
+
 def activity(name, derived=[], used=[], generated=[], label=None, *, shared=False, attrs={}):
     varname = get_varname(name, sep="", show1=True)
     usages = {}
-    new_attrs = {}
-    wdf_attrs = {}
-    wgb_attrs = {}
-    u_attrs = {}
-    mod = {}
-    for key, value in attrs.items():
-        if key.startswith("wasDerivedFrom:"):
-            wdf_attrs[key[15:]] = value
-        elif key.startswith("wasGeneratedBy:"):
-            wgb_attrs[key[15:]] = value
-        elif key.startswith("used:"):
-            u_attrs[key[5:]] = value
-        elif key.startswith("attrs:"):
-            key = key[6:]
-            wdf_attrs[key] = wgb_attrs[key] = u_attrs[key] = value
-        elif key.startswith("dot:"):
-            new_attrs[key] = wdf_attrs[key] = wgb_attrs[key] = u_attrs[key] = value
-        else:
-            new_attrs[key] = value
-
-    new_attrs = _buildattrs(new_attrs, [
+    new_attrs = _buildattrs(attrs, [
         ("type", name),
         ("label", label),
     ])
     add('activity({}{})'.format(varname, _attrpairs(new_attrs)))
 
-    for new, *olds in derived:
-        varg = get_varname("g", sep="", show1=True)
+    gs, us = {}, {}
+    used = instantiate(Use, used, gs, us, shared, attrs)
+    generated = instantiate(Generation, generated, gs, us, shared, attrs)
+    derived = instantiate(Derivation, derived, gs, us, shared, attrs)
 
-        fnderived = lambda vn, vo, vu: wdf_attrs
-        if new.startswith("--"):
-            command = new[2:]
-            new, *olds = olds
-            if "s" in command:
-                mod = SPECIFIC
-                for key, value in mod.items():
-                    u_attrs[key] = value
-                    wdf_attrs[key] = value
-                    wgb_attrs[key] = value
-            if "g" in command:
-                time = new
-                whole, key, new, *olds = olds
-                def fnderived(vn, vo, vu):
-                    SAME[vn] = SAME.get(vo, vo)
-                    attrs = copy(wdf_attrs)
-                    attrs["type"] = "Reference"
-                    attrs["moment"] = time
-                    attrs["whole"] = whole
-                    attrs["key"] = key
-                    attrs["access"] = "w"
-                    return attrs
-            elif "p" in command:
-                time = new
-                whole, key, new, *olds = olds
-                def fnderived(vn, vo, vu):
-                    SAME[vn] = SAME.get(vo, vo)
-                    attrs = copy(wdf_attrs)
-                    attrs["type"] = "Reference"
-                    attrs["moment"] = time
-                    attrs["whole"] = whole
-                    attrs["key"] = key
-                    attrs["access"] = "r"
-                    return attrs
-            elif "d" in command:
-                time = new
-                new, *olds = olds
-                def fnderived(vn, vo, vu):
-                    SAME[vn] = SAME.get(vo, vo)
-                    attrs = copy(wdf_attrs)
-                    attrs["type"] = "Reference"
-                    attrs["moment"] = time
-                    return attrs
+    added = set()
+    for der in derived:
+        der.add(varname, gs, us, added)
+        clear_shared(gs, us, shared)
 
-        for old in olds:
-            if shared and old in usages:
-                varu = usages[old]
-            else:
-                varu = get_varname("u", sep="", show1=True)
-                add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
-                usages[old] = varu
-            add("wasDerivedFrom({}, {}, {}, {}, {}{})".format(new, old, varname, varg, varu, _attrpairs(fnderived(new, old, varu))))
-        add("wasGeneratedBy({}; {}, {}, -{})".format(varg, new, varname, _attrpairs(wgb_attrs)))
+    for use in used:
+        use.add(varname, gs, us, added)
+        clear_shared(gs, us, shared)
 
-        if mod:
-            for key in mod:
-                del u_attrs[key]
-                del wdf_attrs[key]
-                del wgb_attrs[key]
+    for gen in generated:
+        gen.add(varname, gs, us, added)
+        clear_shared(gs, us, shared)
 
-
-    for old in used:
-        if shared and old in usages:
-            varu = usages[old]
-        else:
-            varu = get_varname("u", sep="", show1=True)
-            add("used({}; {}, {}, -{})".format(varu, varname, old, _attrpairs(u_attrs)))
-            usages[old] = varu
-
-    for new in generated:
-        add("wasGeneratedBy({}, {}, -{})".format(new, varname, _attrpairs(wgb_attrs)))
     return varname
 
 def value(name, value, num=None, attrs={}):

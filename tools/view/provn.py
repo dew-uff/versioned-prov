@@ -12,6 +12,13 @@ def prov(attrs, key, default="-"):
     except KeyError:
         return default
 
+@graph.before
+def _before(dot):
+    dot.used = set()
+    dot.generated = set()
+    dot.used_required = {}
+    dot.generated_required = {}
+
 
 @graph.prov("document")
 def documents(dot, declarations, elements):
@@ -23,6 +30,21 @@ def documents(dot, declarations, elements):
     lines += [x for x in elements if x is not None]
     if dot.footer:
         lines.append(dot.footer)
+
+    # Inference 11
+    for args in (set(dot.used_required) - dot.used):
+        aid, eid = args
+        uid, attrs = dot.used_required[args]
+        line = dot.functions["used"](aid, eid, id_=uid, attrs=attrs)
+        if line is not None:
+            lines.append(line)
+    for args in (set(dot.generated_required) - dot.generated):
+        eid, aid = args
+        gid, attrs = dot.generated_required[args]
+        line = dot.functions["wasGeneratedBy"](eid, aid, id_=gid, attrs=attrs)
+        if line is not None:
+            lines.append(line)
+
     lines.append("}")
     return "\n".join(lines)
 
@@ -44,11 +66,13 @@ def agent(dot, agid, attrs=None, id_=None):
 
 @graph.prov("wasGeneratedBy")
 def was_generated_by(dot, eid, aid=None, time=None, attrs=None, id_=None):
+    dot.generated.add((eid, aid))
     return dot.arrow2(attrs, "wasGeneratedBy", eid, aid, "gen")
 
 
 @graph.prov("used")
 def used(dot, aid, eid=None, time=None, attrs=None, id_=None):
+    dot.used.add((aid, eid))
     return dot.arrow2(attrs, "used", aid, eid, "use")
 
 
@@ -75,10 +99,9 @@ def was_invalidated_by(dot, eid=None, aid=None, time=None, attrs=None, id_=None)
 @graph.prov("wasDerivedFrom")
 def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
     result = [dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")]
-    if not gid:
-        result.append(was_generated_by(egenerated, aid, None, attrs))
-    if not uid:
-        result.append(used(aid, eused, None, attrs))
+    if aid and gid and uid:
+        dot.used_required[(aid, eused)] = (uid, attrs)
+        dot.generated_required[(egenerated, aid)] = (gid, attrs)
     return "\n".join(result)
 
 @graph.prov("wasAttributedTo")
@@ -130,6 +153,8 @@ def bundle(dot, name, declarations, elements):
         if iri is not None:
             dot.setprefix(key, iri)
     return "\n".join(lines)
+
+
 
 
 if __name__ == "__main__":
