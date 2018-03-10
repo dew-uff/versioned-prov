@@ -1,6 +1,7 @@
 import html
 from collections import OrderedDict
 from functools import partial
+from tools.utils import parsetime
 
 
 class NoHighlightStyle:
@@ -170,7 +171,11 @@ class NoHighlightStyle:
 
     def change_attr(self, key, value):
         key = key.split(":", maxsplit=1)[-1]
-        value = value.split(":", maxsplit=1)[-1]
+        tvalue = parsetime(value)
+        if tvalue:
+            value = str(tvalue)
+        else:
+            value = value.split(":", maxsplit=1)[-1]
         return key, value
 
     def join(self, new, *dicts):

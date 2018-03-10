@@ -1,4 +1,4 @@
-::SET BASE = images::
+::SET BASE = generated::
 ::SET NAME = Versioned-PROV::
 ::SET PLAIN_PROV = Plain PROV::
 ::SET PROV_DICTIONARY = PROV-Dictionary::
@@ -62,7 +62,7 @@ The following table presents the count of each node (entity, activity, value) an
 The figure below compares the number of nodes (i.e., `entity`, `activity`, ...) and relationships (i.e., `wasDerivedFrom`, `used`, `wasGeneratedBy`, ...) of each approach. ::GET VERSIONED_PROV:: is the approach with less componenens. In ::GET VERSIONED_PROV::, the `hadMember` relationship with a `checkpoint` indicates the creation of a new version for the entity. Thus, it replaces some entities that exist in the other approaches by this relationship. However, the other approaches also require similar relationships to indicate the membership of elements in data structures. Hence, this replacement does not result in a bigger number of relationships. Additionally, all the other attributes of this approach appear in existing statements of the other approaches. So, the addition of the attributes do not increase the number of components.
 
 
-::![Comparison of elements](::GET BASE::/graphs/comparison)
+::![Comparison of elements](::GET BASE::/graphs/paper_comparison)
 
 
 The ::GET PROV_DICTIONARY:: approach creates a new `entity` when there is a change on an existing `entity` and when there is an access to an `entity` that represents a data-structure. Thus, it presents more nodes and relationships than ::GET VERSIONED_PROV::. However, it presents less relationships than the ::GET PLAIN_PROV:: approach. This occurs because, the ::GET PLAIN_PROV:: also creates new `entities` on changes, but has no mechanisms to indicate that an `entity` has all members of the previously existing `entity`, thus it requires many `hadMember` relationship for every `entity` that represent data structures. The number of nodes in ::GET PLAIN_PROV:: and ::GET PROV_DICTIONARY:: could be equivalent, however, according to the ::GET PROV_DICTIONARY:: specification, for a dictionary to be deterministic, its derivation chain should end in an `EmptyDictionary` `entity`. Hence, we need one extra node for the ::GET PROV_DICTIONARY:: approach.
@@ -98,7 +98,7 @@ As stated before, the ::GET VERSIONED_PROV:: mapping produces less nodes for the
 
 ## Development
 
-We use [Jupyter Notebooks](https://github.com/dew-uff/mutable-PROV/tree/master/notebooks) with [Python 3.6](https://www.python.org/), [pandas](https://pandas.pydata.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [Graphviz](https://www.graphviz.org/) to generate image files.
+We use [Jupyter Notebooks](https://github.com/dew-uff/versioned-prov/tree/master/notebooks) with [Python 3.6](https://www.python.org/), [pandas](https://pandas.pydata.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [Graphviz](https://www.graphviz.org/) to generate image files.
 
 For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use the [Lark parser](https://github.com/erezsh/lark).
 

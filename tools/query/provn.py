@@ -34,11 +34,11 @@ def used(dot, aid, eid=None, time=None, attrs=None, id_=None):
     ]
 
 
-@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "text"])
-def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "attrs", "text"])
+def wasDerivedFrom(dot, egenerated=None, eused=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
     return [
         egenerated, eused, aid, gid, uid,
-        querier.text(
+        attrs or {}, querier.text(
             "wasDerivedFrom",
             [egenerated, eused, aid, gid, uid], attrs, id_
         )
@@ -46,7 +46,7 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
 
 
 @querier.prov("wasGeneratedBy", ["id", "entity", "activity", "time", "text"])
-def was_generated_by(dot, eid, aid=None, time=None, attrs=None, id_=None):
+def wasGeneratedBy(dot, eid, aid=None, time=None, attrs=None, id_=None):
     ti = parsetime(time)
     return [
         id_, eid, aid, ti,
@@ -55,7 +55,7 @@ def was_generated_by(dot, eid, aid=None, time=None, attrs=None, id_=None):
 
 
 @querier.prov("hadMember", ["collection", "entity", "text"])
-def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
+def hadMember(dot, ecollection=None, eid=None, attrs=None, id_=None):
     return [
         ecollection, eid,
         querier.text("hadMember", [ecollection, eid], attrs, id_)
@@ -63,7 +63,7 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
 
 
 @querier.prov("specializationOf", ["specific", "general", "text"])
-def specialization_of(dot, specific=None, general=None, attrs=None, id_=None):
+def specializationOf(dot, specific=None, general=None, attrs=None, id_=None):
     return [
         specific, general,
         querier.text("specializationOf", [specific, general], attrs, id_)

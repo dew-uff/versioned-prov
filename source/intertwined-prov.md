@@ -1,4 +1,4 @@
-::SET BASE = images/intertwined_prov::
+::SET BASE = generated/intertwined_prov::
 ::SET NAME = Intertwined-PROV::
 
 # ::GET NAME::

@@ -1,0 +1,8 @@
+entity(disti_aj#3, [value="3",type="access",label="disti[j]",version:checkpoint="2018-03-10T05:21:31.811967"])
+hadMember(list, disti_aj#3, [type="version:Insertion",version:key="1",version:checkpoint="2018-03-10T05:21:31.811967",dot:specific="true"])
+activity(assign12, [type="assign"])
+wasDerivedFrom(disti_aj#3, ikj#2, assign12, g32, u34, [type="version:Reference",version:checkpoint="2018-03-10T05:21:31.811967",version:whole="disti#2",version:key="1",version:access="w"])
+used(assign12, disti#2, -, [dot:specific="true"])
+used(assign12, j#5, -)
+used(assign12, disti_aj#2, -)
+used(assign12, ikj#2, -)

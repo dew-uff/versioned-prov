@@ -9,17 +9,11 @@ class DotHide(DotNoHighlight):
 
     def dotchange(self, statement, args, current, attrs):
         result = super(DotHide, self).dotchange(statement, args, current, attrs)
-
         if "dot:hide" in attrs:
             if "fillcolor" in current:
                 result["fillcolor"] = self.hide1
             result["fontcolor"] = self.hide2
             result["color"] = self.hide2
-        if "dot:specific" in attrs:
-            if "fillcolor" in current:
-                result["fillcolor"] = "darkgreen"
-            result["fontcolor"] = "green"
-            result["color"] = "green"
         return result
 
     def filter_attr(self, key, value, attrs):

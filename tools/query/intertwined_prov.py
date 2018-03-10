@@ -5,10 +5,10 @@ if __name__ == "__main__":
 from tools.query.prov_dictionary import *
 from tools.utils import parsetime, unquote
 
-@querier.prov("entity", ["id", "time", "type", "text"])
+@querier.prov("entity", ["id", "checkpoint", "type", "text"])
 def entity(querier, eid, attrs={}, id_=None):
     attrs = attrs or {}
-    time = attrs.get("generatedAtTime")
+    time = attrs.get("intertwined:checkpoint")
     type_ = attrs.get("type")
     return [
         eid, parsetime(time), unquote(type_),
@@ -16,12 +16,12 @@ def entity(querier, eid, attrs={}, id_=None):
     ]
 
 
-@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "moment", "whole", "key", "mode", "text"])
-def was_derived_from(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "checkpoint", "whole", "key", "mode", "attrs", "text"])
+def wasDerivedFrom(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
     attrs = attrs or {}
     return [
         eid1, eid2, aid, gid, uid,
-        unquote(attrs.get("type")), parsetime(attrs.get("moment")),
-        unquote(attrs.get("whole")), unquote(attrs.get("key")), unquote(attrs.get("access")),
-        querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
+        unquote(attrs.get("type")), parsetime(attrs.get("intertwined:checkpoint")),
+        unquote(attrs.get("intertwined:whole")), unquote(attrs.get("intertwined:key")), unquote(attrs.get("intertwined:access")),
+        attrs, querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]

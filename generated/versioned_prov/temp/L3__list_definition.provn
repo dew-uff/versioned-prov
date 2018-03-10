@@ -1,0 +1,6 @@
+entity(2, [value="2",type="literal",version:checkpoint="2018-03-10T05:21:28.646050"])
+entity(0, [value="0",type="literal",version:checkpoint="2018-03-10T05:21:28.646050"])
+entity(list, [value="[2, 10000, 0]",type="list",label="[2, m, 0]",version:checkpoint="2018-03-10T05:21:28.646553"])
+hadMember(list, 2, [type="version:Insertion",version:key="0",version:checkpoint="2018-03-10T05:21:28.646553",dot:specific="true"])
+hadMember(list, m, [type="version:Insertion",version:key="1",version:checkpoint="2018-03-10T05:21:28.646553",dot:specific="true"])
+hadMember(list, 0, [type="version:Insertion",version:key="2",version:checkpoint="2018-03-10T05:21:28.646553",dot:specific="true"])

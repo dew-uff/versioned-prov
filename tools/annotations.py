@@ -1,6 +1,7 @@
 if __name__ == "__main__":
     import sys; sys.path.insert(0, '..')
 
+from pprint import pprint
 from collections import Counter, defaultdict
 from copy import copy
 from contextlib import contextmanager
@@ -19,23 +20,24 @@ TEMP = []
 STATS = defaultdict(lambda: defaultdict(Counter))
 VALUES = {}
 SAME = {}
-TEMP_BASE = ""
+BASE = ""
 LINE = None
 
 HIDE = {"dot:hide": "true"}
 SPECIFIC = {"dot:specific": "true"}
 BLACK = {"dot:color":"#000000"}
+NAMESPACE = "version:"
 
-def reset_prov(temp_base):
+def reset_prov(base):
     global DICTS
     global NAMES
     global ENABLED
     global RESULT
     global STATS
     global VALUES
-    global TEMP_BASE
+    global BASE
     global SAME
-    TEMP_BASE = temp_base
+    BASE = base
     DICTS = defaultdict(dict)
     NAMES = Counter()
     ENABLED = False
@@ -62,7 +64,7 @@ def add(text):
     if ENABLED:
         print(text)
 
-def stats(path=None, view=False, temp=False, show=True, engine="dot"):
+def stats(path=None, view=False, temp=False, show=True, engine="dot", style="hide"):
     provn = "\n".join(TEMP if temp else RESULT)
     if not provn:
         return
@@ -84,11 +86,16 @@ def stats(path=None, view=False, temp=False, show=True, engine="dot"):
     from IPython.display import display
     if engine != "dot":
         provn = 'graph [overlap=false]\n##H##\n' + provn
-    im = ProvMagic().provn("-o {} -e {} -p {} -s hide".format(path, view, engine), provn)
+    im = ProvMagic().provn("-o {} -e {} -p {} -s {}".format(path, view, engine, style), provn)
     if show:
         display(im)
     return result
 
+def finish(show_count=True, style="hide"):
+    stats(join(BASE, "floydwarshall_org"), True, show=False, engine="dot", style="default")
+    res = stats(join(BASE, "floydwarshall"), True, engine="twopi", style=style)
+    if show_count:
+        pprint(res)
 
 def get_varname(name, sep="#", show1=False):
     num = NAMES[name]
@@ -132,15 +139,15 @@ def entity(name, value, type_, label, *, attrs={}):
 def version(name, time, *, attrs={}):
     varname = get_varname(name + "_v", sep="", show1=True)
     new_attrs = _buildattrs(attrs, [
-        ("generatedAtTime", time),
-        ("type", "Version"),
+        (NAMESPACE + "checkpoint", time),
+        ("type", NAMESPACE + "Version"),
     ])
     add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
 def ventity(time, name, value, type_, label, *, attrs={}):
     new_attrs = _buildattrs(attrs, [
-        ("generatedAtTime", time),
+        (NAMESPACE + "checkpoint", time),
     ])
     return entity(name, value, type_, label, attrs=new_attrs)
 
@@ -253,16 +260,16 @@ class WriteDerivation(Derivation):
         self.time = time
         self.whole = whole
         self.key = key
-        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+        super(WriteDerivation, self).__init__((gen, *use), attrs=attrs)
 
     def derattrs(self, gen, use):
         SAME[gen] = SAME.get(use, use)
         return _buildattrs(self.attrs, [
-            ("type", "Reference"),
-            ("version:moment", self.time),
-            ("version:whole", self.whole),
-            ("version:key", self.key),
-            ("version:access", "w"),
+            ("type", NAMESPACE + "Reference"),
+            (NAMESPACE + "checkpoint", self.time),
+            (NAMESPACE + "whole", self.whole),
+            (NAMESPACE + "key", self.key),
+            (NAMESPACE + "access", "w"),
         ])
 
 class AccessDerivation(Derivation):
@@ -271,29 +278,29 @@ class AccessDerivation(Derivation):
         self.time = time
         self.whole = whole
         self.key = key
-        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+        super(AccessDerivation, self).__init__((gen, *use), attrs=attrs)
 
     def derattrs(self, gen, use):
         SAME[gen] = SAME.get(use, use)
         return _buildattrs(self.attrs, [
-            ("type", "Reference"),
-            ("version:moment", self.time),
-            ("version:whole", self.whole),
-            ("version:key", self.key),
-            ("version:access", "r"),
+            ("type", NAMESPACE + "Reference"),
+            (NAMESPACE + "checkpoint", self.time),
+            (NAMESPACE + "whole", self.whole),
+            (NAMESPACE + "key", self.key),
+            (NAMESPACE + "access", "r"),
         ])
 
 class RefDerivation(Derivation):
 
     def __init__(self, time, gen, *use, attrs={}):
         self.time = time
-        super(WriteDerivation, self).__init__(gen, *use, attrs=attrs)
+        super(RefDerivation, self).__init__((gen, *use), attrs=attrs)
 
     def derattrs(self, gen, use):
         SAME[gen] = SAME.get(use, use)
         return _buildattrs(self.attrs, [
-            ("type", "Reference"),
-            ("version:moment", self.time),
+            ("type", NAMESPACE + "Reference"),
+            (NAMESPACE + "checkpoint", self.time),
         ])
 
 def clear_shared(gs, us, shared):
@@ -388,11 +395,11 @@ def hadMember(cname, entity, key, attrs={}):
 
 def vhadMember(cname, entity, key, time, attrs={}):
     new_attrs = _buildattrs(attrs, [
-        ("type", "version:Insertion"),
-        ("version:key", key),
-        ("version:checkpoint", time),
+        ("type", NAMESPACE + "Insertion"),
+        (NAMESPACE + "key", key),
+        (NAMESPACE + "checkpoint", time),
     ])
-    return hadMember(cname, entity, new_attrs)
+    return hadMember(cname, entity, key, new_attrs)
 
 def hadDictionaryMember(dname, entity, key, *, attrs=BLACK):
     add("hadDictionaryMember({}, {}, {}{})".format(
@@ -479,6 +486,7 @@ def desc(desc, enabled=False, line=None):
     ptemp = TEMP
     TEMP = []
     if line is not None:
+        STATS["all"]["lines"][line] += 1
         LINE = line
     global ENABLED
     if enabled:
@@ -494,8 +502,10 @@ def desc(desc, enabled=False, line=None):
         .replace("__", "_")
     )
 
-    stats(join(TEMP_BASE, get_varname(slug, sep="_")), "provn svg", True, False)
+    stats(join(BASE, "temp", get_varname(slug, sep="_")), "provn svg", True, False)
     TEMP = ptemp + TEMP
     LINE = ltemp
     if enabled:
         ENABLED = False
+
+

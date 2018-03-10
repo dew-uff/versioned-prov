@@ -1,4 +1,4 @@
-::SET BASE = images/prov_dictionary::
+::SET BASE = generated/prov_dictionary::
 ::SET NAME = PROV-Dictionary::
 
 # ::GET NAME::

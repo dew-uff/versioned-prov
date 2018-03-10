@@ -1,4 +1,4 @@
-::SET BASE = images/versioned_prov::
+::SET BASE = generated/versioned_prov::
 ::SET NAME = Versioned-PROV::
 
 # ::GET NAME::

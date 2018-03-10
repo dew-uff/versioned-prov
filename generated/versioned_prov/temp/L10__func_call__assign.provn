@@ -1,0 +1,7 @@
+entity(len_dist, [value="3",type="eval",label="len(dist)",version:checkpoint="2018-03-10T05:21:29.451693",dot:hide="true"])
+activity(call1, [type="call",label="len",dot:hide="true"])
+used(call1, dist, -, [dot:hide="true"])
+wasGeneratedBy(len_dist, call1, -, [dot:hide="true"])
+entity(nodes, [value="3",type="name",label="nodes",version:checkpoint="2018-03-10T05:21:29.452194",dot:hide="true"])
+activity(assign5, [type="assign",dot:hide="true"])
+wasDerivedFrom(nodes, len_dist, assign5, g5, u5, [type="version:Reference",version:checkpoint="2018-03-10T05:21:29.452194",dot:hide="true"])

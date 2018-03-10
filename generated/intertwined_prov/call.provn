@@ -1,0 +1,14 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+
+// old
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
+
+// new
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
+entity(len_d_v1, [intertwined:checkpoint="8", type="intertwined:Version"])
+specializationOf(len_d, len_d_v1)
+
+activity(call1, [type="intertwined:call", label="len"])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)

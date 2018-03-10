@@ -1,0 +1,8 @@
+entity(dist_ai#6, [value="[10000, 0, 2]",type="access",label="dist[i]",version:checkpoint="2018-03-10T05:21:35.404536"])
+activity(access50, [type="access",dot:hide="true"])
+wasDerivedFrom(dist_ai#6, list1, access50, g76, u81, [type="version:Reference",version:checkpoint="2018-03-10T05:21:35.404536",version:whole="dist",version:key="1",version:access="r",dot:hide="true"])
+used(access50, dist, -, [dot:hide="true"])
+used(access50, i#8, -, [dot:hide="true"])
+entity(disti#6, [value="[10000, 0, 2]",type="name",label="disti",version:checkpoint="2018-03-10T05:21:35.404536"])
+activity(assign22, [type="assign",dot:hide="true"])
+wasDerivedFrom(disti#6, dist_ai#6, assign22, g77, u82, [type="version:Reference",version:checkpoint="2018-03-10T05:21:35.404536",dot:hide="true"])

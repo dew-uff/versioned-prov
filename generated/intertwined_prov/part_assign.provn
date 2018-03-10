@@ -1,0 +1,46 @@
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix intertwined <https://dew-uff.github.io/versioned-prov/ns/intertwined#>
+    
+// old
+entity(10000, [value="10000", type="script:literal"])
+entity(10000_v1, [intertwined:checkpoint="1", type="intertwined:Version"])
+specializationOf(10000, 10000_v1)
+entity(m, [value="10000", type="script:name", label="m"])
+wasDerivedFrom(m, 10000, -, -, -, [type="intertwined:Reference", intertwined:checkpoint="2"])
+
+entity(sum, [value="10001", type="script:operation", label="m + 1"])
+entity(sum_v1, [intertwined:checkpoint="4", type="intertwined:Version"])
+specializationOf(sum, sum_v1)
+
+entity(list, [value="[10000, 10001, 10000]", type="list", label="[m, m + 1, m]"])
+entity(list_v1, [intertwined:checkpoint="5", type="intertwined:Version"])
+specializationOf(list, list_v1)
+hadDictionaryMember(list_v1, m, "0")
+hadDictionaryMember(list_v1, sum, "1")
+hadDictionaryMember(list_v1, m, "2")
+
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
+wasDerivedFrom(d, list, -, -, -, [type="intertwined:Reference", intertwined:checkpoint="6"])
+
+entity(1, [value="1", type="script:literal"])
+entity(1_v1, [intertwined:checkpoint="3", type="intertwined:Version"])
+specializationOf(1, 1_v1)
+
+
+// new
+entity(3, [value="3", type="script:literal"])
+entity(3_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
+specializationOf(3, 3_v1)
+
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
+
+entity(list_v2, [intertwined:checkpoint="11", type="intertwined:Version"])
+derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+specializationOf(list, list_v2)
+
+activity(assign4, [type="script:assign"])
+used(assign4, d, -)
+used(assign4, 1, -)
+wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
+    intertwined:key="1", intertwined:access="w"])

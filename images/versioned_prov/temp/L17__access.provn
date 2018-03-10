@@ -1,7 +1,0 @@
-entity(disti_aj, [value="2",type="access",label="disti[j]",generatedAtTime="2018-03-07T01:11:21.113370",dot:hide="#F0F0F0",dot:hide2="gray"])
-activity(access11, [type="access",dot:hide="#F0F0F0",dot:hide2="gray"])
-used(u21; access11, 2, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-wasDerivedFrom(disti_aj, 2, access11, g20, u21, [dot:hide="#F0F0F0",dot:hide2="gray",type="Reference",moment="2018-03-07T01:11:21.113370",whole="disti",key="0",access="r"])
-wasGeneratedBy(g20; disti_aj, access11, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-used(access11, disti, -, [dot:hide="#F0F0F0",dot:hide2="gray"])
-used(access11, j#3, -, [dot:hide="#F0F0F0",dot:hide2="gray"])

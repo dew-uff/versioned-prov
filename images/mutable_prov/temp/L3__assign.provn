@@ -1,4 +1,0 @@
-entity(lastrow, [value="[2, 10000, 0]",type="Dictionary",label="lastrow"])
-activity(assign2, [type="assign",dot:hide="true"])
-wasDerivedFrom(lastrow, list, assign2, g2, u2, [dot:hide="true"])
-accessed(lastrow, vlist, 2018-03-10T01:49:47.294329, [dot:specific="true"])

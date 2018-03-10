@@ -1,4 +1,4 @@
-::SET BASE = images/plain_prov::
+::SET BASE = generated/plain_prov::
 ::SET NAME = PROV::
 
 # ::GET NAME::

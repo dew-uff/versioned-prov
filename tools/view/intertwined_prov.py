@@ -41,13 +41,13 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
                 "[{}]".format(intertwined(attrs, 'key')),
                 "der ac-{}\n{}".format(
                     intertwined(attrs, 'access'),
-                    intertwined(attrs, 'moment')
+                    intertwined(attrs, 'checkpoint')
                 )
             )
         return dot.arrow2(
             attrs, "int_wasDerivedFrom",
             egenerated, eused, "der ref\n{}".format(
-                intertwined(attrs, 'moment')
+                intertwined(attrs, 'checkpoint')
             ),
             extra="4"
         )

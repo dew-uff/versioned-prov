@@ -10,6 +10,8 @@ from collections import deque
 from IPython.display import display, Image, SVG
 from IPython.core.magic import Magics, magics_class, cell_magic
 from IPython.core.magic_arguments import argument, magic_arguments, parse_argstring
+from IPython.utils.text import DollarFormatter
+
 
 from tools.view.dot import graph
 
@@ -129,6 +131,10 @@ class ProvMagic(Magics):
         # Remove comment on %%provn line
         pos = line.find("#")
         line = line[:pos if pos != -1 else None]
+
+        formatter = DollarFormatter()
+        line = formatter.vformat(line, args=[],
+                                 kwargs=get_ipython().user_ns.copy())
         args = parse_argstring(self.provn, line)
 
         extensions = [x.lower() for x in args.extensions]

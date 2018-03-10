@@ -1,8 +1,0 @@
-entity(dist, [type="name",label="dist"])
-accessed(dist, vmatrix, 2018-03-10T01:49:47.600014, [dot:specific="true"])
-activity(assign3, [type="assign",dot:hide="true"])
-wasDerivedFrom(dist, matrix, assign3, g3, u3, [dot:hide="true"])
-entity(result, [type="name",label="result"])
-accessed(result, vmatrix, 2018-03-10T01:49:47.600014, [dot:specific="true"])
-activity(assign4, [type="assign",dot:hide="true"])
-wasDerivedFrom(result, matrix, assign4, g4, u4, [dot:hide="true"])

@@ -1,0 +1,5 @@
+entity(disti_aj#6, [value="4",type="access",label="disti[j]",dot:hide="true"])
+activity(access39, [type="access",dot:hide="true"])
+wasDerivedFrom(disti_aj#6, 4, access39, g62, u67, [type="intertwined:Reference",intertwined:checkpoint="2018-03-10T05:24:58.614656",intertwined:whole="disti#4",intertwined:key="1",intertwined:access="r",dot:hide="true"])
+used(access39, disti#4, -, [dot:hide="true"])
+used(access39, j#12, -, [dot:hide="true"])

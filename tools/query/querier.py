@@ -74,6 +74,10 @@ class ProvQuery(BoundQuery):
 def to_tuple(data):
     if isinstance(data, str):
         return data
+    if isinstance(data, dict):
+        return tuple(
+            (k, to_tuple(v)) for k, v in data.items()
+        )
     if isinstance(data, Iterable):
         return tuple(to_tuple(x) for x in data)
     return data

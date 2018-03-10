@@ -2,7 +2,7 @@ import errno
 import re
 import os
 
-GITHUB = "https://github.com/dew-uff/mutable-prov"
+GITHUB = "https://github.com/dew-uff/versioned-prov"
 BASE = "."
 
 def exists(filename):

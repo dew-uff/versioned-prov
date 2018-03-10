@@ -1,4 +1,4 @@
-::SET BASE = images/mutable_prov::
+::SET BASE = generated/mutable_prov::
 ::SET NAME = Mutable-PROV::
 
 # ::GET NAME::
