@@ -41,7 +41,7 @@
 <path fill="none" stroke="#f0f0f0" d="M354.853,-135.156C358.183,-154.24 360.689,-185.362 348,-208 340.206,-221.905 327.164,-232.857 313.748,-241.158"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="311.85,-238.212 304.93,-246.234 315.343,-244.279 311.85,-238.212"/>
 <text text-anchor="middle" x="412.5" y="-192.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der ref</text>
-<text text-anchor="middle" x="412.5" y="-183.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;10T05:21:29.142871</text>
+<text text-anchor="middle" x="412.5" y="-183.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;12T13:12:14.972212</text>
 </g>
 <!-- &#45;attrs0 -->
 <g id="node2" class="node"><title>&#45;attrs0</title>
@@ -55,14 +55,14 @@
 <text text-anchor="start" x="258" y="-22" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="307" y="-22" font-family="Times New Roman,serif" font-size="10.00">dist</text>
 <text text-anchor="start" x="258" y="-9" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
-<text text-anchor="start" x="307" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;10 05:21:29.142871</text>
+<text text-anchor="start" x="307" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;12 13:12:14.972212</text>
 </g>
 <!-- &#45;attrs0&#45;&gt;http://example.org/dist -->
 <g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/dist</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M351,-62.3259C351,-74.5443 351,-88.1945 351,-98.6716"/>
 </g>
 <!-- http://example.org/assign3&#45;&gt;http://example.org/matrix -->
-<g id="edge5" class="edge"><title>http://example.org/assign3&#45;&gt;http://example.org/matrix</title>
+<g id="edge6" class="edge"><title>http://example.org/assign3&#45;&gt;http://example.org/matrix</title>
 <path fill="none" stroke="#f0f0f0" d="M299.349,-208.187C294.106,-216.647 287.68,-227.016 281.873,-236.388"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="278.846,-234.627 276.553,-244.971 284.796,-238.315 278.846,-234.627"/>
 <text text-anchor="middle" x="306.44" y="-219.505" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
@@ -80,7 +80,7 @@
 <path fill="none" stroke="#f0f0f0" d="M93.3494,-134.314C83.2466,-153.761 70.9121,-186.343 87,-208 104.999,-232.23 133.539,-245.982 162.589,-253.672"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="161.903,-257.107 172.445,-256.054 163.547,-250.303 161.903,-257.107"/>
 <text text-anchor="middle" x="141.5" y="-192.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der ref</text>
-<text text-anchor="middle" x="141.5" y="-183.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;10T05:21:29.142871</text>
+<text text-anchor="middle" x="141.5" y="-183.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;12T13:12:14.972212</text>
 </g>
 <!-- http://example.org/assign4 -->
 <g id="node7" class="node"><title>http://example.org/assign4</title>
@@ -108,14 +108,14 @@
 <text text-anchor="start" x="10" y="-22" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="59" y="-22" font-family="Times New Roman,serif" font-size="10.00">result</text>
 <text text-anchor="start" x="10" y="-9" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
-<text text-anchor="start" x="59" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;10 05:21:29.142871</text>
+<text text-anchor="start" x="59" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;12 13:12:14.972212</text>
 </g>
 <!-- &#45;attrs1&#45;&gt;http://example.org/result -->
 <g id="edge3" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/result</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M103,-62.3259C103,-74.5443 103,-88.1945 103,-98.6716"/>
 </g>
 <!-- http://example.org/assign4&#45;&gt;http://example.org/matrix -->
-<g id="edge6" class="edge"><title>http://example.org/assign4&#45;&gt;http://example.org/matrix</title>
+<g id="edge5" class="edge"><title>http://example.org/assign4&#45;&gt;http://example.org/matrix</title>
 <path fill="none" stroke="#f0f0f0" d="M241.746,-208.187C245.48,-216.472 250.04,-226.59 254.195,-235.807"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="251.025,-237.293 258.325,-244.971 257.407,-234.416 251.025,-237.293"/>
 <text text-anchor="middle" x="256.671" y="-207.787" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>

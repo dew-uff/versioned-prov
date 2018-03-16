@@ -38,7 +38,7 @@ wasDerivedFrom(list2, 1, definelist1, g3, u3)
 ```
 
 
-Different from Plain PROV, PROV-Dictionary can define list elements with their positions, and can use a single statement, `wasDerivedByInsertionFrom`, to associate member entities to a collection entity. However, since it does not indicate the position of accesses, we still need to create extra entities to encode the position. Additionally, we also need a global `EmptyDictionary` entity for the derivation:
+Different from Plain PROV, PROV-Dictionary can define list elements with their positions, and can use a single statement, `derivedByInsertionFrom`, to associate member entities to a collection entity. However, since it does not indicate the position of accesses, we still need to create extra entities to encode the position. Additionally, we also need a global `EmptyDictionary` entity for the derivation:
 ```
 entity(empty, [value="[]", type="EmptyDictionary"])
 

@@ -39,7 +39,7 @@
 <g id="edge2" class="edge"><title>http://example.org/dist_ai#2&#45;&gt;bn0</title>
 <path fill="none" stroke="#f0f0f0" d="M223.862,-301.123C212.956,-306.549 201.984,-314.282 195.641,-325 184.767,-343.374 192.781,-371.974 194.379,-377.174"/>
 <text text-anchor="middle" x="250.141" y="-336.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der ac&#45;r</text>
-<text text-anchor="middle" x="250.141" y="-327.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;10T05:21:31.194827</text>
+<text text-anchor="middle" x="250.141" y="-327.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;12T13:12:16.446826</text>
 </g>
 <!-- &#45;attrs0 -->
 <g id="node2" class="node"><title>&#45;attrs0</title>
@@ -53,7 +53,7 @@
 <text text-anchor="start" x="55.6407" y="-194" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="104.641" y="-194" font-family="Times New Roman,serif" font-size="10.00">dist[i]</text>
 <text text-anchor="start" x="55.6407" y="-181" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
-<text text-anchor="start" x="104.641" y="-181" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;10 05:21:31.194827</text>
+<text text-anchor="start" x="104.641" y="-181" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;12 13:12:16.446826</text>
 </g>
 <!-- &#45;attrs0&#45;&gt;http://example.org/dist_ai#2 -->
 <g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/dist_ai#2</title>
@@ -77,9 +77,9 @@
 </g>
 <!-- http://example.org/access13&#45;&gt;http://example.org/lastrow -->
 <g id="edge10" class="edge"><title>http://example.org/access13&#45;&gt;http://example.org/lastrow</title>
-<path fill="none" stroke="#f0f0f0" d="M300.757,-397.124C290.157,-406.38 276.016,-417.261 261.641,-424 240.716,-433.809 216.914,-440.934 194.281,-446.085"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="193.354,-442.704 184.323,-448.244 194.837,-449.545 193.354,-442.704"/>
-<text text-anchor="middle" x="303.531" y="-409.966" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
+<path fill="none" stroke="#f0f0f0" d="M284.258,-392.693C249.657,-405.466 195.875,-425.32 156.173,-439.976"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="154.828,-436.742 146.659,-443.489 157.252,-443.309 154.828,-436.742"/>
+<text text-anchor="middle" x="281.721" y="-405.577" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
 </g>
 <!-- http://example.org/i#3 -->
 <g id="node7" class="node"><title>http://example.org/i#3</title>
@@ -94,14 +94,14 @@
 </g>
 <!-- bn0&#45;&gt;http://example.org/dist -->
 <g id="edge3" class="edge"><title>bn0&#45;&gt;http://example.org/dist</title>
-<path fill="none" stroke="#f0f0f0" d="M196.033,-380.887C204.631,-386.365 251.21,-416.04 284.406,-437.189"/>
+<path fill="none" stroke="#f0f0f0" stroke-dasharray="5,2" d="M196.033,-380.887C204.631,-386.365 251.21,-416.04 284.406,-437.189"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="282.633,-440.21 292.948,-442.631 286.395,-434.306 282.633,-440.21"/>
-<text text-anchor="middle" x="265.141" y="-417.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">[2]</text>
 </g>
 <!-- bn0&#45;&gt;http://example.org/lastrow -->
 <g id="edge4" class="edge"><title>bn0&#45;&gt;http://example.org/lastrow</title>
 <path fill="none" stroke="#f0f0f0" d="M193.63,-380.887C187.557,-386.218 155.377,-414.465 131.449,-435.469"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="128.906,-433.043 123.7,-442.27 133.524,-438.304 128.906,-433.043"/>
+<text text-anchor="middle" x="158.141" y="-417.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">[2]</text>
 </g>
 <!-- http://example.org/disti#2 -->
 <g id="node8" class="node"><title>http://example.org/disti#2</title>
@@ -116,7 +116,7 @@
 <path fill="none" stroke="#f0f0f0" d="M267.424,-135.236C265.334,-164.841 261.048,-225.567 258.555,-260.888"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="255.056,-260.749 257.843,-270.971 262.038,-261.242 255.056,-260.749"/>
 <text text-anchor="middle" x="319.141" y="-205.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der ref</text>
-<text text-anchor="middle" x="319.141" y="-196.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;10T05:21:31.195330</text>
+<text text-anchor="middle" x="319.141" y="-196.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;12T13:12:16.446826</text>
 </g>
 <!-- http://example.org/assign10 -->
 <g id="node10" class="node"><title>http://example.org/assign10</title>
@@ -144,7 +144,7 @@
 <text text-anchor="start" x="191.641" y="-22" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="240.641" y="-22" font-family="Times New Roman,serif" font-size="10.00">disti</text>
 <text text-anchor="start" x="191.641" y="-9" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
-<text text-anchor="start" x="240.641" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;10 05:21:31.195330</text>
+<text text-anchor="start" x="240.641" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;12 13:12:16.446826</text>
 </g>
 <!-- &#45;attrs1&#45;&gt;http://example.org/disti#2 -->
 <g id="edge7" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/disti#2</title>

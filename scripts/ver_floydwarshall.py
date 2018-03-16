@@ -7,13 +7,18 @@ import tools.view.versioned_prov
 import tools.annotations as prov
 
 prov.reset_prov("../generated/versioned_prov/")
-prov.STATS_VIEW = 1
+prov.STATS_VIEW = 0
 prov.NAMESPACE = "version:"
 
 HIDE = prov.HIDE
 SPECIFIC = prov.SPECIFIC
 
+x = 0
+
 def time():
+    global x
+    x += 1
+    print(x)
     return datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
 
 def cond(ents):
@@ -82,7 +87,7 @@ with prov.desc("L4 - list definition / assign", line=4):
         e_list = prov.ventity(ti, "matrix", repr(dist), "list", prov.calc_label(prov_label))
         for i, (pdist, plabel) in enumerate(zip(prov_dist, prov_label)):
             if isinstance(pdist, list):
-                e_row = prov.ventity(ti, "list{}".format(i), repr(dist[i]), "list", prov.calc_label(plabel))
+                e_row = prov.ventity(ti, "matrix{}".format(i), repr(dist[i]), "list", prov.calc_label(plabel))
                 for j, ppdist in enumerate(pdist):
                     prov.vhadMember(e_row, ppdist, str(j), ti, attrs=SPECIFIC)
             else:
@@ -93,7 +98,6 @@ with prov.desc("L4 - list definition / assign", line=4):
         ti = time()
         e_dist = prov.ventity(ti, "dist", repr(dist), "name", "dist")
         prov.activity("assign", [prov.RefDerivation(ti, e_dist, e_list, attrs=HIDE)], attrs=HIDE)
-
         ti = time()
         e_result = prov.ventity(ti, "result", repr(result), "name", "result")
         prov.activity("assign", [prov.RefDerivation(ti, e_result, e_list, attrs=HIDE)], attrs=HIDE)
@@ -142,6 +146,7 @@ for k in indexes:
     with prov.desc("L13 - access / assign", line=13):
         ti = time()
         e_dist_ak = prov.ventity(ti, "dist_ak", repr(distk), "access", "dist[k]")
+        print(e_dist_ak)
         item = get_item(e_dist, k)
         prov.activity("access", [prov.AccessDerivation(ti, e_dist, str(k), e_dist_ak, item, attrs=HIDE)], used=[e_dist, e_k], attrs=HIDE)
 

@@ -38,11 +38,12 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
             return dot.arrow3(
                 attrs, "int_wasDerivedFrom",
                 egenerated, intertwined(attrs, 'whole'), eused,
-                "[{}]".format(intertwined(attrs, 'key')),
+                "",
                 "der ac-{}\n{}".format(
                     intertwined(attrs, 'access'),
                     intertwined(attrs, 'checkpoint')
-                )
+                ),
+                "[{}]".format(intertwined(attrs, 'key')),
             )
         return dot.arrow2(
             attrs, "int_wasDerivedFrom",
@@ -55,3 +56,20 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
 
 if __name__ == "__main__":
     graph.main()
+
+
+@graph.prov("used")
+def used(dot, aid, eid=None, time=None, attrs=None, id_=None):
+    dot.used.add((aid, eid))
+    checkpoint = intertwined(attrs, 'checkpoint', False)
+    if checkpoint:
+        return dot.arrow2(attrs, "int_used", aid, eid, "use\n{}".format(checkpoint))
+    return dot.arrow2(attrs, "used", aid, eid, "use")
+
+@graph.prov("wasGeneratedBy")
+def was_generated_by(dot, aid, eid=None, time=None, attrs=None, id_=None):
+    dot.used.add((aid, eid))
+    checkpoint = intertwined(attrs, 'checkpoint', False)
+    if checkpoint:
+        return dot.arrow2(attrs, "int_wasGeneratedBy", aid, eid, "gen\n{}".format(checkpoint))
+    return dot.arrow2(attrs, "wasGeneratedBy", aid, eid, "gen")

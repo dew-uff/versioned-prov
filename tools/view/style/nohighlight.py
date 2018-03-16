@@ -49,11 +49,17 @@ class NoHighlightStyle:
 
             "version": {"fillcolor": "#FFFC87", "color": "#808080", "style": "filled"},
             "int_wasDerivedFrom1": {"arrowhead": "none"},
+            "int_wasDerivedFrom0": {"style":"dashed"},
             "int_wasDerivedFrom_label*": self.label,
+            "int_used_label*": self.label,
+            "int_wasGeneratedBy_label*": self.label,
 
             "ver_wasDerivedFrom1": {"arrowhead": "none"},
+            "ver_wasDerivedFrom0": {"style":"dashed"},
             "ver_hadMember_label*": self.label,
             "ver_wasDerivedFrom_label*": self.label,
+            "ver_used_label*": self.label,
+            "ver_wasGeneratedBy_label*": self.label,
         }
 
     def after_node(self, statement, args, current, attrs):

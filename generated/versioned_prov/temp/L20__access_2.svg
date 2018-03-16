@@ -39,7 +39,7 @@
 <g id="edge1" class="edge"><title>http://example.org/disti_aj#2&#45;&gt;bn0</title>
 <path fill="none" stroke="#f0f0f0" d="M195.722,-30.4451C185.029,-35.8534 174.361,-43.4925 168.142,-54 157.268,-72.3744 165.282,-100.974 166.88,-106.174"/>
 <text text-anchor="middle" x="222.642" y="-65.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der ac&#45;r</text>
-<text text-anchor="middle" x="222.642" y="-56.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;10T05:21:31.715711</text>
+<text text-anchor="middle" x="222.642" y="-56.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">2018&#45;03&#45;12T13:12:16.837458</text>
 </g>
 <!-- http://example.org/disti#2 -->
 <g id="node4" class="node"><title>http://example.org/disti#2</title>
@@ -59,9 +59,9 @@
 </g>
 <!-- http://example.org/access18&#45;&gt;http://example.org/m -->
 <g id="edge6" class="edge"><title>http://example.org/access18&#45;&gt;http://example.org/m</title>
-<path fill="none" stroke="#f0f0f0" d="M266.002,-126.058C251.843,-135.063 233.554,-145.724 216.142,-153 196.45,-161.229 174.275,-168.019 153.845,-173.358"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="152.808,-170.01 143.975,-175.862 154.529,-176.795 152.808,-170.01"/>
-<text text-anchor="middle" x="266.569" y="-139.147" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
+<path fill="none" stroke="#f0f0f0" d="M257.126,-122.045C223.662,-134.879 172.219,-154.607 134.309,-169.145"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="132.576,-166.061 124.492,-172.91 135.082,-172.597 132.576,-166.061"/>
+<text text-anchor="middle" x="254.774" y="-134.96" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
 </g>
 <!-- http://example.org/j#5 -->
 <g id="node6" class="node"><title>http://example.org/j#5</title>
@@ -76,14 +76,14 @@
 </g>
 <!-- bn0&#45;&gt;http://example.org/disti#2 -->
 <g id="edge2" class="edge"><title>bn0&#45;&gt;http://example.org/disti#2</title>
-<path fill="none" stroke="#f0f0f0" d="M168.535,-109.887C177.108,-115.349 223.447,-144.872 256.624,-166.009"/>
+<path fill="none" stroke="#f0f0f0" stroke-dasharray="5,2" d="M168.535,-109.887C177.108,-115.349 223.447,-144.872 256.624,-166.009"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="254.852,-169.03 265.167,-171.451 258.614,-163.126 254.852,-169.03"/>
-<text text-anchor="middle" x="238.642" y="-146.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">[0]</text>
 </g>
 <!-- bn0&#45;&gt;http://example.org/m -->
 <g id="edge3" class="edge"><title>bn0&#45;&gt;http://example.org/m</title>
 <path fill="none" stroke="#f0f0f0" d="M166.222,-109.887C160.713,-115.195 131.623,-143.22 109.852,-164.194"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="107.281,-161.812 102.507,-171.27 112.137,-166.853 107.281,-161.812"/>
+<text text-anchor="middle" x="134.642" y="-146.6" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">[0]</text>
 </g>
 </g>
 </svg>

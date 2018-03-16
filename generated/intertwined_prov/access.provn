@@ -27,14 +27,14 @@ wasDerivedFrom(d, list, -, -, -, [
 
 // new
 entity(0, [value="0", type="script:literal"])
-entity(0_v1, [intertwined:checkpoint="9", type="intertwined:Version"])
+entity(0_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
 specializationOf(0, 0_v1)
 
 entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="access"])
-used(access1, d, -)
+used(access1, d, -, [intertwined:checkpoint="11"])
 used(access1, 0, -)
 wasDerivedFrom(d_ac0, m, access1, g5, u6, [
-    type="intertwined:Reference", intertwined:checkpoint="10",
+    type="intertwined:Reference", intertwined:checkpoint="12",
     intertwined:whole="d", intertwined:key="0", intertwined:access="r"])

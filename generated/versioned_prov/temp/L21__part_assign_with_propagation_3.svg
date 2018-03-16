@@ -12,65 +12,65 @@
 <!-- http://example.org/disti_aj#9 -->
 <g id="node1" class="node"><title>http://example.org/disti_aj#9</title>
 <g id="a_node1"><a xlink:href="http://example.org/disti_aj#9" xlink:title="disti_aj#9">
-<ellipse fill="#fffc87" stroke="#808080" cx="597.242" cy="-143" rx="46.2923" ry="18"/>
-<text text-anchor="middle" x="597.242" y="-139.3" font-family="Times New Roman,serif" font-size="14.00">disti_aj#9</text>
+<ellipse fill="#fffc87" stroke="#808080" cx="596.242" cy="-143" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="596.242" y="-139.3" font-family="Times New Roman,serif" font-size="14.00">disti_aj#9</text>
 </a>
 </g>
 </g>
 <!-- http://example.org/assign24 -->
 <g id="node4" class="node"><title>http://example.org/assign24</title>
 <g id="a_node4"><a xlink:href="http://example.org/assign24" xlink:title="assign24">
-<polygon fill="#9fb1fc" stroke="#0000ff" points="550.742,-251 485.742,-251 485.742,-215 550.742,-215 550.742,-251"/>
-<text text-anchor="middle" x="518.242" y="-229.3" font-family="Times New Roman,serif" font-size="14.00">assign24</text>
+<polygon fill="#9fb1fc" stroke="#0000ff" points="552.742,-251 487.742,-251 487.742,-215 552.742,-215 552.742,-251"/>
+<text text-anchor="middle" x="520.242" y="-229.3" font-family="Times New Roman,serif" font-size="14.00">assign24</text>
 </a>
 </g>
 </g>
 <!-- http://example.org/disti_aj#9&#45;&gt;http://example.org/assign24 -->
 <g id="edge11" class="edge"><title>http://example.org/disti_aj#9&#45;&gt;http://example.org/assign24</title>
-<path fill="none" stroke="black" d="M582.752,-160.141C570.917,-173.324 553.994,-192.175 540.45,-207.262"/>
-<polygon fill="black" stroke="black" points="537.796,-204.979 533.72,-214.758 543.005,-209.655 537.796,-204.979"/>
-<text text-anchor="middle" x="587.408" y="-172.5" font-family="Times New Roman,serif" font-size="8.00">gen</text>
+<path fill="none" stroke="black" d="M581.947,-160.552C570.627,-173.659 554.635,-192.176 541.768,-207.074"/>
+<polygon fill="black" stroke="black" points="538.878,-205.066 534.991,-214.922 544.176,-209.641 538.878,-205.066"/>
+<text text-anchor="middle" x="586.876" y="-172.819" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
 <!-- bn0 -->
 <g id="node6" class="node"><title>bn0</title>
-<ellipse fill="black" stroke="black" cx="597.242" cy="-233" rx="1.8" ry="1.8"/>
+<ellipse fill="black" stroke="black" cx="596.242" cy="-233" rx="1.8" ry="1.8"/>
 </g>
 <!-- http://example.org/disti_aj#9&#45;&gt;bn0 -->
 <g id="edge4" class="edge"><title>http://example.org/disti_aj#9&#45;&gt;bn0</title>
-<path fill="none" stroke="black" d="M597.242,-161.386C597.242,-184.628 597.242,-223.738 597.242,-230.867"/>
-<text text-anchor="middle" x="651.742" y="-190.6" font-family="Times New Roman,serif" font-size="8.00">der ac&#45;w</text>
-<text text-anchor="middle" x="651.742" y="-181.6" font-family="Times New Roman,serif" font-size="8.00">2018&#45;03&#45;10T05:21:36.192130</text>
+<path fill="none" stroke="black" d="M596.242,-161.386C596.242,-184.628 596.242,-223.738 596.242,-230.867"/>
+<text text-anchor="middle" x="650.742" y="-190.6" font-family="Times New Roman,serif" font-size="8.00">der ac&#45;w</text>
+<text text-anchor="middle" x="650.742" y="-181.6" font-family="Times New Roman,serif" font-size="8.00">2018&#45;03&#45;12T13:12:20.161845</text>
 </g>
 <!-- &#45;attrs0 -->
 <g id="node2" class="node"><title>&#45;attrs0</title>
-<polygon fill="none" stroke="gray" points="579.742,-62 410.742,-62 410.742,-0 585.742,-0 585.742,-56 579.742,-62"/>
-<polyline fill="none" stroke="gray" points="579.742,-62 579.742,-56 "/>
-<polyline fill="none" stroke="gray" points="585.742,-56 579.742,-56 "/>
-<text text-anchor="start" x="421.242" y="-48" font-family="Times New Roman,serif" font-size="10.00">value:</text>
-<text text-anchor="start" x="470.242" y="-48" font-family="Times New Roman,serif" font-size="10.00">4</text>
-<text text-anchor="start" x="421.242" y="-35" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="470.242" y="-35" font-family="Times New Roman,serif" font-size="10.00">access</text>
-<text text-anchor="start" x="421.242" y="-22" font-family="Times New Roman,serif" font-size="10.00">label:</text>
-<text text-anchor="start" x="470.242" y="-22" font-family="Times New Roman,serif" font-size="10.00">disti[j]</text>
-<text text-anchor="start" x="421.242" y="-9" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
-<text text-anchor="start" x="470.242" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;10 05:21:36.192130</text>
+<polygon fill="none" stroke="gray" points="571.742,-62 402.742,-62 402.742,-0 577.742,-0 577.742,-56 571.742,-62"/>
+<polyline fill="none" stroke="gray" points="571.742,-62 571.742,-56 "/>
+<polyline fill="none" stroke="gray" points="577.742,-56 571.742,-56 "/>
+<text text-anchor="start" x="413.242" y="-48" font-family="Times New Roman,serif" font-size="10.00">value:</text>
+<text text-anchor="start" x="462.242" y="-48" font-family="Times New Roman,serif" font-size="10.00">4</text>
+<text text-anchor="start" x="413.242" y="-35" font-family="Times New Roman,serif" font-size="10.00">type:</text>
+<text text-anchor="start" x="462.242" y="-35" font-family="Times New Roman,serif" font-size="10.00">access</text>
+<text text-anchor="start" x="413.242" y="-22" font-family="Times New Roman,serif" font-size="10.00">label:</text>
+<text text-anchor="start" x="462.242" y="-22" font-family="Times New Roman,serif" font-size="10.00">disti[j]</text>
+<text text-anchor="start" x="413.242" y="-9" font-family="Times New Roman,serif" font-size="10.00">checkpoint:</text>
+<text text-anchor="start" x="462.242" y="-9" font-family="Times New Roman,serif" font-size="10.00">2018&#45;03&#45;12 13:12:20.161845</text>
 </g>
 <!-- &#45;attrs0&#45;&gt;http://example.org/disti_aj#9 -->
 <g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/disti_aj#9</title>
-<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M525.294,-62.058C543.728,-82.5408 567.433,-108.879 582.487,-125.606"/>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M519.207,-62.058C539.067,-82.668 564.641,-109.206 580.743,-125.917"/>
 </g>
-<!-- http://example.org/list1 -->
-<g id="node3" class="node"><title>http://example.org/list1</title>
-<ellipse fill="none" stroke="black" cx="696.242" cy="-31" rx="92.8835" ry="18"/>
-<text text-anchor="middle" x="696.242" y="-27.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/list1</text>
+<!-- http://example.org/matrix1 -->
+<g id="node3" class="node"><title>http://example.org/matrix1</title>
+<ellipse fill="none" stroke="black" cx="701.242" cy="-31" rx="105.082" ry="18"/>
+<text text-anchor="middle" x="701.242" y="-27.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix1</text>
 </g>
-<!-- http://example.org/list1&#45;&gt;http://example.org/disti_aj#9 -->
-<g id="edge2" class="edge"><title>http://example.org/list1&#45;&gt;http://example.org/disti_aj#9</title>
-<path fill="none" stroke="black" d="M680.773,-49.1875C664.088,-67.7261 637.405,-97.3736 618.698,-118.16"/>
-<polygon fill="black" stroke="black" points="616.044,-115.876 611.956,-125.651 621.247,-120.559 616.044,-115.876"/>
-<text text-anchor="middle" x="707.742" y="-100.6" font-family="Times New Roman,serif" font-size="8.00">der&#45;ins</text>
-<text text-anchor="middle" x="707.742" y="-91.6" font-family="Times New Roman,serif" font-size="8.00">[0]</text>
-<text text-anchor="middle" x="707.742" y="-82.6" font-family="Times New Roman,serif" font-size="8.00">2018&#45;03&#45;10T05:21:36.192130</text>
+<!-- http://example.org/matrix1&#45;&gt;http://example.org/disti_aj#9 -->
+<g id="edge2" class="edge"><title>http://example.org/matrix1&#45;&gt;http://example.org/disti_aj#9</title>
+<path fill="none" stroke="black" d="M684.835,-49.1875C667.037,-67.8333 638.512,-97.7167 618.655,-118.519"/>
+<polygon fill="black" stroke="black" points="615.883,-116.355 611.51,-126.005 620.946,-121.188 615.883,-116.355"/>
+<text text-anchor="middle" x="709.742" y="-100.6" font-family="Times New Roman,serif" font-size="8.00">der&#45;ins</text>
+<text text-anchor="middle" x="709.742" y="-91.6" font-family="Times New Roman,serif" font-size="8.00">[0]</text>
+<text text-anchor="middle" x="709.742" y="-82.6" font-family="Times New Roman,serif" font-size="8.00">2018&#45;03&#45;12T13:12:20.161845</text>
 </g>
 <!-- http://example.org/disti#6 -->
 <g id="node7" class="node"><title>http://example.org/disti#6</title>
@@ -79,9 +79,9 @@
 </g>
 <!-- http://example.org/assign24&#45;&gt;http://example.org/disti#6 -->
 <g id="edge7" class="edge"><title>http://example.org/assign24&#45;&gt;http://example.org/disti#6</title>
-<path fill="none" stroke="black" d="M525.464,-251.213C528.941,-259.37 533.219,-269.226 537.242,-278 538.551,-280.855 539.945,-283.828 541.351,-286.782"/>
-<polygon fill="black" stroke="black" points="538.291,-288.495 545.788,-295.982 544.597,-285.455 538.291,-288.495"/>
-<text text-anchor="middle" x="540.357" y="-251.107" font-family="Times New Roman,serif" font-size="8.00">use</text>
+<path fill="none" stroke="black" d="M527.619,-251.142C532.075,-261.494 537.845,-274.901 542.874,-286.586"/>
+<polygon fill="black" stroke="black" points="539.71,-288.09 546.879,-295.892 546.14,-285.323 539.71,-288.09"/>
+<text text-anchor="middle" x="542.516" y="-250.996" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/ikj#6 -->
 <g id="node8" class="node"><title>http://example.org/ikj#6</title>
@@ -90,9 +90,9 @@
 </g>
 <!-- http://example.org/assign24&#45;&gt;http://example.org/ikj#6 -->
 <g id="edge10" class="edge"><title>http://example.org/assign24&#45;&gt;http://example.org/ikj#6</title>
-<path fill="none" stroke="black" d="M534.321,-251.182C544.097,-260.576 557.347,-271.576 571.242,-278 576.925,-280.627 637.915,-291.121 691.065,-299.939"/>
-<polygon fill="black" stroke="black" points="690.789,-303.441 701.227,-301.62 691.932,-296.535 690.789,-303.441"/>
-<text text-anchor="middle" x="548.689" y="-244.974" font-family="Times New Roman,serif" font-size="8.00">use</text>
+<path fill="none" stroke="black" d="M552.798,-244.247C593.711,-257.124 664.605,-279.437 714.511,-295.144"/>
+<polygon fill="black" stroke="black" points="713.607,-298.529 724.197,-298.193 715.709,-291.852 713.607,-298.529"/>
+<text text-anchor="middle" x="563.852" y="-232.207" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/j#16 -->
 <g id="node9" class="node"><title>http://example.org/j#16</title>
@@ -101,9 +101,9 @@
 </g>
 <!-- http://example.org/assign24&#45;&gt;http://example.org/j#16 -->
 <g id="edge8" class="edge"><title>http://example.org/assign24&#45;&gt;http://example.org/j#16</title>
-<path fill="none" stroke="black" d="M485.675,-240.068C418.413,-252.6 262.635,-281.625 169.144,-299.044"/>
-<polygon fill="black" stroke="black" points="168.37,-295.628 159.18,-300.901 169.652,-302.51 168.37,-295.628"/>
-<text text-anchor="middle" x="480.681" y="-252.312" font-family="Times New Roman,serif" font-size="8.00">use</text>
+<path fill="none" stroke="black" d="M487.521,-240.068C419.942,-252.6 263.43,-281.625 169.498,-299.044"/>
+<polygon fill="black" stroke="black" points="168.68,-295.636 159.486,-300.901 169.957,-302.519 168.68,-295.636"/>
+<text text-anchor="middle" x="482.516" y="-252.308" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/disti_aj#8 -->
 <g id="node10" class="node"><title>http://example.org/disti_aj#8</title>
@@ -112,32 +112,32 @@
 </g>
 <!-- http://example.org/assign24&#45;&gt;http://example.org/disti_aj#8 -->
 <g id="edge9" class="edge"><title>http://example.org/assign24&#45;&gt;http://example.org/disti_aj#8</title>
-<path fill="none" stroke="black" d="M485.546,-247.045C453.987,-259.637 405.79,-278.867 369.568,-293.319"/>
-<polygon fill="black" stroke="black" points="368.156,-290.114 360.165,-297.071 370.75,-296.616 368.156,-290.114"/>
-<text text-anchor="middle" x="483.394" y="-259.99" font-family="Times New Roman,serif" font-size="8.00">use</text>
+<path fill="none" stroke="black" d="M487.663,-246.869C455.758,-259.471 406.714,-278.843 369.941,-293.369"/>
+<polygon fill="black" stroke="black" points="368.412,-290.21 360.397,-297.139 370.984,-296.72 368.412,-290.21"/>
+<text text-anchor="middle" x="485.46" y="-259.806" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- &#45;attrs1 -->
 <g id="node5" class="node"><title>&#45;attrs1</title>
-<polygon fill="none" stroke="gray" points="527.242,-161 463.242,-161 463.242,-125 533.242,-125 533.242,-155 527.242,-161"/>
-<polyline fill="none" stroke="gray" points="527.242,-161 527.242,-155 "/>
-<polyline fill="none" stroke="gray" points="533.242,-155 527.242,-155 "/>
-<text text-anchor="start" x="473.242" y="-140" font-family="Times New Roman,serif" font-size="10.00">type:</text>
-<text text-anchor="start" x="496.242" y="-140" font-family="Times New Roman,serif" font-size="10.00">assign</text>
+<polygon fill="none" stroke="gray" points="526.242,-161 462.242,-161 462.242,-125 532.242,-125 532.242,-155 526.242,-161"/>
+<polyline fill="none" stroke="gray" points="526.242,-161 526.242,-155 "/>
+<polyline fill="none" stroke="gray" points="532.242,-155 526.242,-155 "/>
+<text text-anchor="start" x="472.242" y="-140" font-family="Times New Roman,serif" font-size="10.00">type:</text>
+<text text-anchor="start" x="495.242" y="-140" font-family="Times New Roman,serif" font-size="10.00">assign</text>
 </g>
 <!-- &#45;attrs1&#45;&gt;http://example.org/assign24 -->
 <g id="edge3" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/assign24</title>
-<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M502.193,-161.386C505.722,-176.914 510.861,-199.525 514.367,-214.95"/>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M501.786,-161.386C505.844,-176.914 511.754,-199.525 515.785,-214.95"/>
 </g>
 <!-- bn0&#45;&gt;http://example.org/disti#6 -->
 <g id="edge5" class="edge"><title>bn0&#45;&gt;http://example.org/disti#6</title>
-<path fill="none" stroke="black" d="M596.759,-234.887C593.974,-240.003 579.701,-266.225 568.45,-286.896"/>
-<polygon fill="black" stroke="black" points="565.252,-285.45 563.546,-295.907 571.4,-288.797 565.252,-285.45"/>
-<text text-anchor="middle" x="582.742" y="-271.6" font-family="Times New Roman,serif" font-size="8.00">[0]</text>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M595.77,-234.887C593.05,-240.003 579.109,-266.225 568.12,-286.896"/>
+<polygon fill="black" stroke="black" points="564.933,-285.434 563.329,-295.907 571.114,-288.72 564.933,-285.434"/>
 </g>
 <!-- bn0&#45;&gt;http://example.org/ikj#6 -->
 <g id="edge6" class="edge"><title>bn0&#45;&gt;http://example.org/ikj#6</title>
-<path fill="none" stroke="black" d="M598.353,-234.504C608.04,-238.903 678.939,-271.092 726.883,-292.86"/>
-<polygon fill="black" stroke="black" points="725.589,-296.116 736.141,-297.064 728.483,-289.743 725.589,-296.116"/>
+<path fill="none" stroke="black" d="M597.359,-234.504C607.102,-238.903 678.408,-271.092 726.629,-292.86"/>
+<polygon fill="black" stroke="black" points="725.385,-296.139 735.94,-297.064 728.265,-289.759 725.385,-296.139"/>
+<text text-anchor="middle" x="694.742" y="-271.6" font-family="Times New Roman,serif" font-size="8.00">[0]</text>
 </g>
 </g>
 </svg>

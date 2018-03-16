@@ -7,7 +7,7 @@ NAMESPACE = "https://dew-uff.github.io/versioned-prov/ns#"
 
 def versioned(attrs, key, default="-"):
     try:
-        return attrs[(key, "version", NAMESPACE)]
+        return attrs[(key, "version", "v", NAMESPACE)]
     except KeyError:
         return default
 
@@ -15,7 +15,8 @@ def ns_versioned(key):
     return {
         "version:" + key,
         NAMESPACE + key,
-        key
+        key,
+        "v:" + key,
     }
 
 
@@ -54,11 +55,12 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
             return dot.arrow3(
                 attrs, "ver_wasDerivedFrom",
                 egenerated, versioned(attrs, 'whole'), eused,
-                "[{}]".format(versioned(attrs, 'key')),
+                "",
                 "der ac-{}\n{}".format(
                     versioned(attrs, 'access'),
                     versioned(attrs, 'checkpoint')
-                )
+                ),
+                "[{}]".format(versioned(attrs, 'key')),
             )
         return dot.arrow2(
             attrs, "ver_wasDerivedFrom",
@@ -68,3 +70,20 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
             extra="4"
         )
     return dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")
+
+
+@graph.prov("used")
+def used(dot, aid, eid=None, time=None, attrs=None, id_=None):
+    dot.used.add((aid, eid))
+    checkpoint = versioned(attrs, 'checkpoint', False)
+    if checkpoint:
+        return dot.arrow2(attrs, "ver_used", aid, eid, "use\n{}".format(checkpoint))
+    return dot.arrow2(attrs, "used", aid, eid, "use")
+
+@graph.prov("wasGeneratedBy")
+def was_generated_by(dot, aid, eid=None, time=None, attrs=None, id_=None):
+    dot.used.add((aid, eid))
+    checkpoint = versioned(attrs, 'checkpoint', False)
+    if checkpoint:
+        return dot.arrow2(attrs, "ver_wasGeneratedBy", aid, eid, "gen\n{}".format(checkpoint))
+    return dot.arrow2(attrs, "wasGeneratedBy", aid, eid, "gen")

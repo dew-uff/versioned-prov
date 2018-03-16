@@ -11,7 +11,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-10 05:21:28.995980</TD>
+	    <TD align="left">2018-03-12 13:12:14.848356</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -27,7 +27,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-10 05:21:28.995980</TD>
+	    <TD align="left">2018-03-12 13:12:14.848356</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/4" [color="gray",style="dashed",arrowhead="none"]
@@ -47,11 +47,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-10 05:21:28.995980</TD>
+	    <TD align="left">2018-03-12 13:12:14.848356</TD>
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/list0" [fillcolor="#FFFC87",color="#808080",style="filled",label="list0",URL="http://example.org/list0"]
+"http://example.org/matrix0" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix0",URL="http://example.org/matrix0"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -67,23 +67,23 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-10 05:21:28.995980</TD>
+	    <TD align="left">2018-03-12 13:12:14.848356</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/list0" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/list0" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+"-attrs3" -> "http://example.org/matrix0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-10T05:21:28.995980"]
-"http://example.org/list0" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix0" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-10T05:21:28.995980"]
-"http://example.org/list0" -> "http://example.org/4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix0" -> "http://example.org/4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-10T05:21:28.995980"]
-"http://example.org/matrix" -> "http://example.org/list0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix" -> "http://example.org/matrix0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-10T05:21:28.995980"]
-"http://example.org/list1" [fillcolor="#FFFC87",color="#808080",style="filled",label="list1",URL="http://example.org/list1"]
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1",URL="http://example.org/matrix1"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -99,23 +99,23 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-10 05:21:28.995980</TD>
+	    <TD align="left">2018-03-12 13:12:14.848356</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/list1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/list1" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+"-attrs4" -> "http://example.org/matrix1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-10T05:21:28.995980"]
-"http://example.org/list1" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix1" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-10T05:21:28.995980"]
-"http://example.org/list1" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix1" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-10T05:21:28.995980"]
-"http://example.org/matrix" -> "http://example.org/list1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2018-03-12T13:12:14.848356"]
+"http://example.org/matrix" -> "http://example.org/matrix1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-10T05:21:28.995980"]
+2018-03-12T13:12:14.848356"]
 "http://example.org/matrix" -> "http://example.org/lastrow" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-10T05:21:28.995980"]
+2018-03-12T13:12:14.848356"]
 }

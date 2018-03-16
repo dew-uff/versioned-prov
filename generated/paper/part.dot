@@ -1,0 +1,149 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/list" [fillcolor="#FFFC87",color="#808080",style="filled",label="list",URL="http://example.org/list"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 10000, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[2, m, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">5</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#2",URL="http://example.org/disti#2"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 10000, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">33</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/disti#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#5",URL="http://example.org/j#5"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">1</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">j</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">35</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/j#5" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ikj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#2",URL="http://example.org/ikj#2"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">ikj</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">38</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/ikj#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti_aj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#2",URL="http://example.org/disti_aj#2"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">10000</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti[j]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">39</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/disti_aj#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti_aj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#3",URL="http://example.org/disti_aj#3"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti[j]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">checkpoint:</TD>
+	    <TD align="left">41</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/disti_aj#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign12",URL="http://example.org/assign12"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">assign</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/assign12" [color="gray",style="dashed",arrowhead="none"]
+"bn0" [shape="point",label=""]
+"http://example.org/disti_aj#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
+41",arrowhead="none"]
+"bn0" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
+"bn0" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
+"http://example.org/assign12" -> "http://example.org/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign12" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+40"]
+"http://example.org/list" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
+[1]
+41"]
+"http://example.org/assign12" -> "http://example.org/disti_aj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+
+{rank=same "http://example.org/list" "-attrs0"}
+{rank=same "http://example.org/disti_aj#3" "-attrs3" "-attrs4"}
+     
+"http://example.org/assign12" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+41"]
+"http://example.org/disti_aj#3" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+}

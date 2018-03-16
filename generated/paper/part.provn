@@ -1,0 +1,50 @@
+entity(list,
+ [value="[2, 10000, 0]",
+  type="s:list",
+  label="[2, m, 0]",
+  v:checkpoint="5"])
+entity(disti#2,
+ [value="[2, 10000, 0]",
+  type="s:name",
+  label="disti",
+  v:checkpoint="33"])
+entity(j#5,
+ [value="1",
+  type="s:name",
+  label="j",
+  v:checkpoint="35"])
+entity(
+ ikj#2,
+ [value="3",
+  type="s:name",
+  label="ikj",
+  v:checkpoint="38"])
+entity(
+ disti_aj#2,
+ [value="10000",
+  type="access",
+  label="disti[j]",
+  v:checkpoint="39"])
+
+
+entity(disti_aj#3,
+ [value="3",
+  type="access",
+  label="disti[j]",
+  v:checkpoint="41"])
+activity(assign12, [type="assign"])
+wasDerivedFrom(
+ disti_aj#3, ikj#2, assign12, g32, u34,
+ [type="v:Reference",
+  v:checkpoint="41",
+  v:whole="disti#2",
+  v:key="1",
+  v:access="w"])
+used(assign12, j#5, -)
+used(assign12, disti#2, -,
+ [v:checkpoint="40"])
+hadMember(list, disti_aj#3,
+ [type="version:Insertion",
+  v:key="1",
+  v:checkpoint="41"])
+used(assign12, disti_aj#2, -)
