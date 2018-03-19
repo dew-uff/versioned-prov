@@ -1,9 +1,9 @@
 prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
 prefix version <https://dew-uff.github.io/versioned-prov/ns#>
     
-entity(1, [value="1", type="script:literal", version:checkpoint="2018-02-22T16:00:00"])
-entity(a, [value="'a'", type="script:literal", version:checkpoint="2018-02-22T16:00:01"])
-entity(a#2, [value="b'a'", type="script:literal", version:checkpoint="2018-02-22T16:00:02"])
-entity(True, [value="True", type="script:constant", version:checkpoint="2018-02-22T16:00:03"])
-entity(int, [value="<class 'int'>", type="script:name", label="int", version:checkpoint="2018-02-22T16:00:04"])
-entity(ellipsis, [value="Ellipsis", type="script:constant", label="...", version:checkpoint="2018-02-22T16:00:05"])
+entity(1, [value="1", type="script:literal"])
+entity(a, [value="'a'", type="script:literal"])
+entity(a#2, [value="b'a'", type="script:literal"])
+entity(True, [value="True", type="script:constant"])
+entity(int, [value="<class 'int'>", type="script:name", label="int"])
+entity(ellipsis, [value="Ellipsis", type="script:constant", label="..."])

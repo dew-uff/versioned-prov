@@ -9,10 +9,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:00</TD>
-	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="http://example.org/a"]
@@ -24,10 +20,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:01</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
@@ -41,10 +33,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:02</TD>
-	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/True" [fillcolor="#FFFC87",color="#808080",style="filled",label="True",URL="http://example.org/True"]
@@ -56,10 +44,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">constant</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:03</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
@@ -77,10 +61,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">int</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:04</TD>
-	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ellipsis" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis",URL="http://example.org/ellipsis"]
@@ -96,10 +76,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">...</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-02-22 16:00:05</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]

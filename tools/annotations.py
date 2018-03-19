@@ -408,7 +408,7 @@ def hadMember(cname, entity, key, attrs={}):
 
 def vhadMember(cname, entity, key, time, attrs={}):
     new_attrs = _buildattrs(attrs, [
-        ("type", NAMESPACE + "Insertion"),
+        ("type", NAMESPACE + "Put"),
         (NAMESPACE + "key", key),
         (NAMESPACE + "checkpoint", time),
     ])
@@ -456,13 +456,13 @@ def hadDictionaryMember(cid, eid, key, attrs):
     add("hadDictionaryMember({}, {}, {}{})".format(cid, eid, key, _attrpairs(attrs)))
     DICTS[cid][key] = eid
 
-def define_array(name, value, label, type_="Dictionary", member=nop, attrs={}, first_attrs={}):
-    varname = entity(name, repr(value), type_, calc_label(label), attrs=first_attrs)
+def define_array(name, value, label, type_="Dictionary", member=nop, show1=False, attrs={}, first_attrs={}):
+    varname = entity(name, repr(value), type_, calc_label(label), show1=show1, attrs=first_attrs)
     result = []
     for i, (v, l) in enumerate(zip(value, label)):
         iname = "{}{}".format(name, i)
         if isinstance(l, list):
-            ref, _ = arr = define_array(iname, v, l, type_, member, attrs=attrs, first_attrs=first_attrs)
+            ref, _ = arr = define_array(iname, v, l, type_, member, show1=True, attrs=attrs, first_attrs=first_attrs)
             result.append(arr)
         else:
             ref = entity(iname, repr(v), "item", l, attrs=attrs)

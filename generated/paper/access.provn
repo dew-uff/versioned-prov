@@ -1,32 +1,27 @@
 entity(matrix0,
  [value="[0, 1, 4]",
   type="s:list",
-  label="[0, 1, 4]",
-  v:checkpoint="9"])
+  label="[0, 1, 4]"])
 entity(dist, 
  [value="[[...]]",
   type="s:name",
-  label="dist",
-  v:checkpoint="10"])
-entity(k,
+  label="dist"])
+entity(k#1,
  [type="s:name",
-  label="k",
-  v:checkpoint="16"])
+  label="k"])
 
 
-entity(dist_ak,
+entity(dist\[k\]#1,
  [value="[0, 1, 4]",
   type="s:access",
-  label="dist[k]",
-  v:checkpoint="18"])
+  label="dist[k]"])
 activity(access2,
  [type="s:access"])
 wasDerivedFrom(
- dist_ak, matrix0, access2, g8, u8,
+ dist\[k\]#1, matrix0, access2, g8, u8,
  [type="v:Reference",
   v:whole="dist",
   v:key="0",v:access="r",
-  v:checkpoint="18"])
-used(access2, k, -)
-used(access2, dist, -,
- [v:checkpoint="17"])
+  v:checkpoint="14"])
+used(access2, k#1, -)
+used(access2, dist, -)

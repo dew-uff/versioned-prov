@@ -22,25 +22,35 @@ def ns_versioned(key):
 
 @graph.prov("hadMember")
 def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
-    if prov(attrs, 'type') in ns_versioned('Insertion'):
+    if prov(attrs, 'type') in ns_versioned('Put'):
         return dot.arrow2(
             attrs, "ver_hadMember",
             ecollection, eid,
-            "der-ins\n[{}]\n{}".format(
+            "put\n[{}]\n{}".format(
                 versioned(attrs, 'key'),
                 versioned(attrs, 'checkpoint'),
             ),
             extra="0"
         )
-    if prov(attrs, 'type') in ns_versioned('Removal'):
+    if prov(attrs, 'type') in ns_versioned('Del'):
         return dot.arrow2(
             attrs, "ver_hadMember",
             ecollection, eid,
-            "der-rem\n[{}]\n{}".format(
+            "del\n[{}]\n{}".format(
                 versioned(attrs, 'key'),
                 versioned(attrs, 'checkpoint'),
             ),
             extra="1"
+        )
+    if prov(attrs, 'type') in ns_versioned('Add'):
+        return dot.arrow2(
+            attrs, "ver_hadMember",
+            ecollection, eid,
+            "add\n[{}]\n{}".format(
+                versioned(attrs, 'key'),
+                versioned(attrs, 'checkpoint'),
+            ),
+            extra="2"
         )
     return dot.arrow2(attrs, "hadMember", ecollection, eid)
 

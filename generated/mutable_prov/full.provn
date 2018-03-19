@@ -67,14 +67,14 @@ entity(0, [value="0", type="script:literal"])
 value(v0, [repr="0"])
 defined(0, v0, T9)
 wasDefinedBy(v0, 0, T9)
-entity(d_ac0, [label="d[0]", type="script:access"])
-accessedPart(d_ac0, vlist, "0", v10000, T10)
+entity(d@0, [label="d[0]", type="script:access"])
+accessedPart(d@0, vlist, "0", v10000, T10)
 
 
 activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-wasGeneratedBy(g9; d_ac0, access1, -)
+wasGeneratedBy(g9; d@0, access1, -)
 
 // part assign
 entity(3, [label="3", type="script:literal"])
@@ -82,11 +82,11 @@ value(v3, [repr="3"])
 defined(3, v3, T10)
 wasDefinedBy(v3, 3, T10)
 
-entity(d_ac1, [value="d[1]", type="script:access"])
-accessed(d_ac1, v3, T12)
-derivedByInsertion(d_ac1, vlist, {("1", v3)}, T12)
+entity(d@1, [value="d[1]", type="script:access"])
+accessed(d@1, v3, T12)
+derivedByInsertion(d@1, vlist, {("1", v3)}, T12)
 
 activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g5, u6)
+wasDerivedFrom(d@1, 3, assign4, g5, u6)

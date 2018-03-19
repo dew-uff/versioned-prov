@@ -1,3 +1,3 @@
-entity(list1#2, [value="3", type="script:access", label="d[1]"])
-wasDerivedFrom(list1#2, 3, assign4)
+wasDerivedFrom(d@1, 3, assign4)
+entity(d@1, [value="3", type="script:access", label="d[1]"])
 entity(3, [value="3", type="script:literal"])

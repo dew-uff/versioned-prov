@@ -9,10 +9,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 11:45:36.541258</TD>
-	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="http://example.org/0"]
@@ -24,10 +20,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 11:45:36.542260</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -45,21 +37,17 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">[2, m, 0]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 11:45:36.542371</TD>
-	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/list" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+"http://example.org/list" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
 [0]
-2018-03-19T11:45:36.542371"]
-"http://example.org/list" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2"]
+"http://example.org/list" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
 [1]
-2018-03-19T11:45:36.542371"]
-"http://example.org/list" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+2"]
+"http://example.org/list" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
 [2]
-2018-03-19T11:45:36.542371"]
+2"]
 "http://example.org/lastrow" [fillcolor="#FFFC87",color="#808080",style="filled",label="lastrow",URL="http://example.org/lastrow"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -78,9 +66,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" -> "http://example.org/lastrow" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign2" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign2",URL="http://example.org/assign2"]
 "http://example.org/lastrow" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-19T11:45:36.822003",fontcolor="#F0F0F0",color="#F0F0F0"]
+3",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign2" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-19T11:45:36.822003",fontcolor="#F0F0F0",color="#F0F0F0"]
+3",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/lastrow" -> "http://example.org/assign2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-19T11:45:36.822003",fontcolor="#F0F0F0",color="#F0F0F0"]
+3",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

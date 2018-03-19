@@ -40,9 +40,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/x" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-7"]
+5"]
 "http://example.org/assign3" -> "http://example.org/d" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-7"]
+5"]
 "http://example.org/x" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-7"]
+5"]
 }

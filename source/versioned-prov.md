@@ -12,8 +12,10 @@ In this document we map simple script constructs to ::GET NAME::.
 | Type      | Statement      | Meaning                                                                                                                                                                        |
 |:----------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reference | wasDerivedFrom | The generated entity derived from the used entity by reference, indicating that both have the same members.                                                                    |
-| Insertion | hadMember      | The collection entity had a member at a given checkpoint.                                                                                                                      |
-| Removal   | hadMember      | The collection entity lost a member at a given checkpoint. The member entity can be eithr the entity thatwas removed or a dumy entity should the *key* attribute be specified. |
+| Put       | hadMember      | The collection entity had a member at a given checkpoint. If the member is a VoidEntity or a placeholder, this operation represents a removal.                                 |
+| Del       | hadMember      | The collection entity lost a member at a given checkpoint. Valid for sets (that have no key) and lists. In lists, it has the semantic of updating all indexes.                 |
+| Add       | hadMember      | A member was added at a given position (key) of a list at a given checkpoint. Shifts keys that occur after the iserted key.                                                    |
+| VoidEntity| entity         | Represents a void entity for removals that use the put.                                                                                                                        |
 
 Additionally, ::GET NAME:: adds the following attributes to existing PROV statements:
 
@@ -21,7 +23,6 @@ Additionally, ::GET NAME:: adds the following attributes to existing PROV statem
 |:-----------|:--------------:|:------------------------------------|------------------------------------------------------------------------------------------------|
 | checkpoint | Sortable Value | hadMember                           | Checkpoint of the collection update. Required for Insertion and Removal types.                 |
 | checkpoint | Sortable Value | Events (e.g., used, wasDerivedFrom) | Checkpoint of the event. Required for collections that share references.                       |
-| checkpoint | Sortable Value | entity                              | Checkpoint of entity generation. equired for collections.                                      |
 | key        | String         | hadMember                           | The position of Insertion/Removal.                                                             |
 | key        | String         | wasDerivedFrom                      | The position of accessed *whole* entity.                                                       |
 | whole      | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
@@ -31,8 +32,6 @@ Additionally, ::GET NAME:: adds the following attributes to existing PROV statem
 ## Names, literals, and constants
 
 During the script execution, function calls, literals (e.g., "a", 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as `entities`.
-
-We use the attribute `checkpoint` to indicate the version of the entity at the moment of its generation. This attribute has no influence for non-collection data types, but we still can use it in names, literals, and constants for uniformity in the provenance collection.
 
 
 ```python
@@ -54,8 +53,7 @@ If the element on the left side of the assignment references the same value (i.e
 
 We can follow derivations by reference transitively to infer all the members of a derived collection entity.
 
-The `checkpoint` attribute in a derivation indicates the version of the derived instance.
-Thus, we do not need a checkpoint in the entity itself. This also occurs when we have a `wasGeneratedBy` statement with a `checkpoint` attribute.
+The `checkpoint` attribute in a derivation indicates the version of the derived instance. This attribute has no influence for non-collection data types, but we still can use it in names, literals, and constants for uniformity in the provenance collection.
 
 ```python
 m = 10000

@@ -9,8 +9,9 @@ Versioned-PROV adds the following types to existing PROV statements:
 | Type      | Statement      | Meaning                                                                                                                                                                        |
 |:----------|:---------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Reference | wasDerivedFrom | The generated entity derived from the used entity by reference, indicating that both have the same members.                                                                    |
-| Insertion | hadMember      | The collection entity had a member at a given checkpoint.                                                                                                                      |
-| Removal   | hadMember      | The collection entity lost a member at a given checkpoint. The member entity can be eithr the entity thatwas removed or a dumy entity should the *key* attribute be specified. |
+| Put       | hadMember      | The collection entity had a member at a given checkpoint. If the member is a VoidEntity or a placeholder, this operation represents a removal.                                 |
+| Del       | hadMember      | The collection entity lost a member at a given checkpoint. The member entity can be either the entity that was removed or a dumy entity should the *key* attribute be specified. |
+| VoidEntity| entity         | Represents a void entity for removals that use the put                                                                                                                         |
 
 Additionally, Versioned-PROV adds the following attributes to existing PROV statements:
 

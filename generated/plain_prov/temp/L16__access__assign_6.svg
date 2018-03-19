@@ -9,11 +9,11 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 426)">
 <title>PROV</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-426 823.681,-426 823.681,4 -4,4"/>
-<!-- http://example.org/dist_ai#6 -->
-<g id="node1" class="node"><title>http://example.org/dist_ai#6</title>
-<g id="a_node1"><a xlink:href="http://example.org/dist_ai#6" xlink:title="dist_ai#6">
-<ellipse fill="#fffc87" stroke="#808080" cx="319.84" cy="-260" rx="44.393" ry="18"/>
-<text text-anchor="middle" x="319.84" y="-256.3" font-family="Times New Roman,serif" font-size="14.00">dist_ai#6</text>
+<!-- http://example.org/dist@i#6 -->
+<g id="node1" class="node"><title>http://example.org/dist@i#6</title>
+<g id="a_node1"><a xlink:href="http://example.org/dist@i#6" xlink:title="dist@i#6">
+<ellipse fill="#fffc87" stroke="#808080" cx="319.84" cy="-260" rx="43.5923" ry="18"/>
+<text text-anchor="middle" x="319.84" y="-256.3" font-family="Times New Roman,serif" font-size="14.00">dist@i#6</text>
 </a>
 </g>
 </g>
@@ -22,33 +22,33 @@
 <ellipse fill="none" stroke="black" cx="109.84" cy="-332" rx="109.681" ry="18"/>
 <text text-anchor="middle" x="109.84" y="-328.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix10</text>
 </g>
-<!-- http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix10 -->
-<g id="edge2" class="edge"><title>http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix10</title>
-<path fill="none" stroke="black" d="M286.565,-272.092C254.153,-282.896 204.276,-299.522 165.763,-312.359"/>
-<polygon fill="black" stroke="black" points="164.614,-309.053 156.234,-315.535 166.828,-315.693 164.614,-309.053"/>
-<text text-anchor="middle" x="283.558" y="-284.887" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
+<!-- http://example.org/dist@i#6&#45;&gt;http://example.org/matrix10 -->
+<g id="edge2" class="edge"><title>http://example.org/dist@i#6&#45;&gt;http://example.org/matrix10</title>
+<path fill="none" stroke="black" d="M287.028,-271.938C254.593,-282.749 204.346,-299.498 165.632,-312.403"/>
+<polygon fill="black" stroke="black" points="164.436,-309.112 156.056,-315.595 166.649,-315.753 164.436,-309.112"/>
+<text text-anchor="middle" x="284.021" y="-284.733" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix11 -->
 <g id="node4" class="node"><title>http://example.org/matrix11</title>
 <ellipse fill="none" stroke="black" cx="471.84" cy="-332" rx="109.681" ry="18"/>
 <text text-anchor="middle" x="471.84" y="-328.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix11</text>
 </g>
-<!-- http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix11 -->
-<g id="edge3" class="edge"><title>http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix11</title>
-<path fill="none" stroke="black" d="M348.074,-274.002C370.401,-284.285 401.979,-298.827 427.648,-310.648"/>
-<polygon fill="black" stroke="black" points="426.263,-313.864 436.81,-314.868 429.191,-307.506 426.263,-313.864"/>
-<text text-anchor="middle" x="360.32" y="-263.44" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
+<!-- http://example.org/dist@i#6&#45;&gt;http://example.org/matrix11 -->
+<g id="edge3" class="edge"><title>http://example.org/dist@i#6&#45;&gt;http://example.org/matrix11</title>
+<path fill="none" stroke="black" d="M347.719,-273.839C370.084,-284.139 401.894,-298.788 427.712,-310.678"/>
+<polygon fill="black" stroke="black" points="426.377,-313.916 436.924,-314.92 429.305,-307.558 426.377,-313.916"/>
+<text text-anchor="middle" x="359.966" y="-263.277" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix12 -->
 <g id="node5" class="node"><title>http://example.org/matrix12</title>
 <ellipse fill="none" stroke="black" cx="709.84" cy="-332" rx="109.681" ry="18"/>
 <text text-anchor="middle" x="709.84" y="-328.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix12</text>
 </g>
-<!-- http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix12 -->
-<g id="edge4" class="edge"><title>http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix12</title>
-<path fill="none" stroke="black" d="M359.382,-268.097C422.215,-279.375 546.157,-301.621 628.521,-316.404"/>
-<polygon fill="black" stroke="black" points="628.141,-319.892 638.602,-318.214 629.378,-313.002 628.141,-319.892"/>
-<text text-anchor="middle" x="369.059" y="-254.736" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
+<!-- http://example.org/dist@i#6&#45;&gt;http://example.org/matrix12 -->
+<g id="edge4" class="edge"><title>http://example.org/dist@i#6&#45;&gt;http://example.org/matrix12</title>
+<path fill="none" stroke="black" d="M359.021,-268.032C421.852,-279.31 546.445,-301.673 628.965,-316.484"/>
+<polygon fill="black" stroke="black" points="628.352,-319.93 638.813,-318.251 629.588,-313.04 628.352,-319.93"/>
+<text text-anchor="middle" x="368.698" y="-254.671" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/access50 -->
 <g id="node6" class="node"><title>http://example.org/access50</title>
@@ -58,22 +58,22 @@
 </a>
 </g>
 </g>
-<!-- http://example.org/dist_ai#6&#45;&gt;http://example.org/access50 -->
-<g id="edge15" class="edge"><title>http://example.org/dist_ai#6&#45;&gt;http://example.org/access50</title>
+<!-- http://example.org/dist@i#6&#45;&gt;http://example.org/access50 -->
+<g id="edge16" class="edge"><title>http://example.org/dist@i#6&#45;&gt;http://example.org/access50</title>
 <path fill="none" stroke="#f0f0f0" d="M317.368,-278.303C316.266,-286.017 314.942,-295.288 313.713,-303.888"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="310.233,-303.501 312.284,-313.896 317.163,-304.491 310.233,-303.501"/>
 <text text-anchor="middle" x="329.168" y="-285.665" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">gen</text>
 </g>
-<!-- http://example.org/matrix1 -->
-<g id="node7" class="node"><title>http://example.org/matrix1</title>
-<ellipse fill="none" stroke="black" cx="166.84" cy="-404" rx="105.082" ry="18"/>
-<text text-anchor="middle" x="166.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix1</text>
+<!-- http://example.org/matrix1#1 -->
+<g id="node7" class="node"><title>http://example.org/matrix1#1</title>
+<ellipse fill="none" stroke="black" cx="162.84" cy="-404" rx="114.28" ry="18"/>
+<text text-anchor="middle" x="162.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix1#1</text>
 </g>
-<!-- http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix1 -->
-<g id="edge5" class="edge"><title>http://example.org/dist_ai#6&#45;&gt;http://example.org/matrix1</title>
-<path fill="none" stroke="#f0f0f0" d="M304.044,-277.086C286.137,-295.171 255.91,-325.243 228.84,-350 218.015,-359.9 205.798,-370.467 195.089,-379.539"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="192.634,-377.03 187.241,-386.15 197.144,-382.384 192.634,-377.03"/>
-<text text-anchor="middle" x="307.978" y="-289.661" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der</text>
+<!-- http://example.org/dist@i#6&#45;&gt;http://example.org/matrix1#1 -->
+<g id="edge5" class="edge"><title>http://example.org/dist@i#6&#45;&gt;http://example.org/matrix1#1</title>
+<path fill="none" stroke="#f0f0f0" d="M303.743,-277.118C281.802,-299.021 243.556,-336.951 228.84,-350 217.427,-360.121 204.417,-370.748 192.983,-379.807"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="190.68,-377.165 184.981,-386.097 195.006,-382.669 190.68,-377.165"/>
+<text text-anchor="middle" x="307.604" y="-289.712" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der</text>
 </g>
 <!-- &#45;attrs0 -->
 <g id="node2" class="node"><title>&#45;attrs0</title>
@@ -87,37 +87,37 @@
 <text text-anchor="start" x="212.84" y="-165.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="239.84" y="-165.5" font-family="Times New Roman,serif" font-size="10.00">dist[i]</text>
 </g>
-<!-- &#45;attrs0&#45;&gt;http://example.org/dist_ai#6 -->
-<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/dist_ai#6</title>
+<!-- &#45;attrs0&#45;&gt;http://example.org/dist@i#6 -->
+<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/dist@i#6</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M271.605,-206.286C282.521,-218.216 295.452,-232.348 305.177,-242.975"/>
 </g>
-<!-- http://example.org/access50&#45;&gt;http://example.org/matrix1 -->
-<g id="edge14" class="edge"><title>http://example.org/access50&#45;&gt;http://example.org/matrix1</title>
-<path fill="none" stroke="#f0f0f0" d="M275.588,-349.767C255.579,-359.562 230.17,-372 208.945,-382.389"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="207.271,-379.312 199.828,-386.852 210.349,-385.599 207.271,-379.312"/>
-<text text-anchor="middle" x="274.563" y="-362.832" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
+<!-- http://example.org/access50&#45;&gt;http://example.org/matrix1#1 -->
+<g id="edge13" class="edge"><title>http://example.org/access50&#45;&gt;http://example.org/matrix1#1</title>
+<path fill="none" stroke="#f0f0f0" d="M275.746,-349.235C255.041,-359.095 228.412,-371.776 206.215,-382.345"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="204.528,-379.272 197.004,-386.732 207.537,-385.592 204.528,-379.272"/>
+<text text-anchor="middle" x="274.56" y="-362.288" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
 </g>
 <!-- http://example.org/dist#3 -->
 <g id="node8" class="node"><title>http://example.org/dist#3</title>
-<ellipse fill="none" stroke="black" cx="390.84" cy="-404" rx="100.983" ry="18"/>
-<text text-anchor="middle" x="390.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/dist#3</text>
+<ellipse fill="none" stroke="black" cx="395.84" cy="-404" rx="100.983" ry="18"/>
+<text text-anchor="middle" x="395.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/dist#3</text>
 </g>
 <!-- http://example.org/access50&#45;&gt;http://example.org/dist#3 -->
 <g id="edge6" class="edge"><title>http://example.org/access50&#45;&gt;http://example.org/dist#3</title>
-<path fill="none" stroke="#f0f0f0" d="M329.863,-350.303C340.041,-359.1 352.562,-369.92 363.603,-379.462"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="361.473,-382.247 371.328,-386.137 366.05,-376.95 361.473,-382.247"/>
-<text text-anchor="middle" x="344.031" y="-343.479" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
+<path fill="none" stroke="#f0f0f0" d="M331.099,-350.303C342.01,-359.185 355.457,-370.13 367.263,-379.74"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="365.158,-382.539 375.123,-386.137 369.577,-377.11 365.158,-382.539"/>
+<text text-anchor="middle" x="345.116" y="-343.063" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
 </g>
 <!-- http://example.org/i#8 -->
 <g id="node9" class="node"><title>http://example.org/i#8</title>
-<ellipse fill="none" stroke="black" cx="598.84" cy="-404" rx="89.8845" ry="18"/>
-<text text-anchor="middle" x="598.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/i#8</text>
+<ellipse fill="none" stroke="black" cx="603.84" cy="-404" rx="89.8845" ry="18"/>
+<text text-anchor="middle" x="603.84" y="-400.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/i#8</text>
 </g>
 <!-- http://example.org/access50&#45;&gt;http://example.org/i#8 -->
 <g id="edge7" class="edge"><title>http://example.org/access50&#45;&gt;http://example.org/i#8</title>
-<path fill="none" stroke="#f0f0f0" d="M343.928,-347.062C346.921,-348.118 349.921,-349.115 352.84,-350 408.872,-366.986 473.656,-380.713 522.673,-389.937"/>
-<polygon fill="#f0f0f0" stroke="#f0f0f0" points="522.099,-393.391 532.571,-391.779 523.38,-386.509 522.099,-393.391"/>
-<text text-anchor="middle" x="355.305" y="-335.387" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
+<path fill="none" stroke="#f0f0f0" d="M343.924,-347.075C346.918,-348.128 349.919,-349.121 352.84,-350 385.614,-359.862 469.506,-376.986 531.323,-389.097"/>
+<polygon fill="#f0f0f0" stroke="#f0f0f0" points="530.944,-392.589 541.43,-391.071 532.286,-385.719 530.944,-392.589"/>
+<text text-anchor="middle" x="355.292" y="-335.389" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>
 </g>
 <!-- http://example.org/disti#8 -->
 <g id="node10" class="node"><title>http://example.org/disti#8</title>
@@ -127,8 +127,8 @@
 </a>
 </g>
 </g>
-<!-- http://example.org/disti#8&#45;&gt;http://example.org/dist_ai#6 -->
-<g id="edge12" class="edge"><title>http://example.org/disti#8&#45;&gt;http://example.org/dist_ai#6</title>
+<!-- http://example.org/disti#8&#45;&gt;http://example.org/dist@i#6 -->
+<g id="edge12" class="edge"><title>http://example.org/disti#8&#45;&gt;http://example.org/dist@i#6</title>
 <path fill="none" stroke="#f0f0f0" d="M370.575,-119.439C361.545,-129.395 350.589,-143.05 343.84,-157 332.25,-180.956 326.069,-210.839 322.9,-232.054"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="319.428,-231.612 321.54,-241.994 326.363,-232.561 319.428,-231.612"/>
 <text text-anchor="middle" x="375.275" y="-131.784" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">der</text>
@@ -160,7 +160,7 @@
 </g>
 </g>
 <!-- http://example.org/disti#8&#45;&gt;http://example.org/assign22 -->
-<g id="edge16" class="edge"><title>http://example.org/disti#8&#45;&gt;http://example.org/assign22</title>
+<g id="edge15" class="edge"><title>http://example.org/disti#8&#45;&gt;http://example.org/assign22</title>
 <path fill="none" stroke="#f0f0f0" d="M385.84,-121.359C385.84,-130.815 385.84,-142.728 385.84,-153.38"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="382.34,-153.473 385.84,-163.473 389.34,-153.473 382.34,-153.473"/>
 <text text-anchor="middle" x="398.831" y="-126.959" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">gen</text>
@@ -181,8 +181,8 @@
 <g id="edge8" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/disti#8</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M385.84,-49.2857C385.84,-60.6896 385.84,-74.105 385.84,-84.5482"/>
 </g>
-<!-- http://example.org/assign22&#45;&gt;http://example.org/dist_ai#6 -->
-<g id="edge13" class="edge"><title>http://example.org/assign22&#45;&gt;http://example.org/dist_ai#6</title>
+<!-- http://example.org/assign22&#45;&gt;http://example.org/dist@i#6 -->
+<g id="edge14" class="edge"><title>http://example.org/assign22&#45;&gt;http://example.org/dist@i#6</title>
 <path fill="none" stroke="#f0f0f0" d="M370.864,-199.859C361.927,-210.217 350.447,-223.524 340.64,-234.891"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="337.737,-232.898 333.855,-242.756 343.037,-237.471 337.737,-232.898"/>
 <text text-anchor="middle" x="375.8" y="-212.123" font-family="Times New Roman,serif" font-size="8.00" fill="#f0f0f0">use</text>

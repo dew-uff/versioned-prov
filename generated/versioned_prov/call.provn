@@ -8,5 +8,5 @@ entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 entity(len_d, [value="3", type="script:eval", label="len(d)"])
 
 activity(call1, [type="script:call", label="len"])
-used(call1, d, -, [version:checkpoint="8"])
-wasGeneratedBy(len_d, call1, -, [version:checkpoint="9"])
+used(call1, d, -, [version:checkpoint="6"])
+wasGeneratedBy(len_d, call1, -, [version:checkpoint="7"])

@@ -25,10 +25,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">literal</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">3</TD>
-	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum",URL="http://example.org/sum"]
@@ -56,13 +52,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs3" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-4"]
+2"]
 "http://example.org/sum" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-4"]
-"http://example.org/+" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-4"]
+2"]
 "http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-4"]
+2"]
+"http://example.org/+" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2"]
 "http://example.org/sum" -> "http://example.org/+" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-4"]
+2"]
 }

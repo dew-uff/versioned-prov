@@ -1,5 +1,5 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/disti_aj#9" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#9",URL="http://example.org/disti_aj#9"]
+"http://example.org/disti@j#9" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#9",URL="http://example.org/disti@j#9"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -14,10 +14,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">disti[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/disti_aj#9" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix1" -> "http://example.org/disti_aj#9" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
+"-attrs0" -> "http://example.org/disti@j#9" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1" -> "http://example.org/disti@j#9" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
 [0]
-2018-03-19T11:45:53.787100"]
+92"]
 "http://example.org/assign24" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign24",URL="http://example.org/assign24"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -27,15 +27,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs1" -> "http://example.org/assign24" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"http://example.org/disti_aj#9" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-w
-2018-03-19T11:45:53.787100",arrowhead="none"]
+"http://example.org/disti@j#9" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-w
+92",arrowhead="none"]
 "bn0" -> "http://example.org/disti#6" [style="dashed"]
 "bn0" -> "http://example.org/ikj#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[0]"]
 "http://example.org/assign24" -> "http://example.org/disti#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-19T11:45:53.786099"]
+91"]
 "http://example.org/assign24" -> "http://example.org/j#16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign24" -> "http://example.org/disti_aj#8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign24" -> "http://example.org/disti@j#8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign24" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/disti_aj#9" -> "http://example.org/assign24" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-19T11:45:53.787100"]
+"http://example.org/disti@j#9" -> "http://example.org/assign24" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+92"]
 }

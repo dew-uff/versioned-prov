@@ -15,7 +15,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:00:18.913512</TD>
+	    <TD align="left">2018-03-19 17:43:45.648656</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -40,7 +40,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:00:18.913512</TD>
+	    <TD align="left">2018-03-19 17:43:45.648965</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -69,7 +69,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:00:18.913512</TD>
+	    <TD align="left">2018-03-19 17:43:45.648965</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -98,7 +98,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:00:18.913512</TD>
+	    <TD align="left">2018-03-19 17:43:45.648965</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -131,7 +131,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:00:18.913512</TD>
+	    <TD align="left">2018-03-19 17:43:45.648965</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -163,7 +163,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs10" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign3" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign3",URL="http://example.org/assign3"]
 "http://example.org/dist" -> "http://example.org/list#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-19T12:00:19.236374",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
 "-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -182,13 +182,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs11" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign4" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign4",URL="http://example.org/assign4"]
 "http://example.org/result" -> "http://example.org/list#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-19T12:00:19.237378",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign3" -> "http://example.org/list#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-19T12:00:19.236374",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign4" -> "http://example.org/list#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-19T12:00:19.237378",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/dist" -> "http://example.org/assign3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-19T12:00:19.236374",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/result" -> "http://example.org/assign4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-19T12:00:19.237378",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/dist" -> "http://example.org/assign3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T17:43:45.847756",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

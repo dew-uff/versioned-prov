@@ -32,15 +32,15 @@ entity(3, [value="3", type="script:literal"])
 entity(3_v1, [intertwined:checkpoint="13", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]"])
+entity(d@1, [value="3", type="script:access", label="d[1]"])
 
 entity(list_v2, [intertwined:checkpoint="15", type="intertwined:Version"])
-derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+derivedByInsertionFrom(list_v2, list_v1, {("1", d@1)})
 specializationOf(list, list_v2)
 
 activity(assign4, [type="script:assign"])
 used(assign4, d, -, [intertwined:checkpoint="14"])
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="intertwined:Reference", intertwined:checkpoint="15", intertwined:whole="d",
     intertwined:key="1", intertwined:access="w"])

@@ -157,7 +157,7 @@ with prov.desc("L11 - func call / list assign", line=11):
 # Line 12
 for k in indexes:
     with prov.desc("L12 - loop access", line=12):
-        e_k = prov.entity("k", None, "name", "k", attrs=HIDE)
+        e_k = prov.entity("k", None, "name", "k", show1=True, attrs=HIDE)
         v_k = prov.DICTS[v_range][repr(k)]
         prov.accessedPart(e_k, v_range, repr(k), v_k, time(), attrs=SPECIFIC)
         prov.activity("access", used=[e_indexes], generated=[e_k], attrs=HIDE)
@@ -165,19 +165,19 @@ for k in indexes:
     # Line 13
     distk = dist[k]
     with prov.desc("L13 - access / assign", line=13):
-        e_dist_ak = prov.entity("dist_ak", None, "access", "dist[k]")
+        e_dist_ak = prov.entity("dist@k", None, "access", "dist[k]", show1=True)
         v_dist_ak = prov.DICTS[v_list][repr(k)]
         prov.accessedPart(e_dist_ak, v_list, repr(k), v_dist_ak, time(), attrs=SPECIFIC)
         prov.activity("access", used=[e_dist, e_k], generated=[e_dist_ak], attrs=HIDE)
 
-        e_distk = prov.entity("distk", None, "name", "distk")
+        e_distk = prov.entity("distk", None, "name", "distk", show1=True)
         prov.accessed(e_distk, v_dist_ak, time(), attrs=SPECIFIC)
         prov.activity("assign", [(e_distk, e_dist_ak)], attrs=HIDE)
 
     # Line 14
     for i in indexes:
         with prov.desc("L14 - loop access", line=14):
-            e_i = prov.entity("i", None, "name", "i", attrs=HIDE)
+            e_i = prov.entity("i", None, "name", "i", show1=True, attrs=HIDE)
             v_i = prov.DICTS[v_range][repr(i)]
             prov.accessedPart(e_i, v_range, repr(i), v_i, time(), attrs=SPECIFIC)
             prov.activity("access", used=[e_indexes], generated=[e_i], attrs=HIDE)
@@ -190,19 +190,19 @@ for k in indexes:
         # Line 16
         disti = dist[i]
         with prov.desc("L16 - access / assign", line=16):
-            e_dist_ai = prov.entity("dist_ai", None, "access", "dist[i]")
+            e_dist_ai = prov.entity("dist@i", None, "access", "dist[i]", show1=True)
             v_dist_ai = prov.DICTS[v_list][repr(i)]
             prov.accessedPart(e_dist_ai, v_list, repr(i), v_dist_ai, time(), attrs=SPECIFIC)
             prov.activity("access", used=[e_dist, e_i], generated=[e_dist_ai], attrs=HIDE)
 
-            e_disti = prov.entity("disti", None, "name", "disti")
+            e_disti = prov.entity("disti", None, "name", "disti", show1=True)
             prov.accessed(e_disti, v_dist_ai, time(), attrs=SPECIFIC)
             prov.activity("assign", [(e_disti, e_dist_ai)], attrs=HIDE)
 
         # Line 17
         for j in indexes:
             with prov.desc("L17 - loop access", line=17):
-                e_j = prov.entity("j", None, "name", "j", attrs=HIDE)
+                e_j = prov.entity("j", None, "name", "j", show1=True, attrs=HIDE)
                 v_j = prov.DICTS[v_range][repr(j)]
                 prov.accessedPart(e_j, v_range, repr(j), v_j, time(), attrs=SPECIFIC)
                 prov.activity("access", used=[e_indexes], generated=[e_j], attrs=HIDE)
@@ -215,28 +215,28 @@ for k in indexes:
             # Line 19
             ikj = disti[k] + distk[j]
             with prov.desc("L19 - access / access / operation / assign", line=19):
-                e_disti_ak = prov.entity("disti_ak", None, "access", "disti[k]", attrs=HIDE)
+                e_disti_ak = prov.entity("disti@k", None, "access", "disti[k]", show1=True, attrs=HIDE)
                 v_disti_ak = prov.DICTS[v_dist_ai][repr(k)]
                 prov.accessedPart(e_disti_ak, v_dist_ai, repr(k), v_disti_ak, time(), attrs=SPECIFIC)
                 prov.activity("access", used=[e_disti, e_k], generated=[e_disti_ak], attrs=HIDE)
 
-                e_distk_aj = prov.entity("distk_aj", None, "access", "distk[j]", attrs=HIDE)
+                e_distk_aj = prov.entity("distk@j", None, "access", "distk[j]", show1=True, attrs=HIDE)
                 v_distk_aj = prov.DICTS[v_dist_ak][repr(j)]
                 prov.accessedPart(e_distk_aj, v_dist_ak, repr(j), v_distk_aj, time(), attrs=SPECIFIC)
                 prov.activity("access", used=[e_distk, e_j], generated=[e_distk_aj], attrs=HIDE)
 
-                e_sum = prov.entity("sum", None, "operation", "disti[k] + distk[j]", attrs=HIDE)
+                e_sum = prov.entity("sum", None, "operation", "disti[k] + distk[j]", show1=True, attrs=HIDE)
                 vikj = prov.value("vsum", repr(ikj), attrs=SPECIFIC)
                 prov.defined(e_sum, vikj, time(), attrs=SPECIFIC)
                 prov.activity("+", [(e_sum, e_disti_ak, e_distk_aj)], attrs=HIDE)
 
-                e_ikj = prov.entity("ikj", None, "name", "ikj", attrs=HIDE)
+                e_ikj = prov.entity("ikj", None, "name", "ikj", show1=True, attrs=HIDE)
                 prov.accessed(e_ikj, vikj, time(), attrs=SPECIFIC)
                 prov.activity("assign", [(e_ikj, e_sum)], attrs=HIDE)
 
             # Line 20
             with prov.desc("L20 - access", line=20):
-                e_disti_aj = prov.entity("disti_aj", None, "access", "disti[j]", attrs=HIDE)
+                e_disti_aj = prov.entity("disti@j", None, "access", "disti[j]", show1=True, attrs=HIDE)
                 v_disti_aj = prov.DICTS[v_dist_ai][repr(j)]
                 prov.accessedPart(e_disti_aj, v_dist_ai, repr(j), v_disti_aj, time(), attrs=SPECIFIC)
                 prov.activity("access", used=[e_disti, e_j], generated=[e_disti_aj], attrs=HIDE)
@@ -250,7 +250,7 @@ for k in indexes:
                     used += ucond # from if
                     generated = []
 
-                    e_disti_aj = prov.entity("disti_aj", None, "access", "disti[j]")
+                    e_disti_aj = prov.entity("disti@j", None, "access", "disti[j]", show1=True)
                     ti = time()
                     prov.derivedByInsertion(
                         e_disti_aj, v_dist_ai,
@@ -263,13 +263,13 @@ for k in indexes:
 # Line 22
 print(result[0][2])
 with prov.desc("L22 - access / access / call", line=22):
-    e_result_a0 = prov.entity("result_a0", None, "access", "result[0]", attrs=HIDE)
+    e_result_a0 = prov.entity("result@0", None, "access", "result[0]", attrs=HIDE)
     v_result_a0 = prov.DICTS[v_list]["0"]
     prov.accessedPart(e_result_a0, v_list, "0", v_result_a0, time(), attrs=SPECIFIC)
     prov.activity("access", used=[e_result, e_n0], generated=[e_result_a0], attrs=HIDE)
 
 
-    e_result_a02 = prov.entity("result_a02", None, "access", "result[0][2]", attrs=HIDE)
+    e_result_a02 = prov.entity("result@0@2", None, "access", "result[0][2]", attrs=HIDE)
     v_result_a02 = prov.DICTS[v_result_a0]["2"]
     prov.accessedPart(e_result_a02, v_result_a0, "2", v_result_a02, time(), attrs=SPECIFIC)
     prov.activity("access", used=[e_result_a0, e_n2], generated=[e_result_a02], attrs=HIDE)

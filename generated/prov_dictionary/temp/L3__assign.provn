@@ -1,4 +1,4 @@
-entity(lastrow, [value="[2, 10000, 0]",type="Dictionary",label="lastrow"])
-derivedByInsertionFrom(lastrow, empty, {("0", list0), ("1", list1), ("2", list2)}, [dot:specific="true"])
+entity(lastrow#1, [value="[2, 10000, 0]",type="Dictionary",label="lastrow"])
+derivedByInsertionFrom(lastrow#1, empty, {("0", list0), ("1", list1), ("2", list2)}, [dot:specific="true"])
 activity(assign2, [type="assign",dot:hide="true"])
-wasDerivedFrom(lastrow, list, assign2, g5, u5, [dot:hide="true"])
+wasDerivedFrom(lastrow#1, list, assign2, g5, u5, [dot:hide="true"])

@@ -1,15 +1,15 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/disti_aj#8" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="disti_aj#8",URL="http://example.org/disti_aj#8"]
+"http://example.org/disti@j#8" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="disti@j#8",URL="http://example.org/disti@j#8"]
 "http://example.org/access54" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access54",URL="http://example.org/access54"]
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/disti_aj#8" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-2018-03-19T11:45:53.553481",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@j#8" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
+90",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/disti#6" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[2]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access54" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access54" -> "http://example.org/j#16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access54" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-19T11:45:53.553481",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/disti_aj#8" -> "http://example.org/access54" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-19T11:45:53.553481",fontcolor="#F0F0F0",color="#F0F0F0"]
+90",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@j#8" -> "http://example.org/access54" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+90",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

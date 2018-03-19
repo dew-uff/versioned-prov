@@ -1,6 +1,6 @@
 entity(len_dist, [value="3",type="eval",label="len(dist)",dot:hide="true"])
 activity(call1, [type="call",label="len",dot:hide="true"])
-used(call1, dist, -, [dot:hide="true"])
+used(call1, dist#1, -, [dot:hide="true"])
 wasGeneratedBy(len_dist, call1, -, [dot:hide="true"])
 entity(nodes, [value="3",type="name",label="nodes",dot:hide="true"])
 activity(assign5, [type="assign",dot:hide="true"])
