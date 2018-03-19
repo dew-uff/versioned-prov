@@ -126,8 +126,8 @@ def _buildattrs(attrs, pairs):
     return new_attrs
 
 
-def entity(name, value, type_, label, *, attrs={}):
-    varname = get_varname(name)
+def entity(name, value, type_, label, *, show1=False, attrs={}):
+    varname = get_varname(name, show1=show1)
     new_attrs = _buildattrs(attrs, [
         ("value", value),
         ("type", type_),
@@ -145,11 +145,11 @@ def version(name, time, *, attrs={}):
     add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
-def ventity(time, name, value, type_, label, *, attrs={}):
+def ventity(time, name, value, type_, label, *, show1=False, attrs={}):
     new_attrs = _buildattrs(attrs, [
         (NAMESPACE + "checkpoint", time),
     ])
-    return entity(name, value, type_, label, attrs=new_attrs)
+    return entity(name, value, type_, label, show1=show1, attrs=new_attrs)
 
 
 class BaseOp:
@@ -302,6 +302,19 @@ class RefDerivation(Derivation):
             ("type", NAMESPACE + "Reference"),
             (NAMESPACE + "checkpoint", self.time),
         ])
+
+class TimeDerivation(Derivation):
+
+    def __init__(self, time, gen, *use, attrs={}):
+        self.time = time
+        super(TimeDerivation, self).__init__((gen, *use), attrs=attrs)
+
+    def derattrs(self, gen, use):
+        SAME[gen] = SAME.get(use, use)
+        return _buildattrs(self.attrs, [
+            (NAMESPACE + "checkpoint", self.time),
+        ])
+
 
 def clear_shared(gs, us, shared):
     if not shared:

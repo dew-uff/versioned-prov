@@ -2,14 +2,12 @@ prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
 prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
 // old
-entity(10000, [value="10000", type="script:literal", version:checkpoint="1"])
-entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
-wasDerivedFrom(m, 10000, -, -, -, [type="version:Reference", version:checkpoint="2"])
+entity(m, [value="10000", type="script:name", label="m"])
 
 // new
 entity(1, [value="1", type="script:literal",  version:checkpoint="3"])
-entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
 activity(+, [type="script:operation"])
-wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g2, u3)
+wasDerivedFrom(sum, m, +, g2, u2, [version:checkpoint="4"])
+wasDerivedFrom(sum, 1, +, g2, u3, [version:checkpoint="4"])

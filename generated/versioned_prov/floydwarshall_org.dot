@@ -11,7 +11,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.457724</TD>
+	    <TD align="left">2018-03-19 11:45:36.283572</TD>
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/10000" [color="gray",style="dashed",arrowhead="none"]
@@ -29,10 +29,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">m</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.457724</TD>
-	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign1",URL="http://example.org/assign1"]
@@ -44,7 +40,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs2" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/m" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:14.457724"]
+2018-03-19T11:45:36.284574"]
 "http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -57,7 +53,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.598330</TD>
+	    <TD align="left">2018-03-19 11:45:36.541258</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
@@ -73,7 +69,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.598330</TD>
+	    <TD align="left">2018-03-19 11:45:36.542260</TD>
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
@@ -93,19 +89,19 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.598330</TD>
+	    <TD align="left">2018-03-19 11:45:36.542371</TD>
 	</TR>
 </TABLE>>]
 "-attrs5" -> "http://example.org/list" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:14.598330"]
+2018-03-19T11:45:36.542371"]
 "http://example.org/list" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:14.598330"]
+2018-03-19T11:45:36.542371"]
 "http://example.org/list" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:14.598330"]
+2018-03-19T11:45:36.542371"]
 "http://example.org/lastrow" [fillcolor="#FFFC87",color="#808080",style="filled",label="lastrow",URL="http://example.org/lastrow"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -120,10 +116,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">lastrow</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.676462</TD>
-	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/lastrow" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2"]
@@ -135,7 +127,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs7" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/lastrow" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:14.676462"]
+2018-03-19T11:45:36.822003"]
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -148,7 +140,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.848356</TD>
+	    <TD align="left">2018-03-19 11:45:37.324338</TD>
 	</TR>
 </TABLE>>]
 "-attrs8" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
@@ -164,7 +156,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.848356</TD>
+	    <TD align="left">2018-03-19 11:45:37.325340</TD>
 	</TR>
 </TABLE>>]
 "-attrs9" -> "http://example.org/4" [color="gray",style="dashed",arrowhead="none"]
@@ -184,7 +176,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.848356</TD>
+	    <TD align="left">2018-03-19 11:45:37.326343</TD>
 	</TR>
 </TABLE>>]
 "-attrs10" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
@@ -204,22 +196,22 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.848356</TD>
+	    <TD align="left">2018-03-19 11:45:37.326343</TD>
 	</TR>
 </TABLE>>]
 "-attrs11" -> "http://example.org/matrix0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix0" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix0" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix0" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1",URL="http://example.org/matrix1"]
 "-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -236,25 +228,25 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.848356</TD>
+	    <TD align="left">2018-03-19 11:45:37.326343</TD>
 	</TR>
 </TABLE>>]
 "-attrs12" -> "http://example.org/matrix1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix1" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix1" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix1" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/matrix" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:14.848356"]
+2018-03-19T11:45:37.326343"]
 "http://example.org/dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist",URL="http://example.org/dist"]
 "-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -269,10 +261,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.972212</TD>
-	</TR>
 </TABLE>>]
 "-attrs13" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign3",URL="http://example.org/assign3"]
@@ -284,7 +272,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs14" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:14.972212"]
+2018-03-19T11:45:37.729416"]
 "http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
 "-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -299,10 +287,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">result</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:14.972212</TD>
-	</TR>
 </TABLE>>]
 "-attrs15" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign4",URL="http://example.org/assign4"]
@@ -314,7 +298,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs16" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/result" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:14.972212"]
+2018-03-19T11:45:37.730419"]
 "http://example.org/len_dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="len_dist",URL="http://example.org/len_dist"]
 "-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -328,10 +312,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">len(dist)</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.191020</TD>
 	</TR>
 </TABLE>>]
 "-attrs17" -> "http://example.org/len_dist" [color="gray",style="dashed",arrowhead="none"]
@@ -347,8 +327,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs18" -> "http://example.org/call1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/call1" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/len_dist" -> "http://example.org/call1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/call1" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:38.465374"]
+"http://example.org/len_dist" -> "http://example.org/call1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.466416"]
 "http://example.org/nodes" [fillcolor="#FFFC87",color="#808080",style="filled",label="nodes",URL="http://example.org/nodes"]
 "-attrs19" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -363,10 +345,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">nodes</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.191020</TD>
-	</TR>
 </TABLE>>]
 "-attrs19" -> "http://example.org/nodes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign5",URL="http://example.org/assign5"]
@@ -378,7 +356,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs20" -> "http://example.org/assign5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/nodes" -> "http://example.org/len_dist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:15.191020"]
+2018-03-19T11:45:38.467377"]
 "http://example.org/range_nodes" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes",URL="http://example.org/range_nodes"]
 "-attrs21" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -393,10 +371,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">range(nodes)</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs21" -> "http://example.org/range_nodes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes0" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes0",URL="http://example.org/range_nodes0"]
@@ -409,15 +383,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs22" -> "http://example.org/range_nodes0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/range_nodes1" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes1",URL="http://example.org/range_nodes1"]
 "-attrs23" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -428,15 +398,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs23" -> "http://example.org/range_nodes1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/range_nodes2" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes2",URL="http://example.org/range_nodes2"]
 "-attrs24" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -447,15 +413,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs24" -> "http://example.org/range_nodes2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/call2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="call2",URL="http://example.org/call2"]
 "-attrs25" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -469,10 +431,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs25" -> "http://example.org/call2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/call2" -> "http://example.org/nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/range_nodes" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/range_nodes0" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/range_nodes1" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/range_nodes2" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/range_nodes" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017"]
+"http://example.org/range_nodes0" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017"]
+"http://example.org/range_nodes1" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017"]
+"http://example.org/range_nodes2" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017"]
 "http://example.org/indexes" [fillcolor="#FFFC87",color="#808080",style="filled",label="indexes",URL="http://example.org/indexes"]
 "-attrs26" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -487,10 +453,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">indexes</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs26" -> "http://example.org/indexes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign6",URL="http://example.org/assign6"]
@@ -502,7 +464,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs27" -> "http://example.org/assign6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/indexes" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.709024"]
 "http://example.org/k" [fillcolor="#FFFC87",color="#808080",style="filled",label="k",URL="http://example.org/k"]
 "-attrs28" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -512,10 +474,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">k</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.378506</TD>
 	</TR>
 </TABLE>>]
 "-attrs28" -> "http://example.org/k" [color="gray",style="dashed",arrowhead="none"]
@@ -529,7 +487,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs29" -> "http://example.org/access1" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
 "http://example.org/k" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.378506",arrowhead="none"]
+2018-03-19T11:45:39.094045",arrowhead="none"]
 "bn0" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn0" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access1" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -547,10 +505,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.456641</TD>
-	</TR>
 </TABLE>>]
 "-attrs30" -> "http://example.org/dist_ak" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access2",URL="http://example.org/access2"]
@@ -563,7 +517,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs31" -> "http://example.org/access2" [color="gray",style="dashed",arrowhead="none"]
 "bn1" [shape="point",label=""]
 "http://example.org/dist_ak" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.456641",arrowhead="none"]
+2018-03-19T11:45:39.359750",arrowhead="none"]
 "bn1" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn1" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access2" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -582,10 +536,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.456641</TD>
-	</TR>
 </TABLE>>]
 "-attrs32" -> "http://example.org/distk" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign7" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign7",URL="http://example.org/assign7"]
@@ -597,7 +547,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs33" -> "http://example.org/assign7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk" -> "http://example.org/dist_ak" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:15.456641"]
+2018-03-19T11:45:39.360753"]
 "http://example.org/i" [fillcolor="#FFFC87",color="#808080",style="filled",label="i",URL="http://example.org/i"]
 "-attrs34" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -607,10 +557,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.566027</TD>
 	</TR>
 </TABLE>>]
 "-attrs34" -> "http://example.org/i" [color="gray",style="dashed",arrowhead="none"]
@@ -624,7 +570,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs35" -> "http://example.org/access3" [color="gray",style="dashed",arrowhead="none"]
 "bn2" [shape="point",label=""]
 "http://example.org/i" -> "bn2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.566027",arrowhead="none"]
+2018-03-19T11:45:39.731865",arrowhead="none"]
 "bn2" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn2" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access3" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -642,10 +588,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.737920</TD>
-	</TR>
 </TABLE>>]
 "-attrs36" -> "http://example.org/i#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access4",URL="http://example.org/access4"]
@@ -658,7 +600,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs37" -> "http://example.org/access4" [color="gray",style="dashed",arrowhead="none"]
 "bn3" [shape="point",label=""]
 "http://example.org/i#2" -> "bn3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.737920",arrowhead="none"]
+2018-03-19T11:45:39.943301",arrowhead="none"]
 "bn3" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn3" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access4" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -676,10 +618,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.816055</TD>
-	</TR>
 </TABLE>>]
 "-attrs38" -> "http://example.org/dist_ai" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access5",URL="http://example.org/access5"]
@@ -692,7 +630,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs39" -> "http://example.org/access5" [color="gray",style="dashed",arrowhead="none"]
 "bn4" [shape="point",label=""]
 "http://example.org/dist_ai" -> "bn4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.816055",arrowhead="none"]
+2018-03-19T11:45:40.200988",arrowhead="none"]
 "bn4" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn4" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access5" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -711,10 +649,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.816055</TD>
-	</TR>
 </TABLE>>]
 "-attrs40" -> "http://example.org/disti" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign8" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign8",URL="http://example.org/assign8"]
@@ -726,7 +660,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs41" -> "http://example.org/assign8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti" -> "http://example.org/dist_ai" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:15.816055"]
+2018-03-19T11:45:40.201721"]
 "http://example.org/j" [fillcolor="#FFFC87",color="#808080",style="filled",label="j",URL="http://example.org/j"]
 "-attrs42" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -736,10 +670,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.925443</TD>
 	</TR>
 </TABLE>>]
 "-attrs42" -> "http://example.org/j" [color="gray",style="dashed",arrowhead="none"]
@@ -753,7 +683,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs43" -> "http://example.org/access6" [color="gray",style="dashed",arrowhead="none"]
 "bn5" [shape="point",label=""]
 "http://example.org/j" -> "bn5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:15.925443",arrowhead="none"]
+2018-03-19T11:45:40.505797",arrowhead="none"]
 "bn5" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn5" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access6" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -771,10 +701,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.009247</TD>
-	</TR>
 </TABLE>>]
 "-attrs44" -> "http://example.org/j#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access7" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access7",URL="http://example.org/access7"]
@@ -787,7 +713,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs45" -> "http://example.org/access7" [color="gray",style="dashed",arrowhead="none"]
 "bn6" [shape="point",label=""]
 "http://example.org/j#2" -> "bn6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.009247",arrowhead="none"]
+2018-03-19T11:45:40.726383",arrowhead="none"]
 "bn6" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn6" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access7" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -805,10 +731,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.087413</TD>
-	</TR>
 </TABLE>>]
 "-attrs46" -> "http://example.org/j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access8" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access8",URL="http://example.org/access8"]
@@ -821,7 +743,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs47" -> "http://example.org/access8" [color="gray",style="dashed",arrowhead="none"]
 "bn7" [shape="point",label=""]
 "http://example.org/j#3" -> "bn7" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.087413",arrowhead="none"]
+2018-03-19T11:45:41.028185",arrowhead="none"]
 "bn7" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn7" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access8" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -839,10 +761,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.181139</TD>
-	</TR>
 </TABLE>>]
 "-attrs48" -> "http://example.org/disti_ak" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access9" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access9",URL="http://example.org/access9"]
@@ -855,7 +773,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs49" -> "http://example.org/access9" [color="gray",style="dashed",arrowhead="none"]
 "bn8" [shape="point",label=""]
 "http://example.org/disti_ak" -> "bn8" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.181139",arrowhead="none"]
+2018-03-19T11:45:41.239749",arrowhead="none"]
 "bn8" -> "http://example.org/disti" [color="darkgreen",style="dashed"]
 "bn8" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access9" -> "http://example.org/disti" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -874,10 +792,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.181139</TD>
-	</TR>
 </TABLE>>]
 "-attrs50" -> "http://example.org/distk_aj" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access10" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access10",URL="http://example.org/access10"]
@@ -890,7 +804,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs51" -> "http://example.org/access10" [color="gray",style="dashed",arrowhead="none"]
 "bn9" [shape="point",label=""]
 "http://example.org/distk_aj" -> "bn9" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.181139",arrowhead="none"]
+2018-03-19T11:45:41.240752",arrowhead="none"]
 "bn9" -> "http://example.org/distk" [color="darkgreen",style="dashed"]
 "bn9" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access10" -> "http://example.org/distk" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -909,10 +823,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.181139</TD>
-	</TR>
 </TABLE>>]
 "-attrs52" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+1",URL="http://example.org/+1"]
@@ -923,8 +833,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs53" -> "http://example.org/+1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum" -> "http://example.org/disti_ak" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum" -> "http://example.org/distk_aj" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum" -> "http://example.org/disti_ak" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:41.241753"]
+"http://example.org/sum" -> "http://example.org/distk_aj" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:41.241753"]
 "http://example.org/ikj" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj",URL="http://example.org/ikj"]
 "-attrs54" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -939,10 +851,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.181139</TD>
-	</TR>
 </TABLE>>]
 "-attrs54" -> "http://example.org/ikj" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign9" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign9",URL="http://example.org/assign9"]
@@ -954,7 +862,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs55" -> "http://example.org/assign9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj" -> "http://example.org/sum" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:16.181139"]
+2018-03-19T11:45:41.242756"]
 "http://example.org/disti_aj" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj",URL="http://example.org/disti_aj"]
 "-attrs56" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -969,10 +877,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.290524</TD>
-	</TR>
 </TABLE>>]
 "-attrs56" -> "http://example.org/disti_aj" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access11",URL="http://example.org/access11"]
@@ -985,7 +889,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs57" -> "http://example.org/access11" [color="gray",style="dashed",arrowhead="none"]
 "bn10" [shape="point",label=""]
 "http://example.org/disti_aj" -> "bn10" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.290524",arrowhead="none"]
+2018-03-19T11:45:41.626776",arrowhead="none"]
 "bn10" -> "http://example.org/disti" [color="darkgreen",style="dashed"]
 "bn10" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access11" -> "http://example.org/disti" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1004,10 +908,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.368661</TD>
-	</TR>
 </TABLE>>]
 "-attrs58" -> "http://example.org/i#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access12",URL="http://example.org/access12"]
@@ -1020,7 +920,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs59" -> "http://example.org/access12" [color="gray",style="dashed",arrowhead="none"]
 "bn11" [shape="point",label=""]
 "http://example.org/i#3" -> "bn11" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.368661",arrowhead="none"]
+2018-03-19T11:45:41.904516",arrowhead="none"]
 "bn11" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn11" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access12" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1038,10 +938,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.446826</TD>
-	</TR>
 </TABLE>>]
 "-attrs60" -> "http://example.org/dist_ai#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access13" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access13",URL="http://example.org/access13"]
@@ -1054,7 +950,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs61" -> "http://example.org/access13" [color="gray",style="dashed",arrowhead="none"]
 "bn12" [shape="point",label=""]
 "http://example.org/dist_ai#2" -> "bn12" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.446826",arrowhead="none"]
+2018-03-19T11:45:42.131120",arrowhead="none"]
 "bn12" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn12" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access13" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1073,10 +969,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.446826</TD>
-	</TR>
 </TABLE>>]
 "-attrs62" -> "http://example.org/disti#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign10" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign10",URL="http://example.org/assign10"]
@@ -1088,7 +980,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs63" -> "http://example.org/assign10" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#2" -> "http://example.org/dist_ai#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:16.446826"]
+2018-03-19T11:45:42.132121"]
 "http://example.org/j#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#4",URL="http://example.org/j#4"]
 "-attrs64" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1098,10 +990,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.556212</TD>
 	</TR>
 </TABLE>>]
 "-attrs64" -> "http://example.org/j#4" [color="gray",style="dashed",arrowhead="none"]
@@ -1115,7 +1003,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs65" -> "http://example.org/access14" [color="gray",style="dashed",arrowhead="none"]
 "bn13" [shape="point",label=""]
 "http://example.org/j#4" -> "bn13" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.556212",arrowhead="none"]
+2018-03-19T11:45:42.441943",arrowhead="none"]
 "bn13" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn13" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access14" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1133,10 +1021,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.634311</TD>
-	</TR>
 </TABLE>>]
 "-attrs66" -> "http://example.org/j#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access15",URL="http://example.org/access15"]
@@ -1149,7 +1033,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs67" -> "http://example.org/access15" [color="gray",style="dashed",arrowhead="none"]
 "bn14" [shape="point",label=""]
 "http://example.org/j#5" -> "bn14" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.634311",arrowhead="none"]
+2018-03-19T11:45:42.722690",arrowhead="none"]
 "bn14" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn14" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access15" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1167,10 +1051,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.712453</TD>
-	</TR>
 </TABLE>>]
 "-attrs68" -> "http://example.org/disti_ak#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access16" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access16",URL="http://example.org/access16"]
@@ -1183,7 +1063,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs69" -> "http://example.org/access16" [color="gray",style="dashed",arrowhead="none"]
 "bn15" [shape="point",label=""]
 "http://example.org/disti_ak#2" -> "bn15" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.712453",arrowhead="none"]
+2018-03-19T11:45:42.949294",arrowhead="none"]
 "bn15" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn15" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access16" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1202,10 +1082,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.712453</TD>
-	</TR>
 </TABLE>>]
 "-attrs70" -> "http://example.org/distk_aj#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access17" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access17",URL="http://example.org/access17"]
@@ -1218,7 +1094,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs71" -> "http://example.org/access17" [color="gray",style="dashed",arrowhead="none"]
 "bn16" [shape="point",label=""]
 "http://example.org/distk_aj#2" -> "bn16" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.712453",arrowhead="none"]
+2018-03-19T11:45:42.950297",arrowhead="none"]
 "bn16" -> "http://example.org/distk" [color="darkgreen",style="dashed"]
 "bn16" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access17" -> "http://example.org/distk" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1237,10 +1113,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.712453</TD>
-	</TR>
 </TABLE>>]
 "-attrs72" -> "http://example.org/sum#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+2",URL="http://example.org/+2"]
@@ -1251,8 +1123,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs73" -> "http://example.org/+2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#2" -> "http://example.org/disti_ak#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#2" -> "http://example.org/distk_aj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#2" -> "http://example.org/disti_ak#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:42.951299"]
+"http://example.org/sum#2" -> "http://example.org/distk_aj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:42.951299"]
 "http://example.org/ikj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#2",URL="http://example.org/ikj#2"]
 "-attrs74" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1267,10 +1141,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.712453</TD>
-	</TR>
 </TABLE>>]
 "-attrs74" -> "http://example.org/ikj#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign11",URL="http://example.org/assign11"]
@@ -1282,7 +1152,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs75" -> "http://example.org/assign11" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#2" -> "http://example.org/sum#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:16.712453"]
+2018-03-19T11:45:42.952305"]
 "http://example.org/disti_aj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#2",URL="http://example.org/disti_aj#2"]
 "-attrs76" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1297,10 +1167,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.837458</TD>
-	</TR>
 </TABLE>>]
 "-attrs76" -> "http://example.org/disti_aj#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access18" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access18",URL="http://example.org/access18"]
@@ -1313,7 +1179,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs77" -> "http://example.org/access18" [color="gray",style="dashed",arrowhead="none"]
 "bn17" [shape="point",label=""]
 "http://example.org/disti_aj#2" -> "bn17" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:16.837458",arrowhead="none"]
+2018-03-19T11:45:43.377431",arrowhead="none"]
 "bn17" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn17" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access18" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1332,15 +1198,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:16.931220</TD>
-	</TR>
 </TABLE>>]
 "-attrs78" -> "http://example.org/disti_aj#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/list" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:16.931220"]
+2018-03-19T11:45:43.615063"]
 "http://example.org/assign12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign12",URL="http://example.org/assign12"]
 "-attrs79" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1351,10 +1213,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs79" -> "http://example.org/assign12" [color="gray",style="dashed",arrowhead="none"]
 "bn18" [shape="point",label=""]
 "http://example.org/disti_aj#3" -> "bn18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
-2018-03-12T13:12:16.931220",arrowhead="none"]
+2018-03-19T11:45:43.615063",arrowhead="none"]
 "bn18" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn18" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"http://example.org/assign12" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign12" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:43.614060"]
 "http://example.org/assign12" -> "http://example.org/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign12" -> "http://example.org/disti_aj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign12" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1372,10 +1235,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.015206</TD>
-	</TR>
 </TABLE>>]
 "-attrs80" -> "http://example.org/j#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access19" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access19",URL="http://example.org/access19"]
@@ -1388,7 +1247,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs81" -> "http://example.org/access19" [color="gray",style="dashed",arrowhead="none"]
 "bn19" [shape="point",label=""]
 "http://example.org/j#6" -> "bn19" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.015206",arrowhead="none"]
+2018-03-19T11:45:43.911851",arrowhead="none"]
 "bn19" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn19" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access19" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1406,10 +1265,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">k</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.093342</TD>
-	</TR>
 </TABLE>>]
 "-attrs82" -> "http://example.org/k#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access20" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access20",URL="http://example.org/access20"]
@@ -1422,7 +1277,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs83" -> "http://example.org/access20" [color="gray",style="dashed",arrowhead="none"]
 "bn20" [shape="point",label=""]
 "http://example.org/k#2" -> "bn20" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.093342",arrowhead="none"]
+2018-03-19T11:45:44.147479",arrowhead="none"]
 "bn20" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn20" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access20" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1440,10 +1295,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.171475</TD>
-	</TR>
 </TABLE>>]
 "-attrs84" -> "http://example.org/dist_ak#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access21" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access21",URL="http://example.org/access21"]
@@ -1456,7 +1307,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs85" -> "http://example.org/access21" [color="gray",style="dashed",arrowhead="none"]
 "bn21" [shape="point",label=""]
 "http://example.org/dist_ak#2" -> "bn21" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.171475",arrowhead="none"]
+2018-03-19T11:45:44.445269",arrowhead="none"]
 "bn21" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn21" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access21" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1475,10 +1326,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.171475</TD>
-	</TR>
 </TABLE>>]
 "-attrs86" -> "http://example.org/distk#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign13" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign13",URL="http://example.org/assign13"]
@@ -1490,7 +1337,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs87" -> "http://example.org/assign13" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#2" -> "http://example.org/dist_ak#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:17.171475"]
+2018-03-19T11:45:44.446271"]
 "http://example.org/i#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#4",URL="http://example.org/i#4"]
 "-attrs88" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1500,10 +1347,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.265268</TD>
 	</TR>
 </TABLE>>]
 "-attrs88" -> "http://example.org/i#4" [color="gray",style="dashed",arrowhead="none"]
@@ -1517,7 +1360,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs89" -> "http://example.org/access22" [color="gray",style="dashed",arrowhead="none"]
 "bn22" [shape="point",label=""]
 "http://example.org/i#4" -> "bn22" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.265268",arrowhead="none"]
+2018-03-19T11:45:44.718996",arrowhead="none"]
 "bn22" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn22" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access22" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1535,10 +1378,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.343367</TD>
-	</TR>
 </TABLE>>]
 "-attrs90" -> "http://example.org/dist_ai#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access23" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access23",URL="http://example.org/access23"]
@@ -1551,7 +1390,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs91" -> "http://example.org/access23" [color="gray",style="dashed",arrowhead="none"]
 "bn23" [shape="point",label=""]
 "http://example.org/dist_ai#3" -> "bn23" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.343367",arrowhead="none"]
+2018-03-19T11:45:44.992725",arrowhead="none"]
 "bn23" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn23" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access23" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1570,10 +1409,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.343367</TD>
-	</TR>
 </TABLE>>]
 "-attrs92" -> "http://example.org/disti#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign14" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign14",URL="http://example.org/assign14"]
@@ -1585,7 +1420,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs93" -> "http://example.org/assign14" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#3" -> "http://example.org/dist_ai#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:17.343367"]
+2018-03-19T11:45:44.993727"]
 "http://example.org/j#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#7",URL="http://example.org/j#7"]
 "-attrs94" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1595,10 +1430,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.437126</TD>
 	</TR>
 </TABLE>>]
 "-attrs94" -> "http://example.org/j#7" [color="gray",style="dashed",arrowhead="none"]
@@ -1612,7 +1443,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs95" -> "http://example.org/access24" [color="gray",style="dashed",arrowhead="none"]
 "bn24" [shape="point",label=""]
 "http://example.org/j#7" -> "bn24" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.437126",arrowhead="none"]
+2018-03-19T11:45:45.312574",arrowhead="none"]
 "bn24" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn24" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access24" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1630,10 +1461,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.530889</TD>
-	</TR>
 </TABLE>>]
 "-attrs96" -> "http://example.org/j#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access25" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access25",URL="http://example.org/access25"]
@@ -1646,7 +1473,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs97" -> "http://example.org/access25" [color="gray",style="dashed",arrowhead="none"]
 "bn25" [shape="point",label=""]
 "http://example.org/j#8" -> "bn25" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.530889",arrowhead="none"]
+2018-03-19T11:45:45.529150",arrowhead="none"]
 "bn25" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn25" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access25" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1664,10 +1491,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.624647</TD>
-	</TR>
 </TABLE>>]
 "-attrs98" -> "http://example.org/j#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access26" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access26",URL="http://example.org/access26"]
@@ -1680,7 +1503,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs99" -> "http://example.org/access26" [color="gray",style="dashed",arrowhead="none"]
 "bn26" [shape="point",label=""]
 "http://example.org/j#9" -> "bn26" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.624647",arrowhead="none"]
+2018-03-19T11:45:45.861032",arrowhead="none"]
 "bn26" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn26" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access26" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1698,10 +1521,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.702781</TD>
-	</TR>
 </TABLE>>]
 "-attrs100" -> "http://example.org/disti_ak#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access27" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access27",URL="http://example.org/access27"]
@@ -1714,7 +1533,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs101" -> "http://example.org/access27" [color="gray",style="dashed",arrowhead="none"]
 "bn27" [shape="point",label=""]
 "http://example.org/disti_ak#3" -> "bn27" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.702781",arrowhead="none"]
+2018-03-19T11:45:46.141779",arrowhead="none"]
 "bn27" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn27" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access27" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1733,10 +1552,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.702781</TD>
-	</TR>
 </TABLE>>]
 "-attrs102" -> "http://example.org/distk_aj#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access28" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access28",URL="http://example.org/access28"]
@@ -1749,7 +1564,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs103" -> "http://example.org/access28" [color="gray",style="dashed",arrowhead="none"]
 "bn28" [shape="point",label=""]
 "http://example.org/distk_aj#3" -> "bn28" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.702781",arrowhead="none"]
+2018-03-19T11:45:46.142782",arrowhead="none"]
 "bn28" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
 "bn28" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access28" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1768,10 +1583,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.702781</TD>
-	</TR>
 </TABLE>>]
 "-attrs104" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+3",URL="http://example.org/+3"]
@@ -1782,8 +1593,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs105" -> "http://example.org/+3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#3" -> "http://example.org/disti_ak#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#3" -> "http://example.org/distk_aj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#3" -> "http://example.org/disti_ak#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:46.143785"]
+"http://example.org/sum#3" -> "http://example.org/distk_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:46.143785"]
 "http://example.org/ikj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#3",URL="http://example.org/ikj#3"]
 "-attrs106" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1798,10 +1611,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.702781</TD>
-	</TR>
 </TABLE>>]
 "-attrs106" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign15",URL="http://example.org/assign15"]
@@ -1813,7 +1622,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs107" -> "http://example.org/assign15" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:17.702781"]
+2018-03-19T11:45:46.144788"]
 "http://example.org/disti_aj#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#4",URL="http://example.org/disti_aj#4"]
 "-attrs108" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1828,10 +1637,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.843421</TD>
-	</TR>
 </TABLE>>]
 "-attrs108" -> "http://example.org/disti_aj#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access29" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access29",URL="http://example.org/access29"]
@@ -1844,7 +1649,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs109" -> "http://example.org/access29" [color="gray",style="dashed",arrowhead="none"]
 "bn29" [shape="point",label=""]
 "http://example.org/disti_aj#4" -> "bn29" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:17.843421",arrowhead="none"]
+2018-03-19T11:45:46.567910",arrowhead="none"]
 "bn29" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn29" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access29" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1863,15 +1668,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:17.921557</TD>
-	</TR>
 </TABLE>>]
 "-attrs110" -> "http://example.org/disti_aj#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix0" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:17.921557"]
+2018-03-19T11:45:46.798524"]
 "http://example.org/assign16" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign16",URL="http://example.org/assign16"]
 "-attrs111" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1882,10 +1683,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs111" -> "http://example.org/assign16" [color="gray",style="dashed",arrowhead="none"]
 "bn30" [shape="point",label=""]
 "http://example.org/disti_aj#5" -> "bn30" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
-2018-03-12T13:12:17.921557",arrowhead="none"]
+2018-03-19T11:45:46.798524",arrowhead="none"]
 "bn30" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn30" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/assign16" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign16" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.797523"]
 "http://example.org/assign16" -> "http://example.org/j#9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign16" -> "http://example.org/disti_aj#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign16" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1903,10 +1705,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.015312</TD>
-	</TR>
 </TABLE>>]
 "-attrs112" -> "http://example.org/i#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access30" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access30",URL="http://example.org/access30"]
@@ -1919,7 +1717,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs113" -> "http://example.org/access30" [color="gray",style="dashed",arrowhead="none"]
 "bn31" [shape="point",label=""]
 "http://example.org/i#5" -> "bn31" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.015312",arrowhead="none"]
+2018-03-19T11:45:47.120444",arrowhead="none"]
 "bn31" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn31" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access30" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1937,10 +1735,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.093447</TD>
-	</TR>
 </TABLE>>]
 "-attrs114" -> "http://example.org/i#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access31" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access31",URL="http://example.org/access31"]
@@ -1953,7 +1747,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs115" -> "http://example.org/access31" [color="gray",style="dashed",arrowhead="none"]
 "bn32" [shape="point",label=""]
 "http://example.org/i#6" -> "bn32" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.093447",arrowhead="none"]
+2018-03-19T11:45:47.381170",arrowhead="none"]
 "bn32" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn32" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access31" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1971,10 +1765,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.171579</TD>
-	</TR>
 </TABLE>>]
 "-attrs116" -> "http://example.org/dist_ai#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access32" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access32",URL="http://example.org/access32"]
@@ -1987,7 +1777,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs117" -> "http://example.org/access32" [color="gray",style="dashed",arrowhead="none"]
 "bn33" [shape="point",label=""]
 "http://example.org/dist_ai#4" -> "bn33" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.171579",arrowhead="none"]
+2018-03-19T11:45:47.599654",arrowhead="none"]
 "bn33" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn33" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access32" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2006,10 +1796,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.171579</TD>
-	</TR>
 </TABLE>>]
 "-attrs118" -> "http://example.org/disti#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign17" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign17",URL="http://example.org/assign17"]
@@ -2021,7 +1807,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs119" -> "http://example.org/assign17" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#4" -> "http://example.org/dist_ai#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:18.171579"]
+2018-03-19T11:45:47.600657"]
 "http://example.org/j#10" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#10",URL="http://example.org/j#10"]
 "-attrs120" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2031,10 +1817,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.280966</TD>
 	</TR>
 </TABLE>>]
 "-attrs120" -> "http://example.org/j#10" [color="gray",style="dashed",arrowhead="none"]
@@ -2048,7 +1830,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs121" -> "http://example.org/access33" [color="gray",style="dashed",arrowhead="none"]
 "bn34" [shape="point",label=""]
 "http://example.org/j#10" -> "bn34" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.280966",arrowhead="none"]
+2018-03-19T11:45:47.946575",arrowhead="none"]
 "bn34" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn34" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access33" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2066,10 +1848,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.359100</TD>
-	</TR>
 </TABLE>>]
 "-attrs122" -> "http://example.org/disti_ak#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access34" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access34",URL="http://example.org/access34"]
@@ -2082,7 +1860,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs123" -> "http://example.org/access34" [color="gray",style="dashed",arrowhead="none"]
 "bn35" [shape="point",label=""]
 "http://example.org/disti_ak#4" -> "bn35" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.359100",arrowhead="none"]
+2018-03-19T11:45:48.170170",arrowhead="none"]
 "bn35" -> "http://example.org/disti#4" [color="darkgreen",style="dashed"]
 "bn35" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access34" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2101,10 +1879,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.359100</TD>
-	</TR>
 </TABLE>>]
 "-attrs124" -> "http://example.org/distk_aj#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access35" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access35",URL="http://example.org/access35"]
@@ -2117,7 +1891,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs125" -> "http://example.org/access35" [color="gray",style="dashed",arrowhead="none"]
 "bn36" [shape="point",label=""]
 "http://example.org/distk_aj#4" -> "bn36" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.359100",arrowhead="none"]
+2018-03-19T11:45:48.171174",arrowhead="none"]
 "bn36" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
 "bn36" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access35" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2136,10 +1910,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.359100</TD>
-	</TR>
 </TABLE>>]
 "-attrs126" -> "http://example.org/sum#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+4",URL="http://example.org/+4"]
@@ -2150,8 +1920,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs127" -> "http://example.org/+4" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#4" -> "http://example.org/disti_ak#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#4" -> "http://example.org/distk_aj#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#4" -> "http://example.org/disti_ak#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:48.172176"]
+"http://example.org/sum#4" -> "http://example.org/distk_aj#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:48.172176"]
 "http://example.org/ikj#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#4",URL="http://example.org/ikj#4"]
 "-attrs128" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2166,10 +1938,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.359100</TD>
-	</TR>
 </TABLE>>]
 "-attrs128" -> "http://example.org/ikj#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign18" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign18",URL="http://example.org/assign18"]
@@ -2181,7 +1949,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs129" -> "http://example.org/assign18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#4" -> "http://example.org/sum#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:18.359100"]
+2018-03-19T11:45:48.173179"]
 "http://example.org/disti_aj#6" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#6",URL="http://example.org/disti_aj#6"]
 "-attrs130" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2196,10 +1964,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.468547</TD>
-	</TR>
 </TABLE>>]
 "-attrs130" -> "http://example.org/disti_aj#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access36" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access36",URL="http://example.org/access36"]
@@ -2212,7 +1976,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs131" -> "http://example.org/access36" [color="gray",style="dashed",arrowhead="none"]
 "bn37" [shape="point",label=""]
 "http://example.org/disti_aj#6" -> "bn37" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.468547",arrowhead="none"]
+2018-03-19T11:45:48.591293",arrowhead="none"]
 "bn37" -> "http://example.org/disti#4" [color="darkgreen",style="dashed"]
 "bn37" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access36" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2231,10 +1995,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.593498</TD>
-	</TR>
 </TABLE>>]
 "-attrs132" -> "http://example.org/j#11" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access37" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access37",URL="http://example.org/access37"]
@@ -2247,7 +2007,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs133" -> "http://example.org/access37" [color="gray",style="dashed",arrowhead="none"]
 "bn38" [shape="point",label=""]
 "http://example.org/j#11" -> "bn38" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.593498",arrowhead="none"]
+2018-03-19T11:45:48.834071",arrowhead="none"]
 "bn38" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn38" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access37" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2265,10 +2025,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.671631</TD>
-	</TR>
 </TABLE>>]
 "-attrs134" -> "http://example.org/j#12" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access38" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access38",URL="http://example.org/access38"]
@@ -2281,7 +2037,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs135" -> "http://example.org/access38" [color="gray",style="dashed",arrowhead="none"]
 "bn39" [shape="point",label=""]
 "http://example.org/j#12" -> "bn39" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.671631",arrowhead="none"]
+2018-03-19T11:45:49.159801",arrowhead="none"]
 "bn39" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn39" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access38" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2299,10 +2055,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">k</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.749764</TD>
-	</TR>
 </TABLE>>]
 "-attrs136" -> "http://example.org/k#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access39" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access39",URL="http://example.org/access39"]
@@ -2315,7 +2067,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs137" -> "http://example.org/access39" [color="gray",style="dashed",arrowhead="none"]
 "bn40" [shape="point",label=""]
 "http://example.org/k#3" -> "bn40" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.749764",arrowhead="none"]
+2018-03-19T11:45:49.419490",arrowhead="none"]
 "bn40" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn40" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access39" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2333,10 +2085,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.827898</TD>
-	</TR>
 </TABLE>>]
 "-attrs138" -> "http://example.org/dist_ak#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access40" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access40",URL="http://example.org/access40"]
@@ -2349,7 +2097,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs139" -> "http://example.org/access40" [color="gray",style="dashed",arrowhead="none"]
 "bn41" [shape="point",label=""]
 "http://example.org/dist_ak#3" -> "bn41" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.827898",arrowhead="none"]
+2018-03-19T11:45:49.663139",arrowhead="none"]
 "bn41" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn41" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access40" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2368,10 +2116,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.827898</TD>
-	</TR>
 </TABLE>>]
 "-attrs140" -> "http://example.org/distk#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign19" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign19",URL="http://example.org/assign19"]
@@ -2383,7 +2127,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs141" -> "http://example.org/assign19" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#3" -> "http://example.org/dist_ak#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:18.827898"]
+2018-03-19T11:45:49.664142"]
 "http://example.org/i#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#7",URL="http://example.org/i#7"]
 "-attrs142" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2393,10 +2137,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:18.942964</TD>
 	</TR>
 </TABLE>>]
 "-attrs142" -> "http://example.org/i#7" [color="gray",style="dashed",arrowhead="none"]
@@ -2410,7 +2150,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs143" -> "http://example.org/access41" [color="gray",style="dashed",arrowhead="none"]
 "bn42" [shape="point",label=""]
 "http://example.org/i#7" -> "bn42" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:18.942964",arrowhead="none"]
+2018-03-19T11:45:50.048163",arrowhead="none"]
 "bn42" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn42" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access41" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2428,10 +2168,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.021100</TD>
-	</TR>
 </TABLE>>]
 "-attrs144" -> "http://example.org/dist_ai#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access42" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access42",URL="http://example.org/access42"]
@@ -2444,7 +2180,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs145" -> "http://example.org/access42" [color="gray",style="dashed",arrowhead="none"]
 "bn43" [shape="point",label=""]
 "http://example.org/dist_ai#5" -> "bn43" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.021100",arrowhead="none"]
+2018-03-19T11:45:50.299832",arrowhead="none"]
 "bn43" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn43" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access42" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2463,10 +2199,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.021100</TD>
-	</TR>
 </TABLE>>]
 "-attrs146" -> "http://example.org/disti#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign20" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign20",URL="http://example.org/assign20"]
@@ -2478,7 +2210,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs147" -> "http://example.org/assign20" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#5" -> "http://example.org/dist_ai#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:19.021100"]
+2018-03-19T11:45:50.300836"]
 "http://example.org/j#13" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#13",URL="http://example.org/j#13"]
 "-attrs148" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2488,10 +2220,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.114860</TD>
 	</TR>
 </TABLE>>]
 "-attrs148" -> "http://example.org/j#13" [color="gray",style="dashed",arrowhead="none"]
@@ -2505,7 +2233,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs149" -> "http://example.org/access43" [color="gray",style="dashed",arrowhead="none"]
 "bn44" [shape="point",label=""]
 "http://example.org/j#13" -> "bn44" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.114860",arrowhead="none"]
+2018-03-19T11:45:50.648761",arrowhead="none"]
 "bn44" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn44" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access43" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2523,10 +2251,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.271125</TD>
-	</TR>
 </TABLE>>]
 "-attrs150" -> "http://example.org/j#14" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access44" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access44",URL="http://example.org/access44"]
@@ -2539,7 +2263,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs151" -> "http://example.org/access44" [color="gray",style="dashed",arrowhead="none"]
 "bn45" [shape="point",label=""]
 "http://example.org/j#14" -> "bn45" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.271125",arrowhead="none"]
+2018-03-19T11:45:50.896419",arrowhead="none"]
 "bn45" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn45" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access44" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2557,10 +2281,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.349261</TD>
-	</TR>
 </TABLE>>]
 "-attrs152" -> "http://example.org/disti_ak#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access45" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access45",URL="http://example.org/access45"]
@@ -2573,7 +2293,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs153" -> "http://example.org/access45" [color="gray",style="dashed",arrowhead="none"]
 "bn46" [shape="point",label=""]
 "http://example.org/disti_ak#5" -> "bn46" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.349261",arrowhead="none"]
+2018-03-19T11:45:51.145085",arrowhead="none"]
 "bn46" -> "http://example.org/disti#5" [color="darkgreen",style="dashed"]
 "bn46" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access45" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2592,10 +2312,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.349261</TD>
-	</TR>
 </TABLE>>]
 "-attrs154" -> "http://example.org/distk_aj#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access46" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access46",URL="http://example.org/access46"]
@@ -2608,7 +2324,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs155" -> "http://example.org/access46" [color="gray",style="dashed",arrowhead="none"]
 "bn47" [shape="point",label=""]
 "http://example.org/distk_aj#5" -> "bn47" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.349261",arrowhead="none"]
+2018-03-19T11:45:51.146082",arrowhead="none"]
 "bn47" -> "http://example.org/distk#3" [color="darkgreen",style="dashed"]
 "bn47" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access46" -> "http://example.org/distk#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2627,10 +2343,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.349261</TD>
-	</TR>
 </TABLE>>]
 "-attrs156" -> "http://example.org/sum#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+5",URL="http://example.org/+5"]
@@ -2641,8 +2353,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs157" -> "http://example.org/+5" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#5" -> "http://example.org/disti_ak#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#5" -> "http://example.org/distk_aj#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#5" -> "http://example.org/disti_ak#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:51.147085"]
+"http://example.org/sum#5" -> "http://example.org/distk_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:51.147085"]
 "http://example.org/ikj#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#5",URL="http://example.org/ikj#5"]
 "-attrs158" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2657,10 +2371,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.349261</TD>
-	</TR>
 </TABLE>>]
 "-attrs158" -> "http://example.org/ikj#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign21" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign21",URL="http://example.org/assign21"]
@@ -2672,7 +2382,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs159" -> "http://example.org/assign21" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#5" -> "http://example.org/sum#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:19.349261"]
+2018-03-19T11:45:51.148088"]
 "http://example.org/disti_aj#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#7",URL="http://example.org/disti_aj#7"]
 "-attrs160" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2687,10 +2397,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.474305</TD>
-	</TR>
 </TABLE>>]
 "-attrs160" -> "http://example.org/disti_aj#7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access47" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access47",URL="http://example.org/access47"]
@@ -2703,7 +2409,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs161" -> "http://example.org/access47" [color="gray",style="dashed",arrowhead="none"]
 "bn48" [shape="point",label=""]
 "http://example.org/disti_aj#7" -> "bn48" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.474305",arrowhead="none"]
+2018-03-19T11:45:51.615327",arrowhead="none"]
 "bn48" -> "http://example.org/disti#5" [color="darkgreen",style="dashed"]
 "bn48" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access47" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2722,10 +2428,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.552409</TD>
-	</TR>
 </TABLE>>]
 "-attrs162" -> "http://example.org/j#15" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access48" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access48",URL="http://example.org/access48"]
@@ -2738,7 +2440,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs163" -> "http://example.org/access48" [color="gray",style="dashed",arrowhead="none"]
 "bn49" [shape="point",label=""]
 "http://example.org/j#15" -> "bn49" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.552409",arrowhead="none"]
+2018-03-19T11:45:51.894139",arrowhead="none"]
 "bn49" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn49" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access48" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2756,10 +2458,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.630538</TD>
-	</TR>
 </TABLE>>]
 "-attrs164" -> "http://example.org/i#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access49" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access49",URL="http://example.org/access49"]
@@ -2772,7 +2470,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs165" -> "http://example.org/access49" [color="gray",style="dashed",arrowhead="none"]
 "bn50" [shape="point",label=""]
 "http://example.org/i#8" -> "bn50" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.630538",arrowhead="none"]
+2018-03-19T11:45:52.196935",arrowhead="none"]
 "bn50" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn50" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access49" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2790,10 +2488,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">dist[i]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.724298</TD>
-	</TR>
 </TABLE>>]
 "-attrs166" -> "http://example.org/dist_ai#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access50" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access50",URL="http://example.org/access50"]
@@ -2806,7 +2500,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs167" -> "http://example.org/access50" [color="gray",style="dashed",arrowhead="none"]
 "bn51" [shape="point",label=""]
 "http://example.org/dist_ai#6" -> "bn51" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.724298",arrowhead="none"]
+2018-03-19T11:45:52.526750",arrowhead="none"]
 "bn51" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
 "bn51" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access50" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2825,10 +2519,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.724298</TD>
-	</TR>
 </TABLE>>]
 "-attrs168" -> "http://example.org/disti#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign22" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign22",URL="http://example.org/assign22"]
@@ -2840,7 +2530,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs169" -> "http://example.org/assign22" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#6" -> "http://example.org/dist_ai#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:19.724298"]
+2018-03-19T11:45:52.527756"]
 "http://example.org/j#16" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#16",URL="http://example.org/j#16"]
 "-attrs170" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2850,10 +2540,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.818058</TD>
 	</TR>
 </TABLE>>]
 "-attrs170" -> "http://example.org/j#16" [color="gray",style="dashed",arrowhead="none"]
@@ -2867,7 +2553,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs171" -> "http://example.org/access51" [color="gray",style="dashed",arrowhead="none"]
 "bn52" [shape="point",label=""]
 "http://example.org/j#16" -> "bn52" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.818058",arrowhead="none"]
+2018-03-19T11:45:52.919796",arrowhead="none"]
 "bn52" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn52" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access51" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2885,10 +2571,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.896192</TD>
-	</TR>
 </TABLE>>]
 "-attrs172" -> "http://example.org/disti_ak#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access52" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access52",URL="http://example.org/access52"]
@@ -2901,7 +2583,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs173" -> "http://example.org/access52" [color="gray",style="dashed",arrowhead="none"]
 "bn53" [shape="point",label=""]
 "http://example.org/disti_ak#6" -> "bn53" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.896192",arrowhead="none"]
+2018-03-19T11:45:53.139380",arrowhead="none"]
 "bn53" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn53" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access52" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2920,10 +2602,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.896192</TD>
-	</TR>
 </TABLE>>]
 "-attrs174" -> "http://example.org/distk_aj#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access53" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access53",URL="http://example.org/access53"]
@@ -2936,7 +2614,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs175" -> "http://example.org/access53" [color="gray",style="dashed",arrowhead="none"]
 "bn54" [shape="point",label=""]
 "http://example.org/distk_aj#6" -> "bn54" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:19.896192",arrowhead="none"]
+2018-03-19T11:45:53.140383",arrowhead="none"]
 "bn54" -> "http://example.org/distk#3" [color="darkgreen",style="dashed"]
 "bn54" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access53" -> "http://example.org/distk#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2955,10 +2633,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.896192</TD>
-	</TR>
 </TABLE>>]
 "-attrs176" -> "http://example.org/sum#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+6",URL="http://example.org/+6"]
@@ -2969,8 +2643,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs177" -> "http://example.org/+6" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/sum#6" -> "http://example.org/disti_ak#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#6" -> "http://example.org/distk_aj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#6" -> "http://example.org/disti_ak#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:53.140454"]
+"http://example.org/sum#6" -> "http://example.org/distk_aj#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+2018-03-19T11:45:53.140454"]
 "http://example.org/ikj#6" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#6",URL="http://example.org/ikj#6"]
 "-attrs178" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2985,10 +2661,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">ikj</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:19.896192</TD>
-	</TR>
 </TABLE>>]
 "-attrs178" -> "http://example.org/ikj#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign23" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign23",URL="http://example.org/assign23"]
@@ -3000,7 +2672,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs179" -> "http://example.org/assign23" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#6" -> "http://example.org/sum#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:19.896192"]
+2018-03-19T11:45:53.141385"]
 "http://example.org/disti_aj#8" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti_aj#8",URL="http://example.org/disti_aj#8"]
 "-attrs180" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3015,10 +2687,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.052460</TD>
-	</TR>
 </TABLE>>]
 "-attrs180" -> "http://example.org/disti_aj#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access54" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access54",URL="http://example.org/access54"]
@@ -3031,7 +2699,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs181" -> "http://example.org/access54" [color="gray",style="dashed",arrowhead="none"]
 "bn55" [shape="point",label=""]
 "http://example.org/disti_aj#8" -> "bn55" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.052460",arrowhead="none"]
+2018-03-19T11:45:53.553481",arrowhead="none"]
 "bn55" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn55" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access54" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3050,15 +2718,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">disti[j]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.161845</TD>
-	</TR>
 </TABLE>>]
 "-attrs182" -> "http://example.org/disti_aj#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix1" -> "http://example.org/disti_aj#9" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:20.161845"]
+2018-03-19T11:45:53.787100"]
 "http://example.org/assign24" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign24",URL="http://example.org/assign24"]
 "-attrs183" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3069,10 +2733,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs183" -> "http://example.org/assign24" [color="gray",style="dashed",arrowhead="none"]
 "bn56" [shape="point",label=""]
 "http://example.org/disti_aj#9" -> "bn56" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
-2018-03-12T13:12:20.161845",arrowhead="none"]
+2018-03-19T11:45:53.787100",arrowhead="none"]
 "bn56" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn56" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
-"http://example.org/assign24" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign24" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.786099"]
 "http://example.org/assign24" -> "http://example.org/j#16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign24" -> "http://example.org/disti_aj#8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign24" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3090,10 +2755,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.302485</TD>
-	</TR>
 </TABLE>>]
 "-attrs184" -> "http://example.org/j#17" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access55" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access55",URL="http://example.org/access55"]
@@ -3106,7 +2767,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs185" -> "http://example.org/access55" [color="gray",style="dashed",arrowhead="none"]
 "bn57" [shape="point",label=""]
 "http://example.org/j#17" -> "bn57" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.302485",arrowhead="none"]
+2018-03-19T11:45:54.127005",arrowhead="none"]
 "bn57" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn57" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access55" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3124,10 +2785,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">j</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.396247</TD>
-	</TR>
 </TABLE>>]
 "-attrs186" -> "http://example.org/j#18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access56" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access56",URL="http://example.org/access56"]
@@ -3140,7 +2797,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs187" -> "http://example.org/access56" [color="gray",style="dashed",arrowhead="none"]
 "bn58" [shape="point",label=""]
 "http://example.org/j#18" -> "bn58" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.396247",arrowhead="none"]
+2018-03-19T11:45:54.358621",arrowhead="none"]
 "bn58" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn58" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access56" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3158,10 +2815,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">i</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.474383</TD>
-	</TR>
 </TABLE>>]
 "-attrs188" -> "http://example.org/i#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access57" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access57",URL="http://example.org/access57"]
@@ -3174,7 +2827,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs189" -> "http://example.org/access57" [color="gray",style="dashed",arrowhead="none"]
 "bn59" [shape="point",label=""]
 "http://example.org/i#9" -> "bn59" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.474383",arrowhead="none"]
+2018-03-19T11:45:54.575200",arrowhead="none"]
 "bn59" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn59" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access57" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3192,10 +2845,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">result[0]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.583767</TD>
-	</TR>
 </TABLE>>]
 "-attrs190" -> "http://example.org/result_a0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access58" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access58",URL="http://example.org/access58"]
@@ -3208,7 +2857,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs191" -> "http://example.org/access58" [color="gray",style="dashed",arrowhead="none"]
 "bn60" [shape="point",label=""]
 "http://example.org/result_a0" -> "bn60" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.583767",arrowhead="none"]
+2018-03-19T11:45:54.846918",arrowhead="none"]
 "bn60" -> "http://example.org/result" [color="darkgreen",style="dashed"]
 "bn60" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access58" -> "http://example.org/result" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3227,10 +2876,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">result[0][2]</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:20.583767</TD>
-	</TR>
 </TABLE>>]
 "-attrs192" -> "http://example.org/result_a02" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/access59" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access59",URL="http://example.org/access59"]
@@ -3243,7 +2888,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "-attrs193" -> "http://example.org/access59" [color="gray",style="dashed",arrowhead="none"]
 "bn61" [shape="point",label=""]
 "http://example.org/result_a02" -> "bn61" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-12T13:12:20.583767",arrowhead="none"]
+2018-03-19T11:45:54.847921",arrowhead="none"]
 "bn61" -> "http://example.org/result_a0" [color="darkgreen",style="dashed"]
 "bn61" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access59" -> "http://example.org/result_a0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3257,185 +2902,366 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs194" -> "http://example.org/print1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/print1" -> "http://example.org/result_a02" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign23" -> "http://example.org/sum#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access59" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access14" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access47" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access41" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access7" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+3" -> "http://example.org/disti_ak#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+2" -> "http://example.org/disti_ak#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access39" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access48" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign6" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+5" -> "http://example.org/distk_aj#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access2" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign14" -> "http://example.org/dist_ai#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access18" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access40" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+3" -> "http://example.org/distk_aj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access1" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign21" -> "http://example.org/sum#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access10" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+4" -> "http://example.org/disti_ak#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access27" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign8" -> "http://example.org/dist_ai" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access26" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign5" -> "http://example.org/len_dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access22" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign3" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign17" -> "http://example.org/dist_ai#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access15" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access34" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+5" -> "http://example.org/disti_ak#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access30" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access3" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access31" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign20" -> "http://example.org/dist_ai#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access42" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access32" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign2" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+1" -> "http://example.org/distk_aj" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+6" -> "http://example.org/distk_aj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access46" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access50" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access9" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+6" -> "http://example.org/disti_ak#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access24" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access45" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+4" -> "http://example.org/distk_aj#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign10" -> "http://example.org/dist_ai#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access52" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access13" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access23" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign22" -> "http://example.org/dist_ai#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access37" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access58" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access19" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access56" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access55" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access4" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access54" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access28" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access16" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access33" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access43" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access20" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign11" -> "http://example.org/sum#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access36" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign9" -> "http://example.org/sum" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access11" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access35" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+2" -> "http://example.org/distk_aj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign4" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access53" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign7" -> "http://example.org/dist_ak" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access51" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access12" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access25" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access5" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access44" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access29" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign13" -> "http://example.org/dist_ak#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign19" -> "http://example.org/dist_ak#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access57" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access17" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+1" -> "http://example.org/disti_ak" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access21" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign18" -> "http://example.org/sum#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access38" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign15" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access49" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access6" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access8" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/i#3" -> "http://example.org/access12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk#3" -> "http://example.org/assign19" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/k#3" -> "http://example.org/access39" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#2" -> "http://example.org/assign10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak#4" -> "http://example.org/access34" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#4" -> "http://example.org/assign18" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#3" -> "http://example.org/assign14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#2" -> "http://example.org/access4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#6" -> "http://example.org/access31" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#15" -> "http://example.org/access48" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum" -> "http://example.org/+1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#7" -> "http://example.org/access47" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj#2" -> "http://example.org/access17" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj#4" -> "http://example.org/access35" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai#5" -> "http://example.org/access42" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#6" -> "http://example.org/assign23" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ak" -> "http://example.org/access2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#9" -> "http://example.org/assign24" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai#4" -> "http://example.org/access32" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/result_a0" -> "http://example.org/access58" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai#2" -> "http://example.org/access13" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#3" -> "http://example.org/+3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i" -> "http://example.org/access3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#4" -> "http://example.org/access29" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#3" -> "http://example.org/assign15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ak#2" -> "http://example.org/access21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj#3" -> "http://example.org/access28" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#4" -> "http://example.org/assign17" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#6" -> "http://example.org/access36" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai" -> "http://example.org/access5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#6" -> "http://example.org/assign22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#8" -> "http://example.org/access49" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#5" -> "http://example.org/access15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj#5" -> "http://example.org/access46" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#10" -> "http://example.org/access33" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#5" -> "http://example.org/assign16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#9" -> "http://example.org/access57" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak" -> "http://example.org/access9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/lastrow" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj" -> "http://example.org/access11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj" -> "http://example.org/access10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak#6" -> "http://example.org/access52" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#2" -> "http://example.org/access7" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai#3" -> "http://example.org/access23" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#2" -> "http://example.org/+2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#5" -> "http://example.org/access30" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#14" -> "http://example.org/access44" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#4" -> "http://example.org/+4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#16" -> "http://example.org/access51" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#5" -> "http://example.org/assign21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#3" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk#2" -> "http://example.org/assign13" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#5" -> "http://example.org/+5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#6" -> "http://example.org/+6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#13" -> "http://example.org/access43" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#2" -> "http://example.org/assign11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak#5" -> "http://example.org/access45" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#3" -> "http://example.org/access8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#8" -> "http://example.org/access54" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#17" -> "http://example.org/access55" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak#3" -> "http://example.org/access27" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#6" -> "http://example.org/access19" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ak#3" -> "http://example.org/access40" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#7" -> "http://example.org/access41" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti" -> "http://example.org/assign8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#8" -> "http://example.org/access25" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk" -> "http://example.org/assign7" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#7" -> "http://example.org/access24" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#5" -> "http://example.org/assign20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/result" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/indexes" -> "http://example.org/assign6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/k#2" -> "http://example.org/access20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/result_a02" -> "http://example.org/access59" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk_aj#6" -> "http://example.org/access53" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_ak#2" -> "http://example.org/access16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j" -> "http://example.org/access6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist_ai#6" -> "http://example.org/access50" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#9" -> "http://example.org/access26" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti_aj#2" -> "http://example.org/access18" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/nodes" -> "http://example.org/assign5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#12" -> "http://example.org/access38" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#18" -> "http://example.org/access56" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj" -> "http://example.org/assign9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/i#4" -> "http://example.org/access22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#11" -> "http://example.org/access37" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/k" -> "http://example.org/access1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/j#4" -> "http://example.org/access14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/access30" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:47.120444"]
+"http://example.org/access55" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:54.127005"]
+"http://example.org/assign17" -> "http://example.org/dist_ai#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:47.600657"]
+"http://example.org/access31" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:47.381170"]
+"http://example.org/access8" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.028185"]
+"http://example.org/access43" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:50.648761"]
+"http://example.org/assign15" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.144788"]
+"http://example.org/assign18" -> "http://example.org/sum#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.173179"]
+"http://example.org/assign11" -> "http://example.org/sum#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.952305"]
+"http://example.org/assign9" -> "http://example.org/sum" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.242756"]
+"http://example.org/access4" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:39.943301"]
+"http://example.org/access19" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:43.911851"]
+"http://example.org/+5" -> "http://example.org/distk_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.147085"]
+"http://example.org/access11" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.626776"]
+"http://example.org/+2" -> "http://example.org/disti_ak#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.951299"]
+"http://example.org/access28" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.142782"]
+"http://example.org/access40" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:49.663139"]
+"http://example.org/access56" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:54.358621"]
+"http://example.org/access7" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:40.726383"]
+"http://example.org/assign20" -> "http://example.org/dist_ai#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:50.300836"]
+"http://example.org/+6" -> "http://example.org/distk_aj#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.140454"]
+"http://example.org/+5" -> "http://example.org/disti_ak#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.147085"]
+"http://example.org/assign8" -> "http://example.org/dist_ai" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:40.201721"]
+"http://example.org/assign14" -> "http://example.org/dist_ai#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.993727"]
+"http://example.org/access21" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.445269"]
+"http://example.org/assign6" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:38.709024"]
+"http://example.org/+3" -> "http://example.org/distk_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.143785"]
+"http://example.org/access36" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.591293"]
+"http://example.org/assign21" -> "http://example.org/sum#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.148088"]
+"http://example.org/access9" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.239749"]
+"http://example.org/access26" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:45.861032"]
+"http://example.org/access50" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:52.526750"]
+"http://example.org/+1" -> "http://example.org/disti_ak" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.241753"]
+"http://example.org/access37" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.834071"]
+"http://example.org/assign7" -> "http://example.org/dist_ak" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:39.360753"]
+"http://example.org/access13" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.131120"]
+"http://example.org/assign3" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:37.729416"]
+"http://example.org/access35" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.171174"]
+"http://example.org/+4" -> "http://example.org/disti_ak#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.172176"]
+"http://example.org/assign23" -> "http://example.org/sum#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.141385"]
+"http://example.org/+3" -> "http://example.org/disti_ak#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.143785"]
+"http://example.org/access6" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:40.505797"]
+"http://example.org/access12" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.904516"]
+"http://example.org/access58" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:54.846918"]
+"http://example.org/access17" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.950297"]
+"http://example.org/access29" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.567910"]
+"http://example.org/access14" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.441943"]
+"http://example.org/assign10" -> "http://example.org/dist_ai#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.132121"]
+"http://example.org/access32" -> "http://example.org/lastrow" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:47.599654"]
+"http://example.org/access57" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:54.575200"]
+"http://example.org/access59" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:54.847921"]
+"http://example.org/access5" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:40.200988"]
+"http://example.org/+2" -> "http://example.org/distk_aj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.951299"]
+"http://example.org/access49" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:52.196935"]
+"http://example.org/assign22" -> "http://example.org/dist_ai#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:52.527756"]
+"http://example.org/access20" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.147479"]
+"http://example.org/assign19" -> "http://example.org/dist_ak#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:49.664142"]
+"http://example.org/+1" -> "http://example.org/distk_aj" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.241753"]
+"http://example.org/assign13" -> "http://example.org/dist_ak#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.446271"]
+"http://example.org/access3" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:39.731865"]
+"http://example.org/access54" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.553481"]
+"http://example.org/access1" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:39.094045"]
+"http://example.org/access2" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:39.359750"]
+"http://example.org/access27" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:46.141779"]
+"http://example.org/access51" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:52.919796"]
+"http://example.org/access53" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.140383"]
+"http://example.org/access41" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:50.048163"]
+"http://example.org/access38" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:49.159801"]
+"http://example.org/access45" -> "http://example.org/disti_aj#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.145085"]
+"http://example.org/access10" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:41.240752"]
+"http://example.org/access46" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.146082"]
+"http://example.org/access47" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.615327"]
+"http://example.org/access52" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.139380"]
+"http://example.org/assign4" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:37.730419"]
+"http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:36.284574"]
+"http://example.org/access42" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:50.299832"]
+"http://example.org/access18" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:43.377431"]
+"http://example.org/assign2" -> "http://example.org/list" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:36.822003"]
+"http://example.org/access22" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.718996"]
+"http://example.org/access33" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:47.946575"]
+"http://example.org/+6" -> "http://example.org/disti_ak#6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:53.140454"]
+"http://example.org/access48" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:51.894139"]
+"http://example.org/access34" -> "http://example.org/disti_aj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.170170"]
+"http://example.org/access24" -> "http://example.org/range_nodes0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:45.312574"]
+"http://example.org/access16" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.949294"]
+"http://example.org/access15" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:42.722690"]
+"http://example.org/access23" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:44.992725"]
+"http://example.org/+4" -> "http://example.org/distk_aj#4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:48.172176"]
+"http://example.org/access25" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:45.529150"]
+"http://example.org/assign5" -> "http://example.org/len_dist" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:38.467377"]
+"http://example.org/access39" -> "http://example.org/range_nodes2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:49.419490"]
+"http://example.org/access44" -> "http://example.org/range_nodes1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2018-03-19T11:45:50.896419"]
+"http://example.org/i#2" -> "http://example.org/access4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:39.943301"]
+"http://example.org/result" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:37.730419"]
+"http://example.org/i#7" -> "http://example.org/access41" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:50.048163"]
+"http://example.org/dist_ai#5" -> "http://example.org/access42" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:50.299832"]
+"http://example.org/disti_ak#2" -> "http://example.org/access16" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.949294"]
+"http://example.org/ikj#4" -> "http://example.org/assign18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.173179"]
+"http://example.org/disti_aj#7" -> "http://example.org/access47" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.615327"]
+"http://example.org/disti_aj#3" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:43.615063"]
+"http://example.org/j#17" -> "http://example.org/access55" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:54.127005"]
+"http://example.org/i" -> "http://example.org/access3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:39.731865"]
+"http://example.org/sum#4" -> "http://example.org/+4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.172176"]
+"http://example.org/j#3" -> "http://example.org/access8" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.028185"]
+"http://example.org/sum#5" -> "http://example.org/+5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.147085"]
+"http://example.org/nodes" -> "http://example.org/assign5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.467377"]
+"http://example.org/disti_aj#9" -> "http://example.org/assign24" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.787100"]
+"http://example.org/disti_aj#2" -> "http://example.org/access18" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:43.377431"]
+"http://example.org/i#4" -> "http://example.org/access22" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.718996"]
+"http://example.org/dist_ai#4" -> "http://example.org/access32" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:47.599654"]
+"http://example.org/disti#5" -> "http://example.org/assign20" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:50.300836"]
+"http://example.org/distk" -> "http://example.org/assign7" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:39.360753"]
+"http://example.org/j#4" -> "http://example.org/access14" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.441943"]
+"http://example.org/distk_aj#3" -> "http://example.org/access28" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.142782"]
+"http://example.org/j#11" -> "http://example.org/access37" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.834071"]
+"http://example.org/disti_ak" -> "http://example.org/access9" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.239749"]
+"http://example.org/disti_ak#3" -> "http://example.org/access27" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.141779"]
+"http://example.org/dist_ai#6" -> "http://example.org/access50" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:52.526750"]
+"http://example.org/j#18" -> "http://example.org/access56" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:54.358621"]
+"http://example.org/j#13" -> "http://example.org/access43" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:50.648761"]
+"http://example.org/j#7" -> "http://example.org/access24" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:45.312574"]
+"http://example.org/dist_ai" -> "http://example.org/access5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:40.200988"]
+"http://example.org/i#6" -> "http://example.org/access31" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:47.381170"]
+"http://example.org/disti#3" -> "http://example.org/assign14" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.993727"]
+"http://example.org/disti_aj" -> "http://example.org/access11" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.626776"]
+"http://example.org/ikj#5" -> "http://example.org/assign21" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.148088"]
+"http://example.org/sum#2" -> "http://example.org/+2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.951299"]
+"http://example.org/disti_aj#6" -> "http://example.org/access36" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.591293"]
+"http://example.org/result_a02" -> "http://example.org/access59" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:54.847921"]
+"http://example.org/j#8" -> "http://example.org/access25" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:45.529150"]
+"http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:36.284574"]
+"http://example.org/disti#4" -> "http://example.org/assign17" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:47.600657"]
+"http://example.org/dist_ak" -> "http://example.org/access2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:39.359750"]
+"http://example.org/dist_ai#3" -> "http://example.org/access23" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.992725"]
+"http://example.org/j#5" -> "http://example.org/access15" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.722690"]
+"http://example.org/distk_aj#5" -> "http://example.org/access46" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.146082"]
+"http://example.org/k" -> "http://example.org/access1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:39.094045"]
+"http://example.org/ikj#2" -> "http://example.org/assign11" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.952305"]
+"http://example.org/distk#3" -> "http://example.org/assign19" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:49.664142"]
+"http://example.org/distk_aj#6" -> "http://example.org/access53" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.140383"]
+"http://example.org/ikj#6" -> "http://example.org/assign23" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.141385"]
+"http://example.org/dist_ak#3" -> "http://example.org/access40" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:49.663139"]
+"http://example.org/disti_ak#4" -> "http://example.org/access34" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.170170"]
+"http://example.org/disti#6" -> "http://example.org/assign22" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:52.527756"]
+"http://example.org/j#15" -> "http://example.org/access48" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.894139"]
+"http://example.org/dist" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:37.729416"]
+"http://example.org/disti_aj#4" -> "http://example.org/access29" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.567910"]
+"http://example.org/dist_ai#2" -> "http://example.org/access13" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.131120"]
+"http://example.org/k#2" -> "http://example.org/access20" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.147479"]
+"http://example.org/j#2" -> "http://example.org/access7" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:40.726383"]
+"http://example.org/sum#6" -> "http://example.org/+6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.140454"]
+"http://example.org/indexes" -> "http://example.org/assign6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.709024"]
+"http://example.org/k#3" -> "http://example.org/access39" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:49.419490"]
+"http://example.org/distk_aj#4" -> "http://example.org/access35" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:48.171174"]
+"http://example.org/dist_ak#2" -> "http://example.org/access21" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.445269"]
+"http://example.org/disti_aj#8" -> "http://example.org/access54" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.553481"]
+"http://example.org/j#16" -> "http://example.org/access51" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:52.919796"]
+"http://example.org/disti" -> "http://example.org/assign8" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:40.201721"]
+"http://example.org/distk_aj" -> "http://example.org/access10" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.240752"]
+"http://example.org/sum#3" -> "http://example.org/+3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.143785"]
+"http://example.org/disti_ak#6" -> "http://example.org/access52" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:53.139380"]
+"http://example.org/ikj#3" -> "http://example.org/assign15" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.144788"]
+"http://example.org/distk_aj#2" -> "http://example.org/access17" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.950297"]
+"http://example.org/j#6" -> "http://example.org/access19" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:43.911851"]
+"http://example.org/j#14" -> "http://example.org/access44" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:50.896419"]
+"http://example.org/disti_aj#5" -> "http://example.org/assign16" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:46.798524"]
+"http://example.org/distk#2" -> "http://example.org/assign13" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:44.446271"]
+"http://example.org/sum" -> "http://example.org/+1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.241753"]
+"http://example.org/disti#2" -> "http://example.org/assign10" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:42.132121"]
+"http://example.org/lastrow" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:36.822003"]
+"http://example.org/i#8" -> "http://example.org/access49" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:52.196935"]
+"http://example.org/i#9" -> "http://example.org/access57" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:54.575200"]
+"http://example.org/j#10" -> "http://example.org/access33" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:47.946575"]
+"http://example.org/i#5" -> "http://example.org/access30" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:47.120444"]
+"http://example.org/i#3" -> "http://example.org/access12" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.904516"]
+"http://example.org/j" -> "http://example.org/access6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:40.505797"]
+"http://example.org/disti_ak#5" -> "http://example.org/access45" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:51.145085"]
+"http://example.org/ikj" -> "http://example.org/assign9" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:41.242756"]
+"http://example.org/j#12" -> "http://example.org/access38" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:49.159801"]
+"http://example.org/j#9" -> "http://example.org/access26" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:45.861032"]
+"http://example.org/result_a0" -> "http://example.org/access58" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+2018-03-19T11:45:54.846918"]
 }

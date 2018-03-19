@@ -24,6 +24,21 @@ def get_item(ent, pos):
     follow_value = prov.VALUES[follow_ref]
     return prov.DICTS[follow_value][str(pos)]
 
+def use(ents, extra={}, checkpoint=None):
+    checkpoint = checkpoint or time()
+    return prov.Use(*ents, attrs=dict(
+        **{prov.NAMESPACE + "checkpoint": checkpoint},
+        **extra
+    ))
+
+def generate(ents, extra={}, checkpoint=None):
+    checkpoint = checkpoint or time()
+    return prov.Generation(*ents, attrs=dict(
+        **{prov.NAMESPACE + "checkpoint": checkpoint},
+        **extra
+    ))
+
+
 # Line 1
 # Input graph
 
@@ -115,8 +130,8 @@ with prov.desc("L4 - list definition / assign", line=4):
 nodes = len(dist)
 with prov.desc("L10 - func call / assign", line=10):
     e_ret = prov.entity("len_dist", repr(nodes), "eval", "len(dist)", attrs=HIDE)
+    prov.activity("call", [], [use([e_dist], HIDE)], [e_ret], label="len", attrs=HIDE)
     prov.specializationOf(e_ret, prov.version(e_ret, time(), attrs=SPECIFIC), attrs=SPECIFIC)
-    prov.activity("call", [], [e_dist], [e_ret], label="len", attrs=HIDE)
 
     e_nodes = prov.entity("nodes", repr(nodes), "name", "nodes", attrs=HIDE)
     prov.activity("assign", [prov.RefDerivation(time(), e_nodes, e_ret, attrs=HIDE)], attrs=HIDE)
@@ -220,7 +235,7 @@ for k in indexes:
                 disti[j] = ikj
                 with prov.desc("L21 - part assign with propagation", line=21):
                     derived = []
-                    used = [prov.Use(e_disti, attrs=SPECIFIC), e_j]
+                    used = [use([e_disti], SPECIFIC), e_j]
                     used += ucond # from if
                     generated = []
 

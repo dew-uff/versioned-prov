@@ -2,15 +2,15 @@ prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
 prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
 // old
-entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
-entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
+entity(m, [value="10000", type="script:name", label="m"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
 entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", version:checkpoint="5"])
 hadMember(list, m, [type="version:Insertion", version:key="0", version:checkpoint="5"])
 hadMember(list, sum, [type="version:Insertion", version:key="1", version:checkpoint="5"])
 hadMember(list, m, [type="version:Insertion", version:key="2", version:checkpoint="5"])
 
-entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 wasDerivedFrom(d, list, -, -, -, [type="version:Reference", version:checkpoint="6"])
 entity(1, [value="1", type="script:literal", version:checkpoint="3"])
 
@@ -18,7 +18,7 @@ entity(1, [value="1", type="script:literal", version:checkpoint="3"])
 // new
 entity(3, [value="3", type="script:literal", version:checkpoint="13"])
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]", version:checkpoint="15"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 hadMember(list, d_ac1, [type="version:Insertion", version:key="1", version:checkpoint="15"])
 
 activity(assign4, [type="script:assign"])

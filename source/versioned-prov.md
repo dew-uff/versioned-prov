@@ -55,7 +55,7 @@ If the element on the left side of the assignment references the same value (i.e
 We can follow derivations by reference transitively to infer all the members of a derived collection entity.
 
 The `checkpoint` attribute in a derivation indicates the version of the derived instance.
-::SET COMMENT = Thus, we do not need a checkpoint in the entity itself. This also occurs when we have a `wasGeneratedBy` statements with a `checkpoint` attribute::
+Thus, we do not need a checkpoint in the entity itself. This also occurs when we have a `wasGeneratedBy` statement with a `checkpoint` attribute.
 
 ```python
 m = 10000

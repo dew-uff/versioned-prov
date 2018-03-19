@@ -13,10 +13,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">range(nodes)</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/range_nodes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes0" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes0",URL="http://example.org/range_nodes0"]
@@ -29,15 +25,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/range_nodes0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [0]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/range_nodes1" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes1",URL="http://example.org/range_nodes1"]
 "-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -48,15 +40,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/range_nodes1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [1]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/range_nodes2" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes2",URL="http://example.org/range_nodes2"]
 "-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -67,21 +55,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">type:</TD>
 	    <TD align="left">item</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/range_nodes2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-ins
 [2]
-2018-03-12T13:12:15.269122"]
+2018-03-19T11:45:38.708017"]
 "http://example.org/call2" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="call2",URL="http://example.org/call2"]
 "http://example.org/call2" -> "http://example.org/nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/range_nodes" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/range_nodes0" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/range_nodes1" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/range_nodes2" -> "http://example.org/call2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/range_nodes" -> "http://example.org/call2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/range_nodes0" -> "http://example.org/call2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/range_nodes1" -> "http://example.org/call2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/range_nodes2" -> "http://example.org/call2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.708017",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/indexes" [fillcolor="#FFFC87",color="#808080",style="filled",label="indexes",URL="http://example.org/indexes"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -96,15 +84,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">indexes</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-12 13:12:15.269122</TD>
-	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/indexes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign6" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign6",URL="http://example.org/assign6"]
 "http://example.org/indexes" -> "http://example.org/range_nodes" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-12T13:12:15.269122",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign6" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/indexes" -> "http://example.org/assign6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-03-19T11:45:38.709024",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign6" -> "http://example.org/range_nodes" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+2018-03-19T11:45:38.709024",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/indexes" -> "http://example.org/assign6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-19T11:45:38.709024",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

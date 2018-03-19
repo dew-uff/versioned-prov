@@ -64,7 +64,7 @@ If the element on the left side of the assignment references the same value (i.e
 We can follow derivations by reference transitively to infer all the members of a derived collection entity.
 
 The `checkpoint` attribute in a derivation indicates the version of the derived instance.
-
+Thus, we do not need a checkpoint in the entity itself. This also occurs when we have a `wasGeneratedBy` statement with a `checkpoint` attribute.
 
 ```python
 m = 10000
@@ -75,7 +75,7 @@ prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
 prefix version <https://dew-uff.github.io/versioned-prov/ns#>
     
 entity(10000, [value="10000", type="script:literal", version:checkpoint="1"])
-entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
+entity(m, [value="10000", type="script:name", label="m"])
 
 activity(assign1, [type="script:assign"])
 wasDerivedFrom(m, 10000, assign1, g1, u1, [type="version:Reference", version:checkpoint="2"])
@@ -94,11 +94,11 @@ m + 1
 
 ```provn
 entity(1, [value="1", type="script:literal",  version:checkpoint="3"])
-entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
 activity(+, [type="script:operation"])
-wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g2, u3)
+wasDerivedFrom(sum, m, +, g2, u2, [version:checkpoint="4"])
+wasDerivedFrom(sum, 1, +, g2, u3, [version:checkpoint="4"])
 ```
 
 [![Versioned-PROV mapping for operations](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/operation.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/operation.pdf)
@@ -135,7 +135,7 @@ d = [m, m + 1, m]
 ```
 
 ```provn
-entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 
 activity(assign2, [type="script:assign"])
 wasDerivedFrom(d, list, assign2, g3, u4, [type="version:Reference", version:checkpoint="6"])
@@ -150,7 +150,7 @@ x = d
 ```
 
 ```provn
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x", version:checkpoint="7"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
 
 activity(assign3, [type="script:assign"])
 wasDerivedFrom(x, d, assign3, g4, u5, [type="version:Reference", version:checkpoint="7"])
@@ -170,7 +170,7 @@ len(d)
 ```
 
 ```provn
-entity(len_d, [value="3", type="script:eval", label="len(d)", version:checkpoint="9"])
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
 
 activity(call1, [type="script:call", label="len"])
 used(call1, d, -, [version:checkpoint="8"])
@@ -193,7 +193,7 @@ d[0]
 ```provn
 entity(0, [value="0", type="script:literal", version:checkpoint="10"])
 
-entity(d_ac0, [value="10000", type="script:access", label="d[0]", version:checkpoint="12"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 activity(access1, [type="script:access"])
 used(access1, d, -, [version:checkpoint="11"])
 used(access1, 0, -)
@@ -221,7 +221,7 @@ d[1] = 3
 ```provn
 entity(3, [value="3", type="script:literal", version:checkpoint="13"])
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]", version:checkpoint="15"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 hadMember(list, d_ac1, [type="version:Insertion", version:key="1", version:checkpoint="15"])
 
 activity(assign4, [type="script:assign"])
@@ -255,18 +255,18 @@ prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
 // assignment
 entity(10000, [value="10000", type="script:literal", version:checkpoint="1"])
-entity(m, [value="10000", type="script:name", label="m", version:checkpoint="2"])
+entity(m, [value="10000", type="script:name", label="m"])
 
 activity(assign1, [type="script:assign"])
 wasDerivedFrom(m, 10000, assign1, g1, u1, [type="version:Reference", version:checkpoint="2"])
 
 // operation
 entity(1, [value="1", type="script:literal",  version:checkpoint="3"])
-entity(sum, [value="10001", type="script:eval", label="m + 1", version:checkpoint="4"])
+entity(sum, [value="10001", type="script:eval", label="m + 1"])
 
 activity(+, [type="script:operation"])
-wasDerivedFrom(sum, m, +, g2, u2)
-wasDerivedFrom(sum, 1, +, g2, u3)
+wasDerivedFrom(sum, m, +, g2, u2, [version:checkpoint="4"])
+wasDerivedFrom(sum, 1, +, g2, u3, [version:checkpoint="4"])
 
 // list def
 entity(list, [value="[10000, 10001, 10000]", type="script:list", label="[m, m + 1, m]", version:checkpoint="5"])
@@ -275,19 +275,19 @@ hadMember(list, sum, [type="version:Insertion", version:key="1", version:checkpo
 hadMember(list, m, [type="version:Insertion", version:key="2", version:checkpoint="5"])
 
 // list assign
-entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d", version:checkpoint="6"])
+entity(d, [value="[10000, 10001, 10000]", type="script:name", label="d"])
 
 activity(assign2, [type="script:assign"])
 wasDerivedFrom(d, list, assign2, g3, u4, [type="version:Reference", version:checkpoint="6"])
 
 // list assign x
-entity(x, [value="[10000, 10001, 10000]", type="name", label="x", version:checkpoint="7"])
+entity(x, [value="[10000, 10001, 10000]", type="name", label="x"])
 
 activity(assign3, [type="script:assign"])
 wasDerivedFrom(x, d, assign3, g4, u5, [type="version:Reference", version:checkpoint="7"])
 
 // call
-entity(len_d, [value="3", type="script:eval", label="len(d)", version:checkpoint="9"])
+entity(len_d, [value="3", type="script:eval", label="len(d)"])
 
 activity(call1, [type="script:call", label="len"])
 used(call1, d, -, [version:checkpoint="8"])
@@ -296,7 +296,7 @@ wasGeneratedBy(len_d, call1, -, [version:checkpoint="9"])
 // part access
 entity(0, [value="0", type="script:literal", version:checkpoint="10"])
 
-entity(d_ac0, [value="10000", type="script:access", label="d[0]", version:checkpoint="12"])
+entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
 activity(access1, [type="script:access"])
 used(access1, d, -, [version:checkpoint="11"])
 used(access1, 0, -)
@@ -307,7 +307,7 @@ wasDerivedFrom(d_ac0, m, access1, g5, u6, [
 // part assign
 entity(3, [value="3", type="script:literal", version:checkpoint="13"])
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]", version:checkpoint="15"])
+entity(d_ac1, [value="3", type="script:access", label="d[1]"])
 hadMember(list, d_ac1, [type="version:Insertion", version:key="1", version:checkpoint="15"])
 
 activity(assign4, [type="script:assign"])

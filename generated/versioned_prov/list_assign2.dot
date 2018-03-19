@@ -13,10 +13,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">d</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">6</TD>
-	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/x" [fillcolor="#FFFC87",color="#808080",style="filled",label="x",URL="http://example.org/x"]
@@ -32,10 +28,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">x</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">7</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/x" [color="gray",style="dashed",arrowhead="none"]

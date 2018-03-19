@@ -25,6 +25,15 @@ def wasDerivedFrom(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attr
         attrs, querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]
 
+@querier.prov("wasGeneratedBy", ["id", "entity", "activity", "time", "checkpoint", "text"])
+def wasGeneratedBy(dot, eid, aid=None, time=None, attrs=None, id_=None):
+    attrs = attrs or {}
+    return [
+        id_, eid, aid, parsetime(time), parsetime(attrs.get("version:checkpoint")),
+        querier.text("wasGeneratedBy", [eid, aid, time], attrs, id_)
+    ]
+
+
 
 @querier.prov("hadMember", ["collection", "entity", "type", "key", "checkpoint", "text"])
 def hadMember(dot, ecollection=None, eid=None, attrs=None, id_=None):

@@ -13,10 +13,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">m</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2</TD>
-	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum",URL="http://example.org/sum"]
@@ -32,10 +28,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">m + 1</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">4</TD>
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
@@ -81,10 +73,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">d</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">6</TD>
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
@@ -135,10 +123,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">d[1]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">15</TD>
 	</TR>
 </TABLE>>]
 "-attrs6" -> "http://example.org/d_ac1" [color="gray",style="dashed",arrowhead="none"]

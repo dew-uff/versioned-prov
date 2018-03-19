@@ -33,10 +33,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">d</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">6</TD>
-	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/d" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2"]

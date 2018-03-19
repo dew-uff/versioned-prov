@@ -29,10 +29,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">label:</TD>
 	    <TD align="left">m</TD>
 	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2</TD>
-	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign1",URL="http://example.org/assign1"]

@@ -69,6 +69,9 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
             ),
             extra="4"
         )
+    checkpoint = versioned(attrs, 'checkpoint', False)
+    if checkpoint:
+        return dot.arrow2(attrs, "ver_wasDerivedFrom", egenerated, eused, "der\n{}".format(checkpoint), extra="5")
     return dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")
 
 
