@@ -203,10 +203,10 @@ Statement               | Common | PROV         | PROV-Dictionary | Versioned-PR
 `wasDerivedFrom`        |1       |2R            |2R               |                |
 `used`                  |1       |              |                 |1               |
 `hadMember`             |        |R * N         |                 |1               |
-`derivedByInsertionFrom`|        |              |1                |                |
-**Edges**               |**2**   |**R * N + 2R**|**2R + 1**       |**2**           |
+`derivedByInsertionFrom`|        |              |R                |                |
+**Edges**               |**2**   |**R * N + 2R**|**3R**           |**2**           |
 =====================   |=====   |=========     |=======          |=====           |
-**Total**               |**4**   |**R * N + 3R**|**3R + 1**       |**2**           |
+**Total**               |**4**   |**R * N + 3R**|**4R**           |**2**           |
 
 
 The number of statements in PROV and PROV-Dictionary are lower bounds, however. If `d` or `list` were a member of another collection, we would have to update the parent collection in a similar way. Additionally, if the entity on the right side were an assignment, we would have to update the membership of `d_ac1` as described before. The same does not happen for Versioned-PROV due to the derivation `type="version:Reference"`. Hence, for Versioned-PROV this number is at the same time the lower bound and the upper bound of an assignment in the format `COLLECTION[KEY] = VALUE`.
