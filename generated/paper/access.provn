@@ -11,17 +11,18 @@ entity(k#1,
   label="k"])
 
 
-entity(dist\[k\]#1,
+entity(dist@k#1,
  [value="[0, 1, 4]",
   type="s:access",
   label="dist[k]"])
 activity(access2,
  [type="s:access"])
 wasDerivedFrom(
- dist\[k\]#1, matrix0, access2, g8, u8,
+ dist@k#1, matrix0, access2, g8, u8,
  [type="v:Reference",
   v:whole="dist",
-  v:key="0",v:access="r",
-  v:checkpoint="14"])
+  v:access="r",
+  v:key="0",
+  v:checkpoint="13"])
 used(access2, k#1, -)
 used(access2, dist, -)

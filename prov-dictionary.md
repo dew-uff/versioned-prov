@@ -177,12 +177,12 @@ d[0]
 
 ```provn
 entity(0, [value="0", type="script:literal"])
-entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
+entity(d@0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-wasDerivedFrom(d_ac0, list0, access1, g8, u9)
+wasDerivedFrom(d@0, list0, access1, g8, u9)
 ```
 
 [![PROV-Dictionary mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/access.pdf)
@@ -202,20 +202,20 @@ d[1] = 3
 ```provn
 entity(3, [value="3", type="script:literal"])
 
-entity(d_ac1, [value="3", type="script:access"])
+entity(d@1, [value="3", type="script:access"])
 activity(assign4, [type="script:assign"])
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g9, u10)
+wasDerivedFrom(d@1, 3, assign4, g9, u10)
 
 entity(d#2, [value="[10000, 3, 10000]", type="Dictionary", label="d"])
 wasDerivedFrom(d#2, d, assign4, g10, u11)
 wasDerivedFrom(d#2, 3, assign4, g10, u10)
-derivedByInsertionFrom(d#2, d, {("1", d_ac1)})
+derivedByInsertionFrom(d#2, d, {("1", d@1)})
 
 entity(x#2, [value="[10000, 3, 10000]", type="Dictionary", label="x"])
 wasDerivedFrom(x#2, x, assign4, g11, u12)
 wasDerivedFrom(x#2, 3, assign4, g11, u10)
-derivedByInsertionFrom(x#2, x, {("1", d_ac1)})
+derivedByInsertionFrom(x#2, x, {("1", d@1)})
 ```
 
 [![PROV-Dictionary mapping for assignments to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/part_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/part_assign.pdf)
@@ -298,30 +298,30 @@ wasGeneratedBy(len_d, call1, -)
 
 // part access
 entity(0, [value="0", type="script:literal"])
-entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
+entity(d@0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="script:access"])
 used(access1, d, -)
 used(access1, 0, -)
-wasDerivedFrom(d_ac0, list0, access1, g8, u9)
+wasDerivedFrom(d@0, list0, access1, g8, u9)
 
 // part assignment
 entity(3, [value="3", type="script:literal"])
 
-entity(d_ac1, [value="3", type="script:access"])
+entity(d@1, [value="3", type="script:access"])
 activity(assign4, [type="script:assign"])
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g9, u10)
+wasDerivedFrom(d@1, 3, assign4, g9, u10)
 
 entity(d#2, [value="[10000, 3, 10000]", type="Dictionary", label="d"])
 wasDerivedFrom(d#2, d, assign4, g10, u11)
 wasDerivedFrom(d#2, 3, assign4, g10, u10)
-derivedByInsertionFrom(d#2, d, {("1", d_ac1)})
+derivedByInsertionFrom(d#2, d, {("1", d@1)})
 
 entity(x#2, [value="[10000, 3, 10000]", type="Dictionary", label="x"])
 wasDerivedFrom(x#2, x, assign4, g11, u12)
 wasDerivedFrom(x#2, 3, assign4, g11, u10)
-derivedByInsertionFrom(x#2, x, {("1", d_ac1)})
+derivedByInsertionFrom(x#2, x, {("1", d@1)})
 ```
 
 [![PROV-Dictionary mapping](https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/full.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/full.pdf)

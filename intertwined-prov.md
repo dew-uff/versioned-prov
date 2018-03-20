@@ -230,12 +230,12 @@ entity(0, [value="0", type="script:literal"])
 entity(0_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
 specializationOf(0, 0_v1)
 
-entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
+entity(d@0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="access"])
 used(access1, d, -, [intertwined:checkpoint="11"])
 used(access1, 0, -)
-wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="12",
     intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
 ```
@@ -260,16 +260,16 @@ entity(3, [value="3", type="script:literal"])
 entity(3_v1, [intertwined:checkpoint="13", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]"])
+entity(d@1, [value="3", type="script:access", label="d[1]"])
 
 entity(list_v2, [intertwined:checkpoint="15", type="intertwined:Version"])
-derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+derivedByInsertionFrom(list_v2, list_v1, {("1", d@1)})
 specializationOf(list, list_v2)
 
 activity(assign4, [type="script:assign"])
 used(assign4, d, -, [intertwined:checkpoint="14"])
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="intertwined:Reference", intertwined:checkpoint="15", intertwined:whole="d",
     intertwined:key="1", intertwined:access="w"])
 ```
@@ -352,12 +352,12 @@ entity(0, [value="0", type="script:literal"])
 entity(0_v1, [intertwined:checkpoint="9", type="intertwined:Version"])
 specializationOf(0, 0_v1)
 
-entity(d_ac0, [value="10000", type="script:access", label="d[0]"])
+entity(d@0, [value="10000", type="script:access", label="d[0]"])
 
 activity(access1, [type="access"])
 used(access1, d, -)
 used(access1, 0, -)
-wasDerivedFrom(d_ac0, m, access1, g5, u6, [
+wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="10",
     intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
 
@@ -366,16 +366,16 @@ entity(3, [value="3", type="script:literal"])
 entity(3_v1, [intertwined:checkpoint="10", type="intertwined:Version"])
 specializationOf(3, 3_v1)
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]"])
+entity(d@1, [value="3", type="script:access", label="d[1]"])
 
 entity(list_v2, [intertwined:checkpoint="11", type="intertwined:Version"])
-derivedByInsertionFrom(list_v2, list_v1, {("1", d_ac1)})
+derivedByInsertionFrom(list_v2, list_v1, {("1", d@1)})
 specializationOf(list, list_v2)
 
 activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1, -)
-wasDerivedFrom(d_ac1, 3, assign4, g6, u7, [
+wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
     intertwined:key="1", intertwined:access="w"])
 ```

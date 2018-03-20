@@ -63,7 +63,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/ikj#2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti\[j\]#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti\[j\]#2",URL="http://example.org/disti\[j\]#2"]
+"http://example.org/disti@j#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#2",URL="http://example.org/disti@j#2"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -78,8 +78,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">disti[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/disti\[j\]#2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti\[j\]#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti\[j\]#3",URL="http://example.org/disti\[j\]#3"]
+"-attrs4" -> "http://example.org/disti@j#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#3",URL="http://example.org/disti@j#3"]
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -94,7 +94,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">disti[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/disti\[j\]#3" [color="gray",style="dashed",arrowhead="none"]
+"-attrs5" -> "http://example.org/disti@j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign12",URL="http://example.org/assign12"]
 "-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -104,23 +104,23 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "-attrs6" -> "http://example.org/assign12" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"http://example.org/disti\[j\]#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
+"http://example.org/disti@j#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
 38",arrowhead="none"]
 "bn0" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn0" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/assign12" -> "http://example.org/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign12" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 37"]
-"http://example.org/list" -> "http://example.org/disti\[j\]#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins
+"http://example.org/list" -> "http://example.org/disti@j#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put
 [1]
 38"]
-"http://example.org/assign12" -> "http://example.org/disti\[j\]#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign12" -> "http://example.org/disti@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 
 {rank=same "http://example.org/list" "-attrs0"}
-{rank=same "http://example.org/disti\[j\]#3" "-attrs3" "-attrs4"}
+{rank=same "http://example.org/disti@j#3" "-attrs3" "-attrs4"}
      
 "http://example.org/assign12" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 38"]
-"http://example.org/disti\[j\]#3" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+"http://example.org/disti@j#3" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
 38"]
 }
