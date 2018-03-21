@@ -1,4 +1,4 @@
 entity(j#7, [type="name",label="j",dot:hide="true"])
 activity(access24, [type="access",dot:hide="true"])
-wasDerivedFrom(j#7, range_nodes0, access24, g40, u42, [type="version:Reference",version:checkpoint="46",version:whole="indexes",version:key="0",version:access="r",dot:hide="true"])
+wasDerivedFrom(j#7, range_nodes0, access24, g40, u42, [type="version:Reference",version:checkpoint="46",version:collection="indexes",version:key="0",version:access="r",dot:hide="true"])
 used(access24, indexes, -, [dot:hide="true"])

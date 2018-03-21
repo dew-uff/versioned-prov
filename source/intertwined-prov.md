@@ -23,8 +23,8 @@ Additionally, ::GET NAME:: adds the following attributes to existing PROV statem
 |:-----------|:--------------:|:------------------------------------|------------------------------------------------------------------------------------------------|
 | checkpoint | Sortable Value | Events (e.g., used, wasDerivedFrom) | Checkpoint of the event. Required for entities that share versions.                            |
 | checkpoint | Sortable Value | entity                              | Checkpoint of version entity generation. Required for versions.                                |
-| key        | String         | wasDerivedFrom                      | The position of accessed *whole* entity.                                                       |
-| whole      | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
+| key        | String         | wasDerivedFrom                      | The position of accessed *collection* entity.                                                       |
+| collection | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
 | access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") and element from a collection or writes ("w") into it. |
 
 
@@ -132,7 +132,7 @@ len(d)
 
 We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
 
-We also use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
+We also use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
 
 ```python
 d[0]
@@ -146,7 +146,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We use the PROV-Dictionary `derivedByInsertionFrom` to create a new version with the new part. We also use the `specializationOf` statement to associate the new version to the entity that had the previous version.
 
-Additionaly, we use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
+Additionaly, we use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
 
 
 ```python

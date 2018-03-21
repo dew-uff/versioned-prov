@@ -65,7 +65,7 @@ used(access1, d, -)
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="10",
-    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
+    intertwined:collection="d", intertwined:key="0", intertwined:access="r"])
 
 // part assign
 entity(3, [value="3", type="script:literal"])
@@ -82,5 +82,5 @@ activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
-    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
+    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:collection="d",
     intertwined:key="1", intertwined:access="w"])

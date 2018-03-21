@@ -26,4 +26,4 @@ used(assign4, d, -, [version:checkpoint="10"])
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="version:Reference", version:checkpoint="11",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])

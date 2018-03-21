@@ -23,4 +23,4 @@ used(access1, d, -, [version:checkpoint="8"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="version:Reference", version:checkpoint="9", 
-    version:whole="d", version:key="0", version:access="r"])
+    version:collection="d", version:key="0", version:access="r"])

@@ -1,5 +1,5 @@
 entity(disti@j#8, [value="10000",type="access",label="disti[j]",dot:hide="true"])
 activity(access45, [type="access",dot:hide="true"])
-wasDerivedFrom(disti@j#8, m, access45, g72, u78, [type="intertwined:Reference",intertwined:checkpoint="2018-03-19T17:43:53.814107",intertwined:whole="disti#5",intertwined:key="1",intertwined:access="r",dot:hide="true"])
+wasDerivedFrom(disti@j#8, m, access45, g72, u78, [type="intertwined:Reference",intertwined:checkpoint="2018-03-21T14:46:28.570301",intertwined:collection="disti#5",intertwined:key="1",intertwined:access="r",dot:hide="true"])
 used(access45, disti#5, -, [dot:hide="true"])
 used(access45, j#13, -, [dot:hide="true"])

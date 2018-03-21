@@ -256,9 +256,9 @@ class Derivation(Use, Generation):
 
 class WriteDerivation(Derivation):
 
-    def __init__(self, time, whole, key, gen, *use, attrs={}):
+    def __init__(self, time, collection, key, gen, *use, attrs={}):
         self.time = time
-        self.whole = whole
+        self.collection = collection
         self.key = key
         super(WriteDerivation, self).__init__((gen, *use), attrs=attrs)
 
@@ -267,16 +267,16 @@ class WriteDerivation(Derivation):
         return _buildattrs(self.attrs, [
             ("type", NAMESPACE + "Reference"),
             (NAMESPACE + "checkpoint", self.time),
-            (NAMESPACE + "whole", self.whole),
+            (NAMESPACE + "collection", self.collection),
             (NAMESPACE + "key", self.key),
             (NAMESPACE + "access", "w"),
         ])
 
 class AccessDerivation(Derivation):
 
-    def __init__(self, time, whole, key, gen, *use, attrs={}):
+    def __init__(self, time, collection, key, gen, *use, attrs={}):
         self.time = time
-        self.whole = whole
+        self.collection = collection
         self.key = key
         super(AccessDerivation, self).__init__((gen, *use), attrs=attrs)
 
@@ -285,7 +285,7 @@ class AccessDerivation(Derivation):
         return _buildattrs(self.attrs, [
             ("type", NAMESPACE + "Reference"),
             (NAMESPACE + "checkpoint", self.time),
-            (NAMESPACE + "whole", self.whole),
+            (NAMESPACE + "collection", self.collection),
             (NAMESPACE + "key", self.key),
             (NAMESPACE + "access", "r"),
         ])
@@ -379,24 +379,24 @@ def accessed(ent, value, time, attrs={}):
     add("accessed({}, {}, {}{})".format(ent, value, time, _attrpairs(attrs)))
     VALUES[ent] = value
 
-def accessedPart(ent, whole, key, part, time, attrs={}):
-    add("accessedPart({}, {}, {}, {}, {}{})".format(ent, whole, key, part, time, _attrpairs(attrs)))
+def accessedPart(ent, collection, key, part, time, attrs={}):
+    add("accessedPart({}, {}, {}, {}, {}{})".format(ent, collection, key, part, time, _attrpairs(attrs)))
     VALUES[ent] = part
 
-def derivedByInsertion(ent, whole, elements, time, attrs={}):
+def derivedByInsertion(ent, collection, elements, time, attrs={}):
     if isinstance(elements, list):
         key_value = elements
     else:
         key_value = list(elements.items())
 
     add("derivedByInsertion({}, {}, {{{}}}, {}{})".format(
-        ent, whole,
+        ent, collection,
         ", ".join('("{}", {})'.format(i, v)
                   for i,v in key_value),
         time, _attrpairs(attrs)
     ))
     for i, v in key_value:
-        DICTS[whole][str(i)] = v
+        DICTS[collection][str(i)] = v
 
 def specializationOf(eid1, eid2, attrs={}):
     add('specializationOf({}, {}{})'.format(eid1, eid2, _attrpairs(attrs)))
@@ -482,14 +482,14 @@ def derivation_pair(first, second, derivations=None):
             derivation_pair(fd_value, sd_value, derivations)
     return derivations
 
-def update(name, whole_ent, key, part_ent, whole_value, label=None, attrs={}):
-    new_whole = entity(name, repr(whole_value), "list", label, attrs=attrs)
+def update(name, collection_ent, key, part_ent, collection_value, label=None, attrs={}):
+    new_collection = entity(name, repr(collection_value), "list", label, attrs=attrs)
     key = repr(key)
-    for other_key, other_part in DICTS[whole_ent].items():
+    for other_key, other_part in DICTS[collection_ent].items():
         if other_key != key:
-            hadMember(new_whole, other_part, str(other_key), attrs=attrs)
-    hadMember(new_whole, part_ent, str(key), attrs=attrs)
-    return new_whole
+            hadMember(new_collection, other_part, str(other_key), attrs=attrs)
+    hadMember(new_collection, part_ent, str(key), attrs=attrs)
+    return new_collection
 
 @contextmanager
 def desc(desc, enabled=False, line=None):

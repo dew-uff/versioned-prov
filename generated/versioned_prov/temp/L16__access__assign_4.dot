@@ -42,12 +42,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign17" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign17",URL="http://example.org/assign17"]
 "http://example.org/disti#4" -> "http://example.org/dist@i#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
 59",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign17" -> "http://example.org/dist@i#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-59",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access32" -> "http://example.org/lastrow" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 58",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/dist@i#4" -> "http://example.org/access32" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-58",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign17" -> "http://example.org/dist@i#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+59",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti#4" -> "http://example.org/assign17" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 59",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/dist@i#4" -> "http://example.org/access32" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+58",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

@@ -148,7 +148,7 @@ activity(assign2, [type="script:assign"])
 used(assign2, 1, -)
 wasDerivedFrom(d@1, 3, assign2, ga2, ua2, [
     type="version:Reference", version:checkpoint="3",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])
 ```
 Once again, the attributes in the version namespace refer to the Versioned-PROV mapping.
 

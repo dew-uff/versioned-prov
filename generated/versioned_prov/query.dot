@@ -1,4 +1,16 @@
 digraph "PROV" { size="16,12"; rankdir="RL";
+"bn0" [shape="point",label=""]
+"http://example.org/dist@k#2" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+41",arrowhead="none"]
+"bn0" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
+"bn0" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
+"bn1" [shape="point",label=""]
+"http://example.org/disti@j#5" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
+55",arrowhead="none"]
+"bn1" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
+"bn1" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
+"http://example.org/sum#3" -> "http://example.org/disti@k#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+51"]
 "http://example.org/dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist",URL="http://example.org/dist"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -15,162 +27,8 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 </TABLE>>]
 "-attrs0" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-19T12:16:43.078424"]
-"http://example.org/result\[0\]" [fillcolor="#FFFC87",color="#808080",style="filled",label="result\[0\]",URL="http://example.org/result\[0\]"]
+"http://example.org/result@0@2" [fillcolor="#FFFC87",color="#808080",style="filled",label="result@0@2",URL="http://example.org/result@0@2"]
 "-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[0, 1, 3]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">result[0]</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/result\[0\]" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/distk#2" -> "http://example.org/dist\[k\]#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-19T12:16:42.318403"]
-"http://example.org/ikj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#3",URL="http://example.org/ikj#3"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">ikj</TD>
-	</TR>
-</TABLE>>]
-"-attrs2" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/dist\[k\]#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist\[k\]#2",URL="http://example.org/dist\[k\]#2"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[10000, 0, 2]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">dist[k]</TD>
-	</TR>
-</TABLE>>]
-"-attrs3" -> "http://example.org/dist\[k\]#2" [color="gray",style="dashed",arrowhead="none"]
-"bn0" [shape="point",label=""]
-"http://example.org/dist\[k\]#2" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:42.317402",arrowhead="none"]
-"bn0" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
-"bn0" -> "http://example.org/matrix1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"http://example.org/disti\[k\]#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti\[k\]#3",URL="http://example.org/disti\[k\]#3"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">1</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">disti[k]</TD>
-	</TR>
-</TABLE>>]
-"-attrs4" -> "http://example.org/disti\[k\]#3" [color="gray",style="dashed",arrowhead="none"]
-"bn1" [shape="point",label=""]
-"http://example.org/result\[0\]" -> "bn1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:46.641341",arrowhead="none"]
-"bn1" -> "http://example.org/result" [color="darkgreen",style="dashed"]
-"bn1" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
-"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:16:38.689757</TD>
-	</TR>
-</TABLE>>]
-"-attrs5" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
-"bn2" [shape="point",label=""]
-"http://example.org/distk\[j\]#3" -> "bn2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:43.076419",arrowhead="none"]
-"bn2" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
-"bn2" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/disti#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#3",URL="http://example.org/disti#3"]
-"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">disti</TD>
-	</TR>
-</TABLE>>]
-"-attrs6" -> "http://example.org/disti#3" [color="gray",style="dashed",arrowhead="none"]
-"bn3" [shape="point",label=""]
-"http://example.org/disti\[k\]#3" -> "bn3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:43.075416",arrowhead="none"]
-"bn3" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
-"bn3" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"http://example.org/dist\[i\]#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist\[i\]#3",URL="http://example.org/dist\[i\]#3"]
-"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">dist[i]</TD>
-	</TR>
-</TABLE>>]
-"-attrs7" -> "http://example.org/dist\[i\]#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti#3" -> "http://example.org/dist\[i\]#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-19T12:16:42.563053"]
-"http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
-"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">result</TD>
-	</TR>
-</TABLE>>]
-"-attrs8" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result\[0\]\[2\]" [fillcolor="#FFFC87",color="#808080",style="filled",label="result\[0\]\[2\]",URL="http://example.org/result\[0\]\[2\]"]
-"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -184,12 +42,14 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">result[0][2]</TD>
 	</TR>
 </TABLE>>]
-"-attrs9" -> "http://example.org/result\[0\]\[2\]" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
-"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs1" -> "http://example.org/result@0@2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/distk#2" -> "http://example.org/dist@k#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+42"]
+"http://example.org/matrix1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1",URL="http://example.org/matrix1"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -197,16 +57,50 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">[[0, 1, 4], [m, 0, 2], lastrow]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:16:39.049712</TD>
+	    <TD align="left">[m, 0, 2]</TD>
 	</TR>
 </TABLE>>]
-"-attrs10" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti\[j\]#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti\[j\]#5",URL="http://example.org/disti\[j\]#5"]
-"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs2" -> "http://example.org/matrix1" [color="gray",style="dashed",arrowhead="none"]
+"bn2" [shape="point",label=""]
+"http://example.org/distk@j#3" -> "bn2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+50",arrowhead="none"]
+"bn2" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
+"bn2" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
+"http://example.org/result@0" [fillcolor="#FFFC87",color="#808080",style="filled",label="result@0",URL="http://example.org/result@0"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[0, 1, 3]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">result[0]</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/result@0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">1</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"bn3" [shape="point",label=""]
+"http://example.org/disti@k#3" -> "bn3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+49",arrowhead="none"]
+"bn3" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
+"bn3" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
+"http://example.org/disti@j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#5",URL="http://example.org/disti@j#5"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -220,95 +114,27 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">disti[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs11" -> "http://example.org/disti\[j\]#5" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix0" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix0",URL="http://example.org/matrix0"]
-"-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs5" -> "http://example.org/disti@j#5" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:16:39.049712</TD>
+	    <TD align="left">result</TD>
 	</TR>
 </TABLE>>]
-"-attrs12" -> "http://example.org/matrix0" [color="gray",style="dashed",arrowhead="none"]
-"bn4" [shape="point",label=""]
-"http://example.org/dist\[i\]#3" -> "bn4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:42.562050",arrowhead="none"]
-"bn4" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
-"bn4" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
-"http://example.org/sum#3" -> "http://example.org/disti\[k\]#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-2018-03-19T12:16:43.077420"]
-"http://example.org/distk\[j\]#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk\[j\]#3",URL="http://example.org/distk\[j\]#3"]
-"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">distk[j]</TD>
-	</TR>
-</TABLE>>]
-"-attrs13" -> "http://example.org/distk\[j\]#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1",URL="http://example.org/matrix1"]
-"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[10000, 0, 2]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">[m, 0, 2]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:16:39.049712</TD>
-	</TR>
-</TABLE>>]
-"-attrs14" -> "http://example.org/matrix1" [color="gray",style="dashed",arrowhead="none"]
-"bn5" [shape="point",label=""]
-"http://example.org/disti\[j\]#5" -> "bn5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-w
-2018-03-19T12:16:43.349143",arrowhead="none"]
-"bn5" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
-"bn5" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/sum#3" -> "http://example.org/distk\[j\]#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-2018-03-19T12:16:43.077420"]
-"http://example.org/sum#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum#3",URL="http://example.org/sum#3"]
-"-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">operation</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">disti[k] + distk[j]</TD>
-	</TR>
-</TABLE>>]
-"-attrs15" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
+"-attrs6" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum#3" -> "http://example.org/distk@j#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
+51"]
 "http://example.org/distk#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk#2",URL="http://example.org/distk#2"]
-"-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[10000, 0, 2]</TD>
@@ -322,28 +148,182 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">distk</TD>
 	</TR>
 </TABLE>>]
-"-attrs16" -> "http://example.org/distk#2" [color="gray",style="dashed",arrowhead="none"]
-"bn6" [shape="point",label=""]
-"http://example.org/result\[0\]\[2\]" -> "bn6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
-2018-03-19T12:16:46.642346",arrowhead="none"]
-"bn6" -> "http://example.org/result\[0\]" [color="darkgreen",style="dashed"]
-"bn6" -> "http://example.org/disti\[j\]#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
-"http://example.org/result" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-2018-03-19T12:16:39.190092"]
-"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
-"-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs7" -> "http://example.org/distk#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
+"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[[0, 1, 4], [m, 0, 2], lastrow]</TD>
+	</TR>
+</TABLE>>]
+"-attrs8" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix0",URL="http://example.org/matrix0"]
+"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+</TABLE>>]
+"-attrs9" -> "http://example.org/matrix0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#3",URL="http://example.org/disti#3"]
+"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti</TD>
+	</TR>
+</TABLE>>]
+"-attrs10" -> "http://example.org/disti#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/distk@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk@j#3",URL="http://example.org/distk@j#3"]
+"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">distk[j]</TD>
+	</TR>
+</TABLE>>]
+"-attrs11" -> "http://example.org/distk@j#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ikj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#3",URL="http://example.org/ikj#3"]
+"-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">ikj</TD>
+	</TR>
+</TABLE>>]
+"-attrs12" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
+"bn4" [shape="point",label=""]
+"http://example.org/result@0" -> "bn4" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+96",arrowhead="none"]
+"bn4" -> "http://example.org/result" [color="darkgreen",style="dashed"]
+"bn4" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
+"http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+52"]
+"http://example.org/dist@k#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist@k#2",URL="http://example.org/dist@k#2"]
+"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">dist[k]</TD>
+	</TR>
+</TABLE>>]
+"-attrs13" -> "http://example.org/dist@k#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/dist@i#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist@i#3",URL="http://example.org/dist@i#3"]
+"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">dist[i]</TD>
+	</TR>
+</TABLE>>]
+"-attrs14" -> "http://example.org/dist@i#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti#3" -> "http://example.org/dist@i#3" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+45"]
+"http://example.org/disti@k#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@k#3",URL="http://example.org/disti@k#3"]
+"-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">1</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
+	    <TD align="left">access</TD>
 	</TR>
 	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-19 12:16:39.047708</TD>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti[k]</TD>
 	</TR>
 </TABLE>>]
-"-attrs17" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"-attrs15" -> "http://example.org/disti@k#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/result" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
+6"]
+"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
+"-attrs16" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs16" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum#3",URL="http://example.org/sum#3"]
+"-attrs17" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">operation</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti[k] + distk[j]</TD>
+	</TR>
+</TABLE>>]
+"-attrs17" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
+"bn5" [shape="point",label=""]
+"http://example.org/result@0@2" -> "bn5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+97",arrowhead="none"]
+"bn5" -> "http://example.org/result@0" [color="darkgreen",style="dashed"]
+"bn5" -> "http://example.org/disti@j#5" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
+"bn6" [shape="point",label=""]
+"http://example.org/dist@i#3" -> "bn6" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ac-r
+44",arrowhead="none"]
+"bn6" -> "http://example.org/dist" [color="darkgreen",style="dashed"]
+"bn6" -> "http://example.org/matrix0" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 }

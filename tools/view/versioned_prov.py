@@ -64,7 +64,7 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
         if versioned(attrs, 'access', False):
             return dot.arrow3(
                 attrs, "ver_wasDerivedFrom",
-                egenerated, versioned(attrs, 'whole'), eused,
+                egenerated, versioned(attrs, 'collection'), eused,
                 "",
                 "der ac-{}\n{}".format(
                     versioned(attrs, 'access'),

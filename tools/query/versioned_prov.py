@@ -6,13 +6,13 @@ from tools.query.provn import *
 from tools.utils import unquote, parsetime
 
 
-@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "checkpoint", "whole", "key", "access", "attrs", "text"])
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "checkpoint", "collection", "key", "access", "attrs", "text"])
 def wasDerivedFrom(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
     attrs = attrs or {}
     return [
         eid1, eid2, aid, gid, uid,
         unquote(attrs.get("type")), parsetime(attrs.get("version:checkpoint")),
-        unquote(attrs.get("version:whole")), unquote(attrs.get("version:key")), unquote(attrs.get("version:access")),
+        unquote(attrs.get("version:collection")), unquote(attrs.get("version:key")), unquote(attrs.get("version:access")),
         attrs, querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]
 

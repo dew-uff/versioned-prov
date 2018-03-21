@@ -27,7 +27,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs1" -> "http://example.org/range_nodes0" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
+"http://example.org/range_nodes" -> "http://example.org/range_nodes0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
 [0]
 10"]
 "http://example.org/range_nodes1" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes1",URL="http://example.org/range_nodes1"]
@@ -42,7 +42,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs2" -> "http://example.org/range_nodes1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
+"http://example.org/range_nodes" -> "http://example.org/range_nodes1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
 [1]
 10"]
 "http://example.org/range_nodes2" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes2",URL="http://example.org/range_nodes2"]
@@ -57,7 +57,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "-attrs3" -> "http://example.org/range_nodes2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/range_nodes" -> "http://example.org/range_nodes2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der-put
+"http://example.org/range_nodes" -> "http://example.org/range_nodes2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
 [2]
 10"]
 "http://example.org/call2" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="call2",URL="http://example.org/call2"]

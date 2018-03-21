@@ -1,51 +1,7 @@
 digraph "PROV" { size="16,12"; rankdir="RL";
-"http://example.org/distk@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk@j#3",URL="http://example.org/distk@j#3"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">distk[j]</TD>
-	</TR>
-</TABLE>>]
-"-attrs0" -> "http://example.org/distk@j#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result@0@2" -> "http://example.org/disti@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result@0@2" [fillcolor="#FFFC87",color="#808080",style="filled",label="result@0@2",URL="http://example.org/result@0@2"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">result[0][2]</TD>
-	</TR>
-</TABLE>>]
-"-attrs2" -> "http://example.org/result@0@2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti@k#3" -> "http://example.org/matrix01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/sum#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum#3",URL="http://example.org/sum#3"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -59,7 +15,59 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">disti[k] + distk[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
+"-attrs0" -> "http://example.org/sum#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/result@0@2" [fillcolor="#FFFC87",color="#808080",style="filled",label="result@0@2",URL="http://example.org/result@0@2"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">result[0][2]</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/result@0@2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti@j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#5",URL="http://example.org/disti@j#5"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">access</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">disti[j]</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/disti@j#5" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti@j#5" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/sum#3" -> "http://example.org/distk@j#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/distk@j#3" -> "http://example.org/matrix12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/matrix12" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix12",URL="http://example.org/matrix12"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">item</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/matrix12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix01" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/disti@k#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@k#3",URL="http://example.org/disti@k#3"]
 "-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -76,8 +84,8 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 </TABLE>>]
 "-attrs4" -> "http://example.org/disti@k#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti@k#3" -> "http://example.org/matrix01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/matrix12" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix12",URL="http://example.org/matrix12"]
+"http://example.org/sum#3" -> "http://example.org/disti@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/distk@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="distk@j#3",URL="http://example.org/distk@j#3"]
 "-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
@@ -85,36 +93,28 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">item</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-</TABLE>>]
-"-attrs5" -> "http://example.org/matrix12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix12" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/disti@j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#5",URL="http://example.org/disti@j#5"]
-"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
 	    <TD align="left">access</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">disti[j]</TD>
+	    <TD align="left">distk[j]</TD>
 	</TR>
 </TABLE>>]
-"-attrs6" -> "http://example.org/disti@j#5" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix01" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#3" -> "http://example.org/disti@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/disti@j#5" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/sum#3" -> "http://example.org/distk@j#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/distk@j#3" -> "http://example.org/matrix12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"-attrs5" -> "http://example.org/distk@j#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
+"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix12" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/ikj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#3",URL="http://example.org/ikj#3"]
 "-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -131,6 +131,7 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 </TABLE>>]
 "-attrs7" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/result@0@2" -> "http://example.org/disti@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
 "-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -159,5 +160,4 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	</TR>
 </TABLE>>]
 "-attrs9" -> "http://example.org/matrix01" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ikj#3" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 }

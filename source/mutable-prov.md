@@ -18,9 +18,9 @@ Our extension adds the following components:
 | defined(`e`, `v`, `t`)                | The entity `e` defined the value `v` at the time `t`.        |
 | wasDefinedBy(`v`, `e`, `t`)           | The value `v` was defined by the entity `e` at the time `t`. |
 | accesed(`e`, `v`, `t`)                | The entity `e` accessed the value `v` at the time `t`.       |
-| accessedPart(`e`, `w`, `k`, `p`, `t`) | The entity `e` accessed the part value `p` at the key `k` <br> of the whole value `w` at the time `t`.    |
-| derivedByInsertion(<br>&nbsp;&nbsp;&nbsp;&nbsp;`e`, `w`, {(`k`<sub>`1`</sub>, `p`<sub>`1`</sub>), ..., (`k`<sub>`n`</sub>, `p`<sub>`n`</sub>)}, `t`)               | The entity `e` derived the whole value `w` by the insertion<br> of the part values `p`<sub>`i`</sub> at the corresponding key `k`<sub>`i`</sub> <br>for `i` ∈ `1..n` at the time `t`. |
-| derivedByRemoval(<br>&nbsp;&nbsp;&nbsp;&nbsp;`e`, `w`, {`k`<sub>`1`</sub>, ..., `k`<sub>`n`</sub>}, `t`) | The entity `e` derived the whole value `w` was derived by<br> the removal of the keys `k`<sub>`i`</sub> for `i` ∈ `1..n` at the time `t`. |
+| accessedPart(`e`, `w`, `k`, `p`, `t`) | The entity `e` accessed the part value `p` at the key `k` <br> of the collection value `w` at the time `t`.    |
+| derivedByInsertion(<br>&nbsp;&nbsp;&nbsp;&nbsp;`e`, `w`, {(`k`<sub>`1`</sub>, `p`<sub>`1`</sub>), ..., (`k`<sub>`n`</sub>, `p`<sub>`n`</sub>)}, `t`)               | The entity `e` derived the collection value `w` by the insertion<br> of the part values `p`<sub>`i`</sub> at the corresponding key `k`<sub>`i`</sub> <br>for `i` ∈ `1..n` at the time `t`. |
+| derivedByRemoval(<br>&nbsp;&nbsp;&nbsp;&nbsp;`e`, `w`, {`k`<sub>`1`</sub>, ..., `k`<sub>`n`</sub>}, `t`) | The entity `e` derived the collection value `w` was derived by<br> the removal of the keys `k`<sub>`i`</sub> for `i` ∈ `1..n` at the time `t`. |
 
 ## Names, literals, and constants
 
@@ -134,7 +134,7 @@ d[0]
 
 A part assignment is a mix of an access `activity` and an assign `activity`.
 
-We use the `derivedByInsertion` to update the whole value withe the new part value.
+We use the `derivedByInsertion` to update the collection value withe the new part value.
 
 
 ```python

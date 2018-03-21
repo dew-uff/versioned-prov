@@ -37,12 +37,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 77",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/+5" -> "http://example.org/disti@k#5" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 78",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/ikj#5" -> "http://example.org/assign21" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-79",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/disti@k#5" -> "http://example.org/access45" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-76",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk@j#5" -> "http://example.org/access46" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 77",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/sum#5" -> "http://example.org/+5" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 78",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@k#5" -> "http://example.org/access45" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+76",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/ikj#5" -> "http://example.org/assign21" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+79",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

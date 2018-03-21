@@ -1,7 +1,7 @@
 entity(disti@j#3, [value="3",type="access",label="disti[j]"])
 hadMember(list, disti@j#3, [type="version:Put",version:key="1",version:checkpoint="38",dot:specific="true"])
 activity(assign12, [type="assign"])
-wasDerivedFrom(disti@j#3, ikj#2, assign12, g32, u34, [type="version:Reference",version:checkpoint="38",version:whole="disti#2",version:key="1",version:access="w"])
+wasDerivedFrom(disti@j#3, ikj#2, assign12, g32, u34, [type="version:Reference",version:checkpoint="38",version:collection="disti#2",version:key="1",version:access="w"])
 used(assign12, disti#2, -, [version:checkpoint="37",dot:specific="true"])
 used(assign12, j#5, -)
 used(assign12, disti@j#2, -)

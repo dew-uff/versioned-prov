@@ -21,8 +21,8 @@ Additionally, Versioned-PROV adds the following attributes to existing PROV stat
 | checkpoint | Sortable Value | hadMember                           | Checkpoint of the collection update. Required for Insertion and Removal types.                 |
 | checkpoint | Sortable Value | Events (e.g., used, wasDerivedFrom) | Checkpoint of the event. Required for collections that share references.                       |
 | key        | String         | hadMember                           | The position of Insertion/Removal.                                                             |
-| key        | String         | wasDerivedFrom                      | The position of accessed *whole* entity.                                                       |
-| whole      | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
+| key        | String         | wasDerivedFrom                      | The position of accessed *collection* entity.                                                       |
+| collection | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
 | access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") and element from a collection or writes ("w") into it. |
 
 
@@ -182,7 +182,7 @@ wasGeneratedBy(len_d, call1, -, [version:checkpoint="7"])
 
 We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
 
-We also use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
+We also use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
 
 ```python
 d[0]
@@ -197,7 +197,7 @@ used(access1, d, -, [version:checkpoint="8"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="version:Reference", version:checkpoint="9", 
-    version:whole="d", version:key="0", version:access="r"])
+    version:collection="d", version:key="0", version:access="r"])
 ```
 
 [![Versioned-PROV mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/access.pdf)
@@ -209,7 +209,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We also use the `hadMember` relationship with type `Insertion` to update a list. This relationship is incremental, so it creates a new version based on the previous one by using the `checkpoint`. At checkpoint 15, the list has all elements it had at checkpoint 14, in addition to `hadMember` insertions that occur at checkpoint 15.
 
-Additionaly, we use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
+Additionaly, we use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
 
 
 ```python
@@ -227,7 +227,7 @@ used(assign4, d, -, [version:checkpoint="10"])
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="version:Reference", version:checkpoint="11",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])
 ```
 
 [![Versioned-PROV mapping for assignments to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/part_assign.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/part_assign.pdf)
@@ -300,7 +300,7 @@ used(access1, d, -, [version:checkpoint="8"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="version:Reference", version:checkpoint="9", 
-    version:whole="d", version:key="0", version:access="r"])
+    version:collection="d", version:key="0", version:access="r"])
 
 // part assign
 entity(3, [value="3", type="script:literal"])
@@ -313,7 +313,7 @@ used(assign4, d, -, [version:checkpoint="10"])
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="version:Reference", version:checkpoint="11",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])
 ```
 
 [![Versioned-PROV mapping](https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/full.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/full.pdf)

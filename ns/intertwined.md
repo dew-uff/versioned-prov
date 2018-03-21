@@ -17,11 +17,11 @@ The attribute `intertwined:checkpoint` in `prov:Entity` indicates the moment a c
 
 ### key
 
-The attribute `intertwined:key` in `prov:wasDerivedFrom` indicates which key/position were accessed/changed from the collection represented by `intertwined:whole`.
+The attribute `intertwined:key` in `prov:wasDerivedFrom` indicates which key/position were accessed/changed from the collection represented by `intertwined:collection`.
 
-### whole
+### collection
 
-The attribute `intertwined:whole` in `prov:wasDerivedFrom` indicates which entity was accesses/changed by the derivation.
+The attribute `intertwined:collection` in `prov:wasDerivedFrom` indicates which entity was accesses/changed by the derivation.
 
 ## Types
 

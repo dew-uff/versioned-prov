@@ -23,7 +23,7 @@ def accessed(dot, eid=None, vid=None, time=None, attrs=None, id_=None):
     ]
 
 
-@querier.prov("accessedPart", ["entity", "whole", "key", "part", "time", "text"])
+@querier.prov("accessedPart", ["entity", "collection", "key", "part", "time", "text"])
 def accessedPart(dot, eid=None, wid=None, key=None, pid=None, time=None, attrs=None, id_=None):
     ti = parsetime(time)
     return [
@@ -50,7 +50,7 @@ def wasDefinedBy(dot, vid=None, eid=None, time=None, attrs=None, id_=None):
     ]
 
 
-@querier.prov("derivedByInsertion", ["entity", "whole", "changes", "time", "text"])
+@querier.prov("derivedByInsertion", ["entity", "collection", "changes", "time", "text"])
 def derivedByInsertion(dot, eid=None, wid=None, changes=None, time=None, attrs=None, id_=None):
     ti = parsetime(time)
     return [

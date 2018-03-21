@@ -1,6 +1,6 @@
 entity(dist@i#3, [value="[0, 1, 4]",type="access",label="dist[i]"])
 activity(access23, [type="access",dot:hide="true"])
-wasDerivedFrom(dist@i#3, matrix0, access23, g38, u40, [type="version:Reference",version:checkpoint="44",version:whole="dist",version:key="0",version:access="r",dot:hide="true"])
+wasDerivedFrom(dist@i#3, matrix0, access23, g38, u40, [type="version:Reference",version:checkpoint="44",version:collection="dist",version:key="0",version:access="r",dot:hide="true"])
 used(access23, dist, -, [dot:hide="true"])
 used(access23, i#4, -, [dot:hide="true"])
 entity(disti#3, [value="[0, 1, 4]",type="name",label="disti"])

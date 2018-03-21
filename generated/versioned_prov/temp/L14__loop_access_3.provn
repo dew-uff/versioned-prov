@@ -1,4 +1,4 @@
 entity(i#3, [value="2",type="name",label="i",dot:hide="true"])
 activity(access12, [type="access",dot:hide="true"])
-wasDerivedFrom(i#3, range_nodes2, access12, g22, u23, [type="version:Reference",version:checkpoint="27",version:whole="indexes",version:key="2",version:access="r",dot:hide="true"])
+wasDerivedFrom(i#3, range_nodes2, access12, g22, u23, [type="version:Reference",version:checkpoint="27",version:collection="indexes",version:key="2",version:access="r",dot:hide="true"])
 used(access12, indexes, -, [dot:hide="true"])

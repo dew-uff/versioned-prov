@@ -20,8 +20,8 @@ activity(access2,
 wasDerivedFrom(
  dist@k#1, matrix0, access2, g8, u8,
  [type="v:Reference",
-  v:whole="dist",
   v:access="r",
+  v:collection="dist",
   v:key="0",
   v:checkpoint="13"])
 used(access2, k#1, -)

@@ -27,17 +27,15 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign23" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign23",URL="http://example.org/assign23"]
 "http://example.org/ikj#6" -> "http://example.org/sum#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
 89",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign23" -> "http://example.org/sum#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-89",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access53" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-87",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access52" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 86",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/+6" -> "http://example.org/distk@j#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-88",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access53" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+87",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign23" -> "http://example.org/sum#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+89",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/+6" -> "http://example.org/disti@k#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 88",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/sum#6" -> "http://example.org/+6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+"http://example.org/+6" -> "http://example.org/distk@j#6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 88",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/ikj#6" -> "http://example.org/assign23" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 89",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -45,4 +43,6 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 87",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@k#6" -> "http://example.org/access52" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 86",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#6" -> "http://example.org/+6" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+88",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

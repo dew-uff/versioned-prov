@@ -50,7 +50,7 @@ used(access1, d, -, [version:checkpoint="8"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="version:Reference", version:checkpoint="9", 
-    version:whole="d", version:key="0", version:access="r"])
+    version:collection="d", version:key="0", version:access="r"])
 
 // part assign
 entity(3, [value="3", type="script:literal"])
@@ -63,4 +63,4 @@ used(assign4, d, -, [version:checkpoint="10"])
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
     type="version:Reference", version:checkpoint="11",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])

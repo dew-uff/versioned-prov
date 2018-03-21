@@ -141,12 +141,12 @@ An assignment to a part of a structure is similar to an assignment, but it has t
 ```
 entity(3, [value="3", type="name", version:checkpoint="5"])
 
-entity(d_ac1, [value="3", type="script:access", label="d[1]"])
+entity(d@1, [value="3", type="script:access", label="d[1]"])
 activity(assign2, [type="script:assign"])
 used(assign2, 1, -)
-wasDerivedFrom(d_ac1, 3, assign2, ga2, ua2, [
+wasDerivedFrom(d@1, 3, assign2, ga2, ua2, [
     type="version:Reference", version:checkpoint="3",
-    version:whole="d", version:key="1", version:access="w"])
+    version:collection="d", version:key="1", version:access="w"])
 ```
 Once again, the attributes in the version namespace refer to the Versioned-PROV mapping.
 
@@ -159,14 +159,14 @@ entity(d#2, [value="[1, 3, 1]", type="script:name", label="d"])
 wasDerivedFrom(d#2, d, assign2, ga3, ua3)
 wasDerivedFrom(d#2, 3, assign2, ga3, ua2)
 hadMember(d#2, list0)
-hadMember(d#2, d_ac1)
+hadMember(d#2, d@1)
 hadMember(d#2, list2)
 
 entity(list#2, [value="[1, 3, 1]", type="script:list"])
 wasDerivedFrom(list#2, list, assign2, ga4, ua4)
 wasDerivedFrom(list#2, 3, assign2, ga4, ua2)
 hadMember(list#2, list0)
-hadMember(list#2, d_ac1)
+hadMember(list#2, d@1)
 hadMember(list#2, list2)
 ```
 
@@ -176,18 +176,18 @@ PROV-Dictionary can use the `derivedByInsertionFrom` statement to derive new col
 entity(d#2, [value="[1, 3, 1]", type="Dictionary", label="d"])
 wasDerivedFrom(d#2, d, assign2, ga3, ua3)
 wasDerivedFrom(d#2, 3, assign2, ga3, ua2)
-derivedByInsertionFrom(d#2, d, {("1", d_ac1)})
+derivedByInsertionFrom(d#2, d, {("1", d@1)})
 
 entity(list#2, [value="[1, 3, 1]", type="Dictionary"])
 wasDerivedFrom(list#2, list, assign2, ga4, ua4)
 wasDerivedFrom(list#2, 3, assign2, ga4, ua2)
-derivedByInsertionFrom(list#2, list, {("1", d_ac1)})
+derivedByInsertionFrom(list#2, list, {("1", d@1)})
 ```
 
 Finally, in Versioned-PROV we use the `hadMember` on the collection that defined the reference and a timestamp to indicate when it became a valid member of the collection. All references that share the reference do not need to be updated, since we can follow the references using the `type="version:Reference"` in `wasDerivedFrom` statements:
 ```
 used(assign2, d, -)
-hadMember(list, d_ac1, [type="version:Put", version:key="1", version:checkpoint="3"])
+hadMember(list, d@1, [type="version:Put", version:key="1", version:checkpoint="3"])
 ```
 
 In the following table, we count how many statements of each kind, each approach requires for assigning a element to a collection that share R references and N elements. Note that we are not counting the entities that represent the collection itself, the entity that represents the key nor the entity that represents the assigned value.
@@ -207,7 +207,7 @@ Statement               | Common | PROV         | PROV-Dictionary | Versioned-PR
 **Total**               |**4**   |**R * N + 3R**|**4R**           |**2**           |
 
 
-The number of statements in PROV and PROV-Dictionary are lower bounds, however. If `d` or `list` were a member of another collection, we would have to update the parent collection in a similar way. Additionally, if the entity on the right side were an assignment, we would have to update the membership of `d_ac1` as described before. The same does not happen for Versioned-PROV due to the derivation `type="version:Reference"`. Hence, for Versioned-PROV this number is at the same time the lower bound and the upper bound of an assignment in the format `COLLECTION[KEY] = VALUE`.
+The number of statements in PROV and PROV-Dictionary are lower bounds, however. If `d` or `list` were a member of another collection, we would have to update the parent collection in a similar way. Additionally, if the entity on the right side were an assignment, we would have to update the membership of `d@1` as described before. The same does not happen for Versioned-PROV due to the derivation `type="version:Reference"`. Hence, for Versioned-PROV this number is at the same time the lower bound and the upper bound of an assignment in the format `COLLECTION[KEY] = VALUE`.
 
 
 * In this example, we update the entity `list` as it also refers to `d`, but in an actual execution, the `list` reference is not valid anymore at this point of the execution, since it represents only the list definition. However, all other variables that share a reference with `d` would still be updated this way.

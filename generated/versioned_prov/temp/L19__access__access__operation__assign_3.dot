@@ -27,22 +27,22 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign15" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign15",URL="http://example.org/assign15"]
 "http://example.org/ikj#3" -> "http://example.org/sum#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
 52",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access28" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-50",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/+3" -> "http://example.org/disti@k#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-51",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access27" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-49",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/+3" -> "http://example.org/distk@j#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 51",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+3" -> "http://example.org/disti@k#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+51",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access28" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+50",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access27" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+49",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign15" -> "http://example.org/sum#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 52",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk@j#3" -> "http://example.org/access28" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 50",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/sum#3" -> "http://example.org/+3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-51",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/ikj#3" -> "http://example.org/assign15" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 52",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#3" -> "http://example.org/+3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+51",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@k#3" -> "http://example.org/access27" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 49",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

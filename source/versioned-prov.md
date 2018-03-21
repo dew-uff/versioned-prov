@@ -24,8 +24,8 @@ Additionally, ::GET NAME:: adds the following attributes to existing PROV statem
 | checkpoint | Sortable Value | hadMember                           | Checkpoint of the collection update. Required for Insertion and Removal types.                 |
 | checkpoint | Sortable Value | Events (e.g., used, wasDerivedFrom) | Checkpoint of the event. Required for collections that share references.                       |
 | key        | String         | hadMember                           | The position of Insertion/Removal.                                                             |
-| key        | String         | wasDerivedFrom                      | The position of accessed *whole* entity.                                                       |
-| whole      | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
+| key        | String         | wasDerivedFrom                      | The position of accessed *collection* entity.                                                       |
+| collection | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
 | access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") and element from a collection or writes ("w") into it. |
 
 
@@ -124,7 +124,7 @@ len(d)
 
 We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
 
-We also use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
+We also use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
 
 ```python
 d[0]
@@ -139,7 +139,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We also use the `hadMember` relationship with type `Insertion` to update a list. This relationship is incremental, so it creates a new version based on the previous one by using the `checkpoint`. At checkpoint 15, the list has all elements it had at checkpoint 14, in addition to `hadMember` insertions that occur at checkpoint 15.
 
-Additionaly, we use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
+Additionaly, we use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
 
 
 ```python

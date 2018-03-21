@@ -189,7 +189,7 @@ wasDerivedFrom(d@0, list0, access1, g8, u9)
 
 ## Assignment to part of structure
 
-A part assignment is similitar to an assignment, but it creates a new `entity` for the whole `entity` with `hadMember` relationships to the new part and to the other parts that are valid.
+A part assignment is similitar to an assignment, but it creates a new `entity` for the collection `entity` with `hadMember` relationships to the new part and to the other parts that are valid.
 
 If there is more than one variable or data structure with a reference to the changed list, we must update all the lists.
 

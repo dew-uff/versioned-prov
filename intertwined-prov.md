@@ -20,8 +20,8 @@ Additionally, Intertwined-PROV adds the following attributes to existing PROV st
 |:-----------|:--------------:|:------------------------------------|------------------------------------------------------------------------------------------------|
 | checkpoint | Sortable Value | Events (e.g., used, wasDerivedFrom) | Checkpoint of the event. Required for entities that share versions.                            |
 | checkpoint | Sortable Value | entity                              | Checkpoint of version entity generation. Required for versions.                                |
-| key        | String         | wasDerivedFrom                      | The position of accessed *whole* entity.                                                       |
-| whole      | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
+| key        | String         | wasDerivedFrom                      | The position of accessed *collection* entity.                                                       |
+| collection | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
 | access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") and element from a collection or writes ("w") into it. |
 
 
@@ -219,7 +219,7 @@ wasGeneratedBy(len_d, call1, -, [intertwined:checkpoint="9"])
 
 We map an access to a part of a value as an `activity` that generates the accessed `entity`, by using the list `entity` and the index, when it is explicitly used (for-each loops iterates over lists without explicit item `entities`).
 
-We also use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
+We also use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part were accessed. Moreover, the attribute `access="r"` indicates that it was a *read* access.
 
 ```python
 d[0]
@@ -237,7 +237,7 @@ used(access1, d, -, [intertwined:checkpoint="11"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="12",
-    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
+    intertwined:collection="d", intertwined:key="0", intertwined:access="r"])
 ```
 
 [![Intertwined-PROV mapping for accesses to parts](https://github.com/dew-uff/versioned-prov/raw/master/generated/intertwined_prov/access.png)](https://github.com/dew-uff/versioned-prov/blob/master/generated/intertwined_prov/access.pdf)
@@ -248,7 +248,7 @@ A part assignment is a mix of an access `activity` and an assign `activity`.
 
 We use the PROV-Dictionary `derivedByInsertionFrom` to create a new version with the new part. We also use the `specializationOf` statement to associate the new version to the entity that had the previous version.
 
-Additionaly, we use the attributes `key` and `whole` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
+Additionaly, we use the attributes `key` and `collection` in `wasDerivedFrom` to indicate which part of which structure were changed, and the attribute `access="w"` to indicate the derivation represents also a *write* in the structure.
 
 
 ```python
@@ -270,7 +270,7 @@ activity(assign4, [type="script:assign"])
 used(assign4, d, -, [intertwined:checkpoint="14"])
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
-    type="intertwined:Reference", intertwined:checkpoint="15", intertwined:whole="d",
+    type="intertwined:Reference", intertwined:checkpoint="15", intertwined:collection="d",
     intertwined:key="1", intertwined:access="w"])
 ```
 
@@ -359,7 +359,7 @@ used(access1, d, -)
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="10",
-    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
+    intertwined:collection="d", intertwined:key="0", intertwined:access="r"])
 
 // part assign
 entity(3, [value="3", type="script:literal"])
@@ -376,7 +376,7 @@ activity(assign4, [type="script:assign"])
 used(assign4, d, -)
 used(assign4, 1, -)
 wasDerivedFrom(d@1, 3, assign4, g6, u7, [
-    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:whole="d",
+    type="intertwined:Reference", intertwined:checkpoint="11", intertwined:collection="d",
     intertwined:key="1", intertwined:access="w"])
 ```
 

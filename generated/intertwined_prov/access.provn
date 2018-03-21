@@ -37,4 +37,4 @@ used(access1, d, -, [intertwined:checkpoint="11"])
 used(access1, 0, -)
 wasDerivedFrom(d@0, m, access1, g5, u6, [
     type="intertwined:Reference", intertwined:checkpoint="12",
-    intertwined:whole="d", intertwined:key="0", intertwined:access="r"])
+    intertwined:collection="d", intertwined:key="0", intertwined:access="r"])

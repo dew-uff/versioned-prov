@@ -30,8 +30,8 @@ activity(assign12, [type="assign"])
 wasDerivedFrom(
  disti@j#3, ikj#2, assign12, g32, u34,
  [type="v:Reference",
-  v:whole="disti#2",
   v:access="w",
+  v:collection="disti#2",
   v:key="1",
   v:checkpoint="38"])
 used(assign12, j#5, -)

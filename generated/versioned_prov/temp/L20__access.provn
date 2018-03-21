@@ -1,5 +1,5 @@
 entity(disti@j#1, [value="2",type="access",label="disti[j]",dot:hide="true"])
 activity(access11, [type="access",dot:hide="true"])
-wasDerivedFrom(disti@j#1, 2, access11, g21, u22, [type="version:Reference",version:checkpoint="26",version:whole="disti#1",version:key="0",version:access="r",dot:hide="true"])
+wasDerivedFrom(disti@j#1, 2, access11, g21, u22, [type="version:Reference",version:checkpoint="26",version:collection="disti#1",version:key="0",version:access="r",dot:hide="true"])
 used(access11, disti#1, -, [dot:hide="true"])
 used(access11, j#3, -, [dot:hide="true"])

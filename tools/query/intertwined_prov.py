@@ -16,12 +16,12 @@ def entity(querier, eid, attrs={}, id_=None):
     ]
 
 
-@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "checkpoint", "whole", "key", "mode", "attrs", "text"])
+@querier.prov("wasDerivedFrom", ["generated", "used", "activity", "generation", "use", "type", "checkpoint", "collection", "key", "mode", "attrs", "text"])
 def wasDerivedFrom(dot, eid1=None, eid2=None, aid=None, gid=None, uid=None, attrs=None, id_=None):
     attrs = attrs or {}
     return [
         eid1, eid2, aid, gid, uid,
         unquote(attrs.get("type")), parsetime(attrs.get("intertwined:checkpoint")),
-        unquote(attrs.get("intertwined:whole")), unquote(attrs.get("intertwined:key")), unquote(attrs.get("intertwined:access")),
+        unquote(attrs.get("intertwined:collection")), unquote(attrs.get("intertwined:key")), unquote(attrs.get("intertwined:access")),
         attrs, querier.text("wasDerivedFrom", [eid1, eid2, aid, gid, uid], attrs, id_)
     ]

@@ -55,9 +55,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 2"]
 "http://example.org/sum" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
 2"]
-"http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-2"]
 "http://example.org/+" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+2"]
+"http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 2"]
 "http://example.org/sum" -> "http://example.org/+" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
 2"]

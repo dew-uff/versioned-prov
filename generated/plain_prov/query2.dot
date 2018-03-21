@@ -1,7 +1,19 @@
 digraph "PROV" { size="16,12"; rankdir="RL";
+"http://example.org/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="http://example.org/3"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/d@1" -> "http://example.org/3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/d@1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d@1",URL="http://example.org/d@1"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -15,17 +27,5 @@ digraph "PROV" { size="16,12"; rankdir="RL";
 	    <TD align="left">d[1]</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/d@1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="http://example.org/3"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/3" [color="gray",style="dashed",arrowhead="none"]
+"-attrs1" -> "http://example.org/d@1" [color="gray",style="dashed",arrowhead="none"]
 }

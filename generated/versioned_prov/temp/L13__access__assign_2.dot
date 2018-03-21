@@ -46,8 +46,8 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 42",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access21" -> "http://example.org/matrix1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 41",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/dist@k#2" -> "http://example.org/access21" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-41",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk#2" -> "http://example.org/assign13" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 42",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/dist@k#2" -> "http://example.org/access21" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+41",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

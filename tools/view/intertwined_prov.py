@@ -37,7 +37,7 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
         if intertwined(attrs, 'access', False):
             return dot.arrow3(
                 attrs, "int_wasDerivedFrom",
-                egenerated, intertwined(attrs, 'whole'), eused,
+                egenerated, intertwined(attrs, 'collection'), eused,
                 "",
                 "der ac-{}\n{}".format(
                     intertwined(attrs, 'access'),

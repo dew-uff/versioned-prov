@@ -37,10 +37,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign4" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign4",URL="http://example.org/assign4"]
 "http://example.org/result" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
 6",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign3" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-5",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign4" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
 6",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign3" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+5",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/dist" -> "http://example.org/assign3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
 5",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/result" -> "http://example.org/assign4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
