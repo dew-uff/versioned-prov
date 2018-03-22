@@ -1,0 +1,4 @@
+entity(j#16, [type="script:name",label="j",script:line="13",dot:hide="true"])
+activity(access53, [type="script:access",dot:hide="true"])
+wasDerivedFrom(j#16, range_nodes0, access53, g82, u89, [type="intertwined:Reference",intertwined:checkpoint="2018-03-22T00:15:05.346576",intertwined:collection="indexes",intertwined:key="0",intertwined:access="r",dot:hide="true"])
+used(access53, indexes, -, [dot:hide="true"])

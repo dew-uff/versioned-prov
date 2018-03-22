@@ -27,6 +27,7 @@ HIDE = {"dot:hide": "true"}
 SPECIFIC = {"dot:specific": "true"}
 BLACK = {"dot:color":"#000000"}
 NAMESPACE = "version:"
+SCRIPT = "script:"
 
 def reset_prov(base):
     global DICTS
@@ -126,13 +127,16 @@ def _buildattrs(attrs, pairs):
     return new_attrs
 
 
-def entity(name, value, type_, label, *, show1=False, attrs={}):
+def entity(name, value, type_, label, line, *, show1=False, attrs={}):
     varname = get_varname(name, show1=show1)
-    new_attrs = _buildattrs(attrs, [
+    defattrs = [
         ("value", value),
         ("type", type_),
         ("label", label)
-    ])
+    ]
+    if line:
+        defattrs.append((SCRIPT + "line", str(line)))
+    new_attrs = _buildattrs(attrs, defattrs)
     add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
@@ -145,11 +149,11 @@ def version(name, time, *, attrs={}):
     add('entity({}{})'.format(varname, _attrpairs(new_attrs)))
     return varname
 
-def ventity(time, name, value, type_, label, *, show1=False, attrs={}):
+def ventity(time, name, value, type_, label, line, *, show1=False, attrs={}):
     new_attrs = _buildattrs(attrs, [
         (NAMESPACE + "checkpoint", time),
     ])
-    return entity(name, value, type_, label, show1=show1, attrs=new_attrs)
+    return entity(name, value, type_, label, line, show1=show1, attrs=new_attrs)
 
 
 class BaseOp:
@@ -332,11 +336,11 @@ def instantiate(cls, elements, gs, us, shared, attrs, starred=False):
         new.append(obj)
     return new
 
-def activity(name, derived=[], used=[], generated=[], label=None, *, shared=False, attrs={}):
+def activity(name, derived=[], used=[], generated=[], label=None, *, prefix=SCRIPT, shared=False, attrs={}):
     varname = get_varname(name, sep="", show1=True)
     usages = {}
     new_attrs = _buildattrs(attrs, [
-        ("type", name),
+        ("type", prefix + name),
         ("label", label),
     ])
     add('activity({}{})'.format(varname, _attrpairs(new_attrs)))
@@ -456,16 +460,19 @@ def hadDictionaryMember(cid, eid, key, attrs):
     add("hadDictionaryMember({}, {}, {}{})".format(cid, eid, key, _attrpairs(attrs)))
     DICTS[cid][key] = eid
 
-def define_array(name, value, label, type_="Dictionary", member=nop, show1=False, attrs={}, first_attrs={}):
-    varname = entity(name, repr(value), type_, calc_label(label), show1=show1, attrs=first_attrs)
+def define_array(name, value, label, line=None, type_="Dictionary", member=nop, show1=False, attrs={}, first_attrs={}):
+    varname = entity(name, repr(value), type_, calc_label(label), line, show1=show1, attrs=first_attrs)
     result = []
     for i, (v, l) in enumerate(zip(value, label)):
         iname = "{}{}".format(name, i)
         if isinstance(l, list):
-            ref, _ = arr = define_array(iname, v, l, type_, member, show1=True, attrs=attrs, first_attrs=first_attrs)
+            ref, _ = arr = define_array(
+                iname, v, l, line=line + i + 1,
+                type_=type_, member=member,
+                show1=True, attrs=attrs, first_attrs=first_attrs)
             result.append(arr)
         else:
-            ref = entity(iname, repr(v), "item", l, attrs=attrs)
+            ref = entity(iname, repr(v), "item", l, line, attrs=attrs)
             result.append(ref)
         member(varname, ref, repr(i), attrs=attrs)
     return varname, result
@@ -482,8 +489,8 @@ def derivation_pair(first, second, derivations=None):
             derivation_pair(fd_value, sd_value, derivations)
     return derivations
 
-def update(name, collection_ent, key, part_ent, collection_value, label=None, attrs={}):
-    new_collection = entity(name, repr(collection_value), "list", label, attrs=attrs)
+def update(name, collection_ent, key, part_ent, collection_value, label=None, line=None, attrs={}):
+    new_collection = entity(name, repr(collection_value), SCRIPT + "list", label, line, attrs=attrs)
     key = repr(key)
     for other_key, other_part in DICTS[collection_ent].items():
         if other_key != key:
@@ -504,7 +511,7 @@ def desc(desc, enabled=False, line=None):
     global ENABLED
     if enabled:
         ENABLED = True
-    yield
+    yield line
     slug = (
         desc
         .replace(" ", "_")

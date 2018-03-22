@@ -1,0 +1,5 @@
+entity(disti@j#4, [value="4",type="script:access",label="disti[j]",script:line="16",dot:hide="true"])
+activity(access29, [type="script:access",dot:hide="true"])
+wasDerivedFrom(disti@j#4, matrix02, access29, g58, u61, [dot:hide="true"])
+used(access29, disti#4, -, [dot:hide="true"])
+used(access29, j#9, -, [dot:hide="true"])

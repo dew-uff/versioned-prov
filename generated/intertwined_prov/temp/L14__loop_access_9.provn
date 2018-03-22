@@ -1,4 +1,0 @@
-entity(i#9, [value="2",type="name",label="i",dot:hide="true"])
-activity(access77, [type="access",dot:hide="true"])
-wasDerivedFrom(i#9, range_nodes2, access77, g117, u127, [type="intertwined:Reference",intertwined:checkpoint="2018-03-21T14:46:33.073860",intertwined:collection="indexes",intertwined:key="2",intertwined:access="r",dot:hide="true"])
-used(access77, indexes, -, [dot:hide="true"])

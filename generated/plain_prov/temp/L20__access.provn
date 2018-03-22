@@ -1,5 +1,0 @@
-entity(disti@j#1, [value="2",type="access",label="disti[j]",dot:hide="true"])
-activity(access11, [type="access",dot:hide="true"])
-wasDerivedFrom(disti@j#1, matrix12, access11, g31, u32, [dot:hide="true"])
-used(access11, disti#1, -, [dot:hide="true"])
-used(access11, j#3, -, [dot:hide="true"])

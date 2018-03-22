@@ -1,0 +1,8 @@
+entity(disti@j#9, [value="4",type="script:access",label="disti[j]",script:line="17"])
+hadMember(matrix1, disti@j#9, [type="version:Put",version:key="0",version:checkpoint="90",dot:specific="true"])
+activity(assign23, [type="script:assign"])
+wasDerivedFrom(disti@j#9, ikj#6, assign23, g83, u89, [type="version:Reference",version:checkpoint="90",version:collection="disti#6",version:key="0",version:access="w"])
+used(assign23, disti#6, -, [version:checkpoint="89",dot:specific="true"])
+used(assign23, j#16, -)
+used(assign23, disti@j#8, -)
+used(assign23, ikj#6, -)

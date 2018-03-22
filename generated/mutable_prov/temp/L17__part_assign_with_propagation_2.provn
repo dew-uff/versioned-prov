@@ -1,0 +1,6 @@
+entity(disti@j#5, [type="script:access",label="disti[j]",script:line="17"])
+derivedByInsertion(disti@j#5, row0, {("2", vsum#3)}, 2018-03-22T00:26:51.233087, [dot:specific="true"])
+accessed(disti@j#5, vsum#3, 2018-03-22T00:26:51.233087, [dot:specific="true"])
+activity(assign15, [type="script:assign"])
+wasDerivedFrom(disti@j#5, ikj#3, assign15, g18, u21)
+used(assign15, disti#3, -)

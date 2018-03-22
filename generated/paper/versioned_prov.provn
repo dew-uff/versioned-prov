@@ -1,0 +1,46 @@
+// L1#1
+entity(m, [value="10000",type="script:name",label="m",script:line="1",dot:hide2="true"])
+
+// L2#1
+entity(0, [value="0",type="script:literal",script:line="3",dot:hide2="true"])
+entity(2, [value="2",type="script:literal",script:line="4",dot:hide2="true"])
+entity(matrix, [value="[[...]]",type="script:list",label="[[...]]",script:line="2",dot:hide2="true"])
+entity(matrix0, [value="[0, 1, 4]",type="script:list",label="[0, 1, 4]",script:line="3",dot:hide2="true"])
+hadMember(matrix, matrix0, [type="version:Put",version:key="0",version:checkpoint="2",dot:hide2="true"])
+entity(matrix1, [value="[10000, 0, 2]",type="script:list",label="[m, 0, 2]",script:line="4",dot:hide2="true"])
+hadMember(matrix, matrix1, [type="version:Put",version:key="1",version:checkpoint="2",dot:hide2="true"])
+entity(matrix2, [value="[2, 10000, 0]",type="script:list",label="[2, m, 0]",script:line="5",dot:hide2="true"])
+hadMember(matrix2, 2, [type="version:Put",version:key="0",version:checkpoint="2",dot:hide2="true"])
+hadMember(matrix2, m, [type="version:Put",version:key="1",version:checkpoint="2",dot:hide2="true"])
+hadMember(matrix2, 0, [type="version:Put",version:key="2",version:checkpoint="2",dot:hide2="true"])
+hadMember(matrix, matrix2, [type="version:Put",version:key="2",version:checkpoint="2",dot:hide2="true"])
+
+entity(dist, [value="[[...]]",type="script:name",label="dist",script:line="2",dot:hide2="true"])
+wasDerivedFrom(dist, matrix, -, -, -, [type="version:Reference",version:checkpoint="3",dot:hide2="true"])
+
+// L12#2
+entity(dist@i#2, [value="[2, 10000, 0]",type="script:access",label="dist[i]",script:line="12",dot:hide2="true"])
+wasDerivedFrom(dist@i#2, matrix2, -, -, -, [type="version:Reference",version:checkpoint="26",version:collection="dist",version:key="2",version:access="r",dot:hide2="true"])
+entity(disti#2, [value="[2, 10000, 0]",type="script:name",label="disti",script:line="12"])
+wasDerivedFrom(disti#2, dist@i#2, -, -, -, [type="version:Reference",version:checkpoint="27",dot:hide2="true"])
+
+// L13#2
+entity(j#5, [value="1",type="script:name",label="j",script:line="13"])
+
+// L15#2
+entity(ikj#2, [value="3",type="script:name",label="ikj",script:line="15"])
+
+// L16#2
+entity(disti@j#2, [value="10000",type="script:access",label="disti[j]",script:line="16",dot:hide2="true"])
+wasDerivedFrom(disti@j#2, m, -, -, -, [type="version:Reference",version:checkpoint="34",version:collection="disti#2",version:key="0",version:access="r",dot:hide2="true"])
+
+
+// L17#1
+entity(disti@j#3, [value="3",type="script:access",label="disti[j]",script:line="17"])
+activity(assign11, [type="script:assign"])
+wasDerivedFrom(disti@j#3, ikj#2, assign11, g31, u33, [type="version:Reference",version:checkpoint="36",version:collection="disti#2",version:key="1",version:access="w"])
+used(assign11, j#5, -)
+used(assign11, disti@j#2, -,[dot:hide2="true"])
+
+hadMember(matrix2, disti@j#3, [type="version:Put",version:key="1",version:checkpoint="36",dot:specific="true"])
+used(assign11, disti#2, -, [version:checkpoint="35",dot:specific="true"])

@@ -1,0 +1,182 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="http://example.org/0"]
+"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">0</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+</TABLE>>]
+"-attrs0" -> "http://example.org/0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">1</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/4" [fillcolor="#FFFC87",color="#808080",style="filled",label="4",URL="http://example.org/4"]
+"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">4</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+</TABLE>>]
+"-attrs2" -> "http://example.org/4" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
+"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">4</TD>
+	</TR>
+</TABLE>>]
+"-attrs3" -> "http://example.org/2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
+"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[[0, 1, 4], [m, 0, 2], [2, m, 0]]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+</TABLE>>]
+"-attrs4" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix0",URL="http://example.org/matrix0"]
+"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[0, 1, 4]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+</TABLE>>]
+"-attrs5" -> "http://example.org/matrix0" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[0]
+2"]
+"http://example.org/matrix0" -> "http://example.org/1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[1]
+2"]
+"http://example.org/matrix0" -> "http://example.org/4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[2]
+2"]
+"http://example.org/matrix" -> "http://example.org/matrix0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[0]
+2"]
+"http://example.org/matrix1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1",URL="http://example.org/matrix1"]
+"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[10000, 0, 2]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[m, 0, 2]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">4</TD>
+	</TR>
+</TABLE>>]
+"-attrs6" -> "http://example.org/matrix1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[0]
+2"]
+"http://example.org/matrix1" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[1]
+2"]
+"http://example.org/matrix1" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[2]
+2"]
+"http://example.org/matrix" -> "http://example.org/matrix1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[1]
+2"]
+"http://example.org/matrix2" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix2",URL="http://example.org/matrix2"]
+"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 10000, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[2, m, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">5</TD>
+	</TR>
+</TABLE>>]
+"-attrs7" -> "http://example.org/matrix2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix2" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[0]
+2"]
+"http://example.org/matrix2" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[1]
+2"]
+"http://example.org/matrix2" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[2]
+2"]
+"http://example.org/matrix" -> "http://example.org/matrix2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+[2]
+2"]
+}

@@ -1,4 +1,0 @@
-entity(j#3, [value="2",type="name",label="j",dot:hide="true"])
-activity(access8, [type="access",dot:hide="true"])
-wasDerivedFrom(j#3, range_nodes2, access8, g16, u16, [type="version:Reference",version:checkpoint="21",version:collection="indexes",version:key="2",version:access="r",dot:hide="true"])
-used(access8, indexes, -, [dot:hide="true"])

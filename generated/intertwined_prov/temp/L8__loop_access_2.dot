@@ -1,0 +1,14 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/k#2" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="k#2",URL="http://example.org/k#2"]
+"http://example.org/access30" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access30",URL="http://example.org/access30"]
+"bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/k#2" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
+2018-03-22T00:15:03.114768",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn0" -> "http://example.org/indexes" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn0" -> "http://example.org/range_nodes1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[1]",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access30" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access30" -> "http://example.org/range_nodes1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+2018-03-22T00:15:03.114768",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/k#2" -> "http://example.org/access30" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-22T00:15:03.114768",fontcolor="#F0F0F0",color="#F0F0F0"]
+}

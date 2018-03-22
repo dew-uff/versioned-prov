@@ -1,8 +1,8 @@
-# Input
 m = 10000 # max value
-lastrow = [2, m, 0]
-result = dist = [[0, 1, 4], [m, 0, 2], lastrow]
-# Algorithm
+result = dist = [
+	[0, 1, 4],
+	[m, 0, 2],
+	[2, m, 0]]
 nodes = len(dist)
 indexes = range(nodes)
 for k in indexes:

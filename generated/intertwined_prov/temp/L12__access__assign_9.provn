@@ -1,0 +1,8 @@
+entity(dist@i#9, [value="[2, 3, 0]",type="script:access",label="dist[i]",script:line="12"])
+activity(access78, [type="script:access",dot:hide="true"])
+wasDerivedFrom(dist@i#9, list2, access78, g117, u127, [type="intertwined:Reference",intertwined:checkpoint="2018-03-22T00:15:07.818080",intertwined:collection="dist",intertwined:key="2",intertwined:access="r",dot:hide="true"])
+used(access78, dist, -, [dot:hide="true"])
+used(access78, i#9, -, [dot:hide="true"])
+entity(disti#9, [value="[2, 3, 0]",type="script:name",label="disti",script:line="12"])
+activity(assign30, [type="script:assign",dot:hide="true"])
+wasDerivedFrom(disti#9, dist@i#9, assign30, g118, u128, [type="intertwined:Reference",intertwined:checkpoint="2018-03-22T00:15:07.818080",dot:hide="true"])

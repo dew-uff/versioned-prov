@@ -1,23 +1,9 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/10000" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="10000",URL="http://example.org/10000"]
-"http://example.org/10000_v1" [fillcolor="#FFFC87",color="#808080",style="filled",label="10000_v1",URL="http://example.org/10000_v1"]
+"http://example.org/dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist",URL="http://example.org/dist"]
 "-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
-	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-21 14:46:20.052619</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">Version</TD>
-	</TR>
-</TABLE>>]
-"-attrs0" -> "http://example.org/10000_v1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/10000" -> "http://example.org/10000_v1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="spe"]
-"http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
-	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -25,15 +11,46 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">m</TD>
+	    <TD align="left">dist</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">2</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/assign1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign1",URL="http://example.org/assign1"]
-"http://example.org/m" -> "http://example.org/10000" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-21T14:46:20.052619",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign1" -> "http://example.org/10000" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-21T14:46:20.052619",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/m" -> "http://example.org/assign1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-21T14:46:20.052619",fontcolor="#F0F0F0",color="#F0F0F0"]
+"-attrs0" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign2" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign2",URL="http://example.org/assign2"]
+"http://example.org/dist" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
+2018-03-22T00:14:59.889806",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/result" [fillcolor="#FFFC87",color="#808080",style="filled",label="result",URL="http://example.org/result"]
+"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">result</TD>
+	</TR>
+	<TR>
+	    <TD align="left">line:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+</TABLE>>]
+"-attrs1" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/assign3" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign3",URL="http://example.org/assign3"]
+"http://example.org/result" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
+2018-03-22T00:14:59.890811",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign3" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+2018-03-22T00:14:59.890811",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign2" -> "http://example.org/list" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+2018-03-22T00:14:59.889806",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/result" -> "http://example.org/assign3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-22T00:14:59.890811",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/dist" -> "http://example.org/assign2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-03-22T00:14:59.889806",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

@@ -1,5 +1,0 @@
-entity(disti@j#8, [value="10000",type="access",label="disti[j]",dot:hide="true"])
-activity(access54, [type="access",dot:hide="true"])
-wasDerivedFrom(disti@j#8, m, access54, g83, u89, [type="version:Reference",version:checkpoint="90",version:collection="disti#6",version:key="2",version:access="r",dot:hide="true"])
-used(access54, disti#6, -, [dot:hide="true"])
-used(access54, j#16, -, [dot:hide="true"])

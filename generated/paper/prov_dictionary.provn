@@ -1,0 +1,52 @@
+// empty
+entity(empty, [value="[]",type="EmptyDictionary",dot:hide2="true"])
+// L2#1
+entity(matrix0#1, [value="[0, 1, 4]",type="Dictionary",label="[0, 1, 4]",script:line="3",dot:hide2="true"])
+entity(matrix1#1, [value="[10000, 0, 2]",type="Dictionary",label="[m, 0, 2]",script:line="4",dot:hide2="true"])
+entity(matrix2#1, [value="[2, 10000, 0]",type="Dictionary",label="[2, m, 0]",script:line="5",dot:hide2="true"])
+entity(matrix20, [value="2",type="item",label="2",script:line="5",dot:hide2="true"])
+entity(matrix21, [value="10000",type="item",label="m",script:line="5",dot:hide2="true"])
+entity(matrix22, [value="0",type="item",label="0",script:line="5",dot:hide2="true"])
+derivedByInsertionFrom(matrix2#1, empty, {("0", matrix20), ("1", matrix21), ("2", matrix22)}, [dot:hide2="true"])
+
+entity(dist#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="dist",script:line="2",dot:hide2="true"])
+derivedByInsertionFrom(dist#1, empty, {("0", matrix0#1), ("1", matrix1#1), ("2", matrix2#1)}, [dot:hide2="true"])
+
+entity(result#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="result",script:line="2",dot:hide2="true"])
+derivedByInsertionFrom(result#1, empty, {("0", matrix0#1), ("1", matrix1#1), ("2", matrix2#1)}, [dot:hide2="true"])
+
+// L12#2
+entity(disti#2, [value="[2, 10000, 0]",type="Dictionary",label="disti",script:line="12"])
+derivedByInsertionFrom(disti#2, empty, {("0", matrix20), ("1", matrix21), ("2", matrix22)}, [dot:hide2="true"])
+
+// L13#2
+entity(j#5, [value="1",type="script:name",label="j",script:line="13"])
+
+// L15#2
+entity(ikj#2, [value="3",type="script:name",label="ikj",script:line="15"])
+
+// L16#2
+entity(disti@j#2, [value="10000",type="script:access",label="disti[j]",script:line="16",dot:hide2="true"])
+
+// L17#1
+entity(disti@j#3, [value="3",type="script:access",label="disti[j]",script:line="17"])
+activity(assign11, [type="script:assign"])
+wasDerivedFrom(disti@j#3, ikj#2, assign11, g43, u42)
+used(assign11, j#5, -)
+used(assign11, disti@j#2, -,[dot:hide2="true"])
+
+
+entity(disti#3, [value="[2, 3, 0]",type="Dictionary",label="disti",script:line="17",dot:specific="true"])
+derivedByInsertionFrom(disti#3, disti#2, {("1", disti@j#3)}, [dot:specific="true"])
+wasDerivedFrom(disti#3, disti#2, assign11, g40, u43, [dot:specific="true"])
+wasDerivedFrom(disti#3, ikj#2, assign11, g40, u42, [dot:specific="true"])
+
+entity(dist#2, [value="[[...]]",type="Dictionary",label="dist",script:line="17",dot:specific="true"])
+derivedByInsertionFrom(dist#2, dist#1, {("2", disti#3)}, [dot:specific="true"])
+wasDerivedFrom(dist#2, dist#1, assign11, g41, u44, [dot:specific="true"])
+wasDerivedFrom(dist#2, ikj#2, assign11, g41, u42, [dot:specific="true"])
+
+entity(result#2, [value="[[...]]",type="Dictionary",label="result",script:line="17",dot:specific="true"])
+derivedByInsertionFrom(result#2, result#1, {("2", disti#3)}, [dot:specific="true"])
+wasDerivedFrom(result#2, result#1, assign11, g42, u45, [dot:specific="true"])
+wasDerivedFrom(result#2, ikj#2, assign11, g42, u42, [dot:specific="true"])

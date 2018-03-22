@@ -1,8 +1,0 @@
-entity(dist@i#5, [value="[10000, 0, 2]",type="access",label="dist[i]"])
-activity(access41, [type="access",dot:hide="true"])
-wasDerivedFrom(dist@i#5, list1, access41, g65, u70, [type="intertwined:Reference",intertwined:checkpoint="2018-03-21T14:46:28.020339",intertwined:collection="dist",intertwined:key="1",intertwined:access="r",dot:hide="true"])
-used(access41, dist, -, [dot:hide="true"])
-used(access41, i#5, -, [dot:hide="true"])
-entity(disti#5, [value="[10000, 0, 2]",type="name",label="disti"])
-activity(assign20, [type="assign",dot:hide="true"])
-wasDerivedFrom(disti#5, dist@i#5, assign20, g66, u71, [type="intertwined:Reference",intertwined:checkpoint="2018-03-21T14:46:28.020840",dot:hide="true"])

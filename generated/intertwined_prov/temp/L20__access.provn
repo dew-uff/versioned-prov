@@ -1,5 +1,0 @@
-entity(disti@j#1, [value="1",type="access",label="disti[j]",dot:hide="true"])
-activity(access9, [type="access",dot:hide="true"])
-wasDerivedFrom(disti@j#1, 1, access9, g19, u20, [type="intertwined:Reference",intertwined:checkpoint="2018-03-21T14:46:22.432943",intertwined:collection="disti#1",intertwined:key="0",intertwined:access="r",dot:hide="true"])
-used(access9, disti#1, -, [dot:hide="true"])
-used(access9, j#2, -, [dot:hide="true"])

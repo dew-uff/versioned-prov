@@ -1,0 +1,8 @@
+entity(dist@k#2, [value="[10000, 0, 2]",type="script:access",label="dist[k]",script:line="9"])
+activity(access21, [type="script:access",dot:hide="true"])
+wasDerivedFrom(dist@k#2, matrix1, access21, g34, u36, [type="version:Reference",version:checkpoint="39",version:collection="dist",version:key="1",version:access="r",dot:hide="true"])
+used(access21, dist, -, [dot:hide="true"])
+used(access21, k#2, -, [dot:hide="true"])
+entity(distk#2, [value="[10000, 0, 2]",type="script:name",label="distk",script:line="9"])
+activity(assign12, [type="script:assign",dot:hide="true"])
+wasDerivedFrom(distk#2, dist@k#2, assign12, g35, u37, [type="version:Reference",version:checkpoint="40",dot:hide="true"])

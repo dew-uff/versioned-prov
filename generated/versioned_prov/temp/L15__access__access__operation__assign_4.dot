@@ -1,0 +1,48 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/disti@k#4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="disti@k#4",URL="http://example.org/disti@k#4"]
+"http://example.org/access34" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access34",URL="http://example.org/access34"]
+"bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@k#4" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
+59",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn0" -> "http://example.org/disti#4" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn0" -> "http://example.org/disti@j#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[1]",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access34" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access34" -> "http://example.org/k#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/distk@j#4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="distk@j#4",URL="http://example.org/distk@j#4"]
+"http://example.org/access35" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access35",URL="http://example.org/access35"]
+"bn1" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/distk@j#4" -> "bn1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
+60",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn1" -> "http://example.org/distk#2" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
+"bn1" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[0]",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access35" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access35" -> "http://example.org/j#10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="sum#4",URL="http://example.org/sum#4"]
+"http://example.org/+4" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="+4",URL="http://example.org/+4"]
+"http://example.org/sum#4" -> "http://example.org/disti@k#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der
+61",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#4" -> "http://example.org/distk@j#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der
+61",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/ikj#4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="ikj#4",URL="http://example.org/ikj#4"]
+"http://example.org/assign17" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign17",URL="http://example.org/assign17"]
+"http://example.org/ikj#4" -> "http://example.org/sum#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
+62",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+4" -> "http://example.org/distk@j#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+61",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access34" -> "http://example.org/disti@j#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+59",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access35" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+60",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign17" -> "http://example.org/sum#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+62",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+4" -> "http://example.org/disti@k#4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+61",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/ikj#4" -> "http://example.org/assign17" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+62",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/distk@j#4" -> "http://example.org/access35" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+60",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@k#4" -> "http://example.org/access34" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+59",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#4" -> "http://example.org/+4" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+61",fontcolor="#F0F0F0",color="#F0F0F0"]
+}
