@@ -22,10 +22,10 @@ hadMember(matrix2, 0, [type="version:Put",version:key="2",version:checkpoint="2"
 //wasDerivedFrom(dist, matrix, -, -, -, [type="version:Reference",version:checkpoint="3",dot:hide2="true"])
 
 // L12#2
-//entity(dist@i#2, [value="[2, 10000, 0]",type="script:access",label="dist[i]",script:line="12",dot:hide2="true"])
-//wasDerivedFrom(dist@i#2, matrix2, -, -, -, [type="version:Reference",version:checkpoint="26",version:collection="dist",version:key="2",version:access="r",dot:hide2="true"])
+entity(dist@i#2, [value="[2, 10000, 0]",type="script:access",label="dist[i]",script:line="12",dot:hide2="true"])
+wasDerivedFrom(dist@i#2, matrix2, -, -, -, [type="version:Reference",version:checkpoint="26",dot:hide2="true"])
 entity(disti#2, [value="[2, 10000, 0]",type="script:name",label="disti",script:line="12"])
-//wasDerivedFrom(disti#2, dist@i#2, -, -, -, [type="version:Reference",version:checkpoint="27",dot:hide2="true"])
+wasDerivedFrom(disti#2, dist@i#2, -, -, -, [type="version:Reference",version:checkpoint="27",dot:hide2="true"])
 
 // L13#2
 entity(j#5, [value="1",type="script:name",label="j",script:line="13"])

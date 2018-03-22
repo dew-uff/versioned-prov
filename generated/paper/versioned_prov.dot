@@ -6,8 +6,8 @@ subgraph cluster_0 {
     labeljust="r"
     labelloc="b"
     margin="2"
-    color = "red"
-    fontcolor = "red"
+    color = "#333333"
+    fontcolor = "#333333"
     fontsize = "18"
     label = "A";
     "g/disti@j#3"; "g/disti@j#3-attrs"
@@ -26,10 +26,11 @@ subgraph cluster_1 {
     labeljust="r"
     labelloc="b"
     margin="2"
-    color = "red"
-    fontcolor = "red"
+    color = "#333333"
+    fontcolor = "#333333"
     fontsize = "18"
     label = "B";
+    "g/dist@i#2"
     "g/matrix2"
     "g/m"
     "g/0"
@@ -40,15 +41,15 @@ subgraph cluster_1 {
 "g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0"]
 "g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2"]
 "g/matrix2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix2",URL="g/matrix2"]
-"g/matrix2" -> "g/2" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
-[0]
-2",fontcolor="#999999"]
-"g/matrix2" -> "g/m" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
-[1]
-2",fontcolor="#999999"]
-"g/matrix2" -> "g/0" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
-[2]
-2",fontcolor="#999999"]
+"g/matrix2" -> "g/2" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put [0]
+ckpt: 2",fontcolor="#999999"]
+"g/matrix2" -> "g/m" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 2",fontcolor="#999999"]
+"g/matrix2" -> "g/0" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put [2]
+ckpt: 2",fontcolor="#999999"]
+"g/dist@i#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="dist@i#2",URL="g/dist@i#2"]
+"g/dist@i#2" -> "g/matrix2" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="der ref
+ckpt: 26",fontcolor="#999999"]
 "g/disti#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#2",URL="g/disti#2"]
 "g/disti#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -69,6 +70,8 @@ subgraph cluster_1 {
 	</TR>
 </TABLE>>]
 "g/disti#2-attrs" -> "g/disti#2" [color="gray",style="dashed",arrowhead="none"]
+"g/disti#2" -> "g/dist@i#2" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="der ref
+ckpt: 27",fontcolor="#999999"]
 "g/j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#5",URL="g/j#5"]
 "g/j#5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -129,11 +132,10 @@ subgraph cluster_1 {
 	</TR>
 </TABLE>>]
 "g/disti@j#2-attrs" -> "g/disti@j#2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"g/matrix2" -> "g/disti@j#3" [labelfontsize="8",labeldistance="1.5",color="#006600",labelangle="60.0",rotation="20",label="put
-[1]
-36",fontcolor="#006600"]
-"g/assign11" -> "g/disti#2" [labelfontsize="8",labeldistance="1.5",color="#006600",labelangle="60.0",rotation="20",label="use
-35",fontcolor="#006600"]
+"g/matrix2" -> "g/disti@j#3" [labelfontsize="8",labeldistance="1.5",color="#800000",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 36",fontcolor="#800000"]
+"g/assign11" -> "g/disti#2" [labelfontsize="8",labeldistance="1.5",color="#800000",labelangle="60.0",rotation="20",label="use
+ckpt: 35",fontcolor="#800000"]
 "g/disti@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#3",URL="g/disti@j#3"]
 "g/disti@j#3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -163,16 +165,14 @@ subgraph cluster_1 {
 </TABLE>>]
 "g/assign11-attrs" -> "g/assign11" [color="gray",style="dashed",arrowhead="none"]
 "bn0" [shape="point",label=""]
-"g/disti@j#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="der ac-w
-36",arrowhead="none"]
-"bn0" -> "g/disti#2" [color="#006600",style="dashed"]
-"bn0" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="[1]"]
+"g/disti@j#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label=<<font color="black">der</font><font color="#800000"> ref<br/>ac-write<br/>ckpt: 36</font>>,arrowhead="none"]
+"bn0" -> "g/disti#2" [color="#800000",style="dashed"]
+"bn0" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label=<<font color="black">[1]</font>>,fontcolor="#800000"]
 "g/assign11" -> "g/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "g/assign11" -> "g/disti@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#999999",color="#999999"]
 
 {rank=same "g/matrix2" "g/disti@j#3" "g/disti@j#3-attrs"}
-"g/assign11" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="use
-36"]
-"g/disti@j#3" -> "g/assign11" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="gen
-36"]
+{rank=same "g/disti#2" "g/dist@i#2"}
+"g/assign11" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label=<<font color="black">use</font><font color="#800000"><br/>ckpt: 36</font>>]
+"g/disti@j#3" -> "g/assign11" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label=<<font color="black">gen</font><font color="#800000"><br/>ckpt: 36</font>>]
 }

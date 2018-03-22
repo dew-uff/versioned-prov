@@ -4,6 +4,7 @@ if __name__ == "__main__":
 from tools.view.provn import graph, prov
 
 NAMESPACE = "https://dew-uff.github.io/versioned-prov/ns#"
+CKPT = "ckpt: "
 
 def versioned(attrs, key, default="-"):
     try:
@@ -26,8 +27,9 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
         return dot.arrow2(
             attrs, "ver_hadMember",
             ecollection, eid,
-            "put\n[{}]\n{}".format(
+            "put [{}]\n{}{}".format(
                 versioned(attrs, 'key'),
+                CKPT,
                 versioned(attrs, 'checkpoint'),
             ),
             extra="0"
@@ -36,8 +38,9 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
         return dot.arrow2(
             attrs, "ver_hadMember",
             ecollection, eid,
-            "del\n[{}]\n{}".format(
+            "del [{}]\n{}{}".format(
                 versioned(attrs, 'key'),
+                CKPT,
                 versioned(attrs, 'checkpoint'),
             ),
             extra="1"
@@ -46,8 +49,9 @@ def had_member(dot, ecollection=None, eid=None, attrs=None, id_=None):
         return dot.arrow2(
             attrs, "ver_hadMember",
             ecollection, eid,
-            "add\n[{}]\n{}".format(
+            "add [{}]\n{}{}".format(
                 versioned(attrs, 'key'),
+                CKPT,
                 versioned(attrs, 'checkpoint'),
             ),
             extra="2"
@@ -66,22 +70,24 @@ def was_derived_from(dot, egenerated=None, eused=None, aid=None, gid=None, uid=N
                 attrs, "ver_wasDerivedFrom",
                 egenerated, versioned(attrs, 'collection'), eused,
                 "",
-                "der ac-{}\n{}".format(
-                    versioned(attrs, 'access'),
+                "der ref\nac-{}\n{}{}".format(
+                    {"w": "write", "r": "read"}[versioned(attrs, 'access')],
+                    CKPT,
                     versioned(attrs, 'checkpoint')
                 ),
                 "[{}]".format(versioned(attrs, 'key')),
             )
         return dot.arrow2(
             attrs, "ver_wasDerivedFrom",
-            egenerated, eused, "der ref\n{}".format(
+            egenerated, eused, "der ref\n{}{}".format(
+                CKPT,
                 versioned(attrs, 'checkpoint')
             ),
             extra="4"
         )
     checkpoint = versioned(attrs, 'checkpoint', False)
     if checkpoint:
-        return dot.arrow2(attrs, "ver_wasDerivedFrom", egenerated, eused, "der\n{}".format(checkpoint), extra="5")
+        return dot.arrow2(attrs, "ver_wasDerivedFrom", egenerated, eused, "der\n{}{}".format(CKPT, checkpoint), extra="5")
     return dot.arrow2(attrs, "wasDerivedFrom", egenerated, eused, "der")
 
 
@@ -90,7 +96,7 @@ def used(dot, aid, eid=None, time=None, attrs=None, id_=None):
     dot.used.add((aid, eid))
     checkpoint = versioned(attrs, 'checkpoint', False)
     if checkpoint:
-        return dot.arrow2(attrs, "ver_used", aid, eid, "use\n{}".format(checkpoint))
+        return dot.arrow2(attrs, "ver_used", aid, eid, "use\n{}{}".format(CKPT, checkpoint))
     return dot.arrow2(attrs, "used", aid, eid, "use")
 
 @graph.prov("wasGeneratedBy")
@@ -98,5 +104,5 @@ def was_generated_by(dot, aid, eid=None, time=None, attrs=None, id_=None):
     dot.used.add((aid, eid))
     checkpoint = versioned(attrs, 'checkpoint', False)
     if checkpoint:
-        return dot.arrow2(attrs, "ver_wasGeneratedBy", aid, eid, "gen\n{}".format(checkpoint))
+        return dot.arrow2(attrs, "ver_wasGeneratedBy", aid, eid, "gen\n{}{}".format(CKPT, checkpoint))
     return dot.arrow2(attrs, "wasGeneratedBy", aid, eid, "gen")
