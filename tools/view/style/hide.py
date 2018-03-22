@@ -25,8 +25,10 @@ class DotHide(DotNoHighlight):
     def filter_attr(self, key, value, attrs):
         if "dot:hide" in attrs:
             return False
-        if key == "dot:hide2":
-            return False
+        if "dot:hide2" in attrs:
+            if key == "dot:hide2":
+                return False
+            return attrs["dot:hide2"] == "~attr"
         return not key.startswith("dot:")
 
 EXPORT = DotHide

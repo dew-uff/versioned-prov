@@ -1,203 +1,56 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/m" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="m",URL="http://example.org/m"]
-"-attrs0" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">m</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">1</TD>
-	</TR>
-</TABLE>>]
-"-attrs0" -> "http://example.org/m" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="http://example.org/0"]
-"-attrs1" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">0</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-</TABLE>>]
-"-attrs1" -> "http://example.org/0" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="http://example.org/2"]
-"-attrs2" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">literal</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">4</TD>
-	</TR>
-</TABLE>>]
-"-attrs2" -> "http://example.org/2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/matrix" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix",URL="http://example.org/matrix"]
-"-attrs3" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[[...]]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">[[...]]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-</TABLE>>]
-"-attrs3" -> "http://example.org/matrix" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/matrix0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix0",URL="http://example.org/matrix0"]
-"-attrs4" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">[0, 1, 4]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">3</TD>
-	</TR>
-</TABLE>>]
-"-attrs4" -> "http://example.org/matrix0" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/matrix" -> "http://example.org/matrix0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+newrank=true;
+splines = "spline"
+
+subgraph cluster_0 {
+    labeljust="r"
+    labelloc="b"
+    margin="2"
+    color = "red"
+    fontcolor = "red"
+    fontsize = "18"
+    label = "A";
+    "g/disti@j#3"; "g/disti@j#3-attrs"
+    "g/assign11"; "g/assign11-attrs"
+    "g/ikj#2"; "g/ikj#2-attrs"
+    "g/j#5"; "g/j#5-attrs"
+    "g/disti@j#2"; "g/disti@j#2-attrs"
+    "g/disti#2"; "g/disti#2-attrs"
+    "bn0"
+    
+//    {rank=same "g/disti@j#3" "g/disti@j#3-attrs"}
+    {rank=same "g/disti#2" "g/ikj#2"}
+}
+subgraph cluster_1 {
+    ranksep = "0.1"
+    labeljust="r"
+    labelloc="b"
+    margin="2"
+    color = "red"
+    fontcolor = "red"
+    fontsize = "18"
+    label = "B";
+    "g/matrix2"
+    "g/m"
+    "g/0"
+    "g/2"
+}
+
+"g/m" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="m",URL="g/m"]
+"g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0"]
+"g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2"]
+"g/matrix2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix2",URL="g/matrix2"]
+"g/matrix2" -> "g/2" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
 [0]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix1" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix1",URL="http://example.org/matrix1"]
-"-attrs5" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[10000, 0, 2]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">[m, 0, 2]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">4</TD>
-	</TR>
-</TABLE>>]
-"-attrs5" -> "http://example.org/matrix1" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/matrix" -> "http://example.org/matrix1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+2",fontcolor="#999999"]
+"g/matrix2" -> "g/m" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
 [1]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="matrix2",URL="http://example.org/matrix2"]
-"-attrs6" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[2, 10000, 0]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">[2, m, 0]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">5</TD>
-	</TR>
-</TABLE>>]
-"-attrs6" -> "http://example.org/matrix2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/matrix2" -> "http://example.org/2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
-[0]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix2" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
-[1]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix2" -> "http://example.org/0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
+2",fontcolor="#999999"]
+"g/matrix2" -> "g/0" [labelfontsize="8",labeldistance="1.5",color="#999999",labelangle="60.0",rotation="20",label="put
 [2]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix" -> "http://example.org/matrix2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
-[2]
-2",fontcolor="#999999",color="#999999"]
-"http://example.org/dist" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="dist",URL="http://example.org/dist"]
-"-attrs7" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[[...]]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">dist</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">2</TD>
-	</TR>
-</TABLE>>]
-"-attrs7" -> "http://example.org/dist" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"http://example.org/dist" -> "http://example.org/matrix" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-3",fontcolor="#999999",color="#999999"]
-"http://example.org/dist@i#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="dist@i#2",URL="http://example.org/dist@i#2"]
-"-attrs8" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
-	<TR>
-	    <TD align="left">value:</TD>
-	    <TD align="left">[2, 10000, 0]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">type:</TD>
-	    <TD align="left">access</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">dist[i]</TD>
-	</TR>
-	<TR>
-	    <TD align="left">line:</TD>
-	    <TD align="left">12</TD>
-	</TR>
-</TABLE>>]
-"-attrs8" -> "http://example.org/dist@i#2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"bn0" [shape="point",label="",fontcolor="#999999",color="#999999"]
-"http://example.org/dist@i#2" -> "bn0" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-26",arrowhead="none",fontcolor="#999999",color="#999999"]
-"bn0" -> "http://example.org/dist" [style="dashed",fontcolor="#999999",color="#999999"]
-"bn0" -> "http://example.org/matrix2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[2]",fontcolor="#999999",color="#999999"]
-"http://example.org/disti#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#2",URL="http://example.org/disti#2"]
-"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+2",fontcolor="#999999"]
+"g/disti#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#2",URL="g/disti#2"]
+"g/disti#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[2, 10000, 0]</TD>
@@ -215,11 +68,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">12</TD>
 	</TR>
 </TABLE>>]
-"-attrs9" -> "http://example.org/disti#2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti#2" -> "http://example.org/dist@i#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-27",fontcolor="#999999",color="#999999"]
-"http://example.org/j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#5",URL="http://example.org/j#5"]
-"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/disti#2-attrs" -> "g/disti#2" [color="gray",style="dashed",arrowhead="none"]
+"g/j#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#5",URL="g/j#5"]
+"g/j#5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">1</TD>
@@ -237,9 +88,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">13</TD>
 	</TR>
 </TABLE>>]
-"-attrs10" -> "http://example.org/j#5" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ikj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#2",URL="http://example.org/ikj#2"]
-"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/j#5-attrs" -> "g/j#5" [color="gray",style="dashed",arrowhead="none"]
+"g/ikj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#2",URL="g/ikj#2"]
+"g/ikj#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -257,9 +108,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">15</TD>
 	</TR>
 </TABLE>>]
-"-attrs11" -> "http://example.org/ikj#2" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti@j#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="disti@j#2",URL="http://example.org/disti@j#2"]
-"-attrs12" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
+"g/ikj#2-attrs" -> "g/ikj#2" [color="gray",style="dashed",arrowhead="none"]
+"g/disti@j#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="disti@j#2",URL="g/disti@j#2"]
+"g/disti@j#2-attrs" [color="#999999",shape="note",fontsize="10",fontcolor="#999999",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -277,14 +128,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">16</TD>
 	</TR>
 </TABLE>>]
-"-attrs12" -> "http://example.org/disti@j#2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
-"bn1" [shape="point",label="",fontcolor="#999999",color="#999999"]
-"http://example.org/disti@j#2" -> "bn1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-34",arrowhead="none",fontcolor="#999999",color="#999999"]
-"bn1" -> "http://example.org/disti#2" [style="dashed",fontcolor="#999999",color="#999999"]
-"bn1" -> "http://example.org/m" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[0]",fontcolor="#999999",color="#999999"]
-"http://example.org/disti@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#3",URL="http://example.org/disti@j#3"]
-"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/disti@j#2-attrs" -> "g/disti@j#2" [color="#999999",style="dashed",arrowhead="none",fontcolor="#999999"]
+"g/matrix2" -> "g/disti@j#3" [labelfontsize="8",labeldistance="1.5",color="#006600",labelangle="60.0",rotation="20",label="put
+[1]
+36",fontcolor="#006600"]
+"g/assign11" -> "g/disti#2" [labelfontsize="8",labeldistance="1.5",color="#006600",labelangle="60.0",rotation="20",label="use
+35",fontcolor="#006600"]
+"g/disti@j#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#3",URL="g/disti@j#3"]
+"g/disti@j#3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -302,29 +153,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">17</TD>
 	</TR>
 </TABLE>>]
-"-attrs13" -> "http://example.org/disti@j#3" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/assign11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign11",URL="http://example.org/assign11"]
-"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/disti@j#3-attrs" -> "g/disti@j#3" [color="gray",style="dashed",arrowhead="none"]
+"g/assign11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign11",URL="g/assign11"]
+"g/assign11-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">assign</TD>
 	</TR>
 </TABLE>>]
-"-attrs14" -> "http://example.org/assign11" [color="gray",style="dashed",arrowhead="none"]
-"bn2" [shape="point",label=""]
-"http://example.org/disti@j#3" -> "bn2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ac-w
+"g/assign11-attrs" -> "g/assign11" [color="gray",style="dashed",arrowhead="none"]
+"bn0" [shape="point",label=""]
+"g/disti@j#3" -> "bn0" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="der ac-w
 36",arrowhead="none"]
-"bn2" -> "http://example.org/disti#2" [style="dashed"]
-"bn2" -> "http://example.org/ikj#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="[1]"]
-"http://example.org/assign11" -> "http://example.org/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign11" -> "http://example.org/disti@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#999999",color="#999999"]
-"http://example.org/matrix2" -> "http://example.org/disti@j#3" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="put
-[1]
-36",fontcolor="green",color="green"]
-"http://example.org/assign11" -> "http://example.org/disti#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-35",fontcolor="green",color="green"]
-"http://example.org/assign11" -> "http://example.org/ikj#2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
+"bn0" -> "g/disti#2" [color="#006600",style="dashed"]
+"bn0" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="[1]"]
+"g/assign11" -> "g/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"g/assign11" -> "g/disti@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#999999",color="#999999"]
+
+{rank=same "g/matrix2" "g/disti@j#3" "g/disti@j#3-attrs"}
+"g/assign11" -> "g/ikj#2" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="use
 36"]
-"http://example.org/disti@j#3" -> "http://example.org/assign11" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
+"g/disti@j#3" -> "g/assign11" [labelfontsize="8",labeldistance="1.5",color="black",labelangle="60.0",rotation="20",label="gen
 36"]
 }
