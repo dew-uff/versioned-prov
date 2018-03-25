@@ -17,8 +17,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs0 -->
-<g id="node2" class="node"><title>&#45;attrs0</title>
+<!-- http://example.org/empty&#45;attrs -->
+<g id="node2" class="node"><title>http://example.org/empty&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="166.5,-562.5 57.5,-562.5 57.5,-526.5 172.5,-526.5 172.5,-556.5 166.5,-562.5"/>
 <polyline fill="none" stroke="gray" points="166.5,-562.5 166.5,-556.5 "/>
 <polyline fill="none" stroke="gray" points="172.5,-556.5 166.5,-556.5 "/>
@@ -27,8 +27,8 @@
 <text text-anchor="start" x="68" y="-535.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="95" y="-535.5" font-family="Times New Roman,serif" font-size="10.00">EmptyDictionary</text>
 </g>
-<!-- &#45;attrs0&#45;&gt;http://example.org/empty -->
-<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/empty</title>
+<!-- http://example.org/empty&#45;attrs&#45;&gt;http://example.org/empty -->
+<g id="edge1" class="edge"><title>http://example.org/empty&#45;attrs&#45;&gt;http://example.org/empty</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M138.7,-562.71C162.795,-580.208 199.66,-606.979 221.934,-623.154"/>
 </g>
 <!-- http://example.org/list0 -->
@@ -39,8 +39,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs1 -->
-<g id="node4" class="node"><title>&#45;attrs1</title>
+<!-- http://example.org/list0&#45;attrs -->
+<g id="node4" class="node"><title>http://example.org/list0&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="255,-569 191,-569 191,-520 261,-520 261,-563 255,-569"/>
 <polyline fill="none" stroke="gray" points="255,-569 255,-563 "/>
 <polyline fill="none" stroke="gray" points="261,-563 255,-563 "/>
@@ -51,8 +51,8 @@
 <text text-anchor="start" x="201" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="228" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">m</text>
 </g>
-<!-- &#45;attrs1&#45;&gt;http://example.org/list0 -->
-<g id="edge2" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/list0</title>
+<!-- http://example.org/list0&#45;attrs&#45;&gt;http://example.org/list0 -->
+<g id="edge2" class="edge"><title>http://example.org/list0&#45;attrs&#45;&gt;http://example.org/list0</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M237.893,-569.223C244.087,-580.052 252.381,-592.539 262,-602 272.349,-612.178 286.181,-620.762 297.628,-626.881"/>
 </g>
 <!-- http://example.org/list1 -->
@@ -63,8 +63,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs2 -->
-<g id="node6" class="node"><title>&#45;attrs2</title>
+<!-- http://example.org/list1&#45;attrs -->
+<g id="node6" class="node"><title>http://example.org/list1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="686,-569 622,-569 622,-520 692,-520 692,-563 686,-569"/>
 <polyline fill="none" stroke="gray" points="686,-569 686,-563 "/>
 <polyline fill="none" stroke="gray" points="692,-563 686,-563 "/>
@@ -75,8 +75,8 @@
 <text text-anchor="start" x="632" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="659" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">m + 1</text>
 </g>
-<!-- &#45;attrs2&#45;&gt;http://example.org/list1 -->
-<g id="edge3" class="edge"><title>&#45;attrs2&#45;&gt;http://example.org/list1</title>
+<!-- http://example.org/list1&#45;attrs&#45;&gt;http://example.org/list1 -->
+<g id="edge3" class="edge"><title>http://example.org/list1&#45;attrs&#45;&gt;http://example.org/list1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M630.475,-569.064C611.163,-586.22 585.668,-608.868 569.549,-623.187"/>
 </g>
 <!-- http://example.org/list2 -->
@@ -87,8 +87,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs3 -->
-<g id="node8" class="node"><title>&#45;attrs3</title>
+<!-- http://example.org/list2&#45;attrs -->
+<g id="node8" class="node"><title>http://example.org/list2&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="598,-569 534,-569 534,-520 604,-520 604,-563 598,-569"/>
 <polyline fill="none" stroke="gray" points="598,-569 598,-563 "/>
 <polyline fill="none" stroke="gray" points="604,-563 598,-563 "/>
@@ -99,8 +99,8 @@
 <text text-anchor="start" x="544" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="571" y="-528.5" font-family="Times New Roman,serif" font-size="10.00">m</text>
 </g>
-<!-- &#45;attrs3&#45;&gt;http://example.org/list2 -->
-<g id="edge4" class="edge"><title>&#45;attrs3&#45;&gt;http://example.org/list2</title>
+<!-- http://example.org/list2&#45;attrs&#45;&gt;http://example.org/list2 -->
+<g id="edge4" class="edge"><title>http://example.org/list2&#45;attrs&#45;&gt;http://example.org/list2</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M565.745,-569.268C563.235,-580.236 558.805,-592.826 551,-602 549.27,-604.033 523.072,-617.042 503.467,-626.609"/>
 </g>
 <!-- http://example.org/d -->
@@ -120,8 +120,8 @@
 <path fill="none" stroke="darkgreen" d="M153.366,-461.335C181.43,-473.407 230.651,-495.777 270,-520 282.423,-527.647 295.951,-539.12 299.876,-542.518"/>
 <text text-anchor="middle" x="256.5" y="-490.8" font-family="Times New Roman,serif" font-size="14.00">der&#45;ins</text>
 </g>
-<!-- &#45;attrs4 -->
-<g id="node10" class="node"><title>&#45;attrs4</title>
+<!-- http://example.org/d&#45;attrs -->
+<g id="node10" class="node"><title>http://example.org/d&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="190,-396 66,-396 66,-347 196,-347 196,-390 190,-396"/>
 <polyline fill="none" stroke="gray" points="190,-396 190,-390 "/>
 <polyline fill="none" stroke="gray" points="196,-390 190,-390 "/>
@@ -132,8 +132,8 @@
 <text text-anchor="start" x="76" y="-355.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="103" y="-355.5" font-family="Times New Roman,serif" font-size="10.00">d</text>
 </g>
-<!-- &#45;attrs4&#45;&gt;http://example.org/d -->
-<g id="edge5" class="edge"><title>&#45;attrs4&#45;&gt;http://example.org/d</title>
+<!-- http://example.org/d&#45;attrs&#45;&gt;http://example.org/d -->
+<g id="edge5" class="edge"><title>http://example.org/d&#45;attrs&#45;&gt;http://example.org/d</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M131,-396.174C131,-407.925 131,-421.869 131,-432.62"/>
 </g>
 <!-- bn0&#45;&gt;http://example.org/empty -->
@@ -177,8 +177,8 @@
 <path fill="none" stroke="darkgreen" d="M586.321,-465.753C570.729,-479.451 546.147,-501.107 525,-520 515.199,-528.756 503.428,-539.466 499.988,-542.599"/>
 <text text-anchor="middle" x="579.5" y="-490.8" font-family="Times New Roman,serif" font-size="14.00">der&#45;ins</text>
 </g>
-<!-- &#45;attrs5 -->
-<g id="node13" class="node"><title>&#45;attrs5</title>
+<!-- http://example.org/x&#45;attrs -->
+<g id="node13" class="node"><title>http://example.org/x&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="754,-396 630,-396 630,-347 760,-347 760,-390 754,-396"/>
 <polyline fill="none" stroke="gray" points="754,-396 754,-390 "/>
 <polyline fill="none" stroke="gray" points="760,-390 754,-390 "/>
@@ -189,8 +189,8 @@
 <text text-anchor="start" x="640" y="-355.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="667" y="-355.5" font-family="Times New Roman,serif" font-size="10.00">x</text>
 </g>
-<!-- &#45;attrs5&#45;&gt;http://example.org/x -->
-<g id="edge11" class="edge"><title>&#45;attrs5&#45;&gt;http://example.org/x</title>
+<!-- http://example.org/x&#45;attrs&#45;&gt;http://example.org/x -->
+<g id="edge11" class="edge"><title>http://example.org/x&#45;attrs&#45;&gt;http://example.org/x</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M666.592,-396.174C650.78,-409.35 631.662,-425.281 618.346,-436.379"/>
 </g>
 <!-- bn1&#45;&gt;http://example.org/empty -->
@@ -225,8 +225,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs6 -->
-<g id="node16" class="node"><title>&#45;attrs6</title>
+<!-- http://example.org/1&#45;attrs -->
+<g id="node16" class="node"><title>http://example.org/1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="277.5,-389.5 214.5,-389.5 214.5,-353.5 283.5,-353.5 283.5,-383.5 277.5,-389.5"/>
 <polyline fill="none" stroke="gray" points="277.5,-389.5 277.5,-383.5 "/>
 <polyline fill="none" stroke="gray" points="283.5,-383.5 277.5,-383.5 "/>
@@ -235,8 +235,8 @@
 <text text-anchor="start" x="225" y="-362.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="252" y="-362.5" font-family="Times New Roman,serif" font-size="10.00">literal</text>
 </g>
-<!-- &#45;attrs6&#45;&gt;http://example.org/1 -->
-<g id="edge17" class="edge"><title>&#45;attrs6&#45;&gt;http://example.org/1</title>
+<!-- http://example.org/1&#45;attrs&#45;&gt;http://example.org/1 -->
+<g id="edge17" class="edge"><title>http://example.org/1&#45;attrs&#45;&gt;http://example.org/1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M254.992,-389.7C259.529,-402.721 265.724,-420.503 270.21,-433.38"/>
 </g>
 <!-- http://example.org/3 -->
@@ -247,8 +247,8 @@
 </a>
 </g>
 </g>
-<!-- &#45;attrs7 -->
-<g id="node18" class="node"><title>&#45;attrs7</title>
+<!-- http://example.org/3&#45;attrs -->
+<g id="node18" class="node"><title>http://example.org/3&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="529.5,-389.5 466.5,-389.5 466.5,-353.5 535.5,-353.5 535.5,-383.5 529.5,-389.5"/>
 <polyline fill="none" stroke="gray" points="529.5,-389.5 529.5,-383.5 "/>
 <polyline fill="none" stroke="gray" points="535.5,-383.5 529.5,-383.5 "/>
@@ -257,8 +257,8 @@
 <text text-anchor="start" x="477" y="-362.5" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="504" y="-362.5" font-family="Times New Roman,serif" font-size="10.00">literal</text>
 </g>
-<!-- &#45;attrs7&#45;&gt;http://example.org/3 -->
-<g id="edge18" class="edge"><title>&#45;attrs7&#45;&gt;http://example.org/3</title>
+<!-- http://example.org/3&#45;attrs&#45;&gt;http://example.org/3 -->
+<g id="edge18" class="edge"><title>http://example.org/3&#45;attrs&#45;&gt;http://example.org/3</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M487.018,-389.7C475.998,-403.256 460.784,-421.973 450.24,-434.942"/>
 </g>
 <!-- http://example.org/d@1 -->
@@ -284,13 +284,13 @@
 </g>
 </g>
 <!-- http://example.org/d@1&#45;&gt;http://example.org/assign4 -->
-<g id="edge38" class="edge"><title>http://example.org/d@1&#45;&gt;http://example.org/assign4</title>
+<g id="edge40" class="edge"><title>http://example.org/d@1&#45;&gt;http://example.org/assign4</title>
 <path fill="none" stroke="black" d="M341.555,-296.21C339.666,-309.502 337.018,-328.144 334.846,-343.429"/>
 <polygon fill="black" stroke="black" points="331.376,-342.974 333.434,-353.367 338.306,-343.959 331.376,-342.974"/>
 <text text-anchor="middle" x="353.361" y="-303.563" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs8 -->
-<g id="node20" class="node"><title>&#45;attrs8</title>
+<!-- http://example.org/d@1&#45;attrs -->
+<g id="node20" class="node"><title>http://example.org/d@1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="375.5,-209 306.5,-209 306.5,-173 381.5,-173 381.5,-203 375.5,-209"/>
 <polyline fill="none" stroke="gray" points="375.5,-209 375.5,-203 "/>
 <polyline fill="none" stroke="gray" points="381.5,-203 375.5,-203 "/>
@@ -299,8 +299,8 @@
 <text text-anchor="start" x="317" y="-182" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="344" y="-182" font-family="Times New Roman,serif" font-size="10.00">access</text>
 </g>
-<!-- &#45;attrs8&#45;&gt;http://example.org/d@1 -->
-<g id="edge19" class="edge"><title>&#45;attrs8&#45;&gt;http://example.org/d@1</title>
+<!-- http://example.org/d@1&#45;attrs&#45;&gt;http://example.org/d@1 -->
+<g id="edge19" class="edge"><title>http://example.org/d@1&#45;attrs&#45;&gt;http://example.org/d@1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M344,-209.201C344,-223.948 344,-245.085 344,-259.825"/>
 </g>
 <!-- http://example.org/assign4&#45;&gt;http://example.org/d -->
@@ -327,16 +327,16 @@
 <polygon fill="black" stroke="black" points="405.849,-438.628 416.347,-440.055 409.03,-432.393 405.849,-438.628"/>
 <text text-anchor="middle" x="360.919" y="-384.301" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
-<!-- &#45;attrs9 -->
-<g id="node22" class="node"><title>&#45;attrs9</title>
+<!-- http://example.org/assign4&#45;attrs -->
+<g id="node22" class="node"><title>http://example.org/assign4&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="244,-296 180,-296 180,-260 250,-260 250,-290 244,-296"/>
 <polyline fill="none" stroke="gray" points="244,-296 244,-290 "/>
 <polyline fill="none" stroke="gray" points="250,-290 244,-290 "/>
 <text text-anchor="start" x="190" y="-275" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="213" y="-275" font-family="Times New Roman,serif" font-size="10.00">assign</text>
 </g>
-<!-- &#45;attrs9&#45;&gt;http://example.org/assign4 -->
-<g id="edge20" class="edge"><title>&#45;attrs9&#45;&gt;http://example.org/assign4</title>
+<!-- http://example.org/assign4&#45;attrs&#45;&gt;http://example.org/assign4 -->
+<g id="edge20" class="edge"><title>http://example.org/assign4&#45;attrs&#45;&gt;http://example.org/assign4</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M229.961,-296.238C239.222,-306.387 251.665,-319.126 264,-329 267.605,-331.886 286.04,-343.269 302.661,-353.385"/>
 </g>
 <!-- http://example.org/d#2 -->
@@ -374,8 +374,8 @@
 <path fill="none" stroke="darkgreen" d="M237.08,-119.486C232.315,-125.378 227.547,-132.551 225,-140 218.708,-158.402 222.661,-182.882 223.748,-188.714"/>
 <text text-anchor="middle" x="244.5" y="-143.8" font-family="Times New Roman,serif" font-size="14.00">der&#45;ins</text>
 </g>
-<!-- &#45;attrs10 -->
-<g id="node24" class="node"><title>&#45;attrs10</title>
+<!-- http://example.org/d#2&#45;attrs -->
+<g id="node24" class="node"><title>http://example.org/d#2&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="301,-49 195,-49 195,-0 307,-0 307,-43 301,-49"/>
 <polyline fill="none" stroke="gray" points="301,-49 301,-43 "/>
 <polyline fill="none" stroke="gray" points="307,-43 301,-43 "/>
@@ -386,8 +386,8 @@
 <text text-anchor="start" x="205" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="232" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">d</text>
 </g>
-<!-- &#45;attrs10&#45;&gt;http://example.org/d#2 -->
-<g id="edge23" class="edge"><title>&#45;attrs10&#45;&gt;http://example.org/d#2</title>
+<!-- http://example.org/d#2&#45;attrs&#45;&gt;http://example.org/d#2 -->
+<g id="edge23" class="edge"><title>http://example.org/d#2&#45;attrs&#45;&gt;http://example.org/d#2</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M251,-49.1737C251,-60.9254 251,-74.869 251,-85.6196"/>
 </g>
 <!-- bn2&#45;&gt;http://example.org/d -->
@@ -423,7 +423,7 @@
 <text text-anchor="middle" x="560.33" y="-120.621" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/x#2&#45;&gt;http://example.org/assign4 -->
-<g id="edge40" class="edge"><title>http://example.org/x#2&#45;&gt;http://example.org/assign4</title>
+<g id="edge38" class="edge"><title>http://example.org/x#2&#45;&gt;http://example.org/assign4</title>
 <path fill="none" stroke="black" d="M522.438,-119.335C516.292,-125.552 509.15,-132.999 503,-140 441.193,-210.369 377.617,-301.368 348.047,-344.984"/>
 <polygon fill="black" stroke="black" points="345.126,-343.056 342.432,-353.302 350.928,-346.972 345.126,-343.056"/>
 <text text-anchor="middle" x="526.429" y="-131.895" font-family="Times New Roman,serif" font-size="8.00">gen</text>
@@ -437,8 +437,8 @@
 <path fill="none" stroke="darkgreen" d="M523.08,-119.486C518.315,-125.378 513.547,-132.551 511,-140 504.708,-158.402 508.661,-182.882 509.748,-188.714"/>
 <text text-anchor="middle" x="530.5" y="-143.8" font-family="Times New Roman,serif" font-size="14.00">der&#45;ins</text>
 </g>
-<!-- &#45;attrs11 -->
-<g id="node27" class="node"><title>&#45;attrs11</title>
+<!-- http://example.org/x#2&#45;attrs -->
+<g id="node27" class="node"><title>http://example.org/x#2&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="587,-49 481,-49 481,-0 593,-0 593,-43 587,-49"/>
 <polyline fill="none" stroke="gray" points="587,-49 587,-43 "/>
 <polyline fill="none" stroke="gray" points="593,-43 587,-43 "/>
@@ -449,8 +449,8 @@
 <text text-anchor="start" x="491" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">label:</text>
 <text text-anchor="start" x="518" y="-8.5" font-family="Times New Roman,serif" font-size="10.00">x</text>
 </g>
-<!-- &#45;attrs11&#45;&gt;http://example.org/x#2 -->
-<g id="edge29" class="edge"><title>&#45;attrs11&#45;&gt;http://example.org/x#2</title>
+<!-- http://example.org/x#2&#45;attrs&#45;&gt;http://example.org/x#2 -->
+<g id="edge29" class="edge"><title>http://example.org/x#2&#45;attrs&#45;&gt;http://example.org/x#2</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M537,-49.1737C537,-60.9254 537,-74.869 537,-85.6196"/>
 </g>
 <!-- bn3&#45;&gt;http://example.org/x -->

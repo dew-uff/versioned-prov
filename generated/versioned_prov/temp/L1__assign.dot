@@ -1,7 +1,7 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/10000" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="10000",URL="http://example.org/10000"]
 "http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/m-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -19,12 +19,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">1</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/m-attrs" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign1",URL="http://example.org/assign1"]
-"http://example.org/m" -> "http://example.org/10000" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="der ref
-1",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign1" -> "http://example.org/10000" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="use
-1",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/m" -> "http://example.org/assign1" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="gen
-1",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/m" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
+ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/m" -> "http://example.org/assign1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
+ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

@@ -61,7 +61,6 @@
 <g id="edge9" class="edge"><title>http://example.org/matrix&#45;&gt;http://example.org/matrix0#1</title>
 <path fill="none" stroke="black" d="M465.958,-136.723C421.949,-146.963 338.164,-168.243 270.246,-196 262.709,-199.081 254.861,-202.879 247.509,-206.726"/>
 <polygon fill="black" stroke="black" points="245.662,-203.745 238.523,-211.573 248.986,-209.906 245.662,-203.745"/>
-<text text-anchor="middle" x="461.656" y="-149.193" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix1#1 -->
 <g id="node15" class="node"><title>http://example.org/matrix1#1</title>
@@ -75,7 +74,6 @@
 <g id="edge17" class="edge"><title>http://example.org/matrix&#45;&gt;http://example.org/matrix1#1</title>
 <path fill="none" stroke="black" d="M516.018,-143.754C539.152,-159.848 577.691,-186.657 604.453,-205.274"/>
 <polygon fill="black" stroke="black" points="602.485,-208.169 612.693,-211.007 606.483,-202.423 602.485,-208.169"/>
-<text text-anchor="middle" x="529.593" y="-135.474" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix2#1 -->
 <g id="node23" class="node"><title>http://example.org/matrix2#1</title>
@@ -89,7 +87,6 @@
 <g id="edge25" class="edge"><title>http://example.org/matrix&#45;&gt;http://example.org/matrix2#1</title>
 <path fill="none" stroke="black" d="M521.73,-140.616C537.734,-146.958 558.932,-154.771 578.246,-160 665.425,-183.604 692.948,-166.311 778.246,-196 786.083,-198.728 794.15,-202.443 801.636,-206.33"/>
 <polygon fill="black" stroke="black" points="800.287,-209.581 810.745,-211.284 803.632,-203.432 800.287,-209.581"/>
-<text text-anchor="middle" x="533.458" y="-129.364" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/definelist1 -->
 <g id="node31" class="node"><title>http://example.org/definelist1</title>
@@ -105,8 +102,8 @@
 <polygon fill="black" stroke="black" points="495.016,-362.054 504.867,-365.955 499.599,-356.762 495.016,-362.054"/>
 <text text-anchor="middle" x="498.784" y="-156.282" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs0 -->
-<g id="node6" class="node"><title>&#45;attrs0</title>
+<!-- http://example.org/matrix&#45;attrs -->
+<g id="node6" class="node"><title>http://example.org/matrix&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="582.246,-62 404.246,-62 404.246,-0 588.246,-0 588.246,-56 582.246,-62"/>
 <polyline fill="none" stroke="gray" points="582.246,-62 582.246,-56 "/>
 <polyline fill="none" stroke="gray" points="588.246,-56 582.246,-56 "/>
@@ -119,8 +116,8 @@
 <text text-anchor="start" x="414.246" y="-9" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="441.246" y="-9" font-family="Times New Roman,serif" font-size="10.00">2</text>
 </g>
-<!-- &#45;attrs0&#45;&gt;http://example.org/matrix -->
-<g id="edge1" class="edge"><title>&#45;attrs0&#45;&gt;http://example.org/matrix</title>
+<!-- http://example.org/matrix&#45;attrs&#45;&gt;http://example.org/matrix -->
+<g id="edge1" class="edge"><title>http://example.org/matrix&#45;attrs&#45;&gt;http://example.org/matrix</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M496.246,-62.1116C496.246,-78.168 496.246,-97.3407 496.246,-110.853"/>
 </g>
 <!-- http://example.org/matrix00 -->
@@ -135,7 +132,6 @@
 <g id="edge4" class="edge"><title>http://example.org/matrix0#1&#45;&gt;http://example.org/matrix00</title>
 <path fill="none" stroke="black" d="M188.495,-242.235C179.049,-247.339 168.227,-253.053 158.246,-258 132.383,-270.82 102.776,-284.329 79.9475,-294.499"/>
 <polygon fill="black" stroke="black" points="78.331,-291.387 70.6094,-298.642 81.1696,-297.786 78.331,-291.387"/>
-<text text-anchor="middle" x="188.056" y="-255.328" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix01 -->
 <g id="node11" class="node"><title>http://example.org/matrix01</title>
@@ -149,7 +145,6 @@
 <g id="edge6" class="edge"><title>http://example.org/matrix0#1&#45;&gt;http://example.org/matrix01</title>
 <path fill="none" stroke="black" d="M200.417,-244.398C190.091,-256.641 175.829,-273.552 164.26,-287.27"/>
 <polygon fill="black" stroke="black" points="161.581,-285.018 157.809,-294.918 166.932,-289.53 161.581,-285.018"/>
-<text text-anchor="middle" x="205.512" y="-256.606" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix02 -->
 <g id="node13" class="node"><title>http://example.org/matrix02</title>
@@ -163,7 +158,6 @@
 <g id="edge8" class="edge"><title>http://example.org/matrix0#1&#45;&gt;http://example.org/matrix02</title>
 <path fill="none" stroke="black" d="M228.076,-244.398C238.401,-256.641 252.664,-273.552 264.233,-287.27"/>
 <polygon fill="black" stroke="black" points="261.561,-289.53 270.683,-294.918 266.912,-285.018 261.561,-289.53"/>
-<text text-anchor="middle" x="242.842" y="-239.856" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix0#1&#45;&gt;http://example.org/definelist1 -->
 <g id="edge37" class="edge"><title>http://example.org/matrix0#1&#45;&gt;http://example.org/definelist1</title>
@@ -171,8 +165,8 @@
 <polygon fill="black" stroke="black" points="483.419,-384.475 493.594,-381.52 483.797,-377.485 483.419,-384.475"/>
 <text text-anchor="middle" x="224.546" y="-251.528" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs1 -->
-<g id="node8" class="node"><title>&#45;attrs1</title>
+<!-- http://example.org/matrix0#1&#45;attrs -->
+<g id="node8" class="node"><title>http://example.org/matrix0#1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="246.246,-160 176.246,-160 176.246,-98 252.246,-98 252.246,-154 246.246,-160"/>
 <polyline fill="none" stroke="gray" points="246.246,-160 246.246,-154 "/>
 <polyline fill="none" stroke="gray" points="252.246,-154 246.246,-154 "/>
@@ -185,8 +179,8 @@
 <text text-anchor="start" x="186.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="213.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">3</text>
 </g>
-<!-- &#45;attrs1&#45;&gt;http://example.org/matrix0#1 -->
-<g id="edge2" class="edge"><title>&#45;attrs1&#45;&gt;http://example.org/matrix0#1</title>
+<!-- http://example.org/matrix0#1&#45;attrs&#45;&gt;http://example.org/matrix0#1 -->
+<g id="edge2" class="edge"><title>http://example.org/matrix0#1&#45;attrs&#45;&gt;http://example.org/matrix0#1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M214.246,-160.112C214.246,-176.168 214.246,-195.341 214.246,-208.853"/>
 </g>
 <!-- http://example.org/matrix00&#45;&gt;http://example.org/0 -->
@@ -196,13 +190,13 @@
 <text text-anchor="middle" x="83.4647" y="-314.061" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix00&#45;&gt;http://example.org/definelist1 -->
-<g id="edge48" class="edge"><title>http://example.org/matrix00&#45;&gt;http://example.org/definelist1</title>
+<g id="edge52" class="edge"><title>http://example.org/matrix00&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M73.2523,-324.437C79.7877,-326.536 86.6902,-328.526 93.2463,-330 233.107,-361.455 402.629,-375.269 483.255,-380.407"/>
 <polygon fill="black" stroke="black" points="483.369,-383.92 493.567,-381.047 483.803,-376.934 483.369,-383.92"/>
 <text text-anchor="middle" x="84.3324" y="-312.426" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs2 -->
-<g id="node10" class="node"><title>&#45;attrs2</title>
+<!-- http://example.org/matrix00&#45;attrs -->
+<g id="node10" class="node"><title>http://example.org/matrix00&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="61.2463,-258 3.24625,-258 3.24625,-196 67.2463,-196 67.2463,-252 61.2463,-258"/>
 <polyline fill="none" stroke="gray" points="61.2463,-258 61.2463,-252 "/>
 <polyline fill="none" stroke="gray" points="67.2463,-252 61.2463,-252 "/>
@@ -215,8 +209,8 @@
 <text text-anchor="start" x="13.2463" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="40.2463" y="-205" font-family="Times New Roman,serif" font-size="10.00">3</text>
 </g>
-<!-- &#45;attrs2&#45;&gt;http://example.org/matrix00 -->
-<g id="edge3" class="edge"><title>&#45;attrs2&#45;&gt;http://example.org/matrix00</title>
+<!-- http://example.org/matrix00&#45;attrs&#45;&gt;http://example.org/matrix00 -->
+<g id="edge3" class="edge"><title>http://example.org/matrix00&#45;attrs&#45;&gt;http://example.org/matrix00</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M37.813,-258.435C38.8119,-270.279 39.9202,-283.42 40.7788,-293.6"/>
 </g>
 <!-- http://example.org/matrix01&#45;&gt;http://example.org/1 -->
@@ -226,13 +220,13 @@
 <text text-anchor="middle" x="184.864" y="-314.869" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix01&#45;&gt;http://example.org/definelist1 -->
-<g id="edge45" class="edge"><title>http://example.org/matrix01&#45;&gt;http://example.org/definelist1</title>
+<g id="edge48" class="edge"><title>http://example.org/matrix01&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M176.619,-323.64C184.309,-325.942 192.524,-328.217 200.246,-330 299.86,-353.008 418.672,-369.451 483.07,-377.467"/>
 <polygon fill="black" stroke="black" points="482.954,-380.979 493.307,-378.727 483.809,-374.031 482.954,-380.979"/>
 <text text-anchor="middle" x="187.505" y="-311.421" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs3 -->
-<g id="node12" class="node"><title>&#45;attrs3</title>
+<!-- http://example.org/matrix01&#45;attrs -->
+<g id="node12" class="node"><title>http://example.org/matrix01&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="143.246,-258 85.2463,-258 85.2463,-196 149.246,-196 149.246,-252 143.246,-258"/>
 <polyline fill="none" stroke="gray" points="143.246,-258 143.246,-252 "/>
 <polyline fill="none" stroke="gray" points="149.246,-252 143.246,-252 "/>
@@ -245,8 +239,8 @@
 <text text-anchor="start" x="95.2463" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="122.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">3</text>
 </g>
-<!-- &#45;attrs3&#45;&gt;http://example.org/matrix01 -->
-<g id="edge5" class="edge"><title>&#45;attrs3&#45;&gt;http://example.org/matrix01</title>
+<!-- http://example.org/matrix01&#45;attrs&#45;&gt;http://example.org/matrix01 -->
+<g id="edge5" class="edge"><title>http://example.org/matrix01&#45;attrs&#45;&gt;http://example.org/matrix01</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M127.147,-258.435C131.06,-270.464 135.408,-283.831 138.741,-294.075"/>
 </g>
 <!-- http://example.org/matrix02&#45;&gt;http://example.org/4 -->
@@ -256,13 +250,13 @@
 <text text-anchor="middle" x="321.271" y="-317.473" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix02&#45;&gt;http://example.org/definelist1 -->
-<g id="edge47" class="edge"><title>http://example.org/matrix02&#45;&gt;http://example.org/definelist1</title>
+<g id="edge49" class="edge"><title>http://example.org/matrix02&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M315.988,-323.888C322.346,-325.982 328.993,-328.11 335.246,-330 385.601,-345.222 443.868,-360.796 483.502,-371.086"/>
 <polygon fill="black" stroke="black" points="482.854,-374.533 493.412,-373.65 484.607,-367.757 482.854,-374.533"/>
 <text text-anchor="middle" x="327.167" y="-311.986" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs4 -->
-<g id="node14" class="node"><title>&#45;attrs4</title>
+<!-- http://example.org/matrix02&#45;attrs -->
+<g id="node14" class="node"><title>http://example.org/matrix02&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="337.246,-258 279.246,-258 279.246,-196 343.246,-196 343.246,-252 337.246,-258"/>
 <polyline fill="none" stroke="gray" points="337.246,-258 337.246,-252 "/>
 <polyline fill="none" stroke="gray" points="343.246,-252 337.246,-252 "/>
@@ -275,8 +269,8 @@
 <text text-anchor="start" x="289.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="316.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">3</text>
 </g>
-<!-- &#45;attrs4&#45;&gt;http://example.org/matrix02 -->
-<g id="edge7" class="edge"><title>&#45;attrs4&#45;&gt;http://example.org/matrix02</title>
+<!-- http://example.org/matrix02&#45;attrs&#45;&gt;http://example.org/matrix02 -->
+<g id="edge7" class="edge"><title>http://example.org/matrix02&#45;attrs&#45;&gt;http://example.org/matrix02</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M301.346,-258.435C297.433,-270.464 293.084,-283.831 289.752,-294.075"/>
 </g>
 <!-- http://example.org/matrix10 -->
@@ -291,7 +285,6 @@
 <g id="edge12" class="edge"><title>http://example.org/matrix1#1&#45;&gt;http://example.org/matrix10</title>
 <path fill="none" stroke="black" d="M657.488,-242.839C678.599,-256.318 709.903,-276.304 733.16,-291.153"/>
 <polygon fill="black" stroke="black" points="731.329,-294.136 741.641,-296.568 735.096,-288.236 731.329,-294.136"/>
-<text text-anchor="middle" x="670.8" y="-234.026" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix11 -->
 <g id="node19" class="node"><title>http://example.org/matrix11</title>
@@ -305,7 +298,6 @@
 <g id="edge14" class="edge"><title>http://example.org/matrix1#1&#45;&gt;http://example.org/matrix11</title>
 <path fill="none" stroke="black" d="M606.237,-241.566C594.363,-247.047 580.282,-253.198 567.246,-258 521.89,-274.707 468.656,-289.769 431.712,-299.529"/>
 <polygon fill="black" stroke="black" points="430.532,-296.22 421.744,-302.138 432.305,-302.991 430.532,-296.22"/>
-<text text-anchor="middle" x="604.835" y="-254.6" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix12 -->
 <g id="node21" class="node"><title>http://example.org/matrix12</title>
@@ -319,7 +311,6 @@
 <g id="edge16" class="edge"><title>http://example.org/matrix1#1&#45;&gt;http://example.org/matrix12</title>
 <path fill="none" stroke="black" d="M658.155,-242.505C667.858,-247.937 679.335,-253.802 690.246,-258 720.45,-269.621 804.126,-289.015 857.453,-300.842"/>
 <polygon fill="black" stroke="black" points="856.844,-304.292 867.363,-303.031 858.353,-297.457 856.844,-304.292"/>
-<text text-anchor="middle" x="671.01" y="-232.875" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix1#1&#45;&gt;http://example.org/definelist1 -->
 <g id="edge38" class="edge"><title>http://example.org/matrix1#1&#45;&gt;http://example.org/definelist1</title>
@@ -327,8 +318,8 @@
 <polygon fill="black" stroke="black" points="576.483,-376.069 567.056,-380.904 577.441,-383.003 576.483,-376.069"/>
 <text text-anchor="middle" x="664.8" y="-239.806" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs5 -->
-<g id="node16" class="node"><title>&#45;attrs5</title>
+<!-- http://example.org/matrix1#1&#45;attrs -->
+<g id="node16" class="node"><title>http://example.org/matrix1#1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="675.246,-160 587.246,-160 587.246,-98 681.246,-98 681.246,-154 675.246,-160"/>
 <polyline fill="none" stroke="gray" points="675.246,-160 675.246,-154 "/>
 <polyline fill="none" stroke="gray" points="681.246,-154 675.246,-154 "/>
@@ -341,12 +332,12 @@
 <text text-anchor="start" x="597.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="624.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">4</text>
 </g>
-<!-- &#45;attrs5&#45;&gt;http://example.org/matrix1#1 -->
-<g id="edge10" class="edge"><title>&#45;attrs5&#45;&gt;http://example.org/matrix1#1</title>
+<!-- http://example.org/matrix1#1&#45;attrs&#45;&gt;http://example.org/matrix1#1 -->
+<g id="edge10" class="edge"><title>http://example.org/matrix1#1&#45;attrs&#45;&gt;http://example.org/matrix1#1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M634.246,-160.112C634.246,-176.168 634.246,-195.341 634.246,-208.853"/>
 </g>
 <!-- http://example.org/matrix10&#45;&gt;http://example.org/definelist1 -->
-<g id="edge52" class="edge"><title>http://example.org/matrix10&#45;&gt;http://example.org/definelist1</title>
+<g id="edge51" class="edge"><title>http://example.org/matrix10&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M730.793,-323.187C723.372,-325.438 715.544,-327.806 708.246,-330 663.651,-343.408 612.722,-358.556 576.798,-369.213"/>
 <polygon fill="black" stroke="black" points="575.674,-365.896 567.081,-372.095 577.664,-372.607 575.674,-365.896"/>
 <text text-anchor="middle" x="727.386" y="-335.895" font-family="Times New Roman,serif" font-size="8.00">gen</text>
@@ -362,8 +353,8 @@
 <polygon fill="black" stroke="black" points="760.746,-427.811 764.246,-437.811 767.746,-427.811 760.746,-427.811"/>
 <text text-anchor="middle" x="777.237" y="-335.729" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
-<!-- &#45;attrs6 -->
-<g id="node18" class="node"><title>&#45;attrs6</title>
+<!-- http://example.org/matrix10&#45;attrs -->
+<g id="node18" class="node"><title>http://example.org/matrix10&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="763.246,-258 699.246,-258 699.246,-196 769.246,-196 769.246,-252 763.246,-258"/>
 <polyline fill="none" stroke="gray" points="763.246,-258 763.246,-252 "/>
 <polyline fill="none" stroke="gray" points="769.246,-252 763.246,-252 "/>
@@ -376,8 +367,8 @@
 <text text-anchor="start" x="709.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="736.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">4</text>
 </g>
-<!-- &#45;attrs6&#45;&gt;http://example.org/matrix10 -->
-<g id="edge11" class="edge"><title>&#45;attrs6&#45;&gt;http://example.org/matrix10</title>
+<!-- http://example.org/matrix10&#45;attrs&#45;&gt;http://example.org/matrix10 -->
+<g id="edge11" class="edge"><title>http://example.org/matrix10&#45;attrs&#45;&gt;http://example.org/matrix10</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M745.247,-258.435C749.595,-270.464 754.426,-283.831 758.129,-294.075"/>
 </g>
 <!-- http://example.org/matrix11&#45;&gt;http://example.org/0 -->
@@ -387,13 +378,13 @@
 <text text-anchor="middle" x="399.237" y="-335.729" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix11&#45;&gt;http://example.org/definelist1 -->
-<g id="edge53" class="edge"><title>http://example.org/matrix11&#45;&gt;http://example.org/definelist1</title>
+<g id="edge47" class="edge"><title>http://example.org/matrix11&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M412.994,-326.002C433.458,-335.95 462.124,-349.885 485.989,-361.486"/>
 <polygon fill="black" stroke="black" points="484.685,-364.744 495.209,-365.968 487.746,-358.448 484.685,-364.744"/>
 <text text-anchor="middle" x="425.419" y="-315.698" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs7 -->
-<g id="node20" class="node"><title>&#45;attrs7</title>
+<!-- http://example.org/matrix11&#45;attrs -->
+<g id="node20" class="node"><title>http://example.org/matrix11&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="419.246,-258 361.246,-258 361.246,-196 425.246,-196 425.246,-252 419.246,-258"/>
 <polyline fill="none" stroke="gray" points="419.246,-258 419.246,-252 "/>
 <polyline fill="none" stroke="gray" points="425.246,-252 419.246,-252 "/>
@@ -406,8 +397,8 @@
 <text text-anchor="start" x="371.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="398.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">4</text>
 </g>
-<!-- &#45;attrs7&#45;&gt;http://example.org/matrix11 -->
-<g id="edge13" class="edge"><title>&#45;attrs7&#45;&gt;http://example.org/matrix11</title>
+<!-- http://example.org/matrix11&#45;attrs&#45;&gt;http://example.org/matrix11 -->
+<g id="edge13" class="edge"><title>http://example.org/matrix11&#45;attrs&#45;&gt;http://example.org/matrix11</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M390.679,-258.435C389.681,-270.279 388.572,-283.42 387.714,-293.6"/>
 </g>
 <!-- http://example.org/matrix12&#45;&gt;http://example.org/2 -->
@@ -417,13 +408,13 @@
 <text text-anchor="middle" x="917.237" y="-335.729" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix12&#45;&gt;http://example.org/definelist1 -->
-<g id="edge51" class="edge"><title>http://example.org/matrix12&#45;&gt;http://example.org/definelist1</title>
+<g id="edge50" class="edge"><title>http://example.org/matrix12&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M871.866,-323.607C864.176,-325.91 855.963,-328.194 848.246,-330 752.941,-352.309 639.446,-368.872 577.09,-377.128"/>
 <polygon fill="black" stroke="black" points="576.255,-373.707 566.795,-378.477 577.165,-380.648 576.255,-373.707"/>
 <text text-anchor="middle" x="868.376" y="-336.296" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs8 -->
-<g id="node22" class="node"><title>&#45;attrs8</title>
+<!-- http://example.org/matrix12&#45;attrs -->
+<g id="node22" class="node"><title>http://example.org/matrix12&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="957.246,-258 899.246,-258 899.246,-196 963.246,-196 963.246,-252 957.246,-258"/>
 <polyline fill="none" stroke="gray" points="957.246,-258 957.246,-252 "/>
 <polyline fill="none" stroke="gray" points="963.246,-252 957.246,-252 "/>
@@ -436,8 +427,8 @@
 <text text-anchor="start" x="909.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="936.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">4</text>
 </g>
-<!-- &#45;attrs8&#45;&gt;http://example.org/matrix12 -->
-<g id="edge15" class="edge"><title>&#45;attrs8&#45;&gt;http://example.org/matrix12</title>
+<!-- http://example.org/matrix12&#45;attrs&#45;&gt;http://example.org/matrix12 -->
+<g id="edge15" class="edge"><title>http://example.org/matrix12&#45;attrs&#45;&gt;http://example.org/matrix12</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M921.346,-258.435C917.433,-270.464 913.084,-283.831 909.752,-294.075"/>
 </g>
 <!-- http://example.org/matrix20 -->
@@ -452,7 +443,6 @@
 <g id="edge20" class="edge"><title>http://example.org/matrix2#1&#45;&gt;http://example.org/matrix20</title>
 <path fill="none" stroke="black" d="M858.091,-242.677C867.785,-248.132 879.272,-253.968 890.246,-258 961.516,-284.182 984.01,-273.965 1057.25,-294 1060.44,-294.874 1063.73,-295.833 1067.03,-296.836"/>
 <polygon fill="black" stroke="black" points="1066.26,-300.264 1076.85,-299.937 1068.37,-293.589 1066.26,-300.264"/>
-<text text-anchor="middle" x="870.959" y="-233.069" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix21 -->
 <g id="node27" class="node"><title>http://example.org/matrix21</title>
@@ -466,7 +456,6 @@
 <g id="edge22" class="edge"><title>http://example.org/matrix2#1&#45;&gt;http://example.org/matrix21</title>
 <path fill="none" stroke="black" d="M859.998,-242.235C869.443,-247.339 880.265,-253.053 890.246,-258 916.11,-270.82 945.716,-284.329 968.545,-294.499"/>
 <polygon fill="black" stroke="black" points="967.323,-297.786 977.883,-298.642 970.162,-291.387 967.323,-297.786"/>
-<text text-anchor="middle" x="872.763" y="-232.458" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix22 -->
 <g id="node29" class="node"><title>http://example.org/matrix22</title>
@@ -480,7 +469,6 @@
 <g id="edge24" class="edge"><title>http://example.org/matrix2#1&#45;&gt;http://example.org/matrix22</title>
 <path fill="none" stroke="black" d="M810.746,-242.721C801.006,-248.249 789.394,-254.125 778.246,-258 692.522,-287.796 665.191,-271.592 577.246,-294 574.036,-294.818 570.735,-295.736 567.43,-296.711"/>
 <polygon fill="black" stroke="black" points="566.108,-293.456 557.593,-299.761 568.181,-300.142 566.108,-293.456"/>
-<text text-anchor="middle" x="810.55" y="-255.819" font-family="Times New Roman,serif" font-size="8.00">[ ]</text>
 </g>
 <!-- http://example.org/matrix2#1&#45;&gt;http://example.org/definelist1 -->
 <g id="edge39" class="edge"><title>http://example.org/matrix2#1&#45;&gt;http://example.org/definelist1</title>
@@ -488,8 +476,8 @@
 <polygon fill="black" stroke="black" points="576.517,-377.101 566.756,-381.221 576.956,-384.087 576.517,-377.101"/>
 <text text-anchor="middle" x="849.843" y="-249.861" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs9 -->
-<g id="node24" class="node"><title>&#45;attrs9</title>
+<!-- http://example.org/matrix2#1&#45;attrs -->
+<g id="node24" class="node"><title>http://example.org/matrix2#1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="875.246,-160 787.246,-160 787.246,-98 881.246,-98 881.246,-154 875.246,-160"/>
 <polyline fill="none" stroke="gray" points="875.246,-160 875.246,-154 "/>
 <polyline fill="none" stroke="gray" points="881.246,-154 875.246,-154 "/>
@@ -502,8 +490,8 @@
 <text text-anchor="start" x="797.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="824.246" y="-107" font-family="Times New Roman,serif" font-size="10.00">5</text>
 </g>
-<!-- &#45;attrs9&#45;&gt;http://example.org/matrix2#1 -->
-<g id="edge18" class="edge"><title>&#45;attrs9&#45;&gt;http://example.org/matrix2#1</title>
+<!-- http://example.org/matrix2#1&#45;attrs&#45;&gt;http://example.org/matrix2#1 -->
+<g id="edge18" class="edge"><title>http://example.org/matrix2#1&#45;attrs&#45;&gt;http://example.org/matrix2#1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M834.246,-160.112C834.246,-176.168 834.246,-195.341 834.246,-208.853"/>
 </g>
 <!-- http://example.org/matrix20&#45;&gt;http://example.org/2 -->
@@ -518,8 +506,8 @@
 <polygon fill="black" stroke="black" points="576.654,-378.274 566.775,-382.103 576.886,-385.27 576.654,-378.274"/>
 <text text-anchor="middle" x="1074.31" y="-337.203" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs10 -->
-<g id="node26" class="node"><title>&#45;attrs10</title>
+<!-- http://example.org/matrix20&#45;attrs -->
+<g id="node26" class="node"><title>http://example.org/matrix20&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="1134.25,-258 1076.25,-258 1076.25,-196 1140.25,-196 1140.25,-252 1134.25,-258"/>
 <polyline fill="none" stroke="gray" points="1134.25,-258 1134.25,-252 "/>
 <polyline fill="none" stroke="gray" points="1140.25,-252 1134.25,-252 "/>
@@ -532,12 +520,12 @@
 <text text-anchor="start" x="1086.25" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="1113.25" y="-205" font-family="Times New Roman,serif" font-size="10.00">5</text>
 </g>
-<!-- &#45;attrs10&#45;&gt;http://example.org/matrix20 -->
-<g id="edge19" class="edge"><title>&#45;attrs10&#45;&gt;http://example.org/matrix20</title>
+<!-- http://example.org/matrix20&#45;attrs&#45;&gt;http://example.org/matrix20 -->
+<g id="edge19" class="edge"><title>http://example.org/matrix20&#45;attrs&#45;&gt;http://example.org/matrix20</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M1108.25,-258.435C1108.25,-270.279 1108.25,-283.42 1108.25,-293.6"/>
 </g>
 <!-- http://example.org/matrix21&#45;&gt;http://example.org/definelist1 -->
-<g id="edge49" class="edge"><title>http://example.org/matrix21&#45;&gt;http://example.org/definelist1</title>
+<g id="edge45" class="edge"><title>http://example.org/matrix21&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M975.236,-324.42C968.701,-326.52 961.8,-328.514 955.246,-330 819.742,-360.716 655.618,-374.829 576.85,-380.212"/>
 <polygon fill="black" stroke="black" points="576.512,-376.726 566.767,-380.885 576.978,-383.711 576.512,-376.726"/>
 <text text-anchor="middle" x="972.024" y="-337.172" font-family="Times New Roman,serif" font-size="8.00">gen</text>
@@ -548,8 +536,8 @@
 <polygon fill="black" stroke="black" points="798.779,-430.679 791.926,-438.758 802.322,-436.716 798.779,-430.679"/>
 <text text-anchor="middle" x="982.263" y="-340.234" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
-<!-- &#45;attrs11 -->
-<g id="node28" class="node"><title>&#45;attrs11</title>
+<!-- http://example.org/matrix21&#45;attrs -->
+<g id="node28" class="node"><title>http://example.org/matrix21&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="1045.25,-258 981.246,-258 981.246,-196 1051.25,-196 1051.25,-252 1045.25,-258"/>
 <polyline fill="none" stroke="gray" points="1045.25,-258 1045.25,-252 "/>
 <polyline fill="none" stroke="gray" points="1051.25,-252 1045.25,-252 "/>
@@ -562,8 +550,8 @@
 <text text-anchor="start" x="991.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="1018.25" y="-205" font-family="Times New Roman,serif" font-size="10.00">5</text>
 </g>
-<!-- &#45;attrs11&#45;&gt;http://example.org/matrix21 -->
-<g id="edge21" class="edge"><title>&#45;attrs11&#45;&gt;http://example.org/matrix21</title>
+<!-- http://example.org/matrix21&#45;attrs&#45;&gt;http://example.org/matrix21 -->
+<g id="edge21" class="edge"><title>http://example.org/matrix21&#45;attrs&#45;&gt;http://example.org/matrix21</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M1012.58,-258.435C1011.15,-270.279 1009.57,-283.42 1008.34,-293.6"/>
 </g>
 <!-- http://example.org/matrix22&#45;&gt;http://example.org/0 -->
@@ -573,13 +561,13 @@
 <text text-anchor="middle" x="514.444" y="-341.574" font-family="Times New Roman,serif" font-size="8.00">der</text>
 </g>
 <!-- http://example.org/matrix22&#45;&gt;http://example.org/definelist1 -->
-<g id="edge50" class="edge"><title>http://example.org/matrix22&#45;&gt;http://example.org/definelist1</title>
+<g id="edge53" class="edge"><title>http://example.org/matrix22&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="black" d="M527.235,-330.303C527.676,-338.017 528.206,-347.288 528.697,-355.888"/>
 <polygon fill="black" stroke="black" points="525.204,-356.112 529.269,-365.896 532.193,-355.712 525.204,-356.112"/>
 <text text-anchor="middle" x="540.632" y="-335.15" font-family="Times New Roman,serif" font-size="8.00">gen</text>
 </g>
-<!-- &#45;attrs12 -->
-<g id="node30" class="node"><title>&#45;attrs12</title>
+<!-- http://example.org/matrix22&#45;attrs -->
+<g id="node30" class="node"><title>http://example.org/matrix22&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="552.246,-258 494.246,-258 494.246,-196 558.246,-196 558.246,-252 552.246,-258"/>
 <polyline fill="none" stroke="gray" points="552.246,-258 552.246,-252 "/>
 <polyline fill="none" stroke="gray" points="558.246,-252 552.246,-252 "/>
@@ -592,30 +580,30 @@
 <text text-anchor="start" x="504.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">line:</text>
 <text text-anchor="start" x="531.246" y="-205" font-family="Times New Roman,serif" font-size="10.00">5</text>
 </g>
-<!-- &#45;attrs12&#45;&gt;http://example.org/matrix22 -->
-<g id="edge23" class="edge"><title>&#45;attrs12&#45;&gt;http://example.org/matrix22</title>
+<!-- http://example.org/matrix22&#45;attrs&#45;&gt;http://example.org/matrix22 -->
+<g id="edge23" class="edge"><title>http://example.org/matrix22&#45;attrs&#45;&gt;http://example.org/matrix22</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M526.246,-258.435C526.246,-270.279 526.246,-283.42 526.246,-293.6"/>
 </g>
 <!-- http://example.org/definelist1&#45;&gt;http://example.org/0 -->
-<g id="edge40" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/0</title>
+<g id="edge42" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/0</title>
 <path fill="none" stroke="black" d="M495.02,-402.124C471.123,-413.74 439.839,-428.948 416.958,-440.071"/>
 <polygon fill="black" stroke="black" points="415.176,-437.045 407.712,-444.565 418.236,-443.341 415.176,-437.045"/>
 <text text-anchor="middle" x="493.954" y="-415.186" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/definelist1&#45;&gt;http://example.org/1 -->
-<g id="edge42" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/1</title>
+<g id="edge43" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/1</title>
 <path fill="none" stroke="black" d="M512.448,-402.303C502.759,-411.724 490.681,-423.466 480.388,-433.473"/>
 <polygon fill="black" stroke="black" points="477.663,-431.241 472.933,-440.721 482.543,-436.26 477.663,-431.241"/>
 <text text-anchor="middle" x="516.126" y="-414.946" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/definelist1&#45;&gt;http://example.org/4 -->
-<g id="edge43" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/4</title>
+<g id="edge41" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/4</title>
 <path fill="none" stroke="black" d="M530.246,-402.303C530.246,-410.017 530.246,-419.288 530.246,-427.888"/>
 <polygon fill="black" stroke="black" points="526.746,-427.896 530.246,-437.896 533.746,-427.896 526.746,-427.896"/>
 <text text-anchor="middle" x="543.237" y="-407.903" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
 <!-- http://example.org/definelist1&#45;&gt;http://example.org/2 -->
-<g id="edge41" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/2</title>
+<g id="edge40" class="edge"><title>http://example.org/definelist1&#45;&gt;http://example.org/2</title>
 <path fill="none" stroke="black" d="M567.132,-388.602C628.351,-395.102 754.482,-410.719 858.246,-438 862.721,-439.176 867.369,-440.62 871.915,-442.163"/>
 <polygon fill="black" stroke="black" points="871.002,-445.554 881.596,-445.638 873.366,-438.965 871.002,-445.554"/>
 <text text-anchor="middle" x="576.008" y="-374.61" font-family="Times New Roman,serif" font-size="8.00">use</text>
@@ -626,16 +614,16 @@
 <polygon fill="black" stroke="black" points="706.45,-441.364 717.034,-440.877 708.456,-434.657 706.45,-441.364"/>
 <text text-anchor="middle" x="577.717" y="-383.742" font-family="Times New Roman,serif" font-size="8.00">use</text>
 </g>
-<!-- &#45;attrs13 -->
-<g id="node32" class="node"><title>&#45;attrs13</title>
+<!-- http://example.org/definelist1&#45;attrs -->
+<g id="node32" class="node"><title>http://example.org/definelist1&#45;attrs</title>
 <polygon fill="none" stroke="gray" points="660.246,-330 586.246,-330 586.246,-294 666.246,-294 666.246,-324 660.246,-330"/>
 <polyline fill="none" stroke="gray" points="660.246,-330 660.246,-324 "/>
 <polyline fill="none" stroke="gray" points="666.246,-324 660.246,-324 "/>
 <text text-anchor="start" x="596.246" y="-309" font-family="Times New Roman,serif" font-size="10.00">type:</text>
 <text text-anchor="start" x="619.246" y="-309" font-family="Times New Roman,serif" font-size="10.00">definelist</text>
 </g>
-<!-- &#45;attrs13&#45;&gt;http://example.org/definelist1 -->
-<g id="edge26" class="edge"><title>&#45;attrs13&#45;&gt;http://example.org/definelist1</title>
+<!-- http://example.org/definelist1&#45;attrs&#45;&gt;http://example.org/definelist1 -->
+<g id="edge26" class="edge"><title>http://example.org/definelist1&#45;attrs&#45;&gt;http://example.org/definelist1</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M602.516,-330.303C587.635,-341.154 568.532,-355.083 553.704,-365.896"/>
 </g>
 </g>

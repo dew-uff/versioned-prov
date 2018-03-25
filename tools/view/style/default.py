@@ -13,7 +13,7 @@ class DefaultStyle(NoHighlightStyle):
     def label(self, label, attrs):
         if label:
             return {
-                "labelfontsize": "8",
+                "fontsize": self.labelsize,
                 "labeldistance": "1.5",
                 "color": self.highlight,
                 "labelangle": "60.0",

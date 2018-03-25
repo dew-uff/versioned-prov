@@ -1,6 +1,6 @@
 entity(dist, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="script:name",label="dist",script:line="2"])
 activity(assign2, [type="script:assign",dot:hide="true"])
-wasDerivedFrom(dist, list, assign2, g2, u2, [type="intertwined:Reference",intertwined:checkpoint="2018-03-22T00:14:59.889806",dot:hide="true"])
+wasDerivedFrom(dist, list, assign2, g2, u2, [type="intertwined:Reference",intertwined:checkpoint="2018-03-25T18:52:53.132159",dot:hide="true"])
 entity(result, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="script:name",label="result",script:line="2"])
 activity(assign3, [type="script:assign",dot:hide="true"])
-wasDerivedFrom(result, list, assign3, g3, u3, [type="intertwined:Reference",intertwined:checkpoint="2018-03-22T00:14:59.890811",dot:hide="true"])
+wasDerivedFrom(result, list, assign3, g3, u3, [type="intertwined:Reference",intertwined:checkpoint="2018-03-25T18:52:53.132159",dot:hide="true"])

@@ -7,6 +7,9 @@ from tools.utils import parsetime
 class NoHighlightStyle:
 
     def __init__(self):
+        self.labelsize = "14"
+        self.tail_labelsize = "8"
+        self.attrs_labelsize = "10"
         self.style = {
             "node_after": self.after_node,
             "label": self.taillabel,
@@ -32,7 +35,7 @@ class NoHighlightStyle:
             "wasInvalidatedBy": {"dir": "both", "arrowtail": "odiamond"},
             "wasAssociatedWith1": {"arrowhead": "none"},
             "actedOnBehalfOf1": {"arrowhead": "none"},
-            "hadMember_label": lambda l, a: self.taillabel("[ ]", a),
+            #"hadMember_label": lambda l, a: self.taillabel("[ ]", a),
 
             "derivedByInsertionFrom1": {"arrowhead": "none"},
             "derivedByInsertionFrom_label*": self.label,
@@ -72,7 +75,7 @@ class NoHighlightStyle:
     def taillabel(self, label, attrs):
         if label:
             return {
-                "labelfontsize": "8",
+                "labelfontsize": self.tail_labelsize,
                 "labeldistance": "1.5",
                 "labelangle": "60.0",
                 "rotation": "20",
@@ -83,7 +86,7 @@ class NoHighlightStyle:
     def label(self, label, attrs):
         if label:
             return {
-                "fontsize": "8",
+                "fontsize": self.labelsize,
                 "distance": "1.5",
                 "angle": "60.0",
                 "rotation": "20",
@@ -95,7 +98,7 @@ class NoHighlightStyle:
         return {
             "color": "gray",
             "shape": "note",
-            "fontsize": "10",
+            "fontsize": self.attrs_labelsize,
             "fontcolor": "black",
             "label": label,
         }

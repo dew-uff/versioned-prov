@@ -4,7 +4,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/4" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="4",URL="http://example.org/4"]
 "http://example.org/2" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="2",URL="http://example.org/2"]
 "http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
@@ -22,9 +22,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">2</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix-attrs" -> "http://example.org/matrix" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix0#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix0#1",URL="http://example.org/matrix0#1"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix0#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[0, 1, 4]</TD>
@@ -42,9 +42,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">3</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/matrix0#1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0#1-attrs" -> "http://example.org/matrix0#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix00" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix00",URL="http://example.org/matrix00"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix00-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">0</TD>
@@ -62,10 +62,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">3</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/matrix00" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix0#1" -> "http://example.org/matrix00" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix00-attrs" -> "http://example.org/matrix00" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0#1" -> "http://example.org/matrix00"
 "http://example.org/matrix01" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix01",URL="http://example.org/matrix01"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix01-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">1</TD>
@@ -83,10 +83,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">3</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/matrix01" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix0#1" -> "http://example.org/matrix01" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix01-attrs" -> "http://example.org/matrix01" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0#1" -> "http://example.org/matrix01"
 "http://example.org/matrix02" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix02",URL="http://example.org/matrix02"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix02-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">4</TD>
@@ -104,11 +104,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">3</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/matrix02" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix0#1" -> "http://example.org/matrix02" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/matrix" -> "http://example.org/matrix0#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix02-attrs" -> "http://example.org/matrix02" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix0#1" -> "http://example.org/matrix02"
+"http://example.org/matrix" -> "http://example.org/matrix0#1"
 "http://example.org/matrix1#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1#1",URL="http://example.org/matrix1#1"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix1#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[10000, 0, 2]</TD>
@@ -126,9 +126,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">4</TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/matrix1#1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1#1-attrs" -> "http://example.org/matrix1#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix10" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix10",URL="http://example.org/matrix10"]
-"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix10-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -146,10 +146,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">4</TD>
 	</TR>
 </TABLE>>]
-"-attrs6" -> "http://example.org/matrix10" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix1#1" -> "http://example.org/matrix10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix10-attrs" -> "http://example.org/matrix10" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1#1" -> "http://example.org/matrix10"
 "http://example.org/matrix11" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix11",URL="http://example.org/matrix11"]
-"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix11-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">0</TD>
@@ -167,10 +167,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">4</TD>
 	</TR>
 </TABLE>>]
-"-attrs7" -> "http://example.org/matrix11" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix1#1" -> "http://example.org/matrix11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix11-attrs" -> "http://example.org/matrix11" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1#1" -> "http://example.org/matrix11"
 "http://example.org/matrix12" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix12",URL="http://example.org/matrix12"]
-"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix12-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">2</TD>
@@ -188,11 +188,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">4</TD>
 	</TR>
 </TABLE>>]
-"-attrs8" -> "http://example.org/matrix12" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix1#1" -> "http://example.org/matrix12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/matrix" -> "http://example.org/matrix1#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix12-attrs" -> "http://example.org/matrix12" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix1#1" -> "http://example.org/matrix12"
+"http://example.org/matrix" -> "http://example.org/matrix1#1"
 "http://example.org/matrix2#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix2#1",URL="http://example.org/matrix2#1"]
-"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix2#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[2, 10000, 0]</TD>
@@ -210,9 +210,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">5</TD>
 	</TR>
 </TABLE>>]
-"-attrs9" -> "http://example.org/matrix2#1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix2#1-attrs" -> "http://example.org/matrix2#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix20" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix20",URL="http://example.org/matrix20"]
-"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix20-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">2</TD>
@@ -230,10 +230,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">5</TD>
 	</TR>
 </TABLE>>]
-"-attrs10" -> "http://example.org/matrix20" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix2#1" -> "http://example.org/matrix20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix20-attrs" -> "http://example.org/matrix20" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix2#1" -> "http://example.org/matrix20"
 "http://example.org/matrix21" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix21",URL="http://example.org/matrix21"]
-"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix21-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -251,10 +251,10 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">5</TD>
 	</TR>
 </TABLE>>]
-"-attrs11" -> "http://example.org/matrix21" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix2#1" -> "http://example.org/matrix21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix21-attrs" -> "http://example.org/matrix21" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix2#1" -> "http://example.org/matrix21"
 "http://example.org/matrix22" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix22",URL="http://example.org/matrix22"]
-"-attrs12" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/matrix22-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">0</TD>
@@ -272,17 +272,17 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">5</TD>
 	</TR>
 </TABLE>>]
-"-attrs12" -> "http://example.org/matrix22" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/matrix2#1" -> "http://example.org/matrix22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/matrix" -> "http://example.org/matrix2#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/matrix22-attrs" -> "http://example.org/matrix22" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/matrix2#1" -> "http://example.org/matrix22"
+"http://example.org/matrix" -> "http://example.org/matrix2#1"
 "http://example.org/definelist1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="definelist1",URL="http://example.org/definelist1"]
-"-attrs13" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/definelist1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">definelist</TD>
 	</TR>
 </TABLE>>]
-"-attrs13" -> "http://example.org/definelist1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/definelist1-attrs" -> "http://example.org/definelist1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix00" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/matrix01" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/matrix02" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
@@ -297,7 +297,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/matrix1#1" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/matrix2#1" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/dist#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist#1",URL="http://example.org/dist#1"]
-"-attrs14" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/dist#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
@@ -315,14 +315,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">2</TD>
 	</TR>
 </TABLE>>]
-"-attrs14" -> "http://example.org/dist#1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/dist#1" -> "http://example.org/matrix0#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/dist#1" -> "http://example.org/matrix1#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/dist#1" -> "http://example.org/matrix2#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/dist#1-attrs" -> "http://example.org/dist#1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/dist#1" -> "http://example.org/matrix0#1"
+"http://example.org/dist#1" -> "http://example.org/matrix1#1"
+"http://example.org/dist#1" -> "http://example.org/matrix2#1"
 "http://example.org/assign2" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign2",URL="http://example.org/assign2"]
 "http://example.org/dist#1" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/result#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="result#1",URL="http://example.org/result#1"]
-"-attrs15" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/result#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]</TD>
@@ -340,28 +340,28 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">2</TD>
 	</TR>
 </TABLE>>]
-"-attrs15" -> "http://example.org/result#1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/result#1" -> "http://example.org/matrix0#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/result#1" -> "http://example.org/matrix1#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
-"http://example.org/result#1" -> "http://example.org/matrix2#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+"http://example.org/result#1-attrs" -> "http://example.org/result#1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/result#1" -> "http://example.org/matrix0#1"
+"http://example.org/result#1" -> "http://example.org/matrix1#1"
+"http://example.org/result#1" -> "http://example.org/matrix2#1"
 "http://example.org/assign3" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign3",URL="http://example.org/assign3"]
 "http://example.org/result#1" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/definelist1" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign2" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/definelist1" -> "http://example.org/2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign3" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/definelist1" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign2" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/definelist1" -> "http://example.org/4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/definelist1" -> "http://example.org/0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/definelist1" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/definelist1" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/matrix01" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/matrix20" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/matrix02" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/matrix00" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/matrix21" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist#1" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/matrix22" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/matrix12" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/result#1" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/matrix10" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix20" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/matrix11" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix01" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix02" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix12" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/dist#1" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/matrix10" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix00" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/matrix22" -> "http://example.org/definelist1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 }

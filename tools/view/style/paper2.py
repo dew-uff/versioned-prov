@@ -18,7 +18,7 @@ class DotPaper2(DotHide):
     def label(self, label, attrs, color="black"):
         if label:
             return {
-                "labelfontsize": "8",
+                "labelfontsize": self.labelsize,
                 "labeldistance": "1.5",
                 "color": color,
                 "labelangle": "60.0",

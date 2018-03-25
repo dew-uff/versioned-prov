@@ -1,6 +1,6 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/dist@i#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist@i#4",URL="http://example.org/dist@i#4"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/dist@i#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">access</TD>
@@ -14,16 +14,16 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">12</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/dist@i#4" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/dist@i#4" -> "http://example.org/row2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="part
+"http://example.org/dist@i#4-attrs" -> "http://example.org/dist@i#4" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/dist@i#4" -> "http://example.org/row2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="part
 vmatrix[2]
-2018-03-22T00:26:51.564972"]
+2018-03-25T18:49:58.676215"]
 "http://example.org/access32" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access32",URL="http://example.org/access32"]
 "http://example.org/access32" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access32" -> "http://example.org/i#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/dist@i#4" -> "http://example.org/access32" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti#4",URL="http://example.org/disti#4"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/disti#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">name</TD>
@@ -37,9 +37,9 @@ vmatrix[2]
 	    <TD align="left">12</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/disti#4" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/disti#4" -> "http://example.org/row2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="access
-2018-03-22T00:26:51.564972"]
+"http://example.org/disti#4-attrs" -> "http://example.org/disti#4" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/disti#4" -> "http://example.org/row2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="access
+2018-03-25T18:49:58.677218"]
 "http://example.org/assign16" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign16",URL="http://example.org/assign16"]
 "http://example.org/disti#4" -> "http://example.org/dist@i#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign16" -> "http://example.org/dist@i#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]

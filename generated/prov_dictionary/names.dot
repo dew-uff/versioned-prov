@@ -1,6 +1,6 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">1</TD>
@@ -10,9 +10,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1-attrs" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="http://example.org/a"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/a-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&#x27;a&#x27;</TD>
@@ -22,9 +22,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a-attrs" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/a#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a#2",URL="http://example.org/a#2"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/a#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">b&#x27;a&#x27;</TD>
@@ -34,9 +34,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a#2-attrs" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/True" [fillcolor="#FFFC87",color="#808080",style="filled",label="True",URL="http://example.org/True"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/True-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">True</TD>
@@ -46,9 +46,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">constant</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/True-attrs" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/int" [fillcolor="#FFFC87",color="#808080",style="filled",label="int",URL="http://example.org/int"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/int-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">&lt;class &#x27;int&#x27;&gt;</TD>
@@ -62,9 +62,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">int</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int-attrs" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ellipsis" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis",URL="http://example.org/ellipsis"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/ellipsis-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">Ellipsis</TD>
@@ -78,5 +78,5 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">...</TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis-attrs" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]
 }

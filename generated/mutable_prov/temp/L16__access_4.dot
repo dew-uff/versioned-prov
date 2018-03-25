@@ -1,8 +1,8 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/disti@j#6" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="disti@j#6",URL="http://example.org/disti@j#6"]
-"http://example.org/disti@j#6" -> "http://example.org/v2" [fontsize="8",distance="1.5",angle="60.0",rotation="20",label="part
+"http://example.org/disti@j#6" -> "http://example.org/v2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="part
 row2[0]
-2018-03-22T00:26:51.977895"]
+2018-03-25T18:49:59.036172"]
 "http://example.org/access36" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access36",URL="http://example.org/access36"]
 "http://example.org/access36" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access36" -> "http://example.org/j#10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]

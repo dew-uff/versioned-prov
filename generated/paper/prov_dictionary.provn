@@ -12,10 +12,12 @@ entity(matrix21, [value="10000",type="item",label="m",script:line="5",dot:hide2=
 entity(matrix22, [value="0",type="item",label="0",script:line="5",dot:hide2="true"])
 derivedByInsertionFrom(matrix2#1, empty, {("0", matrix20), ("1", matrix21), ("2", matrix22)}, [dot:hide2="true"])
 
-entity(dist#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="dist",script:line="2",dot:hide2="true"])
+//entity(dist#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="dist",script:line="2",dot:hide2="true"])
+entity(dist#1, [value="[[...]]",type="Dictionary",label="dist",script:line="2",dot:hide2="true"])
 derivedByInsertionFrom(dist#1, empty, {("0", matrix0#1), ("1", matrix1#1), ("2", matrix2#1)}, [dot:hide2="true"])
 
-entity(result#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="result",script:line="2",dot:hide2="true"])
+//entity(result#1, [value="[[0, 1, 4], [10000, 0, 2], [2, 10000, 0]]",type="Dictionary",label="result",script:line="2",dot:hide2="true"])
+entity(result#1, [value="[[...]]",type="Dictionary",label="result",script:line="2",dot:hide2="true"])
 derivedByInsertionFrom(result#1, empty, {("0", matrix0#1), ("1", matrix1#1), ("2", matrix2#1)}, [dot:hide2="true"])
 
 // L12#2
@@ -40,11 +42,13 @@ derivedByInsertionFrom(disti#3, disti#2, {("1", disti@j#3)}, [dot:specific="true
 wasDerivedFrom(disti#3, disti#2, assign11, g40, u43, [dot:specific="true"])
 wasDerivedFrom(disti#3, ikj#2, assign11, g40, u42, [dot:specific="true"])
 
+//entity(dist#2, [value="[[0, 1, 4], [10000, 0, 2], [2, 3, 0]]",type="Dictionary",label="dist",script:line="17",dot:specific="true"])
 entity(dist#2, [value="[[...]]",type="Dictionary",label="dist",script:line="17",dot:specific="true"])
 derivedByInsertionFrom(dist#2, dist#1, {("2", disti#3)}, [dot:specific="true"])
 wasDerivedFrom(dist#2, dist#1, assign11, g41, u44, [dot:specific="true"])
 wasDerivedFrom(dist#2, ikj#2, assign11, g41, u42, [dot:specific="true"])
 
+//entity(result#2, [value="[[0, 1, 4], [10000, 0, 2], [2, 3, 0]]",type="Dictionary",label="result",script:line="17",dot:specific="true"])
 entity(result#2, [value="[[...]]",type="Dictionary",label="result",script:line="17",dot:specific="true"])
 derivedByInsertionFrom(result#2, result#1, {("2", disti#3)}, [dot:specific="true"])
 wasDerivedFrom(result#2, result#1, assign11, g42, u45, [dot:specific="true"])

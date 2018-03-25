@@ -1,6 +1,6 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">1</TD>
@@ -10,21 +10,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1-attrs" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/v1" [fillcolor="#32CD32",color="#808080",style="filled",label="v1",URL="http://example.org/v1"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/v1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">1</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/1" -> "http://example.org/v1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/v1-attrs" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:00"]
-"http://example.org/v1" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/v1" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:00"]
 "http://example.org/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="http://example.org/a"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/a-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">&#x27;a&#x27;</TD>
@@ -34,21 +34,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a-attrs" -> "http://example.org/a" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/va" [fillcolor="#32CD32",color="#808080",style="filled",label="va",URL="http://example.org/va"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/va-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">&#x27;a&#x27;</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/va" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/a" -> "http://example.org/va" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/va-attrs" -> "http://example.org/va" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a" -> "http://example.org/va" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:01"]
-"http://example.org/va" -> "http://example.org/a" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/va" -> "http://example.org/a" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:01"]
 "http://example.org/a#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a#2",URL="http://example.org/a#2"]
-"-attrs4" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/a#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">b&#x27;a&#x27;</TD>
@@ -58,21 +58,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs4" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a#2-attrs" -> "http://example.org/a#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/vba" [fillcolor="#32CD32",color="#808080",style="filled",label="vba",URL="http://example.org/vba"]
-"-attrs5" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/vba-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">b&#x27;a&#x27;</TD>
 	</TR>
 </TABLE>>]
-"-attrs5" -> "http://example.org/vba" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/a#2" -> "http://example.org/vba" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/vba-attrs" -> "http://example.org/vba" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a#2" -> "http://example.org/vba" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:02"]
-"http://example.org/vba" -> "http://example.org/a#2" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/vba" -> "http://example.org/a#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:02"]
 "http://example.org/True" [fillcolor="#FFFC87",color="#808080",style="filled",label="True",URL="http://example.org/True"]
-"-attrs6" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/True-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">True</TD>
@@ -82,21 +82,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">constant</TD>
 	</TR>
 </TABLE>>]
-"-attrs6" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/True-attrs" -> "http://example.org/True" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/vtrue" [fillcolor="#32CD32",color="#808080",style="filled",label="vtrue",URL="http://example.org/vtrue"]
-"-attrs7" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/vtrue-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">True</TD>
 	</TR>
 </TABLE>>]
-"-attrs7" -> "http://example.org/vtrue" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/True" -> "http://example.org/vtrue" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/vtrue-attrs" -> "http://example.org/vtrue" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/True" -> "http://example.org/vtrue" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:03"]
-"http://example.org/vtrue" -> "http://example.org/True" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/vtrue" -> "http://example.org/True" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:03"]
 "http://example.org/int" [fillcolor="#FFFC87",color="#808080",style="filled",label="int",URL="http://example.org/int"]
-"-attrs8" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/int-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">int</TD>
@@ -106,21 +106,21 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">name</TD>
 	</TR>
 </TABLE>>]
-"-attrs8" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int-attrs" -> "http://example.org/int" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/vint" [fillcolor="#32CD32",color="#808080",style="filled",label="vint",URL="http://example.org/vint"]
-"-attrs9" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/vint-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">&lt;class &#x27;int&#x27;&gt;</TD>
 	</TR>
 </TABLE>>]
-"-attrs9" -> "http://example.org/vint" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/int" -> "http://example.org/vint" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/vint-attrs" -> "http://example.org/vint" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/int" -> "http://example.org/vint" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:04"]
-"http://example.org/vint" -> "http://example.org/int" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/vint" -> "http://example.org/int" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:04"]
 "http://example.org/ellipsis" [fillcolor="#FFFC87",color="#808080",style="filled",label="ellipsis",URL="http://example.org/ellipsis"]
-"-attrs10" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/ellipsis-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">label:</TD>
 	    <TD align="left">...</TD>
@@ -130,17 +130,17 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">constant</TD>
 	</TR>
 </TABLE>>]
-"-attrs10" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis-attrs" -> "http://example.org/ellipsis" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/vellipsis" [fillcolor="#32CD32",color="#808080",style="filled",label="vellipsis",URL="http://example.org/vellipsis"]
-"-attrs11" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/vellipsis-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">repr:</TD>
 	    <TD align="left">Ellipsis</TD>
 	</TR>
 </TABLE>>]
-"-attrs11" -> "http://example.org/vellipsis" [color="gray",style="dashed",arrowhead="none"]
-"http://example.org/ellipsis" -> "http://example.org/vellipsis" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
+"http://example.org/vellipsis-attrs" -> "http://example.org/vellipsis" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/ellipsis" -> "http://example.org/vellipsis" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
 2018-02-22T16:00:05"]
-"http://example.org/vellipsis" -> "http://example.org/ellipsis" [labelfontsize="8",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
+"http://example.org/vellipsis" -> "http://example.org/ellipsis" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
 2018-02-22T16:00:05"]
 }

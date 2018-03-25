@@ -1,6 +1,6 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
-"-attrs0" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/m-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10000</TD>
@@ -14,9 +14,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">m</TD>
 	</TR>
 </TABLE>>]
-"-attrs0" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/m-attrs" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
-"-attrs1" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">1</TD>
@@ -26,9 +26,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"-attrs1" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/1-attrs" -> "http://example.org/1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum" [fillcolor="#FFFC87",color="#808080",style="filled",label="sum",URL="http://example.org/sum"]
-"-attrs2" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/sum-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">10001</TD>
@@ -42,18 +42,18 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	    <TD align="left">m + 1</TD>
 	</TR>
 </TABLE>>]
-"-attrs2" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/sum-attrs" -> "http://example.org/sum" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/+" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+",URL="http://example.org/+"]
-"-attrs3" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"http://example.org/+-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">type:</TD>
 	    <TD align="left">operation</TD>
 	</TR>
 </TABLE>>]
-"-attrs3" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/+-attrs" -> "http://example.org/+" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/sum" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
-"http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/+" -> "http://example.org/m" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+" -> "http://example.org/1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/sum" -> "http://example.org/+" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 }

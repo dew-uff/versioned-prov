@@ -19,7 +19,7 @@ LAST = None
 def time():
     global x, LAST
     x += 1
-    return x
+    #return x
     current = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
     while current == LAST:
         current = datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
@@ -80,18 +80,18 @@ with prov.desc("L2 - list definition / assign", line=2) as line:
 
         ti = time()
 
-        e_list = prov.entity("matrix", repr(dist), prov.SCRIPT + "list", prov.calc_label(prov_label), line)
+        e_list = prov.entity("matrix", repr(dist), prov.SCRIPT + "list", prov.calc_label(prov_label), line, show1=True)
         for i, (pdist, plabel) in enumerate(zip(prov_dist, prov_label)):
-            e_row = prov.entity("matrix{}".format(i), repr(dist[i]), prov.SCRIPT + "list", prov.calc_label(plabel), line + i + 1)
+            e_row = prov.entity("matrix{}".format(i), repr(dist[i]), prov.SCRIPT + "list", prov.calc_label(plabel), line + i + 1, show1=True)
             for j, ppdist in enumerate(pdist):
                 prov.vhadMember(e_row, ppdist, str(j), ti, attrs=SPECIFIC)
             prov.vhadMember(e_list, e_row, str(i), ti, attrs=SPECIFIC)
 
     with prov.desc("L2 - assign"):
-        e_dist = prov.entity("dist", repr(dist), prov.SCRIPT + "name", "dist", line)
+        e_dist = prov.entity("dist", repr(dist), prov.SCRIPT + "name", "dist", line, show1=True)
         prov.activity("assign", [prov.RefDerivation(time(), e_dist, e_list, attrs=HIDE)], attrs=HIDE)
 
-        e_result = prov.entity("result", repr(result), prov.SCRIPT + "name", "result", line)
+        e_result = prov.entity("result", repr(result), prov.SCRIPT + "name", "result", line, show1=True)
         prov.activity("assign", [prov.RefDerivation(time(), e_result, e_list, attrs=HIDE)], attrs=HIDE)
 
 
