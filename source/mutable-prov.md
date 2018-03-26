@@ -5,7 +5,7 @@
 
 In this document we map simple script constructs to ::GET NAME::.
 
-**This extension were discontinued in favor of [Versioned-PROV](versioned-prov.md)**
+**This extension were discontinued in favor of [Versioned-PROV](versioned-prov.html)**
 
 
 ## Extension

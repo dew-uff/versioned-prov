@@ -24,14 +24,6 @@ The *::GET PROV_DICTIONARY::* extension [9] improves the support for data struct
 *::GET VERSIONED_PROV::* is an extension that adds reference sharing and checkpoints to PROV. Checkpoints solve problem P1 by allowing the representation of multiple versions of collections with a single entity. Reference sharing solves problem P2 by allowing collections to be represented only once and referred to by other entities through reference derivations together with checkpoints to indicate states. *::GET VERSIONED_PROV::* solves both problems in O(1).
 
 
-## Authors
-
-- João Felipe Pimentel (Universidade Federal Fluminense)
-- Paolo Missier (Newcastle University)
-- Leonardo Murta (Universidade Federal Fluminense)
-- Vanessa Braganholo (Universidade Federal Fluminense)
-
-
 ## Running Example
 
 To describe and evaluate the extension, we use the ::[Floyd-Warshall](algorithm.py) algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.
@@ -45,9 +37,9 @@ Due the nature of the algorithm, fine-grained provenance can assist in obtained 
 ## Experiment
 
 For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to ::GET PLAIN_PROV::, ::GET PROV_DICTIONARY::, and ::GET VERSIONED_PROV::. For descriptions of the mappings, please refer to:
-  - [::GET PLAIN_PROV:: Mapping](prov.md)
-  - [::GET PROV_DICTIONARY:: Mapping](prov-dictionary.md)
-  - [::GET VERSIONED_PROV:: Mapping](versioned-prov.md)
+  - [::GET PLAIN_PROV:: Mapping](prov.html)
+  - [::GET PROV_DICTIONARY:: Mapping](prov-dictionary.html)
+  - [::GET VERSIONED_PROV:: Mapping](versioned-prov.html)
 
 We tried to produce the minimum set of PROV-N statements in the mappings without compromising the semantics. For this reason, we use the [Inference 11](https://www.w3.org/TR/prov-constraints/#derivation-generation-use-inference) to avoid using `used` and `wasGeneratedBy` statements when we have `wasDerivedFrom` statements.
 
@@ -87,7 +79,7 @@ The following figure considers only the nodes and edges overheads related to lis
 ::![Comparison of elements](::GET BASE::/graphs/specific_comparison)
 
 
-For an in depth analaysis of space requirements of these approaches, please take a a look at our [Comparison](comparison.md).
+For an in depth analaysis of space requirements of these approaches, please take a a look at our [Comparison](comparison.html).
 
 
 ## Query
@@ -113,58 +105,13 @@ Querying with ::GET VERSIONED_PROV:: is harder than querying with ::GET PLAIN_PR
 ## Namespaces
 
 In this repository we use two namespaces:
-- We use he namespace [`version:`](ns) for general ::GET VERSIONED_PROV:: concepts
-- On the other hand, the namespace [`script:`](ns/script) indicates specific script concepts for our FLoyd-Warshall mapping.
 
+* We use the namespace [`version:`](ns) for general ::GET VERSIONED_PROV:: concepts
+* On the other hand, the namespace [`script:`](ns/script) indicates specific script concepts for our FLoyd-Warshall mapping.
 
-## Development
+## Authors
 
-We use [Jupyter Notebooks](https://github.com/dew-uff/versioned-prov/tree/master/notebooks) with [Python 3.6](https://www.python.org/), [pandas](https://pandas.pydata.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [Graphviz](https://www.graphviz.org/) to generate image files.
-
-For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use the [Lark parser](https://github.com/erezsh/lark).
-
-Thus, for running the files, please install Python 3.6 and Graphviz, and run:
-```
-pip install jupyter lark-parser pandas numpy matplotlib
-```
-
-To simplify the process of updating readme files, we have markdown files in the ::[source directory](source) with special tags to link and load files.
-
-For updating the project markdowns, please edit the files in the ::[source directory](source) and run:
-```
-python build.py
-```
-
-
-### Past Development
-
-During the development of ::GET VERSIONED_PROV::, we developed two other extensions with the same goal: ::GET MUTABLE_PROV:: and ::GET INTERTWINED_PROV::.
-
-*[::GET MUTABLE_PROV::](mutable-prov.md)* uses PROV-Dictionary for solving P1 and versioning for solving P2. However, (P3) it adds bidirectional or return edges and (P4) created versions for all entities (including immutable elements).
-
-*[::GET INTERTWINED_PROV::](intertwined-prov.md)*, besides solving P1 and P2, also solves P3 by using interwined versioning (See Figure 7 of https://doi.org/10.1145/280277.280280). However, it still suffers from P4. All in all, it improves the management of complex entities (collections), but has some drawbacks on simple entities (literals and immutable variables).
-
-*::GET VERSIONED_PROV::* does not suffer from any of these problems.
-
-By comparing the number of statements in these approaches:
-
-The ::GET MUTABLE_PROV:: approach has less relationships than ::GET VERSIONED_PROV::. This occurs because ::GET MUTABLE_PROV:: does not have an `entity` for every part of a `value`, and does not use `wasDerivedFrom` relationships in accesses, due to the lach of these `entities`. On the other hand, ::GET MUTABLE_PROV:: has a much bigger number of nodes, due to the addition of `values`.
-
-The ::GET INTERTWINED_PROV:: approach is very similar to the ::GET VERSIONED_PROV::, but the former use explict `Version` entities with `specializationOf` relationships from the entities, while the latter has the version concept implicitly built into the entities, through the checkpoints in `hadMember` relationships. Hence, the ::GET INTERTWINED_PROV:: approach produces much more nodes and relationships than ::GET VERSIONED_PROV::.
-
-
-Querying with ::GET MUTABLE_PROV:: and ::GET INTERTWINED_PROV:: is as hard as querying with ::GET VERSIONED_PROV::, but they are more powerful than ::GET PLAIN_PROV:: and ::GET PROV_DICTIONARY::.
-
-
-## License Terms
-
-License Terms
-The MIT License (MIT)
-
-Copyright (c) 2018 Universidade Federal Fluminense (UFF), Newcastle University.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+- João Felipe Pimentel (Universidade Federal Fluminense)
+- Paolo Missier (Newcastle University)
+- Leonardo Murta (Universidade Federal Fluminense)
+- Vanessa Braganholo (Universidade Federal Fluminense)

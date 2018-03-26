@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Versioned-PROV</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="css/github.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Versioned-PROV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="README.html"><span class="navbar-align">Home</span></a></li><li class="nav-item"><a class="nav-link" href="prov.html">PROV<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link active" href="prov-dictionary.html">PROV-Dictionary<span class="mapping">Mapping</span><span class="sr-only">(current)</span></a></li><li class="nav-item"><a class="nav-link" href="versioned-prov.html">Versioned-PROV<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link" href="comparison.html"><span class="navbar-align">Comparison</span></a></li>
+        </ul>
+        <ul class="navbar-nav navbar-right ">
+            <li class="nav-item"><a class="nav-link" href="https://github.com/dew-uff/versioned-prov"><span class="hidden-xs-down"> View on GitHub </span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path id="githublogo" fill="rgb(157, 157, 157)" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="starter-template">
+        <h1 id="prov-dictionary">PROV-Dictionary</h1>
+<p>In this document we map simple script constructs to PROV-Dictionary.</p>
+<h2 id="names-literals-and-constants">Names, literals, and constants</h2>
+<p><code>entities</code> represent variables names, literals (e.g., &quot;a&quot;, 1, True), and constants (e.g., <code>...</code>).</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">1</span>     <span class="co"># literal</span>
+<span class="co">&quot;a&quot;</span>   <span class="co"># literal</span>
+b<span class="st">&quot;a&quot;</span>  <span class="co"># literal</span>
+<span class="va">True</span>  <span class="co"># literal</span>
+<span class="bu">int</span>   <span class="co"># names</span>
+...   <span class="co"># constant</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+
+entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(a, [value=&quot;&#39;a&#39;&quot;, type=&quot;script:literal&quot;])
+entity(a#2, [value=&quot;b&#39;a&#39;&quot;, type=&quot;script:literal&quot;])
+entity(True, [value=&quot;True&quot;, type=&quot;script:constant&quot;])
+entity(int, [value=&quot;&lt;class &#39;int&#39;&gt;&quot;, type=&quot;script:name&quot;, label=&quot;int&quot;])
+entity(ellipsis, [value=&quot;Ellipsis&quot;, type=&quot;script:constant&quot;, label=&quot;...&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/names.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/names.png" alt="PROV-Dictionary mapping for names, literals, and constants" /></a></p>
+<h2 id="assignment">Assignment</h2>
+<p>We represent an assignment by an <code>activity</code> that uses the <code>entities</code> on the right side to generate an <code>entity</code> on the left side.</p>
+<p>An assignment creates a new entity for the name on the left side even when the name already exists.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">m <span class="op">=</span> <span class="dv">10000</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+
+entity(10000, [value=&quot;10000&quot;, type=&quot;script:literal&quot;])
+entity(m, [value=&quot;10000&quot;, type=&quot;script:name&quot;, label=&quot;m&quot;])
+
+activity(assign1, [type=&quot;script:assign&quot;])
+wasDerivedFrom(m, 10000, assign1, g1, u1)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/assign.png" alt="PROV-Dictionary mapping for assignments" /></a></p>
+<h2 id="operation">Operation</h2>
+<p>Similar to assigments, we also use <code>activities</code> to map operations. However, instead of producing an <code>entity</code> for a variable name, it produces an <code>entity</code> for the evaluation result.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">m <span class="op">+</span> <span class="dv">1</span></code></pre></div>
+<pre class="provn"><code>entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(sum, [value=&quot;10001&quot;, type=&quot;eval&quot;, label=&quot;m + 1&quot;])
+
+activity(+, [type=&quot;script:operation&quot;])
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g2, u3)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/operation.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/operation.png" alt="PROV-Dictionary mapping for operations" /></a></p>
+<h2 id="list-definition">List definition</h2>
+<p>A list is represented by a PROV-Dictionary that has the list indexes as keys.</p>
+<p>According to the <a href="https://www.w3.org/TR/prov-dictionary/">PROV-Dictionary documentation</a>, a complete dictionary must be able to be traced back to an empty dictionary. Since we have the complete list definition, we always define a list entity by creating an empty dictionary. Then, we use the <code>derivedByInsertionFrom</code> relationship to insert its elements.</p>
+<p>The provenance of a <code>Floyd-Warshall</code> execution should indicate the position of accessed elements in the result matrix (list of lists) to allow the querying of the shortest-path between two nodes. However, the PROV-Dictionary extension does not indicate accesses to positions (note below that an <code>entity</code> may repeat in multiple positions). Thus, to allow this query, we create an extra <code>entity</code> for every position in the list and we use an <code>activity</code> to derive these <code>entities</code> from the actual <code>entities</code> that compose the dictionary.</p>
+<p>For simplicity, in the case of the definition of matrices, we use a single <code>activity</code> to represent all the derivations, instead of an <code>activity</code> for each row.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">[m, m <span class="op">+</span> <span class="dv">1</span>, m]</code></pre></div>
+<pre class="provn"><code>entity(empty, [value=&quot;[]&quot;, type=&quot;EmptyDictionary&quot;])
+entity(list, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;[m, m + 1, m]&quot;])
+entity(list0, [value=&quot;10000&quot;, type=&quot;script:item&quot;, label=&quot;m&quot;])
+entity(list1, [value=&quot;10001&quot;, type=&quot;script:item&quot;, label=&quot;m + 1&quot;])
+entity(list2, [value=&quot;10000&quot;, type=&quot;script:item&quot;, label=&quot;m&quot;])
+derivedByInsertionFrom(
+    list, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(definelist1, [type=&quot;script:definelist&quot;])
+wasDerivedFrom(list0, m, definelist1, g3, u4)
+wasDerivedFrom(list1, sum, definelist1, g4, u5)
+wasDerivedFrom(list2, m, definelist1, g5, u6)
+wasGeneratedBy(list, definelist1, -)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/list.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/list.png" alt="PROV-Dictionary mapping for list definitions" /></a></p>
+<h1 id="assignment-of-list-definition">Assignment of list definition</h1>
+<p>When we assign a list definition to a variable, the variable is also a dictionary. The PROV-Dictionary extension does not have a derivation rule to indicate that a dictionary is the same as the other. Thus, we must create a new dictionary that have the same keys as the existing one.</p>
+<p>Note that we do not create new entities for the dictionary members. We just reuse the existing ones. Note however that we create an empty dictionary and derive the new one from it.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d <span class="op">=</span> [m, m <span class="op">+</span> <span class="dv">1</span>, m]</code></pre></div>
+<pre class="provn"><code>entity(d, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;d&quot;])
+derivedByInsertionFrom(
+    d, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(assign2, [type=&quot;script:assign&quot;])
+wasDerivedFrom(d, list, assign2, g6, u7)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/list_assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/list_assign.png" alt="PROV-Dictionary mapping for assignments of list definitions" /></a></p>
+<p>The same mapping is valid for assignments to names that represent dictionaries.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> d</code></pre></div>
+<pre class="provn"><code>entity(x, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;x&quot;])
+derivedByInsertionFrom(
+    x, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(assign3, [type=&quot;script:assign&quot;])
+wasDerivedFrom(x, d, assign3, g7, u8)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/list_assign2.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/list_assign2.png" alt="PROV-Dictionary mapping for assignments to names that have list definitions" /></a></p>
+<h2 id="function-call">Function call</h2>
+<p>We map a function call as an <code>activity</code> that <code>uses</code> its parameters and <code>generates</code> an <code>entity</code> with its return.</p>
+<p>When we do not know the function call implementation, we cannot use <code>derivation</code> relationships.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">len</span>(d)</code></pre></div>
+<pre class="provn"><code>entity(len_d, [value=&quot;3&quot;, type=&quot;script:eval&quot;, label=&quot;len(d)&quot;])
+
+activity(call1, [type=&quot;script:call&quot;, label=&quot;len&quot;])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/call.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/call.png" alt="PROV-Dictionary mapping for function call" /></a></p>
+<h2 id="access-to-part-of-structure">Access to part of structure</h2>
+<p>We map an access as an <code>activity</code> that generates the accessed <code>entity</code>, by using the list <code>entity</code>, the list element, and the index, when it is explicitly used (for-each loops iterates over lists without explicit item <code>entities</code>). The generated <code>entity</code> derives from the list element.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d[<span class="dv">0</span>]</code></pre></div>
+<pre class="provn"><code>entity(0, [value=&quot;0&quot;, type=&quot;script:literal&quot;])
+entity(d@0, [value=&quot;10000&quot;, type=&quot;script:access&quot;, label=&quot;d[0]&quot;])
+
+activity(access1, [type=&quot;script:access&quot;])
+used(access1, d, -)
+used(access1, 0, -)
+wasDerivedFrom(d@0, list0, access1, g8, u9)</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/access.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/access.png" alt="PROV-Dictionary mapping for accesses to parts" /></a></p>
+<h2 id="assignment-to-part-of-structure">Assignment to part of structure</h2>
+<p>A part assignment is similitar to an assignment, but it produces a dictionary derivation using <code>derivedByInsertionFrom</code>.</p>
+<p>If there is more than one variable or data structure with a reference to the changed list, we must update all the lists.</p>
+<p>The assignment <code>activity</code> uses all the changed <code>entities</code> and generates new versions of them. Additionally, it uses the right side of the assignment to derive an entity for the left side.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">3</span></code></pre></div>
+<pre class="provn"><code>entity(3, [value=&quot;3&quot;, type=&quot;script:literal&quot;])
+
+entity(d@1, [value=&quot;3&quot;, type=&quot;script:access&quot;])
+activity(assign4, [type=&quot;script:assign&quot;])
+used(assign4, 1, -)
+wasDerivedFrom(d@1, 3, assign4, g9, u10)
+
+entity(d#2, [value=&quot;[10000, 3, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;d&quot;])
+wasDerivedFrom(d#2, d, assign4, g10, u11)
+wasDerivedFrom(d#2, 3, assign4, g10, u10)
+derivedByInsertionFrom(d#2, d, {(&quot;1&quot;, d@1)})
+
+entity(x#2, [value=&quot;[10000, 3, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;x&quot;])
+wasDerivedFrom(x#2, x, assign4, g11, u12)
+wasDerivedFrom(x#2, 3, assign4, g11, u10)
+derivedByInsertionFrom(x#2, x, {(&quot;1&quot;, d@1)})</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/part_assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/part_assign.png" alt="PROV-Dictionary mapping for assignments to parts" /></a></p>
+<h2 id="full-graph">Full graph</h2>
+<p>The full mapping for the previous code is presented below:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> m <span class="op">=</span> <span class="dv">10000</span>
+<span class="op">&gt;&gt;&gt;</span> d <span class="op">=</span> [m, m <span class="op">+</span> <span class="dv">1</span>, m]
+<span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> d
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(d)
+<span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> d[<span class="dv">0</span>]
+<span class="dv">10000</span>
+<span class="op">&gt;&gt;&gt;</span> d[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">3</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+
+// assignment
+entity(10000, [value=&quot;10000&quot;, type=&quot;script:literal&quot;])
+entity(m, [value=&quot;10000&quot;, type=&quot;script:name&quot;, label=&quot;m&quot;])
+
+activity(assign1, [type=&quot;script:assign&quot;])
+wasDerivedFrom(m, 10000, assign1, g1, u1)
+
+// operation
+entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(sum, [value=&quot;10001&quot;, type=&quot;eval&quot;, label=&quot;m + 1&quot;])
+
+activity(+, [type=&quot;script:operation&quot;])
+wasDerivedFrom(sum, m, +, g2, u2)
+wasDerivedFrom(sum, 1, +, g2, u3)
+
+// list definition
+entity(empty, [value=&quot;[]&quot;, type=&quot;EmptyDictionary&quot;])
+entity(list, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;[m, m + 1, m]&quot;])
+entity(list0, [value=&quot;10000&quot;, type=&quot;script:item&quot;, label=&quot;m&quot;])
+entity(list1, [value=&quot;10001&quot;, type=&quot;script:item&quot;, label=&quot;m + 1&quot;])
+entity(list2, [value=&quot;10000&quot;, type=&quot;script:item&quot;, label=&quot;m&quot;])
+derivedByInsertionFrom(
+    list, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(definelist1, [type=&quot;script:definelist&quot;])
+wasDerivedFrom(list0, m, definelist1, g3, u4)
+wasDerivedFrom(list1, sum, definelist1, g4, u5)
+wasDerivedFrom(list2, m, definelist1, g5, u6)
+wasGeneratedBy(list, definelist1, -)
+
+// list assignment
+entity(d, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;d&quot;])
+derivedByInsertionFrom(
+    d, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(assign2, [type=&quot;script:assign&quot;])
+wasDerivedFrom(d, list, assign2, g6, u7)
+
+// list assignment 2
+entity(x, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;x&quot;])
+derivedByInsertionFrom(
+    x, empty,
+    {(&quot;0&quot;, list0), (&quot;1&quot;, list1), (&quot;2&quot;, list2)}
+)
+
+activity(assign3, [type=&quot;script:assign&quot;])
+wasDerivedFrom(x, d, assign3, g7, u8)
+
+// call
+entity(len_d, [value=&quot;3&quot;, type=&quot;script:eval&quot;, label=&quot;len(d)&quot;])
+
+activity(call1, [type=&quot;script:call&quot;, label=&quot;len&quot;])
+used(call1, d, -)
+wasGeneratedBy(len_d, call1, -)
+
+// part access
+entity(0, [value=&quot;0&quot;, type=&quot;script:literal&quot;])
+entity(d@0, [value=&quot;10000&quot;, type=&quot;script:access&quot;, label=&quot;d[0]&quot;])
+
+activity(access1, [type=&quot;script:access&quot;])
+used(access1, d, -)
+used(access1, 0, -)
+wasDerivedFrom(d@0, list0, access1, g8, u9)
+
+// part assignment
+entity(3, [value=&quot;3&quot;, type=&quot;script:literal&quot;])
+
+entity(d@1, [value=&quot;3&quot;, type=&quot;script:access&quot;])
+activity(assign4, [type=&quot;script:assign&quot;])
+used(assign4, 1, -)
+wasDerivedFrom(d@1, 3, assign4, g9, u10)
+
+entity(d#2, [value=&quot;[10000, 3, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;d&quot;])
+wasDerivedFrom(d#2, d, assign4, g10, u11)
+wasDerivedFrom(d#2, 3, assign4, g10, u10)
+derivedByInsertionFrom(d#2, d, {(&quot;1&quot;, d@1)})
+
+entity(x#2, [value=&quot;[10000, 3, 10000]&quot;, type=&quot;Dictionary&quot;, label=&quot;x&quot;])
+wasDerivedFrom(x#2, x, assign4, g11, u12)
+wasDerivedFrom(x#2, 3, assign4, g11, u10)
+derivedByInsertionFrom(x#2, x, {(&quot;1&quot;, d@1)})</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/full.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/full.png" alt="PROV-Dictionary mapping" /></a></p>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <img height="50" alt="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o"  title="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o" src="images/ic.jpg">
+      <img height="50" alt="Newcastle University - School of Computing" title="Newcastle University - School of Computing" src="images/newcastle.svg">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

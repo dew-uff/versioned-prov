@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Versioned-PROV</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="css/github.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Versioned-PROV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="README.html"><span class="navbar-align">Home</span></a></li><li class="nav-item"><a class="nav-link" href="prov.html">PROV<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link" href="prov-dictionary.html">PROV-Dictionary<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link" href="versioned-prov.html">Versioned-PROV<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link" href="comparison.html"><span class="navbar-align">Comparison</span></a></li>
+        </ul>
+        <ul class="navbar-nav navbar-right ">
+            <li class="nav-item"><a class="nav-link" href="https://github.com/dew-uff/versioned-prov"><span class="hidden-xs-down"> View on GitHub </span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path id="githublogo" fill="rgb(157, 157, 157)" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="starter-template">
+        <h1 id="versioned-prov">Versioned-PROV</h1>
+<p>Versioned-PROV is a PROV extension that adds support for the provenance of mutable values by time-versioning entities. This extension is useful to represent fine-grained provenance from scripts with multiple variables refering to the same data structures and nested data-structures.</p>
+<p>PROV does not properly support fine-grained provenance with mutable data structures due the assumption of immutable entities and their representation may become quite verbose. The PROV-Dictionary extension intends to provide data structures support for PROV, but it stills fails to accomodate the mutability of them. In this repository, we propose a new extension to support the representation of mutable data structures in PROV: Versioned-PROV</p>
+<p><em>Plain PROV</em> suffers from two main problems: (P1) when an entity that represents a collection is changed (e.g., a list is updated to add an element), a new entity should be created, together with multiple new relationships, connecting the new entity to each of the existing or new entities that represent the elements of the collection; and (P2) when more than one variable is assigned to the same collection, and one of the variables changes, all other variables should also change, as they refer to the same memory area. This means that a new entity should be created for each variable that contains the collection, together with edges for all entities that represent the elements of the collection. These problems lead to O(N) and Ω(R×N) extra elements in the provenance graph, respectively, for collections with N elements and R references.</p>
+<p>The <em>PROV-Dictionary</em> extension [9] improves the support for data structures in PROV by adding derivation statements that indicate that a new collection shares most elements of the old one, but with the insertion or removal of specific elements. This solves problem P1 since it reduces the number of edges to 1. However, it still suffers from problem P2, since it still requires updating all entities that refer to the same collection when it changes. Thus, it leads to Ω(R) extra elements.</p>
+<p><em>Versioned-PROV</em> is an extension that adds reference sharing and checkpoints to PROV. Checkpoints solve problem P1 by allowing the representation of multiple versions of collections with a single entity. Reference sharing solves problem P2 by allowing collections to be represented only once and referred to by other entities through reference derivations together with checkpoints to indicate states. <em>Versioned-PROV</em> solves both problems in O(1).</p>
+<h2 id="running-example">Running Example</h2>
+<p>To describe and evaluate the extension, we use the <a href="https://github.com/dew-uff/versioned-prov/raw/master/algorithm.py">Floyd-Warshall</a> algorithm. This algorithm calculates the distance of the shortest path between all pairs of nodes in a weighted graph.</p>
+<p>By running the Floyd-Warshall in the graph below, and reading the distance between the nodes 0 and 2, it should output 3. By looking at graph, we can see that this path goes from node 0 to node 1 to node 2, instead of using the direct path from node 0 to node 2. However, the Floyd-Warshall algorithm only calculates the distance, and not the paths.</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/graphs/graph.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/graphs/graph.png" alt="Graph" /></a></p>
+<p>Due the nature of the algorithm, fine-grained provenance can assist in obtained the path. In Floyd-Warshall, considering the nodes <code>x</code>, <code>y</code>, and <code>z</code>, if the sum of the sub-paths <code>x -&gt; y</code> and <code>y -&gt; z</code> is smaller than the sum of the path <code>x -&gt; z</code>, then it updates the value of the path <code>x -&gt; z</code> by the sum. Thus, the provenance of the updated <code>x -&gt; z</code> should indicate that it was composed by the sum of <code>x -&gt; y</code> and <code>y -&gt; z</code>.</p>
+<h2 id="experiment">Experiment</h2>
+<p>For our experiment, we collected the provenance of Floyd-Warshall algorithm and mapped it to Plain PROV, PROV-Dictionary, and Versioned-PROV. For descriptions of the mappings, please refer to:</p>
+<ul>
+<li><a href="prov.html">Plain PROV Mapping</a></li>
+<li><a href="prov-dictionary.html">PROV-Dictionary Mapping</a></li>
+<li><a href="versioned-prov.html">Versioned-PROV Mapping</a></li>
+</ul>
+<p>We tried to produce the minimum set of PROV-N statements in the mappings without compromising the semantics. For this reason, we use the <a href="https://www.w3.org/TR/prov-constraints/#derivation-generation-use-inference">Inference 11</a> to avoid using <code>used</code> and <code>wasGeneratedBy</code> statements when we have <code>wasDerivedFrom</code> statements.</p>
+<p>The Plain PROV mapping produced the following graph:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/plain_prov/floydwarshall.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/plain_prov/floydwarshall.png" alt="Floyd-Warshall in Plain PROV" /></a><br />
+<a href="https://github.com/dew-uff/versioned-prov/raw/master/generated/plain_prov/floydwarshall_org.pdf">Click here for an organized version</a></p>
+<p>The PROV-Dictionary mapping produced the following graph:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/floydwarshall.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/floydwarshall.png" alt="Floyd-Warshall in PROV-Dictionary" /></a><br />
+<a href="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/floydwarshall_org.pdf">Click here for an organized version</a></p>
+<p>The Versioned-PROV mapping produced the following graph:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/floydwarshall.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/floydwarshall.png" alt="Floyd-Warshall in Versioned-PROV" /></a><br />
+<a href="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/floydwarshall_org.pdf">Click here for an organized version</a></p>
+<p>The following table presents the count of each node (entity, activity, value) and relationship (wasDerivedFrom, used, ...) definition in each approach.</p>
+<table style="width:100%;">
+<colgroup>
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Approach</th>
+<th>entity</th>
+<th>activity</th>
+<th>used</th>
+<th>was<br>Derived<br>From</th>
+<th>was<br>Generated<br>By</th>
+<th>had<br>Member</th>
+<th>derived<br>By<br>Insertion<br>From</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PROV</td>
+<td>120</td>
+<td>92</td>
+<td>97</td>
+<td>121</td>
+<td>9</td>
+<td>108</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>PROV-Dictionary</td>
+<td>121</td>
+<td>92</td>
+<td>97</td>
+<td>121</td>
+<td>9</td>
+<td>0</td>
+<td>36</td>
+</tr>
+<tr class="odd">
+<td>Versioned-PROV</td>
+<td>102</td>
+<td>91</td>
+<td>103</td>
+<td>94</td>
+<td>5</td>
+<td>18</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The figure below compares the number of nodes (i.e., <code>entity</code>, <code>activity</code>, ...) and relationships (i.e., <code>wasDerivedFrom</code>, <code>used</code>, <code>wasGeneratedBy</code>, ...) of each approach. Versioned-PROV is the approach with less componenens. In Versioned-PROV, the <code>hadMember</code> relationship with a <code>checkpoint</code> indicates the creation of a new version for the entity. Thus, it replaces some entities that exist in the other approaches by this relationship. However, the other approaches also require similar relationships to indicate the membership of elements in data structures. Hence, this replacement does not result in a bigger number of relationships. Additionally, all the other attributes of this approach appear in existing statements of the other approaches. So, the addition of the attributes do not increase the number of components.</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/graphs/paper_comparison.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/graphs/paper_comparison.png" alt="Comparison of elements" /></a></p>
+<p>The PROV-Dictionary approach creates a new <code>entity</code> when there is a change on an existing <code>entity</code> and when there is an access to an <code>entity</code> that represents a data-structure. Thus, it presents more nodes and relationships than Versioned-PROV. However, it presents less relationships than the Plain PROV approach. This occurs because, the Plain PROV also creates new <code>entities</code> on changes, but has no mechanisms to indicate that an <code>entity</code> has all members of the previously existing <code>entity</code>, thus it requires many <code>hadMember</code> relationship for every <code>entity</code> that represent data structures. The number of nodes in Plain PROV and PROV-Dictionary could be equivalent, however, according to the PROV-Dictionary specification, for a dictionary to be deterministic, its derivation chain should end in an <code>EmptyDictionary</code> <code>entity</code>. Hence, we need one extra node for the PROV-Dictionary approach.</p>
+<p>The following figure considers only the nodes and edges overheads related to list definitions, reference derivations, and part assignments. These are the only operations that differ in these three approaches. Note that Versioned-PROV has no node overhead. This occurs because it does not require the creation of new entities when a collection changes.</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/graphs/specific_comparison.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/graphs/specific_comparison.png" alt="Comparison of elements" /></a></p>
+<p>For an in depth analaysis of space requirements of these approaches, please take a a look at our <a href="comparison.html">Comparison</a>.</p>
+<h2 id="query">Query</h2>
+<p>As stated before, the access <code>result[0][2]</code> represents de distance of the shortest path between the node 0 and the node 2 in the graph. This access is represented by the entity <code>result@0@2</code> in our mappings.<br />
+The provenance query of this entity should indicate which other parts of the graph were used to construct the shortest path, thus indicating the path. The following figures present the query result in each mapping.</p>
+<p>The Plain PROV mapping produces the following query result:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/plain_prov/query.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/plain_prov/query.png" alt="Query in Plain PROV" /></a></p>
+<p>The PROV-Dictionary mapping produces the following query result:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/prov_dictionary/query.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/prov_dictionary/query.png" alt="Query in PROV-Dictionary" /></a></p>
+<p>The Versioned-PROV mapping produces the following query result:</p>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/query.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/query.png" alt="Query in Versioned-PROV" /></a></p>
+<p>Querying with Versioned-PROV is harder than querying with Plain PROV, and PROV-Dictionary, since the former mapping may include cycles and requires navigating through different edges. However, these mappings allow better derivation queries, by identifing that an entity that was generated as a part of a data structure was derived from the data structure, without deriving from the other parts of the data structure. Due the lack of support for this kind of derivation in Plain PROV and PROV-Dictionary, we opted to omit membership derivations in the first two figures of this section.</p>
+<h2 id="namespaces">Namespaces</h2>
+<p>In this repository we use two namespaces:</p>
+<ul>
+<li>We use the namespace <a href="ns"><code>version:</code></a> for general Versioned-PROV concepts</li>
+<li>On the other hand, the namespace <a href="ns/script"><code>script:</code></a> indicates specific script concepts for our FLoyd-Warshall mapping.</li>
+</ul>
+<h2 id="authors">Authors</h2>
+<ul>
+<li>João Felipe Pimentel (Universidade Federal Fluminense)</li>
+<li>Paolo Missier (Newcastle University)</li>
+<li>Leonardo Murta (Universidade Federal Fluminense)</li>
+<li>Vanessa Braganholo (Universidade Federal Fluminense)</li>
+</ul>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <img height="50" alt="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o"  title="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o" src="images/ic.jpg">
+      <img height="50" alt="Newcastle University - School of Computing" title="Newcastle University - School of Computing" src="images/newcastle.svg">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

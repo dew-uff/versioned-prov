@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Versioned-PROV</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="css/github.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Versioned-PROV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="README.html"><span class="navbar-align">Home</span></a></li><li class="nav-item"><a class="nav-link" href="prov.html">PROV<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link" href="prov-dictionary.html">PROV-Dictionary<span class="mapping">Mapping</span></a></li><li class="nav-item"><a class="nav-link active" href="versioned-prov.html">Versioned-PROV<span class="mapping">Mapping</span><span class="sr-only">(current)</span></a></li><li class="nav-item"><a class="nav-link" href="comparison.html"><span class="navbar-align">Comparison</span></a></li>
+        </ul>
+        <ul class="navbar-nav navbar-right ">
+            <li class="nav-item"><a class="nav-link" href="https://github.com/dew-uff/versioned-prov"><span class="hidden-xs-down"> View on GitHub </span><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-mark-github" aria-hidden="true"><path id="githublogo" fill="rgb(157, 157, 157)" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></li>
+          </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="starter-template">
+        <h1 id="versioned-prov">Versioned-PROV</h1>
+<p>In this document we map simple script constructs to Versioned-PROV.</p>
+<h2 id="extension">Extension</h2>
+<p>Versioned-PROV adds the following types to existing PROV statements:</p>
+<table>
+<colgroup>
+<col width="5%" />
+<col width="8%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Type</th>
+<th align="left">Statement</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Reference</td>
+<td align="left">wasDerivedFrom</td>
+<td align="left">The generated entity derived from the used entity by reference, indicating that both have the same members.</td>
+</tr>
+<tr class="even">
+<td align="left">Put</td>
+<td align="left">hadMember</td>
+<td align="left">The collection entity had a member at a given checkpoint. If the member is a VoidEntity or a placeholder, this operation represents a removal.</td>
+</tr>
+<tr class="odd">
+<td align="left">Del</td>
+<td align="left">hadMember</td>
+<td align="left">The collection entity lost a member at a given checkpoint. Valid for sets (that have no key) and lists. In lists, it has the semantic of updating all indexes.</td>
+</tr>
+<tr class="even">
+<td align="left">Add</td>
+<td align="left">hadMember</td>
+<td align="left">A member was added at a given position (key) of a list at a given checkpoint. Shifts keys that occur after the iserted key.</td>
+</tr>
+<tr class="odd">
+<td align="left">VoidEntity</td>
+<td align="left">entity</td>
+<td align="left">Represents a void entity for removals that use the put.</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, Versioned-PROV adds the following attributes to existing PROV statements:</p>
+<table>
+<colgroup>
+<col width="7%" />
+<col width="10%" />
+<col width="23%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Attribute</th>
+<th align="center">Range</th>
+<th align="left">Statement</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">checkpoint</td>
+<td align="center">Sortable Value</td>
+<td align="left">hadMember</td>
+<td>Checkpoint of the collection update. Required for Insertion and Removal types.</td>
+</tr>
+<tr class="even">
+<td align="left">checkpoint</td>
+<td align="center">Sortable Value</td>
+<td align="left">Events (e.g., used, wasDerivedFrom)</td>
+<td>Checkpoint of the event. Required for collections that share references.</td>
+</tr>
+<tr class="odd">
+<td align="left">key</td>
+<td align="center">String</td>
+<td align="left">hadMember</td>
+<td>The position of Insertion/Removal.</td>
+</tr>
+<tr class="even">
+<td align="left">key</td>
+<td align="center">String</td>
+<td align="left">wasDerivedFrom</td>
+<td>The position of accessed <em>collection</em> entity.</td>
+</tr>
+<tr class="odd">
+<td align="left">collection</td>
+<td align="center">Entity Id</td>
+<td align="left">wasDerivedFrom</td>
+<td>Collection entity that was accessed or changed.</td>
+</tr>
+<tr class="even">
+<td align="left">access</td>
+<td align="center">&quot;r&quot; or &quot;w&quot;</td>
+<td align="left">wasDerivedFrom</td>
+<td>Indicates whether an access reads (&quot;r&quot;) and element from a collection or writes (&quot;w&quot;) into it.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="names-literals-and-constants">Names, literals, and constants</h2>
+<p>During the script execution, function calls, literals (e.g., &quot;a&quot;, 1, True), names, and all expressions that may produce any value are evaluations. In our mapping, we represent evaluations as <code>entities</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="dv">1</span>     <span class="co"># literal</span>
+<span class="co">&quot;a&quot;</span>   <span class="co"># literal</span>
+b<span class="st">&quot;a&quot;</span>  <span class="co"># literal</span>
+<span class="va">True</span>  <span class="co"># literal</span>
+<span class="bu">int</span>   <span class="co"># names</span>
+...   <span class="co"># constant</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+prefix version &lt;https://dew-uff.github.io/versioned-prov/ns#&gt;
+    
+entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(a, [value=&quot;&#39;a&#39;&quot;, type=&quot;script:literal&quot;])
+entity(a#2, [value=&quot;b&#39;a&#39;&quot;, type=&quot;script:literal&quot;])
+entity(True, [value=&quot;True&quot;, type=&quot;script:constant&quot;])
+entity(int, [value=&quot;&lt;class &#39;int&#39;&gt;&quot;, type=&quot;script:name&quot;, label=&quot;int&quot;])
+entity(ellipsis, [value=&quot;Ellipsis&quot;, type=&quot;script:constant&quot;, label=&quot;...&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/names.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/names.png" alt="Versioned-PROV mapping for names, literals, and constants" /></a></p>
+<h2 id="assignment">Assignment</h2>
+<p>We map assignments as <code>activities</code>. A variable assignment always generates a new entity, even when the previous name already exists. This is important to distinguish the version used by each entity in a given checkpoint.</p>
+<p>If the element on the left side of the assignment references the same value (i.e., memory address) as the element on the right, we use the <code>type=&quot;version:Reference&quot;</code> in the <code>wasDerivedFrom</code> statement and we also specify the <code>checkpoint</code> of the derivation. We call it a <em>derivation by reference</em>.</p>
+<p>We can follow derivations by reference transitively to infer all the members of a derived collection entity.</p>
+<p>The <code>checkpoint</code> attribute in a derivation indicates the version of the derived instance. This attribute has no influence for non-collection data types, but we still can use it in names, literals, and constants for uniformity in the provenance collection.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">m <span class="op">=</span> <span class="dv">10000</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+prefix version &lt;https://dew-uff.github.io/versioned-prov/ns#&gt;
+    
+entity(10000, [value=&quot;10000&quot;, type=&quot;script:literal&quot;])
+entity(m, [value=&quot;10000&quot;, type=&quot;script:name&quot;, label=&quot;m&quot;])
+
+activity(assign1, [type=&quot;script:assign&quot;])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;1&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/assign.png" alt="Versioned-PROV mapping for assignments" /></a></p>
+<h2 id="operation">Operation</h2>
+<p>Similar to assigments, we also use <code>activities</code> to map operations. However, instead of producing an <code>entity</code> for a variable name, it produces an <code>entity</code> for the evaluation result.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">m <span class="op">+</span> <span class="dv">1</span></code></pre></div>
+<pre class="provn"><code>entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(sum, [value=&quot;10001&quot;, type=&quot;script:eval&quot;, label=&quot;m + 1&quot;])
+
+activity(+, [type=&quot;script:operation&quot;])
+wasDerivedFrom(sum, m, +, g2, u2, [version:checkpoint=&quot;2&quot;])
+wasDerivedFrom(sum, 1, +, g2, u3, [version:checkpoint=&quot;2&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/operation.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/operation.png" alt="Versioned-PROV mapping for operations" /></a></p>
+<p>Usually, an operation generates a different value from its operands. However, in some situations it may produce the value of an operand (e.g., <code>[1, 2] or [3, 4]</code> returns <code>[1, 2]</code>). In this case, we use a derivation by reference, by specifying <code>type=&quot;Reference&quot;</code> and stating the <code>checkpoint</code> of <code>wasDerivedFrom</code>.</p>
+<p>Note, however, that an entity can only have a single derivation by reference, since it is not possible for an entity to have the members of distinct values at the same time.</p>
+<h2 id="list-definition">List definition</h2>
+<p>A list is defined by the <code>hadMember</code> relationships with <code>type=&quot;version:Insertion&quot;</code>. The <code>key</code> attribute indicate the position of the element in the list, and the <code>checkpoint</code> attribute indicate at which version of the list, the element became part of it.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">[m, m <span class="op">+</span> <span class="dv">1</span>, m]</code></pre></div>
+<pre class="provn"><code>entity(list, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;script:list&quot;, label=&quot;[m, m + 1, m]&quot;])
+hadMember(list, m, [type=&quot;version:Put&quot;, version:key=&quot;0&quot;, version:checkpoint=&quot;3&quot;])
+hadMember(list, sum, [type=&quot;version:Put&quot;, version:key=&quot;1&quot;, version:checkpoint=&quot;3&quot;])
+hadMember(list, m, [type=&quot;version:Put&quot;, version:key=&quot;2&quot;, version:checkpoint=&quot;3&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list.png" alt="Versioned-PROV mapping for list definitions" /></a></p>
+<h2 id="assignment-of-list-definition">Assignment of list definition</h2>
+<p>In this mapping, the assignment of a list is exactly the same as any other assignment. Thus, we just use <code>wasDerivedFrom</code> with <code>type=&quot;Reference&quot;</code> and a <code>checkpoint</code> to indicate that the variable share a reference.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d <span class="op">=</span> [m, m <span class="op">+</span> <span class="dv">1</span>, m]</code></pre></div>
+<pre class="provn"><code>entity(d, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;script:name&quot;, label=&quot;d&quot;])
+
+activity(assign2, [type=&quot;script:assign&quot;])
+wasDerivedFrom(d, list, assign2, g3, u4, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;4&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list_assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list_assign.png" alt="Versioned-PROV mapping for assignments of list definitions" /></a></p>
+<p>The same mapping is valid for assignments to names that represent lists.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">x <span class="op">=</span> d</code></pre></div>
+<pre class="provn"><code>entity(x, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;name&quot;, label=&quot;x&quot;])
+
+activity(assign3, [type=&quot;script:assign&quot;])
+wasDerivedFrom(x, d, assign3, g4, u5, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;5&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/list_assign2.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/list_assign2.png" alt="Versioned-PROV mapping for assignments to names that have list definitions" /></a></p>
+<h2 id="function-call">Function call</h2>
+<p>We map a function call as an <code>activity</code> that <code>uses</code> its parameters and <code>generates</code> an <code>entity</code> with its return. If the used entity is a collection, the <code>used</code> statement must have a <code>checkpoint</code> indicating which version of the collection were used.</p>
+<p>When we do not know the function call implementation, we cannot use <code>wasDerivedFrom</code> relationships. Instead, we use only <code>wasGeneratedBy</code> and we indicate the <code>checkpoint</code>.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">len</span>(d)</code></pre></div>
+<pre class="provn"><code>entity(len_d, [value=&quot;3&quot;, type=&quot;script:eval&quot;, label=&quot;len(d)&quot;])
+
+activity(call1, [type=&quot;script:call&quot;, label=&quot;len&quot;])
+used(call1, d, -, [version:checkpoint=&quot;6&quot;])
+wasGeneratedBy(len_d, call1, -, [version:checkpoint=&quot;7&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/call.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/call.png" alt="Versioned-PROV mapping for function call" /></a></p>
+<h2 id="access-to-part-of-structure">Access to part of structure</h2>
+<p>We map an access to a part of a value as an <code>activity</code> that generates the accessed <code>entity</code>, by using the list <code>entity</code> and the index, when it is explicitly used (for-each loops iterates over lists without explicit item <code>entities</code>).</p>
+<p>We also use the attributes <code>key</code> and <code>collection</code> in <code>wasDerivedFrom</code> to indicate which part were accessed. Moreover, the attribute <code>access=&quot;r&quot;</code> indicates that it was a <em>read</em> access.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d[<span class="dv">0</span>]</code></pre></div>
+<pre class="provn"><code>entity(0, [value=&quot;0&quot;, type=&quot;script:literal&quot;])
+
+entity(d@0, [value=&quot;10000&quot;, type=&quot;script:access&quot;, label=&quot;d[0]&quot;])
+activity(access1, [type=&quot;script:access&quot;])
+used(access1, d, -, [version:checkpoint=&quot;8&quot;])
+used(access1, 0, -)
+wasDerivedFrom(d@0, m, access1, g5, u6, [
+    type=&quot;version:Reference&quot;, version:checkpoint=&quot;9&quot;, 
+    version:collection=&quot;d&quot;, version:key=&quot;0&quot;, version:access=&quot;r&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/access.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/access.png" alt="Versioned-PROV mapping for accesses to parts" /></a></p>
+<h2 id="assignment-to-part-of-structure">Assignment to part of structure</h2>
+<p>A part assignment is a mix of an access <code>activity</code> and an assign <code>activity</code>.</p>
+<p>We also use the <code>hadMember</code> relationship with type <code>Insertion</code> to update a list. This relationship is incremental, so it creates a new version based on the previous one by using the <code>checkpoint</code>. At checkpoint 15, the list has all elements it had at checkpoint 14, in addition to <code>hadMember</code> insertions that occur at checkpoint 15.</p>
+<p>Additionaly, we use the attributes <code>key</code> and <code>collection</code> in <code>wasDerivedFrom</code> to indicate which part of which structure were changed, and the attribute <code>access=&quot;w&quot;</code> to indicate the derivation represents also a <em>write</em> in the structure.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">d[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">3</span></code></pre></div>
+<pre class="provn"><code>entity(3, [value=&quot;3&quot;, type=&quot;script:literal&quot;])
+
+entity(d@1, [value=&quot;3&quot;, type=&quot;script:access&quot;, label=&quot;d[1]&quot;])
+hadMember(list, d@1, [type=&quot;version:Put&quot;, version:key=&quot;1&quot;, version:checkpoint=&quot;11&quot;])
+
+activity(assign4, [type=&quot;script:assign&quot;])
+used(assign4, d, -, [version:checkpoint=&quot;10&quot;])
+used(assign4, 1, -)
+wasDerivedFrom(d@1, 3, assign4, g6, u7, [
+    type=&quot;version:Reference&quot;, version:checkpoint=&quot;11&quot;,
+    version:collection=&quot;d&quot;, version:key=&quot;1&quot;, version:access=&quot;w&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/part_assign.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/part_assign.png" alt="Versioned-PROV mapping for assignments to parts" /></a></p>
+<h2 id="full-graph">Full graph</h2>
+<p>The full mapping for the previous code is presented below:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="op">&gt;&gt;&gt;</span> m <span class="op">=</span> <span class="dv">10000</span>
+<span class="op">&gt;&gt;&gt;</span> d <span class="op">=</span> [m, m <span class="op">+</span> <span class="dv">1</span>, m]
+<span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> d
+<span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(d)
+<span class="dv">3</span>
+<span class="op">&gt;&gt;&gt;</span> d[<span class="dv">0</span>]
+<span class="dv">10000</span>
+<span class="op">&gt;&gt;&gt;</span> d[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">3</span></code></pre></div>
+<pre class="provn"><code>prefix script &lt;https://dew-uff.github.io/versioned-prov/ns/script#&gt;
+prefix version &lt;https://dew-uff.github.io/versioned-prov/ns#&gt;
+
+// assignment
+entity(10000, [value=&quot;10000&quot;, type=&quot;script:literal&quot;])
+entity(m, [value=&quot;10000&quot;, type=&quot;script:name&quot;, label=&quot;m&quot;])
+
+activity(assign1, [type=&quot;script:assign&quot;])
+wasDerivedFrom(m, 10000, assign1, g1, u1, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;1&quot;])
+
+// operation
+entity(1, [value=&quot;1&quot;, type=&quot;script:literal&quot;])
+entity(sum, [value=&quot;10001&quot;, type=&quot;script:eval&quot;, label=&quot;m + 1&quot;])
+
+activity(+, [type=&quot;script:operation&quot;])
+wasDerivedFrom(sum, m, +, g2, u2, [version:checkpoint=&quot;2&quot;])
+wasDerivedFrom(sum, 1, +, g2, u3, [version:checkpoint=&quot;2&quot;])
+
+// list def
+entity(list, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;script:list&quot;, label=&quot;[m, m + 1, m]&quot;])
+hadMember(list, m, [type=&quot;version:Put&quot;, version:key=&quot;0&quot;, version:checkpoint=&quot;3&quot;])
+hadMember(list, sum, [type=&quot;version:Put&quot;, version:key=&quot;1&quot;, version:checkpoint=&quot;3&quot;])
+hadMember(list, m, [type=&quot;version:Put&quot;, version:key=&quot;2&quot;, version:checkpoint=&quot;3&quot;])
+
+// list assign
+entity(d, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;script:name&quot;, label=&quot;d&quot;])
+
+activity(assign2, [type=&quot;script:assign&quot;])
+wasDerivedFrom(d, list, assign2, g3, u4, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;4&quot;])
+
+// list assign x
+entity(x, [value=&quot;[10000, 10001, 10000]&quot;, type=&quot;name&quot;, label=&quot;x&quot;])
+
+activity(assign3, [type=&quot;script:assign&quot;])
+wasDerivedFrom(x, d, assign3, g4, u5, [type=&quot;version:Reference&quot;, version:checkpoint=&quot;5&quot;])
+
+// call
+entity(len_d, [value=&quot;3&quot;, type=&quot;script:eval&quot;, label=&quot;len(d)&quot;])
+
+activity(call1, [type=&quot;script:call&quot;, label=&quot;len&quot;])
+used(call1, d, -, [version:checkpoint=&quot;6&quot;])
+wasGeneratedBy(len_d, call1, -, [version:checkpoint=&quot;7&quot;])
+
+// part access
+entity(0, [value=&quot;0&quot;, type=&quot;script:literal&quot;])
+
+entity(d@0, [value=&quot;10000&quot;, type=&quot;script:access&quot;, label=&quot;d[0]&quot;])
+activity(access1, [type=&quot;script:access&quot;])
+used(access1, d, -, [version:checkpoint=&quot;8&quot;])
+used(access1, 0, -)
+wasDerivedFrom(d@0, m, access1, g5, u6, [
+    type=&quot;version:Reference&quot;, version:checkpoint=&quot;9&quot;, 
+    version:collection=&quot;d&quot;, version:key=&quot;0&quot;, version:access=&quot;r&quot;])
+
+// part assign
+entity(3, [value=&quot;3&quot;, type=&quot;script:literal&quot;])
+
+entity(d@1, [value=&quot;3&quot;, type=&quot;script:access&quot;, label=&quot;d[1]&quot;])
+hadMember(list, d@1, [type=&quot;version:Put&quot;, version:key=&quot;1&quot;, version:checkpoint=&quot;11&quot;])
+
+activity(assign4, [type=&quot;script:assign&quot;])
+used(assign4, d, -, [version:checkpoint=&quot;10&quot;])
+used(assign4, 1, -)
+wasDerivedFrom(d@1, 3, assign4, g6, u7, [
+    type=&quot;version:Reference&quot;, version:checkpoint=&quot;11&quot;,
+    version:collection=&quot;d&quot;, version:key=&quot;1&quot;, version:access=&quot;w&quot;])</code></pre>
+<p><a href="https://github.com/dew-uff/versioned-prov/blob/master/generated/versioned_prov/full.pdf"><img src="https://github.com/dew-uff/versioned-prov/raw/master/generated/versioned_prov/full.png" alt="Versioned-PROV mapping" /></a></p>
+
+      </div>
+    </div>
+    <footer class="footer">
+      <img height="50" alt="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o"  title="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o" src="images/ic.jpg">
+      <img height="50" alt="Newcastle University - School of Computing" title="Newcastle University - School of Computing" src="images/newcastle.svg">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
