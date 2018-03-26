@@ -89,7 +89,7 @@ TEMPLATE = """
 
     <title>Versioned-PROV</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{http_path}css/bootstrap.min.css">
 
     <link href="{http_path}css/github.css" rel="stylesheet">
     <link href="{http_path}css/style.css" rel="stylesheet">
