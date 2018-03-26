@@ -45,6 +45,12 @@ a:hover #githublogo {
 	fill: white;
 }
 
+.mapping {
+	padding-left: 0.3em;
+}
+
+
+@media (min-width: 768px) {
 .navbar-nav li a {
 	font-size: 0.85em;
  	text-align: center;
@@ -54,9 +60,11 @@ a:hover #githublogo {
 	display: block;
 	font-size: 0.6em;
 	line-height: 0.6em;
+	padding-left: 0;
 }
 
 .navbar-align {
 	line-height: 28px;
 }
 
+}

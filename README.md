@@ -18,12 +18,12 @@ We use [Jupyter Notebooks](https://github.com/dew-uff/versioned-prov/tree/master
 
 For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use the [Lark parser](https://github.com/erezsh/lark).
 
+We also use pypandoc to convert markdown files from the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) into html.
+
 Thus, for running the files, please install Python 3.6 and Graphviz, and run:
 ```
-pip install jupyter lark-parser pandas numpy matplotlib
+pip install jupyter lark-parser pandas numpy matplotlib pypandoc
 ```
-
-To simplify the process of updating readme files, we have markdown files in the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) with special tags to link and load files.
 
 For updating the project markdowns, please edit the files in the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) and run:
 ```
@@ -35,9 +35,9 @@ python build.py
 
 During the development of Versioned-PROV, we developed two other extensions with the same goal: Mutable-PROV and Intertwined-PROV.
 
-*[Mutable-PROV](mutable-prov.md)* uses PROV-Dictionary for solving P1 and versioning for solving P2. However, (P3) it adds bidirectional or return edges and (P4) created versions for all entities (including immutable elements).
+*[Mutable-PROV](https://dew-uff.github.io/versioned-prov/mutable-prov.html)* uses PROV-Dictionary for solving P1 and versioning for solving P2. However, (P3) it adds bidirectional or return edges and (P4) created versions for all entities (including immutable elements).
 
-*[Intertwined-PROV](intertwined-prov.md)*, besides solving P1 and P2, also solves P3 by using interwined versioning (See Figure 7 of https://doi.org/10.1145/280277.280280). However, it still suffers from P4. All in all, it improves the management of complex entities (collections), but has some drawbacks on simple entities (literals and immutable variables).
+*[Intertwined-PROV](https://dew-uff.github.io/versioned-prov/intertwined-prov.html)*, besides solving P1 and P2, also solves P3 by using interwined versioning (See Figure 7 of https://doi.org/10.1145/280277.280280). However, it still suffers from P4. All in all, it improves the management of complex entities (collections), but has some drawbacks on simple entities (literals and immutable variables).
 
 *Versioned-PROV* does not suffer from any of these problems.
 
