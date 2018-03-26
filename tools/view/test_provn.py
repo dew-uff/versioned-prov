@@ -6,6 +6,8 @@ import textwrap
 
 from tools.view.provn import graph
 
+graph.set_style("provtoolbox")
+
 class TestProvN(unittest.TestCase):
 
     def test_entity(self):
@@ -788,7 +790,7 @@ class TestProvN(unittest.TestCase):
         digraph "PROV" { size="16,12"; rankdir="BT";
         "http://example.org/e1" [fillcolor="#FFFC87",color="#808080",style="filled",label="e1",URL="http://example.org/e1"]
         "http://example.org/e2" [fillcolor="#FFFC87",color="#808080",style="filled",label="e2",URL="http://example.org/e2"]
-        "http://example.org/e2" -> "http://example.org/e1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="[ ]"]
+        "http://example.org/e2" -> "http://example.org/e1"
         }""")
         result = graph.generate("""
             entity(e1)

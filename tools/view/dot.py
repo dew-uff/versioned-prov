@@ -217,7 +217,10 @@ class Digraph(object):
                 label.append('\t    <TD align="left">{}</TD>'.format(value))
                 label.append('\t</TR>')
             label.append('</TABLE>>')
-            aid = "{}-attrs".format(url)
+            if self.style.qualified_attr:
+                aid = "{}-attrs".format(url)
+            else:
+                aid = "-attrs{}".format(self.attr)
             self.attr += 1
             result = self._node(aid, attrs=self.style.attrs(attrs, statement, "\n".join(label)))
             if url is not None:
