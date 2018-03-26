@@ -123,8 +123,8 @@ TEMPLATE = """
       </div>
     </div>
     <footer class="footer">
-      <img height="50" alt="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o"  title="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o" src="images/ic.jpg">
-      <img height="50" alt="Newcastle University - School of Computing" title="Newcastle University - School of Computing" src="images/newcastle.svg">
+      <img height="50" alt="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o"  title="Universidade Federal Fluminense - Instituto da Computa&ccedil;&atilde;o" src="{http_path}images/ic.jpg">
+      <img height="50" alt="Newcastle University - School of Computing" title="Newcastle University - School of Computing" src="{http_path}images/newcastle.svg">
     </footer>
     <script src="{http_path}js/jquery-3.3.1.min.js"></script>
     <script src="{http_path}js/popper.min.js"></script>
