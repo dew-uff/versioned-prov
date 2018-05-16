@@ -26,7 +26,7 @@ Additionally, ::GET NAME:: adds the following attributes to existing PROV statem
 | key        | String         | hadMember                           | The position of Insertion/Removal.                                                             |
 | key        | String         | wasDerivedFrom                      | The position of accessed *collection* entity.                                                       |
 | collection | Entity Id      | wasDerivedFrom                      | Collection entity that was accessed or changed.                                                |
-| access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") and element from a collection or writes ("w") into it. |
+| access     | "r" or "w"     | wasDerivedFrom                      | Indicates whether an access reads ("r") an element from a collection or writes ("w") into it. |
 
 
 ## Names, literals, and constants
