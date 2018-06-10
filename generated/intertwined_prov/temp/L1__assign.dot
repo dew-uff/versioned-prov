@@ -4,7 +4,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/10000_v1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-25 18:52:52.800278</TD>
+	    <TD align="left">2018-06-09 21:00:40.484029</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -35,9 +35,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/m-attrs" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign1",URL="http://example.org/assign1"]
 "http://example.org/m" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-03-25T18:52:52.800278",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-09T21:00:40.484029",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-25T18:52:52.800278",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-09T21:00:40.484029",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/m" -> "http://example.org/assign1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-25T18:52:52.800278",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-09T21:00:40.484029",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

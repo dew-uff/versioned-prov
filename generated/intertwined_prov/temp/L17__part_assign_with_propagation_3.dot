@@ -23,7 +23,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/list1_v2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-03-25 18:53:00.849676</TD>
+	    <TD align="left">2018-06-09 21:00:48.713582</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -46,14 +46,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign29-attrs" -> "http://example.org/assign29" [color="gray",style="dashed",arrowhead="none"]
 "bn1" [shape="point",label=""]
 "http://example.org/disti@j#13" -> "bn1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ac-w
-2018-03-25T18:53:00.849676",arrowhead="none"]
+2018-06-09T21:00:48.713582",arrowhead="none"]
 "bn1" -> "http://example.org/disti#8" [style="dashed"]
 "bn1" -> "http://example.org/ikj#10" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[0]"]
 "http://example.org/assign29" -> "http://example.org/disti#8" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-03-25T18:53:00.849676"]
+2018-06-09T21:00:48.713582"]
 "http://example.org/assign29" -> "http://example.org/j#22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign29" -> "http://example.org/disti@j#12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign29" -> "http://example.org/ikj#10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/disti@j#13" -> "http://example.org/assign29" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-03-25T18:53:00.849676"]
+2018-06-09T21:00:48.713582"]
 }

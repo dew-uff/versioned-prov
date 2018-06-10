@@ -275,30 +275,30 @@ ac-write
 ckpt: 11",arrowhead="none"]
 "bn1" -> "http://example.org/d" [color="darkgreen",style="dashed"]
 "bn1" -> "http://example.org/3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
-"http://example.org/+" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2"]
-"http://example.org/assign4" -> "http://example.org/3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 11"]
-"http://example.org/access1" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 9"]
-"http://example.org/+" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2"]
 "http://example.org/assign2" -> "http://example.org/list" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 ckpt: 4"]
+"http://example.org/+" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2"]
 "http://example.org/assign3" -> "http://example.org/d" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 ckpt: 5"]
 "http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 ckpt: 1"]
-"http://example.org/m" -> "http://example.org/assign1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 1"]
-"http://example.org/sum" -> "http://example.org/+" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+"http://example.org/assign4" -> "http://example.org/3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 11"]
+"http://example.org/+" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
 ckpt: 2"]
-"http://example.org/d" -> "http://example.org/assign2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 4"]
-"http://example.org/x" -> "http://example.org/assign3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 5"]
+"http://example.org/access1" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 9"]
 "http://example.org/d@1" -> "http://example.org/assign4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
 ckpt: 11"]
+"http://example.org/sum" -> "http://example.org/+" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2"]
+"http://example.org/m" -> "http://example.org/assign1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 1"]
 "http://example.org/d@0" -> "http://example.org/access1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
 ckpt: 9"]
+"http://example.org/x" -> "http://example.org/assign3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 5"]
+"http://example.org/d" -> "http://example.org/assign2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 4"]
 }

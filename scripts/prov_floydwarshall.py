@@ -1,8 +1,8 @@
 import sys
 sys.path.insert(0, '..')
 
-import tools.view.provn
-import tools.annotations as prov
+import extensible_provn.view.provn
+import annotations as prov
 
 
 prov.reset_prov("../generated/plain_prov/")

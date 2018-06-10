@@ -22,9 +22,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/m-attrs" -> "http://example.org/m" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign1",URL="http://example.org/assign1"]
 "http://example.org/m" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
-ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-09T21:11:07.326593",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-09T21:11:07.326593",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/m" -> "http://example.org/assign1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-03-25T18:42:53.357594",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-09T21:11:07.326593",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

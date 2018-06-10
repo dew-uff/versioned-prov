@@ -8,7 +8,7 @@ from contextlib import contextmanager
 from os.path import join
 import json
 
-from tools.prov_magics import ProvMagic
+from extensible_provn.prov_magics import ProvMagic
 
 STATS_VIEW = True
 
@@ -417,12 +417,6 @@ def vhadMember(cname, entity, key, time, attrs={}):
         (NAMESPACE + "checkpoint", time),
     ])
     return hadMember(cname, entity, key, new_attrs)
-
-def hadDictionaryMember(dname, entity, key, *, attrs=BLACK):
-    add("hadDictionaryMember({}, {}, {}{})".format(
-        dname, entity, key, _attrpairs(attrs)
-    ))
-    DICTS[dname][key] = entity
 
 def derivedByInsertionFrom(new, old, elements, *, attrs=BLACK):
     if isinstance(elements, list):

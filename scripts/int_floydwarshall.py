@@ -1,10 +1,8 @@
 from datetime import datetime
 from pprint import pprint
-import sys
-sys.path.insert(0, '..')
 
-import tools.view.intertwined_prov
-import tools.annotations as prov
+import extensible_provn.view.intertwined_prov
+import annotations as prov
 
 prov.reset_prov("../generated/intertwined_prov/")
 prov.STATS_VIEW = 1

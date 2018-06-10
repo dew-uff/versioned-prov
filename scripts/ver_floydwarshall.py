@@ -3,8 +3,8 @@ from pprint import pprint
 import sys
 sys.path.insert(0, '..')
 
-import tools.view.versioned_prov
-import tools.annotations as prov
+import extensible_provn.view.versioned_prov
+import annotations as prov
 
 prov.reset_prov("../generated/versioned_prov/")
 prov.STATS_VIEW = 1

@@ -30,7 +30,7 @@
 <path fill="none" stroke="#f0f0f0" d="M319.746,-321.767C347.632,-331.083 383.631,-343.449 386.09,-346 399.72,-360.143 405.927,-381.614 408.749,-398.752"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="405.294,-399.32 410.106,-408.759 412.231,-398.38 405.294,-399.32"/>
 <text text-anchor="middle" x="504.59" y="-372.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">gen</text>
-<text text-anchor="middle" x="504.59" y="-357.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.700110</text>
+<text text-anchor="middle" x="504.59" y="-357.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.258899</text>
 </g>
 <!-- bn0 -->
 <g id="node3" class="node"><title>bn0</title>
@@ -41,7 +41,7 @@
 <path fill="none" stroke="#f0f0f0" d="M254.857,-321.936C227.862,-331.222 193.367,-343.441 191.09,-346 168.694,-371.168 171.443,-417.921 172.01,-425.072"/>
 <text text-anchor="middle" x="288.59" y="-379.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">der ref</text>
 <text text-anchor="middle" x="288.59" y="-364.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ac&#45;read</text>
-<text text-anchor="middle" x="288.59" y="-349.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.700110</text>
+<text text-anchor="middle" x="288.59" y="-349.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.258899</text>
 </g>
 <!-- http://example.org/result#1 -->
 <g id="node4" class="node"><title>http://example.org/result#1</title>
@@ -60,11 +60,11 @@
 <text text-anchor="middle" x="141.09" y="-525.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/matrix0#1</text>
 </g>
 <!-- http://example.org/access58&#45;&gt;http://example.org/matrix0#1 -->
-<g id="edge13" class="edge"><title>http://example.org/access58&#45;&gt;http://example.org/matrix0#1</title>
+<g id="edge12" class="edge"><title>http://example.org/access58&#45;&gt;http://example.org/matrix0#1</title>
 <path fill="none" stroke="#f0f0f0" d="M376.747,-427.182C333.484,-427.569 258.039,-433.047 202.09,-463 184.577,-472.376 169.291,-488.691 158.401,-502.629"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="155.389,-500.812 152.208,-510.917 160.997,-505.002 155.389,-500.812"/>
 <text text-anchor="middle" x="299.59" y="-481.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">use</text>
-<text text-anchor="middle" x="299.59" y="-466.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.700110</text>
+<text text-anchor="middle" x="299.59" y="-466.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.258899</text>
 </g>
 <!-- http://example.org/0 -->
 <g id="node6" class="node"><title>http://example.org/0</title>
@@ -109,7 +109,7 @@
 <path fill="none" stroke="#f0f0f0" d="M304.786,-101.936C320.359,-107.233 336.953,-115.189 349.09,-127 363.689,-141.207 372.345,-162.674 377.267,-179.795"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="373.962,-180.994 379.868,-189.79 380.736,-179.23 373.962,-180.994"/>
 <text text-anchor="middle" x="472.59" y="-153.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">gen</text>
-<text text-anchor="middle" x="472.59" y="-138.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.701114</text>
+<text text-anchor="middle" x="472.59" y="-138.3" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.259434</text>
 </g>
 <!-- bn1 -->
 <g id="node9" class="node"><title>bn1</title>
@@ -120,7 +120,7 @@
 <path fill="none" stroke="#f0f0f0" d="M207.823,-97.423C188.131,-102.158 167.321,-110.907 154.09,-127 133.111,-152.516 142.314,-198.975 143.879,-206.079"/>
 <text text-anchor="middle" x="251.59" y="-160.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">der ref</text>
 <text text-anchor="middle" x="251.59" y="-145.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ac&#45;read</text>
-<text text-anchor="middle" x="251.59" y="-130.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.701114</text>
+<text text-anchor="middle" x="251.59" y="-130.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.259434</text>
 </g>
 <!-- http://example.org/access59&#45;&gt;http://example.org/result@0 -->
 <g id="edge9" class="edge"><title>http://example.org/access59&#45;&gt;http://example.org/result@0</title>
@@ -134,11 +134,11 @@
 <text text-anchor="middle" x="113.09" y="-306.3" font-family="Times New Roman,serif" font-size="14.00">http://example.org/disti@j#5</text>
 </g>
 <!-- http://example.org/access59&#45;&gt;http://example.org/disti@j#5 -->
-<g id="edge12" class="edge"><title>http://example.org/access59&#45;&gt;http://example.org/disti@j#5</title>
+<g id="edge13" class="edge"><title>http://example.org/access59&#45;&gt;http://example.org/disti@j#5</title>
 <path fill="none" stroke="#f0f0f0" d="M348.747,-208.182C305.484,-208.569 230.039,-214.047 174.09,-244 156.577,-253.376 141.291,-269.691 130.401,-283.629"/>
 <polygon fill="#f0f0f0" stroke="#f0f0f0" points="127.389,-281.812 124.208,-291.917 132.997,-286.002 127.389,-281.812"/>
 <text text-anchor="middle" x="271.59" y="-262.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">use</text>
-<text text-anchor="middle" x="271.59" y="-247.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;03&#45;25T18:43:00.701114</text>
+<text text-anchor="middle" x="271.59" y="-247.8" font-family="Times New Roman,serif" font-size="14.00" fill="#f0f0f0">ckpt: 2018&#45;06&#45;09T21:11:19.259434</text>
 </g>
 <!-- http://example.org/2 -->
 <g id="node11" class="node"><title>http://example.org/2</title>

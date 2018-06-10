@@ -1,9 +1,7 @@
 from pprint import pprint
-import sys
-sys.path.insert(0, '..')
 
-import tools.view.prov_dictionary
-import tools.annotations as prov
+import extensible_provn.view.prov_dictionary
+import annotations as prov
 
 HIDE = prov.HIDE
 SPECIFIC = prov.SPECIFIC

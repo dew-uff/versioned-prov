@@ -1,10 +1,8 @@
 from datetime import datetime
 from pprint import pprint
-import sys
-sys.path.insert(0, '..')
 
-import tools.view.mutable_prov
-import tools.annotations as prov
+import extensible_provn.view.mutable_prov
+import annotations as prov
 
 HIDE = prov.HIDE
 SPECIFIC = prov.SPECIFIC

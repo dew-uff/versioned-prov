@@ -16,13 +16,13 @@ For more details, please visit the website: [https://dew-uff.github.io/versioned
 
 We use [Jupyter Notebooks](https://github.com/dew-uff/versioned-prov/tree/master/notebooks) with [Python 3.6](https://www.python.org/), [pandas](https://pandas.pydata.org/), [NumPy](http://www.numpy.org/), [Matplotlib](https://matplotlib.org/), and [Graphviz](https://www.graphviz.org/) to generate image files.
 
-For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use the [Lark parser](https://github.com/erezsh/lark).
+For parsing PROV-N files and generating customized `.dot` files with support to the extensions, we use [extensible_provn](https://github.com/JoaoFelipe/extensible_provn).
 
 We also use pypandoc to convert markdown files from the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) into html.
 
 Thus, for running the files, please install Python 3.6 and Graphviz, and run:
 ```
-pip install jupyter lark-parser pandas numpy matplotlib pypandoc
+pip install jupyter extensible_provn pandas numpy matplotlib pypandoc
 ```
 
 For updating the project markdowns, please edit the files in the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) and run:
