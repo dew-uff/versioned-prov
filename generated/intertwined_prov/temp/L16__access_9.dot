@@ -3,13 +3,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/access67" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access67",URL="http://example.org/access67"]
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@j#11" -> "bn0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-2018-06-09T21:00:47.996278",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:42.486026",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/disti#7" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[2]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access67" -> "http://example.org/disti#7" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access67" -> "http://example.org/j#20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access67" -> "http://example.org/1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-06-09T21:00:47.996278",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:42.486026",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@j#11" -> "http://example.org/access67" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-06-09T21:00:47.996278",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:42.486026",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

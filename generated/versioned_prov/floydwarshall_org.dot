@@ -44,7 +44,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/assign1-attrs" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/m" -> "http://example.org/10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:07.326593"]
+ckpt: 2018-06-10T17:30:49.378283"]
 "http://example.org/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="http://example.org/0"]
 "http://example.org/0-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -150,13 +150,13 @@ ckpt: 2018-06-09T21:11:07.326593"]
 </TABLE>>]
 "http://example.org/matrix0#1-attrs" -> "http://example.org/matrix0#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix0#1" -> "http://example.org/0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix0#1" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix0#1" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix#1" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix1#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix1#1",URL="http://example.org/matrix1#1"]
 "http://example.org/matrix1#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -178,13 +178,13 @@ ckpt: 2018-06-09T21:11:07.462231"]
 </TABLE>>]
 "http://example.org/matrix1#1-attrs" -> "http://example.org/matrix1#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix1#1" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix1#1" -> "http://example.org/0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix1#1" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix#1" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix2#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix2#1",URL="http://example.org/matrix2#1"]
 "http://example.org/matrix2#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -206,13 +206,13 @@ ckpt: 2018-06-09T21:11:07.462231"]
 </TABLE>>]
 "http://example.org/matrix2#1-attrs" -> "http://example.org/matrix2#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix2#1" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix2#1" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix2#1" -> "http://example.org/0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/matrix#1" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:07.462231"]
+ckpt: 2018-06-10T17:30:49.490979"]
 "http://example.org/dist#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist#1",URL="http://example.org/dist#1"]
 "http://example.org/dist#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -242,7 +242,7 @@ ckpt: 2018-06-09T21:11:07.462231"]
 </TABLE>>]
 "http://example.org/assign2-attrs" -> "http://example.org/assign2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist#1" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:07.686642"]
+ckpt: 2018-06-10T17:30:49.658531"]
 "http://example.org/result#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="result#1",URL="http://example.org/result#1"]
 "http://example.org/result#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -272,7 +272,7 @@ ckpt: 2018-06-09T21:11:07.686642"]
 </TABLE>>]
 "http://example.org/assign3-attrs" -> "http://example.org/assign3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/result#1" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:07.687624"]
+ckpt: 2018-06-10T17:30:49.659530"]
 "http://example.org/len_dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="len_dist",URL="http://example.org/len_dist"]
 "http://example.org/len_dist-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -306,9 +306,9 @@ ckpt: 2018-06-09T21:11:07.687624"]
 </TABLE>>]
 "http://example.org/call1-attrs" -> "http://example.org/call1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/call1" -> "http://example.org/dist#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.020736"]
+ckpt: 2018-06-10T17:30:49.969700"]
 "http://example.org/len_dist" -> "http://example.org/call1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.021733"]
+ckpt: 2018-06-10T17:30:49.970698"]
 "http://example.org/nodes" [fillcolor="#FFFC87",color="#808080",style="filled",label="nodes",URL="http://example.org/nodes"]
 "http://example.org/nodes-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -338,7 +338,7 @@ ckpt: 2018-06-09T21:11:08.021733"]
 </TABLE>>]
 "http://example.org/assign4-attrs" -> "http://example.org/assign4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/nodes" -> "http://example.org/len_dist" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:08.022730"]
+ckpt: 2018-06-10T17:30:49.971693"]
 "http://example.org/range_nodes" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes",URL="http://example.org/range_nodes"]
 "http://example.org/range_nodes-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -376,7 +376,7 @@ ckpt: 2018-06-09T21:11:08.022730"]
 </TABLE>>]
 "http://example.org/range_nodes0-attrs" -> "http://example.org/range_nodes0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/range_nodes1" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes1",URL="http://example.org/range_nodes1"]
 "http://example.org/range_nodes1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -394,7 +394,7 @@ ckpt: 2018-06-09T21:11:08.167344"]
 </TABLE>>]
 "http://example.org/range_nodes1-attrs" -> "http://example.org/range_nodes1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/range_nodes2" [fillcolor="#FFFC87",color="#808080",style="filled",label="range_nodes2",URL="http://example.org/range_nodes2"]
 "http://example.org/range_nodes2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -412,7 +412,7 @@ ckpt: 2018-06-09T21:11:08.167344"]
 </TABLE>>]
 "http://example.org/range_nodes2-attrs" -> "http://example.org/range_nodes2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/range_nodes" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/call2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="call2",URL="http://example.org/call2"]
 "http://example.org/call2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -427,13 +427,13 @@ ckpt: 2018-06-09T21:11:08.167344"]
 "http://example.org/call2-attrs" -> "http://example.org/call2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/call2" -> "http://example.org/nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/range_nodes" -> "http://example.org/call2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/range_nodes0" -> "http://example.org/call2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/range_nodes1" -> "http://example.org/call2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/range_nodes2" -> "http://example.org/call2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.167344"]
+ckpt: 2018-06-10T17:30:50.077410"]
 "http://example.org/indexes" [fillcolor="#FFFC87",color="#808080",style="filled",label="indexes",URL="http://example.org/indexes"]
 "http://example.org/indexes-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -463,7 +463,7 @@ ckpt: 2018-06-09T21:11:08.167344"]
 </TABLE>>]
 "http://example.org/assign5-attrs" -> "http://example.org/assign5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/indexes" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:08.168341"]
+ckpt: 2018-06-10T17:30:50.078408"]
 "http://example.org/k#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="k#1",URL="http://example.org/k#1"]
 "http://example.org/k#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -491,7 +491,7 @@ ckpt: 2018-06-09T21:11:08.168341"]
 "bn0" [shape="point",label=""]
 "http://example.org/k#1" -> "bn0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.371797",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.231999",arrowhead="none"]
 "bn0" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn0" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access1" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -526,7 +526,7 @@ ckpt: 2018-06-09T21:11:08.371797",arrowhead="none"]
 "bn1" [shape="point",label=""]
 "http://example.org/dist@k#1" -> "bn1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.482507",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.350688",arrowhead="none"]
 "bn1" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn1" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access2" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -560,7 +560,7 @@ ckpt: 2018-06-09T21:11:08.482507",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign6-attrs" -> "http://example.org/assign6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#1" -> "http://example.org/dist@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:08.483499"]
+ckpt: 2018-06-10T17:30:50.351679"]
 "http://example.org/i#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#1",URL="http://example.org/i#1"]
 "http://example.org/i#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -588,7 +588,7 @@ ckpt: 2018-06-09T21:11:08.483499"]
 "bn2" [shape="point",label=""]
 "http://example.org/i#1" -> "bn2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.637448",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.555134",arrowhead="none"]
 "bn2" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn2" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access3" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -623,7 +623,7 @@ ckpt: 2018-06-09T21:11:08.637448",arrowhead="none"]
 "bn3" [shape="point",label=""]
 "http://example.org/i#2" -> "bn3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.737982",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.671821",arrowhead="none"]
 "bn3" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn3" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access4" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -658,7 +658,7 @@ ckpt: 2018-06-09T21:11:08.737982",arrowhead="none"]
 "bn4" [shape="point",label=""]
 "http://example.org/dist@i#1" -> "bn4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.841542",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.781527",arrowhead="none"]
 "bn4" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn4" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access5" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -692,7 +692,7 @@ ckpt: 2018-06-09T21:11:08.841542",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign7-attrs" -> "http://example.org/assign7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#1" -> "http://example.org/dist@i#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:08.842539"]
+ckpt: 2018-06-10T17:30:50.782526"]
 "http://example.org/j#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#1",URL="http://example.org/j#1"]
 "http://example.org/j#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -720,7 +720,7 @@ ckpt: 2018-06-09T21:11:08.842539"]
 "bn5" [shape="point",label=""]
 "http://example.org/j#1" -> "bn5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:08.983162",arrowhead="none"]
+ckpt: 2018-06-10T17:30:50.954067",arrowhead="none"]
 "bn5" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn5" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access6" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -755,7 +755,7 @@ ckpt: 2018-06-09T21:11:08.983162",arrowhead="none"]
 "bn6" [shape="point",label=""]
 "http://example.org/j#2" -> "bn6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.136772",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.070754",arrowhead="none"]
 "bn6" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn6" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access7" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -790,7 +790,7 @@ ckpt: 2018-06-09T21:11:09.136772",arrowhead="none"]
 "bn7" [shape="point",label=""]
 "http://example.org/j#3" -> "bn7" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.251444",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.186447",arrowhead="none"]
 "bn7" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn7" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access8" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -825,7 +825,7 @@ ckpt: 2018-06-09T21:11:09.251444",arrowhead="none"]
 "bn8" [shape="point",label=""]
 "http://example.org/disti@k#1" -> "bn8" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.359308",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.308121",arrowhead="none"]
 "bn8" -> "http://example.org/disti#1" [color="darkgreen",style="dashed"]
 "bn8" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access9" -> "http://example.org/disti#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -861,7 +861,7 @@ ckpt: 2018-06-09T21:11:09.359308",arrowhead="none"]
 "bn9" [shape="point",label=""]
 "http://example.org/distk@j#1" -> "bn9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.360154",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.309118",arrowhead="none"]
 "bn9" -> "http://example.org/distk#1" [color="darkgreen",style="dashed"]
 "bn9" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access10" -> "http://example.org/distk#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -895,9 +895,9 @@ ckpt: 2018-06-09T21:11:09.360154",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+1-attrs" -> "http://example.org/+1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#1" -> "http://example.org/disti@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:09.361159"]
+ckpt: 2018-06-10T17:30:51.310121"]
 "http://example.org/sum#1" -> "http://example.org/distk@j#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:09.361159"]
+ckpt: 2018-06-10T17:30:51.310121"]
 "http://example.org/ikj#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#1",URL="http://example.org/ikj#1"]
 "http://example.org/ikj#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -927,7 +927,7 @@ ckpt: 2018-06-09T21:11:09.361159"]
 </TABLE>>]
 "http://example.org/assign8-attrs" -> "http://example.org/assign8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#1" -> "http://example.org/sum#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:09.361174"]
+ckpt: 2018-06-10T17:30:51.311113"]
 "http://example.org/disti@j#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#1",URL="http://example.org/disti@j#1"]
 "http://example.org/disti@j#1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -959,7 +959,7 @@ ckpt: 2018-06-09T21:11:09.361174"]
 "bn10" [shape="point",label=""]
 "http://example.org/disti@j#1" -> "bn10" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.742132",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.487639",arrowhead="none"]
 "bn10" -> "http://example.org/disti#1" [color="darkgreen",style="dashed"]
 "bn10" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access11" -> "http://example.org/disti#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -995,7 +995,7 @@ ckpt: 2018-06-09T21:11:09.742132",arrowhead="none"]
 "bn11" [shape="point",label=""]
 "http://example.org/i#3" -> "bn11" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.960566",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.616297",arrowhead="none"]
 "bn11" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn11" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access12" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1030,7 +1030,7 @@ ckpt: 2018-06-09T21:11:09.960566",arrowhead="none"]
 "bn12" [shape="point",label=""]
 "http://example.org/dist@i#2" -> "bn12" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.206215",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.723012",arrowhead="none"]
 "bn12" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn12" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access13" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1064,7 +1064,7 @@ ckpt: 2018-06-09T21:11:10.206215",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign9-attrs" -> "http://example.org/assign9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#2" -> "http://example.org/dist@i#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:10.206889"]
+ckpt: 2018-06-10T17:30:51.724014"]
 "http://example.org/j#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#4",URL="http://example.org/j#4"]
 "http://example.org/j#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1092,7 +1092,7 @@ ckpt: 2018-06-09T21:11:10.206889"]
 "bn13" [shape="point",label=""]
 "http://example.org/j#4" -> "bn13" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.481156",arrowhead="none"]
+ckpt: 2018-06-10T17:30:51.854657",arrowhead="none"]
 "bn13" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn13" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access14" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1127,7 +1127,7 @@ ckpt: 2018-06-09T21:11:10.481156",arrowhead="none"]
 "bn14" [shape="point",label=""]
 "http://example.org/j#5" -> "bn14" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.717525",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.124935",arrowhead="none"]
 "bn14" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn14" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access15" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1162,7 +1162,7 @@ ckpt: 2018-06-09T21:11:10.717525",arrowhead="none"]
 "bn15" [shape="point",label=""]
 "http://example.org/disti@k#2" -> "bn15" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.914997",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.231650",arrowhead="none"]
 "bn15" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn15" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access16" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1198,7 +1198,7 @@ ckpt: 2018-06-09T21:11:10.914997",arrowhead="none"]
 "bn16" [shape="point",label=""]
 "http://example.org/distk@j#2" -> "bn16" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.915994",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.232649",arrowhead="none"]
 "bn16" -> "http://example.org/distk#1" [color="darkgreen",style="dashed"]
 "bn16" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access17" -> "http://example.org/distk#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1232,9 +1232,9 @@ ckpt: 2018-06-09T21:11:10.915994",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+2-attrs" -> "http://example.org/+2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#2" -> "http://example.org/disti@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:10.916992"]
+ckpt: 2018-06-10T17:30:52.233646"]
 "http://example.org/sum#2" -> "http://example.org/distk@j#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:10.916992"]
+ckpt: 2018-06-10T17:30:52.233646"]
 "http://example.org/ikj#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#2",URL="http://example.org/ikj#2"]
 "http://example.org/ikj#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1264,7 +1264,7 @@ ckpt: 2018-06-09T21:11:10.916992"]
 </TABLE>>]
 "http://example.org/assign10-attrs" -> "http://example.org/assign10" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#2" -> "http://example.org/sum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:10.917045"]
+ckpt: 2018-06-10T17:30:52.234644"]
 "http://example.org/disti@j#2" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#2",URL="http://example.org/disti@j#2"]
 "http://example.org/disti@j#2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1296,7 +1296,7 @@ ckpt: 2018-06-09T21:11:10.917045"]
 "bn17" [shape="point",label=""]
 "http://example.org/disti@j#2" -> "bn17" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:11.182283",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.388232",arrowhead="none"]
 "bn17" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn17" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access18" -> "http://example.org/disti#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1322,7 +1322,7 @@ ckpt: 2018-06-09T21:11:11.182283",arrowhead="none"]
 </TABLE>>]
 "http://example.org/disti@j#3-attrs" -> "http://example.org/disti@j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix2#1" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [1]
-ckpt: 2018-06-09T21:11:11.363795"]
+ckpt: 2018-06-10T17:30:52.513894"]
 "http://example.org/assign11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign11",URL="http://example.org/assign11"]
 "http://example.org/assign11-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1334,11 +1334,11 @@ ckpt: 2018-06-09T21:11:11.363795"]
 "bn18" [shape="point",label=""]
 "http://example.org/disti@j#3" -> "bn18" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-write
-ckpt: 2018-06-09T21:11:11.363795",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.513894",arrowhead="none"]
 "bn18" -> "http://example.org/disti#2" [color="darkgreen",style="dashed"]
 "bn18" -> "http://example.org/ikj#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/assign11" -> "http://example.org/disti#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:11.362861"]
+ckpt: 2018-06-10T17:30:52.512899"]
 "http://example.org/assign11" -> "http://example.org/j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign11" -> "http://example.org/disti@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign11" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1373,7 +1373,7 @@ ckpt: 2018-06-09T21:11:11.362861"]
 "bn19" [shape="point",label=""]
 "http://example.org/j#6" -> "bn19" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:11.569244",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.660504",arrowhead="none"]
 "bn19" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn19" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access19" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1408,7 +1408,7 @@ ckpt: 2018-06-09T21:11:11.569244",arrowhead="none"]
 "bn20" [shape="point",label=""]
 "http://example.org/k#2" -> "bn20" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:11.855756",arrowhead="none"]
+ckpt: 2018-06-10T17:30:52.848000",arrowhead="none"]
 "bn20" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn20" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access20" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1443,7 +1443,7 @@ ckpt: 2018-06-09T21:11:11.855756",arrowhead="none"]
 "bn21" [shape="point",label=""]
 "http://example.org/dist@k#2" -> "bn21" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.151686",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.005585",arrowhead="none"]
 "bn21" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn21" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access21" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1477,7 +1477,7 @@ ckpt: 2018-06-09T21:11:12.151686",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign12-attrs" -> "http://example.org/assign12" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#2" -> "http://example.org/dist@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:12.152686"]
+ckpt: 2018-06-10T17:30:53.006579"]
 "http://example.org/i#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#4",URL="http://example.org/i#4"]
 "http://example.org/i#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1505,7 +1505,7 @@ ckpt: 2018-06-09T21:11:12.152686"]
 "bn22" [shape="point",label=""]
 "http://example.org/i#4" -> "bn22" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.386062",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.192080",arrowhead="none"]
 "bn22" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn22" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access22" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1540,7 +1540,7 @@ ckpt: 2018-06-09T21:11:12.386062",arrowhead="none"]
 "bn23" [shape="point",label=""]
 "http://example.org/dist@i#3" -> "bn23" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.545636",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.310766",arrowhead="none"]
 "bn23" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn23" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access23" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1574,7 +1574,7 @@ ckpt: 2018-06-09T21:11:12.545636",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign13-attrs" -> "http://example.org/assign13" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#3" -> "http://example.org/dist@i#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:12.546659"]
+ckpt: 2018-06-10T17:30:53.311769"]
 "http://example.org/j#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#7",URL="http://example.org/j#7"]
 "http://example.org/j#7-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1602,7 +1602,7 @@ ckpt: 2018-06-09T21:11:12.546659"]
 "bn24" [shape="point",label=""]
 "http://example.org/j#7" -> "bn24" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.698226",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.435432",arrowhead="none"]
 "bn24" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn24" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access24" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1637,7 +1637,7 @@ ckpt: 2018-06-09T21:11:12.698226",arrowhead="none"]
 "bn25" [shape="point",label=""]
 "http://example.org/j#8" -> "bn25" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.840843",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.542145",arrowhead="none"]
 "bn25" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn25" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access25" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1672,7 +1672,7 @@ ckpt: 2018-06-09T21:11:12.840843",arrowhead="none"]
 "bn26" [shape="point",label=""]
 "http://example.org/j#9" -> "bn26" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:12.977479",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.651851",arrowhead="none"]
 "bn26" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn26" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access26" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1707,7 +1707,7 @@ ckpt: 2018-06-09T21:11:12.977479",arrowhead="none"]
 "bn27" [shape="point",label=""]
 "http://example.org/disti@k#3" -> "bn27" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:13.161003",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.754579",arrowhead="none"]
 "bn27" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn27" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access27" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1743,7 +1743,7 @@ ckpt: 2018-06-09T21:11:13.161003",arrowhead="none"]
 "bn28" [shape="point",label=""]
 "http://example.org/distk@j#3" -> "bn28" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:13.161986",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.755575",arrowhead="none"]
 "bn28" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
 "bn28" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access28" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1777,9 +1777,9 @@ ckpt: 2018-06-09T21:11:13.161986",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+3-attrs" -> "http://example.org/+3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#3" -> "http://example.org/disti@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:13.162984"]
+ckpt: 2018-06-10T17:30:53.756574"]
 "http://example.org/sum#3" -> "http://example.org/distk@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:13.162984"]
+ckpt: 2018-06-10T17:30:53.756574"]
 "http://example.org/ikj#3" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#3",URL="http://example.org/ikj#3"]
 "http://example.org/ikj#3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1809,7 +1809,7 @@ ckpt: 2018-06-09T21:11:13.162984"]
 </TABLE>>]
 "http://example.org/assign14-attrs" -> "http://example.org/assign14" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#3" -> "http://example.org/sum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:13.163982"]
+ckpt: 2018-06-10T17:30:53.757571"]
 "http://example.org/disti@j#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#4",URL="http://example.org/disti@j#4"]
 "http://example.org/disti@j#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1841,7 +1841,7 @@ ckpt: 2018-06-09T21:11:13.163982"]
 "bn29" [shape="point",label=""]
 "http://example.org/disti@j#4" -> "bn29" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:13.345498",arrowhead="none"]
+ckpt: 2018-06-10T17:30:53.929112",arrowhead="none"]
 "bn29" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn29" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access29" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1867,7 +1867,7 @@ ckpt: 2018-06-09T21:11:13.345498",arrowhead="none"]
 </TABLE>>]
 "http://example.org/disti@j#5-attrs" -> "http://example.org/disti@j#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix0#1" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [2]
-ckpt: 2018-06-09T21:11:13.477143"]
+ckpt: 2018-06-10T17:30:54.041809"]
 "http://example.org/assign15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign15",URL="http://example.org/assign15"]
 "http://example.org/assign15-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1879,11 +1879,11 @@ ckpt: 2018-06-09T21:11:13.477143"]
 "bn30" [shape="point",label=""]
 "http://example.org/disti@j#5" -> "bn30" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-write
-ckpt: 2018-06-09T21:11:13.477143",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.041809",arrowhead="none"]
 "bn30" -> "http://example.org/disti#3" [color="darkgreen",style="dashed"]
 "bn30" -> "http://example.org/ikj#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/assign15" -> "http://example.org/disti#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.476145"]
+ckpt: 2018-06-10T17:30:54.040812"]
 "http://example.org/assign15" -> "http://example.org/j#9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign15" -> "http://example.org/disti@j#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign15" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1918,7 +1918,7 @@ ckpt: 2018-06-09T21:11:13.476145"]
 "bn31" [shape="point",label=""]
 "http://example.org/i#5" -> "bn31" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:13.847329",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.161491",arrowhead="none"]
 "bn31" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn31" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access30" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1953,7 +1953,7 @@ ckpt: 2018-06-09T21:11:13.847329",arrowhead="none"]
 "bn32" [shape="point",label=""]
 "http://example.org/i#6" -> "bn32" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.128572",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.275185",arrowhead="none"]
 "bn32" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn32" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access31" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -1988,7 +1988,7 @@ ckpt: 2018-06-09T21:11:14.128572",arrowhead="none"]
 "bn33" [shape="point",label=""]
 "http://example.org/dist@i#4" -> "bn33" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.407911",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.385887",arrowhead="none"]
 "bn33" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn33" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access32" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2022,7 +2022,7 @@ ckpt: 2018-06-09T21:11:14.407911",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign16-attrs" -> "http://example.org/assign16" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#4" -> "http://example.org/dist@i#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:14.408653"]
+ckpt: 2018-06-10T17:30:54.386887"]
 "http://example.org/j#10" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#10",URL="http://example.org/j#10"]
 "http://example.org/j#10-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2050,7 +2050,7 @@ ckpt: 2018-06-09T21:11:14.408653"]
 "bn34" [shape="point",label=""]
 "http://example.org/j#10" -> "bn34" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.645040",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.533493",arrowhead="none"]
 "bn34" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn34" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access33" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2085,7 +2085,7 @@ ckpt: 2018-06-09T21:11:14.645040",arrowhead="none"]
 "bn35" [shape="point",label=""]
 "http://example.org/disti@k#4" -> "bn35" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.779659",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.640207",arrowhead="none"]
 "bn35" -> "http://example.org/disti#4" [color="darkgreen",style="dashed"]
 "bn35" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access34" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2121,7 +2121,7 @@ ckpt: 2018-06-09T21:11:14.779659",arrowhead="none"]
 "bn36" [shape="point",label=""]
 "http://example.org/distk@j#4" -> "bn36" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.780661",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.641205",arrowhead="none"]
 "bn36" -> "http://example.org/distk#2" [color="darkgreen",style="dashed"]
 "bn36" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access35" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2155,9 +2155,9 @@ ckpt: 2018-06-09T21:11:14.780661",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+4-attrs" -> "http://example.org/+4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#4" -> "http://example.org/disti@k#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:14.781132"]
+ckpt: 2018-06-10T17:30:54.642203"]
 "http://example.org/sum#4" -> "http://example.org/distk@j#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:14.781132"]
+ckpt: 2018-06-10T17:30:54.642203"]
 "http://example.org/ikj#4" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#4",URL="http://example.org/ikj#4"]
 "http://example.org/ikj#4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2187,7 +2187,7 @@ ckpt: 2018-06-09T21:11:14.781132"]
 </TABLE>>]
 "http://example.org/assign17-attrs" -> "http://example.org/assign17" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#4" -> "http://example.org/sum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:14.781653"]
+ckpt: 2018-06-10T17:30:54.643201"]
 "http://example.org/disti@j#6" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#6",URL="http://example.org/disti@j#6"]
 "http://example.org/disti@j#6-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2219,7 +2219,7 @@ ckpt: 2018-06-09T21:11:14.781653"]
 "bn37" [shape="point",label=""]
 "http://example.org/disti@j#6" -> "bn37" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:14.977132",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.867600",arrowhead="none"]
 "bn37" -> "http://example.org/disti#4" [color="darkgreen",style="dashed"]
 "bn37" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access36" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2255,7 +2255,7 @@ ckpt: 2018-06-09T21:11:14.977132",arrowhead="none"]
 "bn38" [shape="point",label=""]
 "http://example.org/j#11" -> "bn38" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:15.211507",arrowhead="none"]
+ckpt: 2018-06-10T17:30:54.979303",arrowhead="none"]
 "bn38" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn38" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access37" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2290,7 +2290,7 @@ ckpt: 2018-06-09T21:11:15.211507",arrowhead="none"]
 "bn39" [shape="point",label=""]
 "http://example.org/j#12" -> "bn39" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:15.399003",arrowhead="none"]
+ckpt: 2018-06-10T17:30:55.082027",arrowhead="none"]
 "bn39" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn39" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access38" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2325,7 +2325,7 @@ ckpt: 2018-06-09T21:11:15.399003",arrowhead="none"]
 "bn40" [shape="point",label=""]
 "http://example.org/k#3" -> "bn40" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:15.633379",arrowhead="none"]
+ckpt: 2018-06-10T17:30:55.193728",arrowhead="none"]
 "bn40" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn40" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access39" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2360,7 +2360,7 @@ ckpt: 2018-06-09T21:11:15.633379",arrowhead="none"]
 "bn41" [shape="point",label=""]
 "http://example.org/dist@k#3" -> "bn41" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:15.830848",arrowhead="none"]
+ckpt: 2018-06-10T17:30:55.559749",arrowhead="none"]
 "bn41" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn41" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access40" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2394,7 +2394,7 @@ ckpt: 2018-06-09T21:11:15.830848",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign18-attrs" -> "http://example.org/assign18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#3" -> "http://example.org/dist@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:15.831846"]
+ckpt: 2018-06-10T17:30:55.560747"]
 "http://example.org/i#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="i#7",URL="http://example.org/i#7"]
 "http://example.org/i#7-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2422,7 +2422,7 @@ ckpt: 2018-06-09T21:11:15.831846"]
 "bn42" [shape="point",label=""]
 "http://example.org/i#7" -> "bn42" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:16.051259",arrowhead="none"]
+ckpt: 2018-06-10T17:30:55.884879",arrowhead="none"]
 "bn42" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn42" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access41" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2457,7 +2457,7 @@ ckpt: 2018-06-09T21:11:16.051259",arrowhead="none"]
 "bn43" [shape="point",label=""]
 "http://example.org/dist@i#5" -> "bn43" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:16.403317",arrowhead="none"]
+ckpt: 2018-06-10T17:30:56.131220",arrowhead="none"]
 "bn43" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn43" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access42" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2491,7 +2491,7 @@ ckpt: 2018-06-09T21:11:16.403317",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign19-attrs" -> "http://example.org/assign19" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#5" -> "http://example.org/dist@i#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:16.404314"]
+ckpt: 2018-06-10T17:30:56.132221"]
 "http://example.org/j#13" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#13",URL="http://example.org/j#13"]
 "http://example.org/j#13-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2519,7 +2519,7 @@ ckpt: 2018-06-09T21:11:16.404314"]
 "bn44" [shape="point",label=""]
 "http://example.org/j#13" -> "bn44" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:16.619742",arrowhead="none"]
+ckpt: 2018-06-10T17:30:56.469315",arrowhead="none"]
 "bn44" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn44" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access43" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2554,7 +2554,7 @@ ckpt: 2018-06-09T21:11:16.619742",arrowhead="none"]
 "bn45" [shape="point",label=""]
 "http://example.org/j#14" -> "bn45" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:16.826214",arrowhead="none"]
+ckpt: 2018-06-10T17:30:56.803422",arrowhead="none"]
 "bn45" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn45" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access44" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2589,7 +2589,7 @@ ckpt: 2018-06-09T21:11:16.826214",arrowhead="none"]
 "bn46" [shape="point",label=""]
 "http://example.org/disti@k#5" -> "bn46" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.008270",arrowhead="none"]
+ckpt: 2018-06-10T17:30:56.991923",arrowhead="none"]
 "bn46" -> "http://example.org/disti#5" [color="darkgreen",style="dashed"]
 "bn46" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access45" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2625,7 +2625,7 @@ ckpt: 2018-06-09T21:11:17.008270",arrowhead="none"]
 "bn47" [shape="point",label=""]
 "http://example.org/distk@j#5" -> "bn47" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.008697",arrowhead="none"]
+ckpt: 2018-06-10T17:30:56.992917",arrowhead="none"]
 "bn47" -> "http://example.org/distk#3" [color="darkgreen",style="dashed"]
 "bn47" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access46" -> "http://example.org/distk#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2659,9 +2659,9 @@ ckpt: 2018-06-09T21:11:17.008697",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+5-attrs" -> "http://example.org/+5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#5" -> "http://example.org/disti@k#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:17.009699"]
+ckpt: 2018-06-10T17:30:56.993914"]
 "http://example.org/sum#5" -> "http://example.org/distk@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:17.009699"]
+ckpt: 2018-06-10T17:30:56.993914"]
 "http://example.org/ikj#5" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#5",URL="http://example.org/ikj#5"]
 "http://example.org/ikj#5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2691,7 +2691,7 @@ ckpt: 2018-06-09T21:11:17.009699"]
 </TABLE>>]
 "http://example.org/assign20-attrs" -> "http://example.org/assign20" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#5" -> "http://example.org/sum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:17.010693"]
+ckpt: 2018-06-10T17:30:56.994910"]
 "http://example.org/disti@j#7" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#7",URL="http://example.org/disti@j#7"]
 "http://example.org/disti@j#7-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2723,7 +2723,7 @@ ckpt: 2018-06-09T21:11:17.010693"]
 "bn48" [shape="point",label=""]
 "http://example.org/disti@j#7" -> "bn48" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.340810",arrowhead="none"]
+ckpt: 2018-06-10T17:30:57.275163",arrowhead="none"]
 "bn48" -> "http://example.org/disti#5" [color="darkgreen",style="dashed"]
 "bn48" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access47" -> "http://example.org/disti#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2759,7 +2759,7 @@ ckpt: 2018-06-09T21:11:17.340810",arrowhead="none"]
 "bn49" [shape="point",label=""]
 "http://example.org/j#15" -> "bn49" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.498390",arrowhead="none"]
+ckpt: 2018-06-10T17:30:57.459668",arrowhead="none"]
 "bn49" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn49" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access48" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2794,7 +2794,7 @@ ckpt: 2018-06-09T21:11:17.498390",arrowhead="none"]
 "bn50" [shape="point",label=""]
 "http://example.org/i#8" -> "bn50" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.698310",arrowhead="none"]
+ckpt: 2018-06-10T17:30:57.594309",arrowhead="none"]
 "bn50" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn50" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access49" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2829,7 +2829,7 @@ ckpt: 2018-06-09T21:11:17.698310",arrowhead="none"]
 "bn51" [shape="point",label=""]
 "http://example.org/dist@i#6" -> "bn51" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:17.891338",arrowhead="none"]
+ckpt: 2018-06-10T17:30:57.780809",arrowhead="none"]
 "bn51" -> "http://example.org/dist#1" [color="darkgreen",style="dashed"]
 "bn51" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access50" -> "http://example.org/dist#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2863,7 +2863,7 @@ ckpt: 2018-06-09T21:11:17.891338",arrowhead="none"]
 </TABLE>>]
 "http://example.org/assign21-attrs" -> "http://example.org/assign21" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#6" -> "http://example.org/dist@i#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:17.892335"]
+ckpt: 2018-06-10T17:30:57.781808"]
 "http://example.org/j#16" [fillcolor="#FFFC87",color="#808080",style="filled",label="j#16",URL="http://example.org/j#16"]
 "http://example.org/j#16-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2891,7 +2891,7 @@ ckpt: 2018-06-09T21:11:17.892335"]
 "bn52" [shape="point",label=""]
 "http://example.org/j#16" -> "bn52" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.111746",arrowhead="none"]
+ckpt: 2018-06-10T17:30:58.015182",arrowhead="none"]
 "bn52" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn52" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access51" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2926,7 +2926,7 @@ ckpt: 2018-06-09T21:11:18.111746",arrowhead="none"]
 "bn53" [shape="point",label=""]
 "http://example.org/disti@k#6" -> "bn53" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.354100",arrowhead="none"]
+ckpt: 2018-06-10T17:30:58.313383",arrowhead="none"]
 "bn53" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn53" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access52" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2962,7 +2962,7 @@ ckpt: 2018-06-09T21:11:18.354100",arrowhead="none"]
 "bn54" [shape="point",label=""]
 "http://example.org/distk@j#6" -> "bn54" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.355097",arrowhead="none"]
+ckpt: 2018-06-10T17:30:58.314382",arrowhead="none"]
 "bn54" -> "http://example.org/distk#3" [color="darkgreen",style="dashed"]
 "bn54" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access53" -> "http://example.org/distk#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -2996,9 +2996,9 @@ ckpt: 2018-06-09T21:11:18.355097",arrowhead="none"]
 </TABLE>>]
 "http://example.org/+6-attrs" -> "http://example.org/+6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#6" -> "http://example.org/disti@k#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:18.356095"]
+ckpt: 2018-06-10T17:30:58.315379"]
 "http://example.org/sum#6" -> "http://example.org/distk@j#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:18.356095"]
+ckpt: 2018-06-10T17:30:58.315379"]
 "http://example.org/ikj#6" [fillcolor="#FFFC87",color="#808080",style="filled",label="ikj#6",URL="http://example.org/ikj#6"]
 "http://example.org/ikj#6-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3028,7 +3028,7 @@ ckpt: 2018-06-09T21:11:18.356095"]
 </TABLE>>]
 "http://example.org/assign22-attrs" -> "http://example.org/assign22" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#6" -> "http://example.org/sum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:18.357093"]
+ckpt: 2018-06-10T17:30:58.316376"]
 "http://example.org/disti@j#8" [fillcolor="#FFFC87",color="#808080",style="filled",label="disti@j#8",URL="http://example.org/disti@j#8"]
 "http://example.org/disti@j#8-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3060,7 +3060,7 @@ ckpt: 2018-06-09T21:11:18.357093"]
 "bn55" [shape="point",label=""]
 "http://example.org/disti@j#8" -> "bn55" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.555059",arrowhead="none"]
+ckpt: 2018-06-10T17:30:58.707330",arrowhead="none"]
 "bn55" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn55" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access54" -> "http://example.org/disti#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3086,7 +3086,7 @@ ckpt: 2018-06-09T21:11:18.555059",arrowhead="none"]
 </TABLE>>]
 "http://example.org/disti@j#9-attrs" -> "http://example.org/disti@j#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/matrix1#1" -> "http://example.org/disti@j#9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="put [0]
-ckpt: 2018-06-09T21:11:18.728100"]
+ckpt: 2018-06-10T17:30:59.005534"]
 "http://example.org/assign23" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign23",URL="http://example.org/assign23"]
 "http://example.org/assign23-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3098,11 +3098,11 @@ ckpt: 2018-06-09T21:11:18.728100"]
 "bn56" [shape="point",label=""]
 "http://example.org/disti@j#9" -> "bn56" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-write
-ckpt: 2018-06-09T21:11:18.728100",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.005534",arrowhead="none"]
 "bn56" -> "http://example.org/disti#6" [color="darkgreen",style="dashed"]
 "bn56" -> "http://example.org/ikj#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/assign23" -> "http://example.org/disti#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.727105"]
+ckpt: 2018-06-10T17:30:59.004536"]
 "http://example.org/assign23" -> "http://example.org/j#16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign23" -> "http://example.org/disti@j#8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign23" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3137,7 +3137,7 @@ ckpt: 2018-06-09T21:11:18.727105"]
 "bn57" [shape="point",label=""]
 "http://example.org/j#17" -> "bn57" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.861743",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.262846",arrowhead="none"]
 "bn57" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn57" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[1]"]
 "http://example.org/access55" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3172,7 +3172,7 @@ ckpt: 2018-06-09T21:11:18.861743",arrowhead="none"]
 "bn58" [shape="point",label=""]
 "http://example.org/j#18" -> "bn58" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:18.992680",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.426407",arrowhead="none"]
 "bn58" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn58" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access56" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3207,7 +3207,7 @@ ckpt: 2018-06-09T21:11:18.992680",arrowhead="none"]
 "bn59" [shape="point",label=""]
 "http://example.org/i#9" -> "bn59" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:19.152966",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.585980",arrowhead="none"]
 "bn59" -> "http://example.org/indexes" [color="darkgreen",style="dashed"]
 "bn59" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access57" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3242,7 +3242,7 @@ ckpt: 2018-06-09T21:11:19.152966",arrowhead="none"]
 "bn60" [shape="point",label=""]
 "http://example.org/result@0" -> "bn60" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:19.258899",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.777469",arrowhead="none"]
 "bn60" -> "http://example.org/result#1" [color="darkgreen",style="dashed"]
 "bn60" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[0]"]
 "http://example.org/access58" -> "http://example.org/result#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3278,7 +3278,7 @@ ckpt: 2018-06-09T21:11:19.258899",arrowhead="none"]
 "bn61" [shape="point",label=""]
 "http://example.org/result@0@2" -> "bn61" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:19.259434",arrowhead="none"]
+ckpt: 2018-06-10T17:30:59.778467",arrowhead="none"]
 "bn61" -> "http://example.org/result@0" [color="darkgreen",style="dashed"]
 "bn61" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="[2]"]
 "http://example.org/access59" -> "http://example.org/result@0" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
@@ -3292,362 +3292,362 @@ ckpt: 2018-06-09T21:11:19.259434",arrowhead="none"]
 </TABLE>>]
 "http://example.org/print1-attrs" -> "http://example.org/print1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/print1" -> "http://example.org/result@0@2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/access21" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.151686"]
-"http://example.org/+3" -> "http://example.org/disti@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.162984"]
-"http://example.org/+4" -> "http://example.org/distk@j#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.781132"]
-"http://example.org/access22" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.386062"]
-"http://example.org/assign7" -> "http://example.org/dist@i#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.842539"]
-"http://example.org/access38" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:15.399003"]
-"http://example.org/access26" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.977479"]
-"http://example.org/assign5" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.168341"]
-"http://example.org/+6" -> "http://example.org/disti@k#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.356095"]
-"http://example.org/access11" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.742132"]
-"http://example.org/+1" -> "http://example.org/distk@j#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361159"]
-"http://example.org/access47" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.340810"]
-"http://example.org/access19" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:11.569244"]
 "http://example.org/access5" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.841542"]
-"http://example.org/access1" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.371797"]
-"http://example.org/assign10" -> "http://example.org/sum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.917045"]
-"http://example.org/access14" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.481156"]
-"http://example.org/access20" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:11.855756"]
-"http://example.org/access24" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.698226"]
-"http://example.org/access49" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.698310"]
-"http://example.org/access41" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:16.051259"]
-"http://example.org/+5" -> "http://example.org/distk@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.009699"]
-"http://example.org/access9" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.359308"]
-"http://example.org/access56" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.992680"]
-"http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:07.326593"]
-"http://example.org/access12" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.960566"]
-"http://example.org/access43" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:16.619742"]
-"http://example.org/access4" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.737982"]
-"http://example.org/access30" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.847329"]
-"http://example.org/assign8" -> "http://example.org/sum#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361174"]
-"http://example.org/access55" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.861743"]
-"http://example.org/access57" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:19.152966"]
+ckpt: 2018-06-10T17:30:50.781527"]
 "http://example.org/access35" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.780661"]
-"http://example.org/access27" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.161003"]
-"http://example.org/access54" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.555059"]
-"http://example.org/access29" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.345498"]
-"http://example.org/access36" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.977132"]
-"http://example.org/assign2" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:07.686642"]
-"http://example.org/access6" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.983162"]
-"http://example.org/access15" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.717525"]
-"http://example.org/access23" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.545636"]
-"http://example.org/assign13" -> "http://example.org/dist@i#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.546659"]
-"http://example.org/access28" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.161986"]
-"http://example.org/+3" -> "http://example.org/distk@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.162984"]
-"http://example.org/access33" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.645040"]
-"http://example.org/+2" -> "http://example.org/distk@j#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.916992"]
-"http://example.org/+2" -> "http://example.org/disti@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.916992"]
-"http://example.org/assign18" -> "http://example.org/dist@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:15.831846"]
-"http://example.org/assign16" -> "http://example.org/dist@i#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.408653"]
-"http://example.org/assign14" -> "http://example.org/sum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.163982"]
-"http://example.org/access59" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:19.259434"]
-"http://example.org/access50" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.891338"]
-"http://example.org/access25" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.840843"]
-"http://example.org/access3" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.637448"]
-"http://example.org/access51" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.111746"]
-"http://example.org/access42" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:16.403317"]
-"http://example.org/assign20" -> "http://example.org/sum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.010693"]
-"http://example.org/assign17" -> "http://example.org/sum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.781653"]
-"http://example.org/assign9" -> "http://example.org/dist@i#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.206889"]
-"http://example.org/access31" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.128572"]
-"http://example.org/assign3" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:07.687624"]
-"http://example.org/assign19" -> "http://example.org/dist@i#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:16.404314"]
-"http://example.org/access8" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.251444"]
-"http://example.org/access58" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:19.258899"]
-"http://example.org/assign21" -> "http://example.org/dist@i#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.892335"]
-"http://example.org/access39" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:15.633379"]
-"http://example.org/access46" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.008697"]
-"http://example.org/access52" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.354100"]
-"http://example.org/access2" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.482507"]
-"http://example.org/access44" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:16.826214"]
-"http://example.org/+6" -> "http://example.org/distk@j#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.356095"]
-"http://example.org/+1" -> "http://example.org/disti@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361159"]
-"http://example.org/access17" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.915994"]
-"http://example.org/assign12" -> "http://example.org/dist@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:12.152686"]
-"http://example.org/assign4" -> "http://example.org/len_dist" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.022730"]
-"http://example.org/access13" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.206215"]
-"http://example.org/assign6" -> "http://example.org/dist@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:08.483499"]
-"http://example.org/access37" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:15.211507"]
-"http://example.org/access53" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.355097"]
-"http://example.org/+4" -> "http://example.org/disti@k#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.781132"]
-"http://example.org/access7" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.136772"]
-"http://example.org/access10" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.360154"]
-"http://example.org/access40" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:15.830848"]
-"http://example.org/access45" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.008270"]
-"http://example.org/access34" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.779659"]
-"http://example.org/access32" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:14.407911"]
-"http://example.org/+5" -> "http://example.org/disti@k#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.009699"]
-"http://example.org/access18" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:11.182283"]
-"http://example.org/access16" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.914997"]
+ckpt: 2018-06-10T17:30:54.641205"]
 "http://example.org/access48" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:17.498390"]
+ckpt: 2018-06-10T17:30:57.459668"]
+"http://example.org/access19" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.660504"]
+"http://example.org/assign14" -> "http://example.org/sum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.757571"]
+"http://example.org/access39" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:55.193728"]
+"http://example.org/access32" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.385887"]
+"http://example.org/+2" -> "http://example.org/distk@j#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.233646"]
+"http://example.org/access43" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.469315"]
+"http://example.org/access10" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.309118"]
+"http://example.org/access30" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.161491"]
+"http://example.org/access49" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:57.594309"]
+"http://example.org/access47" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:57.275163"]
+"http://example.org/assign10" -> "http://example.org/sum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.234644"]
+"http://example.org/assign17" -> "http://example.org/sum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.643201"]
+"http://example.org/access34" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.640207"]
+"http://example.org/access9" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.308121"]
+"http://example.org/access6" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.954067"]
+"http://example.org/+1" -> "http://example.org/disti@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.310121"]
+"http://example.org/+6" -> "http://example.org/disti@k#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.315379"]
+"http://example.org/access33" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.533493"]
+"http://example.org/assign21" -> "http://example.org/dist@i#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:57.781808"]
+"http://example.org/access54" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.707330"]
+"http://example.org/+3" -> "http://example.org/disti@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.756574"]
+"http://example.org/assign13" -> "http://example.org/dist@i#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.311769"]
+"http://example.org/access31" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.275185"]
+"http://example.org/assign5" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.078408"]
+"http://example.org/access24" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.435432"]
+"http://example.org/access53" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.314382"]
+"http://example.org/+1" -> "http://example.org/distk@j#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.310121"]
+"http://example.org/access3" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.555134"]
+"http://example.org/access8" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.186447"]
+"http://example.org/assign4" -> "http://example.org/len_dist" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:49.971693"]
+"http://example.org/access41" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:55.884879"]
+"http://example.org/access50" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:57.780809"]
+"http://example.org/access14" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.854657"]
+"http://example.org/access44" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.803422"]
+"http://example.org/access51" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.015182"]
+"http://example.org/assign16" -> "http://example.org/dist@i#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.386887"]
+"http://example.org/access13" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.723012"]
+"http://example.org/access20" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.848000"]
+"http://example.org/access1" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.231999"]
+"http://example.org/access17" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.232649"]
+"http://example.org/access46" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.992917"]
+"http://example.org/access2" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.350688"]
+"http://example.org/assign7" -> "http://example.org/dist@i#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.782526"]
+"http://example.org/access27" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.754579"]
+"http://example.org/assign18" -> "http://example.org/dist@k#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:55.560747"]
+"http://example.org/access18" -> "http://example.org/m" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.388232"]
+"http://example.org/access52" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.313383"]
+"http://example.org/+5" -> "http://example.org/distk@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.993914"]
+"http://example.org/access56" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:59.426407"]
+"http://example.org/+2" -> "http://example.org/disti@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.233646"]
+"http://example.org/access22" -> "http://example.org/range_nodes0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.192080"]
+"http://example.org/access12" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.616297"]
+"http://example.org/access4" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.671821"]
+"http://example.org/assign19" -> "http://example.org/dist@i#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.132221"]
+"http://example.org/+4" -> "http://example.org/disti@k#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.642203"]
+"http://example.org/access45" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.991923"]
+"http://example.org/access37" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.979303"]
+"http://example.org/access38" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:55.082027"]
+"http://example.org/access29" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.929112"]
+"http://example.org/access58" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:59.777469"]
+"http://example.org/access23" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.310766"]
+"http://example.org/assign1" -> "http://example.org/10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:49.378283"]
+"http://example.org/access26" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.651851"]
+"http://example.org/+4" -> "http://example.org/distk@j#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.642203"]
+"http://example.org/access21" -> "http://example.org/matrix1#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.005585"]
+"http://example.org/access25" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.542145"]
+"http://example.org/assign8" -> "http://example.org/sum#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.311113"]
+"http://example.org/assign6" -> "http://example.org/dist@k#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:50.351679"]
+"http://example.org/access28" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.755575"]
+"http://example.org/access36" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:54.867600"]
+"http://example.org/+6" -> "http://example.org/distk@j#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:58.315379"]
+"http://example.org/access57" -> "http://example.org/range_nodes2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:59.585980"]
+"http://example.org/access11" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.487639"]
+"http://example.org/+5" -> "http://example.org/disti@k#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.993914"]
 "http://example.org/assign22" -> "http://example.org/sum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:18.357093"]
-"http://example.org/distk@j#2" -> "http://example.org/access17" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.915994"]
-"http://example.org/j#14" -> "http://example.org/access44" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:16.826214"]
-"http://example.org/distk@j#5" -> "http://example.org/access46" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.008697"]
-"http://example.org/j#4" -> "http://example.org/access14" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.481156"]
-"http://example.org/k#1" -> "http://example.org/access1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.371797"]
-"http://example.org/j#12" -> "http://example.org/access38" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:15.399003"]
-"http://example.org/dist@i#3" -> "http://example.org/access23" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.545636"]
-"http://example.org/disti@k#5" -> "http://example.org/access45" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.008270"]
-"http://example.org/disti@j#7" -> "http://example.org/access47" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.340810"]
-"http://example.org/i#8" -> "http://example.org/access49" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.698310"]
-"http://example.org/i#2" -> "http://example.org/access4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.737982"]
-"http://example.org/ikj#2" -> "http://example.org/assign10" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.917045"]
-"http://example.org/i#4" -> "http://example.org/access22" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.386062"]
-"http://example.org/sum#2" -> "http://example.org/+2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.916992"]
-"http://example.org/j#6" -> "http://example.org/access19" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:11.569244"]
-"http://example.org/k#3" -> "http://example.org/access39" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:15.633379"]
-"http://example.org/disti@j#6" -> "http://example.org/access36" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.977132"]
-"http://example.org/dist@k#2" -> "http://example.org/access21" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.151686"]
-"http://example.org/sum#3" -> "http://example.org/+3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.162984"]
-"http://example.org/ikj#5" -> "http://example.org/assign20" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.010693"]
-"http://example.org/j#10" -> "http://example.org/access33" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.645040"]
-"http://example.org/result@0@2" -> "http://example.org/access59" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:19.259434"]
-"http://example.org/dist@i#5" -> "http://example.org/access42" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:16.403317"]
-"http://example.org/indexes" -> "http://example.org/assign5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.168341"]
-"http://example.org/disti#1" -> "http://example.org/assign7" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.842539"]
-"http://example.org/distk@j#6" -> "http://example.org/access53" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.355097"]
-"http://example.org/disti@j#3" -> "http://example.org/assign11" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:11.363795"]
-"http://example.org/j#8" -> "http://example.org/access25" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.840843"]
-"http://example.org/j#9" -> "http://example.org/access26" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.977479"]
-"http://example.org/i#5" -> "http://example.org/access30" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.847329"]
-"http://example.org/k#2" -> "http://example.org/access20" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:11.855756"]
-"http://example.org/j#11" -> "http://example.org/access37" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:15.211507"]
-"http://example.org/ikj#4" -> "http://example.org/assign17" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.781653"]
-"http://example.org/result#1" -> "http://example.org/assign3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:07.687624"]
-"http://example.org/j#18" -> "http://example.org/access56" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.992680"]
-"http://example.org/i#9" -> "http://example.org/access57" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:19.152966"]
-"http://example.org/result@0" -> "http://example.org/access58" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:19.258899"]
-"http://example.org/dist@k#1" -> "http://example.org/access2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.482507"]
-"http://example.org/distk#1" -> "http://example.org/assign6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.483499"]
-"http://example.org/ikj#1" -> "http://example.org/assign8" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.361174"]
-"http://example.org/sum#1" -> "http://example.org/+1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.361159"]
-"http://example.org/sum#6" -> "http://example.org/+6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.356095"]
-"http://example.org/sum#4" -> "http://example.org/+4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.781132"]
-"http://example.org/j#16" -> "http://example.org/access51" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.111746"]
-"http://example.org/dist@i#4" -> "http://example.org/access32" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.407911"]
-"http://example.org/dist@k#3" -> "http://example.org/access40" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:15.830848"]
-"http://example.org/distk#2" -> "http://example.org/assign12" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.152686"]
-"http://example.org/distk@j#3" -> "http://example.org/access28" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.161986"]
-"http://example.org/disti#5" -> "http://example.org/assign19" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:16.404314"]
-"http://example.org/distk#3" -> "http://example.org/assign18" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:15.831846"]
-"http://example.org/disti@k#2" -> "http://example.org/access16" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.914997"]
-"http://example.org/dist@i#6" -> "http://example.org/access50" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.891338"]
-"http://example.org/disti@j#2" -> "http://example.org/access18" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:11.182283"]
-"http://example.org/disti#3" -> "http://example.org/assign13" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.546659"]
-"http://example.org/disti#2" -> "http://example.org/assign9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.206889"]
-"http://example.org/m" -> "http://example.org/assign1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:07.326593"]
-"http://example.org/i#1" -> "http://example.org/access3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.637448"]
-"http://example.org/j#13" -> "http://example.org/access43" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:16.619742"]
-"http://example.org/ikj#6" -> "http://example.org/assign22" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.357093"]
-"http://example.org/i#7" -> "http://example.org/access41" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:16.051259"]
-"http://example.org/distk@j#4" -> "http://example.org/access35" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.780661"]
-"http://example.org/sum#5" -> "http://example.org/+5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.009699"]
-"http://example.org/dist@i#1" -> "http://example.org/access5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.841542"]
-"http://example.org/disti@k#1" -> "http://example.org/access9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.359308"]
-"http://example.org/j#17" -> "http://example.org/access55" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.861743"]
-"http://example.org/disti@j#5" -> "http://example.org/assign15" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.477143"]
-"http://example.org/disti@k#4" -> "http://example.org/access34" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.779659"]
-"http://example.org/disti@k#6" -> "http://example.org/access52" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.354100"]
-"http://example.org/j#7" -> "http://example.org/access24" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:12.698226"]
-"http://example.org/disti@j#4" -> "http://example.org/access29" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.345498"]
-"http://example.org/i#3" -> "http://example.org/access12" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.960566"]
-"http://example.org/j#5" -> "http://example.org/access15" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.717525"]
-"http://example.org/disti#4" -> "http://example.org/assign16" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.408653"]
-"http://example.org/disti@j#8" -> "http://example.org/access54" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.555059"]
-"http://example.org/disti@j#9" -> "http://example.org/assign23" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:18.728100"]
-"http://example.org/distk@j#1" -> "http://example.org/access10" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.360154"]
-"http://example.org/nodes" -> "http://example.org/assign4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.022730"]
+ckpt: 2018-06-10T17:30:58.316376"]
+"http://example.org/access16" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.231650"]
+"http://example.org/assign9" -> "http://example.org/dist@i#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.724014"]
+"http://example.org/assign20" -> "http://example.org/sum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.994910"]
+"http://example.org/assign3" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:49.659530"]
+"http://example.org/access7" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.070754"]
+"http://example.org/access42" -> "http://example.org/matrix0#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:56.131220"]
+"http://example.org/assign12" -> "http://example.org/dist@k#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.006579"]
+"http://example.org/assign2" -> "http://example.org/matrix#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:49.658531"]
+"http://example.org/access55" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:59.262846"]
+"http://example.org/access15" -> "http://example.org/range_nodes1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:52.124935"]
+"http://example.org/access40" -> "http://example.org/matrix2#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:55.559749"]
+"http://example.org/access59" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:59.778467"]
+"http://example.org/+3" -> "http://example.org/distk@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:53.756574"]
 "http://example.org/j#1" -> "http://example.org/access6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:08.983162"]
-"http://example.org/j#15" -> "http://example.org/access48" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.498390"]
-"http://example.org/dist#1" -> "http://example.org/assign2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:07.686642"]
-"http://example.org/dist@i#2" -> "http://example.org/access13" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.206215"]
+ckpt: 2018-06-10T17:30:50.954067"]
+"http://example.org/dist@k#1" -> "http://example.org/access2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.350688"]
+"http://example.org/disti#2" -> "http://example.org/assign9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.724014"]
+"http://example.org/sum#6" -> "http://example.org/+6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.315379"]
+"http://example.org/ikj#4" -> "http://example.org/assign17" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.643201"]
+"http://example.org/j#13" -> "http://example.org/access43" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.469315"]
+"http://example.org/i#3" -> "http://example.org/access12" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.616297"]
+"http://example.org/disti@k#1" -> "http://example.org/access9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.308121"]
+"http://example.org/dist@k#2" -> "http://example.org/access21" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.005585"]
+"http://example.org/distk@j#2" -> "http://example.org/access17" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.232649"]
+"http://example.org/disti@j#2" -> "http://example.org/access18" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.388232"]
+"http://example.org/i#9" -> "http://example.org/access57" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.585980"]
 "http://example.org/ikj#3" -> "http://example.org/assign14" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.163982"]
-"http://example.org/i#6" -> "http://example.org/access31" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:14.128572"]
-"http://example.org/disti#6" -> "http://example.org/assign21" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:17.892335"]
-"http://example.org/disti@j#1" -> "http://example.org/access11" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.742132"]
-"http://example.org/j#2" -> "http://example.org/access7" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.136772"]
-"http://example.org/disti@k#3" -> "http://example.org/access27" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.161003"]
+ckpt: 2018-06-10T17:30:53.757571"]
+"http://example.org/nodes" -> "http://example.org/assign4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:49.971693"]
+"http://example.org/disti@j#4" -> "http://example.org/access29" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.929112"]
+"http://example.org/dist@i#3" -> "http://example.org/access23" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.310766"]
+"http://example.org/indexes" -> "http://example.org/assign5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.078408"]
+"http://example.org/result@0@2" -> "http://example.org/access59" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.778467"]
+"http://example.org/j#6" -> "http://example.org/access19" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.660504"]
+"http://example.org/distk@j#4" -> "http://example.org/access35" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.641205"]
+"http://example.org/sum#1" -> "http://example.org/+1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.310121"]
+"http://example.org/i#1" -> "http://example.org/access3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.555134"]
+"http://example.org/i#5" -> "http://example.org/access30" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.161491"]
+"http://example.org/j#16" -> "http://example.org/access51" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.015182"]
+"http://example.org/j#12" -> "http://example.org/access38" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:55.082027"]
+"http://example.org/sum#5" -> "http://example.org/+5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.993914"]
+"http://example.org/distk@j#6" -> "http://example.org/access53" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.314382"]
+"http://example.org/dist@i#1" -> "http://example.org/access5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.781527"]
+"http://example.org/ikj#2" -> "http://example.org/assign10" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.234644"]
+"http://example.org/dist@i#4" -> "http://example.org/access32" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.385887"]
 "http://example.org/j#3" -> "http://example.org/access8" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.251444"]
+ckpt: 2018-06-10T17:30:51.186447"]
+"http://example.org/ikj#6" -> "http://example.org/assign22" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.316376"]
+"http://example.org/disti@k#3" -> "http://example.org/access27" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.754579"]
+"http://example.org/ikj#1" -> "http://example.org/assign8" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.311113"]
+"http://example.org/disti@j#6" -> "http://example.org/access36" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.867600"]
+"http://example.org/result@0" -> "http://example.org/access58" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.777469"]
+"http://example.org/dist@i#6" -> "http://example.org/access50" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:57.780809"]
+"http://example.org/disti#5" -> "http://example.org/assign19" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.132221"]
+"http://example.org/j#7" -> "http://example.org/access24" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.435432"]
+"http://example.org/sum#2" -> "http://example.org/+2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.233646"]
+"http://example.org/disti@j#3" -> "http://example.org/assign11" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.513894"]
+"http://example.org/i#8" -> "http://example.org/access49" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:57.594309"]
+"http://example.org/disti@j#9" -> "http://example.org/assign23" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.005534"]
+"http://example.org/j#2" -> "http://example.org/access7" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.070754"]
+"http://example.org/dist@i#2" -> "http://example.org/access13" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.723012"]
+"http://example.org/disti@j#5" -> "http://example.org/assign15" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.041809"]
+"http://example.org/sum#3" -> "http://example.org/+3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.756574"]
+"http://example.org/j#8" -> "http://example.org/access25" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.542145"]
+"http://example.org/i#7" -> "http://example.org/access41" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:55.884879"]
+"http://example.org/disti@k#4" -> "http://example.org/access34" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.640207"]
+"http://example.org/disti@k#5" -> "http://example.org/access45" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.991923"]
+"http://example.org/j#18" -> "http://example.org/access56" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.426407"]
+"http://example.org/disti#4" -> "http://example.org/assign16" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.386887"]
+"http://example.org/i#2" -> "http://example.org/access4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.671821"]
+"http://example.org/j#15" -> "http://example.org/access48" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:57.459668"]
+"http://example.org/m" -> "http://example.org/assign1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:49.378283"]
+"http://example.org/disti#1" -> "http://example.org/assign7" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.782526"]
+"http://example.org/dist@k#3" -> "http://example.org/access40" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:55.559749"]
+"http://example.org/dist@i#5" -> "http://example.org/access42" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.131220"]
+"http://example.org/j#11" -> "http://example.org/access37" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.979303"]
+"http://example.org/disti@k#2" -> "http://example.org/access16" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.231650"]
+"http://example.org/sum#4" -> "http://example.org/+4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.642203"]
+"http://example.org/distk@j#3" -> "http://example.org/access28" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.755575"]
+"http://example.org/j#17" -> "http://example.org/access55" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:59.262846"]
+"http://example.org/disti#6" -> "http://example.org/assign21" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:57.781808"]
+"http://example.org/disti@j#8" -> "http://example.org/access54" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.707330"]
+"http://example.org/distk#2" -> "http://example.org/assign12" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.006579"]
+"http://example.org/k#2" -> "http://example.org/access20" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.848000"]
+"http://example.org/j#4" -> "http://example.org/access14" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.854657"]
+"http://example.org/disti@k#6" -> "http://example.org/access52" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:58.313383"]
+"http://example.org/disti@j#7" -> "http://example.org/access47" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:57.275163"]
+"http://example.org/disti#3" -> "http://example.org/assign13" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.311769"]
+"http://example.org/k#3" -> "http://example.org/access39" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:55.193728"]
+"http://example.org/distk@j#1" -> "http://example.org/access10" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.309118"]
+"http://example.org/ikj#5" -> "http://example.org/assign20" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.994910"]
+"http://example.org/distk#1" -> "http://example.org/assign6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.351679"]
+"http://example.org/disti@j#1" -> "http://example.org/access11" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.487639"]
+"http://example.org/i#6" -> "http://example.org/access31" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.275185"]
+"http://example.org/j#14" -> "http://example.org/access44" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.803422"]
+"http://example.org/i#4" -> "http://example.org/access22" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.192080"]
+"http://example.org/j#10" -> "http://example.org/access33" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:54.533493"]
+"http://example.org/distk@j#5" -> "http://example.org/access46" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:56.992917"]
+"http://example.org/dist#1" -> "http://example.org/assign2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:49.658531"]
+"http://example.org/j#9" -> "http://example.org/access26" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:53.651851"]
+"http://example.org/result#1" -> "http://example.org/assign3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:49.659530"]
+"http://example.org/j#5" -> "http://example.org/access15" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:52.124935"]
+"http://example.org/k#1" -> "http://example.org/access1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:50.231999"]
+"http://example.org/distk#3" -> "http://example.org/assign18" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:55.560747"]
 }

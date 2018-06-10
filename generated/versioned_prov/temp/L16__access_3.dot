@@ -4,13 +4,13 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@j#4" -> "bn0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:13.345498",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:53.929112",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/disti#3" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/4" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[1]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access29" -> "http://example.org/disti#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access29" -> "http://example.org/j#9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access29" -> "http://example.org/4" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:13.345498",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:53.929112",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@j#4" -> "http://example.org/access29" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:13.345498",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:53.929112",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

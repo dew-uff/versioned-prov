@@ -17,7 +17,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/dist@k#3-attrs" -> "http://example.org/dist@k#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@k#3" -> "http://example.org/row2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="part
 vmatrix[2]
-2018-06-09T21:04:20.351415"]
+2018-06-10T17:26:46.317896"]
 "http://example.org/access40" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access40",URL="http://example.org/access40"]
 "http://example.org/access40" -> "http://example.org/dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access40" -> "http://example.org/k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -39,7 +39,7 @@ vmatrix[2]
 </TABLE>>]
 "http://example.org/distk#3-attrs" -> "http://example.org/distk#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#3" -> "http://example.org/row2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="access
-2018-06-09T21:04:20.351415"]
+2018-06-10T17:26:46.317896"]
 "http://example.org/assign18" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign18",URL="http://example.org/assign18"]
 "http://example.org/distk#3" -> "http://example.org/dist@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign18" -> "http://example.org/dist@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]

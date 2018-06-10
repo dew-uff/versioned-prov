@@ -9,14 +9,14 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v10000-attrs" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/10000" -> "http://example.org/v10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.401884"]
 "http://example.org/v10000" -> "http://example.org/10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.401884"]
 "http://example.org/m" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="m",URL="http://example.org/m"]
 "http://example.org/assign1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign1",URL="http://example.org/assign1"]
 "http://example.org/m" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/m" -> "http://example.org/v10000" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="access
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.402881"]
 "http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

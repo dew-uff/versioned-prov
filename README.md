@@ -24,6 +24,11 @@ Thus, for running the files, please install Python 3.6 and Graphviz, and run:
 ```
 pip install jupyter extensible_provn pandas numpy matplotlib pypandoc
 ```
+or in the root of this repository:
+```
+pip install -e .
+```
+
 
 For updating the project markdowns, please edit the files in the [source directory](https://github.com/dew-uff/versioned-prov/raw/master/source) and run:
 ```

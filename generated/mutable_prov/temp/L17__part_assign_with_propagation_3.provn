@@ -1,6 +1,6 @@
 entity(disti@j#9, [type="script:access",label="disti[j]",script:line="17"])
-derivedByInsertion(disti@j#9, row1, {("0", vsum#6)}, 2018-06-09T21:04:23.314493, [dot:specific="true"])
-accessed(disti@j#9, vsum#6, 2018-06-09T21:04:23.314493, [dot:specific="true"])
+derivedByInsertion(disti@j#9, row1, {("0", vsum#6)}, 2018-06-10T17:26:48.144013, [dot:specific="true"])
+accessed(disti@j#9, vsum#6, 2018-06-10T17:26:48.144013, [dot:specific="true"])
 activity(assign23, [type="script:assign"])
 wasDerivedFrom(disti@j#9, ikj#6, assign23, g29, u35)
 used(assign23, disti#6, -)

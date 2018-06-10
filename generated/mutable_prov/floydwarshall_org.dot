@@ -24,9 +24,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v10000-attrs" -> "http://example.org/v10000" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/10000" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.401884"]
 "http://example.org/v10000" -> "http://example.org/10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.401884"]
 "http://example.org/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="http://example.org/m"]
 "http://example.org/m-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -53,7 +53,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/assign1-attrs" -> "http://example.org/assign1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/m" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="der"]
 "http://example.org/m" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:13.776457"]
+2018-06-10T17:26:41.402881"]
 "http://example.org/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="http://example.org/0"]
 "http://example.org/0-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -79,9 +79,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v0-attrs" -> "http://example.org/v0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/0" -> "http://example.org/v0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v0" -> "http://example.org/0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/1" [fillcolor="#FFFC87",color="#808080",style="filled",label="1",URL="http://example.org/1"]
 "http://example.org/1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -107,9 +107,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v1-attrs" -> "http://example.org/v1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/1" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v1" -> "http://example.org/1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/4" [fillcolor="#FFFC87",color="#808080",style="filled",label="4",URL="http://example.org/4"]
 "http://example.org/4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -135,9 +135,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v4-attrs" -> "http://example.org/v4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/4" -> "http://example.org/v4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v4" -> "http://example.org/4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="http://example.org/2"]
 "http://example.org/2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -163,9 +163,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v2-attrs" -> "http://example.org/v2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/2" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v2" -> "http://example.org/2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/matrix" [fillcolor="#FFFC87",color="#808080",style="filled",label="matrix",URL="http://example.org/matrix"]
 "http://example.org/matrix-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -192,22 +192,22 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/row0-attrs" -> "http://example.org/row0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row0" -> "http://example.org/v0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v0" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row0" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v1" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row0" -> "http://example.org/v4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v4" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row1" [fillcolor="#32CD32",color="#808080",style="filled",label="row1",URL="http://example.org/row1"]
 "http://example.org/row1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -218,22 +218,22 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/row1-attrs" -> "http://example.org/row1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row1" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v10000" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row1" -> "http://example.org/v0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v0" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row1" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v2" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row2" [fillcolor="#32CD32",color="#808080",style="filled",label="row2",URL="http://example.org/row2"]
 "http://example.org/row2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -244,22 +244,22 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/row2-attrs" -> "http://example.org/row2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row2" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v2" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row2" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v10000" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/row2" -> "http://example.org/v0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/v0" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/vmatrix" [fillcolor="#32CD32",color="#808080",style="filled",label="vmatrix",URL="http://example.org/vmatrix"]
 "http://example.org/vmatrix-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -270,26 +270,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/vmatrix-attrs" -> "http://example.org/vmatrix" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/vmatrix" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/row0" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/vmatrix" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/row1" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/vmatrix" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/row2" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:13.927055",style="dashed"]
+2018-06-10T17:26:41.488091",style="dashed"]
 "http://example.org/matrix" -> "http://example.org/vmatrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/vmatrix" -> "http://example.org/matrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:13.927055"]
+2018-06-10T17:26:41.488091"]
 "http://example.org/dist" [fillcolor="#FFFC87",color="#808080",style="filled",label="dist",URL="http://example.org/dist"]
 "http://example.org/dist-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -307,7 +307,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/dist-attrs" -> "http://example.org/dist" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist" -> "http://example.org/vmatrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:14.157438"]
+2018-06-10T17:26:41.657453"]
 "http://example.org/assign2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign2",URL="http://example.org/assign2"]
 "http://example.org/assign2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -334,7 +334,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/result-attrs" -> "http://example.org/result" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/result" -> "http://example.org/vmatrix" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:14.157438"]
+2018-06-10T17:26:41.657453"]
 "http://example.org/assign3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign3",URL="http://example.org/assign3"]
 "http://example.org/assign3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -369,9 +369,9 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/v3-attrs" -> "http://example.org/v3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/len_dist" -> "http://example.org/v3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:14.577316"]
+2018-06-10T17:26:41.895563"]
 "http://example.org/v3" -> "http://example.org/len_dist" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:14.577316"]
+2018-06-10T17:26:41.895563"]
 "http://example.org/call1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="call1",URL="http://example.org/call1"]
 "http://example.org/call1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -403,7 +403,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/nodes-attrs" -> "http://example.org/nodes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/nodes" -> "http://example.org/v3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:14.577316"]
+2018-06-10T17:26:41.895563"]
 "http://example.org/assign4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign4",URL="http://example.org/assign4"]
 "http://example.org/assign4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -463,26 +463,26 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/v_range-attrs" -> "http://example.org/v_range" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/v_range" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/v0#2" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:14.688020",style="dashed"]
+2018-06-10T17:26:42.012852",style="dashed"]
 "http://example.org/v_range" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/v1#2" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:14.688020",style="dashed"]
+2018-06-10T17:26:42.012852",style="dashed"]
 "http://example.org/v_range" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/v2#2" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:14.688020",style="dashed"]
+2018-06-10T17:26:42.012852",style="dashed"]
 "http://example.org/range_nodes" -> "http://example.org/v_range" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/v_range" -> "http://example.org/range_nodes" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/call2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="call2",URL="http://example.org/call2"]
 "http://example.org/call2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -514,7 +514,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 </TABLE>>]
 "http://example.org/indexes-attrs" -> "http://example.org/indexes" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/indexes" -> "http://example.org/v_range" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:14.688020"]
+2018-06-10T17:26:42.012852"]
 "http://example.org/assign5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign5",URL="http://example.org/assign5"]
 "http://example.org/assign5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -542,7 +542,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/k#1-attrs" -> "http://example.org/k#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/k#1" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:14.828644"]
+2018-06-10T17:26:42.122199"]
 "http://example.org/access1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access1",URL="http://example.org/access1"]
 "http://example.org/access1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -571,7 +571,7 @@ v_range[0]
 "http://example.org/dist@k#1-attrs" -> "http://example.org/dist@k#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@k#1" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[0]
-2018-06-09T21:04:14.927378"]
+2018-06-10T17:26:42.206668"]
 "http://example.org/access2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access2",URL="http://example.org/access2"]
 "http://example.org/access2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -600,7 +600,7 @@ vmatrix[0]
 </TABLE>>]
 "http://example.org/distk#1-attrs" -> "http://example.org/distk#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#1" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:14.927378"]
+2018-06-10T17:26:42.206668"]
 "http://example.org/assign6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign6",URL="http://example.org/assign6"]
 "http://example.org/assign6-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -628,7 +628,7 @@ vmatrix[0]
 "http://example.org/i#1-attrs" -> "http://example.org/i#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#1" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:15.070000"]
+2018-06-10T17:26:42.316021"]
 "http://example.org/access3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access3",URL="http://example.org/access3"]
 "http://example.org/access3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -657,7 +657,7 @@ v_range[0]
 "http://example.org/i#2-attrs" -> "http://example.org/i#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#2" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:15.179923"]
+2018-06-10T17:26:42.391793"]
 "http://example.org/access4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access4",URL="http://example.org/access4"]
 "http://example.org/access4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -686,7 +686,7 @@ v_range[1]
 "http://example.org/dist@i#1-attrs" -> "http://example.org/dist@i#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#1" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[1]
-2018-06-09T21:04:15.404646"]
+2018-06-10T17:26:42.487535"]
 "http://example.org/access5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access5",URL="http://example.org/access5"]
 "http://example.org/access5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -715,7 +715,7 @@ vmatrix[1]
 </TABLE>>]
 "http://example.org/disti#1-attrs" -> "http://example.org/disti#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#1" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:15.404646"]
+2018-06-10T17:26:42.487535"]
 "http://example.org/assign7" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign7",URL="http://example.org/assign7"]
 "http://example.org/assign7-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -743,7 +743,7 @@ vmatrix[1]
 "http://example.org/j#1-attrs" -> "http://example.org/j#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#1" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:15.621066"]
+2018-06-10T17:26:42.593251"]
 "http://example.org/access6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access6",URL="http://example.org/access6"]
 "http://example.org/access6-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -772,7 +772,7 @@ v_range[0]
 "http://example.org/j#2-attrs" -> "http://example.org/j#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#2" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:15.800591"]
+2018-06-10T17:26:42.683015"]
 "http://example.org/access7" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access7",URL="http://example.org/access7"]
 "http://example.org/access7-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -801,7 +801,7 @@ v_range[1]
 "http://example.org/j#3-attrs" -> "http://example.org/j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#3" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:15.990080"]
+2018-06-10T17:26:42.773108"]
 "http://example.org/access8" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access8",URL="http://example.org/access8"]
 "http://example.org/access8-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -830,7 +830,7 @@ v_range[2]
 "http://example.org/disti@k#1-attrs" -> "http://example.org/disti@k#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#1" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[0]
-2018-06-09T21:04:16.144673"]
+2018-06-10T17:26:42.851219"]
 "http://example.org/access9" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access9",URL="http://example.org/access9"]
 "http://example.org/access9-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -860,7 +860,7 @@ row1[0]
 "http://example.org/distk@j#1-attrs" -> "http://example.org/distk@j#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#1" -> "http://example.org/v4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[2]
-2018-06-09T21:04:16.144673"]
+2018-06-10T17:26:42.851219"]
 "http://example.org/access10" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access10",URL="http://example.org/access10"]
 "http://example.org/access10-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -897,9 +897,9 @@ row0[2]
 </TABLE>>]
 "http://example.org/vsum-attrs" -> "http://example.org/vsum" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#1" -> "http://example.org/vsum" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:16.144673"]
+2018-06-10T17:26:42.851219"]
 "http://example.org/vsum" -> "http://example.org/sum#1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:16.144673"]
+2018-06-10T17:26:42.851219"]
 "http://example.org/+1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+1",URL="http://example.org/+1"]
 "http://example.org/+1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -927,7 +927,7 @@ row0[2]
 </TABLE>>]
 "http://example.org/ikj#1-attrs" -> "http://example.org/ikj#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#1" -> "http://example.org/vsum" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:16.144673"]
+2018-06-10T17:26:42.851219"]
 "http://example.org/assign8" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign8",URL="http://example.org/assign8"]
 "http://example.org/assign8-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -955,7 +955,7 @@ row0[2]
 "http://example.org/disti@j#1-attrs" -> "http://example.org/disti@j#1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#1" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[2]
-2018-06-09T21:04:16.493733"]
+2018-06-10T17:26:42.965057"]
 "http://example.org/access11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access11",URL="http://example.org/access11"]
 "http://example.org/access11-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -985,7 +985,7 @@ row1[2]
 "http://example.org/i#3-attrs" -> "http://example.org/i#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#3" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:16.661285"]
+2018-06-10T17:26:43.074409"]
 "http://example.org/access12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access12",URL="http://example.org/access12"]
 "http://example.org/access12-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1014,7 +1014,7 @@ v_range[2]
 "http://example.org/dist@i#2-attrs" -> "http://example.org/dist@i#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#2" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[2]
-2018-06-09T21:04:16.784975"]
+2018-06-10T17:26:43.152515"]
 "http://example.org/access13" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access13",URL="http://example.org/access13"]
 "http://example.org/access13-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1043,7 +1043,7 @@ vmatrix[2]
 </TABLE>>]
 "http://example.org/disti#2-attrs" -> "http://example.org/disti#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#2" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:16.784975"]
+2018-06-10T17:26:43.152515"]
 "http://example.org/assign9" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign9",URL="http://example.org/assign9"]
 "http://example.org/assign9-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1071,7 +1071,7 @@ vmatrix[2]
 "http://example.org/j#4-attrs" -> "http://example.org/j#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#4" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:16.914609"]
+2018-06-10T17:26:43.246241"]
 "http://example.org/access14" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access14",URL="http://example.org/access14"]
 "http://example.org/access14-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1100,7 +1100,7 @@ v_range[0]
 "http://example.org/j#5-attrs" -> "http://example.org/j#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#5" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:17.028305"]
+2018-06-10T17:26:43.339516"]
 "http://example.org/access15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access15",URL="http://example.org/access15"]
 "http://example.org/access15-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1129,7 +1129,7 @@ v_range[1]
 "http://example.org/disti@k#2-attrs" -> "http://example.org/disti@k#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#2" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[0]
-2018-06-09T21:04:17.187885"]
+2018-06-10T17:26:43.420301"]
 "http://example.org/access16" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access16",URL="http://example.org/access16"]
 "http://example.org/access16-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1159,7 +1159,7 @@ row2[0]
 "http://example.org/distk@j#2-attrs" -> "http://example.org/distk@j#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#2" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[1]
-2018-06-09T21:04:17.187885"]
+2018-06-10T17:26:43.420301"]
 "http://example.org/access17" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access17",URL="http://example.org/access17"]
 "http://example.org/access17-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1196,9 +1196,9 @@ row0[1]
 </TABLE>>]
 "http://example.org/vsum#2-attrs" -> "http://example.org/vsum#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#2" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:17.187885"]
+2018-06-10T17:26:43.420301"]
 "http://example.org/vsum#2" -> "http://example.org/sum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:17.187885"]
+2018-06-10T17:26:43.420301"]
 "http://example.org/+2" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+2",URL="http://example.org/+2"]
 "http://example.org/+2-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1226,7 +1226,7 @@ row0[1]
 </TABLE>>]
 "http://example.org/ikj#2-attrs" -> "http://example.org/ikj#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#2" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:17.187885"]
+2018-06-10T17:26:43.420301"]
 "http://example.org/assign10" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign10",URL="http://example.org/assign10"]
 "http://example.org/assign10-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1254,7 +1254,7 @@ row0[1]
 "http://example.org/disti@j#2-attrs" -> "http://example.org/disti@j#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#2" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[1]
-2018-06-09T21:04:17.375377"]
+2018-06-10T17:26:43.668635"]
 "http://example.org/access18" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access18",URL="http://example.org/access18"]
 "http://example.org/access18-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1284,12 +1284,12 @@ row2[1]
 "http://example.org/disti@j#3-attrs" -> "http://example.org/disti@j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row2" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [1]
-2018-06-09T21:04:17.541994"]
+2018-06-10T17:26:43.756403"]
 "http://example.org/vsum#2" -> "http://example.org/disti@j#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [1]
-2018-06-09T21:04:17.541994",style="dashed"]
+2018-06-10T17:26:43.756403",style="dashed"]
 "http://example.org/disti@j#3" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:17.541994"]
+2018-06-10T17:26:43.756403"]
 "http://example.org/assign11" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign11",URL="http://example.org/assign11"]
 "http://example.org/assign11-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1318,7 +1318,7 @@ row2[1]
 "http://example.org/j#6-attrs" -> "http://example.org/j#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#6" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:17.682561"]
+2018-06-10T17:26:43.851148"]
 "http://example.org/access19" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access19",URL="http://example.org/access19"]
 "http://example.org/access19-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1347,7 +1347,7 @@ v_range[2]
 "http://example.org/k#2-attrs" -> "http://example.org/k#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/k#2" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:17.805227"]
+2018-06-10T17:26:43.935921"]
 "http://example.org/access20" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access20",URL="http://example.org/access20"]
 "http://example.org/access20-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1376,7 +1376,7 @@ v_range[1]
 "http://example.org/dist@k#2-attrs" -> "http://example.org/dist@k#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@k#2" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[1]
-2018-06-09T21:04:17.912939"]
+2018-06-10T17:26:44.030669"]
 "http://example.org/access21" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access21",URL="http://example.org/access21"]
 "http://example.org/access21-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1405,7 +1405,7 @@ vmatrix[1]
 </TABLE>>]
 "http://example.org/distk#2-attrs" -> "http://example.org/distk#2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#2" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:17.912939"]
+2018-06-10T17:26:44.030669"]
 "http://example.org/assign12" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign12",URL="http://example.org/assign12"]
 "http://example.org/assign12-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1433,7 +1433,7 @@ vmatrix[1]
 "http://example.org/i#4-attrs" -> "http://example.org/i#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#4" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:18.059590"]
+2018-06-10T17:26:44.144366"]
 "http://example.org/access22" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access22",URL="http://example.org/access22"]
 "http://example.org/access22-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1462,7 +1462,7 @@ v_range[0]
 "http://example.org/dist@i#3-attrs" -> "http://example.org/dist@i#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#3" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[0]
-2018-06-09T21:04:18.191194"]
+2018-06-10T17:26:44.221700"]
 "http://example.org/access23" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access23",URL="http://example.org/access23"]
 "http://example.org/access23-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1491,7 +1491,7 @@ vmatrix[0]
 </TABLE>>]
 "http://example.org/disti#3-attrs" -> "http://example.org/disti#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#3" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:18.191194"]
+2018-06-10T17:26:44.221700"]
 "http://example.org/assign13" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign13",URL="http://example.org/assign13"]
 "http://example.org/assign13-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1519,7 +1519,7 @@ vmatrix[0]
 "http://example.org/j#7-attrs" -> "http://example.org/j#7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#7" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:18.337801"]
+2018-06-10T17:26:44.305331"]
 "http://example.org/access24" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access24",URL="http://example.org/access24"]
 "http://example.org/access24-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1548,7 +1548,7 @@ v_range[0]
 "http://example.org/j#8-attrs" -> "http://example.org/j#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#8" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:18.490393"]
+2018-06-10T17:26:44.414678"]
 "http://example.org/access25" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access25",URL="http://example.org/access25"]
 "http://example.org/access25-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1577,7 +1577,7 @@ v_range[1]
 "http://example.org/j#9-attrs" -> "http://example.org/j#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#9" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:18.652015"]
+2018-06-10T17:26:44.512994"]
 "http://example.org/access26" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access26",URL="http://example.org/access26"]
 "http://example.org/access26-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1606,7 +1606,7 @@ v_range[2]
 "http://example.org/disti@k#3-attrs" -> "http://example.org/disti@k#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#3" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[1]
-2018-06-09T21:04:18.804553"]
+2018-06-10T17:26:44.593147"]
 "http://example.org/access27" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access27",URL="http://example.org/access27"]
 "http://example.org/access27-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1636,7 +1636,7 @@ row0[1]
 "http://example.org/distk@j#3-attrs" -> "http://example.org/distk@j#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#3" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[2]
-2018-06-09T21:04:18.805552"]
+2018-06-10T17:26:44.593147"]
 "http://example.org/access28" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access28",URL="http://example.org/access28"]
 "http://example.org/access28-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1673,9 +1673,9 @@ row1[2]
 </TABLE>>]
 "http://example.org/vsum#3-attrs" -> "http://example.org/vsum#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#3" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:18.805552"]
+2018-06-10T17:26:44.593147"]
 "http://example.org/vsum#3" -> "http://example.org/sum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:18.805552"]
+2018-06-10T17:26:44.593147"]
 "http://example.org/+3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+3",URL="http://example.org/+3"]
 "http://example.org/+3-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1703,7 +1703,7 @@ row1[2]
 </TABLE>>]
 "http://example.org/ikj#3-attrs" -> "http://example.org/ikj#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#3" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:18.805552"]
+2018-06-10T17:26:44.593147"]
 "http://example.org/assign14" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign14",URL="http://example.org/assign14"]
 "http://example.org/assign14-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1731,7 +1731,7 @@ row1[2]
 "http://example.org/disti@j#4-attrs" -> "http://example.org/disti@j#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#4" -> "http://example.org/v4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[2]
-2018-06-09T21:04:19.007013"]
+2018-06-10T17:26:44.733739"]
 "http://example.org/access29" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access29",URL="http://example.org/access29"]
 "http://example.org/access29-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1761,12 +1761,12 @@ row0[2]
 "http://example.org/disti@j#5-attrs" -> "http://example.org/disti@j#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row0" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [2]
-2018-06-09T21:04:19.177555"]
+2018-06-10T17:26:44.829910"]
 "http://example.org/vsum#3" -> "http://example.org/disti@j#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [2]
-2018-06-09T21:04:19.177555",style="dashed"]
+2018-06-10T17:26:44.829910",style="dashed"]
 "http://example.org/disti@j#5" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:19.177555"]
+2018-06-10T17:26:44.829910"]
 "http://example.org/assign15" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign15",URL="http://example.org/assign15"]
 "http://example.org/assign15-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1795,7 +1795,7 @@ row0[2]
 "http://example.org/i#5-attrs" -> "http://example.org/i#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#5" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:19.297290"]
+2018-06-10T17:26:44.919670"]
 "http://example.org/access30" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access30",URL="http://example.org/access30"]
 "http://example.org/access30-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1824,7 +1824,7 @@ v_range[1]
 "http://example.org/i#6-attrs" -> "http://example.org/i#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#6" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:19.414920"]
+2018-06-10T17:26:45.001336"]
 "http://example.org/access31" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access31",URL="http://example.org/access31"]
 "http://example.org/access31-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1853,7 +1853,7 @@ v_range[2]
 "http://example.org/dist@i#4-attrs" -> "http://example.org/dist@i#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#4" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[2]
-2018-06-09T21:04:19.560544"]
+2018-06-10T17:26:45.079659"]
 "http://example.org/access32" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access32",URL="http://example.org/access32"]
 "http://example.org/access32-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1882,7 +1882,7 @@ vmatrix[2]
 </TABLE>>]
 "http://example.org/disti#4-attrs" -> "http://example.org/disti#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#4" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:19.560544"]
+2018-06-10T17:26:45.079659"]
 "http://example.org/assign16" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign16",URL="http://example.org/assign16"]
 "http://example.org/assign16-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1910,7 +1910,7 @@ vmatrix[2]
 "http://example.org/j#10-attrs" -> "http://example.org/j#10" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#10" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:19.676221"]
+2018-06-10T17:26:45.356468"]
 "http://example.org/access33" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access33",URL="http://example.org/access33"]
 "http://example.org/access33-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1939,7 +1939,7 @@ v_range[0]
 "http://example.org/disti@k#4-attrs" -> "http://example.org/disti@k#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#4" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[1]
-2018-06-09T21:04:19.770967"]
+2018-06-10T17:26:45.492112"]
 "http://example.org/access34" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access34",URL="http://example.org/access34"]
 "http://example.org/access34-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -1969,7 +1969,7 @@ row2[1]
 "http://example.org/distk@j#4-attrs" -> "http://example.org/distk@j#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#4" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[0]
-2018-06-09T21:04:19.770967"]
+2018-06-10T17:26:45.493103"]
 "http://example.org/access35" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access35",URL="http://example.org/access35"]
 "http://example.org/access35-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2006,9 +2006,9 @@ row1[0]
 </TABLE>>]
 "http://example.org/vsum#4-attrs" -> "http://example.org/vsum#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#4" -> "http://example.org/vsum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:19.770967"]
+2018-06-10T17:26:45.493103"]
 "http://example.org/vsum#4" -> "http://example.org/sum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:19.770967"]
+2018-06-10T17:26:45.493103"]
 "http://example.org/+4" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+4",URL="http://example.org/+4"]
 "http://example.org/+4-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2036,7 +2036,7 @@ row1[0]
 </TABLE>>]
 "http://example.org/ikj#4-attrs" -> "http://example.org/ikj#4" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#4" -> "http://example.org/vsum#4" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:19.770967"]
+2018-06-10T17:26:45.493103"]
 "http://example.org/assign17" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign17",URL="http://example.org/assign17"]
 "http://example.org/assign17-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2064,7 +2064,7 @@ row1[0]
 "http://example.org/disti@j#6-attrs" -> "http://example.org/disti@j#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#6" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[0]
-2018-06-09T21:04:19.915582"]
+2018-06-10T17:26:45.699550"]
 "http://example.org/access36" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access36",URL="http://example.org/access36"]
 "http://example.org/access36-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2094,7 +2094,7 @@ row2[0]
 "http://example.org/j#11-attrs" -> "http://example.org/j#11" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#11" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:20.003347"]
+2018-06-10T17:26:45.847157"]
 "http://example.org/access37" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access37",URL="http://example.org/access37"]
 "http://example.org/access37-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2123,7 +2123,7 @@ v_range[1]
 "http://example.org/j#12-attrs" -> "http://example.org/j#12" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#12" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:20.130147"]
+2018-06-10T17:26:46.021689"]
 "http://example.org/access38" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access38",URL="http://example.org/access38"]
 "http://example.org/access38-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2152,7 +2152,7 @@ v_range[2]
 "http://example.org/k#3-attrs" -> "http://example.org/k#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/k#3" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:20.246698"]
+2018-06-10T17:26:46.168298"]
 "http://example.org/access39" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access39",URL="http://example.org/access39"]
 "http://example.org/access39-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2181,7 +2181,7 @@ v_range[2]
 "http://example.org/dist@k#3-attrs" -> "http://example.org/dist@k#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@k#3" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[2]
-2018-06-09T21:04:20.351415"]
+2018-06-10T17:26:46.317896"]
 "http://example.org/access40" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access40",URL="http://example.org/access40"]
 "http://example.org/access40-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2210,7 +2210,7 @@ vmatrix[2]
 </TABLE>>]
 "http://example.org/distk#3-attrs" -> "http://example.org/distk#3" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk#3" -> "http://example.org/row2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:20.351415"]
+2018-06-10T17:26:46.317896"]
 "http://example.org/assign18" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign18",URL="http://example.org/assign18"]
 "http://example.org/assign18-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2238,7 +2238,7 @@ vmatrix[2]
 "http://example.org/i#7-attrs" -> "http://example.org/i#7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#7" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:20.464158"]
+2018-06-10T17:26:46.433587"]
 "http://example.org/access41" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access41",URL="http://example.org/access41"]
 "http://example.org/access41-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2267,7 +2267,7 @@ v_range[0]
 "http://example.org/dist@i#5-attrs" -> "http://example.org/dist@i#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#5" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[0]
-2018-06-09T21:04:20.587783"]
+2018-06-10T17:26:46.529332"]
 "http://example.org/access42" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access42",URL="http://example.org/access42"]
 "http://example.org/access42-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2296,7 +2296,7 @@ vmatrix[0]
 </TABLE>>]
 "http://example.org/disti#5-attrs" -> "http://example.org/disti#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#5" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:20.587783"]
+2018-06-10T17:26:46.529332"]
 "http://example.org/assign19" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign19",URL="http://example.org/assign19"]
 "http://example.org/assign19-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2324,7 +2324,7 @@ vmatrix[0]
 "http://example.org/j#13-attrs" -> "http://example.org/j#13" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#13" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:20.720429"]
+2018-06-10T17:26:46.654995"]
 "http://example.org/access43" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access43",URL="http://example.org/access43"]
 "http://example.org/access43-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2353,7 +2353,7 @@ v_range[0]
 "http://example.org/j#14-attrs" -> "http://example.org/j#14" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#14" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:20.820163"]
+2018-06-10T17:26:46.760719"]
 "http://example.org/access44" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access44",URL="http://example.org/access44"]
 "http://example.org/access44-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2382,7 +2382,7 @@ v_range[1]
 "http://example.org/disti@k#5-attrs" -> "http://example.org/disti@k#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#5" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[2]
-2018-06-09T21:04:20.966815"]
+2018-06-10T17:26:46.860452"]
 "http://example.org/access45" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access45",URL="http://example.org/access45"]
 "http://example.org/access45-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2412,7 +2412,7 @@ row0[2]
 "http://example.org/distk@j#5-attrs" -> "http://example.org/distk@j#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#5" -> "http://example.org/vsum#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[1]
-2018-06-09T21:04:20.966815"]
+2018-06-10T17:26:46.860452"]
 "http://example.org/access46" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access46",URL="http://example.org/access46"]
 "http://example.org/access46-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2449,9 +2449,9 @@ row2[1]
 </TABLE>>]
 "http://example.org/vsum#5-attrs" -> "http://example.org/vsum#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#5" -> "http://example.org/vsum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:20.966815"]
+2018-06-10T17:26:46.860452"]
 "http://example.org/vsum#5" -> "http://example.org/sum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:20.966815"]
+2018-06-10T17:26:46.860452"]
 "http://example.org/+5" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+5",URL="http://example.org/+5"]
 "http://example.org/+5-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2479,7 +2479,7 @@ row2[1]
 </TABLE>>]
 "http://example.org/ikj#5-attrs" -> "http://example.org/ikj#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#5" -> "http://example.org/vsum#5" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:20.966815"]
+2018-06-10T17:26:46.860452"]
 "http://example.org/assign20" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign20",URL="http://example.org/assign20"]
 "http://example.org/assign20-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2507,7 +2507,7 @@ row2[1]
 "http://example.org/disti@j#7-attrs" -> "http://example.org/disti@j#7" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#7" -> "http://example.org/v1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[1]
-2018-06-09T21:04:21.658920"]
+2018-06-10T17:26:47.032985"]
 "http://example.org/access47" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access47",URL="http://example.org/access47"]
 "http://example.org/access47-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2537,7 +2537,7 @@ row0[1]
 "http://example.org/j#15-attrs" -> "http://example.org/j#15" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#15" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:22.068834"]
+2018-06-10T17:26:47.165631"]
 "http://example.org/access48" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access48",URL="http://example.org/access48"]
 "http://example.org/access48-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2566,7 +2566,7 @@ v_range[2]
 "http://example.org/i#8-attrs" -> "http://example.org/i#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#8" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:22.563500"]
+2018-06-10T17:26:47.273343"]
 "http://example.org/access49" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access49",URL="http://example.org/access49"]
 "http://example.org/access49-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2595,7 +2595,7 @@ v_range[1]
 "http://example.org/dist@i#6-attrs" -> "http://example.org/dist@i#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/dist@i#6" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[1]
-2018-06-09T21:04:22.791888"]
+2018-06-10T17:26:47.406986"]
 "http://example.org/access50" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access50",URL="http://example.org/access50"]
 "http://example.org/access50-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2624,7 +2624,7 @@ vmatrix[1]
 </TABLE>>]
 "http://example.org/disti#6-attrs" -> "http://example.org/disti#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti#6" -> "http://example.org/row1" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:22.791888"]
+2018-06-10T17:26:47.406986"]
 "http://example.org/assign21" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign21",URL="http://example.org/assign21"]
 "http://example.org/assign21-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2652,7 +2652,7 @@ vmatrix[1]
 "http://example.org/j#16-attrs" -> "http://example.org/j#16" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#16" -> "http://example.org/v0#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[0]
-2018-06-09T21:04:22.934509"]
+2018-06-10T17:26:47.556585"]
 "http://example.org/access51" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access51",URL="http://example.org/access51"]
 "http://example.org/access51-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2681,7 +2681,7 @@ v_range[0]
 "http://example.org/disti@k#6-attrs" -> "http://example.org/disti@k#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@k#6" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[2]
-2018-06-09T21:04:23.030253"]
+2018-06-10T17:26:47.708180"]
 "http://example.org/access52" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access52",URL="http://example.org/access52"]
 "http://example.org/access52-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2711,7 +2711,7 @@ row1[2]
 "http://example.org/distk@j#6-attrs" -> "http://example.org/distk@j#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/distk@j#6" -> "http://example.org/v2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row2[0]
-2018-06-09T21:04:23.030253"]
+2018-06-10T17:26:47.708180"]
 "http://example.org/access53" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access53",URL="http://example.org/access53"]
 "http://example.org/access53-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2748,9 +2748,9 @@ row2[0]
 </TABLE>>]
 "http://example.org/vsum#6-attrs" -> "http://example.org/vsum#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/sum#6" -> "http://example.org/vsum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="defined
-2018-06-09T21:04:23.030253"]
+2018-06-10T17:26:47.708180"]
 "http://example.org/vsum#6" -> "http://example.org/sum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="def by
-2018-06-09T21:04:23.030253"]
+2018-06-10T17:26:47.708180"]
 "http://example.org/+6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="+6",URL="http://example.org/+6"]
 "http://example.org/+6-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2778,7 +2778,7 @@ row2[0]
 </TABLE>>]
 "http://example.org/ikj#6-attrs" -> "http://example.org/ikj#6" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/ikj#6" -> "http://example.org/vsum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:23.030253"]
+2018-06-10T17:26:47.708180"]
 "http://example.org/assign22" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign22",URL="http://example.org/assign22"]
 "http://example.org/assign22-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2806,7 +2806,7 @@ row2[0]
 "http://example.org/disti@j#8-attrs" -> "http://example.org/disti@j#8" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/disti@j#8" -> "http://example.org/v10000" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row1[0]
-2018-06-09T21:04:23.212764"]
+2018-06-10T17:26:48.006381"]
 "http://example.org/access54" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access54",URL="http://example.org/access54"]
 "http://example.org/access54-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2836,12 +2836,12 @@ row1[0]
 "http://example.org/disti@j#9-attrs" -> "http://example.org/disti@j#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/row1" -> "http://example.org/vsum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-v
 [0]
-2018-06-09T21:04:23.314493"]
+2018-06-10T17:26:48.144013"]
 "http://example.org/vsum#6" -> "http://example.org/disti@j#9" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="der-ins-e
 [0]
-2018-06-09T21:04:23.314493",style="dashed"]
+2018-06-10T17:26:48.144013",style="dashed"]
 "http://example.org/disti@j#9" -> "http://example.org/vsum#6" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="access
-2018-06-09T21:04:23.314493"]
+2018-06-10T17:26:48.144013"]
 "http://example.org/assign23" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign23",URL="http://example.org/assign23"]
 "http://example.org/assign23-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2870,7 +2870,7 @@ row1[0]
 "http://example.org/j#17-attrs" -> "http://example.org/j#17" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#17" -> "http://example.org/v1#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[1]
-2018-06-09T21:04:23.445142"]
+2018-06-10T17:26:48.277658"]
 "http://example.org/access55" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access55",URL="http://example.org/access55"]
 "http://example.org/access55-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2899,7 +2899,7 @@ v_range[1]
 "http://example.org/j#18-attrs" -> "http://example.org/j#18" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/j#18" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:23.568812"]
+2018-06-10T17:26:48.363342"]
 "http://example.org/access56" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access56",URL="http://example.org/access56"]
 "http://example.org/access56-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2928,7 +2928,7 @@ v_range[2]
 "http://example.org/i#9-attrs" -> "http://example.org/i#9" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/i#9" -> "http://example.org/v2#2" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 v_range[2]
-2018-06-09T21:04:23.652587"]
+2018-06-10T17:26:48.470967"]
 "http://example.org/access57" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access57",URL="http://example.org/access57"]
 "http://example.org/access57-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2957,7 +2957,7 @@ v_range[2]
 "http://example.org/result@0-attrs" -> "http://example.org/result@0" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/result@0" -> "http://example.org/row0" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 vmatrix[0]
-2018-06-09T21:04:23.746336"]
+2018-06-10T17:26:48.565712"]
 "http://example.org/access58" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access58",URL="http://example.org/access58"]
 "http://example.org/access58-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -2987,7 +2987,7 @@ vmatrix[0]
 "http://example.org/result@0@2-attrs" -> "http://example.org/result@0@2" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/result@0@2" -> "http://example.org/vsum#3" [fontsize="14",labeldistance="1.5",color="darkgreen",labelangle="60.0",rotation="20",label="part
 row0[2]
-2018-06-09T21:04:23.746336"]
+2018-06-10T17:26:48.565712"]
 "http://example.org/access59" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="access59",URL="http://example.org/access59"]
 "http://example.org/access59-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -3008,68 +3008,68 @@ row0[2]
 </TABLE>>]
 "http://example.org/print1-attrs" -> "http://example.org/print1" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/print1" -> "http://example.org/result@0@2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign11" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+3" -> "http://example.org/disti@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+5" -> "http://example.org/disti@k#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign16" -> "http://example.org/dist@i#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign2" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign9" -> "http://example.org/dist@i#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+2" -> "http://example.org/disti@k#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign17" -> "http://example.org/sum#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign19" -> "http://example.org/dist@i#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign15" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign13" -> "http://example.org/dist@i#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign18" -> "http://example.org/dist@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign5" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign12" -> "http://example.org/dist@k#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign4" -> "http://example.org/len_dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign14" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+3" -> "http://example.org/distk@j#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+1" -> "http://example.org/distk@j#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+4" -> "http://example.org/distk@j#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+6" -> "http://example.org/distk@j#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign8" -> "http://example.org/sum#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+6" -> "http://example.org/disti@k#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign6" -> "http://example.org/dist@k#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+2" -> "http://example.org/distk@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign20" -> "http://example.org/sum#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign3" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+4" -> "http://example.org/disti@k#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign10" -> "http://example.org/sum#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+1" -> "http://example.org/disti@k#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign7" -> "http://example.org/dist@i#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/+5" -> "http://example.org/distk@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign22" -> "http://example.org/sum#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/assign23" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
 "http://example.org/assign21" -> "http://example.org/dist@i#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
-"http://example.org/distk#2" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti@j#5" -> "http://example.org/assign15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#4" -> "http://example.org/+4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#4" -> "http://example.org/assign17" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#3" -> "http://example.org/assign14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#4" -> "http://example.org/assign16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/+6" -> "http://example.org/disti@k#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign19" -> "http://example.org/dist@i#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign22" -> "http://example.org/sum#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign5" -> "http://example.org/range_nodes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign6" -> "http://example.org/dist@k#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+3" -> "http://example.org/disti@k#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign13" -> "http://example.org/dist@i#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign17" -> "http://example.org/sum#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+1" -> "http://example.org/disti@k#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign3" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign23" -> "http://example.org/ikj#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign20" -> "http://example.org/sum#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign2" -> "http://example.org/matrix" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign7" -> "http://example.org/dist@i#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+2" -> "http://example.org/disti@k#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+4" -> "http://example.org/disti@k#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+5" -> "http://example.org/distk@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign16" -> "http://example.org/dist@i#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign15" -> "http://example.org/ikj#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign10" -> "http://example.org/sum#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+4" -> "http://example.org/distk@j#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+5" -> "http://example.org/disti@k#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign11" -> "http://example.org/ikj#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign9" -> "http://example.org/dist@i#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign4" -> "http://example.org/len_dist" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign8" -> "http://example.org/sum#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+3" -> "http://example.org/distk@j#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+6" -> "http://example.org/distk@j#6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+1" -> "http://example.org/distk@j#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign12" -> "http://example.org/dist@k#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign14" -> "http://example.org/sum#3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/+2" -> "http://example.org/distk@j#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/assign1" -> "http://example.org/10000" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use"]
+"http://example.org/ikj#1" -> "http://example.org/assign8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/sum#2" -> "http://example.org/+2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#3" -> "http://example.org/assign13" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/distk#3" -> "http://example.org/assign18" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/sum#3" -> "http://example.org/+3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#5" -> "http://example.org/assign19" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/indexes" -> "http://example.org/assign5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/distk#1" -> "http://example.org/assign6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/dist" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#5" -> "http://example.org/+5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/nodes" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/distk#2" -> "http://example.org/assign12" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/result" -> "http://example.org/assign3" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti@j#3" -> "http://example.org/assign11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#2" -> "http://example.org/assign10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/disti#6" -> "http://example.org/assign21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#1" -> "http://example.org/+1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/disti#2" -> "http://example.org/assign9" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/sum#6" -> "http://example.org/+6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#5" -> "http://example.org/assign20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#1" -> "http://example.org/assign8" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/disti@j#9" -> "http://example.org/assign23" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
-"http://example.org/ikj#6" -> "http://example.org/assign22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti@j#3" -> "http://example.org/assign11" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti#3" -> "http://example.org/assign13" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti#4" -> "http://example.org/assign16" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti#5" -> "http://example.org/assign19" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 "http://example.org/disti#1" -> "http://example.org/assign7" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/sum#4" -> "http://example.org/+4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti#6" -> "http://example.org/assign21" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/indexes" -> "http://example.org/assign5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/dist" -> "http://example.org/assign2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj#2" -> "http://example.org/assign10" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/sum#1" -> "http://example.org/+1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/disti@j#5" -> "http://example.org/assign15" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj#5" -> "http://example.org/assign20" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj#6" -> "http://example.org/assign22" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/distk#1" -> "http://example.org/assign6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj#4" -> "http://example.org/assign17" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/sum#6" -> "http://example.org/+6" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/m" -> "http://example.org/assign1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/ikj#3" -> "http://example.org/assign14" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/nodes" -> "http://example.org/assign4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
+"http://example.org/sum#5" -> "http://example.org/+5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen"]
 }

@@ -65,7 +65,7 @@ def add(text):
     if ENABLED:
         print(text)
 
-def stats(path=None, view=False, temp=False, show=True, engine="dot", style="hide"):
+def stats(path=None, view=False, temp=False, show=True, engine="dot", style="paper2"):
     provn = "\n".join(TEMP if temp else RESULT)
     if not provn:
         return
@@ -80,20 +80,20 @@ def stats(path=None, view=False, temp=False, show=True, engine="dot", style="hid
     if not STATS_VIEW and not ENABLED:
         return result
     if not view:
-        view = "provn"
+        view = "provn dot"
         show = False
     if view is True:
-        view = "provn png svg pdf"
+        view = "provn png svg pdf dot"
     from IPython.display import display
     if engine != "dot":
         provn = 'graph [overlap=false]\n##H##\n' + provn
-    im = ProvMagic().provn("-o {} -e {} -p {} -s {}".format(path, view, engine, style), provn)
+    im = get_ipython().run_cell_magic("provn", "-o {} -e {} -p {} -s {}".format(path, view, engine, style), provn)
     if show:
         display(im)
     return result
 
-def finish(show_count=True, style="hide"):
-    stats(join(BASE, "floydwarshall_org"), True, show=False, engine="dot", style="default")
+def finish(show_count=True, style="paper2"):
+    stats(join(BASE, "floydwarshall_org"), True, show=False, engine="dot", style="paper3")
     res = stats(join(BASE, "floydwarshall"), True, engine="twopi", style=style)
     if show_count:
         pprint(res)
@@ -516,7 +516,7 @@ def desc(desc, enabled=False, line=None):
         .replace("__", "_")
     )
 
-    stats(join(BASE, "temp", get_varname(slug, sep="_")), "provn svg", True, False)
+    stats(join(BASE, "temp", get_varname(slug, sep="_")), "provn svg dot", True, False)
     TEMP = ptemp + TEMP
     LINE = ltemp
     if enabled:

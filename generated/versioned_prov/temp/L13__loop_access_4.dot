@@ -4,12 +4,12 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/j#4" -> "bn0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:10.481156",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.854657",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/indexes" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/range_nodes0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[0]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access14" -> "http://example.org/indexes" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access14" -> "http://example.org/range_nodes0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:10.481156",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.854657",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/j#4" -> "http://example.org/access14" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:10.481156",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.854657",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

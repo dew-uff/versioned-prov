@@ -3,7 +3,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/access37" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access37",URL="http://example.org/access37"]
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@k#5" -> "bn0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-2018-06-09T21:00:45.180270",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:40.149725",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/disti#4" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[1]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access37" -> "http://example.org/disti#4" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -12,7 +12,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/access38" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="access38",URL="http://example.org/access38"]
 "bn1" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk@j#5" -> "bn1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ac-r
-2018-06-09T21:00:45.180270",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:40.149725",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn1" -> "http://example.org/distk#2" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn1" -> "http://example.org/2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[2]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access38" -> "http://example.org/distk#2" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -22,7 +22,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/sum#5_v1-attrs" [color="gray",shape="note",fontsize="10",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">checkpoint:</TD>
-	    <TD align="left">2018-06-09 21:00:45.181300</TD>
+	    <TD align="left">2018-06-10 17:24:40.149725</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -56,20 +56,20 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "http://example.org/ikj#5-attrs" -> "http://example.org/ikj#5" [color="gray",style="dashed",arrowhead="none"]
 "http://example.org/assign17" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign17",URL="http://example.org/assign17"]
 "http://example.org/ikj#5" -> "http://example.org/sum#5" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
-2018-06-09T21:00:45.181300",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access37" -> "http://example.org/1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-06-09T21:00:45.180270",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/+5" -> "http://example.org/distk@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access38" -> "http://example.org/2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-06-09T21:00:45.180270",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/+5" -> "http://example.org/disti@k#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/assign17" -> "http://example.org/sum#5" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-2018-06-09T21:00:45.181300",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/disti@k#5" -> "http://example.org/access37" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-06-09T21:00:45.180270",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/distk@j#5" -> "http://example.org/access38" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-06-09T21:00:45.180270",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access38" -> "http://example.org/2" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+5" -> "http://example.org/distk@j#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+5" -> "http://example.org/disti@k#5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access37" -> "http://example.org/1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/sum#5" -> "http://example.org/+5" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/distk@j#5" -> "http://example.org/access38" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/disti@k#5" -> "http://example.org/access37" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/ikj#5" -> "http://example.org/assign17" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-2018-06-09T21:00:45.181300",fontcolor="#F0F0F0",color="#F0F0F0"]
+2018-06-10T17:24:40.149725",fontcolor="#F0F0F0",color="#F0F0F0"]
 }

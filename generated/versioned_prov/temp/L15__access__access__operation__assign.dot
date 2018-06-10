@@ -4,7 +4,7 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 "bn0" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@k#1" -> "bn0" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.359308",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.308121",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/disti#1" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn0" -> "http://example.org/m" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[0]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access9" -> "http://example.org/disti#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -14,7 +14,7 @@ ckpt: 2018-06-09T21:11:09.359308",arrowhead="none",fontcolor="#F0F0F0",color="#F
 "bn1" [shape="point",label="",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk@j#1" -> "bn1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
 ac-read
-ckpt: 2018-06-09T21:11:09.360154",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.309118",arrowhead="none",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn1" -> "http://example.org/distk#1" [style="dashed",fontcolor="#F0F0F0",color="#F0F0F0"]
 "bn1" -> "http://example.org/4" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="[2]",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/access10" -> "http://example.org/distk#1" [labelfontsize="8",labeldistance="1.5",labelangle="60.0",rotation="20",taillabel="use",fontcolor="#F0F0F0",color="#F0F0F0"]
@@ -22,29 +22,29 @@ ckpt: 2018-06-09T21:11:09.360154",arrowhead="none",fontcolor="#F0F0F0",color="#F
 "http://example.org/sum#1" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="sum#1",URL="http://example.org/sum#1"]
 "http://example.org/+1" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="+1",URL="http://example.org/+1"]
 "http://example.org/sum#1" -> "http://example.org/disti@k#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:09.361159",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.310121",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/sum#1" -> "http://example.org/distk@j#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der
-ckpt: 2018-06-09T21:11:09.361159",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.310121",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/ikj#1" [fillcolor="#FAFAFA",color="#F0F0F0",style="filled",fontcolor="#F0F0F0",label="ikj#1",URL="http://example.org/ikj#1"]
 "http://example.org/assign8" [fillcolor="#FAFAFA",color="#F0F0F0",shape="polygon",sides="4",style="filled",fontcolor="#F0F0F0",label="assign8",URL="http://example.org/assign8"]
 "http://example.org/ikj#1" -> "http://example.org/sum#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="der ref
-ckpt: 2018-06-09T21:11:09.361174",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access10" -> "http://example.org/4" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.360154",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/+1" -> "http://example.org/distk@j#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361159",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/assign8" -> "http://example.org/sum#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361174",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/access9" -> "http://example.org/m" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.359308",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.311113",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/+1" -> "http://example.org/disti@k#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
-ckpt: 2018-06-09T21:11:09.361159",fontcolor="#F0F0F0",color="#F0F0F0"]
-"http://example.org/sum#1" -> "http://example.org/+1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.361159",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.310121",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/assign8" -> "http://example.org/sum#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.311113",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access10" -> "http://example.org/4" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.309118",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/+1" -> "http://example.org/distk@j#1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.310121",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/access9" -> "http://example.org/m" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="use
+ckpt: 2018-06-10T17:30:51.308121",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/disti@k#1" -> "http://example.org/access9" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.359308",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.308121",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/ikj#1" -> "http://example.org/assign8" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.361174",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.311113",fontcolor="#F0F0F0",color="#F0F0F0"]
+"http://example.org/sum#1" -> "http://example.org/+1" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
+ckpt: 2018-06-10T17:30:51.310121",fontcolor="#F0F0F0",color="#F0F0F0"]
 "http://example.org/distk@j#1" -> "http://example.org/access10" [fontsize="14",distance="1.5",angle="60.0",rotation="20",label="gen
-ckpt: 2018-06-09T21:11:09.360154",fontcolor="#F0F0F0",color="#F0F0F0"]
+ckpt: 2018-06-10T17:30:51.309118",fontcolor="#F0F0F0",color="#F0F0F0"]
 }
