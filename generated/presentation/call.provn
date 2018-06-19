@@ -1,0 +1,9 @@
+entity(a, [value="534", type="script:name", label="a"])
+entity(b, [value="237", type="script:name", label="b"])
+entity(c, [value="789", type="script:name", label="c"])
+
+entity(result, [value="237", type="script:evaluation"])
+activity(min, [type="script:call"])
+wasDerivedFrom(result, b, min, g1, u1)
+used(min, a)
+used(min, c)

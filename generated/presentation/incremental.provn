@@ -1,0 +1,20 @@
+document
+default <g>
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+
+
+entity(m, [value="10000", type="script:name", label="m"])
+entity(2, [value="2", type="script:literal"])
+entity(0, [value="0", type="script:literal"])
+entity(4, [value="4", type="script:literal"])
+entity(3, [value="3", type="script:literal"])
+entity(d, [value="[2, 10000, 0]", type="script:list", label="[2, m, 0]"])
+hadMember(d, 2, [type="version:Put", version:key="0", version:checkpoint="0"])
+hadMember(d, m, [type="version:Put", version:key="1", version:checkpoint="0"])
+hadMember(d, 0, [type="version:Put", version:key="2", version:checkpoint="0"])
+hadMember(d, 4, [type="version:Put", version:key="3", version:checkpoint="1"])
+hadMember(d, 3, [type="version:Put", version:key="1", version:checkpoint="4"])
+hadMember(d, 4, [type="version:Del", version:key="3", version:checkpoint="10"])
+
+endDocument

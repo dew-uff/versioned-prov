@@ -1,0 +1,91 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"g/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="g/m",fontsize="20"]
+"g/m-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">10000</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">m</TD>
+	</TR>
+</TABLE>>]
+"g/m-attrs" -> "g/m" [color="gray",style="dashed",arrowhead="none"]
+"g/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="g/2",fontsize="20"]
+"g/2-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/2-attrs" -> "g/2" [color="gray",style="dashed",arrowhead="none"]
+"g/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="g/0",fontsize="20"]
+"g/0-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">0</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/0-attrs" -> "g/0" [color="gray",style="dashed",arrowhead="none"]
+"g/4" [fillcolor="#FFFC87",color="#808080",style="filled",label="4",URL="g/4",fontsize="20"]
+"g/4-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">4</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/4-attrs" -> "g/4" [color="gray",style="dashed",arrowhead="none"]
+"g/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="g/3",fontsize="20"]
+"g/3-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">3</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/3-attrs" -> "g/3" [color="gray",style="dashed",arrowhead="none"]
+"g/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="g/d",fontsize="20"]
+"g/d-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 10000, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">[2, m, 0]</TD>
+	</TR>
+</TABLE>>]
+"g/d-attrs" -> "g/d" [color="gray",style="dashed",arrowhead="none"]
+"g/d" -> "g/2" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[0]<br/>ckpt:&nbsp;0</font>>]
+"g/d" -> "g/m" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;0</font>>]
+"g/d" -> "g/0" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[2]<br/>ckpt:&nbsp;0</font>>]
+"g/d" -> "g/4" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[3]<br/>ckpt:&nbsp;1</font>>]
+"g/d" -> "g/3" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;4</font>>]
+"g/d" -> "g/4" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">del</font><font color="#800000">&nbsp;[3]<br/>ckpt:&nbsp;10</font>>]
+
+"g/2"->"g/m"->"g/0"->"g/4"->"g/3" [style=invis]
+{rank=same "g/2" "g/m" "g/0" "g/3" "g/4" }
+}

@@ -1,0 +1,4 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="http://example.org/d",fontsize="20"]
+"http://example.org/assign1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign1",URL="http://example.org/assign1",fontsize="20"]
+}
