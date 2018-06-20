@@ -8,4 +8,7 @@ entity(a)
 activity(insert)
 activity(remove)
 activity(modify)
+used(insert, a, [dot:dist="1", dot:angle="-60"])
+used(remove, a)
+used(modify, a)
 endDocument

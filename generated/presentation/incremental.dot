@@ -1,20 +1,16 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"g/m" [fillcolor="#FFFC87",color="#808080",style="filled",label="m",URL="g/m",fontsize="20"]
-"g/m-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/6" [fillcolor="#FFFC87",color="#808080",style="filled",label="6",URL="g/6",fontsize="20"]
+"g/6-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">10000</TD>
+	    <TD align="left">6</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">name</TD>
-	</TR>
-	<TR>
-	    <TD align="left">label:</TD>
-	    <TD align="left">m</TD>
+	    <TD align="left">literal</TD>
 	</TR>
 </TABLE>>]
-"g/m-attrs" -> "g/m" [color="gray",style="dashed",arrowhead="none"]
+"g/6-attrs" -> "g/6" [color="gray",style="dashed",arrowhead="none"]
 "g/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="g/2",fontsize="20"]
 "g/2-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -63,11 +59,11 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 </TABLE>>]
 "g/3-attrs" -> "g/3" [color="gray",style="dashed",arrowhead="none"]
-"g/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="g/d",fontsize="20"]
-"g/d-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="g/a",fontsize="20"]
+"g/a-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[2, 10000, 0]</TD>
+	    <TD align="left">[2, 6, 0]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -75,17 +71,17 @@ digraph "PROV" { size="16,12"; rankdir="BT";
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">[2, m, 0]</TD>
+	    <TD align="left">[2, 6, 0]</TD>
 	</TR>
 </TABLE>>]
-"g/d-attrs" -> "g/d" [color="gray",style="dashed",arrowhead="none"]
-"g/d" -> "g/2" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[0]<br/>ckpt:&nbsp;0</font>>]
-"g/d" -> "g/m" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;0</font>>]
-"g/d" -> "g/0" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[2]<br/>ckpt:&nbsp;0</font>>]
-"g/d" -> "g/4" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[3]<br/>ckpt:&nbsp;1</font>>]
-"g/d" -> "g/3" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;4</font>>]
-"g/d" -> "g/4" [fontsize="20",labeldistance="2",color="black",labelangle="60.0",rotation="20",label=<<font color="black">del</font><font color="#800000">&nbsp;[3]<br/>ckpt:&nbsp;10</font>>]
+"g/a-attrs" -> "g/a" [color="gray",style="dashed",arrowhead="none"]
+"g/a" -> "g/2" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000"> [0]<br/>ckpt: 0</font>>]
+"g/a" -> "g/6" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000"> [1]<br/>ckpt: 0</font>>]
+"g/a" -> "g/0" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000"> [2]<br/>ckpt: 0</font>>]
+"g/a" -> "g/4" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000"> [3]<br/>ckpt: 1</font>>]
+"g/a" -> "g/3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000"> [1]<br/>ckpt: 4</font>>]
+"g/a" -> "g/4" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">del</font><font color="#800000"> [3]<br/>ckpt: 10</font>>]
 
-"g/2"->"g/m"->"g/0"->"g/4"->"g/3" [style=invis]
-{rank=same "g/2" "g/m" "g/0" "g/3" "g/4" }
+"g/2"->"g/6"->"g/0"->"g/4"->"g/3" [style=invis]
+{rank=same "g/2" "g/6" "g/0" "g/3" "g/4" }
 }

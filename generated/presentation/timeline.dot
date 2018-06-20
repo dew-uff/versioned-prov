@@ -1,4 +1,30 @@
 digraph "PROV" { size="16,12"; rankdir="BT";
-"http://example.org/d" [fillcolor="#FFFC87",color="#808080",style="filled",label="d",URL="http://example.org/d",fontsize="20"]
-"http://example.org/assign1" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign1",URL="http://example.org/assign1",fontsize="20"]
+ranksep=0.05
+color=white
+"g/modify" [shape=box color=white fixedsize=true width=1.5]
+"g/remove" [shape=box color=white fixedsize=true width=1.5]
+"g/insert" [shape=box color=white fixedsize=true width=1.5]
+edge [minlen=2]
+
+"g/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="g/a",fontsize="20"]
+"g/insert" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="insert",URL="g/insert",fontsize="20"]
+"g/remove" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="remove",URL="g/remove",fontsize="20"]
+"g/modify" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="modify",URL="g/modify",fontsize="20"]
+
+
+    color=white
+    node [shape=box color=white fixedsize=true width=1.5]
+    chk1 [label="checkpoint: 1" ]
+    chk10 [label="checkpoint: 10"]
+    chk4 [label="checkpoint: 4" ]
+    "g/insert" -> chk1  [style=invis minlen=1]
+    "g/remove" -> chk10 [style=invis minlen=1]
+    "g/modify" -> chk4  [style=invis minlen=1]
+    
+    "g/a" -> "g/insert" -> "g/modify" -> "g/remove" [arrowhead=none]
+    end [label="" shape=box color=white fixedsize=true width=1.5]
+    "g/remove" -> end
+
+    
+{rank=same "g/a" "g/insert"  "g/modify"  "g/remove" end}
 }

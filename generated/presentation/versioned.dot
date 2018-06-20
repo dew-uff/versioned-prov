@@ -1,0 +1,32 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+ranksep=0.1; 
+
+subgraph cluster_1 {
+    color=white
+    "g/modify" [shape=box color=white fixedsize=true width=1.5]
+    "g/remove" [shape=box color=white fixedsize=true width=1.5]
+    "g/insert" [shape=box color=white fixedsize=true width=1.5]
+
+    edge [minlen=6]
+
+"g/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="g/a",fontsize="20"]
+"g/insert" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="insert",URL="g/insert",fontsize="20"]
+"g/remove" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="remove",URL="g/remove",fontsize="20"]
+"g/modify" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="modify",URL="g/modify",fontsize="20"]
+"g/insert" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="-60",rotation="20",taillabel="use",dist="1",angle="-60"]
+"g/remove" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
+"g/modify" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
+
+}
+
+subgraph cluster_0 {
+    color=white
+    node [shape=box color=white fixedsize=true width=1.5]
+    chk1 [label="checkpoint: 1" ]
+    chk10 [label="checkpoint: 10"]
+    chk4 [label="checkpoint: 4" ]
+    chk1 -> "g/insert" [style=invis]
+    chk10 -> "g/remove" [style=invis]
+    chk4 -> "g/modify" [style=invis]
+}
+}

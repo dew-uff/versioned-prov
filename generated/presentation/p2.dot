@@ -9,11 +9,11 @@ subgraph cluster_0 {
     fontcolor = "#333333"
     fontsize = "36"
     label = "A";
-    "g/d@1"; "g/1"; "g/3"
-    "g/d#1"; "g/assign3"
+    "g/a@1"; "g/1"; "g/3"
+    "g/a#1"; "g/assign3"
     
-    "g/d@1-attrs"; "g/1-attrs"; "g/3-attrs"
-    "g/d#1-attrs"; "g/assign3-attrs"
+    "g/a@1-attrs"; "g/1-attrs"; "g/3-attrs"
+    "g/a#1-attrs"; "g/assign3-attrs"
     
     
 }
@@ -24,7 +24,7 @@ subgraph cluster_1 {
     fontcolor = "#333333"
     fontsize = "36"
     label = "B";
-    "g/0"; "g/m"; "g/2"; "g/x#1";
+    "g/2"; "g/6"; "g/0"; "g/b#1";
 }
 
 subgraph cluster_2 {
@@ -34,18 +34,19 @@ subgraph cluster_2 {
     fontcolor = "#333333"
     fontsize = "36"
     label = "C";
-    "g/d#2";
-    "g/x#2"; "g/x#2-attrs" 
+    "g/a#2";
+    "g/b#2"; "g/b#2-attrs" 
 }
 
-"g/m" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="m",URL="g/m",fontsize="20"]
+
 "g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2",fontsize="20"]
+"g/6" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="6",URL="g/6",fontsize="20"]
 "g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0",fontsize="20"]
-"g/d#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d#1",URL="g/d#1",fontsize="20"]
-"g/d#1-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/a#1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a#1",URL="g/a#1",fontsize="20"]
+"g/a#1-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
-	    <TD align="left">[2, 10000, 0]</TD>
+	    <TD align="left">[2, 6, 0]</TD>
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
@@ -53,11 +54,11 @@ subgraph cluster_2 {
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">d</TD>
+	    <TD align="left">a</TD>
 	</TR>
 </TABLE>>]
-"g/d#1-attrs" -> "g/d#1" [color="gray",style="dashed",arrowhead="none"]
-"g/x#1" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="x#1",URL="g/x#1",fontsize="20"]
+"g/a#1-attrs" -> "g/a#1" [color="gray",style="dashed",arrowhead="none"]
+"g/b#1" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="b#1",URL="g/b#1",fontsize="20"]
 "g/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="g/3",fontsize="20"]
 "g/3-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -82,9 +83,9 @@ subgraph cluster_2 {
 	</TR>
 </TABLE>>]
 "g/1-attrs" -> "g/1" [color="gray",style="dashed",arrowhead="none"]
-"g/d#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="d#2",URL="g/d#2",fontsize="20"]
-"g/x#2" [fillcolor="#ffe6e6",color="#800000",style="filled",fontcolor="#800000",label="x#2",URL="g/x#2",fontsize="20"]
-"g/x#2-attrs" [color="#800000",shape="note",fontsize="13",fontcolor="#800000",label=<<TABLE cellpadding="0" border="0">
+"g/a#2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="a#2",URL="g/a#2",fontsize="20"]
+"g/b#2" [fillcolor="#ffe6e6",color="#800000",style="filled",fontcolor="#800000",label="b#2",URL="g/b#2",fontsize="20"]
+"g/b#2-attrs" [color="#800000",shape="note",fontsize="13",fontcolor="#800000",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">[2, 3, 0]</TD>
@@ -95,12 +96,12 @@ subgraph cluster_2 {
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">x</TD>
+	    <TD align="left">b</TD>
 	</TR>
 </TABLE>>]
-"g/x#2-attrs" -> "g/x#2" [color="#800000",style="dashed",arrowhead="none",fontcolor="#800000"]
-"g/d@1" [fillcolor="#FFFC87",color="#808080",style="filled",label="d@1",URL="g/d@1",fontsize="20"]
-"g/d@1-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+"g/b#2-attrs" -> "g/b#2" [color="#800000",style="dashed",arrowhead="none",fontcolor="#800000"]
+"g/a@1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a@1",URL="g/a@1",fontsize="20"]
+"g/a@1-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
 	    <TD align="left">value:</TD>
 	    <TD align="left">3</TD>
@@ -111,22 +112,22 @@ subgraph cluster_2 {
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
-	    <TD align="left">d[1]</TD>
+	    <TD align="left">a[1]</TD>
 	</TR>
 </TABLE>>]
-"g/d@1-attrs" -> "g/d@1" [color="gray",style="dashed",arrowhead="none"]
-"g/d#1" -> "g/2" [fontcolor="#999999",color="#999999"]
-"g/d#1" -> "g/m" [fontcolor="#999999",color="#999999"]
-"g/d#1" -> "g/0" [fontcolor="#999999",color="#999999"]
-"g/x#1" -> "g/2" [fontcolor="#999999",color="#999999"]
-"g/x#1" -> "g/m" [fontcolor="#999999",color="#999999"]
-"g/x#1" -> "g/0" [fontcolor="#999999",color="#999999"]
-"g/d#2" -> "g/2" [fontcolor="#999999",color="#999999"]
-"g/d#2" -> "g/d@1" [fontcolor="#999999",color="#999999"]
-"g/d#2" -> "g/0" [fontcolor="#999999",color="#999999"]
-"g/x#2" -> "g/2" [color="#800000",fontcolor="#800000"]
-"g/x#2" -> "g/d@1" [color="#800000",fontcolor="#800000"]
-"g/x#2" -> "g/0" [color="#800000",fontcolor="#800000"]
+"g/a@1-attrs" -> "g/a@1" [color="gray",style="dashed",arrowhead="none"]
+"g/a#1" -> "g/2" [fontcolor="#999999",color="#999999"]
+"g/a#1" -> "g/6" [fontcolor="#999999",color="#999999"]
+"g/a#1" -> "g/0" [fontcolor="#999999",color="#999999"]
+"g/b#1" -> "g/2" [fontcolor="#999999",color="#999999"]
+"g/b#1" -> "g/6" [fontcolor="#999999",color="#999999"]
+"g/b#1" -> "g/0" [fontcolor="#999999",color="#999999"]
+"g/a#2" -> "g/2" [fontcolor="#999999",color="#999999"]
+"g/a#2" -> "g/a@1" [fontcolor="#999999",color="#999999"]
+"g/a#2" -> "g/0" [fontcolor="#999999",color="#999999"]
+"g/b#2" -> "g/2" [color="#800000",fontcolor="#800000"]
+"g/b#2" -> "g/a@1" [color="#800000",fontcolor="#800000"]
+"g/b#2" -> "g/0" [color="#800000",fontcolor="#800000"]
 "g/assign3" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign3",URL="g/assign3",fontsize="20"]
 "g/assign3-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -135,20 +136,26 @@ subgraph cluster_2 {
 	</TR>
 </TABLE>>]
 "g/assign3-attrs" -> "g/assign3" [color="gray",style="dashed",arrowhead="none"]
-"g/d#2" -> "g/d#1" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#999999",color="#999999"]
-"g/assign3" -> "g/d#1" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="use"]
-"g/d#2" -> "g/3" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#999999",color="#999999"]
-"g/x#2" -> "g/x#1" [fontsize="20",labeldistance="2",color="#800000",labelangle="60.0",rotation="20",label="der",fontcolor="#800000"]
-"g/x#2" -> "g/3" [fontsize="20",labeldistance="2",color="#800000",labelangle="60.0",rotation="20",label="der",fontcolor="#800000"]
-"g/d@1" -> "g/3" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="der"]
-"g/assign3" -> "g/1" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="use"]
+"g/a#2" -> "g/a#1" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="der",fontcolor="#999999",color="#999999"]
+"g/a#2" -> "g/3" [labelfontsize="16",labeldistance="0.5",labelangle="270.0",rotation="20",taillabel="der",dist="0.5",angle="270.0",fontcolor="#999999",color="#999999"]
+"g/assign3" -> "g/a#1" [labelfontsize="16",labeldistance="2",labelangle="-30.0",rotation="20",taillabel="use",dist="2",angle="-30.0"]
+"g/a#2" -> "g/assign3" [labelfontsize="16",labeldistance="1",labelangle="270.0",rotation="20",taillabel="gen",dist="1",angle="270.0",fontcolor="#999999",color="#999999"]
+"g/b#2" -> "g/b#1" [fontsize="20",labeldistance="1",color="#800000",labelangle="60.0",rotation="20",label="der",fontcolor="#800000"]
+"g/b#2" -> "g/3" [fontsize="20",labeldistance="1",color="#800000",labelangle="60.0",rotation="20",label="der",fontcolor="#800000"]
+"g/a@1" -> "g/3" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="der"]
+"g/assign3" -> "g/1" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
 
-"g/m" -> "g/x#1" [style=invis]
-"g/2" -> "g/x#1" [style=invis]
-"g/0" -> "g/x#1" [style=invis]
-"g/assign3" -> "g/x#1" [fontsize="20",labeldistance="2",color="#800000",labelangle="60.0",rotation="20",label="use",fontcolor="#800000"]
-"g/assign3" -> "g/3" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="use"]
-"g/d#2" -> "g/assign3" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="gen",fontcolor="#999999",color="#999999"]
-"g/d@1" -> "g/assign3" [labelfontsize="16",labeldistance="2",labelangle="60.0",rotation="20",taillabel="gen"]
-"g/x#2" -> "g/assign3" [fontsize="20",labeldistance="2",color="#800000",labelangle="60.0",rotation="20",label="gen",fontcolor="#800000"]
+{rank=same "g/2" "g/6" "g/0"}
+{rank=same "g/a@1" "g/a#2" "g/b#2"}
+//{rank=same "g/a#1" "g/a#1-attrs"}
+{rank=same "g/1" "g/3"}
+"g/0" -> "g/6" -> "g/2" [style=invis]
+"g/1" -> "g/2" [style=invis]
+//"g/2" -> "g/3" [style=invis]
+"g/a#2" -> "g/6" [style=invis]
+//"g/b#2" -> "g/6" [style=invis]
+"g/assign3" -> "g/3" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
+"g/assign3" -> "g/b#1" [fontsize="20",labeldistance="1",color="#800000",labelangle="60.0",rotation="20",label="use",fontcolor="#800000"]
+"g/a@1" -> "g/assign3" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="gen"]
+"g/b#2" -> "g/assign3" [fontsize="20",labeldistance="1",color="#800000",labelangle="60.0",rotation="20",label="gen",fontcolor="#800000"]
 }

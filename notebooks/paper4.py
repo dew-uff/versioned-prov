@@ -21,8 +21,8 @@ class DotPaper4(DotPaper):
         if label:
             return {
                 "labelfontsize": self.tail_labelsize,
-                "labeldistance": "1",
-                "labelangle": "60.0",
+                "labeldistance": attrs.get("dot:dist", "1"),
+                "labelangle": attrs.get("dot:angle", "60.0"),
                 "rotation": "20",
                 "taillabel": label.replace('"', '\\"')
             }
@@ -36,7 +36,7 @@ class DotPaper4(DotPaper):
                 part1 = '<font color="{}">{}</font>'.format(color, split[0])
                 part2 = ""
                 if len(split) > 1:
-                    part2 = "".join(split[1:]).replace("\n", "<br/>").replace(" ", "&nbsp;")
+                    part2 = "".join(split[1:]).replace("\n", "<br/>")
                     part2 = '<font color="{}">{}</font>'.format(self.specific2, part2)
                 label = ("<{}{}>".format(part1, part2))
             else:
@@ -44,9 +44,9 @@ class DotPaper4(DotPaper):
             return {
                 "fontsize": self.labelsize,
 
-                "labeldistance": "1",
+                "labeldistance": attrs.get("dot:dist", "1"),
                 "color": color,
-                "labelangle": "60.0",
+                "labelangle": attrs.get("dot:angle", "60.0"),
                 "rotation": "20",
                 "label": label
             }
