@@ -36,7 +36,7 @@ class DotPaper4(DotPaper):
                 part1 = '<font color="{}">{}</font>'.format(color, split[0])
                 part2 = ""
                 if len(split) > 1:
-                    part2 = "".join(split[1:]).replace("\n", "<br/>")
+                    part2 = "".join(split[1:]).replace("\n", "<br/>").replace(" ", "&nbsp;")
                     part2 = '<font color="{}">{}</font>'.format(self.specific2, part2)
                 label = ("<{}{}>".format(part1, part2))
             else:
@@ -51,6 +51,12 @@ class DotPaper4(DotPaper):
                 "label": label
             }
         return {"color": color}
+    
+    def filter_attr(self, key, value, attrs):
+        if "dot:hide3" in attrs:
+            return False
+        return super(DotPaper4, self).filter_attr(key, value, attrs)
+
 
         
 EXPORT = DotPaper4
