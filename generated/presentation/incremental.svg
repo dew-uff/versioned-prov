@@ -66,48 +66,48 @@
 <path fill="none" stroke="black" d="M208.304,-24.495C184.099,-28.0511 149.338,-37.1492 130,-60.4264 119.137,-73.5023 115.729,-92.1646 115.112,-107.98"/>
 <polygon fill="black" stroke="black" points="111.611,-108.358 115.073,-118.371 118.611,-108.384 111.611,-108.358"/>
 <text text-anchor="start" x="130" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">put</text>
-<text text-anchor="start" x="158" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [1]</text>
-<text text-anchor="start" x="131" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 0</text>
+<text text-anchor="start" x="158" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [1]</text>
+<text text-anchor="start" x="131" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 0</text>
 </g>
 <!-- g/a&#45;&gt;g/2 -->
 <g id="edge1" class="edge"><title>g/a&#45;&gt;g/2</title>
 <path fill="none" stroke="black" d="M208.263,-24.6404C163.638,-29.2036 76.6321,-40.4468 54,-60.4264 40.3957,-72.4363 33.6432,-91.639 30.293,-108.011"/>
 <polygon fill="black" stroke="black" points="26.7766,-107.811 28.5449,-118.257 33.6769,-108.988 26.7766,-107.811"/>
 <text text-anchor="start" x="54" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">put</text>
-<text text-anchor="start" x="82" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [0]</text>
-<text text-anchor="start" x="55" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 0</text>
+<text text-anchor="start" x="82" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [0]</text>
+<text text-anchor="start" x="55" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 0</text>
 </g>
 <!-- g/a&#45;&gt;g/0 -->
 <g id="edge3" class="edge"><title>g/a&#45;&gt;g/0</title>
 <path fill="none" stroke="black" d="M215.355,-35.9434C207.808,-42.4062 200.039,-50.8133 196,-60.4264 189.526,-75.8334 191.709,-94.2974 195.774,-109.416"/>
 <polygon fill="black" stroke="black" points="192.52,-110.74 198.806,-119.269 199.21,-108.682 192.52,-110.74"/>
 <text text-anchor="start" x="196" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">put</text>
-<text text-anchor="start" x="224" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [2]</text>
-<text text-anchor="start" x="197" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 0</text>
+<text text-anchor="start" x="224" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [2]</text>
+<text text-anchor="start" x="197" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 0</text>
 </g>
 <!-- g/a&#45;&gt;g/4 -->
 <g id="edge4" class="edge"><title>g/a&#45;&gt;g/4</title>
 <path fill="none" stroke="black" d="M244.599,-41.2224C254.615,-60.8437 269.837,-90.0138 277,-100.426 280.229,-105.121 283.946,-109.895 287.695,-114.405"/>
 <polygon fill="black" stroke="black" points="285.2,-116.872 294.378,-122.166 290.504,-112.304 285.2,-116.872"/>
 <text text-anchor="start" x="277" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">put</text>
-<text text-anchor="start" x="305" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [3]</text>
-<text text-anchor="start" x="278" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 1</text>
+<text text-anchor="start" x="305" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [3]</text>
+<text text-anchor="start" x="278" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 1</text>
 </g>
 <!-- g/a&#45;&gt;g/4 -->
 <g id="edge6" class="edge"><title>g/a&#45;&gt;g/4</title>
 <path fill="none" stroke="black" d="M261.787,-24.2835C285.452,-27.6943 318.665,-36.6977 335,-60.4264 345.676,-75.9353 338.681,-96.2603 329.408,-112.304"/>
 <polygon fill="black" stroke="black" points="326.179,-110.862 323.801,-121.186 332.098,-114.598 326.179,-110.862"/>
 <text text-anchor="start" x="346.5" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">del</text>
-<text text-anchor="start" x="372.5" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [3]</text>
-<text text-anchor="start" x="341" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 10</text>
+<text text-anchor="start" x="372.5" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [3]</text>
+<text text-anchor="start" x="341" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 10</text>
 </g>
 <!-- g/a&#45;&gt;g/3 -->
 <g id="edge5" class="edge"><title>g/a&#45;&gt;g/3</title>
 <path fill="none" stroke="black" d="M261.812,-24.4292C306.027,-28.6462 391.403,-39.3465 412,-60.4264 424.128,-72.8379 427.969,-91.8789 428.734,-108.066"/>
 <polygon fill="black" stroke="black" points="425.236,-108.233 428.849,-118.192 432.235,-108.153 425.236,-108.233"/>
 <text text-anchor="start" x="427" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00">put</text>
-<text text-anchor="start" x="455" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">Â [1]</text>
-<text text-anchor="start" x="428" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt:Â 4</text>
+<text text-anchor="start" x="455" y="-85.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000"> [1]</text>
+<text text-anchor="start" x="428" y="-65.4264" font-family="Times New Roman,serif" font-size="20.00" fill="#800000">ckpt: 4</text>
 </g>
 </g>
 </svg>
