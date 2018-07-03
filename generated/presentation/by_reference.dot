@@ -1,0 +1,80 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+newrank=true;
+splines = "spline"
+
+subgraph cluster_0 {
+    labeljust="r"
+    labelloc="b"
+    color = "#333333"
+    fontcolor = "#333333"
+    fontsize = "24"
+    fontcolor = "white"
+    label = "Assign";
+    "g/list";
+    "g/a"; "g/assign6"
+    "g/list-attrs";
+    "g/a-attrs"; "g/assign6-attrs"
+    
+}
+subgraph cluster_1 {
+    labeljust="r"
+    labelloc="b"
+    color = "#333333"
+    fontcolor = "#333333"
+    fontsize = "24"
+    fontcolor = "white"
+    label = "Member";
+    "g/2"; "g/6";  "g/0"; 
+}
+
+"g/6" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="6",URL="g/6",fontsize="20"]
+"g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2",fontsize="20"]
+"g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0",fontsize="20"]
+"g/list" [fillcolor="#FFFC87",color="#808080",style="filled",label="list",URL="g/list",fontsize="20"]
+"g/list-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 6, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+</TABLE>>]
+"g/list-attrs" -> "g/list" [color="gray",style="dashed",arrowhead="none"]
+"g/list" -> "g/2" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [0]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/6" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/0" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [2]
+ckpt: 0",fontcolor="#999999"]
+"g/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="g/a",fontsize="20"]
+"g/a-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 6, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">name</TD>
+	</TR>
+	<TR>
+	    <TD align="left">label:</TD>
+	    <TD align="left">a</TD>
+	</TR>
+</TABLE>>]
+"g/a-attrs" -> "g/a" [color="gray",style="dashed",arrowhead="none"]
+"g/assign6" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="assign6",URL="g/assign6",fontsize="20"]
+"g/assign6-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">assign</TD>
+	</TR>
+</TABLE>>]
+"g/assign6-attrs" -> "g/assign6" [color="gray",style="dashed",arrowhead="none"]
+"g/a" -> "g/list" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">der</font><font color="#800000">&nbsp;ref<br/>ckpt:&nbsp;0</font>>]
+"g/assign6" -> "g/list" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">use</font><font color="#800000"><br/>ckpt:&nbsp;0</font>>]
+
+{rank=same "g/a" "g/a-attrs"}
+"g/a" -> "g/assign6" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">gen</font><font color="#800000"><br/>ckpt:&nbsp;0</font>>]
+}

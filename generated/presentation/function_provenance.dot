@@ -1,0 +1,12 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"g/read_csv" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="read_csv",URL="g/read_csv",fontsize="20"]
+"g/cum_perc" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="cum_perc",URL="g/cum_perc",fontsize="20"]
+"g/cum_sum" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="cum_sum",URL="g/cum_sum",fontsize="20"]
+"g/sum" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="sum",URL="g/sum",fontsize="20"]
+"g/to_csv" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="to_csv",URL="g/to_csv",fontsize="20"]
+"g/cum_sum" -> "g/cum_perc" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="start",dir="back",arrowtail="oinv"]
+"g/sum" -> "g/cum_perc" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="start",dir="back",arrowtail="oinv"]
+"g/to_csv" -> "g/sum" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="inf"]
+"g/to_csv" -> "g/cum_sum" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="inf"]
+"g/cum_perc" -> "g/read_csv" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="inf"]
+}

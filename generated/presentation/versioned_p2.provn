@@ -4,23 +4,28 @@ default <g>
 prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
 prefix version <https://dew-uff.github.io/versioned-prov/ns#>
 
-
 entity(6, [value="6", type="script:literal", dot:hide2="true"])
 entity(2, [value="2", type="script:literal", dot:hide2="true"])
 entity(0, [value="0", type="script:literal", dot:hide2="true"])
-entity(a, [value="[2, 6, 0]", type="script:list", label="a"])
+entity(list, [value="[2, 6, 0]", type="script:list", dot:hide2="true"])
+entity(b, [value="[2, 6, 0]", type="script:name", label="b", dot:hide2="true"])
+
+hadMember(list, 2, [type="version:Put", version:key="0", version:checkpoint="0", dot:hide2="true"])
+hadMember(list, 6, [type="version:Put", version:key="1", version:checkpoint="0", dot:hide2="true"])
+hadMember(list, 0, [type="version:Put", version:key="2", version:checkpoint="0", dot:hide2="true"])
+entity(a, [value="[2, 6, 0]", type="script:name", label="a"])
 entity(a@1, [value="3", type="script:access", label="a[1]"])
-hadMember(a, 2, [type="version:Put", version:key="0", version:checkpoint="0"])
-hadMember(a, 6, [type="version:Put", version:key="1", version:checkpoint="0"])
-hadMember(a, 0, [type="version:Put", version:key="2", version:checkpoint="0"])
-hadMember(a, a@1, [type="version:Put", version:key="1", version:checkpoint="4"])
+hadMember(list, a@1, [type="version:Put", version:key="1", version:checkpoint="3"])
 entity(3, [value="3", type="script:literal"])
 entity(1, [value="1", type="script:literal"])
 
           
 activity(assign3, [type="script:assign"])
 used(u4; assign3, a, -, [dot:dist="2", dot:angle="-30.0"])
-wasDerivedFrom(a@1, 3, assign3, g5, u5, [type="version:Reference", version:checkpoint="4", version:collection="a", version:key="1", version:access="w"])
+wasDerivedFrom(a@1, 3, assign3, g5, u5, [type="version:Reference", version:checkpoint="3", version:collection="a", version:key="1", version:access="w"])
+wasDerivedFrom(a, list, -, -, -, [type="version:Reference", version:checkpoint="1", dot:hide2="true"])
+wasDerivedFrom(b, a, -, -, -, [type="version:Reference", version:checkpoint="2", dot:hide2="true"])
+
 used(assign3, 1, -)
 
 endDocument

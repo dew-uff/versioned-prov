@@ -1,0 +1,27 @@
+
+document
+default <g>
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+
+
+entity(2, [value="2", type="script:literal", dot:hide2="true"])
+entity(6, [value="6", type="script:literal", dot:hide2="true"])
+entity(0, [value="0", type="script:literal", dot:hide2="true"])
+
+entity(a#1, [value="[2, 6, 0]", type="script:name", label="a"])
+entity(b#1, [value="[2, 6, 0]", type="script:name", label="b"])
+
+hadMember(a#1, 2, [dot:hide2="true"])
+hadMember(a#1, 6, [dot:hide2="true"])
+hadMember(a#1, 0, [dot:hide2="true"])
+
+hadMember(b#1, 2, [dot:specific="true"])
+hadMember(b#1, 6, [dot:specific="true"])
+hadMember(b#1, 0, [dot:specific="true"])
+
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(b#1, a#1, assign3, u3, g3, [dot:dist="2"])
+used(u3; assign3, a#1, -, [dot:dist="0"])
+wasGeneratedBy(g3; b#1, assign3, -, [dot:dist="0"])
+endDocument

@@ -1,0 +1,3 @@
+entity(a1, [value="[]"])
+entity(a2, [value="[[...]]"])
+hadMember(a2, a1)

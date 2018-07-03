@@ -1,0 +1,22 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"g/6" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="6",URL="g/6",fontsize="20"]
+"g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2",fontsize="20"]
+"g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0",fontsize="20"]
+"g/4" [fillcolor="#FFFC87",color="#808080",style="filled",hide3="true",label="4",URL="g/4",fontsize="20"]
+"g/3" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="3",URL="g/3",fontsize="20"]
+"g/list" [fillcolor="#FFFC87",color="#808080",style="filled",hide3="true",label="list",URL="g/list",fontsize="20"]
+"g/list" -> "g/2" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [0]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/6" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/0" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [2]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/4" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [3]
+ckpt: 1",fontcolor="#999999"]
+"g/list" -> "g/3" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 2",fontcolor="#999999"]
+"g/list" -> "g/4" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">del</font><font color="#800000">&nbsp;[3]<br/>ckpt:&nbsp;3</font>>]
+
+"g/2"->"g/6"->"g/0"->"g/4"->"g/3" [style=invis]
+{rank=same "g/2" "g/6" "g/0" "g/3" "g/4" }
+}

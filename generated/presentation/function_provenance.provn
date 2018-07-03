@@ -1,0 +1,17 @@
+document
+default <g>
+activity(read_csv)
+activity(cum_perc)
+activity(cum_sum)
+activity(sum)
+activity(to_csv)
+
+wasStartedBy(cum_sum, -, cum_perc, -)
+wasStartedBy(sum, -, cum_perc, -)
+
+wasInformedBy(to_csv, sum)
+wasInformedBy(to_csv, cum_sum)
+wasInformedBy(cum_perc, read_csv)
+
+
+endDocument

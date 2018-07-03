@@ -1,0 +1,10 @@
+document
+default <g>
+entity(data1, [value="fruit,val1,val2\n...\nmango,5,5", type="file", label="data.csv"])
+entity(data2, [value=",fruit,val1,val2,cum_sum,cum_perc\n...\n2,mango,5,5,30,100.0 ", type="file", label="data2.csv"])
+
+activity(script)
+wasDerivedFrom(data2, data1, script, g1, u1, [dot:dist="2", dot:angle="-60"])
+wasGeneratedBy(g1; data2, script, -, [dot:dist="2", dot:angle="30"])
+used(u1; script, data1, -, [dot:dist="2", dot:angle="30"])
+endDocument

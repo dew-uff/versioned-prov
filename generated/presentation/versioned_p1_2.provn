@@ -1,0 +1,13 @@
+
+document
+default <g>
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+
+entity(a, [value="[2, 6, 0]", type="script:name", label="a"])
+entity(b, [value="[2, 6, 0]", type="script:name", label="b"])
+
+activity(assign3, [type="script:assign"])
+wasDerivedFrom(b, a, assign3, g2, u2, [type="version:Reference", version:checkpoint="2"])
+used(u2; assign3, a, [version:checkpoint="1"])
+endDocument

@@ -1,0 +1,13 @@
+entity(ds1)
+entity(1)
+entity(ds2)
+entity(2)
+entity(ds3)
+entity(3)
+
+hadMember(ds1, 1)
+hadMember(ds1, ds2)
+hadMember(ds2, 2)
+hadMember(ds2, ds3)
+hadMember(ds3, 3)
+hadMember(ds3, ds1)

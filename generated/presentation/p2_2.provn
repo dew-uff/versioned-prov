@@ -1,0 +1,49 @@
+
+document
+default <g>
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+
+
+entity(2, [value="2", type="script:literal", dot:hide2="true"])
+entity(6, [value="6", type="script:literal", dot:hide2="true"])
+entity(0, [value="0", type="script:literal", dot:hide2="true"])
+entity(a#1, [value="[2, 6, 0]", type="script:name", label="a"])
+entity(b#1, [value="[2, 6, 0]", type="script:name", label="b", dot:hide2="true"])
+entity(3, [value="3", type="script:literal"])
+entity(1, [value="1", type="script:literal"])
+entity(a#2, [value="[2, 3, 0]", type="script:name", label="a", dot:specific="true"])
+entity(b#2, [value="[2, 3, 0]", type="script:name", label="b", dot:specific="true"])
+
+       
+       
+entity(a@1, [value="3", type="script:access", label="a[1]"])
+       
+hadMember(a#1, 2, [dot:hide2="true"])
+hadMember(a#1, 6, [dot:hide2="true"])
+hadMember(a#1, 0, [dot:hide2="true"])
+          
+hadMember(b#1, 2, [dot:hide2="true"])
+hadMember(b#1, 6, [dot:hide2="true"])
+hadMember(b#1, 0, [dot:hide2="true"])
+
+hadMember(a#2, 2, [dot:specific="true"])
+hadMember(a#2, a@1, [dot:specific="true"])
+hadMember(a#2, 0, [dot:specific="true"])
+
+hadMember(b#2, 2, [dot:specific="true"])
+hadMember(b#2, a@1, [dot:specific="true"])
+hadMember(b#2, 0, [dot:specific="true"])
+
+          
+activity(assign4, [type="script:assign"])
+wasDerivedFrom(a#2, a#1, assign4, g6, u6, [dot:specific="true"])
+wasDerivedFrom(a#2, 3, assign4, g6, u6, [dot:specific="true", dot:dist="0.5", dot:angle="270.0"])
+used(u6; assign4, a#1, -, [dot:dist="2", dot:angle="-30.0"])
+wasGeneratedBy(g6; a#2, assign4, -, [dot:specific="true", dot:dist="1", dot:angle="270.0"])
+wasDerivedFrom(b#2, b#1, assign4, g8, u8, [dot:specific="true"])
+wasDerivedFrom(b#2, 3, assign4, g8, u7, [dot:specific="true"])
+wasDerivedFrom(a@1, 3, assign4, g7, u7)
+
+used(assign4, 1, -)
+endDocument

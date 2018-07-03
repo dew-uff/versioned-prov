@@ -8,12 +8,13 @@ subgraph cluster_0 {
     color = "#333333"
     fontcolor = "#333333"
     fontsize = "24"
-    label = "A";
+     fontcolor = "white"
+    label = "Assign";
     "g/a@1"; "g/1"; "g/3"
     "g/a"; "g/assign3"
     
     "g/a@1-attrs"; "g/1-attrs"; "g/3-attrs"
-    "g/a-attrs"; "g/assign3-attrs"
+    "g/a-attrs"; "g/assign3-attrs"; "bn0"
     
     
 }
@@ -23,14 +24,23 @@ subgraph cluster_1 {
     color = "#333333"
     fontcolor = "#333333"
     fontsize = "24"
-    label = "B";
-    "g/2"; "g/6"; "g/0"; 
+    fontcolor = "white"
+    label = "Members";
+    "g/2"; "g/6"; "g/0"; "g/list"; "g/b"
 }
 
 
 "g/6" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="6",URL="g/6",fontsize="20"]
 "g/2" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="2",URL="g/2",fontsize="20"]
 "g/0" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="0",URL="g/0",fontsize="20"]
+"g/list" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="list",URL="g/list",fontsize="20"]
+"g/b" [fillcolor="#FAFAFA",color="#999999",style="filled",fontcolor="#999999",label="b",URL="g/b",fontsize="20"]
+"g/list" -> "g/2" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [0]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/6" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [1]
+ckpt: 0",fontcolor="#999999"]
+"g/list" -> "g/0" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="put [2]
+ckpt: 0",fontcolor="#999999"]
 "g/a" [fillcolor="#FFFC87",color="#808080",style="filled",label="a",URL="g/a",fontsize="20"]
 "g/a-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -39,7 +49,7 @@ subgraph cluster_1 {
 	</TR>
 	<TR>
 	    <TD align="left">type:</TD>
-	    <TD align="left">list</TD>
+	    <TD align="left">name</TD>
 	</TR>
 	<TR>
 	    <TD align="left">label:</TD>
@@ -63,10 +73,7 @@ subgraph cluster_1 {
 	</TR>
 </TABLE>>]
 "g/a@1-attrs" -> "g/a@1" [color="gray",style="dashed",arrowhead="none"]
-"g/a" -> "g/2" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[0]<br/>ckpt:&nbsp;0</font>>]
-"g/a" -> "g/6" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;0</font>>]
-"g/a" -> "g/0" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[2]<br/>ckpt:&nbsp;0</font>>]
-"g/a" -> "g/a@1" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;4</font>>]
+"g/list" -> "g/a@1" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">put</font><font color="#800000">&nbsp;[1]<br/>ckpt:&nbsp;3</font>>]
 "g/3" [fillcolor="#FFFC87",color="#808080",style="filled",label="3",URL="g/3",fontsize="20"]
 "g/3-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
 	<TR>
@@ -101,16 +108,22 @@ subgraph cluster_1 {
 "g/assign3-attrs" -> "g/assign3" [color="gray",style="dashed",arrowhead="none"]
 "g/assign3" -> "g/a" [labelfontsize="16",labeldistance="2",labelangle="-30.0",rotation="20",taillabel="use",dist="2",angle="-30.0"]
 "bn0" [shape="point",label=""]
-"g/a@1" -> "bn0" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">der</font><font color="#800000">&nbsp;ref<br/>ac-write<br/>ckpt:&nbsp;4</font>>,arrowhead="none"]
+"g/a@1" -> "bn0" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">der</font><font color="#800000">&nbsp;ref<br/>ac-write<br/>ckpt:&nbsp;3</font>>,arrowhead="none"]
 "bn0" -> "g/a" [color="#800000",style="dashed"]
 "bn0" -> "g/3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label="[1]",fontcolor="#800000"]
+"g/a" -> "g/list" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="der ref
+ckpt: 1",fontcolor="#999999"]
+"g/b" -> "g/a" [fontsize="20",labeldistance="1",color="#999999",labelangle="60.0",rotation="20",label="der ref
+ckpt: 2",fontcolor="#999999"]
 "g/assign3" -> "g/1" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
 
-{rank=same "g/2" "g/6" "g/0"}
-{rank=same "g/1" "g/3"}
-{rank=same "g/1-attrs" "g/assign3-attrs"}
+{rank=same "g/2" "g/6" "g/0" "g/b"}
+{rank=same "g/1" "g/3" "g/a"}
+{rank=same "g/list" "g/a"}
+
+{rank=same "g/1-attrs" "g/assign3-attrs" "g/a@1-attrs"}
 "g/0" -> "g/6" -> "g/2" [style=invis]
-"g/1" -> "g/2" [style=invis]
-"g/assign3" -> "g/3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">use</font><font color="#800000"><br/>ckpt:&nbsp;4</font>>]
-"g/a@1" -> "g/assign3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">gen</font><font color="#800000"><br/>ckpt:&nbsp;4</font>>]
+"g/3" -> "g/1" -> "g/a" [style=invis]
+"g/assign3" -> "g/3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">use</font><font color="#800000"><br/>ckpt:&nbsp;3</font>>]
+"g/a@1" -> "g/assign3" [fontsize="20",labeldistance="1",color="black",labelangle="60.0",rotation="20",label=<<font color="black">gen</font><font color="#800000"><br/>ckpt:&nbsp;3</font>>]
 }

@@ -1,0 +1,17 @@
+
+document
+default <g>
+prefix script <https://dew-uff.github.io/versioned-prov/ns/script#>
+prefix version <https://dew-uff.github.io/versioned-prov/ns#>
+
+
+entity(2, [value="2", type="script:literal"])
+entity(6, [value="6", type="script:literal"])
+entity(0, [value="0", type="script:literal"])
+
+entity(list, [value="[2, 6, 0]", type="script:list"])
+
+hadMember(list, 2, [dot:specific="true"])
+hadMember(list, 6, [dot:specific="true"])
+hadMember(list, 0, [dot:specific="true"])
+endDocument

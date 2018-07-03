@@ -1,0 +1,75 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+newrank=true;
+splines = "spline"
+rankdir=TB
+subgraph cluster_1 {
+    labeljust="r"
+    labelloc="t"
+    color = "#333333"
+    fontcolor = "#333333"
+    fontsize = "24"
+    fontcolor="white"
+    label = "Members";
+    "g/2"; "g/6";  "g/0";
+    "g/2-attrs"; "g/6-attrs";  "g/0-attrs"; 
+
+}
+
+"g/2" [fillcolor="#FFFC87",color="#808080",style="filled",label="2",URL="g/2",fontsize="20"]
+"g/2-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">2</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/2-attrs" -> "g/2" [color="gray",style="dashed",arrowhead="none"]
+"g/6" [fillcolor="#FFFC87",color="#808080",style="filled",label="6",URL="g/6",fontsize="20"]
+"g/6-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">6</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/6-attrs" -> "g/6" [color="gray",style="dashed",arrowhead="none"]
+"g/0" [fillcolor="#FFFC87",color="#808080",style="filled",label="0",URL="g/0",fontsize="20"]
+"g/0-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">0</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">literal</TD>
+	</TR>
+</TABLE>>]
+"g/0-attrs" -> "g/0" [color="gray",style="dashed",arrowhead="none"]
+"g/list" [fillcolor="#FFFC87",color="#808080",style="filled",label="list",URL="g/list",fontsize="20"]
+"g/list-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[2, 6, 0]</TD>
+	</TR>
+	<TR>
+	    <TD align="left">type:</TD>
+	    <TD align="left">list</TD>
+	</TR>
+</TABLE>>]
+"g/list-attrs" -> "g/list" [color="gray",style="dashed",arrowhead="none"]
+"g/list" -> "g/2" [color="#800000",fontcolor="#800000"]
+"g/list" -> "g/6" [color="#800000",fontcolor="#800000"]
+"g/list" -> "g/0" [color="#800000",fontcolor="#800000"]
+
+{rank=same "g/2" "g/6" "g/0"}
+{rank=same "g/list" "g/list-attrs"}
+
+"g/2" -> "g/6" -> "g/0" [style=invis]
+"g/2" -> "g/list"  [style=invis]
+}

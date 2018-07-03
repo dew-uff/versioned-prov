@@ -13,9 +13,9 @@ subgraph cluster_1 {
 "g/insert" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="insert",URL="g/insert",fontsize="20"]
 "g/remove" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="remove",URL="g/remove",fontsize="20"]
 "g/modify" [fillcolor="#9FB1FC",color="#0000FF",shape="polygon",sides="4",style="filled",label="modify",URL="g/modify",fontsize="20"]
-"g/insert" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="-60",rotation="20",taillabel="use",dist="1",angle="-60"]
+"g/insert" -> "g/a" [labelfontsize="16",labeldistance="2",labelangle="-30",rotation="20",taillabel="use",dist="2",angle="-30"]
 "g/remove" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
-"g/modify" -> "g/a" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="use"]
+"g/modify" -> "g/a" [labelfontsize="16",labeldistance="2",labelangle="30",rotation="20",taillabel="use",dist="2",angle="30"]
 
 }
 
@@ -23,10 +23,10 @@ subgraph cluster_0 {
     color=white
     node [shape=box color=white fixedsize=true width=1.5]
     chk1 [label="checkpoint: 1" ]
-    chk10 [label="checkpoint: 10"]
-    chk4 [label="checkpoint: 4" ]
+    chk3 [label="checkpoint: 3"]
+    chk2 [label="checkpoint: 2" ]
     chk1 -> "g/insert" [style=invis]
-    chk10 -> "g/remove" [style=invis]
-    chk4 -> "g/modify" [style=invis]
+    chk3 -> "g/remove" [style=invis]
+    chk2 -> "g/modify" [style=invis]
 }
 }

@@ -1,0 +1,20 @@
+digraph "PROV" { size="16,12"; rankdir="BT";
+"http://example.org/a1" [fillcolor="#FFFC87",color="#808080",style="filled",label="a1",URL="http://example.org/a1",fontsize="20"]
+"http://example.org/a1-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[]</TD>
+	</TR>
+</TABLE>>]
+"http://example.org/a1-attrs" -> "http://example.org/a1" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a2" [fillcolor="#FFFC87",color="#808080",style="filled",label="a2",URL="http://example.org/a2",fontsize="20"]
+"http://example.org/a2-attrs" [color="gray",shape="note",fontsize="13",fontcolor="black",label=<<TABLE cellpadding="0" border="0">
+	<TR>
+	    <TD align="left">value:</TD>
+	    <TD align="left">[[...]]</TD>
+	</TR>
+</TABLE>>]
+"http://example.org/a2-attrs" -> "http://example.org/a2" [color="gray",style="dashed",arrowhead="none"]
+"http://example.org/a2" -> "http://example.org/a2"
+"http://example.org/a2" -> "http://example.org/a1" [labelfontsize="16",labeldistance="1",labelangle="60.0",rotation="20",taillabel="der"]
+}
