@@ -11,6 +11,9 @@ For more details, please visit the website: [https://dew-uff.github.io/versioned
 - Leonardo Murta (Universidade Federal Fluminense)
 - Vanessa Braganholo (Universidade Federal Fluminense)
 
+## Publications
+
+- [PIMENTEL, J. F. N., MISSIER, P., MURTA, L., & BRAGANHOLO, V.; Versioned-PROV: A PROV extension to support mutable data entities. In International Provenance and Annotation Workshop (IPAW), 2018, London, United Kingdom.](https://github.com/dew-uff/versioned-prov/raw/master/docs/paper.pdf)
 
 ## Development
 
