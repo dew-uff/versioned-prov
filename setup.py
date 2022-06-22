@@ -12,7 +12,7 @@ setup(
     install_requires = [
         'extensible_provn==0.2.1',
         'pandas==0.20.1',
-        'numpy==1.12.1',
+        'numpy==1.22.0',
         'matplotlib==2.2.2',
         'pypandoc==1.4',
     ],
